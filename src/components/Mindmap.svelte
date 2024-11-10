@@ -1,9 +1,10 @@
 <script lang="ts">
-  import Character from "./Character.svelte";
   import characters from "../data/characters.ts";
+  import Character from "./Character.svelte";
+  import Connection from "./Connection.svelte";
 
-  const mapWidth: number = 300;
-  const mapHeight: number = 50;
+  const mapWidth: number = 500;
+  const mapHeight: number = 75;
 
   let dragMap: HTMLElement | null = null;
   let startX: number = 0;
@@ -11,6 +12,8 @@
   let scrollLeft: number;
   let scrollTop: number;
   let isDragging: boolean = false;
+
+  let charactersList: NodeListOf<Element>;
 
   const handlePointerDown = (event: PointerEvent) => {
     isDragging = true;
@@ -24,14 +27,6 @@
         left: scrollLeft + (startX - event.clientX) / 10,
         top: scrollTop + (startY - event.clientY) / 10,
       });
-      // window.scrollTo({
-      //   left:
-      //     scrollLeft +
-      //     (scrollLeft > scrollLeft + (startX - event.clientX) ? -15 : 15),
-      //   top:
-      //     scrollTop +
-      //     (scrollTop > scrollTop + (startY - event.clientY) ? -15 : 15),
-      // });
     }
   };
 
@@ -70,6 +65,19 @@
         </div>
       {/each}
     </section>
+    <section class="connections">
+      {#each characters as character}
+        {#if character.connections}
+          {#each character.connections as connection}
+            <Connection
+              name1={character.name}
+              name2={connection}
+              state={character.state}
+            />
+          {/each}
+        {/if}
+      {/each}
+    </section>
   </div>
 </main>
 
@@ -77,14 +85,17 @@
   main {
     width: 100vw;
     height: 100vh;
-    padding-block: 2rem;
+    padding: 100px 50px;
   }
 
   .map-wrapper {
     margin-inline: auto;
     padding: 1rem;
-    background-color: rgba(1, 0, 32, 0.25);
-    border: 0.05rem solid rgba(51, 226, 230, 0.15);
+    background-image: radial-gradient(
+      rgba(51, 226, 230, 0.2),
+      rgba(51, 226, 230, 0.4)
+    );
+    border: 0.05rem solid rgba(51, 226, 230, 0.65);
     border-radius: 1rem;
   }
 
@@ -102,14 +113,13 @@
   }
 
   .map {
+    position: relative;
     cursor: grab;
-    background-image: radial-gradient(
-      rgba(51, 226, 230, 0.01),
-      rgba(51, 226, 230, 0.05)
-    );
-    border: 0.05rem solid rgba(51, 226, 230, 0.15);
+    background-image: url("/space.avif"),
+      radial-gradient(rgba(1, 0, 32, 0.75), rgb(1, 0, 32));
+    border: 0.05rem solid rgba(51, 226, 230, 0.65);
     display: grid;
-    grid-template-columns: repeat(50, 6rem);
+    grid-template-columns: repeat(50, 10rem);
     align-items: center;
   }
 
@@ -119,5 +129,7 @@
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
+    border-left: 0.05rem dashed rgba(51, 226, 230, 0.05);
+    border-right: 0.05rem dashed rgba(51, 226, 230, 0.05);
   }
 </style>

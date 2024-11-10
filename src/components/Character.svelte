@@ -5,29 +5,35 @@
 </script>
 
 <section
+  id={name}
+  class="character"
   style="border-color: {state === 'good'
-    ? 'rgba(0, 185, 55, 0.8)'
+    ? 'rgb(0, 185, 55)'
     : state === 'evil'
-      ? 'rgba(255, 60, 64, 0.8)'
+      ? 'rgb(255, 60, 64)'
       : 'gray'}"
+  draggable="false"
 >
-  <img src={image} alt={name} />
+  <img src={image} alt={name} draggable="false" />
   <p>{name}</p>
 </section>
 
 <style>
-  section {
-    width: 5rem;
-    height: 5rem;
+  .character {
+    z-index: 1;
+    width: 7.5rem;
+    height: 7.5rem;
     cursor: pointer;
     transition: all 0.15s ease-in-out;
-    border: 0.1rem solid gray;
+    border: 0.2rem solid gray;
     border-radius: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
   }
 
-  section:hover,
-  section:active {
-    outline: 0.05rem solid rgba(51, 226, 230, 0.5);
+  .character:hover,
+  .character:active {
     color: rgba(51, 226, 230, 0.9);
     filter: drop-shadow(0 0 0.5vw rgba(51, 226, 230, 0.5));
     transform: scale(1.05);
@@ -35,19 +41,24 @@
 
   img {
     width: 100%;
+    border-radius: 1rem;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
-    border-radius: 1rem;
   }
 
   p {
     max-width: 100%;
     text-align: center;
-    font-size: 0.7rem;
-    line-height: 1rem;
-    padding-top: 0.3rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-top: 0.5rem;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
   }
 </style>

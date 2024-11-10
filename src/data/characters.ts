@@ -2,6 +2,7 @@ interface Character {
   name: string
   timeline: number
   state: "good" | "evil" | "neutral"
+  connections?: string[]
   image: string
   summary?: string
   description?: string
@@ -20,12 +21,14 @@ const characters: Character[] = [
     name: 'Architect',
     timeline: 0,
     state: "evil",
+    connections: ['CoNexus', 'Collector'],
     image: '/blank.avif'
   },
   {
     name: 'CoNexus',
     timeline: 2,
     state: "evil",
+    connections: ['Architect', 'Collector', 'Warden'],
     image: '/blank.avif'
   },
   {
@@ -44,12 +47,14 @@ const characters: Character[] = [
     name: 'Meme',
     timeline: 8,
     state: "evil",
+    connections: ['Politician', 'Watcher'],
     image: '/blank.avif'
   },
   {
     name: 'Warlord',
     timeline: 14,
     state: "evil",
+    connections: ['Vortex'],
     image: '/blank.avif'
   },
   {
@@ -62,18 +67,21 @@ const characters: Character[] = [
     name: 'Watcher',
     timeline: 14,
     state: "evil",
+    connections: ['Game Master'],
     image: '/blank.avif'
   },
   {
     name: 'Vortex',
     timeline: 15,
     state: "evil",
+    connections: ['Warlord', 'Game Master'],
     image: '/blank.avif'
   },
   {
     name: 'Game Master',
     timeline: 18,
     state: "evil",
+    connections: ['Vortex'],
     image: '/blank.avif'
   },
   {
@@ -98,12 +106,14 @@ const characters: Character[] = [
     name: 'Agent Zero',
     timeline: 33,
     state: "good",
+    connections: ['Iron Lion', 'The Oracle', 'The Engineer'],
     image: '/blank.avif'
   },
   {
     name: 'Iron Lion',
     timeline: 33,
     state: "good",
+    connections: ['Kael', 'Agent Zero', 'The Oracle', 'The Engineer'],
     image: '/blank.avif'
   },
   {
@@ -122,6 +132,7 @@ const characters: Character[] = [
     name: 'The Eyes of the Watcher',
     timeline: 38,
     state: "good",
+    connections: ['Captain Arion'],
     image: '/blank.avif'
   },
   {
@@ -134,10 +145,11 @@ const characters: Character[] = [
     name: 'The Hierophant',
     timeline: 44,
     state: "neutral",
+    connections: ['The Eyes of the Watcher', 'Ambassador Veron'],
     image: '/blank.avif'
   },
   {
-    name: 'Captain Arion ',
+    name: 'Captain Arion',
     timeline: 45,
     state: "neutral",
     image: '/blank.avif'

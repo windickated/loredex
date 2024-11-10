@@ -43,10 +43,11 @@
   }
 
   function getOffset(element: HTMLElement) {
+    const map = document.querySelector(".map-wrapper") as HTMLElement;
     const rect = element.getBoundingClientRect();
     return {
-      left: rect.left + window.scrollX,
-      top: rect.top + window.scrollY,
+      left: rect.left + window.scrollX - map.offsetLeft,
+      top: rect.top + window.scrollY - map.offsetTop,
       width: rect.width || element.offsetWidth,
       height: rect.height || element.offsetHeight,
     };

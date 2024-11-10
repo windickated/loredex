@@ -4,17 +4,17 @@
   export let image: string;
 </script>
 
-<section
-  id={name}
-  class="character"
-  style="border-color: {state === 'good'
-    ? 'rgb(0, 185, 55)'
-    : state === 'evil'
-      ? 'rgb(255, 60, 64)'
-      : 'gray'}"
-  draggable="false"
->
-  <img src={image} alt={name} draggable="false" />
+<section id={name} class="character" draggable="false">
+  <img
+    src={image}
+    alt={name}
+    draggable="false"
+    style="border-color: {state === 'good'
+      ? 'rgb(0, 185, 55)'
+      : state === 'evil'
+        ? 'rgb(255, 60, 64)'
+        : 'gray'}"
+  />
   <p>{name}</p>
 </section>
 
@@ -25,8 +25,6 @@
     height: 7.5rem;
     cursor: pointer;
     transition: all 0.15s ease-in-out;
-    border: 0.2rem solid gray;
-    border-radius: 1rem;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -41,6 +39,7 @@
 
   img {
     width: 100%;
+    border: 0.2rem solid gray;
     border-radius: 1rem;
     -webkit-user-select: none;
     -khtml-user-select: none;

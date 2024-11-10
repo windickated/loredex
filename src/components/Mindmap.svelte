@@ -5,6 +5,7 @@
 
   const mapWidth: number = 500;
   const mapHeight: number = 75;
+  const timeline: number = 50;
 
   let dragMap: HTMLElement | null = null;
   let startX: number = 0;
@@ -12,8 +13,6 @@
   let scrollLeft: number;
   let scrollTop: number;
   let isDragging: boolean = false;
-
-  let charactersList: NodeListOf<Element>;
 
   const handlePointerDown = (event: PointerEvent) => {
     isDragging = true;
@@ -45,13 +44,17 @@
     </nav>
     <section
       class="map"
-      style="width: {mapWidth}rem; height: {mapHeight}rem"
+      style="
+        width: {mapWidth}rem;
+        height: {mapHeight}rem;
+        grid-template-columns: repeat({timeline}, {mapWidth / timeline}rem);
+      "
       bind:this={dragMap}
       on:pointerdown={handlePointerDown}
       on:pointerup={handlePointerUp}
       on:pointermove={handlePointerMove}
     >
-      {#each Array(50) as plot, index}
+      {#each Array(timeline) as plot, index}
         <div class="plot">
           {#each characters as character}
             {#if index == character.timeline}
@@ -88,7 +91,7 @@
   }
 
   .map-wrapper {
-    margin-inline: auto;
+    margin: 2rem;
     padding: 1rem;
     background-image: radial-gradient(
       rgba(51, 226, 230, 0.2),
@@ -118,7 +121,6 @@
       radial-gradient(rgba(1, 0, 32, 0.75), rgb(1, 0, 32));
     border: 0.05rem solid rgba(51, 226, 230, 0.65);
     display: grid;
-    grid-template-columns: repeat(50, 10rem);
     align-items: center;
   }
 
@@ -130,5 +132,15 @@
     align-items: center;
     border-left: 0.05rem dashed rgba(51, 226, 230, 0.05);
     border-right: 0.05rem dashed rgba(51, 226, 230, 0.05);
+  }
+
+  .connections {
+    pointer-events: none;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .map-wrapper {
+      margin: 0;
+    }
   }
 </style>

@@ -45,8 +45,8 @@
   function getOffset(element: HTMLElement) {
     const rect = element.getBoundingClientRect();
     return {
-      left: rect.left + window.scrollX - 50,
-      top: rect.top + window.scrollY - 100,
+      left: rect.left + window.scrollX,
+      top: rect.top + window.scrollY,
       width: rect.width || element.offsetWidth,
       height: rect.height || element.offsetHeight,
     };

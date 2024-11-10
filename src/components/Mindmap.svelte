@@ -85,7 +85,6 @@
   main {
     width: 100vw;
     height: 100vh;
-    padding: 100px 50px;
   }
 
   .map-wrapper {

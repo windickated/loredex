@@ -21,7 +21,7 @@ const characters: Character[] = [
     name: 'Architect',
     timeline: 0,
     state: "evil",
-    connections: ['CoNexus', 'Collector'],
+    connections: ['Collector'],
     image: '/blank.avif'
   },
   {
@@ -74,7 +74,6 @@ const characters: Character[] = [
     name: 'Vortex',
     timeline: 15,
     state: "evil",
-    connections: ['Warlord', 'Game Master'],
     image: '/blank.avif'
   },
   {
@@ -106,7 +105,7 @@ const characters: Character[] = [
     name: 'Agent Zero',
     timeline: 33,
     state: "good",
-    connections: ['Iron Lion', 'The Oracle', 'The Engineer'],
+    connections: ['The Oracle', 'The Engineer'],
     image: '/blank.avif'
   },
   {

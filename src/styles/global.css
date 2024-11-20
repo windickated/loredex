@@ -141,11 +141,8 @@
 /* General */
 
 html {
-  background-image: url("/bg.avif"), linear-gradient(#000000, #010020);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: url("/space.avif"),
+  radial-gradient(rgba(1, 0, 32, 0.75), rgb(1, 0, 32));
   background-color: #010020;
   box-sizing: border-box;
   font-family: "PT Serif Caption", serif;
@@ -173,7 +170,7 @@ button {
   font-size: 1.5vw;
   background-color: rgba(56, 117, 250, 0.5);
   border: 0.1vw solid rgba(51, 226, 230, 0.5);
-  border-radius: 1vw;
+  border-radius: 0.5vw;
   transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -193,4 +190,11 @@ a {
 .blur {
   -webkit-backdrop-filter: blur(5rem);
   backdrop-filter: blur(5rem);
+}
+
+@media only screen and (max-width: 600px) {
+  button {
+    border-radius: 1em;
+    padding: 0.5em;
+  }
 }

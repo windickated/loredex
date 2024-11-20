@@ -72,6 +72,8 @@
 <style>
   div {
     position: absolute;
-    height: 0.2rem;
+    height: 0.15rem;
+    zoom: 2;
+    /* opacity: 0.25; */
   }
 </style>

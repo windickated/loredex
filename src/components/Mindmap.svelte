@@ -130,10 +130,6 @@
     on:pointerleave={handlePointerUp}
     on:pointermove={handlePointerMove}
   >
-    <!-- <nav style="width: {mapWidth}rem">
-      <p>10 000 years before</p>
-      <p>present time</p>
-    </nav> -->
     <section
       class="map"
       style="
@@ -144,6 +140,7 @@
     >
       {#each Array(timeline) as plot, index}
         <div class="plot">
+          <p class="plot-date">{index + 1} 000 A.A.</p>
           {#each characters as character}
             {#if index == character.timeline}
               <Character
@@ -196,19 +193,6 @@
     transform-origin: 0 0;
   }
 
-  /* nav {
-    margin-inline: auto;
-    display: flex;
-    justify-content: space-between;
-    padding-inline: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  p {
-    font-size: 1rem;
-    line-height: 2rem;
-  } */
-
   .map {
     position: absolute;
     top: 0;
@@ -225,6 +209,17 @@
     align-items: center;
     border-left: 0.05rem dashed rgba(51, 226, 230, 0.1);
     border-right: 0.05rem dashed rgba(51, 226, 230, 0.1);
+  }
+
+  .plot-date {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    white-space: nowrap;
+    padding: 0.25rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: rgba(51, 226, 230, 0.5);
   }
 
   .connections {

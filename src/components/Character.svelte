@@ -69,6 +69,7 @@
   .character:hover,
   .character:active,
   .character:focus {
+    background-color: rgba(45, 90, 216, 0.9);
     color: rgba(51, 226, 230, 0.9);
     filter: drop-shadow(0 0 0.5vw rgba(51, 226, 230, 0.5));
     transform: scale(1.05);

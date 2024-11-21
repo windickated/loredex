@@ -2,6 +2,29 @@
   export let name: string;
   export let state: string;
   export let image: string;
+
+  let character: HTMLElement | null;
+
+  function hideConnections() {
+    const allConnections: HTMLDivElement[] = Array.from(
+      document.querySelectorAll(".connection")
+    );
+    allConnections.map((connection) => {
+      connection.style.opacity = "0.05";
+    });
+  }
+
+  function showActiveConnections() {
+    const allConnections: HTMLDivElement[] = Array.from(
+      document.querySelectorAll(".connection")
+    );
+    const activeConnections = allConnections.filter((connection) =>
+      connection.className.match(character!.id)
+    );
+    activeConnections.map((connection) => {
+      connection.style.opacity = "0.45";
+    });
+  }
 </script>
 
 <section
@@ -13,15 +36,20 @@
     : state === 'evil'
       ? 'rgba(255, 60, 64, 0.75)'
       : 'gray'}"
+  tabindex="0"
+  role="button"
+  bind:this={character}
+  on:focus={showActiveConnections}
+  on:blur={hideConnections}
 >
   <img
     src={image}
     alt={name}
     draggable="false"
     style="border-color: {state === 'good'
-      ? 'rgba(0, 185, 55, 0.5)'
+      ? 'rgba(0, 185, 55, 0.75)'
       : state === 'evil'
-        ? 'rgba(255, 60, 64, 0.5)'
+        ? 'rgba(255, 60, 64, 0.75)'
         : 'gray'}"
   />
   <p>{name}</p>
@@ -41,10 +69,12 @@
     background-color: rgba(36, 65, 189, 0.75);
     border: 0.05rem solid gray;
     border-radius: 0.75rem;
+    outline: none;
   }
 
   .character:hover,
-  .character:active {
+  .character:active,
+  .character:focus {
     color: rgba(51, 226, 230, 0.9);
     filter: drop-shadow(0 0 0.5vw rgba(51, 226, 230, 0.5));
     transform: scale(1.05);

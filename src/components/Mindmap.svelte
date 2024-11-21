@@ -162,7 +162,7 @@
     position: relative;
     border-radius: 1rem;
     cursor: grab;
-    transform-origin: 0 0;
+    transform-origin: center;
   }
 
   /* nav {

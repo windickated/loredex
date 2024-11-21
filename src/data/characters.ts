@@ -21,7 +21,7 @@ const characters: Character[] = [
     name: 'Architect',
     timeline: 0,
     state: "evil",
-    connections: ['Collector'],
+    connections: ['Collector', 'CoNexus'],
     image: '/blank.avif'
   },
   {
@@ -35,12 +35,14 @@ const characters: Character[] = [
     name: 'Collector',
     timeline: 5,
     state: "evil",
+    connections: ['Architect', 'CoNexus'],
     image: '/blank.avif'
   },
   {
     name: 'Warden',
     timeline: 5,
     state: "evil",
+    connections: ['CoNexus'],
     image: '/blank.avif'
   },
   {
@@ -61,26 +63,28 @@ const characters: Character[] = [
     name: 'Politician',
     timeline: 14,
     state: "evil",
+    connections: ['Meme'],
     image: '/blank.avif'
   },
   {
     name: 'Watcher',
     timeline: 14,
     state: "evil",
-    connections: ['Game Master'],
+    connections: ['Game Master', 'Meme'],
     image: '/blank.avif'
   },
   {
     name: 'Vortex',
     timeline: 15,
     state: "evil",
+    connections: ['Warlord', 'Game Master'],
     image: '/blank.avif'
   },
   {
     name: 'Game Master',
     timeline: 18,
     state: "evil",
-    connections: ['Vortex'],
+    connections: ['Vortex', 'Watcher'],
     image: '/blank.avif'
   },
   {
@@ -93,19 +97,21 @@ const characters: Character[] = [
     name: 'Human',
     timeline: 25,
     state: "evil",
+    connections: ['The Nomad'],
     image: '/blank.avif'
   },
   {
     name: 'Kael',
     timeline: 31,
     state: "good",
+    connections: ['Iron Lion'],
     image: '/blank.avif'
   },
   {
     name: 'Agent Zero',
     timeline: 33,
     state: "good",
-    connections: ['The Oracle', 'The Engineer'],
+    connections: ['The Oracle', 'The Engineer', 'Iron Lion'],
     image: '/blank.avif'
   },
   {
@@ -119,25 +125,28 @@ const characters: Character[] = [
     name: 'The Oracle',
     timeline: 36,
     state: "good",
+    connections: ['Agent Zero', 'Iron Lion'],
     image: '/blank.avif'
   },
   {
     name: 'The Engineer',
     timeline: 37,
     state: "good",
+    connections: ['Agent Zero', 'Iron Lion'],
     image: '/blank.avif'
   },
   {
     name: 'The Eyes of the Watcher',
     timeline: 38,
     state: "good",
-    connections: ['Captain Arion'],
+    connections: ['Captain Arion', 'The Hierophant'],
     image: '/blank.avif'
   },
   {
     name: 'The Nomad',
     timeline: 31,
     state: "good",
+    connections: ['Human'],
     image: '/blank.avif'
   },
   {
@@ -151,18 +160,21 @@ const characters: Character[] = [
     name: 'Captain Arion',
     timeline: 45,
     state: "neutral",
+    connections: ['The Eyes of the Watcher', 'The Council of Harmony'],
     image: '/blank.avif'
   },
   {
     name: 'Ambassador Veron',
     timeline: 45,
     state: "neutral",
+    connections: ['The Hierophant'],
     image: '/blank.avif'
   },
   {
     name: 'The Council of Harmony',
     timeline: 47,
     state: "neutral",
+    connections: ['Captain Arion'],
     image: '/blank.avif'
   }
 ]

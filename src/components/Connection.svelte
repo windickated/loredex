@@ -7,9 +7,9 @@
 
   const color: string =
     state === "good"
-      ? "rgba(0, 185, 55, 0.5)"
+      ? "rgba(0, 185, 55, 0.75)"
       : state === "evil"
-        ? "rgba(255, 60, 64, 0.5)"
+        ? "rgba(255, 60, 64, 0.75)"
         : "gray";
 
   let character1: HTMLElement | null = null;
@@ -55,6 +55,7 @@
 </script>
 
 <div
+  class="connection {name1} {name2}"
   style="
     background-color: {color};
     left: {cx}px;
@@ -74,6 +75,7 @@
     position: absolute;
     height: 0.15rem;
     zoom: 2;
-    opacity: 0.25;
+    opacity: 0.05;
+    transition: all 0.3s ease-in-out;
   }
 </style>

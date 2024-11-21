@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   import characters from "../data/characters.ts";
   import Character from "./Character.svelte";
   import Connection from "./Connection.svelte";
@@ -16,6 +17,13 @@
   let startY: number = 0;
   let isDragging: boolean = false;
   let searchField: string;
+  let touchscreenDevice: boolean;
+
+  onMount(() => {
+    if ("ontouchstart" in document.documentElement) {
+      touchscreenDevice = true;
+    }
+  });
 
   const handlePointerDown = (event: PointerEvent) => {
     isDragging = true;
@@ -136,6 +144,7 @@
         width: {mapWidth}rem;
         height: {mapHeight}rem;
         grid-template-columns: repeat({timeline}, {mapWidth / timeline}rem);
+        {touchscreenDevice ? 'zoom: 1;' : ''}
       "
     >
       {#each Array(timeline) as plot, index}

@@ -18,6 +18,7 @@
   }
 
   function showActiveConnections() {
+    if (document.activeElement?.tagName === "INPUT") return;
     const allConnections: HTMLDivElement[] = Array.from(
       document.querySelectorAll(".connection")
     );
@@ -37,8 +38,11 @@
   style="border-color: {color}"
   tabindex="0"
   role="button"
+  aria-disabled="false"
   bind:this={character}
   on:focus={showActiveConnections}
+  on:pointerover={showActiveConnections}
+  on:pointerleave={hideConnections}
   on:blur={hideConnections}
 >
   <img src={image} alt={name} draggable="false" style="border-color: {color}" />

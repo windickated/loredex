@@ -19,8 +19,9 @@
 
   const handlePointerDown = (event: PointerEvent) => {
     isDragging = true;
-    startX = event.clientX;
-    startY = event.clientY;
+    const { clientX, clientY } = event;
+    startX = clientX;
+    startY = clientY;
     mapScrollX = mapContainer!.scrollLeft;
     mapScrollY = mapContainer!.scrollTop;
     dragMap!.style.cursor = "grabbing";
@@ -42,27 +43,47 @@
   };
 
   const handleZoomWheel = (event: WheelEvent) => {
-    const { deltaY, clientX, clientY, ctrlKey, metaKey } = event;
+    const { deltaY, ctrlKey, metaKey } = event;
     if (!(ctrlKey || metaKey)) return;
     event.preventDefault();
     let zoom: number;
     zoom = deltaY > 0 ? mapZoom - 0.05 : mapZoom + 0.05;
-    if (zoom < 0.25) zoom = 0.25;
-    if (zoom > 4) zoom = 4;
-    mapZoom = zoom;
+    mapZoom = setZoom(zoom);
   };
 
   const handleZoomButton = (zoomIn: boolean) => {
     let zoom: number = mapZoom;
     if (zoomIn) zoom += 0.1;
     else zoom -= 0.1;
-    if (zoom < 0.25) zoom = 0.25;
-    if (zoom > 4) zoom = 4;
-    mapZoom = zoom;
+    mapZoom = setZoom(zoom);
   };
 
+  function setZoom(zoom: number): number {
+    return zoom < 0.25 ? 0.25 : zoom > 4 ? 4 : zoom;
+  }
+
   const handleSearch = () => {
-    console.log("search character");
+    if (!searchField) {
+      resetSearch();
+      return;
+    }
+    const allCharacters: HTMLElement[] = Array.from(
+      document.querySelectorAll(".character")
+    );
+    allCharacters.map((character) => {
+      character.ariaDisabled = "true";
+      if (character.id.toLowerCase().match(searchField.toLowerCase()))
+        character.ariaDisabled = "false";
+    });
+  };
+
+  const resetSearch = () => {
+    const allCharacters: HTMLElement[] = Array.from(
+      document.querySelectorAll(".character")
+    );
+    allCharacters.map((character) => {
+      character.ariaDisabled = "false";
+    });
   };
 </script>
 
@@ -74,6 +95,8 @@
       <input
         bind:value={searchField}
         on:input={handleSearch}
+        on:focus={handleSearch}
+        on:blur={resetSearch}
         placeholder="Find a character..."
       />
     </div>
@@ -162,7 +185,7 @@
     position: relative;
     border-radius: 1rem;
     cursor: grab;
-    transform-origin: center;
+    transform-origin: 0 0;
   }
 
   /* nav {

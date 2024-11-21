@@ -107,6 +107,14 @@
       <button on:click={() => handleZoomButton(false)}>
         <img src="zoom-out.png" alt="Zoom in" />
       </button>
+      <button
+        class="zoom-info"
+        on:click={() => {
+          mapZoom = 1;
+        }}
+      >
+        {Math.round(mapZoom * 100)}%
+      </button>
     </div>
   </section>
 </header>
@@ -262,6 +270,10 @@
     gap: 0.5vw;
   }
 
+  .zoom-info {
+    font-size: 1vw;
+  }
+
   .search {
     display: flex;
     flex-flow: row nowrap;
@@ -304,14 +316,14 @@
 
     header {
       margin-top: 3vh;
-      padding-inline: 5vw;
+      padding-inline: 2.5vw;
       max-height: 4vh;
     }
 
     h1 {
       position: fixed;
       bottom: 2vh;
-      width: 90vw;
+      width: 95vw;
       text-align: center;
       font-size: 4vh;
       line-height: 6vh;
@@ -328,11 +340,16 @@
     }
 
     .zoom {
-      gap: 1em;
+      gap: 0.5em;
+    }
+
+    .zoom-info {
+      font-size: 0.75em;
+      line-height: inherit;
     }
 
     .search {
-      padding: 0.25em 1em;
+      padding: 0.25em 0.5em;
       border-radius: 1em;
       gap: 1em;
     }

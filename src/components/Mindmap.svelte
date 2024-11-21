@@ -314,6 +314,10 @@
       height: 80vh;
     }
 
+    .map {
+      zoom: 1;
+    }
+
     header {
       margin-top: 3vh;
       padding-inline: 2.5vw;

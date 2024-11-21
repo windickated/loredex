@@ -1,15 +1,12 @@
 <script lang="ts">
   import setColor from "../utils/color.ts";
 
-  export let name: string;
-  export let state: string;
-  export let image: string;
-  export let timeline: number[];
+  export let character;
+  const { name, appearance, death, state, image } = character;
 
-  const shadowLength = (timeline[1] - timeline[0]) * 10 + 7.5;
+  const shadowLength = (death - appearance) * 10 + 7.5;
   let characterShadow: HTMLDivElement | null;
-
-  let character: HTMLElement | null;
+  let characterTile: HTMLElement | null;
   const color = setColor(state);
 
   function hideConnections() {
@@ -22,7 +19,7 @@
     allConnections.map((connection) => {
       connection.style.opacity = "0.05";
     });
-    characterShadow!.style.opacity = "0";
+    if (characterShadow) characterShadow.style.opacity = "0";
     allDates.map((date) => {
       date.style.textShadow = "none";
     });
@@ -34,7 +31,7 @@
       document.querySelectorAll(".connection")
     );
     const activeConnections = allConnections.filter((connection) =>
-      connection.className.match(character!.id)
+      connection.className.match(characterTile!.id)
     );
     const allDates: HTMLParagraphElement[] = Array.from(
       document.querySelectorAll(".date")
@@ -42,12 +39,12 @@
     activeConnections.map((connection) => {
       connection.style.opacity = "0.5";
     });
-    characterShadow!.style.opacity = "0.25";
-    if (timeline[1]) {
+    if (characterShadow) characterShadow.style.opacity = "0.25";
+    if (death) {
       const activeDates = allDates.filter((date) => {
         if (
-          Number(date.classList[1]) < timeline[0] ||
-          Number(date.classList[1]) > timeline[1]
+          Number(date.classList[1]) < appearance ||
+          Number(date.classList[1]) > death
         )
           return null;
         return date;
@@ -57,7 +54,7 @@
       });
     } else {
       const activeDate = allDates.find(
-        (date) => Number(date.classList[1]) == timeline[0]
+        (date) => Number(date.classList[1]) == appearance
       );
       activeDate!.style.textShadow = "0 0 0.1rem rgb(51, 226, 230)";
     }
@@ -72,7 +69,7 @@
   tabindex="0"
   role="button"
   aria-disabled="false"
-  bind:this={character}
+  bind:this={characterTile}
   on:focus={showActiveConnections}
   on:pointerover={showActiveConnections}
   on:pointerleave={hideConnections}
@@ -80,7 +77,7 @@
 >
   <img src={image} alt={name} draggable="false" style="border-color: {color}" />
   <p>{name}</p>
-  {#if timeline[1]}
+  {#if death}
     <div
       bind:this={characterShadow}
       class="character-shadow {name}"

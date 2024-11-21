@@ -142,13 +142,8 @@
         <div class="plot">
           <p class="date {index}">{index} 000 A.A.</p>
           {#each characters as character}
-            {#if index == character.timeline[0]}
-              <Character
-                name={character.name}
-                state={character.state}
-                image={character.image}
-                timeline={character.timeline}
-              />
+            {#if index == character.appearance}
+              <Character {character} />
             {/if}
           {/each}
         </div>

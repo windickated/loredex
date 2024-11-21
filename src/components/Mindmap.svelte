@@ -140,13 +140,14 @@
     >
       {#each Array(timeline) as plot, index}
         <div class="plot">
-          <p class="plot-date">{index + 1} 000 A.A.</p>
+          <p class="date {index}">{index} 000 A.A.</p>
           {#each characters as character}
-            {#if index == character.timeline}
+            {#if index == character.timeline[0]}
               <Character
                 name={character.name}
                 state={character.state}
                 image={character.image}
+                timeline={character.timeline}
               />
             {/if}
           {/each}
@@ -213,7 +214,7 @@
     border-right: 0.05rem dashed rgba(51, 226, 230, 0.1);
   }
 
-  .plot-date {
+  .date {
     position: absolute;
     top: 0;
     text-align: center;
@@ -222,6 +223,11 @@
     font-size: 1rem;
     line-height: 2rem;
     color: rgba(51, 226, 230, 0.5);
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
   }
 
   .connections {

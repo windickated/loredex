@@ -1,9 +1,12 @@
 <script lang="ts">
+  import setColor from "../utils/color.ts";
+
   export let name: string;
   export let state: string;
   export let image: string;
 
   let character: HTMLElement | null;
+  const color = setColor(state);
 
   function hideConnections() {
     const allConnections: HTMLDivElement[] = Array.from(
@@ -22,7 +25,7 @@
       connection.className.match(character!.id)
     );
     activeConnections.map((connection) => {
-      connection.style.opacity = "0.45";
+      connection.style.opacity = "0.5";
     });
   }
 </script>
@@ -31,27 +34,14 @@
   id={name}
   class="character"
   draggable="false"
-  style="border-color: {state === 'good'
-    ? 'rgba(0, 185, 55, 0.75)'
-    : state === 'evil'
-      ? 'rgba(255, 60, 64, 0.75)'
-      : 'gray'}"
+  style="border-color: {color}"
   tabindex="0"
   role="button"
   bind:this={character}
   on:focus={showActiveConnections}
   on:blur={hideConnections}
 >
-  <img
-    src={image}
-    alt={name}
-    draggable="false"
-    style="border-color: {state === 'good'
-      ? 'rgba(0, 185, 55, 0.75)'
-      : state === 'evil'
-        ? 'rgba(255, 60, 64, 0.75)'
-        : 'gray'}"
-  />
+  <img src={image} alt={name} draggable="false" style="border-color: {color}" />
   <p>{name}</p>
 </section>
 

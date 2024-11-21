@@ -1,16 +1,12 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import setColor from "../utils/color.ts";
 
   export let name1: string;
   export let name2: string;
   export let state: string;
 
-  const color: string =
-    state === "good"
-      ? "rgba(0, 185, 55, 0.75)"
-      : state === "evil"
-        ? "rgba(255, 60, 64, 0.75)"
-        : "gray";
+  const color: string = setColor(state);
 
   let character1: HTMLElement | null = null;
   let character2: HTMLElement | null = null;

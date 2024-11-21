@@ -184,6 +184,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    opacity: 0;
+    animation: show 0.5s ease-in 1s forwards;
   }
 
   .map-wrapper {
@@ -239,6 +241,8 @@
     flex-direction: row nowrap;
     justify-content: space-between;
     align-items: center;
+    opacity: 0;
+    animation: showScale 1s linear 0.5s forwards;
   }
 
   h1 {
@@ -313,6 +317,8 @@
       margin-top: 3vh;
       padding-inline: 2.5vw;
       max-height: 4vh;
+      opacity: 1;
+      animation: none;
     }
 
     h1 {
@@ -359,6 +365,29 @@
 
     input:focus {
       width: 40vw;
+    }
+  }
+
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes showScale {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    75% {
+      transform: scale(1.05);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
     }
   }
 </style>

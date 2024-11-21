@@ -4,15 +4,24 @@
   export let image: string;
 </script>
 
-<section id={name} class="character" draggable="false">
+<section
+  id={name}
+  class="character"
+  draggable="false"
+  style="border-color: {state === 'good'
+    ? 'rgba(0, 185, 55, 0.75)'
+    : state === 'evil'
+      ? 'rgba(255, 60, 64, 0.75)'
+      : 'gray'}"
+>
   <img
     src={image}
     alt={name}
     draggable="false"
     style="border-color: {state === 'good'
-      ? 'rgb(0, 185, 55)'
+      ? 'rgba(0, 185, 55, 0.5)'
       : state === 'evil'
-        ? 'rgb(255, 60, 64)'
+        ? 'rgba(255, 60, 64, 0.5)'
         : 'gray'}"
   />
   <p>{name}</p>
@@ -22,12 +31,16 @@
   .character {
     z-index: 1;
     width: 7.5rem;
-    height: 7.5rem;
+    height: auto;
+    padding: 0.25rem;
     cursor: pointer;
     transition: all 0.15s ease-in-out;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    background-color: rgba(36, 65, 189, 0.75);
+    border: 0.05rem solid gray;
+    border-radius: 0.75rem;
   }
 
   .character:hover,
@@ -39,8 +52,8 @@
 
   img {
     width: 100%;
-    border: 0.2rem solid gray;
-    border-radius: 1rem;
+    border: 0.05rem solid gray;
+    border-radius: 0.5rem;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -53,7 +66,7 @@
     text-align: center;
     font-size: 1rem;
     line-height: 1.5rem;
-    padding-top: 0.5rem;
+    padding-top: 0.25rem;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;

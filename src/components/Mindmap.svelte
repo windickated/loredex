@@ -10,37 +10,29 @@
   let mapContainer: HTMLElement | null;
   let dragMap: HTMLDivElement | null;
   let mapZoom: number = 1;
+  let mapScrollX: number;
+  let mapScrollY: number;
   let startX: number = 0;
   let startY: number = 0;
-  let offsetX: number;
-  let offsetY: number;
   let isDragging: boolean = false;
   let searchField: string;
-
-  $: maxOffsetWidth = mapContainer
-    ? (mapContainer!.offsetWidth - mapWidth * 16) / 2
-    : 0;
-  $: maxOffsetHeight = mapContainer
-    ? (mapContainer!.offsetHeight - mapHeight * 16) / 2
-    : 0;
 
   const handlePointerDown = (event: PointerEvent) => {
     isDragging = true;
     startX = event.clientX;
     startY = event.clientY;
-    offsetX = dragMap!.offsetLeft;
-    offsetY = dragMap!.offsetTop;
+    mapScrollX = mapContainer!.scrollLeft;
+    mapScrollY = mapContainer!.scrollTop;
     dragMap!.style.cursor = "grabbing";
   };
 
   const handlePointerMove = (event: PointerEvent) => {
     if (isDragging) {
-      dragMap!.style.left = `${offsetX + (event.clientX - startX)}px`;
-      if (dragMap!.offsetLeft >= mapContainer!.offsetLeft)
-        dragMap!.style.left = "0px";
-      dragMap!.style.top = `${offsetY + (event.clientY - startY)}px`;
-      if (dragMap!.offsetTop >= mapContainer!.offsetTop)
-        dragMap!.style.top = "0px";
+      const { clientX, clientY } = event;
+      mapContainer!.scrollTo({
+        left: mapScrollX + (startX - clientX),
+        top: mapScrollY + (startY - clientY),
+      });
     }
   };
 
@@ -49,19 +41,12 @@
     dragMap!.style.cursor = "grab";
   };
 
-  const resetMapPosition = (event: Event) => {
-    const target = event.target as HTMLElement;
-    if (target.tagName !== "MAIN") return;
-    if (dragMap!.offsetLeft < maxOffsetWidth)
-      dragMap!.style.left = `${maxOffsetWidth}px`;
-    if (dragMap!.offsetTop < maxOffsetHeight)
-      dragMap!.style.top = `${maxOffsetHeight}px`;
-  };
-
   const handleZoomWheel = (event: WheelEvent) => {
-    const delta = event.deltaY;
+    const { deltaY, clientX, clientY, ctrlKey, metaKey } = event;
+    if (!(ctrlKey || metaKey)) return;
+    event.preventDefault();
     let zoom: number;
-    zoom = delta > 0 ? mapZoom - 0.05 : mapZoom + 0.05;
+    zoom = deltaY > 0 ? mapZoom - 0.05 : mapZoom + 0.05;
     if (zoom < 0.25) zoom = 0.25;
     if (zoom > 4) zoom = 4;
     mapZoom = zoom;
@@ -104,14 +89,10 @@
 </header>
 
 <!-- svelte-ignore a11y_click_events_have_key_events a11y_no_noninteractive_element_interactions -->
-<main
-  bind:this={mapContainer}
-  on:click={resetMapPosition}
-  on:wheel={handleZoomWheel}
->
+<main bind:this={mapContainer} on:wheel={handleZoomWheel}>
   <div
     class="map-wrapper blur"
-    style="zoom: {mapZoom}"
+    style="transform: scale({mapZoom})"
     bind:this={dragMap}
     on:pointerdown={handlePointerDown}
     on:pointerup={handlePointerUp}
@@ -131,7 +112,7 @@
       "
     >
       {#each Array(timeline) as plot, index}
-        <div class="plot" draggable="false">
+        <div class="plot">
           {#each characters as character}
             {#if index == character.timeline}
               <Character
@@ -167,7 +148,7 @@
     margin-inline: auto;
     border: 0.1rem solid rgba(51, 226, 230, 0.5);
     border-radius: 1rem;
-    overflow: hidden;
+    overflow: auto;
     background-image: url("/bg.avif"),
       radial-gradient(black, rgba(1, 0, 32, 0.5));
     background-color: black;
@@ -181,9 +162,10 @@
     position: relative;
     border-radius: 1rem;
     cursor: grab;
+    transform-origin: 0 0;
   }
 
-  nav {
+  /* nav {
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
@@ -194,7 +176,7 @@
   p {
     font-size: 1rem;
     line-height: 2rem;
-  }
+  } */
 
   .map {
     position: absolute;

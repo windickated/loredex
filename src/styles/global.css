@@ -150,9 +150,10 @@ html {
   font-size: 1em;
   word-spacing: 0.2em;
   line-height: 1.5;
+  overflow: hidden;
 }
 
-html::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 0px;
   height: 0px;
 }

@@ -148,8 +148,6 @@
   p {
     max-width: 100%;
     text-align: center;
-    font-size: 1rem;
-    line-height: 1.5rem;
     padding-top: 0.25rem;
   }
 
@@ -177,5 +175,11 @@
     width: auto;
     transition: all 0.3s ease-in-out;
     opacity: 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .character-shadow {
+      display: none;
+    }
   }
 </style>

@@ -139,6 +139,10 @@
 
 
 /* General */
+* {
+  font-size: inherit;
+  line-height: inherit;
+}
 
 html {
   background-image: url("/space.avif"),
@@ -147,8 +151,8 @@ html {
   box-sizing: border-box;
   font-family: "PT Serif Caption", serif;
   color: #dedede;
-  font-size: 1em;
-  word-spacing: 0.2em;
+  font-size: 1rem;
+  word-spacing: 0.2rem;
   line-height: 1.5;
   overflow: hidden;
 }
@@ -165,6 +169,7 @@ button {
   cursor: pointer;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
   align-items: center;
   gap: 0.5vw;
   padding: 0.5vw;
@@ -198,6 +203,11 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+  html {
+    font-size: 1em;
+    word-spacing: 0.2em;
+  }
+
   button {
     border-radius: 1em;
     padding: 0.5em;

@@ -180,7 +180,81 @@
   </div>
 </main>
 
-<style>
+<style lang="scss">
+  header {
+    width: 100vw;
+    margin-block: 3vh 2vh;
+    padding-inline: 2.5vw;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    animation: showScale 0.75s linear 0.75s forwards;
+
+    h1 {
+      font-size: 2vw;
+      line-height: 1.5;
+      color: rgba(51, 226, 230, 0.25);
+      text-shadow: 0 0 0.1vw rgba(51, 226, 230, 0.5);
+    }
+
+    .controllers {
+      display: flex;
+      flex-direction: row nowrap;
+      gap: 1vw;
+
+      img {
+        width: 1.5vw;
+        height: auto;
+      }
+
+      .search {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: 0.5vw;
+        padding: 0.25vw 0.5vw;
+        font-size: 1.5vw;
+        background-color: rgba(56, 117, 250, 0.5);
+        border: 0.1vw solid rgba(51, 226, 230, 0.5);
+        border-radius: 0.5vw;
+        transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+        input {
+          font-size: 1vw;
+          line-height: 1.5;
+          padding-inline: 0.5vw;
+          color: rgba(51, 226, 230, 0.9);
+          background-color: rgba(1, 0, 32, 0.4);
+          border: 0.1vw solid rgba(51, 226, 230, 0.5);
+          border-radius: 0.25vw;
+          outline: none;
+          width: 10vw;
+          transition: all 0.15s ease-in-out;
+        }
+
+        input::placeholder {
+          color: rgba(51, 226, 230, 0.5);
+        }
+
+        input:focus {
+          width: 20vw;
+        }
+      }
+
+      .zoom {
+        display: flex;
+        flex-direction: row nowrap;
+        gap: 0.5vw;
+
+        .zoom-info {
+          font-size: 1vw;
+        }
+      }
+    }
+  }
+
   main {
     width: 98vw;
     height: 85vh;
@@ -197,215 +271,145 @@
     background-size: cover;
     opacity: 0;
     animation: show 0.5s ease-in 1s forwards;
-  }
 
-  .map-wrapper {
-    position: relative;
-    border-radius: 1rem;
-    cursor: grab;
-    transform-origin: 0 0;
-  }
+    .map-wrapper {
+      position: relative;
+      border-radius: 1rem;
+      cursor: grab;
+      transform-origin: 0 0;
 
-  .map {
-    position: absolute;
-    top: 0;
-    display: grid;
-    align-items: center;
-    zoom: 0.5;
-  }
+      .map {
+        position: absolute;
+        top: 0;
+        display: grid;
+        align-items: center;
+        zoom: 0.5;
 
-  .plot {
-    height: 100%;
-    width: auto;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
-    border-left: 0.05rem dashed rgba(51, 226, 230, 0.1);
-    border-right: 0.05rem dashed rgba(51, 226, 230, 0.1);
-  }
+        .plot {
+          height: 100%;
+          width: auto;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: space-around;
+          align-items: center;
+          border-left: 0.05rem dashed rgba(51, 226, 230, 0.1);
+          border-right: 0.05rem dashed rgba(51, 226, 230, 0.1);
 
-  .date {
-    position: absolute;
-    top: 0;
-    text-align: center;
-    white-space: nowrap;
-    padding: 0.25rem;
-    font-size: 1rem;
-    line-height: 2rem;
-    color: rgba(51, 226, 230, 0.5);
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-  }
+          .date {
+            position: absolute;
+            top: 0;
+            text-align: center;
+            white-space: nowrap;
+            padding: 0.25rem;
+            color: rgba(51, 226, 230, 0.5);
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+          }
+        }
 
-  .connections {
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    width: 100rem;
-    background-color: white;
-  }
-
-  header {
-    width: 100vw;
-    margin-block: 3vh 2vh;
-    padding-inline: 2.5vw;
-    display: flex;
-    flex-direction: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    opacity: 0;
-    animation: showScale 1s linear 0.5s forwards;
-  }
-
-  h1 {
-    font-size: 2vw;
-    line-height: 1.5;
-    color: rgba(51, 226, 230, 0.25);
-    text-shadow: 0 0 0.1vw rgba(51, 226, 230, 0.5);
-  }
-
-  .controllers {
-    display: flex;
-    flex-direction: row nowrap;
-    gap: 1vw;
-  }
-
-  img {
-    width: 1.5vw;
-    height: auto;
-  }
-
-  .zoom {
-    display: flex;
-    flex-direction: row nowrap;
-    gap: 0.5vw;
-  }
-
-  .zoom-info {
-    font-size: 1vw;
-  }
-
-  .search {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    gap: 0.5vw;
-    padding: 0.25vw 0.5vw;
-    font-size: 1.5vw;
-    background-color: rgba(56, 117, 250, 0.5);
-    border: 0.1vw solid rgba(51, 226, 230, 0.5);
-    border-radius: 0.5vw;
-    transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
-  }
-
-  input {
-    font-size: 1vw;
-    line-height: 1.5;
-    padding-inline: 0.5vw;
-    color: rgba(51, 226, 230, 0.9);
-    background-color: rgba(1, 0, 32, 0.4);
-    border: 0.1vw solid rgba(51, 226, 230, 0.5);
-    border-radius: 0.25vw;
-    outline: none;
-    width: 10vw;
-    transition: all 0.15s ease-in-out;
-  }
-
-  input::placeholder {
-    color: rgba(51, 226, 230, 0.5);
-  }
-
-  input:focus {
-    width: 20vw;
+        .connections {
+          position: absolute;
+          top: 0;
+          left: 0;
+          pointer-events: none;
+          width: 100rem;
+          background-color: white;
+        }
+      }
+    }
   }
 
   @media only screen and (max-width: 600px) {
-    main {
-      width: 95vw;
-      height: 80vh;
-    }
-
-    .plot {
-      height: auto;
-      width: 100%;
-      flex-direction: row;
-      border-top: 0.05rem dashed rgba(51, 226, 230, 0.1);
-      border-bottom: 0.05rem dashed rgba(51, 226, 230, 0.1);
-    }
-
-    .date {
-      top: auto;
-      left: 0;
-      writing-mode: vertical-lr;
-      transform: rotate(180deg);
-    }
-
     header {
       margin-top: 3vh;
       padding-inline: 2.5vw;
       max-height: 4vh;
       opacity: 1;
       animation: none;
+
+      h1 {
+        position: fixed;
+        bottom: 2vh;
+        width: 95vw;
+        text-align: center;
+        font-size: 4vh;
+        line-height: 6vh;
+        opacity: 0.5;
+      }
+
+      .controllers {
+        width: 100vw;
+        justify-content: space-between;
+
+        img {
+          width: 3vh;
+          margin-inline: 0.5em;
+        }
+
+        .search {
+          padding: 0.25em 0.5em;
+          border-radius: 1em;
+          gap: 0;
+
+          input {
+            font-size: 2em;
+            line-height: 2em;
+            padding-inline: 0.5em;
+            border-radius: 0.5em;
+            width: 30vw;
+          }
+
+          input:focus {
+            width: 40vw;
+          }
+        }
+
+        .zoom {
+          gap: 0.5em;
+
+          .zoom-info {
+            font-size: 0.75em;
+          }
+        }
+      }
     }
 
-    h1 {
-      position: fixed;
-      bottom: 2vh;
+    main {
       width: 95vw;
-      text-align: center;
-      font-size: 4vh;
-      line-height: 6vh;
-      opacity: 0.5;
-    }
+      height: 80vh;
 
-    .controllers {
-      width: 100vw;
-      justify-content: space-between;
-    }
+      .map-wrapper {
+        .map {
+          .plot {
+            height: auto;
+            width: 100%;
+            flex-direction: row;
+            border-top: 0.05rem dashed rgba(51, 226, 230, 0.1);
+            border-bottom: 0.05rem dashed rgba(51, 226, 230, 0.1);
 
-    img {
-      width: 3vh;
-    }
-
-    .zoom {
-      gap: 0.5em;
-    }
-
-    .zoom-info {
-      font-size: 0.75em;
-      line-height: inherit;
-    }
-
-    .search {
-      padding: 0.25em 0.5em;
-      border-radius: 1em;
-      gap: 1em;
-    }
-
-    input {
-      font-size: 2em;
-      line-height: 2em;
-      padding-inline: 0.5em;
-      border-radius: 0.5em;
-      width: 30vw;
-    }
-
-    input:focus {
-      width: 40vw;
+            .date {
+              top: auto;
+              left: 0;
+              writing-mode: vertical-lr;
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
     }
   }
 
   @keyframes show {
     from {
       opacity: 0;
+      filter: grayscale(100%);
     }
     to {
       opacity: 1;
+      filter: grayscale(0);
     }
   }
 
@@ -413,9 +417,11 @@
     0% {
       opacity: 0;
       transform: scale(0);
+      filter: blur(1rem);
     }
     75% {
       transform: scale(1.05);
+      filter: blur(0);
     }
     100% {
       opacity: 1;

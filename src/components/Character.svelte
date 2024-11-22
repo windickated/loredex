@@ -1,5 +1,6 @@
 <script lang="ts">
   import setColor from "../utils/color.ts";
+  import { timeSectionWidth } from "../data/mapData.ts";
 
   export let character;
   const { name, appearance, lastSeen, dead = false, state, image } = character;
@@ -69,7 +70,11 @@
   id={name}
   class="character"
   draggable="false"
-  style="border-color: {color}; filter: drop-shadow(0 0 0.1rem {color});"
+  style="
+    border-color: {color};
+    filter: drop-shadow(0 0 0.1rem {color});
+    width: {timeSectionWidth * 0.75}rem;
+  "
   tabindex="0"
   role="button"
   aria-disabled="false"
@@ -91,6 +96,8 @@
       class="character-shadow {name}"
       style="
         width: {shadowLength}rem;
+        min-width: {timeSectionWidth * 0.75}rem;
+        min-height: {timeSectionWidth * 0.825}rem;
         background: linear-gradient(
           to right,
           {color},
@@ -109,7 +116,6 @@
   .character {
     z-index: 1;
     position: relative;
-    width: 7.5rem;
     height: auto;
     padding: 0.25rem;
     cursor: pointer;
@@ -156,8 +162,6 @@
     position: absolute;
     top: 0.5rem;
     left: 100%;
-    min-width: 7.5rem;
-    min-height: 8.25rem;
     height: inherit;
     pointer-events: none;
     transition: all 0.3s ease-in-out;

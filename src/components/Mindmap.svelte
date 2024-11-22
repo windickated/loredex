@@ -3,10 +3,12 @@
   import characters from "../data/characters.ts";
   import Character from "./Character.svelte";
   import Connection from "./Connection.svelte";
-
-  const mapWidth: number = 500;
-  const mapHeight: number = 75;
-  const timeline: number = 50;
+  import {
+    mapWidth,
+    mapHeight,
+    timeSections,
+    timeSectionWidth,
+  } from "../data/mapData.ts";
 
   let width: number;
   let mapContainer: HTMLElement | null;
@@ -148,10 +150,10 @@
         height: {width > 600 ? mapHeight : mapWidth}rem;
         grid-template-{width > 600
         ? 'columns'
-        : 'rows'}: repeat({timeline}, {mapWidth / timeline}rem);
+        : 'rows'}: repeat({timeSections}, {timeSectionWidth}rem);
       "
     >
-      {#each Array(timeline) as plot, index}
+      {#each Array(timeSections) as plot, index}
         <div class="plot">
           <p class="date {index}">{index} 000 A.A.</p>
           {#each characters as character}

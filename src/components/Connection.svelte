@@ -74,4 +74,10 @@
     opacity: 0.05;
     transition: all 0.3s ease-in-out;
   }
+
+  @media only screen and (max-width: 600px) {
+    div {
+      zoom: 1;
+    }
+  }
 </style>

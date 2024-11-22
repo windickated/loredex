@@ -333,13 +333,7 @@
       animation: none;
 
       h1 {
-        position: fixed;
-        bottom: 2vh;
-        width: 95vw;
-        text-align: center;
-        font-size: 4vh;
-        line-height: 6vh;
-        opacity: 0.5;
+        display: none;
       }
 
       .controllers {
@@ -381,12 +375,13 @@
 
     main {
       width: 95vw;
-      height: 80vh;
       opacity: 1;
       animation: none;
 
       .map-wrapper {
         .map {
+          zoom: 1;
+
           .plot {
             height: auto;
             width: 100%;
@@ -399,7 +394,6 @@
               left: 0;
               writing-mode: vertical-lr;
               transform: rotate(180deg);
-              font-size: 2em;
             }
           }
         }

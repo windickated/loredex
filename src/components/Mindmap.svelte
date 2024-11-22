@@ -382,6 +382,7 @@
     main {
       width: 95vw;
       height: 80vh;
+      animation: none;
 
       .map-wrapper {
         .map {

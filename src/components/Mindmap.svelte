@@ -8,6 +8,7 @@
   const mapHeight: number = 75;
   const timeline: number = 50;
 
+  let width: number;
   let mapContainer: HTMLElement | null;
   let dragMap: HTMLDivElement | null;
   let mapZoom: number = 1;
@@ -127,6 +128,8 @@
   </section>
 </header>
 
+<svelte:window bind:innerWidth={width} />
+
 <!-- svelte-ignore a11y_click_events_have_key_events a11y_no_noninteractive_element_interactions -->
 <main bind:this={mapContainer} on:wheel={handleZoomWheel}>
   <div
@@ -141,9 +144,11 @@
     <section
       class="map"
       style="
-        width: {mapWidth}rem;
-        height: {mapHeight}rem;
-        grid-template-columns: repeat({timeline}, {mapWidth / timeline}rem);
+        width: {width > 600 ? mapWidth : mapHeight}rem;
+        height: {width > 600 ? mapHeight : mapWidth}rem;
+        grid-template-{width > 600
+        ? 'columns'
+        : 'rows'}: repeat({timeline}, {mapWidth / timeline}rem);
       "
     >
       {#each Array(timeline) as plot, index}
@@ -211,6 +216,7 @@
 
   .plot {
     height: 100%;
+    width: auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -322,6 +328,21 @@
     main {
       width: 95vw;
       height: 80vh;
+    }
+
+    .plot {
+      height: auto;
+      width: 100%;
+      flex-direction: row;
+      border-top: 0.05rem dashed rgba(51, 226, 230, 0.1);
+      border-bottom: 0.05rem dashed rgba(51, 226, 230, 0.1);
+    }
+
+    .date {
+      top: auto;
+      left: 0;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
     }
 
     header {

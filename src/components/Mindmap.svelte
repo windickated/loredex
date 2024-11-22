@@ -70,7 +70,7 @@
   };
 
   function setZoom(zoom: number): number {
-    return zoom < 0.25 ? 0.25 : zoom > 4 ? 4 : zoom;
+    return zoom < 0.1 ? 0.1 : zoom > 2 ? 2 : zoom;
   }
 
   const handleSearch = () => {
@@ -285,7 +285,6 @@
         top: 0;
         display: grid;
         align-items: center;
-        zoom: 0.5;
 
         .plot {
           height: 100%;
@@ -380,8 +379,6 @@
 
       .map-wrapper {
         .map {
-          zoom: 1;
-
           .plot {
             height: auto;
             width: 100%;

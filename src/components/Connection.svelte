@@ -70,14 +70,7 @@
   div {
     position: absolute;
     height: 0.15rem;
-    zoom: 2;
     opacity: 0.05;
     transition: all 0.3s ease-in-out;
-  }
-
-  @media only screen and (max-width: 600px) {
-    div {
-      zoom: 1;
-    }
   }
 </style>

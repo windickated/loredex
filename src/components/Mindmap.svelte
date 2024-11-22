@@ -17,7 +17,7 @@
   let startY: number = 0;
   let isDragging: boolean = false;
   let searchField: string;
-  let touchscreenDevice: boolean;
+  let touchscreenDevice: boolean = false;
 
   onMount(() => {
     if ("ontouchstart" in document.documentElement) {
@@ -144,7 +144,6 @@
         width: {mapWidth}rem;
         height: {mapHeight}rem;
         grid-template-columns: repeat({timeline}, {mapWidth / timeline}rem);
-        {touchscreenDevice ? 'zoom: 1;' : ''}
       "
     >
       {#each Array(timeline) as plot, index}
@@ -152,24 +151,26 @@
           <p class="date {index}">{index} 000 A.A.</p>
           {#each characters as character}
             {#if index == character.appearance}
-              <Character {character} />
+              <Character {character} {touchscreenDevice} />
             {/if}
           {/each}
         </div>
       {/each}
-      <section class="connections">
-        {#each characters as character}
-          {#if character.connections}
-            {#each character.connections as connection}
-              <Connection
-                name1={character.name}
-                name2={connection}
-                state={character.state}
-              />
-            {/each}
-          {/if}
-        {/each}
-      </section>
+      {#if !touchscreenDevice}
+        <section class="connections">
+          {#each characters as character}
+            {#if character.connections}
+              {#each character.connections as connection}
+                <Connection
+                  name1={character.name}
+                  name2={connection}
+                  state={character.state}
+                />
+              {/each}
+            {/if}
+          {/each}
+        </section>
+      {/if}
     </section>
   </div>
 </main>
@@ -321,10 +322,6 @@
     main {
       width: 95vw;
       height: 80vh;
-    }
-
-    .map {
-      zoom: 1;
     }
 
     header {

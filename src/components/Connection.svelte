@@ -7,7 +7,6 @@
   export let state: string;
 
   const color: string = setColor(state);
-  let touchscreenDevice: boolean;
 
   let character1: HTMLElement | null = null;
   let character2: HTMLElement | null = null;
@@ -15,9 +14,6 @@
     character1 = document.getElementById(name1) as HTMLElement;
     character2 = document.getElementById(name2) as HTMLElement;
     connect(character1, character2);
-    if ("ontouchstart" in document.documentElement) {
-      touchscreenDevice = true;
-    }
   });
 
   let cx = 0;
@@ -66,7 +62,6 @@
     -o-transform:rotate({angle}deg);
     -ms-transform:rotate({angle}deg);
     transform:rotate({angle}deg);
-    {touchscreenDevice ? 'zoom: 1;' : ''}
   "
   draggable="false"
 ></div>
@@ -78,11 +73,5 @@
     zoom: 2;
     opacity: 0.05;
     transition: all 0.3s ease-in-out;
-  }
-
-  @media only screen and (max-width: 600px) {
-    div {
-      zoom: 1;
-    }
   }
 </style>

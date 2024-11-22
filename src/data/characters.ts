@@ -1,7 +1,8 @@
 interface Character {
   name: string
   appearance: number
-  death?: number
+  lastSeen?: number
+  dead?: boolean
   state: "good" | "evil" | "neutral"
   connections?: string[]
   image: string
@@ -21,7 +22,7 @@ const characters: Character[] = [
   {
     name: 'Architect',
     appearance: 0,
-    death: 40,
+    lastSeen: 40,
     state: "evil",
     connections: ['Collector', 'CoNexus'],
     image: '/blank.avif'
@@ -29,7 +30,7 @@ const characters: Character[] = [
   {
     name: 'CoNexus',
     appearance: 2,
-    death: 34,
+    lastSeen: 34,
     state: "evil",
     connections: ['Architect', 'Collector', 'Warden'],
     image: '/blank.avif'
@@ -37,7 +38,8 @@ const characters: Character[] = [
   {
     name: 'Collector',
     appearance: 5,
-    death: 27,
+    lastSeen: 27,
+    dead: true,
     state: "evil",
     connections: ['Architect', 'CoNexus'],
     image: '/blank.avif'
@@ -45,7 +47,8 @@ const characters: Character[] = [
   {
     name: 'Warden',
     appearance: 5,
-    death: 15,
+    lastSeen: 15,
+    dead: true,
     state: "evil",
     connections: ['CoNexus'],
     image: '/blank.avif'
@@ -53,7 +56,7 @@ const characters: Character[] = [
   {
     name: 'Meme',
     appearance: 8,
-    death: 16,
+    lastSeen: 16,
     state: "evil",
     connections: ['Politician', 'Watcher'],
     image: '/blank.avif'
@@ -61,7 +64,7 @@ const characters: Character[] = [
   {
     name: 'Warlord',
     appearance: 14,
-    death: 21,
+    lastSeen: 21,
     state: "evil",
     connections: ['Vortex'],
     image: '/blank.avif'
@@ -69,7 +72,7 @@ const characters: Character[] = [
   {
     name: 'Politician',
     appearance: 14,
-    death: 15,
+    lastSeen: 15,
     state: "evil",
     connections: ['Meme'],
     image: '/blank.avif'
@@ -91,7 +94,7 @@ const characters: Character[] = [
   {
     name: 'Game Master',
     appearance: 18,
-    death: 20,
+    lastSeen: 20,
     state: "evil",
     connections: ['Vortex', 'Watcher'],
     image: '/blank.avif'
@@ -99,14 +102,15 @@ const characters: Character[] = [
   {
     name: 'Necromancer',
     appearance: 23,
-    death: 29,
+    lastSeen: 29,
+    dead: true,
     state: "evil",
     image: '/blank.avif'
   },
   {
     name: 'Human',
     appearance: 25,
-    death: 27,
+    lastSeen: 27,
     state: "evil",
     connections: ['The Nomad'],
     image: '/blank.avif'
@@ -114,6 +118,7 @@ const characters: Character[] = [
   {
     name: 'Kael',
     appearance: 31,
+    dead: true,
     state: "good",
     connections: ['Iron Lion'],
     image: '/blank.avif'
@@ -121,6 +126,7 @@ const characters: Character[] = [
   {
     name: 'Agent Zero',
     appearance: 33,
+    dead: true,
     state: "good",
     connections: ['The Oracle', 'The Engineer', 'Iron Lion'],
     image: '/blank.avif'
@@ -128,7 +134,8 @@ const characters: Character[] = [
   {
     name: 'Iron Lion',
     appearance: 33,
-    death: 34,
+    lastSeen: 34,
+    dead: true,
     state: "good",
     connections: ['Kael', 'Agent Zero', 'The Oracle', 'The Engineer'],
     image: '/blank.avif'
@@ -143,7 +150,7 @@ const characters: Character[] = [
   {
     name: 'The Engineer',
     appearance: 37,
-    death: 45,
+    lastSeen: 45,
     state: "good",
     connections: ['Agent Zero', 'Iron Lion'],
     image: '/blank.avif'
@@ -172,7 +179,7 @@ const characters: Character[] = [
   {
     name: 'Captain Arion',
     appearance: 45,
-    death: 48,
+    lastSeen: 48,
     state: "neutral",
     connections: ['The Eyes of the Watcher', 'The Council of Harmony'],
     image: '/blank.avif'
@@ -180,7 +187,7 @@ const characters: Character[] = [
   {
     name: 'Ambassador Veron',
     appearance: 45,
-    death: 46,
+    lastSeen: 46,
     state: "neutral",
     connections: ['The Hierophant'],
     image: '/blank.avif'

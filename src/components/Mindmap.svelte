@@ -382,6 +382,7 @@
     main {
       width: 95vw;
       height: 80vh;
+      opacity: 1;
       animation: none;
 
       .map-wrapper {
@@ -398,6 +399,7 @@
               left: 0;
               writing-mode: vertical-lr;
               transform: rotate(180deg);
+              font-size: 2em;
             }
           }
         }

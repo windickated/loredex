@@ -185,5 +185,9 @@
     .character-shadow {
       display: none;
     }
+
+    p {
+      font-size: 2em;
+    }
   }
 </style>

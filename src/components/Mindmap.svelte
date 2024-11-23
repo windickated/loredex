@@ -3,6 +3,7 @@
   import characters from "../data/characters.ts";
   import Character from "./Character.svelte";
   import Connection from "./Connection.svelte";
+  import Modal from "./Modal.svelte";
   import {
     mapWidth,
     mapHeight,
@@ -181,6 +182,8 @@
     </section>
   </div>
 </main>
+
+<Modal />
 
 <style lang="scss">
   header {
@@ -374,6 +377,7 @@
 
     main {
       width: 95vw;
+      height: 80vh;
       opacity: 1;
       animation: none;
 

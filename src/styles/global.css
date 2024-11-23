@@ -202,6 +202,26 @@ a {
   opacity: 0.25;
 }
 
+strong, b, h2 {
+  color: rgba(51, 226, 230, 0.9);
+  text-shadow: 0 0 0.1rem rgba(51, 226, 230, 0.5);
+}
+
+i {
+  font-style: italic;
+}
+
+hr {
+  border: 0.05rem solid rgba(51, 226, 230, 0.5);
+  margin-block: 1vw;
+}
+
+h2 {
+  font-size: 1.5vw;
+  line-height: 1.5vw;
+  margin-block: 1.5vw;
+}
+
 @media only screen and (max-width: 600px) {
   html {
     font-size: 1em;

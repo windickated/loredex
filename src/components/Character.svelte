@@ -1,6 +1,11 @@
 <script lang="ts">
   import setColor from "../utils/color.ts";
   import { timeSectionWidth } from "../data/mapData.ts";
+  import {
+    showModal,
+    selectedCharacter,
+    characterColor,
+  } from "../stores/modal.ts";
 
   export let character;
   const { name, appearance, lastSeen, dead = false, state, image } = character;
@@ -64,6 +69,18 @@
     if (characterShadow) characterShadow.style.opacity = "0.25";
     if (dead) deadMark!.style.opacity = "0.25";
   }
+
+  const openCharacterWindow = (event: PointerEvent | KeyboardEvent) => {
+    if (
+      (event.type === "keydown" && event.key === "Enter") ||
+      event.type === "click"
+    ) {
+      $showModal = true;
+      $selectedCharacter = character;
+      $characterColor = color;
+      console.log($selectedCharacter);
+    }
+  };
 </script>
 
 <section
@@ -79,6 +96,8 @@
   role="button"
   aria-disabled="false"
   bind:this={characterTile}
+  on:click={openCharacterWindow}
+  on:keydown={openCharacterWindow}
   on:focus={showActiveConnections}
   on:pointerover={showActiveConnections}
   on:pointerleave={hideConnections}

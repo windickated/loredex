@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import characters from "../data/characters.ts";
+  import timeline from "../data/timeline.ts";
   import Character from "./Character.svelte";
   import Connection from "./Connection.svelte";
   import Modal from "./Modal.svelte";
@@ -154,11 +155,19 @@
         : 'rows'}: repeat({timeSections}, {timeSectionWidth}rem);
       "
     >
-      {#each Array(timeSections) as plot, index}
+      {#each timeline as { date, note, action }}
         <div class="plot">
-          <p class="date {index}">{index} 000 A.A.</p>
+          <div class="date {date[0]} {date[1]}">
+            <p>{date[0]} A.A.</p>
+            {#if note}
+              <p class="note">{note}</p>
+            {/if}
+            {#if action}
+              <p class="action">{action}</p>
+            {/if}
+          </div>
           {#each characters as character}
-            {#if index == character.appearance}
+            {#if date[0] <= character.appearance && date[1] >= character.appearance}
               <Character {character} {touchscreenDevice} />
             {/if}
           {/each}
@@ -300,6 +309,7 @@
           border-right: 0.05rem dashed rgba(51, 226, 230, 0.1);
 
           .date {
+            font-size: 1.25rem;
             position: absolute;
             top: 0;
             text-align: center;
@@ -311,6 +321,15 @@
             -moz-user-select: none;
             -o-user-select: none;
             user-select: none;
+          }
+
+          .note {
+            margin-top: 1rem;
+          }
+
+          .action {
+            margin-top: 1rem;
+            white-space: wrap;
           }
         }
 

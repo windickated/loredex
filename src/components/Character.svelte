@@ -11,7 +11,7 @@
   const { name, appearance, lastSeen, dead = false, state, image } = character;
   export let touchscreenDevice: boolean = false;
 
-  const shadowLength = (lastSeen - appearance) * 10;
+  let shadowLength: number = 0;
   let characterTile: HTMLElement | null;
   let characterShadow: HTMLDivElement | null;
   let deadMark: HTMLImageElement | null;
@@ -51,8 +51,8 @@
     if (lastSeen) {
       const activeDates = allDates.filter((date) => {
         if (
-          Number(date.classList[1]) < appearance ||
-          Number(date.classList[1]) > lastSeen
+          appearance > Number(date.classList[2]) ||
+          lastSeen < Number(date.classList[1])
         )
           return null;
         return date;
@@ -60,9 +60,10 @@
       activeDates.map((date) => {
         date.style.textShadow = "0 0 0.1rem rgb(51, 226, 230)";
       });
+      shadowLength = activeDates.length * 10 - 10;
     } else {
       const activeDate = allDates.find(
-        (date) => Number(date.classList[1]) == appearance
+        (date) => appearance < Number(date.classList[2])
       );
       activeDate!.style.textShadow = "0 0 0.1rem rgb(51, 226, 230)";
     }
@@ -70,7 +71,7 @@
     if (dead) deadMark!.style.opacity = "0.25";
   }
 
-  const openCharacterWindow = (event: PointerEvent | KeyboardEvent) => {
+  const openCharacterWindow = (event: any) => {
     if (
       (event.type === "keydown" && event.key === "Enter") ||
       event.type === "click"
@@ -115,7 +116,6 @@
       class="character-shadow {name}"
       style="
         width: {shadowLength}rem;
-        min-width: {timeSectionWidth * 0.75}rem;
         min-height: {timeSectionWidth * 0.825}rem;
         background: linear-gradient(
           to right,

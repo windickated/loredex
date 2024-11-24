@@ -155,15 +155,19 @@
         : 'rows'}: repeat({timeSections}, {timeSectionWidth}rem);
       "
     >
-      {#each timeline as { date, note, action }}
+      {#each timeline as { date, note, action, emptySection }}
         <div class="plot">
           <div class="date {date[0]} {date[1]}">
-            <p>{date[0]} A.A.</p>
-            {#if note}
-              <p class="note">{note}</p>
-            {/if}
-            {#if action}
-              <p class="action">{action}</p>
+            {#if !emptySection}
+              <p>{date[0]} A.A.</p>
+              {#if note}
+                <p class="note">{note}</p>
+              {/if}
+              {#if action}
+                <p class="action">{action}</p>
+              {/if}
+            {:else}
+              <div class="date">...</div>
             {/if}
           </div>
           {#each characters as character}
@@ -309,6 +313,7 @@
           border-right: 0.05rem dashed rgba(51, 226, 230, 0.1);
 
           .date {
+            width: 10rem;
             font-size: 1.25rem;
             position: absolute;
             top: 0;
@@ -323,10 +328,7 @@
             user-select: none;
           }
 
-          .note {
-            margin-top: 1rem;
-          }
-
+          .note,
           .action {
             margin-top: 1rem;
             white-space: wrap;

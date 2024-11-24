@@ -5,9 +5,9 @@ const characters: Character[] = [
   {
     name: 'The Architect',
     appearance: 1,
-    lastSeen: 50000,
+    lastSeen: 150000,
     state: "evil",
-    connections: ['The CoNexus', 'The Meme', 'The Watcher', 'The Warlord', 'The Warden', 'The Politician', 'The Vortex', 'The Game Master', 'The Necromancer', 'The Human', 'The Collector'],
+    connections: ['The CoNexus', 'The Meme', 'The Watcher', 'The Warlord', 'The Warden', 'The Politician', 'The Vortex', 'The Game Master', 'The Necromancer', 'The Human', 'The Collector', 'Senator Elara Voss'],
     image: '/blank.avif',
     affiliation: 'Archons, AI Empire',
     status: 'Active',
@@ -45,7 +45,7 @@ const characters: Character[] = [
   {
     name: 'The Watcher',
     appearance: 250,
-    lastSeen: 50000,
+    lastSeen: 150000,
     state: "evil",
     connections: ['The Architect', 'The Engineer', 'Agent Zero'],
     image: '/blank.avif',
@@ -66,7 +66,7 @@ const characters: Character[] = [
   {
     name: 'The Meme',
     appearance: 298,
-    lastSeen: 550,
+    lastSeen: 17033,
     dead: true,
     state: "evil",
     connections: ['The Architect', 'The Warden', 'The Oracle'],
@@ -90,7 +90,7 @@ const characters: Character[] = [
   {
     name: 'The Warlord',
     appearance: 317,
-    lastSeen: 550,
+    lastSeen: 320,
     state: "evil",
     connections: ['The Architect', 'The Engineer'],
     image: '/blank.avif',
@@ -109,7 +109,6 @@ const characters: Character[] = [
   {
     name: 'The Politician',
     appearance: 419,
-    lastSeen: 550,
     dead: true,
     state: "evil",
     connections: ['The Architect', 'Iron Lion'],
@@ -136,7 +135,7 @@ const characters: Character[] = [
   {
     name: 'The Warden',
     appearance: 487,
-    lastSeen: 550,
+    lastSeen: 17033,
     dead: true,
     state: "evil",
     connections: ['The Architect', 'The Collector', 'The Meme', 'Kael', 'The Oracle'],
@@ -189,7 +188,7 @@ const characters: Character[] = [
   {
     name: 'The Game Master',
     appearance: 550,
-    lastSeen: 650,
+    lastSeen: 620,
     dead: true,
     state: "evil",
     connections: ['The Architect', 'Agent Zero'],
@@ -214,7 +213,7 @@ const characters: Character[] = [
   {
     name: 'The Necromancer',
     appearance: 600,
-    lastSeen: 650,
+    lastSeen: 117046,
     dead: true,
     state: "evil",
     connections: ['The Architect'],
@@ -243,7 +242,6 @@ const characters: Character[] = [
   {
     name: 'The Human',
     appearance: 651,
-    lastSeen: 750,
     state: "evil",
     connections: ['The Architect'],
     image: '/blank.avif',
@@ -285,7 +283,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Collector',
-    appearance: 16,
+    appearance: 16800,
     state: "evil",
     connections: ['The Architect', 'The Warden', 'The Oracle'],
     image: '/blank.avif',
@@ -307,15 +305,28 @@ const characters: Character[] = [
   },
   // AI EMPIRE
   {
+    name: 'Dr. Lyra Vox.',
+    appearance: 487,
+    state: "evil",
+    image: '/blank.avif'
+  },
+  {
     name: 'The Advocate',
-    appearance: 25000,
+    appearance: 16500,
+    state: "evil",
+    image: '/blank.avif'
+  },
+  {
+    name: 'Master of R’lyeh',
+    appearance: 16705,
     state: "evil",
     image: '/blank.avif'
   },
   {
     name: 'Senator Elara Voss',
-    appearance: 25000,
+    appearance: 16850,
     state: "evil",
+    connections: ['The Architect'],
     image: '/blank.avif'
   },
   {
@@ -370,7 +381,7 @@ const characters: Character[] = [
   },
   {
     name: 'Iron Lion',
-    appearance: 33000,
+    appearance: 17001,
     dead: true,
     state: "good",
     connections: ['The Politician'],
@@ -378,7 +389,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Oracle',
-    appearance: 36000,
+    appearance: 16900,
     state: "good",
     connections: ['The Collector', 'The Warden', 'The Meme'],
     image: '/blank.avif'
@@ -386,6 +397,13 @@ const characters: Character[] = [
   {
     name: 'The Eyes of the Watcher',
     appearance: 38000,
+    state: "good",
+    connections: [],
+    image: '/blank.avif'
+  },
+  {
+    name: 'The Red Death',
+    appearance: 117046,
     state: "good",
     connections: [],
     image: '/blank.avif'

@@ -167,7 +167,7 @@
                 <p class="action">{action}</p>
               {/if}
             {:else}
-              <div class="date">...</div>
+              <p>...</p>
             {/if}
           </div>
           {#each characters as character}

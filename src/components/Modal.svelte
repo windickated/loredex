@@ -13,7 +13,7 @@
   } else if (!$showModal) closeDialog();
 
   const closeDialog = () => {
-    $showModal = null;
+    $showModal = false;
     $selectedCharacter = null;
     $characterColor = "";
     dialog?.close();

@@ -46,7 +46,7 @@
     dt,
     dd,
     ol,
-    ul,
+    /* ul, */
     li,
     fieldset,
     form,
@@ -110,9 +110,9 @@
   line-height: 1;
 }
 
-:where(ol, ul) {
+/* :where(ol, ul) {
   list-style: none;
-}
+} */
 
 :where(blockquote, q) {
   quotes: none;

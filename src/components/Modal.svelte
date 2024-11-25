@@ -50,12 +50,16 @@
 
         <article>
           <div class="status">
-            <p>Status: <strong>{$selectedCharacter.status}</strong></p>
-            <p>
-              Affiliation: <strong>{$selectedCharacter.affiliation}</strong>
-            </p>
+            <span>
+              <p>Status:</p>
+              <strong>{@html $selectedCharacter.status}</strong>
+            </span>
+            <span>
+              <p>Affiliation:</p>
+              <strong>{$selectedCharacter.affiliation}</strong>
+            </span>
           </div>
-          <p>{$selectedCharacter.bio}</p>
+          <p>{@html $selectedCharacter.bio}</p>
         </article>
       </section>
 
@@ -178,8 +182,19 @@
             display: flex;
             flex-flow: column nowrap;
             gap: 1vw;
-            color: rgba(51, 226, 230, 0.75);
             font-size: 1.5vw;
+            color: rgba(51, 226, 230, 0.65);
+
+            span {
+              display: flex;
+              flex-flow: row nowrap;
+              align-items: center;
+              gap: 1vw;
+
+              strong {
+                color: rgba(51, 226, 230, 0.75);
+              }
+            }
           }
         }
       }

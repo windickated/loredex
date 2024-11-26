@@ -107,6 +107,8 @@
 
 <svelte:window bind:innerWidth={width} />
 
+<div class="logo">LOREDEX</div>
+
 <header>
   <h1>LOREDEX</h1>
   <section class="controllers">
@@ -207,6 +209,31 @@
 <Modal />
 
 <style lang="scss">
+  .logo {
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+    color: transparent;
+    background-image: linear-gradient(
+      to right,
+      rgba(51, 226, 230, 0.1),
+      rgba(51, 226, 230, 0.25),
+      rgb(51, 226, 230),
+      rgba(51, 226, 230, 0.25),
+      rgba(51, 226, 230, 0.1)
+    );
+    background-clip: text;
+    background-size: 500% auto;
+    opacity: 0;
+    filter: drop-shadow(0 0 0.5vw rgba(51, 226, 230, 0.5));
+    animation: logo 2s linear 0.3s forwards;
+  }
+
   header {
     width: 100vw;
     margin-block: 3vh 2vh;
@@ -216,7 +243,7 @@
     justify-content: space-between;
     align-items: center;
     opacity: 0;
-    animation: showScale 0.75s linear 1.25s forwards;
+    animation: showScale 0.7s linear 2.3s forwards;
 
     h1 {
       font-size: 2vw;
@@ -296,7 +323,7 @@
     background-position: center;
     background-size: cover;
     opacity: 0;
-    animation: show 0.5s ease-in 1.5s forwards;
+    animation: show 0.5s ease-in 2.5s forwards;
 
     .map-wrapper {
       position: relative;
@@ -459,6 +486,20 @@
     100% {
       opacity: 1;
       transform: scale(1);
+    }
+  }
+
+  @keyframes logo {
+    0% {
+      opacity: 0;
+      background-position: 100% 50%;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      background-position: 0 50%;
     }
   }
 </style>

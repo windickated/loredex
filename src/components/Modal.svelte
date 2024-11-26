@@ -63,12 +63,12 @@
         <article>
           <div class="status">
             <span>
-              <p>Status:</p>
-              <strong>{@html $selectedCharacter.status}</strong>
-            </span>
-            <span>
               <p>Affiliation:</p>
               <strong>{$selectedCharacter.affiliation}</strong>
+            </span>
+            <span>
+              <p>Status:</p>
+              <strong>{@html $selectedCharacter.status}</strong>
             </span>
           </div>
           <p>{@html $selectedCharacter.bio}</p>
@@ -100,6 +100,23 @@
           {@html $selectedCharacter.history}
           <hr />
         </article>
+      {/if}
+
+      {#if $selectedCharacter.connections}
+        <h2 class="section-title">Connected Characters:</h2>
+        <section class="connections">
+          {#each $selectedCharacter.connections as connection}
+            <div>
+              <img
+                src={getImage(connection)}
+                alt={connection}
+                width="1024"
+                height="1024"
+              />
+              <p>{connection}</p>
+            </div>
+          {/each}
+        </section>
       {/if}
     {:else if $showModal === "timeline"}
       <header>
@@ -143,8 +160,12 @@
         transition: all 0.3s ease-in-out;
       }
 
-      img:hover {
-        transform: scale(1.5);
+      img:active {
+        transform: scale(2) !important;
+      }
+
+      .section-title {
+        text-align: center;
       }
 
       .close-button {
@@ -184,17 +205,21 @@
         }
       }
 
-      .general-info {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-        gap: 2vw;
+      .general-info,
+      .connections {
         padding: 1vw;
         margin: 2vw 4vw;
         background-color: rgba(51, 226, 230, 0.1);
         border: 0.1vw solid rgba(51, 226, 230, 0.25);
         border-radius: 1vw;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+      }
+
+      .general-info {
+        justify-content: space-between;
+        gap: 2vw;
 
         .image-container {
           display: flex;
@@ -293,6 +318,12 @@
             border-radius: 7.5vw;
             margin-bottom: 0.5vw;
           }
+
+          img:hover {
+            cursor: pointer;
+            transform: scale(1.5);
+            filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
+          }
         }
 
         span {
@@ -304,6 +335,33 @@
         padding-inline: 1vw;
         color: rgba(51, 226, 230, 0.75);
         font-size: 1vw;
+      }
+
+      .connections {
+        margin-block: 0;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 1vw;
+
+        div {
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: center;
+          min-width: 15vw;
+
+          img {
+            width: 15vw;
+            height: inherit;
+            border: 0.1vw solid rgba(51, 226, 230, 0.5);
+            border-radius: 7.5vw;
+            margin-bottom: 0.5vw;
+          }
+
+          img:hover {
+            transform: scale(1.5);
+            filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
+          }
+        }
       }
     }
   }

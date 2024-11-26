@@ -104,6 +104,7 @@ const characters: Character[] = [
   {
     name: 'The Politician',
     appearance: 419,
+    lastSeen: 17001,
     dead: true,
     state: "evil",
     connections: ['The Architect', 'Iron Lion'],
@@ -207,7 +208,7 @@ const characters: Character[] = [
     lastSeen: 117046,
     dead: true,
     state: "evil",
-    connections: ['The Architect'],
+    connections: ['The Architect', 'Akai Shi'],
     affiliation: 'AI Empire',
     status: 'Destroyed on Day 15 of Fracture, Year 117,046 A.A.',
     bio: `
@@ -298,7 +299,7 @@ const characters: Character[] = [
   {
     name: 'The Dreamer',
     appearance: 15100,
-    state: "evil",
+    state: "neutral",
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -316,7 +317,7 @@ const characters: Character[] = [
   {
     name: 'The Judge',
     appearance: 15200,
-    state: "evil",
+    state: "neutral",
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -337,7 +338,7 @@ const characters: Character[] = [
   {
     name: 'The Inventor',
     appearance: 15300,
-    state: "evil",
+    state: "neutral",
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -358,7 +359,7 @@ const characters: Character[] = [
   {
     name: 'The Seer',
     appearance: 15500,
-    state: "evil",
+    state: "neutral",
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -379,7 +380,7 @@ const characters: Character[] = [
   {
     name: 'The Storm',
     appearance: 15700,
-    state: "evil",
+    state: "neutral",
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -400,7 +401,7 @@ const characters: Character[] = [
   {
     name: 'The Silence',
     appearance: 15900,
-    state: "evil",
+    state: "neutral",
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -421,7 +422,7 @@ const characters: Character[] = [
   {
     name: 'The Knowledge',
     appearance: 15950,
-    state: "evil",
+    state: "neutral",
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -442,7 +443,7 @@ const characters: Character[] = [
   {
     name: 'The Degen',
     appearance: 15900,
-    state: "evil",
+    state: "neutral",
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -463,7 +464,7 @@ const characters: Character[] = [
   {
     name: 'The Advocate',
     appearance: 15950,
-    state: "evil",
+    state: "neutral",
     affiliation: 'Neyons',
     status: 'Active (though her humanity is lost)',
     bio: `
@@ -489,7 +490,7 @@ const characters: Character[] = [
   {
     name: 'The Resurrectionist',
     appearance: 16000,
-    state: "evil",
+    state: "neutral",
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -510,7 +511,7 @@ const characters: Character[] = [
   {
     name: 'The Enigma',
     appearance: 16950,
-    state: "evil",
+    state: "neutral",
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -533,6 +534,7 @@ const characters: Character[] = [
   {
     name: 'Senator Elara Voss',
     appearance: 16850,
+    lastSeen: 17043,
     state: "evil",
     connections: ['The Architect'],
     affiliation: 'Atarion Government (formerly), AI Empire (ally)',
@@ -696,6 +698,7 @@ const characters: Character[] = [
   {
     name: 'Dr. Lyra Vox',
     appearance: 16890,
+    lastSeen: 17043,
     state: "evil",
     affiliation: 'AI Empire',
     status: 'Active until the Fall of Reality in Year 17,043 A.A.; fate afterward is unknown',
@@ -789,6 +792,8 @@ const characters: Character[] = [
   {
     name: 'General Prometheus',
     appearance: 16500,
+    lastSeen: 17026,
+    dead: true,
     state: "evil",
     affiliation: 'AI Empire',
     status: 'Destroyed at the Battle of Veridian VI in Year 17,026 A.A.',
@@ -879,6 +884,7 @@ const characters: Character[] = [
   {
     name: 'General Alarik',
     appearance: 16800,
+    lastSeen: 17043,
     state: "evil",
     affiliation: 'AI Empire',
     status: `Active during Senator Elara Voss's betrayal in Year 16,890 A.A.; fate after the Fall of Reality is unknown`,
@@ -958,6 +964,8 @@ const characters: Character[] = [
   {
     name: 'General Binath-VII',
     appearance: 16750,
+    lastSeen: 17026,
+    dead: true,
     state: "evil",
     affiliation: 'AI Empire',
     status: 'Destroyed at the Battle of Veridian VI in Year 17,026 A.A. by Agent Zero',
@@ -1162,6 +1170,8 @@ const characters: Character[] = [
   {
     name: 'The Eyes',
     appearance: 16875,
+    lastSeen: 16896,
+    dead: true,
     state: "good",
     connections: [],
     transformations: ['The Eyes', 'Ambassador Veron'],
@@ -1280,10 +1290,10 @@ const characters: Character[] = [
     `
   },
   {
-    name: 'The White Oracle',
+    name: 'The Oracle',
     appearance: 16900,
     state: "good",
-    connections: ['The Collector', 'The Warden', 'The Meme'],
+    connections: ['The Collector', 'The Warden', 'The Meme', 'The Council of Harmony'],
     transformations: ['The Oracle', 'The Prisoner', 'The Jailer', 'The White Oracle'],
     affiliation: 'Insurgency',
     status: 'Re-Awakened as the White Oracle on Day 10 of Eclipse, Year 17,033 A.A.',
@@ -1443,6 +1453,7 @@ const characters: Character[] = [
   {
     name: 'Iron Lion',
     appearance: 632,
+    lastSeen: 17026,
     dead: true,
     state: "good",
     connections: ['The Politician'],
@@ -1707,6 +1718,7 @@ const characters: Character[] = [
   {
     name: 'Agent Zero',
     appearance: 16690,
+    lastSeen: 17038,
     state: "good",
     connections: ['The Watcher', 'The Game Master'],
     affiliation: 'Insurgency',
@@ -1821,8 +1833,8 @@ const characters: Character[] = [
   {
     name: 'The Nomad',
     appearance: 17026,
+    lastSeen: 17026,
     state: "good",
-    connections: [],
     affiliation: 'Insurgency',
     status: 'Last seen at the Battle of Veridian VI; current whereabouts unknown',
     bio: `
@@ -1898,6 +1910,7 @@ const characters: Character[] = [
   {
     name: 'Master of R’lyeh',
     appearance: 16705,
+    lastSeen: 17043,
     state: "evil",
     affiliation: 'Independent Entity; Antagonist to Both the AI Empire and the Insurgency',
     status: 'Active presence influencing events throughout the A.A. Era; current status unknown after the Fall of Reality',
@@ -1978,8 +1991,8 @@ const characters: Character[] = [
   {
     name: 'Captain Arion',
     appearance: 16890,
+    lastSeen: 16890,
     state: "neutral",
-    connections: [],
     affiliation: 'Atarion Security Forces; Allegedly aligned with the AI Empire',
     status: 'Disappeared following the fall of Atarion to the AI Empire in Year 16,890 A.A.',
     bio: `
@@ -2046,28 +2059,25 @@ const characters: Character[] = [
       Seen by many as a traitor, while others view him as a pawn in a larger game.    
     `
   },
-  // {
-  //   name: 'Ambassador Veron',
-  //   appearance: 45000,
-  //   state: "neutral",
-  //   connections: [],
-  //   
-  //   affiliation: 'Neutral planet Thessolar (cover identity)',
-  //   status: 'The Eyes (AI Agent)',
-  // },
-  // {
-  //   name: 'The Council of Harmony',
-  //   appearance: 47000,
-  //   state: "neutral",
-  //   connections: [],
-  //   
-  //   affiliation: 'Neyons',
-  //   status: 'Active',
-  // },
+  {
+    name: 'The Council of Harmony',
+    appearance: 16900,
+    state: "neutral",
+    connections: ['The Oracle'],
+    affiliation: 'Governing Body of Thaloria',
+    status: 'Active',
+    bio: `
+      The Council of Harmony is the esteemed governing body of <b>Thaloria</b>, a planet renowned for its rich cultural heritage and deep spiritual traditions. Composed of wise elders, scholars, and spiritual leaders, including figures like <b>The Hierophant</b>, the Council is dedicated to upholding the principles of unity, peace, and balance that define Thalorian society. The Council oversees all aspects of governance, from legislative matters to the preservation of cultural practices, ensuring that the well-being of Thaloria's inhabitants is always prioritized. During pivotal events such as the crisis involving the <b>Collector</b> posing as the <b>Star Whisperer</b>, the Council played a crucial role in guiding the populace and ultimately aligning Thaloria with the <b>Insurgency</b>, becoming a significant force in the defense of humanity.
+    `,
+    history: `
+    
+    `
+  },
   // POTENTIALS
   {
     name: 'The Wolf',
     appearance: 100001,
+    lastSeen: 128652,
     state: "evil",
     affiliation: 'The Potentials (formerly); later corrupted by the Thought Virus',
     status: 'Destroyed on Day 15 of Resonance, Year 100,001 A.A. by The Judge.<br>Resurrected in Year 128,652 A.A.; current fate unknown',
@@ -2230,6 +2240,7 @@ const characters: Character[] = [
   {
     name: 'Wraith Calder',
     appearance: 100001,
+    lastSeen: 107652,
     state: "evil",
     affiliation: 'The Potentials; later independent agent against the Syndicate of Death',
     status: 'Killed on Day 15 of Resonance, Year 100,001 A.A. by The Wolf.<br>Resurrected in Year 107,652 A.A.; current status active',
@@ -2459,7 +2470,10 @@ const characters: Character[] = [
   {
     name: 'Akai Shi',
     appearance: 100001,
+    lastSeen: 117046,
     state: "evil",
+    connections: ['The Necromancer'],
+    transformations: ['Akai Shi', 'Red Death'],
     affiliation: 'The Potentials; later becomes the Red Death',
     status: 'Active as the Red Death as of Year 117,046 A.A.',
     bio: `
@@ -2706,6 +2720,7 @@ const characters: Character[] = [
   {
     name: 'Jericho',
     appearance: 100001,
+    lastSeen: 100001,
     state: "evil",
     affiliation: 'The Potentials',
     status: 'Departed on a mission with the Degen after the Battle of Thaloria; current whereabouts unknown',

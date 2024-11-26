@@ -69,7 +69,7 @@
       activeDate!.style.textShadow = "0 0 0.1rem rgb(51, 226, 230)";
     }
     if (characterShadow) characterShadow.style.opacity = "0.25";
-    if (dead) deadMark!.style.opacity = "0.25";
+    if (dead) deadMark!.style.opacity = "0.9";
   }
 
   const openCharacterWindow = (event: any) => {
@@ -201,6 +201,8 @@
     height: 6.5rem;
     width: auto;
     transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+    filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.25));
     opacity: 0;
   }
 

@@ -497,9 +497,12 @@
     50% {
       opacity: 1;
     }
-    100% {
+    99% {
       opacity: 0;
       background-position: 0 50%;
+    }
+    100% {
+      display: none;
     }
   }
 </style>

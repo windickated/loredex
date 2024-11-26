@@ -1,4 +1,4 @@
-import { type Character } from "../lib/character";
+import { type Character } from "../lib/types.ts";
 
 const characters: Character[] = [
   // ARCHONS

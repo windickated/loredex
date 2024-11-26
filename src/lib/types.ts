@@ -16,3 +16,10 @@ interface Story {
   link: string
   description: string
 }
+
+export interface TimeSection {
+  date: [number, number]
+  note?: string
+  action?: string
+  emptySection?: boolean
+}

@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store';
-import { type Character } from '../lib/character';
+import { type Character } from '../lib/types';
 
 type Modal = 'character' | 'timeline' | null;
 

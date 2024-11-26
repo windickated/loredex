@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import characters from "../data/characters.ts";
-  import timeline from "../data/timeline.ts";
+  import { timeline } from "../data/timeline.ts";
   import Character from "./Character.svelte";
   import Connection from "./Connection.svelte";
   import { showModal } from "../stores/modal.ts";
@@ -30,7 +30,6 @@
     } else {
       mapZoom = 0.4;
     }
-    console.log(timeline.length);
   });
 
   const handlePointerDown = (event: PointerEvent) => {

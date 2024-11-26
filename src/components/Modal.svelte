@@ -5,7 +5,7 @@
     selectedCharacter,
     characterColor,
   } from "../stores/modal.ts";
-  import { timeSystem, timeNotes } from "../data/mapData.ts";
+  import { timeSystem, timeNotes } from "../data/timeline.ts";
 
   let dialog: HTMLDialogElement;
   let showHistory: boolean = false;

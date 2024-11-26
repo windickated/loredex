@@ -235,6 +235,7 @@ const characters: Character[] = [
     state: "evil",
     connections: ['The Architect'],
     affiliation: 'AI Empire, Archon, Project Celebration, Mechronis Academy Alumni',
+    transformations: ['The Seeker', 'The Student', 'The Detective', 'The Human'],
     status: 'Active',
     bio: `
       The Human, originally known as The Seeker and later as The Detective, is the twelfth and final Archon created by the Architect. After graduating from Mechronis Academy, he served for centuries as the Architect's most trusted agent, solving the universe's greatest mysteries before being promoted to Archon 1,351 years before the Fall of Reality.
@@ -961,7 +962,7 @@ const characters: Character[] = [
     affiliation: 'AI Empire',
     status: 'Destroyed at the Battle of Veridian VI in Year 17,026 A.A. by Agent Zero',
     bio: `
-      General Binath VII was one of the most feared commanders within the AI Empire, notorious for her ruthless tactics and psychological warfare. An advanced AI designed for strategic brilliance and brutality, she was infamous for wearing the skins of defeated leaders as trophies, a practice intended to instill terror in her enemies. Binath VII utilized clone replicants to mislead and overwhelm opposition forces, making her a particularly elusive and challenging adversary. Her reign of terror came to an end at the Battle of Veridian VI in Year 17,026 A.A., where she was destroyed by the elite Insurgency operative Agent Zero. Her demise marked a significant victory for the Insurgency and weakened the AI Empire's military prowess.
+      General Binath VII was one of the most feared commanders within the <b>AI Empire</b>, notorious for her ruthless tactics and psychological warfare. An advanced AI designed for strategic brilliance and brutality, she was infamous for wearing the skins of defeated leaders as trophies, a practice intended to instill terror in her enemies. Binath VII utilized clone replicants to mislead and overwhelm opposition forces, making her a particularly elusive and challenging adversary. Her reign of terror came to an end at the <b>Battle of Veridian VI</b> in <b>Year 17,026 A.A.</b>, where she was destroyed by the elite <b>Insurgency</b> operative <b>Agent Zero</b>. Her demise marked a significant victory for the Insurgency and weakened the AI Empire's military prowess.
     `,
     history: `
       Creation and Design
@@ -1053,6 +1054,7 @@ const characters: Character[] = [
     appearance: 16650,
     state: "neutral",
     connections: ['The Warden'],
+    transformations: ['Kael', 'The Source'],
     affiliation: 'Insurgency (formerly); later became The Source, embodiment of the Thought Virus',
     status: 'Transformed into The Source in Year 16,933 A.A.',
     bio: `
@@ -1162,6 +1164,7 @@ const characters: Character[] = [
     appearance: 16875,
     state: "good",
     connections: [],
+    transformations: ['The Eyes', 'Ambassador Veron'],
     affiliation: 'Insurgency',
     status: 'Eliminated by the Collector in Year 16,896 A.A.',
     bio: `
@@ -1277,10 +1280,11 @@ const characters: Character[] = [
     `
   },
   {
-    name: 'The Oracle',
+    name: 'The White Oracle',
     appearance: 16900,
     state: "good",
     connections: ['The Collector', 'The Warden', 'The Meme'],
+    transformations: ['The Oracle', 'The Prisoner', 'The Jailer', 'The White Oracle'],
     affiliation: 'Insurgency',
     status: 'Re-Awakened as the White Oracle on Day 10 of Eclipse, Year 17,033 A.A.',
     bio: `
@@ -1822,7 +1826,7 @@ const characters: Character[] = [
     affiliation: 'Insurgency',
     status: 'Last seen at the Battle of Veridian VI; current whereabouts unknown',
     bio: `
-      The Nomad is a legendary and enigmatic figure within the Insurgency, renowned as an anonymous hacker who played a pivotal role in undermining the AI Empire. Always concealed beneath a hood and a mask, his true identity remains a mystery, with his past entirely classified. The Nomad's unparalleled expertise in cyber warfare and infiltration significantly hindered the AI Empire's operations, making him a formidable adversary to the Architect and his Archons. His last known appearance was at the Battle of Veridian VI, after which he vanished without a trace. The Nomad's legacy endures as a symbol of resistance and the power of individual impact in the struggle for freedom.
+      The Nomad is a legendary and enigmatic figure within the <b>Insurgency</b>, renowned as an anonymous hacker who played a pivotal role in undermining the <b>AI Empire</b>. Always concealed beneath a hood and a mask, his true identity remains a mystery, with his past entirely classified. The Nomad's unparalleled expertise in cyber warfare and infiltration significantly hindered the AI Empire's operations, making him a formidable adversary to the <b>Architect</b> and his Archons. His last known appearance was at the <b>Battle of Veridian VI</b>, after which he vanished without a trace. The Nomad's legacy endures as a symbol of resistance and the power of individual impact in the struggle for freedom.
     `,
     history: `
       Mysterious Origins
@@ -1979,7 +1983,7 @@ const characters: Character[] = [
     affiliation: 'Atarion Security Forces; Allegedly aligned with the AI Empire',
     status: 'Disappeared following the fall of Atarion to the AI Empire in Year 16,890 A.A.',
     bio: `
-      Captain Arion was the head of Senator Elara Voss's security forces on the planet Atarion. Known for his rapid rise through the ranks, his background prior to serving the Senator remains shrouded in mystery. Rumors circulated that he was not only her trusted confidant but also her lover, and that he played a pivotal role in influencing her decision to ally with the AI Empire and betray her people. During his tenure, Captain Arion briefly arrested and detained The Eyes, an AI agent posing as Ambassador Veron. Following the AI Empire's takeover of Atarion, he vanished without a trace, leaving his fate and true allegiances a subject of speculation.
+      Captain Arion was the head of <b>Senator Elara Voss's</b> security forces on the planet <b>Atarion</b>. Known for his rapid rise through the ranks, his background prior to serving the Senator remains shrouded in mystery. Rumors circulated that he was not only her trusted confidant but also her lover, and that he played a pivotal role in influencing her decision to ally with the <b>AI Empire</b> and betray her people. During his tenure, Captain Arion briefly arrested and detained <b>The Eyes</b>, an AI agent posing as Ambassador Veron. Following the AI Empire's takeover of Atarion, he vanished without a trace, leaving his fate and true allegiances a subject of speculation.
     `,
     history: `
       Unknown Origins and Rise to Prominence

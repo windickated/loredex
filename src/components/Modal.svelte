@@ -6,6 +6,7 @@
     characterColor,
   } from "../stores/modal.ts";
   import { timeSystem, timeNotes } from "../data/timeline.ts";
+  import { transform } from "typescript";
 
   let dialog: HTMLDialogElement;
   let showHistory: boolean = false;
@@ -74,6 +75,25 @@
         </article>
       </section>
 
+      {#if $selectedCharacter.transformations}
+        <section class="transformation">
+          {#each $selectedCharacter.transformations as transformation, index}
+            <div>
+              <img
+                src={getImage(transformation)}
+                alt={transformation}
+                width="1024"
+                height="1024"
+              />
+              <p>{transformation}</p>
+            </div>
+            {#if index !== $selectedCharacter.transformations.length - 1}
+              <span>→</span>
+            {/if}
+          {/each}
+        </section>
+      {/if}
+
       {#if showHistory && $selectedCharacter.history}
         <article class="history">
           <hr />
@@ -118,6 +138,15 @@
     main {
       padding: 1vw;
 
+      img {
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+
+      img:hover {
+        transform: scale(1.5);
+      }
+
       .close-button {
         position: absolute;
         top: 0;
@@ -145,6 +174,7 @@
         .death-icon {
           width: 2vw;
           opacity: 0.75;
+          transform: none !important;
         }
 
         h1 {
@@ -239,6 +269,34 @@
 
         p {
           text-align: center;
+        }
+      }
+
+      .transformation {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+        font-size: 1vw;
+
+        div {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 15vw;
+            height: inherit;
+            border: 0.1vw solid rgba(51, 226, 230, 0.5);
+            border-radius: 7.5vw;
+            margin-bottom: 0.5vw;
+          }
+        }
+
+        span {
+          font-size: 2vw;
         }
       }
 

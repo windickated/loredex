@@ -10,7 +10,6 @@
   export let character;
   const { name, appearance, lastSeen, dead = false, state } = character;
   export let touchscreenDevice: boolean = false;
-  export let timeSectionWidth = 10;
   const image = getImage(name);
 
   let shadowLength: number = 0;
@@ -93,7 +92,6 @@
   style="
     border-color: {color};
     filter: drop-shadow(0 0 0.1rem {color});
-    width: {timeSectionWidth * 0.75}rem;
   "
   tabindex="0"
   role="button"
@@ -118,7 +116,6 @@
       class="character-shadow {name}"
       style="
         width: {shadowLength}rem;
-        min-height: {timeSectionWidth * 0.825}rem;
         background: linear-gradient(
           to right,
           {color},
@@ -137,6 +134,7 @@
   .character {
     z-index: 1;
     position: relative;
+    width: 7.5rem;
     height: auto;
     padding: 0.25rem;
     cursor: pointer;
@@ -148,6 +146,7 @@
     border: 0.1rem solid gray;
     border-radius: 0.75rem;
     outline: none;
+    font-size: 0.9rem;
   }
 
   .character:hover,
@@ -186,6 +185,7 @@
     top: 0.5rem;
     left: 100%;
     height: inherit;
+    min-height: 8.25rem;
     pointer-events: none;
     transition: all 0.3s ease-in-out;
     opacity: 0;

@@ -10,7 +10,6 @@
   const timeSections: number = timeline.length;
   const mapWidth: number = timeline.length * 10;
   const mapHeight: number = 80;
-  const timeSectionWidth: number = 10;
 
   let width: number;
   let mapContainer: HTMLElement | null;
@@ -161,7 +160,7 @@
         height: {width > 600 ? mapHeight : mapWidth}rem;
         grid-template-{width > 600
         ? 'columns'
-        : 'rows'}: repeat({timeSections}, {timeSectionWidth}rem);
+        : 'rows'}: repeat({timeSections}, 10rem);
       "
     >
       {#each timeline as { date, note, action, emptySection }}
@@ -181,7 +180,7 @@
           </div>
           {#each characters as character}
             {#if date[0] <= character.appearance && date[1] >= character.appearance}
-              <Character {character} {touchscreenDevice} {timeSectionWidth} />
+              <Character {character} {touchscreenDevice} />
             {/if}
           {/each}
         </div>
@@ -217,7 +216,7 @@
     justify-content: space-between;
     align-items: center;
     opacity: 0;
-    animation: showScale 0.75s linear 0.75s forwards;
+    animation: showScale 0.75s linear 1.25s forwards;
 
     h1 {
       font-size: 2vw;
@@ -297,7 +296,7 @@
     background-position: center;
     background-size: cover;
     opacity: 0;
-    animation: show 0.5s ease-in 1s forwards;
+    animation: show 0.5s ease-in 1.5s forwards;
 
     .map-wrapper {
       position: relative;
@@ -310,6 +309,9 @@
         top: 0;
         display: grid;
         align-items: center;
+        width: 500rem;
+        height: 100rem;
+        grid-template-columns: repeat(50, 10rem);
 
         .plot {
           height: 100%;

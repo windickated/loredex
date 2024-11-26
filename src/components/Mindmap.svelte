@@ -4,13 +4,13 @@
   import timeline from "../data/timeline.ts";
   import Character from "./Character.svelte";
   import Connection from "./Connection.svelte";
+  import { showModal } from "../stores/modal.ts";
   import Modal from "./Modal.svelte";
-  import {
-    mapWidth,
-    mapHeight,
-    timeSections,
-    timeSectionWidth,
-  } from "../data/mapData.ts";
+
+  const timeSections: number = timeline.length;
+  const mapWidth: number = timeline.length * 10;
+  const mapHeight: number = 80;
+  const timeSectionWidth: number = 10;
 
   let width: number;
   let mapContainer: HTMLElement | null;
@@ -27,7 +27,10 @@
   onMount(() => {
     if ("ontouchstart" in document.documentElement) {
       touchscreenDevice = true;
+    } else {
+      mapZoom = 0.4;
     }
+    console.log(timeline.length);
   });
 
   const handlePointerDown = (event: PointerEvent) => {
@@ -66,13 +69,13 @@
 
   const handleZoomButton = (zoomIn: boolean) => {
     let zoom: number = mapZoom;
-    if (zoomIn) zoom += 0.1;
-    else zoom -= 0.1;
+    if (zoomIn) zoom += 0.05;
+    else zoom -= 0.05;
     mapZoom = setZoom(zoom);
   };
 
   function setZoom(zoom: number): number {
-    return zoom < 0.1 ? 0.1 : zoom > 2 ? 2 : zoom;
+    return zoom < 0.2 ? 0.2 : zoom > 1.6 ? 1.6 : zoom;
   }
 
   const handleSearch = () => {
@@ -98,11 +101,20 @@
       character.ariaDisabled = "false";
     });
   };
+
+  const showTimeline = () => {
+    $showModal = "timeline";
+  };
 </script>
+
+<svelte:window bind:innerWidth={width} />
 
 <header>
   <h1>LOREDEX</h1>
   <section class="controllers">
+    <button on:click={showTimeline}>
+      <img src="time.png" alt="Time" />
+    </button>
     <div class="search">
       <img src="search.png" alt="Search" />
       <input
@@ -123,16 +135,14 @@
       <button
         class="zoom-info"
         on:click={() => {
-          mapZoom = 1;
+          mapZoom = 0.4;
         }}
       >
-        {Math.round(mapZoom * 100)}%
+        {Math.round(mapZoom * 2.5 * 100)}%
       </button>
     </div>
   </section>
 </header>
-
-<svelte:window bind:innerWidth={width} />
 
 <!-- svelte-ignore a11y_click_events_have_key_events a11y_no_noninteractive_element_interactions -->
 <main bind:this={mapContainer} on:wheel={handleZoomWheel}>
@@ -172,7 +182,7 @@
           </div>
           {#each characters as character}
             {#if date[0] <= character.appearance && date[1] >= character.appearance}
-              <Character {character} {touchscreenDevice} />
+              <Character {character} {touchscreenDevice} {timeSectionWidth} />
             {/if}
           {/each}
         </div>
@@ -311,6 +321,7 @@
           align-items: center;
           border-left: 0.05rem dashed rgba(51, 226, 230, 0.1);
           border-right: 0.05rem dashed rgba(51, 226, 230, 0.1);
+          padding-top: 5rem;
 
           .date {
             width: 10rem;

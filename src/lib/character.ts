@@ -5,7 +5,6 @@ export interface Character {
   dead?: boolean
   state: "good" | "evil" | "neutral"
   connections?: string[]
-  image: string
   affiliation?: string
   status?: string
   bio?: string

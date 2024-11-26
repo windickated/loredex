@@ -1,6 +1,6 @@
 <script lang="ts">
   import setColor from "../utils/color.ts";
-  import { timeSectionWidth } from "../data/mapData.ts";
+  import getImage from "../utils/image.ts";
   import {
     showModal,
     selectedCharacter,
@@ -8,8 +8,10 @@
   } from "../stores/modal.ts";
 
   export let character;
-  const { name, appearance, lastSeen, dead = false, state, image } = character;
+  const { name, appearance, lastSeen, dead = false, state } = character;
   export let touchscreenDevice: boolean = false;
+  export let timeSectionWidth = 10;
+  const image = getImage(name);
 
   let shadowLength: number = 0;
   let characterTile: HTMLElement | null;
@@ -76,7 +78,7 @@
       (event.type === "keydown" && event.key === "Enter") ||
       event.type === "click"
     ) {
-      $showModal = true;
+      $showModal = "character";
       $selectedCharacter = character;
       $characterColor = color;
       console.log($selectedCharacter);
@@ -104,7 +106,7 @@
   on:pointerleave={hideConnections}
   on:blur={hideConnections}
 >
-  <img src={image} alt={name} draggable="false" />
+  <img src={image} alt={name} draggable="false" width="1024" height="1024" />
   <p
     style={dead ? "color: black; text-shadow: 0 0 0.1rem rgba(0,0,0,0.5);" : ""}
   >
@@ -167,7 +169,9 @@
 
   img {
     width: 100%;
+    height: auto;
     border-radius: 0.5rem;
+    background-color: #010020;
   }
 
   p {

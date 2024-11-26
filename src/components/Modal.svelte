@@ -1,19 +1,24 @@
 <script lang="ts">
+  import getImage from "../utils/image.ts";
   import {
     showModal,
     selectedCharacter,
     characterColor,
   } from "../stores/modal.ts";
+  import { timeSystem, timeNotes } from "../data/mapData.ts";
 
   let dialog: HTMLDialogElement;
   let showHistory: boolean = false;
+  let image: string = "/blank.avif";
+
+  $: if ($selectedCharacter) image = getImage($selectedCharacter.name);
 
   $: if (dialog && $showModal) {
     dialog.showModal();
   } else if (!$showModal) closeDialog();
 
   const closeDialog = () => {
-    $showModal = false;
+    $showModal = null;
     $selectedCharacter = null;
     $characterColor = "";
     dialog?.close();
@@ -30,7 +35,8 @@
   <!-- svelte-ignore a11y-no-static-element-interactions -->
   <main on:click|stopPropagation>
     <button class="close-button" on:click={closeDialog}>❌</button>
-    {#if $selectedCharacter}
+
+    {#if $showModal === "character" && $selectedCharacter}
       <header>
         {#if $selectedCharacter.dead}
           <img class="death-icon" src="dead-red.png" alt="Dead" />
@@ -40,7 +46,12 @@
 
       <section class="general-info">
         <div class="image-container">
-          <img src={$selectedCharacter.image} alt={$selectedCharacter.name} />
+          <img
+            src={image}
+            alt={$selectedCharacter.name}
+            width="1024"
+            height="1024"
+          />
           <button
             on:click={() => {
               showHistory = !showHistory;
@@ -70,6 +81,25 @@
           <hr />
         </article>
       {/if}
+    {:else if $showModal === "timeline"}
+      <header>
+        <h1>Comprehensive Timeline of the A.A. Era</h1>
+      </header>
+
+      <section class="general-info time-system">
+        <p>{@html timeSystem.note}</p>
+        <ol>
+          {#each timeSystem.months as month}
+            <li>{@html month}</li>
+          {/each}
+        </ol>
+      </section>
+
+      <article class="history">
+        <hr />
+        {@html timeNotes}
+        <hr />
+      </article>
     {/if}
   </main>
 </dialog>
@@ -146,8 +176,10 @@
 
           img {
             width: inherit;
+            height: auto;
             border-top-left-radius: 0.5vw;
             border-top-right-radius: 0.5vw;
+            background-color: #010020;
           }
 
           button {
@@ -196,6 +228,17 @@
               }
             }
           }
+        }
+      }
+
+      .time-system {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+        font-size: 1vw;
+
+        p {
+          text-align: center;
         }
       }
 

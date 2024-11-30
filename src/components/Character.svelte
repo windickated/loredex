@@ -1,6 +1,5 @@
 <script lang="ts">
   import setColor from "../utils/color.ts";
-  import getImage from "../utils/image.ts";
   import {
     showModal,
     selectedCharacter,
@@ -8,9 +7,15 @@
   } from "../stores/modal.ts";
 
   export let character;
-  const { name, appearance, lastSeen, dead = false, state } = character;
+  const {
+    name,
+    picture,
+    appearance,
+    lastSeen,
+    dead = false,
+    state,
+  } = character;
   export let touchscreenDevice: boolean = false;
-  const image = getImage(name);
 
   let shadowLength: number = 0;
   let characterTile: HTMLElement | null;
@@ -80,7 +85,6 @@
       $showModal = "character";
       $selectedCharacter = character;
       $characterColor = color;
-      console.log($selectedCharacter);
     }
   };
 </script>
@@ -104,7 +108,7 @@
   on:pointerleave={hideConnections}
   on:blur={hideConnections}
 >
-  <img src={image} alt={name} draggable="false" width="1024" height="1024" />
+  <img src={picture} alt={name} draggable="false" width="1024" height="1024" />
   <p
     style={dead ? "color: black; text-shadow: 0 0 0.1rem rgba(0,0,0,0.5);" : ""}
   >

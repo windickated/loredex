@@ -1,18 +1,15 @@
 <script lang="ts">
   import getImage from "../utils/image.ts";
+  import { getColor } from "../utils/color.ts";
   import {
     showModal,
     selectedCharacter,
     characterColor,
   } from "../stores/modal.ts";
   import { timeSystem, timeNotes } from "../data/timeline.ts";
-  import { transform } from "typescript";
 
   let dialog: HTMLDialogElement;
   let showHistory: boolean = false;
-  let image: string = "/blank.avif";
-
-  $: if ($selectedCharacter) image = getImage($selectedCharacter.name);
 
   $: if (dialog && $showModal) {
     dialog.showModal();
@@ -48,7 +45,7 @@
       <section class="general-info">
         <div class="image-container">
           <img
-            src={image}
+            src={$selectedCharacter.picture}
             alt={$selectedCharacter.name}
             width="1024"
             height="1024"
@@ -77,15 +74,10 @@
 
       {#if $selectedCharacter.transformations}
         <section class="transformation">
-          {#each $selectedCharacter.transformations as transformation, index}
+          {#each $selectedCharacter.transformations as { name, picture }, index}
             <div>
-              <img
-                src={getImage(transformation)}
-                alt={transformation}
-                width="1024"
-                height="1024"
-              />
-              <p>{transformation}</p>
+              <img src={picture} alt={name} width="1024" height="1024" />
+              <p>{name}</p>
             </div>
             {#if index !== $selectedCharacter.transformations.length - 1}
               <span>→</span>
@@ -112,6 +104,7 @@
                 alt={connection}
                 width="1024"
                 height="1024"
+                style="border-color: {getColor(connection)}"
               />
               <p>{connection}</p>
             </div>

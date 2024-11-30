@@ -1,16 +1,22 @@
 export interface Character {
   name: string
+  picture: string
   appearance: number
   lastSeen?: number
   dead?: boolean
   state: "good" | "evil" | "neutral"
   connections?: string[]
-  transformations?: string[]
+  transformations?: Transformation[]
   affiliation?: string
   status?: string
   bio?: string
   history?: string
   stories?: Story[]
+}
+
+interface Transformation {
+  name: string
+  picture: string
 }
 
 interface Story {

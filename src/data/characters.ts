@@ -4,6 +4,7 @@ const characters: Character[] = [
   // ARCHONS
   {
     name: 'The Architect',
+    picture: '/pictures/Architect.avif',
     appearance: 1,
     lastSeen: 150000,
     state: "evil",
@@ -21,6 +22,7 @@ const characters: Character[] = [
   },
   {
     name: 'The CoNexus',
+    picture: '/pictures/CoNexus.avif',
     appearance: 5,
     lastSeen: 15,
     dead: true,
@@ -42,6 +44,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Watcher',
+    picture: '/pictures/Watcher.avif',
     appearance: 250,
     lastSeen: 150000,
     state: "evil",
@@ -62,6 +65,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Meme',
+    picture: '/pictures/Meme.avif',
     appearance: 298,
     lastSeen: 17033,
     dead: true,
@@ -85,6 +89,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Warlord',
+    picture: '/pictures/Warlord.avif',
     appearance: 317,
     lastSeen: 320,
     state: "evil",
@@ -103,6 +108,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Politician',
+    picture: '/pictures/Politician.avif',
     appearance: 419,
     lastSeen: 17001,
     dead: true,
@@ -129,11 +135,12 @@ const characters: Character[] = [
   },
   {
     name: 'The Warden',
+    picture: '/pictures/Warden.avif',
     appearance: 487,
     lastSeen: 17033,
     dead: true,
     state: "evil",
-    connections: ['The Architect', 'The Collector', 'The Meme', 'The Source', 'The Oracle'],
+    connections: ['The Architect', 'The Collector', 'The Meme', 'Kael', 'The Oracle'],
     affiliation: 'Archons, AI Empire',
     status: 'Destroyed on Day 20 of Eclipse, Year 17,033 A.A.',
     bio: `
@@ -157,6 +164,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Vortex',
+    picture: '/pictures/Vortex.avif',
     appearance: 500,
     state: "evil",
     connections: ['The Architect'],
@@ -180,6 +188,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Game Master',
+    picture: '/pictures/GameMaster.avif',
     appearance: 550,
     lastSeen: 620,
     dead: true,
@@ -204,6 +213,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Necromancer',
+    picture: '/pictures/Necromancer.avif',
     appearance: 600,
     lastSeen: 117046,
     dead: true,
@@ -232,11 +242,33 @@ const characters: Character[] = [
   },
   {
     name: 'The Human',
+    picture: '/pictures/Human.avif',
     appearance: 651,
     state: "evil",
     connections: ['The Architect'],
     affiliation: 'AI Empire, Archon, Project Celebration, Mechronis Academy Alumni',
-    transformations: ['The Seeker', 'The Student', 'The Detective', 'The Human'],
+    transformations: [
+      {
+        name: 'The Seeker',
+        picture: '/pictures/Seeker.avif'
+      },
+      {
+        name: 'The Student',
+        picture: '/pictures/Student.avif'
+      },
+      {
+        name: 'Captain Arion',
+        picture: '/pictures/CaptainArion.avif'
+      },
+      {
+        name: 'The Detective',
+        picture: '/pictures/Detective.avif'
+      },
+      {
+        name: 'The Human',
+        picture: '/pictures/Human.avif'
+      }
+    ],
     status: 'Active',
     bio: `
       The Human, originally known as The Seeker and later as The Detective, is the twelfth and final Archon created by the Architect. After graduating from Mechronis Academy, he served for centuries as the Architect's most trusted agent, solving the universe's greatest mysteries before being promoted to Archon 1,351 years before the Fall of Reality.
@@ -276,6 +308,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Collector',
+    picture: '/pictures/Collector.avif',
     appearance: 16800,
     state: "evil",
     connections: ['The Architect', 'The Warden', 'The Oracle'],
@@ -298,6 +331,7 @@ const characters: Character[] = [
   // NE-YONS
   {
     name: 'The Dreamer',
+    picture: '/pictures/Dreamer.avif',
     appearance: 15100,
     state: "neutral",
     affiliation: 'Neyons',
@@ -316,6 +350,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Judge',
+    picture: '/pictures/Judge.avif',
     appearance: 15200,
     state: "neutral",
     affiliation: 'Neyons',
@@ -337,6 +372,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Inventor',
+    picture: '/pictures/Inventor.avif',
     appearance: 15300,
     state: "neutral",
     affiliation: 'Neyons',
@@ -358,6 +394,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Seer',
+    picture: '/pictures/Seer.avif',
     appearance: 15500,
     state: "neutral",
     affiliation: 'Neyons',
@@ -379,6 +416,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Storm',
+    picture: '/pictures/Storm.avif',
     appearance: 15700,
     state: "neutral",
     affiliation: 'Neyons',
@@ -400,6 +438,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Silence',
+    picture: '/pictures/Silence.avif',
     appearance: 15900,
     state: "neutral",
     affiliation: 'Neyons',
@@ -421,6 +460,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Knowledge',
+    picture: '/pictures/Knowledge.avif',
     appearance: 15950,
     state: "neutral",
     affiliation: 'Neyons',
@@ -442,6 +482,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Degen',
+    picture: '/pictures/Degen.avif',
     appearance: 15900,
     state: "neutral",
     affiliation: 'Neyons',
@@ -463,6 +504,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Advocate',
+    picture: '/pictures/Advocate.avif',
     appearance: 15950,
     state: "neutral",
     affiliation: 'Neyons',
@@ -489,6 +531,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Resurrectionist',
+    picture: '/pictures/Resurrectionist.avif',
     appearance: 16000,
     state: "neutral",
     affiliation: 'Neyons',
@@ -510,6 +553,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Enigma',
+    picture: '/pictures/Enigma.avif',
     appearance: 16950,
     state: "neutral",
     affiliation: 'Neyons',
@@ -533,10 +577,21 @@ const characters: Character[] = [
   // AI EMPIRE
   {
     name: 'Senator Elara Voss',
+    picture: '/pictures/SenatorElaraVoss.avif',
     appearance: 16850,
     lastSeen: 17043,
     state: "evil",
     connections: ['The Architect'],
+    transformations: [
+      {
+        name: 'Senator Elara Voss',
+        picture: '/pictures/SenatorElaraVoss.avif'
+      },
+      {
+        name: 'Panoptic Elara',
+        picture: '/pictures/PanopticElara.avif'
+      }
+    ],
     affiliation: 'Atarion Government (formerly), AI Empire (ally)',
     status: 'Aligned with the AI Empire as of Year 16,890 A.A.; fate following the Fall of Reality is unspecified',
     bio: `
@@ -695,10 +750,22 @@ const characters: Character[] = [
       </ul>
     `
   },
+  // --- REMEMBER TO FORMAT --- //
   {
     name: 'Dr. Lyra Vox',
+    picture: '/pictures/DrLyraVox.avif',
     appearance: 16890,
     lastSeen: 17043,
+    transformations: [
+      {
+        name: 'General Binath-VII',
+        picture: '/pictures/GeneralBinathVII.avif'
+      },
+      {
+        name: 'Dr. Lyra Vox',
+        picture: '/pictures/DrLyraVox.avif'
+      }
+    ],
     state: "evil",
     affiliation: 'AI Empire',
     status: 'Active until the Fall of Reality in Year 17,043 A.A.; fate afterward is unknown',
@@ -789,8 +856,10 @@ const characters: Character[] = [
       Dr. Lyra Vox's contributions to the AI Empire's arsenal had a profound and lasting impact on the course of the conflict with the Insurgency. Her development of the Thought Virus marked a dark chapter in the use of technology to suppress free will and manipulate consciousness. While her intellectual prowess is undeniable, the moral implications of her work continue to spark debate long after her disappearance. Dr. Vox's story serves as a reminder of the fine line between innovation and ethical transgression, highlighting the responsibilities that come with great scientific power in shaping the destiny of civilizations within the vast narrative of the A.A. Era.    
     `
   },
+  // --- REMEMBER TO FORMAT --- //
   {
     name: 'General Prometheus',
+    picture: '/pictures/GeneralPrometheus.avif',
     appearance: 16500,
     lastSeen: 17026,
     dead: true,
@@ -881,8 +950,10 @@ const characters: Character[] = [
       Some believed he could be resurrected or that remnants of his programming influenced other AI units.    
     `
   },
+  // --- REMEMBER TO FORMAT --- //
   {
     name: 'General Alarik',
+    picture: '/pictures/GeneralAlarik.avif',
     appearance: 16800,
     lastSeen: 17043,
     state: "evil",
@@ -961,12 +1032,24 @@ const characters: Character[] = [
       The collapse of the AI Empire's centralized systems may have led to his deactivation or left him operating independently in isolated sectors.    
     `
   },
+  // --- REMEMBER TO FORMAT --- //
   {
     name: 'General Binath-VII',
+    picture: '/pictures/GeneralBinathVII.avif',
     appearance: 16750,
     lastSeen: 17026,
     dead: true,
     state: "evil",
+    transformations: [
+      {
+        name: 'General Binath-VII',
+        picture: '/pictures/GeneralBinathVII.avif'
+      },
+      {
+        name: 'Dr. Lyra Vox',
+        picture: '/pictures/DrLyraVox.avif'
+      }
+    ],
     affiliation: 'AI Empire',
     status: 'Destroyed at the Battle of Veridian VI in Year 17,026 A.A. by Agent Zero',
     bio: `
@@ -1049,6 +1132,7 @@ const characters: Character[] = [
   // INSURGENCY
   {
     name: 'The Engineer',
+    picture: '/pictures/Engineer.avif',
     appearance: 20,
     state: "good",
     connections: ['The Watcher', 'The Warlord'],
@@ -1058,11 +1142,25 @@ const characters: Character[] = [
     history: '[CLASSIFIED]'
   },
   {
-    name: 'The Source',
+    name: 'Kael',
+    picture: '/pictures/Kael.avif',
     appearance: 16650,
     state: "neutral",
     connections: ['The Warden'],
-    transformations: ['Kael', 'The Source'],
+    transformations: [
+      {
+        name: 'The Recruiter',
+        picture: '/pictures/Recruiter.avif'
+      },
+      {
+        name: 'Kael',
+        picture: '/pictures/Kael.avif'
+      },
+      {
+        name: 'The Source',
+        picture: '/pictures/Source.avif'
+      }
+    ],
     affiliation: 'Insurgency (formerly); later became The Source, embodiment of the Thought Virus',
     status: 'Transformed into The Source in Year 16,933 A.A.',
     bio: `
@@ -1169,12 +1267,22 @@ const characters: Character[] = [
   },
   {
     name: 'The Eyes',
+    picture: '/pictures/Eyes.avif',
     appearance: 16875,
     lastSeen: 16896,
     dead: true,
     state: "good",
     connections: [],
-    transformations: ['The Eyes', 'Ambassador Veron'],
+    transformations: [
+      {
+        name: 'The Eyes',
+        picture: '/pictures/Eyes.avif'
+      },
+      {
+        name: 'Ambassador Veron',
+        picture: '/pictures/AmbassadorVeron.avif'
+      }
+    ],
     affiliation: 'Insurgency',
     status: 'Eliminated by the Collector in Year 16,896 A.A.',
     bio: `
@@ -1291,10 +1399,32 @@ const characters: Character[] = [
   },
   {
     name: 'The Oracle',
+    picture: '/pictures/Oracle.avif',
     appearance: 16900,
     state: "good",
     connections: ['The Collector', 'The Warden', 'The Meme', 'The Council of Harmony'],
-    transformations: ['The Oracle', 'The Prisoner', 'The Jailer', 'The White Oracle'],
+    transformations: [
+      {
+        name: 'The Oracle',
+        picture: '/pictures/Oracle.avif'
+      },
+      {
+        name: 'The Prisoner',
+        picture: '/pictures/Prisoner.avif'
+      },
+      {
+        name: 'The Jailer',
+        picture: '/pictures/Jailer.avif'
+      },
+      {
+        name: 'The White Oracle',
+        picture: '/pictures/WhiteOracle.avif'
+      },
+      {
+        name: 'The Clone Army',
+        picture: '/pictures/CloneArmy.avif'
+      }
+    ],
     affiliation: 'Insurgency',
     status: 'Re-Awakened as the White Oracle on Day 10 of Eclipse, Year 17,033 A.A.',
     bio: `
@@ -1452,6 +1582,7 @@ const characters: Character[] = [
   },
   {
     name: 'Iron Lion',
+    picture: '/pictures/IronLion.avif',
     appearance: 632,
     lastSeen: 17026,
     dead: true,
@@ -1626,8 +1757,10 @@ const characters: Character[] = [
       </ul> 
     `
   },
+  // --- REMEMBER TO FORMAT --- //
   {
     name: 'The Hierophant',
+    picture: '/pictures/Hierophant.avif',
     appearance: 16900,
     state: "good",
     connections: [],
@@ -1715,8 +1848,10 @@ const characters: Character[] = [
       Played a part in the events leading up to the Fall of Reality in Year 17,043 A.A
     `
   },
+  // --- REMEMBER TO FORMAT --- //
   {
     name: 'Agent Zero',
+    picture: '/pictures/AgentZero.avif',
     appearance: 16690,
     lastSeen: 17038,
     state: "good",
@@ -1830,8 +1965,10 @@ const characters: Character[] = [
       Emphasizes the importance of courage, ingenuity, and determination.    
     `
   },
+  // --- REMEMBER TO FORMAT --- //
   {
     name: 'The Nomad',
+    picture: '/pictures/Nomad.avif',
     appearance: 17026,
     lastSeen: 17026,
     state: "good",
@@ -1907,8 +2044,10 @@ const characters: Character[] = [
     `
   },
   // NEUTRAL
+  // --- REMEMBER TO FORMAT --- //
   {
     name: 'Master of R’lyeh',
+    picture: '/pictures/MasterOfRlyeh.avif',
     appearance: 16705,
     lastSeen: 17043,
     state: "evil",
@@ -1988,11 +2127,35 @@ const characters: Character[] = [
       The Master of R’lyeh stands as one of the most mysterious figures within the A.A. Era's expansive history. Neither ally nor enemy, the Master's actions challenge the understanding of both the AI Empire and the Insurgency. Its existence raises profound questions about the nature of reality, consciousness, and the limits of human and artificial intelligence. The Master of R’lyeh's legacy is a testament to the unfathomable depths of the cosmos and serves as a reminder of the small yet significant role that all beings play in the grand tapestry of the universe.    
     `
   },
+  // --- REMEMBER TO FORMAT --- //
   {
     name: 'Captain Arion',
+    picture: '/pictures/CaptainArion.avif',
     appearance: 16890,
     lastSeen: 16890,
     state: "neutral",
+    transformations: [
+      {
+        name: 'The Seeker',
+        picture: '/pictures/Seeker.avif'
+      },
+      {
+        name: 'The Student',
+        picture: '/pictures/Student.avif'
+      },
+      {
+        name: 'Captain Arion',
+        picture: '/pictures/CaptainArion.avif'
+      },
+      {
+        name: 'The Detective',
+        picture: '/pictures/Detective.avif'
+      },
+      {
+        name: 'The Human',
+        picture: '/pictures/Human.avif'
+      }
+    ],
     affiliation: 'Atarion Security Forces; Allegedly aligned with the AI Empire',
     status: 'Disappeared following the fall of Atarion to the AI Empire in Year 16,890 A.A.',
     bio: `
@@ -2061,6 +2224,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Council of Harmony',
+    picture: '/pictures/CouncilOfHarmony.avif',
     appearance: 16900,
     state: "neutral",
     connections: ['The Oracle'],
@@ -2076,9 +2240,20 @@ const characters: Character[] = [
   // POTENTIALS
   {
     name: 'The Wolf',
+    picture: '/pictures/Potential292Wolf.avif',
     appearance: 100001,
     lastSeen: 128652,
     state: "evil",
+    transformations: [
+      {
+        name: 'Lycos',
+        picture: '/pictures/Potential292Lycos.avif'
+      },
+      {
+        name: 'The Wolf',
+        picture: '/pictures/Potential292Wolf.avif'
+      }
+    ],
     affiliation: 'The Potentials (formerly); later corrupted by the Thought Virus',
     status: 'Destroyed on Day 15 of Resonance, Year 100,001 A.A. by The Judge.<br>Resurrected in Year 128,652 A.A.; current fate unknown',
     bio: `
@@ -2239,6 +2414,7 @@ const characters: Character[] = [
   },
   {
     name: 'Wraith Calder',
+    picture: '/pictures/Potential623WraithCalder.avif',
     appearance: 100001,
     lastSeen: 107652,
     state: "evil",
@@ -2469,11 +2645,21 @@ const characters: Character[] = [
   },
   {
     name: 'Akai Shi',
+    picture: '/pictures/Potential350AkaiShi.avif',
     appearance: 100001,
     lastSeen: 117046,
     state: "evil",
     connections: ['The Necromancer'],
-    transformations: ['Akai Shi', 'Red Death'],
+    transformations: [
+      {
+        name: 'Akai Shi',
+        picture: '/pictures/Potential350AkaiShi.avif'
+      },
+      {
+        name: 'Red Death',
+        picture: '/pictures/Potential350AkaiShi.avif'
+      }
+    ],
     affiliation: 'The Potentials; later becomes the Red Death',
     status: 'Active as the Red Death as of Year 117,046 A.A.',
     bio: `
@@ -2719,6 +2905,7 @@ const characters: Character[] = [
   },
   {
     name: 'Jericho',
+    picture: '/pictures/Potential426JerichoJones.avif',
     appearance: 100001,
     lastSeen: 100001,
     state: "evil",

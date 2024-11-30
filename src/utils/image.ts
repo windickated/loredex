@@ -1,5 +1,11 @@
+import characters from "../data/characters.ts";
+
 const getImage = (name: string): string => {
-  return `/pictures/${name.replace(/[^a-zA-Z0-9]/g, "")}.avif`
+  let image = '/blank.avif';
+  characters.map((character) => {
+    if (name === character.name) image = character.picture;
+  })
+  return image;
 }
 
 export default getImage;

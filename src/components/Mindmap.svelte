@@ -110,7 +110,12 @@
 <div class="logo">LOREDEX</div>
 
 <header>
-  <h1>LOREDEX</h1>
+  <h1>
+    <a href="https://degenerousdao.com/" target="_blank">
+      <img src="/logo.avif" alt="DGRS" />
+    </a>
+    LOREDEX
+  </h1>
   <section class="controllers">
     <button on:click={showTimeline}>
       <img src="time.png" alt="Time" />
@@ -250,6 +255,26 @@
       line-height: 1.5;
       color: rgba(51, 226, 230, 0.25);
       text-shadow: 0 0 0.1vw rgba(51, 226, 230, 0.5);
+      display: flex;
+      flex-direction: row nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1vw;
+
+      a {
+        width: 2.5vw;
+        height: 2.5vw;
+        opacity: 0.75;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      a:hover,
+      a:active {
+        opacity: 0.9;
+      }
     }
 
     .controllers {

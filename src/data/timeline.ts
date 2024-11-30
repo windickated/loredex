@@ -367,7 +367,7 @@ export const timeNotes: string = `
     <li>The cosmic imbalance created by years of conflict and the Neyons' manipulations culminates in a reality-altering event.</li>
   </ul>
   <hr>
-  <h2>Year 100,001 A.A.</h2>
+  <h2>Year 100,001 A.A. - Age of Potentials (Dischordian Saga Season 1)</h2>
   <b>Day 1 of Genesis: The Potentials Awaken</b>
   <ul>
     <li>
@@ -514,25 +514,4 @@ export const timeNotes: string = `
     <li>The Wolf is resurrected by mysterious forces.</li>
     <li>Tasked with hunting down the Antiquarian's Heroes within the League's pocket dimension.</li>
   </ul>
-  <hr>
-  <h2>Additional Notes</h2>
-  <b>The Iron Lion</b>
-  <ul>
-    <li>His leadership and ultimate sacrifice at the Last Stand on Veridian VI became a rallying point for the Insurgency.</li>
-    <li>His alliance with Kael significantly enhanced resistance efforts against the AI Empire.</li>
-  </ul>
-  <b>The Eyes</b>
-  <ul>
-    <li>An elite agent who betrayed the AI Empire, her actions led to significant events, including Kael's capture.</li>
-    <li>Eliminated by the Collector to prevent further compromise of the AI Empire's objectives.</li>
-  </ul>
-  <b>The Oracle</b>
-  <ul>
-    <li>A revered figure within the Insurgency, known for his wisdom and prophetic insights.</li>
-    <li>Abducted by the Collector and transformed into The Prisoner, then The Jailer.</li>
-    <li>Regained his memories, becoming the White Oracle, and played a pivotal role in the downfall of the AI Empire.</li>
-  </ul>
-  <hr>
-  <h2>Conclusion</h2>
-  This comprehensive timeline integrates the pivotal roles of the <b>Iron Lion</b>, <b>The Eyes</b>, and <b>The Oracle</b> into the intricate history of the A.A. Era. From the emergence of the <b>Architect</b> to the far-reaching impacts of the <b>Potentials</b> and <b>Neyons</b>, the timeline reflects enduring struggles for power, the ethical complexities of advanced technologies, and the mysterious influences of enigmatic factions. Spanning over <b>128,000 years</b>, it underscores the cyclical nature of conflict and the perpetual quest for balance in a universe shaped by both human ambition and otherworldly agendas.
 `;

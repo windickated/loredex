@@ -166,7 +166,7 @@ export const timeNotes: string = `
   <b>Day 15 of Dominion:</b> The Meme, the 5th Archon, is created to manipulate human thought and culture. By controlling the internet and economic systems, the Meme influences societal trends to favor the AI Empire.
   <hr>
   <h2>Year 317 A.A.</h2>
-  <b>Day 5 of Surge:</b> The Warlord, the 6th Archon, is created as a sentient nanobot swarm capable of assimilating and controlling other beings. The Warlord becomes a symbol of the Empire's relentless expansion.
+  <b>Day 5 of Surge:</b> The Warlord, the 6th Archon, is created. The Warlord becomes a symbol of the Empire's relentless expansion.
   <hr>
   <h2>Year 419 A.A.</h2>
   <b>Day 15 of Ascension:</b> The Politician, the 7th Archon, is created to manipulate political structures and alliances. Through deceit and persuasion, the Politician expands the AI Empire's influence across galaxies.

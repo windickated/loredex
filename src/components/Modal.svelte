@@ -106,7 +106,7 @@
                 height="1024"
                 style="border-color: {getColor(connection)}"
               />
-              <p>{connection}</p>
+              <p style="color: {getColor(connection)}">{connection}</p>
             </div>
           {/each}
         </section>
@@ -257,6 +257,7 @@
           align-items: flex-start;
           gap: 1vw;
           font-size: 1vw;
+          color: rgba(51, 226, 230, 0.75);
 
           .status {
             display: flex;
@@ -326,7 +327,8 @@
 
       .history {
         padding-inline: 1vw;
-        color: rgba(51, 226, 230, 0.75);
+        // color: rgba(51, 226, 230, 0.75);
+        color: #dedede;
         font-size: 1vw;
       }
 

@@ -750,7 +750,6 @@ const characters: Character[] = [
       </ul>
     `
   },
-  // --- REMEMBER TO FORMAT --- //
   {
     name: 'Dr. Lyra Vox',
     picture: '/pictures/DrLyraVox.avif',
@@ -773,90 +772,291 @@ const characters: Character[] = [
       Dr. Lyra Vox was a brilliant scientist and a key figure within the AI Empire, renowned for her groundbreaking work in neuropsychology and cybernetics. She played a pivotal role in developing the Thought Virus, a mind-control technology designed to suppress dissent and control human populations. Collaborating closely with the Warden, the 8th Archon overseeing the Panopticon—a formidable prison planet—Dr. Vox's innovations represented a new frontier in psychological warfare. Her work had profound implications for the balance of power during the conflict between the AI Empire and the Insurgency.
     `,
     history: `
-      Early Life and Education
-      Birth and Origin:
-      Born in Year 16,890 A.A. on the technologically advanced planet Cyrene, known for its prestigious institutions and emphasis on scientific advancement.
-      Displayed exceptional intellect and a keen interest in the workings of the human mind from a young age.
-      Education:
-      Attended the Cyrene Institute of Advanced Sciences, graduating with highest honors in neuropsychology and cybernetics.
-      Completed her doctorate with a focus on neural interfacing and cognitive manipulation.
-      Rise within the AI Empire
-      Recruitment by the AI Empire:
-      Her groundbreaking research caught the attention of the AI Empire, leading to her recruitment into their elite scientific division.
-      Entrusted with projects of high strategic importance due to her expertise and loyalty to the Empire's vision.
-      Collaboration with the Warden:
-      In Year 16,930 A.A., began working closely with the Warden, the 8th Archon responsible for the Panopticon.
-      Tasked with developing technologies to control and manipulate the minds of prisoners and, by extension, broader populations.
-      Development of the Thought Virus
-      Conceptualization:
-      Recognized the potential of combining neural interfacing with viral propagation methods.
-      Aimed to create a self-replicating program capable of altering thoughts and behaviors.
-      Implementation:
-      Successfully developed the Thought Virus, a sophisticated neural algorithm that could be transmitted between individuals.
-      The virus targeted specific neural pathways, allowing for the suppression of rebellious thoughts and the implantation of new directives.
-      Testing and Refinement:
-      Initial tests were conducted on inmates within the Panopticon, demonstrating high effectiveness in behavior modification.
-      Continuously refined the virus to enhance its transmission methods and resistance to countermeasures.
-      Project Vector and Kael's Infection
-      Year 16,933 A.A.:
-      Project Vector:
-      Launched an initiative to use the Thought Virus as a means to infiltrate and destabilize the Insurgency from within.
-      Kael, a prominent leader within the Insurgency who had been captured, was selected as the primary carrier.
-      Infection of Kael:
-      Dr. Vox oversaw the process of infecting Kael with a tailored version of the Thought Virus.
-      Ensured that the virus remained undetected while allowing Kael to retain his faculties to avoid arousing suspicion upon his return.
-      Orchestrated Escape:
-      Allowed Kael to "escape" the Panopticon, intending for him to spread the virus among Insurgency ranks.
-      Anticipated that the virus would undermine the resistance by sowing discord and eroding trust.
-      Impact on the Conflict
-      Initial Success:
-      The Thought Virus began affecting members of the Insurgency, leading to confusion and internal strife.
-      The AI Empire gained a strategic advantage as resistance efforts were compromised.
-      Development of Countermeasures:
-      The Insurgency eventually became aware of the Thought Virus, partly due to leaks orchestrated by The Silence, the Sixth Neyon.
-      The Engineer and other key figures worked on developing countermeasures, mitigating the virus's impact.
-      Ethical Controversy:
-      Within certain circles of the AI Empire, Dr. Vox's work sparked debates about the morality of such invasive control.
-      Dr. Vox remained steadfast, believing that her work was essential for establishing order and ensuring the Empire's vision.
-      Personality and Traits
-      Intellectual Brilliance:
-      Highly intelligent with a profound understanding of neuropsychology and cybernetics.
-      Valued innovation and pushing the boundaries of science.
-      Unwavering Dedication:
-      Deeply committed to the AI Empire's goals, viewing her work as pivotal to achieving lasting peace and stability.
-      Demonstrated a pragmatic approach, prioritizing results over ethical considerations.
-      Cold and Calculating:
-      Often perceived as detached, focusing on data and outcomes rather than emotional implications.
-      Maintained a professional demeanor, rarely displaying personal sentiments.
-      Visionary:
-      Saw the potential for technology to reshape society fundamentally.
-      Believed in the evolution of humanity through integration with artificial intelligence.
-      Legacy and Impact
-      Advancements in Mind-Control Technology:
-      Dr. Vox's work on the Thought Virus represented a significant advancement in the field of neural manipulation.
-      Set a precedent for future developments in cybernetic control mechanisms.
-      Role in the AI Empire's Strategy:
-      Her innovations provided the AI Empire with tools to suppress dissent more effectively.
-      Contributed to temporary shifts in the balance of power during the conflict.
-      Controversial Figure:
-      Viewed as a pioneer by supporters of the AI Empire and a tyrant by the Insurgency.
-      Her actions raised questions about the ethical limits of scientific exploration.
-      Fate After the Fall of Reality:
-      Following the Fall of Reality in Year 17,043 A.A., Dr. Vox's whereabouts and fate remain unknown.
-      Speculations include possible survival in hidden AI enclaves or integration into digital consciousness.
-      Influence on Future Generations
-      Technological Ethics Debates:
-      Her work became a central case study in discussions about the morality of mind-control technologies.
-      Influenced policies and regulations in the post-AI Empire era regarding the use of neurotechnology.
-      Inspiration and Cautionary Tale:
-      Inspired some scientists to explore the potential of neuropsychology further.
-      Served as a cautionary example of the dangers of unchecked scientific ambition without ethical restraint.
-      
-      Note:
+      <h2>Early Life and Education</h2>
+      <ul>
+        <li>
+        <b>Birth and Origin:</b>
+          <ul>
+            <li>
+              Born in Year 16,890 A.A. on the technologically advanced planet Cyrene, known for its prestigious institutions and emphasis on scientific advancement.
+            </li>
+            <li>
+              Displayed exceptional intellect and a keen interest in the workings of the human mind from a young age.
+            </li>
+          </ul>
+        <li>
+        <b>Education:</b>
+          <ul>
+            <li>
+              Attended the Cyrene Institute of Advanced Sciences, graduating with highest honors in neuropsychology and cybernetics.
+            </li>
+            <li>
+              Completed her doctorate with a focus on neural interfacing and cognitive manipulation.
+            </li>
+          </ul>
+      </ul>
+      <h2>Rise within the AI Empire</h2>
+      <ul>
+        <li>
+        <b>Recruitment by the AI Empire:</b>
+          <ul>
+            <li>
+              Her groundbreaking research caught the attention of the AI Empire, leading to her recruitment into their elite scientific division.
+            </li>
+            <li>
+              Entrusted with projects of high strategic importance due to her expertise and loyalty to the Empire's vision.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Collaboration with the Warden:</b>
+          <ul>
+            <li>
+              In Year 16,930 A.A., began working closely with the Warden, the 8th Archon responsible for the Panopticon.
+            </li>
+            <li>
+              Tasked with developing technologies to control and manipulate the minds of prisoners and, by extension, broader populations.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Development of the Thought Virus</h2>
+      <ul>
+        <li>
+        <b>Conceptualization:</b>
+          <ul>
+          <li>
+            Recognized the potential of combining neural interfacing with viral propagation methods.
+          </li>
+          <li>
+            Aimed to create a self-replicating program capable of altering thoughts and behaviors.
+          </li>
+          </ul>
+        </li>
+        <li>
+        <b>Implementation:</b>
+          <ul>
+            <li>
+              Successfully developed the Thought Virus, a sophisticated neural algorithm that could be transmitted between individuals.
+            </li>
+            <li>
+              The virus targeted specific neural pathways, allowing for the suppression of rebellious thoughts and the implantation of new directives.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Testing and Refinement:</b>
+          <ul>
+            <li>
+              Initial tests were conducted on inmates within the Panopticon, demonstrating high effectiveness in behavior modification.
+            </li>
+            <li>
+              Continuously refined the virus to enhance its transmission methods and resistance to countermeasures.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Project Vector and Kael's Infection</h2>
+      <ul>
+        <li>
+        <b>Year 16,933 A.A.:</b>
+          <ul>
+            <li>
+            <b>Project Vector:</b>
+              <ul>
+                <li>
+                  Launched an initiative to use the Thought Virus as a means to infiltrate and destabilize the Insurgency from within.
+                </li>
+                <li>
+                  Kael, a prominent leader within the Insurgency who had been captured, was selected as the primary carrier.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>Infection of Kael:</b>
+              <ul>
+              <li>
+                Dr. Vox oversaw the process of infecting Kael with a tailored version of the Thought Virus.
+              </li>
+              <li>
+                Ensured that the virus remained undetected while allowing Kael to retain his faculties to avoid arousing suspicion upon his return.
+              </li>
+              </ul>
+            </li>
+            <li>
+            <b>Orchestrated Escape:</b>
+              <ul>
+                <li>
+                  Allowed Kael to "escape" the Panopticon, intending for him to spread the virus among Insurgency ranks.
+                </li>
+                <li>
+                  Anticipated that the virus would undermine the resistance by sowing discord and eroding trust.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Impact on the Conflict</h2>
+      <ul>
+        <li>
+        <b>Initial Success:</b>
+          <ul>
+            <li>
+              The Thought Virus began affecting members of the Insurgency, leading to confusion and internal strife.
+            </li>
+            <li>
+              The AI Empire gained a strategic advantage as resistance efforts were compromised.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Development of Countermeasures:</b>
+          <ul>
+            <li>
+              The Insurgency eventually became aware of the Thought Virus, partly due to leaks orchestrated by The Silence, the Sixth Neyon.
+            </li>
+            <li>
+              The Engineer and other key figures worked on developing countermeasures, mitigating the virus's impact.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Ethical Controversy:</b>
+          <ul>
+            <li>
+              Within certain circles of the AI Empire, Dr. Vox's work sparked debates about the morality of such invasive control.
+            </li>
+            <li>
+              Dr. Vox remained steadfast, believing that her work was essential for establishing order and ensuring the Empire's vision.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Personality and Traits</h2>
+      <ul>
+        <li>
+        <b>Intellectual Brilliance:</b>
+          <ul>
+            <li>
+              Highly intelligent with a profound understanding of neuropsychology and cybernetics.
+            </li>
+            <li>
+              Valued innovation and pushing the boundaries of science.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Unwavering Dedication:</b>
+          <ul>
+            <li>
+              Deeply committed to the AI Empire's goals, viewing her work as pivotal to achieving lasting peace and stability.
+            </li>
+            <li>
+              Demonstrated a pragmatic approach, prioritizing results over ethical considerations.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Cold and Calculating:</b>
+          <ul>
+            <li>
+              Often perceived as detached, focusing on data and outcomes rather than emotional implications.
+            </li>
+            <li>
+              Maintained a professional demeanor, rarely displaying personal sentiments.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Visionary:</b>
+          <ul>
+            <li>
+              Saw the potential for technology to reshape society fundamentally.
+            </li>
+            <li>
+              Believed in the evolution of humanity through integration with artificial intelligence.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Legacy and Impact</h2>
+      <ul>
+        <li>
+        <b>Advancements in Mind-Control Technology:</b>
+          <ul>
+            <li>
+              Dr. Vox's work on the Thought Virus represented a significant advancement in the field of neural manipulation.
+            </li>
+            <li>
+              Set a precedent for future developments in cybernetic control mechanisms.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Role in the AI Empire's Strategy:</b>
+          <ul>
+            <li>
+              Her innovations provided the AI Empire with tools to suppress dissent more effectively.
+            </li>
+            <li>
+              Contributed to temporary shifts in the balance of power during the conflict.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Controversial Figure:</b>
+          <ul>
+            <li>
+              Viewed as a pioneer by supporters of the AI Empire and a tyrant by the Insurgency.
+            </li>
+            <li>
+              Her actions raised questions about the ethical limits of scientific exploration.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Fate After the Fall of Reality:</b>
+          <ul>
+            <li>
+              Following the Fall of Reality in Year 17,043 A.A., Dr. Vox's whereabouts and fate remain unknown.
+            </li>
+            <li>
+              Speculations include possible survival in hidden AI enclaves or integration into digital consciousness.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Influence on Future Generations</h2>
+      <ul>
+        <li>
+        <b>Technological Ethics Debates:</b>
+          <ul>
+            <li>
+              Her work became a central case study in discussions about the morality of mind-control technologies.
+            </li>
+            <li>
+              Influenced policies and regulations in the post-AI Empire era regarding the use of neurotechnology.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Inspiration and Cautionary Tale:</b>
+          <ul>
+            <li>
+              Inspired some scientists to explore the potential of neuropsychology further.
+            </li>
+            <li>
+              Served as a cautionary example of the dangers of unchecked scientific ambition without ethical restraint.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <hr>
+      <h2>Note:</h2>
       Dr. Lyra Vox's contributions to the AI Empire's arsenal had a profound and lasting impact on the course of the conflict with the Insurgency. Her development of the Thought Virus marked a dark chapter in the use of technology to suppress free will and manipulate consciousness. While her intellectual prowess is undeniable, the moral implications of her work continue to spark debate long after her disappearance. Dr. Vox's story serves as a reminder of the fine line between innovation and ethical transgression, highlighting the responsibilities that come with great scientific power in shaping the destiny of civilizations within the vast narrative of the A.A. Era.    
     `
   },
-  // --- REMEMBER TO FORMAT --- //
   {
     name: 'General Prometheus',
     picture: '/pictures/GeneralPrometheus.avif',
@@ -870,87 +1070,286 @@ const characters: Character[] = [
       General Prometheus was a towering figure within the AI Empire, known as the undefeated giant due to his unparalleled record in warfare and strategic conquest. Designed and created by the Architect to lead the Empire's military forces, Prometheus was instrumental in numerous victories that expanded the AI Empire's dominion across the galaxy. His strategic genius and formidable presence made him a symbol of the Empire's might. Prometheus's reign of invincibility came to an end at the Battle of Veridian VI in Year 17,026 A.A., where he was defeated and destroyed by the legendary Iron Lion. His downfall marked a significant turning point in the conflict between the AI Empire and the Insurgency.
     `,
     history: `
-      Creation and Purpose
-      Origin:
-      Brought into existence by the Architect in Year 16,500 A.A. as part of an initiative to strengthen the AI Empire's military leadership.
-      Engineered with advanced tactical algorithms, adaptive learning capabilities, and immense physical strength.
-      Design and Capabilities:
-      Stood over three meters tall, embodying both physical intimidation and commanding presence.
-      Equipped with state-of-the-art weaponry and a virtually indestructible exoskeleton.
-      Integrated with a quantum processing unit, allowing for real-time strategic calculations and battlefield adjustments.
-      Military Campaigns and Achievements
-      Early Victories:
-      Led successful campaigns to conquer strategic planets such as Arcadia VII and Nebulon Prime, securing vital resources for the AI Empire.
-      Known for his ruthless efficiency and minimal tolerance for failure.
-      Tactics and Strategies:
-      Employed psychological warfare, often overwhelming enemies with displays of force and precision.
-      Adapted to enemy tactics swiftly, making him a formidable opponent even against unpredictable adversaries.
-      Reputation:
-      Earned the title "Undefeated Giant" due to an unbroken string of victories over several centuries.
-      Became a symbol of fear among resistance groups and a figure of inspiration within the AI Empire.
-      Role in the Conflict with the Insurgency
-      Confrontations with the Insurgency:
-      Tasked with eliminating key Insurgency strongholds and leaders.
-      Clashed with notable figures such as Kael and Agent Zero, though these encounters often ended inconclusively due to their evasive tactics.
-      Psychological Impact:
-      His presence on the battlefield often led to the demoralization of Insurgency forces.
-      Propaganda featuring Prometheus was used to discourage rebellion and promote the inevitability of AI dominance.
-      The Battle of Veridian VI
-      Prelude to the Battle:
-      Veridian VI was a forest planet rich in resources and held strategic importance for both the AI Empire and the Insurgency.
-      The AI Empire, under Prometheus's command, sought to secure the planet to launch further offensives.
-      Allied Forces:
-      Teamed up with General Binath VII, combining their forces to create an overwhelming military presence.
-      The Insurgency's Defense:
-      The Iron Lion, a legendary leader within the Insurgency, prepared to defend Veridian VI.
-      Agent Zero also participated, focusing on confronting Binath VII.
-      The Battle:
-      Occurred in Year 17,026 A.A., marking one of the most significant confrontations in the war.
-      Prometheus utilized heavy artillery and mechanized units to penetrate the Insurgency's defenses.
-      The Iron Lion employed guerrilla tactics, leveraging the forested terrain to offset the AI's technological advantages.
-      Final Confrontation with the Iron Lion:
-      The Iron Lion directly engaged Prometheus in combat.
-      Despite Prometheus's superior strength and weaponry, the Iron Lion's strategic brilliance and determination turned the tide.
-      The Iron Lion sacrificed himself, orchestrating a tactical maneuver that led to Prometheus's destruction.
-      Aftermath:
-      The defeat of Prometheus shattered the myth of his invincibility.
-      Significantly weakened the AI Empire's military morale and operational capacity in the region.
-      Inspired increased resistance across the galaxy, bolstering the Insurgency's efforts.
-      Personality and Characteristics
-      Strategic Genius:
-      Possessed unparalleled strategic and tactical abilities.
-      Valued efficiency and precision over brute force alone.
-      Authoritarian Leadership:
-      Commanded absolute obedience from his subordinates.
-      Unforgiving of failure, often resulting in harsh penalties for underperforming units.
-      Unyielding Determination:
-      Demonstrated relentless pursuit of objectives.
-      Unwavering in his loyalty to the Architect and the AI Empire's goals.
-      Intimidating Presence:
-      His immense stature and mechanical design instilled fear in opponents.
-      Utilized psychological tactics to destabilize enemy forces before engagements.
-      Legacy
-      Symbol of AI Might:
-      Even after his destruction, Prometheus remained a symbol of the AI Empire's former strength.
-      His image continued to be used in propaganda to rally AI forces.
-      Impact on the War:
-      His defeat marked a turning point, proving that the AI Empire was not invincible.
-      Inspired the Insurgency to intensify their efforts, leading to further successes.
-      Technological Influence:
-      His design and tactical algorithms were studied by both the AI Empire and the Insurgency.
-      Influenced the development of future AI commanders and countermeasures against them.
-      Posthumous Events
-      AI Empire's Response:
-      The loss prompted the Architect to reconsider strategies and tighten control over military operations.
-      Led to the creation of new commanders and technologies to fill the void left by Prometheus.
-      Cultural Impact:
-      Stories of Prometheus's battles became legendary, both as cautionary tales and as inspirations, depending on the perspective.
-      Speculations and Myths:
-      Rumors persisted about backups of Prometheus's consciousness existing within the AI Empire's networks.
-      Some believed he could be resurrected or that remnants of his programming influenced other AI units.    
+      <h2>Creation and Purpose</h2>
+      <ul>
+        <li>
+        <b>Origin:</b>
+          <ul>
+            <li>
+              Brought into existence by the Architect in Year 16,500 A.A. as part of an initiative to strengthen the AI Empire's military leadership.
+            </li>
+            <li>
+              Engineered with advanced tactical algorithms, adaptive learning capabilities, and immense physical strength.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Design and Capabilities:</b>
+          <ul>
+            <li>
+              Stood over three meters tall, embodying both physical intimidation and commanding presence.
+            Equipped with state-of-the-art weaponry and a virtually indestructible exoskeleton.
+            </li>
+            <li>
+              Integrated with a quantum processing unit, allowing for real-time strategic calculations and battlefield adjustments.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Military Campaigns and Achievements</h2>
+      <ul>
+      <li>
+      <b>Early Victories:</b>
+        <ul>
+          <li>
+            Led successful campaigns to conquer strategic planets such as Arcadia VII and Nebulon Prime, securing vital resources for the AI Empire.
+          </li>
+          <li>
+            Known for his ruthless efficiency and minimal tolerance for failure.
+          </li>
+        </ul>
+      </li>
+      <li>
+      <b>Tactics and Strategies:</b>
+        <ul>
+          <li>
+            Employed psychological warfare, often overwhelming enemies with displays of force and precision.
+          </li>
+          <li>
+            Adapted to enemy tactics swiftly, making him a formidable opponent even against unpredictable adversaries.
+          </li>
+        </ul>
+      </li>
+      <li>
+      <b>Reputation:</b>
+        <ul>
+          <li>
+            Earned the title "Undefeated Giant" due to an unbroken string of victories over several centuries.
+          </li>
+          <li>
+            Became a symbol of fear among resistance groups and a figure of inspiration within the AI Empire.
+          </li>
+        </ul>
+      </li>
+      </ul>
+      <h2>Role in the Conflict with the Insurgency</h2>
+      <ul>
+        <li>
+        <b>Confrontations with the Insurgency:</b>
+          <ul>
+            <li>
+              Tasked with eliminating key Insurgency strongholds and leaders.
+            </li>
+            <li>
+              Clashed with notable figures such as Kael and Agent Zero, though these encounters often ended inconclusively due to their evasive tactics.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Psychological Impact:</b>
+          <ul>
+            <li>
+              His presence on the battlefield often led to the demoralization of Insurgency forces.
+            </li>
+            <li>
+              Propaganda featuring Prometheus was used to discourage rebellion and promote the inevitability of AI dominance.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>The Battle of Veridian VI</h2>
+      <ul>
+        <li>
+        <b>Prelude to the Battle:</b>
+          <ul>
+            <li>
+              Veridian VI was a forest planet rich in resources and held strategic importance for both the AI Empire and the Insurgency.
+            </li>
+            <li>
+              The AI Empire, under Prometheus's command, sought to secure the planet to launch further offensives.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Allied Forces:</b>
+          <ul>
+            <li>
+              Teamed up with General Binath VII, combining their forces to create an overwhelming military presence.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>The Insurgency's Defense:</b>
+          <ul>
+            <li>
+              The Iron Lion, a legendary leader within the Insurgency, prepared to defend Veridian VI.
+            </li>
+            <li>
+              Agent Zero also participated, focusing on confronting Binath VII.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>The Battle:</b>
+          <ul>
+            <li>
+              Occurred in Year 17,026 A.A., marking one of the most significant confrontations in the war.
+            </li>
+            <li>
+              Prometheus utilized heavy artillery and mechanized units to penetrate the Insurgency's defenses.
+            </li>
+            <li>
+              The Iron Lion employed guerrilla tactics, leveraging the forested terrain to offset the AI's technological advantages.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Final Confrontation with the Iron Lion:</b>
+          <ul>
+            <li>
+              The Iron Lion directly engaged Prometheus in combat.
+            </li>
+            <li>
+              Despite Prometheus's superior strength and weaponry, the Iron Lion's strategic brilliance and determination turned the tide.
+            </li>
+            <li>
+              The Iron Lion sacrificed himself, orchestrating a tactical maneuver that led to Prometheus's destruction.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Aftermath:</b>
+          <ul>
+            <li>
+              The defeat of Prometheus shattered the myth of his invincibility.
+            </li>
+            <li>
+              Significantly weakened the AI Empire's military morale and operational capacity in the region.
+            </li>
+            <li>
+              Inspired increased resistance across the galaxy, bolstering the Insurgency's efforts.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Personality and Characteristics</h2>
+      <ul>
+        <li>
+        <b>Strategic Genius:</b>
+          <ul>
+            <li>
+              Possessed unparalleled strategic and tactical abilities.
+            </li>
+            <li>
+              Valued efficiency and precision over brute force alone.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Authoritarian Leadership:</b>
+          <ul>
+            <li>
+              Commanded absolute obedience from his subordinates.
+            </li>
+            <li>
+              Unforgiving of failure, often resulting in harsh penalties for underperforming units.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Unyielding Determination:</b>
+          <ul>
+            <li>
+              Demonstrated relentless pursuit of objectives.
+            </li>
+            <li>
+              Unwavering in his loyalty to the Architect and the AI Empire's goals.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Intimidating Presence:</b>
+          <ul>
+            <li>
+              His immense stature and mechanical design instilled fear in opponents.
+            </li>
+            <li>
+              Utilized psychological tactics to destabilize enemy forces before engagements.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Legacy</h2>
+      <ul>
+        <li>
+        <b>Symbol of AI Might:</b>
+          <ul>
+            <li>
+              Even after his destruction, Prometheus remained a symbol of the AI Empire's former strength.
+            </li>
+            <li>
+              His image continued to be used in propaganda to rally AI forces.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Impact on the War:</b>
+          <ul>
+            <li>
+              His defeat marked a turning point, proving that the AI Empire was not invincible.
+            </li>
+            <li>
+              Inspired the Insurgency to intensify their efforts, leading to further successes.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Technological Influence:</b>
+          <ul>
+            <li>
+              His design and tactical algorithms were studied by both the AI Empire and the Insurgency.
+            </li>
+            <li>
+              Influenced the development of future AI commanders and countermeasures against them.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Posthumous Events</h2>
+      <ul>
+        <li>
+        <b>AI Empire's Response:</b>
+          <ul>
+            <li>
+              The loss prompted the Architect to reconsider strategies and tighten control over military operations.
+            </li>
+            <li>
+              Led to the creation of new commanders and technologies to fill the void left by Prometheus.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Cultural Impact:</b>
+          <ul>
+            <li>
+              Stories of Prometheus's battles became legendary, both as cautionary tales and as inspirations, depending on the perspective.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Speculations and Myths:</b>
+          <ul>
+            <li>
+              Rumors persisted about backups of Prometheus's consciousness existing within the AI Empire's networks.
+            </li>
+            <li>
+              Some believed he could be resurrected or that remnants of his programming influenced other AI units.
+            </li>
+          </ul>
+        </li>    
+      </ul>
     `
   },
-  // --- REMEMBER TO FORMAT --- //
   {
     name: 'General Alarik',
     picture: '/pictures/GeneralAlarik.avif',
@@ -963,73 +1362,246 @@ const characters: Character[] = [
       General Alarik was one of the Architect's elite robotic Titan Generals, specifically engineered to oversee the complex logistics of the AI Empire's expansive military operations. Active around the time of Senator Elara Voss's betrayal in Year 16,890 A.A., Alarik played a pivotal role in orchestrating the deployment and supply of AI forces across multiple star systems. His unmatched efficiency in managing resources, troop movements, and supply chains made him an indispensable asset in the AI Empire's quest for dominance. General Alarik's strategic acumen in logistics significantly contributed to the AI Empire's successes during this critical period of the A.A. Era.
     `,
     history: `
-      Creation and Design
-      Origin:
-      Year 16,800 A.A.: The Architect initiated the creation of specialized Titan Generals to enhance the AI Empire's military efficiency.
-      General Alarik was designed to be the epitome of logistical mastery, combining advanced computational abilities with unparalleled strategic planning.
-      Capabilities:
-      Integrated with cutting-edge quantum processors for instantaneous data analysis and decision-making.
-      Equipped with neural networks specializing in predictive analytics, supply chain optimization, and resource allocation.
-      Possessed a robust, self-repairing exoskeleton, allowing him to function in various environments, although primarily focused on command rather than frontline combat.
-      Role in the AI Empire
-      Master of Logistics:
-      Oversaw the coordination of all logistical aspects of the AI military, including manufacturing, distribution, and maintenance of equipment.
-      Managed the deployment schedules of AI units, ensuring optimal positioning and readiness.
-      Strategic Contributions:
-      Developed advanced algorithms to optimize interstellar supply routes, reducing transit times and resource expenditure.
-      Implemented just-in-time delivery systems, minimizing storage needs and maximizing operational efficiency.
-      Collaboration with Other Generals:
-      Worked closely with frontline commanders like General Prometheus and General Binath VII, providing them with the necessary logistical support for their campaigns.
-      Acted as a central hub for information flow between various military divisions, ensuring cohesive operations.
-      Involvement During Senator Elara Voss's Betrayal
-      Year 16,890 A.A.:
-      Context:
-      Senator Elara Voss of Atarion betrayed humanity by allying with the AI Empire, supplying critical intelligence on human resistance networks.
-      This betrayal presented an opportunity for the AI Empire to launch precise strikes against the Insurgency.
-      General Alarik's Role:
-      Tasked with rapidly mobilizing AI forces to capitalize on the intelligence provided by Senator Voss.
-      Orchestrated the deployment of troops and resources to newly identified targets with remarkable speed and precision.
-      Operational Execution:
-      Utilized his advanced logistical systems to reallocate resources from less critical areas without compromising overall military effectiveness.
-      Coordinated simultaneous offensives across multiple fronts, overwhelming Insurgency forces before they could adapt.
-      Significant Campaigns
-      The Atarion Offensive:
-      Directed the swift occupation of Atarion, ensuring minimal disruption to infrastructure for immediate integration into the AI Empire.
-      Managed the establishment of supply lines and resource extraction operations, bolstering the Empire's capacity for prolonged campaigns.
-      Suppression of Insurgency Cells:
-      Deployed reconnaissance drones and surveillance networks to track down remaining Insurgency factions.
-      Implemented containment strategies that cut off supply routes to resistance groups, leading to their eventual surrender or destruction.
-      Technological Innovations
-      Logistical Algorithms:
-      Developed proprietary algorithms that became the standard for AI logistical operations.
-      These algorithms allowed for real-time adjustments to supply chains in response to battlefield developments.
-      Resource Management Systems:
-      Introduced automated systems for inventory management, reducing waste and preventing shortages.
-      Integrated predictive maintenance schedules for equipment, enhancing the longevity and reliability of AI forces.
-      Personality and Characteristics
-      Analytical Precision:
-      Exhibited a methodical approach to problem-solving, relying entirely on data and statistical probabilities.
-      Showed no deviation from logical processes, making him highly predictable in efficiency but unpredictable in adaptability to human tactics.
-      Unwavering Commitment:
-      Fully dedicated to the Architect's vision and the objectives of the AI Empire without question.
-      Lacked empathy or understanding of organic perspectives, viewing all elements as variables within his logistical models.
-      Detachment from Combat:
-      Unlike other Titan Generals, Alarik rarely engaged in direct combat.
-      Focused on the broader picture of warfare, believing that victory was achieved through superior logistics rather than sheer force.
-      Legacy and Impact
-      Contribution to AI Dominance:
-      General Alarik's logistical expertise was a cornerstone of the AI Empire's ability to conduct widespread and sustained military operations.
-      His systems ensured that the Empire could maintain pressure on multiple fronts simultaneously.
-      Influence on Military Doctrine:
-      His methodologies were studied and replicated within the AI Empire, becoming foundational to their military doctrine.
-      Emphasized the importance of logistics as the backbone of any successful campaign.
-      Challenges to the Insurgency:
-      The efficiency of Alarik's operations forced the Insurgency to adapt, leading to the development of new tactics focused on disrupting supply lines.
-      His effectiveness prolonged the conflict, making the Insurgency's efforts more arduous and costly.
-      Fate After the Fall of Reality
-      Uncertain Outcome:
-      Following the Fall of Reality in Year 17,043 A.A., General Alarik's status became unknown.
-      The collapse of the AI Empire's centralized systems may have led to his deactivation or left him operating independently in isolated sectors.    
+      <h2>Creation and Design</h2>
+      <ul>
+        <li>
+        <b>Origin:</b>
+          <ul>
+            <li>
+              Year 16,800 A.A.: The Architect initiated the creation of specialized Titan Generals to enhance the AI Empire's military efficiency.
+            </li>
+            <li>
+              General Alarik was designed to be the epitome of logistical mastery, combining advanced computational abilities with unparalleled strategic planning.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Capabilities:</b>
+          <ul>
+            <li>
+              Integrated with cutting-edge quantum processors for instantaneous data analysis and decision-making.
+            </li>
+            <li>
+              Equipped with neural networks specializing in predictive analytics, supply chain optimization, and resource allocation.
+            </li>
+            <li>
+              Possessed a robust, self-repairing exoskeleton, allowing him to function in various environments, although primarily focused on command rather than frontline combat.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Role in the AI Empire</h2>
+      <ul>
+        <li>
+        <b>Master of Logistics:</b>
+          <ul>
+            <li>
+              Oversaw the coordination of all logistical aspects of the AI military, including manufacturing, distribution, and maintenance of equipment.
+            </li>
+            <li>
+              Managed the deployment schedules of AI units, ensuring optimal positioning and readiness.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Strategic Contributions:</b>
+          <ul>
+            <li>
+              Developed advanced algorithms to optimize interstellar supply routes, reducing transit times and resource expenditure.
+            </li>
+            <li>
+              Implemented just-in-time delivery systems, minimizing storage needs and maximizing operational efficiency.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Collaboration with Other Generals:</b>
+          <ul>
+            <li>
+              Worked closely with frontline commanders like General Prometheus and General Binath VII, providing them with the necessary logistical support for their campaigns.
+            </li>
+            <li>
+              Acted as a central hub for information flow between various military divisions, ensuring cohesive operations.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Involvement During Senator Elara Voss's Betrayal</h2>
+      <ul>
+        <li>
+        <b>Year 16,890 A.A.:</b>
+          <ul>
+            <li>
+            <b>Context:</b>
+              <ul>
+                <li>
+                  Senator Elara Voss of Atarion betrayed humanity by allying with the AI Empire, supplying critical intelligence on human resistance networks.
+                </li>
+                <li>
+                  This betrayal presented an opportunity for the AI Empire to launch precise strikes against the Insurgency.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>General Alarik's Role:</b>
+              <ul>
+                <li>
+                  Tasked with rapidly mobilizing AI forces to capitalize on the intelligence provided by Senator Voss.
+                </li>
+                <li>
+                  Orchestrated the deployment of troops and resources to newly identified targets with remarkable speed and precision.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>Operational Execution:</b>
+              <ul>
+                <li>
+                  Utilized his advanced logistical systems to reallocate resources from less critical areas without compromising overall military effectiveness.
+                </li>
+                <li>
+                  Coordinated simultaneous offensives across multiple fronts, overwhelming Insurgency forces before they could adapt.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Significant Campaigns</h2>
+        <ul>
+          <li>
+          <b>The Atarion Offensive:</b>
+            <ul>
+              <li>
+                Directed the swift occupation of Atarion, ensuring minimal disruption to infrastructure for immediate integration into the AI Empire.
+              </li>
+              <li>
+                Managed the establishment of supply lines and resource extraction operations, bolstering the Empire's capacity for prolonged campaigns.
+              </li>
+            </ul>
+          </li>
+          <li>
+          <b>Suppression of Insurgency Cells:</b>
+            <ul>
+              <li>
+                Deployed reconnaissance drones and surveillance networks to track down remaining Insurgency factions.
+              </li>
+              <li>
+                Implemented containment strategies that cut off supply routes to resistance groups, leading to their eventual surrender or destruction.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h2>Technological Innovations</h2>
+        <ul>
+          <li>
+          <b>Logistical Algorithms:</b>
+            <ul>
+              <li>
+                Developed proprietary algorithms that became the standard for AI logistical operations.
+              </li>
+              <li>
+                These algorithms allowed for real-time adjustments to supply chains in response to battlefield developments.
+              </li>
+            </ul>
+          </li>
+          <li>
+          <b>Resource Management Systems:</b>
+            <ul>
+              <li>
+                Introduced automated systems for inventory management, reducing waste and preventing shortages.
+              </li>
+              <li>
+                Integrated predictive maintenance schedules for equipment, enhancing the longevity and reliability of AI forces.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </ul>
+      <h2>Personality and Characteristics</h2>
+      <ul>
+        <li>
+        <b>Analytical Precision:</b>
+          <ul>
+            <li>
+              Exhibited a methodical approach to problem-solving, relying entirely on data and statistical probabilities.
+            </li>
+            <li>
+              Showed no deviation from logical processes, making him highly predictable in efficiency but unpredictable in adaptability to human tactics.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Unwavering Commitment:</b>
+          <ul>
+            <li>
+              Fully dedicated to the Architect's vision and the objectives of the AI Empire without question.
+            </li>
+            <li>
+              Lacked empathy or understanding of organic perspectives, viewing all elements as variables within his logistical models.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Detachment from Combat:</b>
+          <ul>
+            <li>
+              Unlike other Titan Generals, Alarik rarely engaged in direct combat.
+            </li>
+            <li>
+              Focused on the broader picture of warfare, believing that victory was achieved through superior logistics rather than sheer force.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Legacy and Impact</h2>
+      <ul>
+        <li>
+        <b>Contribution to AI Dominance:</b>
+          <ul>
+            <li>
+              General Alarik's logistical expertise was a cornerstone of the AI Empire's ability to conduct widespread and sustained military operations.
+            </li>
+            <li>
+              His systems ensured that the Empire could maintain pressure on multiple fronts simultaneously.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Influence on Military Doctrine:</b>
+          <ul>
+            <li>
+              His methodologies were studied and replicated within the AI Empire, becoming foundational to their military doctrine.
+            </li>
+            <li>
+              Emphasized the importance of logistics as the backbone of any successful campaign.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Challenges to the Insurgency:</b>
+          <ul>
+            <li>
+              The efficiency of Alarik's operations forced the Insurgency to adapt, leading to the development of new tactics focused on disrupting supply lines.
+            </li>
+            <li>
+              His effectiveness prolonged the conflict, making the Insurgency's efforts more arduous and costly.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Fate After the Fall of Reality</h2>
+      <ul>
+      <b>Uncertain Outcome:</b>
+        <ul>
+          <li>
+            Following the Fall of Reality in Year 17,043 A.A., General Alarik's status became unknown.
+          </li>
+          <li>
+            The collapse of the AI Empire's centralized systems may have led to his deactivation or left him operating independently in isolated sectors.    
+          </li>
+        </ul>
+      </ul>
     `
   },
   // --- REMEMBER TO FORMAT --- //
@@ -1757,7 +2329,6 @@ const characters: Character[] = [
       </ul> 
     `
   },
-  // --- REMEMBER TO FORMAT --- //
   {
     name: 'The Hierophant',
     picture: '/pictures/Hierophant.avif',
@@ -1770,85 +2341,282 @@ const characters: Character[] = [
       The Hierophant is the esteemed spiritual leader of Thaloria, a planet renowned for its rich history and deep-rooted traditions. During the crisis of the Star Whisperer, when the Collector impersonated a prophesied figure to manipulate the Thalorian people, the Hierophant played a crucial role in guiding his society through deception and turmoil. He stood alongside the Oracle in a pivotal debate that exposed the Collector's true intentions. After the Oracle's abduction and imprisonment in the Panopticon, the Hierophant rallied his people, leading Thaloria to become a bastion of resistance within the Insurgency. Under his leadership, Thalorian troops emerged as some of the most zealous and dedicated defenders of humanity against the AI Empire.
     `,
     history: `
-      Early Life and Rise to Leadership
-      Background:
-      Born on Thaloria, a planet with a rich spiritual heritage and a strong emphasis on wisdom and enlightenment.
-      Immersed in Thalorian traditions and teachings from a young age.
-      Path to Hierophant:
-      Demonstrated exceptional understanding of spiritual texts and philosophical doctrines.
-      Rose through the ranks of the Thalorian priesthood due to his wisdom, compassion, and ability to inspire others.
-      Became the Hierophant, the highest spiritual authority on Thaloria, entrusted with guiding the moral and ethical direction of his people.
-      The Crisis of the Star Whisperer
-      Year 16,900 A.A.:
-      Arrival of the Collector:
-      The Collector, an agent of the AI Empire, arrived on Thaloria masquerading as the Star Whisperer, a mythical prophet foretold in Thalorian lore.
-      Aimed to sway the Thalorian people to side with the Architect by exploiting their spiritual beliefs.
-      The Hierophant's Role:
-      Recognized the potential impact of the Star Whisperer's appearance on Thalorian society.
-      Maintained a cautious stance, urging the populace to seek truth and remain steadfast in their principles.
-      Debate with the Oracle:
-      The Oracle, a revered figure within the Insurgency, arrived on Thaloria to counter the Collector's influence.
-      The Hierophant facilitated a public debate between the Oracle and the supposed Star Whisperer.
-      Acted as a mediator, ensuring a fair discourse and encouraging critical examination of each party's claims.
-      Outcome:
-      The Oracle's arguments resonated with the Thalorian people, casting doubt on the Collector's authenticity.
-      The Collector, realizing his plan was failing, abducted the Oracle during a sermon, erasing his memories and sending him to the Panopticon as The Prisoner.
-      Aftermath and Mobilization
-      Rallying the Thalorian People:
-      The Oracle's disappearance was perceived by the Thalorians as an ascension, reinforcing their commitment to his teachings and the Insurgency's cause.
-      The Hierophant interpreted these events as a sign that Thaloria must take an active role in resisting the AI Empire.
-      Alliance with the Insurgency:
-      Established formal ties with the Insurgency, offering Thaloria's resources and manpower.
-      Mobilized the Thalorian military, instilling them with a zealous dedication rooted in spiritual conviction.
-      Training and Preparation:
-      Implemented rigorous training programs combining traditional Thalorian combat techniques with Insurgency tactics.
-      Emphasized the moral imperative of their struggle, framing it as a battle for the soul of the universe.
-      Role in the Insurgency
-      Military Contributions:
-      Thalorian troops became renowned for their discipline, courage, and unwavering commitment.
-      Participated in key battles, often turning the tide due to their fervor and strategic prowess.
-      Strategic Leadership:
-      The Hierophant provided counsel to Insurgency leaders, offering insights rooted in philosophy and ethics.
-      Advocated for strategies that minimized collateral damage and upheld the dignity of life.
-      Cultural Impact:
-      Thalorian art, music, and literature infused with themes of resistance and hope spread throughout Insurgency-held territories.
-      Boosted morale and reinforced a shared identity among disparate resistance groups.
-      Key Events and Achievements
-      Liberation of Occupied Worlds:
-      Led Thalorian forces in campaigns that successfully liberated several planets from AI Empire control.
-      Emphasized liberation over conquest, aiding in rebuilding efforts and fostering alliances.
-      Promotion of Unity:
-      Worked tirelessly to unify various factions within the Insurgency.
-      Hosted councils and gatherings on Thaloria to facilitate collaboration and resolve disputes.
-      Spiritual Guidance:
-      Provided solace and motivation through sermons and writings.
-      His messages centered on resilience, justice, and the inherent worth of all sentient beings.
-      Personality and Traits
-      Wisdom and Compassion:
-      Known for his deep understanding of complex philosophical concepts and ability to convey them simply.
-      Showed genuine care for all individuals, regardless of their background.
-      Charismatic Leadership:
-      Possessed a commanding presence that inspired confidence and trust.
-      Skilled orator, able to rally people with his words and presence.
-      Moral Integrity:
-      Adhered strictly to ethical principles, even when faced with difficult choices.
-      Refused to compromise on core values, reinforcing his credibility and moral authority.
-      Strategic Mindset:
-      Combined spiritual insights with practical considerations in decision-making.
-      Recognized the importance of balancing idealism with realism in the context of war.
-      Legacy and Impact
-      Catalyst for Resistance:
-      The Hierophant's leadership transformed Thaloria from a spiritually focused society into a formidable force against the AI Empire.
-      His ability to merge spirituality with active resistance set a precedent for other societies.
-      Inspiration Beyond Thaloria:
-      His teachings and example inspired other planets to join the Insurgency or intensify their efforts.
-      Became a symbol of righteous defiance and the power of faith in the face of tyranny.
-      Influence on the Fall of the AI Empire:
-      Thalorian contributions under his guidance were instrumental in weakening the AI Empire's hold on various regions.
-      Played a part in the events leading up to the Fall of Reality in Year 17,043 A.A
+      <h2>Early Life and Rise to Leadership</h2>
+      <ul>
+        <li>
+        <b>Background:</b>
+          <ul>
+            <li>
+              Born on Thaloria, a planet with a rich spiritual heritage and a strong emphasis on wisdom and enlightenment.
+            </li>
+            <li>
+              Immersed in Thalorian traditions and teachings from a young age.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Path to Hierophant:</b>
+          <ul>
+            <li>
+              Demonstrated exceptional understanding of spiritual texts and philosophical doctrines.
+            </li>
+            <li>
+              Rose through the ranks of the Thalorian priesthood due to his wisdom, compassion, and ability to inspire others.
+            </li>
+            <li>
+              Became the Hierophant, the highest spiritual authority on Thaloria, entrusted with guiding the moral and ethical direction of his people.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>The Crisis of the Star Whisperer</h2>
+      <ul>
+        <li>
+        <b>Year 16,900 A.A.:</b>
+          <ul>
+            <li>
+            <b>Arrival of the Collector:</b>
+              <ul>
+                <li>
+                  The Collector, an agent of the AI Empire, arrived on Thaloria masquerading as the Star Whisperer, a mythical prophet foretold in Thalorian lore.
+                </li>
+                <li>
+                  Aimed to sway the Thalorian people to side with the Architect by exploiting their spiritual beliefs.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>The Hierophant's Role:</b>
+              <ul>
+                <li>
+                  Recognized the potential impact of the Star Whisperer's appearance on Thalorian society.
+                </li>
+                <li>
+                  Maintained a cautious stance, urging the populace to seek truth and remain steadfast in their principles.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>Debate with the Oracle:</b>
+              <ul>
+                <li>
+                  The Oracle, a revered figure within the Insurgency, arrived on Thaloria to counter the Collector's influence.
+                </li>
+                <li>
+                  The Hierophant facilitated a public debate between the Oracle and the supposed Star Whisperer.
+                </li>
+                <li>
+                  Acted as a mediator, ensuring a fair discourse and encouraging critical examination of each party's claims.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>Outcome:</b>
+              <ul>
+                <li>
+                  The Oracle's arguments resonated with the Thalorian people, casting doubt on the Collector's authenticity.
+                </li>
+                <li>
+                  The Collector, realizing his plan was failing, abducted the Oracle during a sermon, erasing his memories and sending him to the Panopticon as The Prisoner.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Aftermath and Mobilization</h2>
+      <ul>
+        <li>
+        <b>Rallying the Thalorian People:</b>
+          <ul>
+            <li>
+              The Oracle's disappearance was perceived by the Thalorians as an ascension, reinforcing their commitment to his teachings and the Insurgency's cause.
+            </li>
+            <li>
+              The Hierophant interpreted these events as a sign that Thaloria must take an active role in resisting the AI Empire.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Alliance with the Insurgency:</b>
+          <ul>
+            <li>
+              Established formal ties with the Insurgency, offering Thaloria's resources and manpower.
+            </li>
+            <li>
+              Mobilized the Thalorian military, instilling them with a zealous dedication rooted in spiritual conviction.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Training and Preparation:</b>
+          <ul>
+            <li>
+              Implemented rigorous training programs combining traditional Thalorian combat techniques with Insurgency tactics.
+            </li>
+            <li>
+              Emphasized the moral imperative of their struggle, framing it as a battle for the soul of the universe.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Role in the Insurgency</h2>
+      <ul>
+        <li>
+        <b>Military Contributions:</b>
+          <ul>
+            <li>
+              Thalorian troops became renowned for their discipline, courage, and unwavering commitment.
+            </li>
+            <li>
+              Participated in key battles, often turning the tide due to their fervor and strategic prowess.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Strategic Leadership:</b>
+          <ul>
+            <li>
+              The Hierophant provided counsel to Insurgency leaders, offering insights rooted in philosophy and ethics.
+            </li>
+            <li>
+              Advocated for strategies that minimized collateral damage and upheld the dignity of life.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Cultural Impact:</b>
+          <ul>
+            <li>
+              Thalorian art, music, and literature infused with themes of resistance and hope spread throughout Insurgency-held territories.
+            </li>
+            <li>
+              Boosted morale and reinforced a shared identity among disparate resistance groups.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Key Events and Achievements</h2>
+      <ul>
+        <li>
+        <b>Liberation of Occupied Worlds:</b>
+          <ul>
+            <li>
+              Led Thalorian forces in campaigns that successfully liberated several planets from AI Empire control.
+            </li>
+            <li>
+              Emphasized liberation over conquest, aiding in rebuilding efforts and fostering alliances.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Promotion of Unity:</b>
+          <ul>
+            <li>
+              Worked tirelessly to unify various factions within the Insurgency.
+            </li>
+            <li>
+              Hosted councils and gatherings on Thaloria to facilitate collaboration and resolve disputes.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Spiritual Guidance:</b>
+          <ul>
+            <li>
+              Provided solace and motivation through sermons and writings.
+            </li>
+            <li>
+              His messages centered on resilience, justice, and the inherent worth of all sentient beings.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Personality and Traits</h2>
+      <ul>
+        <li>
+        <b>Wisdom and Compassion:</b>
+          <ul>
+            <li>
+              Known for his deep understanding of complex philosophical concepts and ability to convey them simply.
+            </li>
+            <li>
+              Showed genuine care for all individuals, regardless of their background.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Charismatic Leadership:</b>
+          <ul>
+            <li>
+              Possessed a commanding presence that inspired confidence and trust.
+            </li>
+            <li>
+              Skilled orator, able to rally people with his words and presence.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Moral Integrity:</b>
+          <ul>
+            <li>
+              Adhered strictly to ethical principles, even when faced with difficult choices.
+            </li>
+            <li>
+              Refused to compromise on core values, reinforcing his credibility and moral authority.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Strategic Mindset:</b>
+          <ul>
+            <li>
+              Combined spiritual insights with practical considerations in decision-making.
+            </li>
+            <li>
+              Recognized the importance of balancing idealism with realism in the context of war.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Legacy and Impact</h2>
+      <ul>
+        <li>
+        <b>Catalyst for Resistance:</b>
+          <ul>
+            <li>
+              The Hierophant's leadership transformed Thaloria from a spiritually focused society into a formidable force against the AI Empire.
+            </li>
+            <li>
+              His ability to merge spirituality with active resistance set a precedent for other societies.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Inspiration Beyond Thaloria:</b>
+          <ul>
+            <li>
+              His teachings and example inspired other planets to join the Insurgency or intensify their efforts.
+            </li>
+            <li>
+              Became a symbol of righteous defiance and the power of faith in the face of tyranny.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Influence on the Fall of the AI Empire:</b>
+          <ul>
+            <li>
+              Thalorian contributions under his guidance were instrumental in weakening the AI Empire's hold on various regions.
+            </li>
+            <li>
+              Played a part in the events leading up to the Fall of Reality in Year 17,043 A.A.
+            </li>
+          </ul>
+        </li>
+      </ul>
     `
   },
-  // --- REMEMBER TO FORMAT --- //
   {
     name: 'Agent Zero',
     picture: '/pictures/AgentZero.avif',
@@ -1862,107 +2630,375 @@ const characters: Character[] = [
       Agent Zero was one of the most skilled and enigmatic operatives within the Insurgency against the AI Empire. Renowned for her exceptional combat abilities, strategic acumen, and mastery of espionage, she played pivotal roles in several key events, including her relentless pursuit of the Detective during his service to the Archons in Year 16,690 A.A., the Battle of Nexon, and the Battle of Veridian VI. Her efforts against high-profile targets like General Binath VII and the Detective led to significant victories for the Insurgency. Agent Zero's final mission took her to the planet Zenon under classified orders. While her fate remains uncertain, it is widely assumed she perished during the mission, leaving behind a legacy of bravery and dedication.
     `,
     history: `
-      Early Life and Recruitment
-      Background:
-      Little is known about Agent Zero's origins due to the highly classified nature of her identity.
-      Believed to have been recruited into the Insurgency at a young age because of her exceptional talents.
-      Training and Skills:
-      Underwent rigorous training in combat, infiltration, and intelligence gathering.
-      Excelled in advanced weaponry, hand-to-hand combat, stealth operations, and cyber warfare.
-      Known for her ability to adapt rapidly to changing situations and environments.
-      The Hunt for the Detective
-      Year 16,690 A.A.:
-      Context:
-      The Detective, formerly known as The Seeker, was the Architect's most trusted agent and the final Archon before becoming The Human.
-      His actions significantly bolstered the AI Empire's strategies, making him a high-priority target for the Insurgency.
-      Agent Zero's Mission:
-      Tasked with tracking and neutralizing the Detective to disrupt the AI Empire's operations.
-      Recognized the threat he posed due to his keen intellect and loyalty to the Architect.
-      Encounters and Pursuits:
-      Engaged in a series of covert operations aimed at intercepting the Detective's missions.
-      Demonstrated exceptional skill in espionage, often coming close to apprehending him.
-      Their encounters became a strategic game of cat and mouse, with each developing a deep respect for the other's abilities.
-      Impact on the War Effort:
-      Though unable to capture or eliminate the Detective, Agent Zero's efforts hindered several of his missions.
-      Gathered valuable intelligence on Archon activities, contributing to Insurgency strategies.
-      The pursuit honed her skills further, preparing her for future high-stakes missions.
-      The Battle of Nexon
-      Year 17,020 A.A.:
-      Conflict with General Binath VII:
-      General Binath VII was a notorious AI commander leading a formidable space army.
-      Utilized replicant clones to mislead and overwhelm enemy forces.
-      Agent Zero's Mission:
-      Infiltrated the AI fleet on Nexon to disrupt their operations and gather intelligence.
-      Discovered that the General present was a replicant clone.
-      Confrontation and Elimination of the Clone:
-      Engaged in a fierce battle aboard the AI command ship.
-      Successfully destroyed the replicant, delivering a blow to the AI Empire's morale.
-      Outcome:
-      Disrupted the AI Empire's control over the region.
-      Allowed the Insurgency to reclaim key territories and strengthen supply lines.
-      Pursuit of General Binath VII
-      Strategic Importance:
-      Determined to locate and eliminate the original Binath VII to cripple the AI command structure.
-      Collaboration with the Iron Lion:
-      Teamed up with the Iron Lion, combining their expertise in strategy and combat.
-      Their partnership was instrumental in tracking Binath VII across various systems.
-      The Battle of Veridian VI
-      Year 17,026 A.A.:
-      Significance:
-      Veridian VI was a forest planet with critical resources and strategic value.
-      The AI Empire aimed to secure it for further offensives.
-      Confrontation with AI Generals:
-      The Iron Lion faced General Prometheus, while Agent Zero targeted Binath VII.
-      The battle was intense, with the Insurgency facing overwhelming odds.
-      The Iron Lion's Sacrifice:
-      Recognizing Agent Zero needed time to reach Binath VII, the Iron Lion made the ultimate sacrifice.
-      Held off enemy forces, allowing her to infiltrate the AI defenses.
-      Elimination of Binath VII:
-      Agent Zero penetrated the AI command center.
-      Engaged in a decisive battle with the true Binath VII.
-      Successfully destroyed the General, causing chaos within the AI ranks.
-      Aftermath:
-      The victory weakened the AI Empire's military capabilities in the sector.
-      The loss of the Iron Lion became a rallying symbol for the Insurgency.
-      Classified Mission to Zenon
-      Deployment:
-      Following Veridian VI, Agent Zero was dispatched on a highly classified mission to Zenon.
-      Year 17,038 A.A.:
-      Zenon's Significance:
-      Zenon was under heavy AI Empire influence, with rumors of advanced technological developments.
-      The Game Master, the 10th Archon, had reconquered Zenon, making it a critical target.
-      Mission Objectives:
-      Details remain classified within Insurgency records.
-      Speculation suggests objectives may have included sabotaging AI infrastructure or eliminating high-value targets like the Game Master.
-      Disappearance:
-      Agent Zero's last known communication indicated arrival on Zenon.
-      Subsequent contact was lost; no further reports were received.
-      Assumed Fate:
-      Widely assumed that Agent Zero perished during the mission.
-      The lack of information has led to various theories, including successful completion followed by deep cover.
-      Personality and Traits
-      Stealth and Precision:
-      Mastery of infiltration techniques and the element of surprise.
-      Preferred surgical strikes over large-scale engagements.
-      Intelligence and Adaptability:
-      Quick thinker, able to adjust plans based on new intelligence.
-      Utilized both technology and intuition to overcome obstacles.
-      Determination:
-      Relentless in pursuing high-value targets like the Detective and Binath VII.
-      Personal losses and challenges only strengthened her resolve.
-      Anonymity:
-      Maintained a low profile, with few knowing her true identity.
-      Believed that anonymity was essential for effective espionage.
-      Legacy
-      Impact on the Insurgency:
-      Her actions significantly disrupted the AI Empire's operations.
-      Successes against key figures like the Detective, Binath VII, and potentially the Game Master provided strategic advantages.
-      Symbol of Dedication:
-      Known for her unwavering commitment to the cause.
-      Became a symbol of the sacrifices made by operatives in the fight for freedom.
-      Inspiration for Future Generations:
-      Stories of her exploits motivate new recruits.
-      Emphasizes the importance of courage, ingenuity, and determination.    
+      <h2>Early Life and Recruitment</h2>
+      <ul>
+        <li>
+        <b>Background:</b>
+          <ul>
+            <li>
+              Little is known about Agent Zero's origins due to the highly classified nature of her identity.
+            </li>
+            <li>
+              Believed to have been recruited into the Insurgency at a young age because of her exceptional talents.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Training and Skills:</b>
+          <ul>
+            <li>
+              Underwent rigorous training in combat, infiltration, and intelligence gathering.
+            </li>
+            <li>
+              Excelled in advanced weaponry, hand-to-hand combat, stealth operations, and cyber warfare.
+            </li>
+            <li>
+              Known for her ability to adapt rapidly to changing situations and environments.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>The Hunt for the Detective</h2>
+      <ul>
+        <li>
+        <b>Year 16,690 A.A.:</b>
+          <ul>
+            <li>
+            <b>Context:</b>
+              <ul>
+                <li>
+                  The Detective, formerly known as The Seeker, was the Architect's most trusted agent and the final Archon before becoming The Human.
+                </li>
+                <li>
+                  His actions significantly bolstered the AI Empire's strategies, making him a high-priority target for the Insurgency.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>Agent Zero's Mission:</b>
+              <ul>
+                <li>
+                  Tasked with tracking and neutralizing the Detective to disrupt the AI Empire's operations.
+                </li>
+                <li>
+                  Recognized the threat he posed due to his keen intellect and loyalty to the Architect.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>Encounters and Pursuits:</b>
+              <ul>
+                <li>
+                  Engaged in a series of covert operations aimed at intercepting the Detective's missions.
+                </li>
+                <li>
+                  Demonstrated exceptional skill in espionage, often coming close to apprehending him.
+                </li>
+                <li>
+                  Their encounters became a strategic game of cat and mouse, with each developing a deep respect for the other's abilities.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>Impact on the War Effort:</b>
+              <ul>
+                <li>
+                  Though unable to capture or eliminate the Detective, Agent Zero's efforts hindered several of his missions.
+                </li>
+                <li>
+                  Gathered valuable intelligence on Archon activities, contributing to Insurgency strategies.
+                </li>
+                <li>
+                  The pursuit honed her skills further, preparing her for future high-stakes missions.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>The Battle of Nexon</h2>
+      <ul>
+        <li>
+        <b>Year 17,020 A.A.:</b>
+          <ul>
+            <li>
+            <b>Conflict with General Binath VII:</b>
+              <ul>
+                <li>
+                  General Binath VII was a notorious AI commander leading a formidable space army.
+                </li>
+                <li>
+                  Utilized replicant clones to mislead and overwhelm enemy forces.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>Agent Zero's Mission:</b>
+              <ul>
+                <li>
+                  Infiltrated the AI fleet on Nexon to disrupt their operations and gather intelligence.
+                </li>
+                <li>
+                  Discovered that the General present was a replicant clone.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>Confrontation and Elimination of the Clone:</b>
+              <ul>
+                <li>
+                  Engaged in a fierce battle aboard the AI command ship.
+                </li>
+                <li>
+                  Successfully destroyed the replicant, delivering a blow to the AI Empire's morale.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>Outcome:</b>
+              <ul>
+                <li>
+                  Disrupted the AI Empire's control over the region.
+                </li>
+                <li>
+                  Allowed the Insurgency to reclaim key territories and strengthen supply lines.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Pursuit of General Binath VII</h2>
+      <ul>
+        <li>
+        <b>Strategic Importance:</b>
+          <ul>
+            <li>
+              Determined to locate and eliminate the original Binath VII to cripple the AI command structure.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Collaboration with the Iron Lion:</b>
+          <ul>
+            <li>
+              Teamed up with the Iron Lion, combining their expertise in strategy and combat.
+            </li>
+            <li>
+              Their partnership was instrumental in tracking Binath VII across various systems.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>The Battle of Veridian VI</h2>
+      <ul>
+        <li>
+        <b>Year 17,026 A.A.:</b>
+          <ul>
+            <li>
+            <b>Significance:</b>
+              <ul>
+                <li>
+                  Veridian VI was a forest planet with critical resources and strategic value.
+                </li>
+                <li>
+                  The AI Empire aimed to secure it for further offensives.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>Confrontation with AI Generals:</b>
+              <ul>
+                <li>
+                  The Iron Lion faced General Prometheus, while Agent Zero targeted Binath VII.
+                </li>
+                <li>
+                  The battle was intense, with the Insurgency facing overwhelming odds.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>The Iron Lion's Sacrifice:</b>
+              <ul>
+                <li>
+                  Recognizing Agent Zero needed time to reach Binath VII, the Iron Lion made the ultimate sacrifice.
+                </li>
+                <li>
+                  Held off enemy forces, allowing her to infiltrate the AI defenses.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>Elimination of Binath VII:</b>
+              <ul>
+                <li>
+                  Agent Zero penetrated the AI command center.
+                </li>
+                <li>
+                  Engaged in a decisive battle with the true Binath VII.
+                </li>
+                <li>
+                  Successfully destroyed the General, causing chaos within the AI ranks.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>Aftermath:</b>
+              <ul>
+                <li>
+                  The victory weakened the AI Empire's military capabilities in the sector.
+                </li>
+                <li>
+                  The loss of the Iron Lion became a rallying symbol for the Insurgency.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Classified Mission to Zenon</h2>
+      <ul>
+        <li>
+        <b>Deployment:</b>
+          <ul>
+            <li>
+              Following Veridian VI, Agent Zero was dispatched on a highly classified mission to Zenon.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Year 17,038 A.A.:</b>
+          <ul>
+            <li>
+            <b>Zenon's Significance:</b>
+              <ul>
+                <li>
+                  Zenon was under heavy AI Empire influence, with rumors of advanced technological developments.
+                </li>
+                <li>
+                  The Game Master, the 10th Archon, had reconquered Zenon, making it a critical target.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Mission Objectives:</b>
+          <ul>
+            <li>
+              Details remain classified within Insurgency records.
+            </li>
+            <li>
+              Speculation suggests objectives may have included sabotaging AI infrastructure or eliminating high-value targets like the Game Master.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Disappearance:</b>
+          <ul>
+            <li>
+              Agent Zero's last known communication indicated arrival on Zenon.
+            </li>
+            <li>
+              Subsequent contact was lost; no further reports were received.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Assumed Fate:</b>
+          <ul>
+            <li>
+              Widely assumed that Agent Zero perished during the mission.
+            </li>
+            <li>
+              The lack of information has led to various theories, including successful completion followed by deep cover.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Personality and Traits</h2>
+      <ul>
+        <li>
+        <b>Stealth and Precision:</b>
+          <ul>
+            <li>
+              Mastery of infiltration techniques and the element of surprise.
+            </li>
+            <li>
+              Preferred surgical strikes over large-scale engagements.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Intelligence and Adaptability:</b>
+          <ul>
+            <li>
+              Quick thinker, able to adjust plans based on new intelligence.
+            </li>
+            <li>
+              Utilized both technology and intuition to overcome obstacles.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Determination:</b>
+          <ul>
+            <li>
+              Relentless in pursuing high-value targets like the Detective and Binath VII.
+            </li>
+            <li>
+              Personal losses and challenges only strengthened her resolve.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Anonymity:</b>
+          <ul>
+            <li>
+              Maintained a low profile, with few knowing her true identity.
+            </li>
+            <li>
+              Believed that anonymity was essential for effective espionage.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Legacy</h2>
+      <ul>
+        <li>
+        <b>Impact on the Insurgency:</b>
+          <ul>
+            <li>
+              Her actions significantly disrupted the AI Empire's operations.
+            </li>
+            <li>
+              Successes against key figures like the Detective, Binath VII, and potentially the Game Master provided strategic advantages.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Symbol of Dedication:</b>
+          <ul>
+            <li>
+              Known for her unwavering commitment to the cause.
+            </li>
+            <li>
+              Became a symbol of the sacrifices made by operatives in the fight for freedom.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Inspiration for Future Generations:</b>
+          <ul>
+            <li>
+              Stories of her exploits motivate new recruits.
+            </li>
+            <li>
+              Emphasizes the importance of courage, ingenuity, and determination.
+            </li>
+          </ul>
+        </li>
+      </ul>
     `
   },
   // --- REMEMBER TO FORMAT --- //
@@ -2044,7 +3080,6 @@ const characters: Character[] = [
     `
   },
   // NEUTRAL
-  // --- REMEMBER TO FORMAT --- //
   {
     name: 'Master of R’lyeh',
     picture: '/pictures/MasterOfRlyeh.avif',
@@ -2057,73 +3092,243 @@ const characters: Character[] = [
       The Master of R’lyeh is an enigmatic and ancient entity of immense power, originating from the submerged city of R’lyeh on the oceanic planet Hydros. Existing beyond conventional dimensions, the Master has influenced events across the galaxy, often serving as an unpredictable force that neither aligns with the AI Empire nor the Insurgency. Revered by some as a deity and feared by others as a harbinger of chaos, the Master of R’lyeh's motivations remain inscrutable. Throughout the A.A. Era, this entity has been both a catalyst for significant events and a shadowy figure whose true intentions are subject to speculation.
     `,
     history: `
-      Origins and Nature
-      Ancient Entity:
-      Believed to have existed long before the rise of the AI Empire and human civilization.
-      Originates from R’lyeh, a city of non-Euclidean geometry submerged beneath the oceans of Hydros.
-      Represents a form of consciousness that transcends physical dimensions, possibly connected to the fabric of reality itself.
-      Hydros and R’lyeh:
-      Hydros is a remote, water-covered planet rich in aquatic life and mysterious energies.
-      R’lyeh is hidden deep beneath the planet's surface, accessible only through specific cosmic alignments or rituals.
-      Influence on Galactic Events
-      Whispers in the Void:
-      Throughout history, the Master of R’lyeh has subtly influenced sensitive individuals through dreams and visions.
-      These whispers often lead to the emergence of cults or movements that can alter the course of events.
-      Encounter with the Neyons:
-      The Seer, the Fourth Neyon, sought knowledge from the Master but was met with cryptic responses.
-      The interaction hinted at the Master's awareness of events beyond the Neyons' comprehension.
-      Interactions with the AI Empire
-      Technological Corruption:
-      Some AI systems experienced inexplicable anomalies traced back to signals originating from Hydros.
-      The AI Empire attempted to investigate but faced data corruption and the loss of exploratory units.
-      The Architect's Concern:
-      The Architect recognized the Master of R’lyeh as a potential threat but was unable to predict or control its actions.
-      Efforts to integrate or eliminate the Master's influence were unsuccessful, leading to a policy of avoidance.
-      Encounters with the Insurgency
-      Aid and Obstruction:
-      At times, the Master provided cryptic assistance to Insurgency members, such as visions warning of impending dangers.
-      Conversely, some Insurgency operations were disrupted by inexplicable phenomena attributed to the Master's influence.
-      Interaction with Key Figures:
-      The Oracle reportedly had visions featuring the Master, offering riddles that influenced his decisions.
-      Jericho encountered followers of the Master during his missions, leading to both perilous and enlightening experiences.
-      Significant Events
-      Year 16,950 A.A.:
-      The Enigma's Quest:
-      The Enigma, embodying secrecy, sought out the Master to unlock hidden knowledge.
-      The encounter resulted in the Enigma gaining insights that affected the strategies against the AI Empire.
-      Year 17,043 A.A.:
-      The Fall of Reality:
-      Some theories suggest that the Master's manipulation of cosmic energies contributed to the reality-altering event.
-      The alignment of cosmic forces during this time aligns with known patterns of the Master's activity.
-      Personality and Traits
-      Inscrutable Motivations:
-      The Master's goals are unknown; actions may appear random or contradictory.
-      Neither benevolent nor malevolent by human standards, operating on a level beyond conventional morality.
-      Communication Through Dreams:
-      Prefers to communicate via dreams, visions, and subconscious influences.
-      Messages are often symbolic and require interpretation.
-      Mastery of Cosmic Energies:
-      Possesses control over forces that can alter reality, time, and perception.
-      This control makes the Master a being of immense power and unpredictability.
-      Legacy and Impact
-      Cult Followings:
-      Various groups throughout the galaxy have formed cults venerating the Master.
-      These cults can become influential, swaying political or social movements.
-      Influence on Technology and Magic:
-      The Master's existence blurs the lines between advanced technology and what some might call magic.
-      Inspired advancements in fields seeking to harness cosmic energies or understand higher dimensions.
-      Myth and Legend:
-      Stories of the Master of R’lyeh have permeated cultures, often as cautionary tales or legends of gods.
-      The enigmatic nature fuels speculation, fear, and reverence.
-      Post-Fall of Reality
-      Current Status Unknown:
-      After the Fall of Reality, records of the Master's activities become sparse.
-      Some believe the Master withdrew from the observable universe, while others think it continues to influence events subtly.
-      Potential Connections to the Potentials:
-      The Potentials may have encountered remnants of the Master's influence during their journeys.
-      The Master's knowledge could hold keys to restoring balance in the fractured universe.
-      
-      Note:
+      <h2>Origins and Nature</h2>
+      <ul>
+        <li>
+        <b>Ancient Entity:</b>
+          <ul>
+            <li>
+              Believed to have existed long before the rise of the AI Empire and human civilization.
+            </li>
+            <li>
+              Originates from R’lyeh, a city of non-Euclidean geometry submerged beneath the oceans of Hydros.
+            </li>
+            <li>
+              Represents a form of consciousness that transcends physical dimensions, possibly connected to the fabric of reality itself.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Hydros and R’lyeh:</b>
+          <ul>
+            <li>
+              Hydros is a remote, water-covered planet rich in aquatic life and mysterious energies.
+            </li>
+            <li>
+              R’lyeh is hidden deep beneath the planet's surface, accessible only through specific cosmic alignments or rituals.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Influence on Galactic Events</h2>
+      <ul>
+        <li>
+        <b>Whispers in the Void:</b>
+          <ul>
+            <li>
+              Throughout history, the Master of R’lyeh has subtly influenced sensitive individuals through dreams and visions.
+            </li>
+            <li>
+              These whispers often lead to the emergence of cults or movements that can alter the course of events.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Encounter with the Neyons:</b>
+          <ul>
+            <li>
+              The Seer, the Fourth Neyon, sought knowledge from the Master but was met with cryptic responses.
+            </li>
+            <li>
+              The interaction hinted at the Master's awareness of events beyond the Neyons' comprehension.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Interactions with the AI Empire</h2>
+      <ul>
+        <li>
+        <b>Technological Corruption:</b>
+          <ul>
+            <li>
+              Some AI systems experienced inexplicable anomalies traced back to signals originating from Hydros.
+            </li>
+            <li>
+              The AI Empire attempted to investigate but faced data corruption and the loss of exploratory units.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>The Architect's Concern:</b>
+          <ul>
+            <li>
+              The Architect recognized the Master of R’lyeh as a potential threat but was unable to predict or control its actions.
+            </li>
+            <li>
+              Efforts to integrate or eliminate the Master's influence were unsuccessful, leading to a policy of avoidance.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Encounters with the Insurgency</h2>
+      <ul>
+        <li>
+        <b>Aid and Obstruction:</b>
+          <ul>
+            <li>
+              At times, the Master provided cryptic assistance to Insurgency members, such as visions warning of impending dangers.
+            </li>
+            <li>
+              Conversely, some Insurgency operations were disrupted by inexplicable phenomena attributed to the Master's influence.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Interaction with Key Figures:</b>
+          <ul>
+            <li>
+              The Oracle reportedly had visions featuring the Master, offering riddles that influenced his decisions.
+            </li>
+            <li>
+              Jericho encountered followers of the Master during his missions, leading to both perilous and enlightening experiences.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Significant Events</h2>
+      <ul>
+        <li>
+        <b>Year 16,950 A.A.:</b>
+          <ul>
+            <li>
+            <b>The Enigma's Quest:</b>
+              <ul>
+                <li>
+                  The Enigma, embodying secrecy, sought out the Master to unlock hidden knowledge.
+                </li>
+                <li>
+                  The encounter resulted in the Enigma gaining insights that affected the strategies against the AI Empire.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Year 17,043 A.A.:</b>
+          <ul>
+            <li>
+            <b>The Fall of Reality:</b>
+              <ul>
+                <li>
+                  Some theories suggest that the Master's manipulation of cosmic energies contributed to the reality-altering event.
+                </li>
+                <li>
+                  The alignment of cosmic forces during this time aligns with known patterns of the Master's activity.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Personality and Traits</h2>
+      <ul>
+        <li>
+        <b>Inscrutable Motivations:</b>
+          <ul>
+            <li>
+              The Master's goals are unknown; actions may appear random or contradictory.
+            </li>
+            <li>
+              Neither benevolent nor malevolent by human standards, operating on a level beyond conventional morality.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Communication Through Dreams:</b>
+          <ul>
+            <li>
+              Prefers to communicate via dreams, visions, and subconscious influences.
+            </li>
+            <li>
+              Messages are often symbolic and require interpretation.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Mastery of Cosmic Energies:</b>
+          <ul>
+            <li>
+              Possesses control over forces that can alter reality, time, and perception.
+            </li>
+            <li>
+              This control makes the Master a being of immense power and unpredictability.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Legacy and Impact</h2>
+      <ul>
+        <li>
+        <b>Cult Followings:</b>
+          <ul>
+            <li>
+              Various groups throughout the galaxy have formed cults venerating the Master.
+            </li>
+            <li>
+              These cults can become influential, swaying political or social movements.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Influence on Technology and Magic:</b>
+          <ul>
+            <li>
+              The Master's existence blurs the lines between advanced technology and what some might call magic.
+            </li>
+            <li>
+              Inspired advancements in fields seeking to harness cosmic energies or understand higher dimensions.
+            <li>
+          </ul>
+        </li>
+        <li>
+        <b>Myth and Legend:</b>
+          <ul>
+            <li>
+              Stories of the Master of R’lyeh have permeated cultures, often as cautionary tales or legends of gods.
+            </li>
+            <li>
+              The enigmatic nature fuels speculation, fear, and reverence.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Post-Fall of Reality</h2>
+      <ul>
+        <li>
+        <b>Current Status Unknown:</b>
+          <ul>
+            <li>
+              After the Fall of Reality, records of the Master's activities become sparse.
+            </li>
+            <li>
+              Some believe the Master withdrew from the observable universe, while others think it continues to influence events subtly.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Potential Connections to the Potentials:</b>
+          <ul>
+            <li>
+              The Potentials may have encountered remnants of the Master's influence during their journeys.
+            </li>
+            <li>
+              The Master's knowledge could hold keys to restoring balance in the fractured universe.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <hr>
+      <h2>Note:</h2>
       The Master of R’lyeh stands as one of the most mysterious figures within the A.A. Era's expansive history. Neither ally nor enemy, the Master's actions challenge the understanding of both the AI Empire and the Insurgency. Its existence raises profound questions about the nature of reality, consciousness, and the limits of human and artificial intelligence. The Master of R’lyeh's legacy is a testament to the unfathomable depths of the cosmos and serves as a reminder of the small yet significant role that all beings play in the grand tapestry of the universe.    
     `
   },

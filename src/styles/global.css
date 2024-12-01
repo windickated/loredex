@@ -203,8 +203,13 @@ a {
 }
 
 strong, b, h2 {
-  color: rgba(51, 226, 230, 0.9);
+  /* color: rgba(51, 226, 230, 0.9); */
+  color: white;
   text-shadow: 0 0 0.1rem rgba(51, 226, 230, 0.5);
+}
+
+.general-info b {
+  color: rgba(51, 226, 230, 0.9);
 }
 
 i {
@@ -212,11 +217,13 @@ i {
 }
 
 hr {
-  border: 0.05rem solid rgba(51, 226, 230, 0.5);
+  /* border: 0.05rem solid rgba(51, 226, 230, 0.5); */
+  border: 0.05rem solid #dedede;
   margin-block: 1vw;
 }
 
 h2 {
+  color: white;
   font-size: 1.5vw;
   line-height: 1.5vw;
   margin-block: 1.5vw;

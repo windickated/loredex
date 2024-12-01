@@ -334,6 +334,7 @@ const characters: Character[] = [
     picture: '/pictures/Dreamer.avif',
     appearance: 15100,
     state: "neutral",
+    potentialNFT: 1,
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -353,6 +354,7 @@ const characters: Character[] = [
     picture: '/pictures/Judge.avif',
     appearance: 15200,
     state: "neutral",
+    potentialNFT: 2,
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -375,6 +377,7 @@ const characters: Character[] = [
     picture: '/pictures/Inventor.avif',
     appearance: 15300,
     state: "neutral",
+    potentialNFT: 3,
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -397,6 +400,7 @@ const characters: Character[] = [
     picture: '/pictures/Seer.avif',
     appearance: 15500,
     state: "neutral",
+    potentialNFT: 4,
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -419,6 +423,7 @@ const characters: Character[] = [
     picture: '/pictures/Storm.avif',
     appearance: 15700,
     state: "neutral",
+    potentialNFT: 5,
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -441,6 +446,7 @@ const characters: Character[] = [
     picture: '/pictures/Silence.avif',
     appearance: 15900,
     state: "neutral",
+    potentialNFT: 6,
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -463,6 +469,7 @@ const characters: Character[] = [
     picture: '/pictures/Knowledge.avif',
     appearance: 15950,
     state: "neutral",
+    potentialNFT: 7,
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -485,6 +492,7 @@ const characters: Character[] = [
     picture: '/pictures/Degen.avif',
     appearance: 15900,
     state: "neutral",
+    potentialNFT: 8,
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -507,6 +515,7 @@ const characters: Character[] = [
     picture: '/pictures/Advocate.avif',
     appearance: 15950,
     state: "neutral",
+    potentialNFT: 9,
     affiliation: 'Neyons',
     status: 'Active (though her humanity is lost)',
     bio: `
@@ -534,6 +543,7 @@ const characters: Character[] = [
     picture: '/pictures/Resurrectionist.avif',
     appearance: 16000,
     state: "neutral",
+    potentialNFT: 10,
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -3449,6 +3459,7 @@ const characters: Character[] = [
     appearance: 100001,
     lastSeen: 128652,
     state: "evil",
+    potentialNFT: 292,
     transformations: [
       {
         name: 'Lycos',
@@ -3623,6 +3634,7 @@ const characters: Character[] = [
     appearance: 100001,
     lastSeen: 107652,
     state: "evil",
+    potentialNFT: 623,
     affiliation: 'The Potentials; later independent agent against the Syndicate of Death',
     status: 'Killed on Day 15 of Resonance, Year 100,001 A.A. by The Wolf.<br>Resurrected in Year 107,652 A.A.; current status active',
     bio: `
@@ -3854,6 +3866,7 @@ const characters: Character[] = [
     appearance: 100001,
     lastSeen: 117046,
     state: "evil",
+    potentialNFT: 350,
     connections: ['The Necromancer'],
     transformations: [
       {
@@ -4114,6 +4127,7 @@ const characters: Character[] = [
     appearance: 100001,
     lastSeen: 100001,
     state: "evil",
+    potentialNFT: 426,
     affiliation: 'The Potentials',
     status: 'Departed on a mission with the Degen after the Battle of Thaloria; current whereabouts unknown',
     bio: `

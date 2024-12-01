@@ -5,6 +5,7 @@ export interface Character {
   lastSeen?: number
   dead?: boolean
   state: "good" | "evil" | "neutral"
+  potentialNFT?: number
   connections?: string[]
   transformations?: Transformation[]
   affiliation?: string

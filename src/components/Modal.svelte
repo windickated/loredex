@@ -45,6 +45,7 @@
       <section class="general-info">
         <div class="image-container">
           <img
+            class="scalable"
             src={$selectedCharacter.picture}
             alt={$selectedCharacter.name}
             width="1024"
@@ -57,8 +58,15 @@
           >
         </div>
 
-        <article>
-          <div class="status">
+        <article
+          style={$selectedCharacter.potentialNFT
+            ? "align-items: center; text-align: center;"
+            : ""}
+        >
+          <div
+            class="status"
+            style={$selectedCharacter.potentialNFT ? "align-items: center" : ""}
+          >
             <span>
               <p>Affiliation:</p>
               <strong>{$selectedCharacter.affiliation}</strong>
@@ -70,23 +78,49 @@
           </div>
           <p>{@html $selectedCharacter.bio}</p>
         </article>
+
+        {#if $selectedCharacter.potentialNFT}
+          <div class="image-container">
+            <img
+              class="scalable"
+              src="https://api.degenerousdao.com/nft/image/{$selectedCharacter.potentialNFT}"
+              alt="Potential #{$selectedCharacter.potentialNFT}"
+              width="1024"
+              height="1024"
+            />
+            <div>
+              <a
+                href="https://opensea.io/assets/ethereum/0xfa511d5c4cce10321e6e86793cc083213c36278e/{$selectedCharacter.potentialNFT}"
+                target="_blank"
+              >
+                <img src="/opensea.png" alt="OpenSea" draggable="false" />
+              </a>
+              <a
+                href="https://magiceden.io/collections/ethereum/0xfa511d5c4cce10321e6e86793cc083213c36278e?search=%22%23{$selectedCharacter.potentialNFT}%22"
+                target="_blank"
+                draggable="false"
+              >
+                <img src="/magic-eden.png" alt="Magic Eden" />
+              </a>
+            </div>
+          </div>
+        {/if}
       </section>
 
-      {#if $selectedCharacter.transformations}
-        <section class="transformation">
-          {#each $selectedCharacter.transformations as { name, picture }, index}
-            <div>
-              <img src={picture} alt={name} width="1024" height="1024" />
-              <p>{name}</p>
-            </div>
-            {#if index !== $selectedCharacter.transformations.length - 1}
-              <span>→</span>
-            {/if}
-          {/each}
-        </section>
-      {/if}
-
       {#if showHistory && $selectedCharacter.history}
+        {#if $selectedCharacter.transformations}
+          <section class="transformation">
+            {#each $selectedCharacter.transformations as { name, picture }, index}
+              <div>
+                <img src={picture} alt={name} width="1024" height="1024" />
+                <p>{name}</p>
+              </div>
+              {#if index !== $selectedCharacter.transformations.length - 1}
+                <span>→</span>
+              {/if}
+            {/each}
+          </section>
+        {/if}
         <article class="history">
           <hr />
           {@html $selectedCharacter.history}
@@ -153,7 +187,7 @@
         transition: all 0.3s ease-in-out;
       }
 
-      img:active {
+      .scalable:active {
         transform: scale(2) !important;
       }
 
@@ -223,8 +257,10 @@
           border-radius: 0.5vw;
 
           img {
+            z-index: 1;
             width: inherit;
-            height: auto;
+            height: 15vw;
+            object-fit: cover;
             border-top-left-radius: 0.5vw;
             border-top-right-radius: 0.5vw;
             background-color: #010020;
@@ -241,11 +277,43 @@
             background-color: rgba(51, 226, 230, 0.25);
           }
 
+          div {
+            width: inherit;
+            display: flex;
+            flex-flow: row nowrap;
+            height: 3vw;
+
+            a {
+              width: 7.5vw;
+              height: auto;
+              display: flex;
+              flex-flow: row nowrap;
+              justify-content: center;
+              align-items: center;
+              background-color: rgba(1, 0, 32, 0.5);
+              border: 0.1vw solid rgba(51, 226, 230, 0.25);
+
+              img {
+                z-index: 0;
+                width: auto;
+                height: 2vw;
+                background-color: transparent;
+                opacity: 0.9;
+                filter: drop-shadow(0 0 0.5vw rgba(1, 0, 32, 0.5));
+              }
+            }
+          }
+
           button:hover,
           button:active {
             transform: none;
             color: #010020;
             background-color: rgba(51, 226, 230, 0.75);
+          }
+
+          a:hover,
+          a:active {
+            background-color: rgba(51, 226, 230, 0.25);
           }
         }
 

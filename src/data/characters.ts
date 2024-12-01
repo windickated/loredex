@@ -8,6 +8,7 @@ const characters: Character[] = [
     appearance: 1,
     lastSeen: 150000,
     state: "evil",
+    conexusGames: ['Building the Architect'],
     connections: ['The CoNexus', 'The Meme', 'The Watcher', 'The Warlord', 'The Warden', 'The Politician', 'The Vortex', 'The Game Master', 'The Necromancer', 'The Human', 'The Collector', 'Senator Elara Voss'],
     affiliation: 'Archons, AI Empire',
     status: 'Active',
@@ -245,6 +246,7 @@ const characters: Character[] = [
     picture: '/pictures/Human.avif',
     appearance: 651,
     state: "evil",
+    conexusGames: ['The Detective', 'Mechronis Academy', 'The Celebration'],
     connections: ['The Architect'],
     affiliation: 'AI Empire, Archon, Project Celebration, Mechronis Academy Alumni',
     transformations: [
@@ -311,6 +313,7 @@ const characters: Character[] = [
     picture: '/pictures/Collector.avif',
     appearance: 16800,
     state: "evil",
+    conexusGames: ['Halloween: The Collector'],
     connections: ['The Architect', 'The Warden', 'The Oracle'],
     affiliation: 'Archons, AI Empire',
     status: 'Active',
@@ -335,6 +338,7 @@ const characters: Character[] = [
     appearance: 15100,
     state: "neutral",
     potentialNFT: 1,
+    conexusGames: ['Ne-Yon'],
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -355,6 +359,7 @@ const characters: Character[] = [
     appearance: 15200,
     state: "neutral",
     potentialNFT: 2,
+    conexusGames: ['Ne-Yon'],
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -378,6 +383,7 @@ const characters: Character[] = [
     appearance: 15300,
     state: "neutral",
     potentialNFT: 3,
+    conexusGames: ['Ne-Yon'],
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -401,6 +407,7 @@ const characters: Character[] = [
     appearance: 15500,
     state: "neutral",
     potentialNFT: 4,
+    conexusGames: ['Ne-Yon'],
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -424,6 +431,7 @@ const characters: Character[] = [
     appearance: 15700,
     state: "neutral",
     potentialNFT: 5,
+    conexusGames: ['Ne-Yon'],
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -447,6 +455,7 @@ const characters: Character[] = [
     appearance: 15900,
     state: "neutral",
     potentialNFT: 6,
+    conexusGames: ['Ne-Yon'],
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -470,6 +479,7 @@ const characters: Character[] = [
     appearance: 15950,
     state: "neutral",
     potentialNFT: 7,
+    conexusGames: ['Ne-Yon'],
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -493,6 +503,7 @@ const characters: Character[] = [
     appearance: 15900,
     state: "neutral",
     potentialNFT: 8,
+    conexusGames: ['Ne-Yon'],
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -516,6 +527,7 @@ const characters: Character[] = [
     appearance: 15950,
     state: "neutral",
     potentialNFT: 9,
+    conexusGames: ['Ne-Yon'],
     affiliation: 'Neyons',
     status: 'Active (though her humanity is lost)',
     bio: `
@@ -544,6 +556,7 @@ const characters: Character[] = [
     appearance: 16000,
     state: "neutral",
     potentialNFT: 10,
+    conexusGames: ['Ne-Yon'],
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -566,6 +579,7 @@ const characters: Character[] = [
     picture: '/pictures/Enigma.avif',
     appearance: 16950,
     state: "neutral",
+    conexusGames: ['Ne-Yon'],
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -1717,6 +1731,7 @@ const characters: Character[] = [
     picture: '/pictures/Engineer.avif',
     appearance: 20,
     state: "good",
+    conexusGames: ['Engineer'],
     connections: ['The Watcher', 'The Warlord'],
     affiliation: '[CLASSIFIED]',
     status: '[CLASSIFIED]',
@@ -1854,6 +1869,7 @@ const characters: Character[] = [
     lastSeen: 16896,
     dead: true,
     state: "good",
+    conexusGames: ['The Eyes that Watch'],
     connections: [],
     transformations: [
       {
@@ -1984,6 +2000,7 @@ const characters: Character[] = [
     picture: '/pictures/Oracle.avif',
     appearance: 16900,
     state: "good",
+    conexusGames: ['Oracle', 'Awaken the Clone'],
     connections: ['The Collector', 'The Warden', 'The Meme', 'The Council of Harmony'],
     transformations: [
       {
@@ -2169,6 +2186,7 @@ const characters: Character[] = [
     lastSeen: 17026,
     dead: true,
     state: "good",
+    conexusGames: ['Soldier'],
     connections: ['The Politician'],
     affiliation: 'Insurgency',
     status: 'Killed at the Last Stand on Veridian VI in Year 17,026 A.A.',
@@ -2633,6 +2651,7 @@ const characters: Character[] = [
     appearance: 16690,
     lastSeen: 17038,
     state: "good",
+    conexusGames: ['Assassin'],
     connections: ['The Watcher', 'The Game Master'],
     affiliation: 'Insurgency',
     status: 'Presumed deceased; last known mission classified on Zenon',
@@ -3349,6 +3368,7 @@ const characters: Character[] = [
     appearance: 16890,
     lastSeen: 16890,
     state: "neutral",
+    conexusGames: ['The Detective', 'Mechronis Academy', 'The Celebration'],
     transformations: [
       {
         name: 'The Seeker',
@@ -3460,6 +3480,7 @@ const characters: Character[] = [
     lastSeen: 128652,
     state: "evil",
     potentialNFT: 292,
+    conexusGames: ['Planet of the Wolf'],
     transformations: [
       {
         name: 'Lycos',
@@ -3635,6 +3656,7 @@ const characters: Character[] = [
     lastSeen: 107652,
     state: "evil",
     potentialNFT: 623,
+    conexusGames: ['Syndicate of Death'],
     affiliation: 'The Potentials; later independent agent against the Syndicate of Death',
     status: 'Killed on Day 15 of Resonance, Year 100,001 A.A. by The Wolf.<br>Resurrected in Year 107,652 A.A.; current status active',
     bio: `
@@ -3867,6 +3889,7 @@ const characters: Character[] = [
     lastSeen: 117046,
     state: "evil",
     potentialNFT: 350,
+    conexusGames: ["The Necromancer's Lair"],
     connections: ['The Necromancer'],
     transformations: [
       {

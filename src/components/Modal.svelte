@@ -107,6 +107,18 @@
         {/if}
       </section>
 
+      {#if $selectedCharacter.conexusGames}
+        <div class="play-button">
+          <p>PLAY NOW</p>
+          <div>
+            {#each $selectedCharacter.conexusGames as game}
+              <button>{game}</button>
+            {/each}
+          </div>
+          <img src="/conexus.avif" alt="CoNexus" />
+        </div>
+      {/if}
+
       {#if showHistory && $selectedCharacter.history}
         {#if $selectedCharacter.transformations}
           <section class="transformation">
@@ -205,11 +217,11 @@
         line-height: 2vw;
         background-color: rgba(22, 30, 95, 0.9);
         border-radius: 1vw;
-      }
 
-      .close-button:hover,
-      .close-button:active {
-        background-color: rgba(45, 90, 216, 0.9);
+        &:hover,
+        &:active {
+          background-color: rgba(45, 90, 216, 0.9);
+        }
       }
 
       header {
@@ -275,6 +287,13 @@
             font-size: 1.25vw;
             color: rgba(51, 226, 230, 0.9);
             background-color: rgba(51, 226, 230, 0.25);
+
+            &:hover,
+            &:active {
+              transform: none;
+              color: #010020;
+              background-color: rgba(51, 226, 230, 0.75);
+            }
           }
 
           div {
@@ -301,19 +320,12 @@
                 opacity: 0.9;
                 filter: drop-shadow(0 0 0.5vw rgba(1, 0, 32, 0.5));
               }
+
+              &:hover,
+              &:active {
+                background-color: rgba(51, 226, 230, 0.25);
+              }
             }
-          }
-
-          button:hover,
-          button:active {
-            transform: none;
-            color: #010020;
-            background-color: rgba(51, 226, 230, 0.75);
-          }
-
-          a:hover,
-          a:active {
-            background-color: rgba(51, 226, 230, 0.25);
           }
         }
 
@@ -348,6 +360,65 @@
         }
       }
 
+      .play-button {
+        margin-inline: 4vw;
+        margin-bottom: 2vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.5vw 2vw;
+        gap: 2vw;
+        font-size: 1.5vw;
+        color: #010020;
+        background-color: rgba(51, 226, 230, 0.5);
+        border: 0.1vw solid rgba(36, 65, 189, 0.75);
+        border-radius: 1vw;
+
+        p {
+          text-align: right;
+          text-shadow: 0 0 0.1vw #010020;
+          width: 10vw;
+        }
+
+        div {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          padding: 1vw;
+          gap: 0.5vw 1vw;
+          background-color: rgba(1, 0, 32, 0.75);
+          border: 0.1vw solid rgba(36, 65, 189, 0.75);
+
+          button {
+            font-size: 1.25vw;
+            line-height: 1.25vw;
+            padding: 1vw 2vw;
+            color: #dedede;
+            background-color: rgba(36, 65, 189, 0.75);
+            border: 0.1vw solid rgba(51, 226, 230, 0.25);
+            border-radius: 1vw;
+
+            &:hover,
+            &:active {
+              color: rgba(51, 226, 230, 0.9);
+              text-shadow: 0 0 0.1vw rgba(51, 226, 230, 0.5);
+              background-color: rgba(45, 90, 216, 0.9);
+            }
+          }
+        }
+
+        img {
+          width: 10vw;
+          height: auto;
+        }
+
+        &:hover,
+        &:active {
+          transform: none;
+        }
+      }
+
       .time-system {
         flex-direction: column;
         justify-content: center;
@@ -379,12 +450,12 @@
             border: 0.1vw solid rgba(51, 226, 230, 0.5);
             border-radius: 7.5vw;
             margin-bottom: 0.5vw;
-          }
 
-          img:hover {
-            cursor: pointer;
-            transform: scale(1.5);
-            filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
+            &:hover {
+              cursor: pointer;
+              transform: scale(1.5);
+              filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
+            }
           }
         }
 
@@ -418,11 +489,11 @@
             border: 0.1vw solid rgba(51, 226, 230, 0.5);
             border-radius: 7.5vw;
             margin-bottom: 0.5vw;
-          }
 
-          img:hover {
-            transform: scale(1.5);
-            filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
+            &:hover {
+              transform: scale(1.5);
+              filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
+            }
           }
         }
       }

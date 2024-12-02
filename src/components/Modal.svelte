@@ -406,6 +406,7 @@
       }
 
       .scalable {
+        z-index: 10;
         cursor: zoom-in;
 
         &:active {
@@ -673,7 +674,6 @@
             margin-bottom: 0.5vw;
 
             &:hover {
-              cursor: pointer;
               transform: scale(1.5);
               filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
             }

@@ -233,7 +233,6 @@
                     {#each $selectedCharacter.connections as connection}
                       <div on:click={() => handleSelectCharacter(connection)}>
                         <img
-                          class="scalable"
                           src={getImage(connection)}
                           alt={connection}
                           width="1024"
@@ -247,14 +246,108 @@
                     {/each}
                   </div>
                 {/if}
-                {#if $selectedCharacter.stories}
-                  <div
-                    class="stories"
-                    style="display: {activeTab === 'stories' ? 'flex' : 'none'}"
-                  >
-                    <p>Appearances in stories: ...</p>
+                <!-- {#if $selectedCharacter.stories} -->
+                <div
+                  class="stories"
+                  style="display: {activeTab === 'stories' ? 'flex' : 'none'}"
+                >
+                  <div>
+                    <span
+                      class="story-image-container"
+                      on:click={() => {
+                        window.open(
+                          "https://www.youtube.com/watch?v=vMlxgr27mig",
+                          "_blank"
+                        );
+                      }}
+                    >
+                      <img
+                        class="story-image"
+                        src="https://img.youtube.com/vi/vMlxgr27mig/maxresdefault.jpg"
+                        alt="Story"
+                        width="1280"
+                        height="720"
+                      />
+                      <img
+                        class="play-icon"
+                        src="/youtube.png"
+                        alt="YouTube"
+                        width="1280"
+                        height="720"
+                      />
+                    </span>
+                    <article>
+                      <h2>The Theft of All Time</h2>
+                      <p>
+                        The Theft of All Time beckons the reader to witness a
+                        theft that defies comprehension—a crime that transcends
+                        the linear chains of past, present, and future. The
+                        stars themselves may tremble at the implications, as
+                        ancient forces stir and long-forgotten truths claw their
+                        way into the light.
+                      </p>
+                    </article>
                   </div>
-                {/if}
+                  <div>
+                    <span class="story-image-container">
+                      <img
+                        class="story-image"
+                        src="https://img.youtube.com/vi/vMlxgr27mig/maxresdefault.jpg"
+                        alt="Story"
+                        width="1280"
+                        height="720"
+                      />
+                      <img
+                        class="play-icon"
+                        src="/youtube.png"
+                        alt="YouTube"
+                        width="1280"
+                        height="720"
+                      />
+                    </span>
+                    <article>
+                      <h2>The Theft of All Time</h2>
+                      <p>
+                        The Theft of All Time beckons the reader to witness a
+                        theft that defies comprehension—a crime that transcends
+                        the linear chains of past, present, and future. The
+                        stars themselves may tremble at the implications, as
+                        ancient forces stir and long-forgotten truths claw their
+                        way into the light.
+                      </p>
+                    </article>
+                  </div>
+                  <div>
+                    <span class="story-image-container">
+                      <img
+                        class="story-image"
+                        src="https://img.youtube.com/vi/vMlxgr27mig/maxresdefault.jpg"
+                        alt="Story"
+                        width="1280"
+                        height="720"
+                      />
+                      <img
+                        class="play-icon"
+                        src="/youtube.png"
+                        alt="YouTube"
+                        width="1280"
+                        height="720"
+                      />
+                    </span>
+                    <article>
+                      <h2>The Theft of All Time</h2>
+                      <p>
+                        The Theft of All Time beckons the reader to witness a
+                        theft that defies comprehension—a crime that transcends
+                        the linear chains of past, present, and future. The
+                        stars themselves may tremble at the implications, as
+                        ancient forces stir and long-forgotten truths claw their
+                        way into the light.
+                      </p>
+                    </article>
+                  </div>
+                </div>
+                <!-- {/if} -->
               </section>
             </section>
           {/if}
@@ -293,6 +386,7 @@
     border: 0.05vw solid rgba(51, 226, 230, 0.75);
     border-radius: 2vw;
     overflow-y: scroll;
+    cursor: default;
 
     .character-window {
       display: flex;
@@ -311,8 +405,13 @@
         transition: all 0.3s ease-in-out;
       }
 
-      .scalable:active {
-        transform: scale(2) !important;
+      .scalable {
+        cursor: zoom-in;
+
+        &:active {
+          transform: scale(2) !important;
+          border-radius: 50% !important;
+        }
       }
 
       .close-button,
@@ -357,6 +456,7 @@
           width: 2vw;
           opacity: 0.75;
           transform: none !important;
+          cursor: default;
         }
 
         h1 {
@@ -529,6 +629,7 @@
         img {
           width: 12.5vw;
           height: auto;
+          cursor: default;
         }
 
         &:hover,
@@ -540,8 +641,10 @@
       .time-system {
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 0;
         font-size: 1vw;
+        margin: 2vw auto;
 
         p {
           text-align: center;
@@ -634,6 +737,7 @@
           border-radius: 1vw;
           border-top-left-radius: 0;
           border-top-right-radius: 0;
+          font-size: 1vw;
 
           .connected-characters {
             display: flex;
@@ -659,6 +763,64 @@
                   transform: scale(1.5);
                   filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
                 }
+              }
+            }
+          }
+
+          .stories {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            gap: 1vw;
+
+            div {
+              width: 100%;
+              display: flex;
+              flex-flow: row nowrap;
+              justify-content: space-between;
+              align-items: center;
+              gap: 2vw;
+              background-color: rgba(51, 226, 230, 0.25);
+              border-radius: 0.5vw;
+              padding: 1vw;
+
+              .story-image-container {
+                position: relative;
+                height: 15vw;
+                width: 27.5vw;
+
+                img {
+                  height: 15vw;
+                  width: 27.5vw;
+                  object-fit: cover;
+                }
+
+                .story-image {
+                  border: 0.1vw solid rgba(51, 226, 230, 0.25);
+                }
+
+                .play-icon {
+                  position: absolute;
+                  left: 0;
+                  opacity: 0;
+                  background-color: rgba(0, 0, 0, 0.75);
+
+                  &:hover,
+                  &:active {
+                    opacity: 0.9;
+                  }
+                }
+              }
+
+              article {
+                display: none;
+                height: 15vw;
+                max-width: 52.5vw;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-around;
+                align-items: flex-start;
               }
             }
           }

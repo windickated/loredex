@@ -282,6 +282,12 @@ export const timeNotes: string = `
     <li>He is taken to the Panopticon as a prisoner, marking a significant setback for the Insurgency.</li>
   </ul>
   <hr>
+  <h2>Year 16,893 A.A. - Battle of Nexon</h2>
+  <b>The Destruction of the Western Imperial Fleet at Nexon</b>
+  <ul>
+    <li>Agent Zero tracks down and destroys a replicant of General Binath VII</li>
+  </ul>
+  <hr>
   <h2>Year 16,896 A.A.</h2>
   <b>The Iron Lion's Continued Efforts</b>
   <ul>

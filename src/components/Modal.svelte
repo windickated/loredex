@@ -8,6 +8,10 @@
   } from "../stores/modal.ts";
   import { timeSystem, timeNotes } from "../data/timeline.ts";
 
+  let activeTab: "connections" | "stories" = "connections";
+  const activeTabStyling =
+    "color: #010020; text-shadow: 0 0 0.1vw #010020; background-color: rgba(51, 226, 230, 0.75)";
+
   let dialog: HTMLDialogElement;
   let showHistory: boolean = false;
 
@@ -120,19 +124,6 @@
       {/if}
 
       {#if showHistory && $selectedCharacter.history}
-        {#if $selectedCharacter.transformations}
-          <section class="transformation">
-            {#each $selectedCharacter.transformations as { name, picture }, index}
-              <div>
-                <img src={picture} alt={name} width="1024" height="1024" />
-                <p>{name}</p>
-              </div>
-              {#if index !== $selectedCharacter.transformations.length - 1}
-                <span>→</span>
-              {/if}
-            {/each}
-          </section>
-        {/if}
         <article class="history">
           <hr />
           {@html $selectedCharacter.history}
@@ -140,21 +131,89 @@
         </article>
       {/if}
 
-      {#if $selectedCharacter.connections}
-        <h2 class="section-title">Connected Characters:</h2>
-        <section class="connections">
-          {#each $selectedCharacter.connections as connection}
+      {#if $selectedCharacter.transformations}
+        <section class="transformation">
+          {#each $selectedCharacter.transformations as { name, picture }, index}
             <div>
               <img
-                src={getImage(connection)}
-                alt={connection}
+                class="scalable"
+                src={picture}
+                alt={name}
                 width="1024"
                 height="1024"
-                style="border-color: {getColor(connection)}"
               />
-              <p style="color: {getColor(connection)}">{connection}</p>
+              <p>{name}</p>
             </div>
+            {#if index !== $selectedCharacter.transformations.length - 1}
+              <span>→</span>
+            {/if}
           {/each}
+        </section>
+      {/if}
+
+      {#if $selectedCharacter.connections || $selectedCharacter.stories}
+        <div class="tabs-container">
+          <button
+            class="tab"
+            style={activeTab === "connections" ? activeTabStyling : ""}
+            on:click={() => {
+              activeTab = "connections";
+            }}
+          >
+            Connections
+            <img
+              class="connections-icon"
+              src="/connection.png"
+              alt="Connection"
+              style="opacity: {activeTab === 'connections' ? '1' : '0.1'}"
+            />
+          </button>
+          <button
+            class="tab"
+            style={activeTab === "stories" ? activeTabStyling : ""}
+            on:click={() => {
+              activeTab = "stories";
+            }}
+          >
+            Appearances
+            <img
+              class="stories-icon"
+              src="/play.png"
+              alt="Stories"
+              style="opacity: {activeTab === 'stories' ? '1' : '0.1'}"
+            />
+          </button>
+        </div>
+
+        <section class="tab-section">
+          {#if $selectedCharacter.connections}
+            <div
+              class="connected-characters"
+              style="display: {activeTab === 'connections' ? 'flex' : 'none'}"
+            >
+              {#each $selectedCharacter.connections as connection}
+                <div>
+                  <img
+                    class="scalable"
+                    src={getImage(connection)}
+                    alt={connection}
+                    width="1024"
+                    height="1024"
+                    style="border-color: {getColor(connection)}"
+                  />
+                  <p style="color: {getColor(connection)}">{connection}</p>
+                </div>
+              {/each}
+            </div>
+          {/if}
+          {#if $selectedCharacter.stories}
+            <div
+              class="stories"
+              style="display: {activeTab === 'stories' ? 'flex' : 'none'}"
+            >
+              <p>Appearances in stories: ...</p>
+            </div>
+          {/if}
         </section>
       {/if}
     {:else if $showModal === "timeline"}
@@ -203,10 +262,6 @@
         transform: scale(2) !important;
       }
 
-      .section-title {
-        text-align: center;
-      }
-
       .close-button {
         position: absolute;
         top: 0;
@@ -244,8 +299,7 @@
         }
       }
 
-      .general-info,
-      .connections {
+      .general-info {
         padding: 1vw;
         margin: 2vw 4vw;
         background-color: rgba(51, 226, 230, 0.1);
@@ -254,9 +308,6 @@
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
-      }
-
-      .general-info {
         justify-content: space-between;
         gap: 2vw;
 
@@ -369,7 +420,7 @@
         align-items: center;
         padding: 0.5vw 2vw;
         gap: 2vw;
-        font-size: 1.5vw;
+        font-size: 2vw;
         color: #010020;
         background-color: rgba(51, 226, 230, 0.5);
         border: 0.1vw solid rgba(36, 65, 189, 0.75);
@@ -378,7 +429,8 @@
         p {
           text-align: right;
           text-shadow: 0 0 0.1vw #010020;
-          width: 10vw;
+          width: 12.5vw;
+          white-space: nowrap;
         }
 
         div {
@@ -386,7 +438,7 @@
           flex-flow: row wrap;
           justify-content: center;
           padding: 1vw;
-          gap: 0.5vw 1vw;
+          gap: 1vw;
           background-color: rgba(1, 0, 32, 0.75);
           border: 0.1vw solid rgba(36, 65, 189, 0.75);
 
@@ -409,7 +461,7 @@
         }
 
         img {
-          width: 10vw;
+          width: 12.5vw;
           height: auto;
         }
 
@@ -437,6 +489,7 @@
         align-items: center;
         gap: 1vw;
         font-size: 1vw;
+        margin-bottom: 2vw;
 
         div {
           display: flex;
@@ -466,33 +519,81 @@
 
       .history {
         padding-inline: 1vw;
-        // color: rgba(51, 226, 230, 0.75);
         color: #dedede;
         font-size: 1vw;
+        margin-bottom: 2vw;
       }
 
-      .connections {
-        margin-block: 0;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 1vw;
+      .tabs-container {
+        margin-inline: 4vw;
+        padding: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.25vw;
+        line-height: 1.25vw;
 
-        div {
-          display: flex;
-          flex-flow: column nowrap;
-          align-items: center;
-          min-width: 15vw;
+        .tab {
+          position: relative;
+          margin: 0;
+          padding: 1vw 4vw;
+          background-color: rgba(51, 226, 230, 0.25);
+          color: rgba(51, 226, 230, 0.9);
+          border: none;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          transform: none !important;
 
           img {
-            width: 15vw;
-            height: inherit;
-            border: 0.1vw solid rgba(51, 226, 230, 0.5);
-            border-radius: 7.5vw;
-            margin-bottom: 0.5vw;
+            position: absolute;
+            height: 2.5vw;
+            width: auto;
+          }
 
-            &:hover {
-              transform: scale(1.5);
-              filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
+          .connections-icon {
+            left: 102.5%;
+          }
+
+          .stories-icon {
+            right: 102.5%;
+          }
+        }
+      }
+
+      .tab-section {
+        padding: 1vw;
+        margin-inline: 4vw;
+        background-color: rgba(51, 226, 230, 0.1);
+        border: 0.1vw solid rgba(51, 226, 230, 0.25);
+        border-radius: 1vw;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        .connected-characters {
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: space-around;
+          gap: 1vw;
+
+          div {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            width: 15vw;
+
+            img {
+              width: 15vw;
+              height: inherit;
+              border: 0.1vw solid rgba(51, 226, 230, 0.5);
+              border-radius: 7.5vw;
+              margin-bottom: 0.5vw;
+
+              &:hover {
+                transform: scale(1.5);
+                filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
+              }
             }
           }
         }

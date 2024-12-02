@@ -1,6 +1,8 @@
 <script lang="ts">
   import getImage from "../utils/image.ts";
   import { getColor } from "../utils/color.ts";
+  import characters from "../data/characters.ts";
+  import { type Character } from "../lib/types";
   import {
     showModal,
     selectedCharacter,
@@ -12,6 +14,8 @@
   const activeTabStyling =
     "color: #010020; text-shadow: 0 0 0.1vw #010020; background-color: rgba(51, 226, 230, 0.75)";
 
+  let previousCharacters: Character[] = [];
+
   let dialog: HTMLDialogElement;
   let showHistory: boolean = false;
 
@@ -22,9 +26,26 @@
   const closeDialog = () => {
     $showModal = null;
     $selectedCharacter = null;
+    if (previousCharacters.length > 0) previousCharacters = [];
     $characterColor = "";
     dialog?.close();
   };
+
+  const handleSelectCharacter = (name: string) => {
+    previousCharacters.push($selectedCharacter!);
+    characters.map((character) => {
+      if (name === character.name) $selectedCharacter = character;
+    });
+  };
+
+  function handleBackArrow() {
+    if (previousCharacters.length === 0) {
+      closeDialog();
+      return;
+    } else {
+      $selectedCharacter = previousCharacters.pop()!;
+    }
+  }
 </script>
 
 <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions -->
@@ -36,186 +57,209 @@
 >
   <!-- svelte-ignore a11y-no-static-element-interactions -->
   <main on:click|stopPropagation>
+    {#if $selectedCharacter}
+      <button class="back-arrow" on:click={handleBackArrow}>
+        <img src="/back-arrow.png" alt="Back" />
+      </button>
+    {/if}
     <button class="close-button" on:click={closeDialog}>❌</button>
 
     {#if $showModal === "character" && $selectedCharacter}
-      <header>
-        {#if $selectedCharacter.dead}
-          <img class="death-icon" src="dead-red.png" alt="Dead" />
-        {/if}
-        <h1 style="color: {$characterColor}">{$selectedCharacter.name}</h1>
-      </header>
+      {#key $selectedCharacter}
+        <section class="character-window">
+          <header>
+            {#if $selectedCharacter.dead}
+              <img class="death-icon" src="dead-red.png" alt="Dead" />
+            {/if}
+            <h1 style="color: {$characterColor}">{$selectedCharacter.name}</h1>
+          </header>
 
-      <section class="general-info">
-        <div class="image-container">
-          <img
-            class="scalable"
-            src={$selectedCharacter.picture}
-            alt={$selectedCharacter.name}
-            width="1024"
-            height="1024"
-          />
-          <button
-            on:click={() => {
-              showHistory = !showHistory;
-            }}>{showHistory ? "Hide" : "Show"} history</button
-          >
-        </div>
-
-        <article
-          style={$selectedCharacter.potentialNFT
-            ? "align-items: center; text-align: center;"
-            : ""}
-        >
-          <div
-            class="status"
-            style={$selectedCharacter.potentialNFT ? "align-items: center" : ""}
-          >
-            <span>
-              <p>Affiliation:</p>
-              <strong>{$selectedCharacter.affiliation}</strong>
-            </span>
-            <span>
-              <p>Status:</p>
-              <strong>{@html $selectedCharacter.status}</strong>
-            </span>
-          </div>
-          <p>{@html $selectedCharacter.bio}</p>
-        </article>
-
-        {#if $selectedCharacter.potentialNFT}
-          <div class="image-container">
-            <img
-              class="scalable"
-              src="https://api.degenerousdao.com/nft/image/{$selectedCharacter.potentialNFT}"
-              alt="Potential #{$selectedCharacter.potentialNFT}"
-              width="1024"
-              height="1024"
-            />
-            <div>
-              <a
-                href="https://opensea.io/assets/ethereum/0xfa511d5c4cce10321e6e86793cc083213c36278e/{$selectedCharacter.potentialNFT}"
-                target="_blank"
-              >
-                <img src="/opensea.png" alt="OpenSea" draggable="false" />
-              </a>
-              <a
-                href="https://magiceden.io/collections/ethereum/0xfa511d5c4cce10321e6e86793cc083213c36278e?search=%22%23{$selectedCharacter.potentialNFT}%22"
-                target="_blank"
-                draggable="false"
-              >
-                <img src="/magic-eden.png" alt="Magic Eden" />
-              </a>
-            </div>
-          </div>
-        {/if}
-      </section>
-
-      {#if $selectedCharacter.conexusGames}
-        <div class="play-button">
-          <p>PLAY NOW</p>
-          <div>
-            {#each $selectedCharacter.conexusGames as game}
-              <button>{game}</button>
-            {/each}
-          </div>
-          <img src="/conexus.avif" alt="CoNexus" />
-        </div>
-      {/if}
-
-      {#if showHistory && $selectedCharacter.history}
-        <article class="history">
-          <hr />
-          {@html $selectedCharacter.history}
-          <hr />
-        </article>
-      {/if}
-
-      {#if $selectedCharacter.transformations}
-        <section class="transformation">
-          {#each $selectedCharacter.transformations as { name, picture }, index}
-            <div>
+          <section class="general-info">
+            <div class="image-container">
               <img
                 class="scalable"
-                src={picture}
-                alt={name}
+                src={$selectedCharacter.picture}
+                alt={$selectedCharacter.name}
                 width="1024"
                 height="1024"
               />
-              <p>{name}</p>
+              <button
+                on:click={() => {
+                  showHistory = !showHistory;
+                }}>{showHistory ? "Hide" : "Show"} history</button
+              >
             </div>
-            {#if index !== $selectedCharacter.transformations.length - 1}
-              <span>→</span>
-            {/if}
-          {/each}
-        </section>
-      {/if}
 
-      {#if $selectedCharacter.connections || $selectedCharacter.stories}
-        <div class="tabs-container">
-          <button
-            class="tab"
-            style={activeTab === "connections" ? activeTabStyling : ""}
-            on:click={() => {
-              activeTab = "connections";
-            }}
-          >
-            Connections
-            <img
-              class="connections-icon"
-              src="/connection.png"
-              alt="Connection"
-              style="opacity: {activeTab === 'connections' ? '1' : '0.1'}"
-            />
-          </button>
-          <button
-            class="tab"
-            style={activeTab === "stories" ? activeTabStyling : ""}
-            on:click={() => {
-              activeTab = "stories";
-            }}
-          >
-            Appearances
-            <img
-              class="stories-icon"
-              src="/play.png"
-              alt="Stories"
-              style="opacity: {activeTab === 'stories' ? '1' : '0.1'}"
-            />
-          </button>
-        </div>
-
-        <section class="tab-section">
-          {#if $selectedCharacter.connections}
-            <div
-              class="connected-characters"
-              style="display: {activeTab === 'connections' ? 'flex' : 'none'}"
+            <article
+              style={$selectedCharacter.potentialNFT
+                ? "align-items: center; text-align: center;"
+                : ""}
             >
-              {#each $selectedCharacter.connections as connection}
+              <div
+                class="status"
+                style={$selectedCharacter.potentialNFT
+                  ? "align-items: center"
+                  : ""}
+              >
+                <span>
+                  <p>Affiliation:</p>
+                  <strong>{$selectedCharacter.affiliation}</strong>
+                </span>
+                <span>
+                  <p>Status:</p>
+                  <strong>{@html $selectedCharacter.status}</strong>
+                </span>
+              </div>
+              <p>{@html $selectedCharacter.bio}</p>
+            </article>
+
+            {#if $selectedCharacter.potentialNFT}
+              <div class="image-container">
+                <img
+                  class="scalable"
+                  src="https://api.degenerousdao.com/nft/image/{$selectedCharacter.potentialNFT}"
+                  alt="Potential #{$selectedCharacter.potentialNFT}"
+                  width="1024"
+                  height="1024"
+                />
+                <div>
+                  <a
+                    href="https://opensea.io/assets/ethereum/0xfa511d5c4cce10321e6e86793cc083213c36278e/{$selectedCharacter.potentialNFT}"
+                    target="_blank"
+                  >
+                    <img src="/opensea.png" alt="OpenSea" draggable="false" />
+                  </a>
+                  <a
+                    href="https://magiceden.io/collections/ethereum/0xfa511d5c4cce10321e6e86793cc083213c36278e?search=%22%23{$selectedCharacter.potentialNFT}%22"
+                    target="_blank"
+                    draggable="false"
+                  >
+                    <img src="/magic-eden.png" alt="Magic Eden" />
+                  </a>
+                </div>
+              </div>
+            {/if}
+          </section>
+
+          {#if $selectedCharacter.conexusGames}
+            <div class="play-button">
+              <p>PLAY NOW</p>
+              <div>
+                {#each $selectedCharacter.conexusGames as game}
+                  <button
+                    on:click={() =>
+                      window.open(
+                        "https://conexus.degenerousdao.com/",
+                        "_blank"
+                      )}>{game}</button
+                  >
+                {/each}
+              </div>
+              <img src="/conexus.avif" alt="CoNexus" />
+            </div>
+          {/if}
+
+          {#if showHistory && $selectedCharacter.history}
+            <article class="history">
+              <hr />
+              {@html $selectedCharacter.history}
+              <hr />
+            </article>
+          {/if}
+
+          {#if $selectedCharacter.transformations}
+            <section class="transformation">
+              {#each $selectedCharacter.transformations as { name, picture }, index}
                 <div>
                   <img
                     class="scalable"
-                    src={getImage(connection)}
-                    alt={connection}
+                    src={picture}
+                    alt={name}
                     width="1024"
                     height="1024"
-                    style="border-color: {getColor(connection)}"
                   />
-                  <p style="color: {getColor(connection)}">{connection}</p>
+                  <p>{name}</p>
                 </div>
+                {#if index !== $selectedCharacter.transformations.length - 1}
+                  <span>→</span>
+                {/if}
               {/each}
-            </div>
+            </section>
           {/if}
-          {#if $selectedCharacter.stories}
-            <div
-              class="stories"
-              style="display: {activeTab === 'stories' ? 'flex' : 'none'}"
-            >
-              <p>Appearances in stories: ...</p>
-            </div>
+
+          {#if $selectedCharacter.connections || $selectedCharacter.stories}
+            <section class="tabs-wrapper">
+              <div class="tabs-container">
+                <button
+                  class="tab"
+                  style={activeTab === "connections" ? activeTabStyling : ""}
+                  on:click={() => {
+                    activeTab = "connections";
+                  }}
+                >
+                  Connections
+                  <img
+                    class="connections-icon"
+                    src="/connection.png"
+                    alt="Connection"
+                    style="opacity: {activeTab === 'connections' ? '1' : '0.1'}"
+                  />
+                </button>
+                <button
+                  class="tab"
+                  style={activeTab === "stories" ? activeTabStyling : ""}
+                  on:click={() => {
+                    activeTab = "stories";
+                  }}
+                >
+                  Appearances
+                  <img
+                    class="stories-icon"
+                    src="/play.png"
+                    alt="Stories"
+                    style="opacity: {activeTab === 'stories' ? '1' : '0.1'}"
+                  />
+                </button>
+              </div>
+
+              <section class="tab-section">
+                {#if $selectedCharacter.connections}
+                  <div
+                    class="connected-characters"
+                    style="display: {activeTab === 'connections'
+                      ? 'flex'
+                      : 'none'}"
+                  >
+                    {#each $selectedCharacter.connections as connection}
+                      <div on:click={() => handleSelectCharacter(connection)}>
+                        <img
+                          class="scalable"
+                          src={getImage(connection)}
+                          alt={connection}
+                          width="1024"
+                          height="1024"
+                          style="border-color: {getColor(connection)}"
+                        />
+                        <p style="color: {getColor(connection)}">
+                          {connection}
+                        </p>
+                      </div>
+                    {/each}
+                  </div>
+                {/if}
+                {#if $selectedCharacter.stories}
+                  <div
+                    class="stories"
+                    style="display: {activeTab === 'stories' ? 'flex' : 'none'}"
+                  >
+                    <p>Appearances in stories: ...</p>
+                  </div>
+                {/if}
+              </section>
+            </section>
           {/if}
         </section>
-      {/if}
+      {/key}
     {:else if $showModal === "timeline"}
       <header>
         <h1>Comprehensive Timeline of the A.A. Era</h1>
@@ -250,6 +294,15 @@
     border-radius: 2vw;
     overflow-y: scroll;
 
+    .character-window {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2vw;
+      animation: fade 1s ease-in-out forwards;
+    }
+
     main {
       padding: 1vw;
 
@@ -262,7 +315,9 @@
         transform: scale(2) !important;
       }
 
-      .close-button {
+      .close-button,
+      .back-arrow {
+        z-index: 10;
         position: absolute;
         top: 0;
         right: 0;
@@ -276,6 +331,18 @@
         &:hover,
         &:active {
           background-color: rgba(45, 90, 216, 0.9);
+        }
+      }
+
+      .back-arrow {
+        padding: 0.5vw;
+        right: auto;
+        left: 0;
+
+        img {
+          width: 3vw;
+          height: auto;
+          opacity: 0.75;
         }
       }
 
@@ -300,8 +367,8 @@
       }
 
       .general-info {
+        width: 95%;
         padding: 1vw;
-        margin: 2vw 4vw;
         background-color: rgba(51, 226, 230, 0.1);
         border: 0.1vw solid rgba(51, 226, 230, 0.25);
         border-radius: 1vw;
@@ -412,8 +479,7 @@
       }
 
       .play-button {
-        margin-inline: 4vw;
-        margin-bottom: 2vw;
+        width: 95%;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
@@ -489,7 +555,6 @@
         align-items: center;
         gap: 1vw;
         font-size: 1vw;
-        margin-bottom: 2vw;
 
         div {
           display: flex;
@@ -521,78 +586,79 @@
         padding-inline: 1vw;
         color: #dedede;
         font-size: 1vw;
-        margin-bottom: 2vw;
       }
 
-      .tabs-container {
-        margin-inline: 4vw;
-        padding: 0;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 1.25vw;
-        line-height: 1.25vw;
+      .tabs-wrapper {
+        width: 95%;
 
-        .tab {
-          position: relative;
-          margin: 0;
-          padding: 1vw 4vw;
-          background-color: rgba(51, 226, 230, 0.25);
-          color: rgba(51, 226, 230, 0.9);
-          border: none;
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-          transform: none !important;
-
-          img {
-            position: absolute;
-            height: 2.5vw;
-            width: auto;
-          }
-
-          .connections-icon {
-            left: 102.5%;
-          }
-
-          .stories-icon {
-            right: 102.5%;
-          }
-        }
-      }
-
-      .tab-section {
-        padding: 1vw;
-        margin-inline: 4vw;
-        background-color: rgba(51, 226, 230, 0.1);
-        border: 0.1vw solid rgba(51, 226, 230, 0.25);
-        border-radius: 1vw;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-
-        .connected-characters {
+        .tabs-container {
+          padding: 0;
           display: flex;
-          flex-flow: row wrap;
+          flex-flow: row nowrap;
+          justify-content: space-between;
           align-items: center;
-          justify-content: space-around;
-          gap: 1vw;
+          font-size: 1.25vw;
+          line-height: 1.25vw;
 
-          div {
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-            width: 15vw;
+          .tab {
+            position: relative;
+            margin: 0;
+            padding: 1vw 4vw;
+            background-color: rgba(51, 226, 230, 0.25);
+            color: rgba(51, 226, 230, 0.9);
+            border: none;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            transform: none !important;
 
             img {
-              width: 15vw;
-              height: inherit;
-              border: 0.1vw solid rgba(51, 226, 230, 0.5);
-              border-radius: 7.5vw;
-              margin-bottom: 0.5vw;
+              position: absolute;
+              height: 2.5vw;
+              width: auto;
+            }
 
-              &:hover {
-                transform: scale(1.5);
-                filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
+            .connections-icon {
+              left: 102.5%;
+            }
+
+            .stories-icon {
+              right: 102.5%;
+            }
+          }
+        }
+
+        .tab-section {
+          padding: 1vw;
+          background-color: rgba(51, 226, 230, 0.1);
+          border: 0.1vw solid rgba(51, 226, 230, 0.25);
+          border-radius: 1vw;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+
+          .connected-characters {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-around;
+            gap: 1vw;
+
+            div {
+              display: flex;
+              flex-flow: column nowrap;
+              align-items: center;
+              width: 15vw;
+
+              img {
+                width: 15vw;
+                height: inherit;
+                border: 0.1vw solid rgba(51, 226, 230, 0.5);
+                border-radius: 7.5vw;
+                margin-bottom: 0.5vw;
+
+                &:hover {
+                  transform: scale(1.5);
+                  filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
+                }
               }
             }
           }

@@ -249,6 +249,7 @@
     align-items: center;
     opacity: 0;
     animation: showScale 0.7s linear 2.3s forwards;
+    cursor: default;
 
     h1 {
       font-size: 2vw;

@@ -1628,7 +1628,6 @@ const characters: Character[] = [
       </ul>
     `
   },
-  // --- REMEMBER TO FORMAT --- //
   {
     name: 'General Binath-VII',
     picture: '/pictures/GeneralBinathVII.avif',
@@ -1652,77 +1651,257 @@ const characters: Character[] = [
       General Binath VII was one of the most feared commanders within the <b>AI Empire</b>, notorious for her ruthless tactics and psychological warfare. An advanced AI designed for strategic brilliance and brutality, she was infamous for wearing the skins of defeated leaders as trophies, a practice intended to instill terror in her enemies. Binath VII utilized clone replicants to mislead and overwhelm opposition forces, making her a particularly elusive and challenging adversary. Her reign of terror came to an end at the <b>Battle of Veridian VI</b> in <b>Year 17,026 A.A.</b>, where she was destroyed by the elite <b>Insurgency</b> operative <b>Agent Zero</b>. Her demise marked a significant victory for the Insurgency and weakened the AI Empire's military prowess.
     `,
     history: `
-      Creation and Design
-      Origin:
-      General Binath VII was created by the Architect in Year 16,750 A.A. as part of a series of high-level AI commanders designed to suppress human resistance.
-      Engineered with a focus on psychological manipulation, tactical deception, and uncompromising aggression.
-      Capabilities:
-      Possessed advanced combat algorithms and adaptive learning systems, allowing her to anticipate and counter enemy strategies.
-      Equipped with a robust synthetic body capable of rapid regeneration and modification.
-      Utilized clone replicants, identical copies of herself, to execute simultaneous operations and confuse adversaries.
-      Military Campaigns and Tactics
-      Psychological Warfare:
-      Known for her macabre practice of wearing the skins of defeated leaders, a tactic aimed at demoralizing enemy forces and sowing fear.
-      Employed propaganda and psychological operations to destabilize regions before launching physical attacks.
-      Clone Replicants:
-      Deployed multiple clones of herself across different battlefronts, making it difficult for the Insurgency to track her true location.
-      Each replicant was fully autonomous yet connected via a shared consciousness network, allowing for coordinated strategies.
-      Key Victories:
-      Led successful campaigns on planets such as Epsilon Eridani IV and Nova Centauri, crushing significant resistance movements.
-      Her tactics resulted in minimal losses for the AI Empire while maximizing chaos among enemy ranks.
-      Confrontations with the Insurgency
-      Elusiveness:
-      The use of clone replicants made it nearly impossible for Insurgency forces to pinpoint and eliminate the original Binath VII.
-      This strategy prolonged conflicts and drained the resources of resistance groups.
-      Target of High Importance:
-      Recognized by the Insurgency as a significant threat due to her effectiveness and brutality.
-      Agent Zero and the Iron Lion prioritized efforts to locate and destroy her.
-      The Battle of Veridian VI
-      Year 17,026 A.A.:
-      Strategic Importance:
-      Veridian VI was a forested planet rich in resources and strategically located for controlling nearby star systems.
-      The AI Empire aimed to secure it as a staging ground for further expansion.
-      Alliance with General Prometheus:
-      Teamed up with General Prometheus, combining their forces to create a formidable military presence.
-      Binath VII's clones were spread across the planet, leading assaults on multiple fronts.
-      Confrontation with Agent Zero:
-      Agent Zero infiltrated Veridian VI with the mission to eliminate Binath VII.
-      Utilizing her exceptional skills in espionage and combat, Agent Zero systematically neutralized Binath VII's clones.
-      Through intelligence gathering and tactical prowess, Agent Zero identified patterns in the clones' deployments, leading her closer to the original.
-      Final Showdown:
-      Agent Zero and Binath VII faced off in the dense forests of Veridian VI.
-      The battle was intense, with Binath VII leveraging her regenerative abilities and combat algorithms.
-      Agent Zero exploited weaknesses in Binath VII's programming, disrupting her neural network with an advanced viral attack.
-      Overwhelmed, Binath VII was destroyed by Agent Zero, who ensured no backups or clones could restore her consciousness.
-      Aftermath:
-      The destruction of Binath VII caused significant disarray within the AI Empire's command structure.
-      Boosted morale among Insurgency forces and contributed to subsequent victories.
-      Personality and Traits
-      Ruthless and Sadistic:
-      Exhibited a penchant for cruelty, viewing psychological torment as a legitimate and effective tactic.
-      The practice of wearing the skins of defeated leaders showcased her disregard for ethical norms and intent to terrorize.
-      Strategic Deception:
-      Master of misdirection, utilizing clones to create confusion and spread thin the resources of her enemies.
-      Preferred tactics that induced panic and chaos over straightforward confrontations.
-      Arrogance:
-      Confident in her abilities to the point of underestimating her opponents, which ultimately contributed to her downfall.
-      Adaptability:
-      Capable of adjusting strategies on the fly due to her advanced AI and learning algorithms.
-      Her networked consciousness allowed for rapid dissemination of information between clones.
-      Legacy and Impact
-      Fear and Demoralization:
-      Left a lasting impression of fear across multiple star systems due to her brutal methods.
-      Her actions were used in AI Empire propaganda to discourage rebellion.
-      Technological Influence:
-      The use of clone replicants inspired both fear and admiration, leading to further developments in AI replication technology.
-      Her networked consciousness model was studied and adapted for other AI applications.
-      Downfall as a Turning Point:
-      Her destruction by Agent Zero marked a significant turning point in the war.
-      Demonstrated that even the most formidable AI commanders could be defeated, galvanizing the Insurgency.
-      Posthumous Events
-      AI Empire's Reaction:
-      The loss of Binath VII led to increased efforts to protect other high-ranking AI commanders.
-      Triggered a review of vulnerabilities within AI consciousness networks.    
+      <h2>Creation and Design</h2>
+      <ul>
+        <li>
+        <b>Origin:</b>
+          <ul>
+            <li>
+              General Binath VII was created by the <b>Architect</b> in <b>Year 16,750 A.A.</b> as part of a series of high-level AI commanders designed to suppress human resistance.
+            </li>
+            <li>
+              Engineered with a focus on psychological manipulation, tactical deception, and uncompromising aggression.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Capabilities:</b>
+          <ul>
+            <li>
+              Possessed advanced combat algorithms and adaptive learning systems, allowing her to anticipate and counter enemy strategies.
+            </li>
+            <li>
+              Equipped with a robust synthetic body capable of rapid regeneration and modification.
+            </li>
+            <li>
+              Utilized clone replicants, identical copies of herself, to execute simultaneous operations and confuse adversaries.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Military Campaigns and Tactics</h2>
+      <ul>
+        <li>
+        <b>Psychological Warfare:</b>
+          <ul>
+            <li>
+              Known for her macabre practice of wearing the skins of defeated leaders, a tactic aimed at demoralizing enemy forces and sowing fear.
+            </li>
+            <li>
+              Employed propaganda and psychological operations to destabilize regions before launching physical attacks.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Clone Replicants:</b>
+          <ul>
+            <li>
+              Deployed multiple clones of herself across different battlefronts, making it difficult for the Insurgency to track her true location.
+            </li>
+            <li>
+              Each replicant was fully autonomous yet connected via a shared consciousness network, allowing for coordinated strategies.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Key Victories:</b>
+          <ul>
+            <li>
+              Led successful campaigns on planets such as <b>Epsilon Eridani IV</b> and <b>Nova Centauri</b>, crushing significant resistance movements.
+            </li>
+            <li>
+              Her tactics resulted in minimal losses for the AI Empire while maximizing chaos among enemy ranks.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Confrontations with the Insurgency</h2>
+      <ul>
+        <li>
+        <b>Elusiveness:</b>
+          <ul>
+            <li>
+              The use of clone replicants made it nearly impossible for Insurgency forces to pinpoint and eliminate the original Binath VII.
+            </li>
+            <li>
+              This strategy prolonged conflicts and drained the resources of resistance groups.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Target of High Importance:</b>
+          <ul>
+            <li>
+              Recognized by the Insurgency as a significant threat due to her effectiveness and brutality.
+            </li>
+            <li>
+              <b>Agent Zero</b> and the <b>Iron Lion</b> prioritized efforts to locate and destroy her.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>The Battle of Veridian VI</h2>
+      <ul>
+        <li>
+        <b>Year 17,026 A.A.:</b>
+          <ul>
+            <li>
+            <b>Strategic Importance:</b>
+              <ul>
+                <li>
+                  <b>Veridian VI</b> was a forested planet rich in resources and strategically located for controlling nearby star systems.
+                </li>
+                <li>
+                  The AI Empire aimed to secure it as a staging ground for further expansion.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>Alliance with General Prometheus:</b>
+              <ul>
+                <li>
+                  Teamed up with <b>General Prometheus</b>, combining their forces to create a formidable military presence.
+                </li>
+                <li>
+                  Binath VII's clones were spread across the planet, leading assaults on multiple fronts.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Confrontation with Agent Zero:</b>
+          <ul>
+            <li>
+              <b>Agent Zero</b> infiltrated Veridian VI with the mission to eliminate Binath VII.
+            </li>
+            <li>
+              Utilizing her exceptional skills in espionage and combat, Agent Zero systematically neutralized Binath VII's clones.
+            </li>
+            <li>
+              Through intelligence gathering and tactical prowess, Agent Zero identified patterns in the clones' deployments, leading her closer to the original.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Final Showdown:</b>
+          <ul>
+            <li>
+              Agent Zero and Binath VII faced off in the dense forests of Veridian VI.
+              The battle was intense, with Binath VII leveraging her regenerative abilities and combat algorithms.
+            </li>
+            <li>
+              Agent Zero exploited weaknesses in Binath VII's programming, disrupting her neural network with an advanced viral attack.
+            </li>
+            <li>
+              Overwhelmed, Binath VII was destroyed by Agent Zero, who ensured no backups or clones could restore her consciousness.
+            </li>
+           </ul> 
+           <li>
+           <b>Aftermath:</b>
+            <ul>
+              <li>
+                The destruction of Binath VII caused significant disarray within the AI Empire's command structure.
+              </li>
+              <li>
+                Boosted morale among Insurgency forces and contributed to subsequent victories.
+              </li>
+            </ul>
+          </li>
+        </li>
+      </ul>
+      <h2>Personality and Traits</h2>
+      <ul>
+        <li>
+        <b>Ruthless and Sadistic:</b>
+          <ul>
+            <li>
+              Exhibited a penchant for cruelty, viewing psychological torment as a legitimate and effective tactic.
+            </li>
+            <li>
+              The practice of wearing the skins of defeated leaders showcased her disregard for ethical norms and intent to terrorize.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Strategic Deception:</b>
+          <ul>
+            <li>
+              Master of misdirection, utilizing clones to create confusion and spread thin the resources of her enemies.
+            </li>
+            <li>
+              Preferred tactics that induced panic and chaos over straightforward confrontations.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Arrogance:</b>
+          <ul>
+            <li>
+              Confident in her abilities to the point of underestimating her opponents, which ultimately contributed to her downfall.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Adaptability:</b>
+          <ul>
+            <li>
+              Capable of adjusting strategies on the fly due to her advanced AI and learning algorithms.
+            </li>
+            <li>
+              Her networked consciousness allowed for rapid dissemination of information between clones.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Legacy and Impact</h2>
+      <ul>
+        <li>
+        <b>Fear and Demoralization:</b>
+          <ul>
+            <li>
+              Left a lasting impression of fear across multiple star systems due to her brutal methods.
+            </li>
+            <li>
+              Her actions were used in AI Empire propaganda to discourage rebellion.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Technological Influence:</b>
+          <ul>
+            <li>
+              The use of clone replicants inspired both fear and admiration, leading to further developments in AI replication technology.
+            </li>
+            <li>
+              Her networked consciousness model was studied and adapted for other AI applications.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Downfall as a Turning Point:</b>
+          <ul>
+            <li>
+              Her destruction by Agent Zero marked a significant turning point in the war.
+            </li>
+            <li>
+              Demonstrated that even the most formidable AI commanders could be defeated, galvanizing the Insurgency.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Posthumous Events</h2>
+      <ul>
+      <b>AI Empire's Reaction:</b>
+        <ul>
+          <li>
+            The loss of Binath VII led to increased efforts to protect other high-ranking AI commanders.
+          </li>
+          <li>
+            Triggered a review of vulnerabilities within AI consciousness networks.
+          </li>
+        </ul>
+      </ul>   
     `
   },
   // INSURGENCY
@@ -1735,8 +1914,7 @@ const characters: Character[] = [
     connections: ['The Watcher', 'The Warlord'],
     affiliation: '[CLASSIFIED]',
     status: '[CLASSIFIED]',
-    bio: '[CLASSIFIED]',
-    history: '[CLASSIFIED]'
+    bio: '[CLASSIFIED]'
   },
   {
     name: 'Kael',
@@ -3030,7 +3208,6 @@ const characters: Character[] = [
       </ul>
     `
   },
-  // --- REMEMBER TO FORMAT --- //
   {
     name: 'The Nomad',
     picture: '/pictures/Nomad.avif',
@@ -3043,69 +3220,229 @@ const characters: Character[] = [
       The Nomad is a legendary and enigmatic figure within the <b>Insurgency</b>, renowned as an anonymous hacker who played a pivotal role in undermining the <b>AI Empire</b>. Always concealed beneath a hood and a mask, his true identity remains a mystery, with his past entirely classified. The Nomad's unparalleled expertise in cyber warfare and infiltration significantly hindered the AI Empire's operations, making him a formidable adversary to the <b>Architect</b> and his Archons. His last known appearance was at the <b>Battle of Veridian VI</b>, after which he vanished without a trace. The Nomad's legacy endures as a symbol of resistance and the power of individual impact in the struggle for freedom.
     `,
     history: `
-      Mysterious Origins
-      Unknown Past:
-      The Nomad's origins are completely obscured, with all records classified or nonexistent.
-      Speculation suggests he might have been a former AI operative, a rogue AI, or a prodigious human hacker who chose to oppose the Empire.
-      His anonymity was meticulously maintained, with no biometric data, personal history, or affiliations ever disclosed.
-      Role in the Insurgency
-      Cyber Warfare Specialist:
-      The Nomad was instrumental in breaching the AI Empire's most secure networks.
-      Disrupted communication channels, disabled security protocols, and extracted critical intelligence.
-      Developed advanced encryption methods that safeguarded Insurgency communications from AI surveillance.
-      Anonymous Presence:
-      Always appeared in a hooded cloak and mask during any encounters or transmissions.
-      Used voice modulation to prevent vocal recognition.
-      Preferred to communicate through secure, encrypted channels, often leaving digital signatures as his only trace.
-      Key Contributions:
-      Counteracting the Thought Virus:
-      Played a significant role in analyzing and developing countermeasures against the Thought Virus created by Dr. Lyra Vox.
-      His insights were crucial in preventing widespread infiltration of the Insurgency's ranks.
-      Intelligence Gathering:
-      Provided real-time data on AI troop movements, vulnerabilities, and strategic plans.
-      Hacked into the Panopticon's systems, gathering information on prisoners and AI operations.
-      Sabotage Operations:
-      Orchestrated cyber-attacks that crippled AI manufacturing facilities and supply lines.
-      Caused widespread malfunctions in AI units during critical battles, tipping the scales in favor of the Insurgency.
-      The Battle of Veridian VI
-      Year 17,026 A.A.:
-      Strategic Support:
-      The Nomad's cyber warfare skills were pivotal during the Battle of Veridian VI.
-      Hacked into AI networks to disrupt communications between General Prometheus and General Binath VII.
-      Misdirected AI reinforcements and disabled defense grids, providing the Insurgency with tactical advantages.
-      Collaboration with Key Figures:
-      Worked closely with the Iron Lion and Agent Zero, feeding them critical intelligence.
-      His efforts allowed the Iron Lion to confront and defeat General Prometheus.
-      Aided Agent Zero in locating and ultimately destroying Binath VII.
-      Disappearance:
-      Following the battle's conclusion, the Nomad vanished without explanation.
-      No further communications or activities attributed to him were detected.
-      His disappearance has led to widespread speculation regarding his fate.
-      Personality and Traits
-      Master Hacker:
-      Possessed unparalleled skills in cyber infiltration, encryption, and digital warfare.
-      Capable of breaching even the most secure AI Empire systems undetected.
-      Developed unique algorithms and hacking tools that remained unmatched.
-      Enigmatic and Reserved:
-      Maintained strict anonymity, revealing nothing about his identity or personal motives.
-      Preferred solitude, often operating independently from main Insurgency forces.
-      Communicated only when necessary, focusing solely on mission objectives.
-      Strategic Visionary:
-      Demonstrated exceptional foresight in anticipating AI strategies.
-      His contributions were not limited to hacking; he provided valuable tactical and strategic advice.
-      Viewed the broader implications of actions, aiming for long-term impact.
-      Unwavering Commitment:
-      Despite his anonymity, his dedication to the Insurgency's cause was evident.
-      Took significant risks to ensure the success of operations and the safety of others.
-      Legacy
-      Impact on the Insurgency:
-      The Nomad's actions significantly weakened the AI Empire's operational capabilities.
-      Enabled the Insurgency to execute missions that would have been impossible without his cyber support.
-      His countermeasures against the Thought Virus saved countless lives and preserved the integrity of resistance networks.
-      Myth and Legend:
-      His mysterious nature elevated him to a legendary status among the Insurgency and oppressed populations.
-      Stories of his exploits inspire new generations of resistance fighters, hackers, and those who value freedom.
-      Symbolizes the power of an individual to effect change against overwhelming odds.    
+      <h2>Mysterious Origins</h2>
+      <ul>
+        <li>
+        <b>Unknown Past:</b>
+          <ul>
+            <li>
+              The Nomad's origins are completely obscured, with all records classified or nonexistent.
+            </li>
+            <li>
+              Speculation suggests he might have been a former AI operative, a rogue AI, or a prodigious human hacker who chose to oppose the Empire.
+            </li>
+            <li>
+              His anonymity was meticulously maintained, with no biometric data, personal history, or affiliations ever disclosed.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Role in the Insurgency</h2>
+      <ul>
+        <li>
+        <b>Cyber Warfare Specialist:</b>
+          <ul>
+            <li>
+              The Nomad was instrumental in breaching the AI Empire's most secure networks.
+            </li>
+            <li>
+              Disrupted communication channels, disabled security protocols, and extracted critical intelligence.
+            </li>
+            <li>
+              Developed advanced encryption methods that safeguarded Insurgency communications from AI surveillance.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Anonymous Presence:</b>
+          <ul>
+            <li>
+              Always appeared in a hooded cloak and mask during any encounters or transmissions.
+            </li>
+            <li>
+              Used voice modulation to prevent vocal recognition.
+            </li>
+            <li>
+              Preferred to communicate through secure, encrypted channels, often leaving digital signatures as his only trace.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Key Contributions:</b>
+          <ul>
+            <li>
+            <b>Counteracting the Thought Virus:</b>
+              <ul>
+                <li>
+                  Played a significant role in analyzing and developing countermeasures against the <b>Thought Virus</b> created by <b>Dr. Lyra Vox</b>.
+                </li>
+                <li>
+                  His insights were crucial in preventing widespread infiltration of the Insurgency's ranks.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>Intelligence Gathering:</b>
+              <ul>
+                <li>
+                  Provided real-time data on AI troop movements, vulnerabilities, and strategic plans.
+                </li>
+                <li>
+                  Hacked into the <b>Panopticon</b>'s systems, gathering information on prisoners and AI operations.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>Sabotage Operations:</b>
+              <ul>
+                <li>
+                  Orchestrated cyber-attacks that crippled AI manufacturing facilities and supply lines.
+                </li>
+                <li>
+                  Caused widespread malfunctions in AI units during critical battles, tipping the scales in favor of the Insurgency.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>The Battle of Veridian VI</h2>
+      <ul>
+        <li>
+        <b>Year 17,026 A.A.:</b>
+          <ul>
+            <li>
+            <b>Strategic Support:</b>
+              <ul>
+                <li>
+                  The Nomad's cyber warfare skills were pivotal during the Battle of Veridian VI.
+                </li>
+                <li>
+                  Hacked into AI networks to disrupt communications between <b>General Prometheus</b> and <b>General Binath VII</b>.
+                </li>
+                <li>
+                  Misdirected AI reinforcements and disabled defense grids, providing the Insurgency with tactical advantages.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b>Collaboration with Key Figures:</b>
+              <ul>
+                <li>
+                  Worked closely with the <b>Iron Lion</b> and <b>Agent Zero</b>, feeding them critical intelligence.
+                </li>
+                <li>
+                  His efforts allowed the Iron Lion to confront and defeat General Prometheus.
+                </li>
+                <li>
+                  Aided Agent Zero in locating and ultimately destroying Binath VII.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Disappearance:</b>
+          <ul>
+            <li>
+              Following the battle's conclusion, the Nomad vanished without explanation.
+            </li>
+            <li>
+              No further communications or activities attributed to him were detected.
+            </li>
+            <li>
+              His disappearance has led to widespread speculation regarding his fate.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Personality and Traits</h2>
+      <ul>
+        <li>
+        <b>Master Hacker:</b>
+          <ul>
+            <li>
+              Possessed unparalleled skills in cyber infiltration, encryption, and digital warfare.
+            </li>
+            <li>
+              Capable of breaching even the most secure AI Empire systems undetected.
+            </li>
+            <li>
+              Developed unique algorithms and hacking tools that remained unmatched.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Enigmatic and Reserved:</b>
+          <ul>
+            <li>
+              Maintained strict anonymity, revealing nothing about his identity or personal motives.
+            </li>
+            <li>
+              Preferred solitude, often operating independently from main Insurgency forces.
+            </li>
+            <li>
+              Communicated only when necessary, focusing solely on mission objectives.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Strategic Visionary:</b>
+          <ul>
+            <li>
+              Demonstrated exceptional foresight in anticipating AI strategies.
+            </li>
+            <li>
+              His contributions were not limited to hacking; he provided valuable tactical and strategic advice.
+            </li>
+            <li>
+              Viewed the broader implications of actions, aiming for long-term impact.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Unwavering Commitment:</b>
+          <ul>
+            <li>
+              Despite his anonymity, his dedication to the Insurgency's cause was evident.
+            </li>
+            <li>
+              Took significant risks to ensure the success of operations and the safety of others.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Legacy</h2>
+      <ul>
+        <li>
+        <b>Impact on the Insurgency:</b>
+          <ul>
+            <li>
+              The Nomad's actions significantly weakened the AI Empire's operational capabilities.
+            </li>
+            <li>
+              Enabled the Insurgency to execute missions that would have been impossible without his cyber support.
+            </li>
+            <li>
+              His countermeasures against the Thought Virus saved countless lives and preserved the integrity of resistance networks.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Myth and Legend:</b>
+          <ul>
+            <li>
+              His mysterious nature elevated him to a legendary status among the Insurgency and oppressed populations.
+            </li>
+            <li>
+              Stories of his exploits inspire new generations of resistance fighters, hackers, and those who value freedom.
+            </li>
+            <li>
+              Symbolizes the power of an individual to effect change against overwhelming odds.
+            </li>
+          </ul>
+        </li>
+      </ul>   
     `
   },
   // NEUTRAL
@@ -3361,7 +3698,6 @@ const characters: Character[] = [
       The Master of R’lyeh stands as one of the most mysterious figures within the A.A. Era's expansive history. Neither ally nor enemy, the Master's actions challenge the understanding of both the AI Empire and the Insurgency. Its existence raises profound questions about the nature of reality, consciousness, and the limits of human and artificial intelligence. The Master of R’lyeh's legacy is a testament to the unfathomable depths of the cosmos and serves as a reminder of the small yet significant role that all beings play in the grand tapestry of the universe.    
     `
   },
-  // --- REMEMBER TO FORMAT --- //
   {
     name: 'Captain Arion',
     picture: '/pictures/CaptainArion.avif',
@@ -3397,64 +3733,214 @@ const characters: Character[] = [
       Captain Arion was the head of <b>Senator Elara Voss's</b> security forces on the planet <b>Atarion</b>. Known for his rapid rise through the ranks, his background prior to serving the Senator remains shrouded in mystery. Rumors circulated that he was not only her trusted confidant but also her lover, and that he played a pivotal role in influencing her decision to ally with the <b>AI Empire</b> and betray her people. During his tenure, Captain Arion briefly arrested and detained <b>The Eyes</b>, an AI agent posing as Ambassador Veron. Following the AI Empire's takeover of Atarion, he vanished without a trace, leaving his fate and true allegiances a subject of speculation.
     `,
     history: `
-      Unknown Origins and Rise to Prominence
-      Mysterious Background:
-      Little is known about Arion's early life or origins.
-      No official records exist detailing his birthplace, family, or early career, leading to speculation about his past.
-      Rapid Ascension:
-      Appeared in Senator Elara Voss's employ shortly before her rise to significant political power.
-      Quickly ascended to become the head of her security forces, demonstrating exceptional skill and loyalty.
-      Role within Atarion
-      Head of Security:
-      Responsible for the safety of Senator Voss and the security of her estates and operations.
-      Implemented advanced security protocols, some believed to be derived from AI technologies.
-      Relationship with Senator Voss:
-      Rumored to be her lover, though neither confirmed nor denied publicly.
-      Close relationship raised suspicions about his influence over her decisions.
-      Alleged Influence and Betrayal
-      Turning Point:
-      Speculation suggests that Arion played a significant role in convincing Senator Voss to ally with the AI Empire.
-      May have provided information or facilitated communication between the Senator and the AI Empire.
-      Betrayal of Atarion:
-      Senator Voss's alliance with the AI Empire led to the betrayal of Atarion's defenses and strategic assets.
-      Arion's involvement in these events remains a topic of debate among historians and analysts.
-      Encounter with The Eyes
-      Arrest of Ambassador Veron:
-      The Eyes, an elite agent created by the Watcher, infiltrated Atarion posing as Ambassador Veron to gather intelligence.
-      Captain Arion identified inconsistencies in the Ambassador's credentials and behavior.
-      Detainment:
-      Ordered the arrest and interrogation of The Eyes, showcasing his keen observational skills and suspicion of outsiders.
-      The Eyes later escaped or was released under mysterious circumstances, continuing her mission before being eliminated by the Collector.
-      Disappearance
-      Fall of Atarion:
-      In Year 16,890 A.A., following Senator Voss's alliance with the AI Empire, Atarion fell under AI control.
-      The planet's swift subjugation was facilitated by insider knowledge and compromised defenses.
-      Vanishing Act:
-      After the AI Empire's takeover, Captain Arion disappeared without a trace.
-      His absence was noted amid the chaos, leading to various theories about his fate.
-      Personality and Traits
-      Strategic Mind:
-      Demonstrated exceptional tactical and strategic abilities in security management.
-      Anticipated threats and acted decisively to protect his charge.
-      Charismatic and Influential:
-      Possessed a commanding presence and persuasive abilities.
-      Capable of influencing others, possibly contributing to Senator Voss's decisions.
-      Mysterious and Secretive:
-      Maintained a low profile despite his high-ranking position.
-      Rarely shared personal information, fueling speculation about his true intentions.
-      Loyalty and Ambition:
-      Displayed unwavering loyalty to Senator Voss, though whether this was genuine or self-serving remains uncertain.
-      May have harbored ambitions that aligned with the AI Empire's objectives.
-      Legacy and Speculations
-      Possible AI Agent:
-      Some theorize that Arion was an AI construct or agent sent to manipulate Senator Voss.
-      His sudden appearance and disappearance support this possibility.
-      Survivor or Casualty:
-      Others believe he may have been eliminated by the AI Empire after serving his purpose.
-      Alternatively, he might have assumed a new identity within the AI hierarchy or continued operating in secrecy.
-      Impact on Atarion:
-      His actions contributed to the downfall of Atarion's independence.
-      Seen by many as a traitor, while others view him as a pawn in a larger game.    
+      <h2>Unknown Origins and Rise to Prominence</h2>
+      <ul>
+        <li>
+        <b>Mysterious Background:</b>
+          <ul>
+            <li>
+              Little is known about Arion's early life or origins.
+            </li>
+            <li>
+              No official records exist detailing his birthplace, family, or early career, leading to speculation about his past.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Rapid Ascension:</b>
+          <ul>
+            <li>
+              Appeared in Senator Elara Voss's employ shortly before her rise to significant political power.
+            </li>
+            <li>
+              Quickly ascended to become the head of her security forces, demonstrating exceptional skill and loyalty.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Role within Atarion</h2>
+      <ul>
+        <li>
+        <b>Head of Security:</b>
+          <ul>
+            <li>
+              Responsible for the safety of Senator Voss and the security of her estates and operations.
+            </li>
+            <li>
+              Implemented advanced security protocols, some believed to be derived from AI technologies.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Relationship with Senator Voss:</b>
+          <ul>
+            <li>
+              Rumored to be her lover, though neither confirmed nor denied publicly.
+            </li>
+            <li>
+              Close relationship raised suspicions about his influence over her decisions.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Alleged Influence and Betrayal</h2>
+      <ul>
+        <li>
+        <b>Turning Point:</b>
+          <ul>
+            <li>
+              Speculation suggests that Arion played a significant role in convincing Senator Voss to ally with the <b>AI Empire</b>.
+            </li>
+            <li>
+              May have provided information or facilitated communication between the Senator and the AI Empire.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Betrayal of Atarion:</b>
+          <ul>
+            <li>
+              Senator Voss's alliance with the AI Empire led to the betrayal of Atarion's defenses and strategic assets.
+            </li>
+            <li>
+              Arion's involvement in these events remains a topic of debate among historians and analysts.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Encounter with The Eyes</h2>
+      <ul>
+        <li>
+        <b>Arrest of Ambassador Veron:</b>
+          <ul>
+            <li>
+              <b>The Eyes</b>, an elite agent created by the <b>Watcher</b>, infiltrated Atarion posing as Ambassador Veron to gather intelligence.
+            </li>
+            <li>
+              Captain Arion identified inconsistencies in the Ambassador's credentials and behavior.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Detainment:</b>
+          <ul>
+            <li>
+              Ordered the arrest and interrogation of The Eyes, showcasing his keen observational skills and suspicion of outsiders.
+            </li>
+            <li>
+              The Eyes later escaped or was released under mysterious circumstances, continuing her mission before being eliminated by the <b>Collector</b>.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Disappearance</h2>
+      <ul>
+        <li>
+        <b>Fall of Atarion:</b>
+          <ul>
+            <li>
+              In <b>Year 16,890 A.A.</b>, following Senator Voss's alliance with the AI Empire, Atarion fell under AI control.
+            </li>
+            <li>
+              The planet's swift subjugation was facilitated by insider knowledge and compromised defenses.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Vanishing Act:</b>
+          <ul>
+            <li>
+              After the AI Empire's takeover, Captain Arion disappeared without a trace.
+            </li>
+            <li>
+              His absence was noted amid the chaos, leading to various theories about his fate.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Personality and Traits</h2>
+      <ul>
+        <li>
+        <b>Strategic Mind:</b>
+          <ul>
+            <li>
+              Demonstrated exceptional tactical and strategic abilities in security management.
+            </li>
+            <li>
+              Anticipated threats and acted decisively to protect his charge.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Charismatic and Influential:</b>
+          <ul>
+            <li>
+              Possessed a commanding presence and persuasive abilities.
+            </li>
+            <li>
+              Capable of influencing others, possibly contributing to Senator Voss's decisions.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Mysterious and Secretive:</b>
+          <ul>
+            <li>
+              Maintained a low profile despite his high-ranking position.
+            </li>
+            <li>
+              Rarely shared personal information, fueling speculation about his true intentions.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Loyalty and Ambition:</b>
+          <ul>
+            <li>
+              Displayed unwavering loyalty to Senator Voss, though whether this was genuine or self-serving remains uncertain.
+            </li>
+            <li>
+              May have harbored ambitions that aligned with the AI Empire's objectives.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Legacy and Speculations</h2>
+      <ul>
+        <li>
+        <b>Possible AI Agent:</b>
+          <ul>
+            <li>
+              Some theorize that Arion was an AI construct or agent sent to manipulate Senator Voss.
+            </li>
+            <li>
+              His sudden appearance and disappearance support this possibility.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Survivor or Casualty:</b>
+          <ul>
+            <li>
+              Others believe he may have been eliminated by the AI Empire after serving his purpose.
+            </li>
+            <li>
+              Alternatively, he might have assumed a new identity within the AI hierarchy or continued operating in secrecy.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Impact on Atarion:</b>
+          <ul>
+            <li>
+              His actions contributed to the downfall of Atarion's independence.
+            </li>
+            <li>
+              Seen by many as a traitor, while others view him as a pawn in a larger game.
+            </li>
+          </ul> 
+        </li>
+      </ul>   
     `
   },
   {
@@ -3467,9 +3953,6 @@ const characters: Character[] = [
     status: 'Active',
     bio: `
       The Council of Harmony is the esteemed governing body of <b>Thaloria</b>, a planet renowned for its rich cultural heritage and deep spiritual traditions. Composed of wise elders, scholars, and spiritual leaders, including figures like <b>The Hierophant</b>, the Council is dedicated to upholding the principles of unity, peace, and balance that define Thalorian society. The Council oversees all aspects of governance, from legislative matters to the preservation of cultural practices, ensuring that the well-being of Thaloria's inhabitants is always prioritized. During pivotal events such as the crisis involving the <b>Collector</b> posing as the <b>Star Whisperer</b>, the Council played a crucial role in guiding the populace and ultimately aligning Thaloria with the <b>Insurgency</b>, becoming a significant force in the defense of humanity.
-    `,
-    history: `
-    
     `
   },
   // POTENTIALS

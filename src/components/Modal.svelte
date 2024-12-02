@@ -83,11 +83,13 @@
                 width="1024"
                 height="1024"
               />
-              <button
-                on:click={() => {
-                  showHistory = !showHistory;
-                }}>{showHistory ? "Hide" : "Show"} history</button
-              >
+              {#if $selectedCharacter.history}
+                <button
+                  on:click={() => {
+                    showHistory = !showHistory;
+                  }}>{showHistory ? "Hide" : "Show"} history</button
+                >
+              {/if}
             </div>
 
             <article
@@ -484,6 +486,7 @@
           flex-flow: column nowrap;
           align-items: center;
           width: 15vw;
+          min-width: 15vw;
           border: 0.1vw solid rgba(51, 226, 230, 0.25);
           border-radius: 0.5vw;
 
@@ -492,8 +495,7 @@
             width: inherit;
             height: 15vw;
             object-fit: cover;
-            border-top-left-radius: 0.5vw;
-            border-top-right-radius: 0.5vw;
+            border-radius: inherit;
             background-color: #010020;
           }
 

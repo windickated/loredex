@@ -11,7 +11,6 @@
   const mapWidth: number = timeline.length * 10;
   const mapHeight: number = 80;
 
-  let width: number;
   let mapContainer: HTMLElement | null;
   let dragMap: HTMLDivElement | null;
   let mapZoom: number = 1;
@@ -24,11 +23,9 @@
   let touchscreenDevice: boolean = false;
 
   onMount(() => {
-    if ("ontouchstart" in document.documentElement) {
-      touchscreenDevice = true;
-    } else {
-      mapZoom = 0.4;
-    }
+    // if ("ontouchstart" in document.documentElement) {
+    //   touchscreenDevice = true;
+    mapZoom = 0.4;
   });
 
   const handlePointerDown = (event: PointerEvent) => {
@@ -105,8 +102,6 @@
   };
 </script>
 
-<svelte:window bind:innerWidth={width} />
-
 <div class="logo">LOREDEX</div>
 
 <header>
@@ -163,11 +158,9 @@
     <section
       class="map"
       style="
-        width: {width > 600 ? mapWidth : mapHeight}rem;
-        height: {width > 600 ? mapHeight : mapWidth}rem;
-        grid-template-{width > 600
-        ? 'columns'
-        : 'rows'}: repeat({timeSections}, 10rem);
+        width: {mapWidth}rem;
+        height: {mapHeight}rem;
+        grid-template-columns: repeat({timeSections}, 10rem);
       "
     >
       {#each timeline as { date, note, action, emptySection }}
@@ -413,13 +406,18 @@
   }
 
   @media only screen and (max-width: 600px) {
+    .logo {
+      display: none;
+    }
+
     header {
-      margin-top: 3vh;
-      padding-inline: 2.5vw;
+      position: absolute;
+      margin-block: 0;
+      top: 0;
+      padding: 2.5em 1em;
       max-height: 4vh;
       opacity: 1;
       animation: none;
-
       h1 {
         display: none;
       }
@@ -443,11 +441,7 @@
             line-height: 2em;
             padding-inline: 0.5em;
             border-radius: 0.5em;
-            width: 30vw;
-          }
-
-          input:focus {
-            width: 40vw;
+            width: 25vw;
           }
         }
 
@@ -462,25 +456,20 @@
     }
 
     main {
-      width: 95vw;
-      height: 80vh;
+      width: 100vw;
+      height: 95vh;
+      margin-top: 5em;
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+      border-radius: 0;
       opacity: 1;
       animation: none;
 
       .map-wrapper {
         .map {
           .plot {
-            height: auto;
-            width: 100%;
-            flex-direction: row;
-            border-top: 0.05rem dashed rgba(51, 226, 230, 0.1);
-            border-bottom: 0.05rem dashed rgba(51, 226, 230, 0.1);
-
             .date {
-              top: auto;
-              left: 0;
-              writing-mode: vertical-lr;
-              transform: rotate(180deg);
             }
           }
         }

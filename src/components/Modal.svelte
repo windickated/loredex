@@ -57,23 +57,26 @@
 >
   <!-- svelte-ignore a11y-no-static-element-interactions -->
   <main on:click|stopPropagation>
-    {#if $selectedCharacter}
+    <header>
       <button class="back-arrow" on:click={handleBackArrow}>
         <img src="/back-arrow.png" alt="Back" />
       </button>
-    {/if}
-    <button class="close-button" on:click={closeDialog}>❌</button>
+      <div class="title">
+        {#if $selectedCharacter}
+          {#if $selectedCharacter.dead}
+            <img class="death-icon" src="dead-red.png" alt="Dead" />
+          {/if}
+          <h1 style="color: {$characterColor}">{$selectedCharacter.name}</h1>
+        {:else}
+          <h1>Comprehensive Timeline of the A.A. Era</h1>
+        {/if}
+      </div>
+      <button class="close-button" on:click={closeDialog}>❌</button>
+    </header>
 
     {#if $showModal === "character" && $selectedCharacter}
       {#key $selectedCharacter}
         <section class="character-window">
-          <header>
-            {#if $selectedCharacter.dead}
-              <img class="death-icon" src="dead-red.png" alt="Dead" />
-            {/if}
-            <h1 style="color: {$characterColor}">{$selectedCharacter.name}</h1>
-          </header>
-
           <section class="general-info">
             <div class="image-container">
               <img
@@ -356,10 +359,6 @@
         </section>
       {/key}
     {:else if $showModal === "timeline"}
-      <header>
-        <h1>Comprehensive Timeline of the A.A. Era</h1>
-      </header>
-
       <section class="general-info time-system">
         <p>{@html timeSystem.note}</p>
         <ol>
@@ -401,6 +400,7 @@
 
     main {
       padding: 1vw;
+      padding-top: 0;
 
       img {
         cursor: pointer;
@@ -417,55 +417,59 @@
         }
       }
 
-      .close-button,
-      .back-arrow {
-        z-index: 10;
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin: 1vw;
-        padding: 1vw;
-        font-size: 2vw;
-        line-height: 2vw;
-        background-color: rgba(22, 30, 95, 0.9);
-        border-radius: 1vw;
-
-        &:hover,
-        &:active {
-          background-color: rgba(45, 90, 216, 0.9);
-        }
-      }
-
-      .back-arrow {
-        padding: 0.5vw;
-        right: auto;
-        left: 0;
-
-        img {
-          width: 3vw;
-          height: auto;
-          opacity: 0.75;
-        }
-      }
-
       header {
-        margin: 1vw;
+        z-index: 100;
+        position: sticky;
+        top: 0;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: 1vw;
+        padding-block: 1vw;
+        background-color: rgba(1, 0, 32, 0.9);
 
-        .death-icon {
-          width: 2vw;
-          opacity: 0.75;
-          transform: none !important;
-          cursor: default;
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1vw;
+
+          .death-icon {
+            width: 2vw;
+            opacity: 0.75;
+            transform: none !important;
+            cursor: default;
+          }
+
+          h1 {
+            font-size: 2.5vw;
+            line-height: 2vw;
+            color: rgba(51, 226, 230, 0.75);
+          }
         }
 
-        h1 {
-          font-size: 2.5vw;
+        .close-button,
+        .back-arrow {
+          z-index: 10;
+          padding: 1vw;
+          font-size: 2vw;
           line-height: 2vw;
-          color: rgba(51, 226, 230, 0.75);
+          background-color: rgba(22, 30, 95, 0.9);
+          border-radius: 1vw;
+
+          &:hover,
+          &:active {
+            background-color: rgba(45, 90, 216, 0.9);
+          }
+        }
+
+        .back-arrow {
+          padding: 0.5vw;
+
+          img {
+            width: 3vw;
+            height: auto;
+            opacity: 0.75;
+          }
         }
       }
 
@@ -676,6 +680,7 @@
             margin-bottom: 0.5vw;
 
             &:hover {
+              z-index: 20;
               transform: scale(1.5);
               filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
             }

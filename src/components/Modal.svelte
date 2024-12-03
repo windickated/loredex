@@ -6,7 +6,7 @@
   import {
     showModal,
     selectedCharacter,
-    characterColor,
+    fullscreenPicture,
   } from "../stores/modal.ts";
   import { timeSystem, timeNotes } from "../data/timeline.ts";
 
@@ -27,7 +27,6 @@
     $showModal = null;
     $selectedCharacter = null;
     if (previousCharacters.length > 0) previousCharacters = [];
-    $characterColor = "";
     dialog?.close();
   };
 
@@ -46,6 +45,11 @@
       $selectedCharacter = previousCharacters.pop()!;
     }
   }
+
+  const showFullscreenPicture = (event: any) => {
+    const target = event.target as HTMLImageElement;
+    $fullscreenPicture = target.src;
+  };
 </script>
 
 <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions -->
@@ -55,8 +59,23 @@
   on:close={closeDialog}
   on:click|self={closeDialog}
 >
+  {#if $fullscreenPicture}
+    <!-- svelte-ignore a11y_click_events_have_key_events -->
+    <div
+      class="fullscreen-picture"
+      role="button"
+      tabindex="0"
+      on:click={() => ($fullscreenPicture = null)}
+    >
+      <img src={$fullscreenPicture} alt="Character" />
+    </div>
+  {/if}
+
   <!-- svelte-ignore a11y-no-static-element-interactions -->
-  <main on:click|stopPropagation>
+  <main
+    on:click|stopPropagation
+    style="display: {$fullscreenPicture ? 'none' : 'block'}"
+  >
     <header>
       <button class="back-arrow" on:click={handleBackArrow}>
         <img src="/back-arrow.png" alt="Back" />
@@ -66,7 +85,9 @@
           {#if $selectedCharacter.dead}
             <img class="death-icon" src="dead-red.png" alt="Dead" />
           {/if}
-          <h1 style="color: {$characterColor}">{$selectedCharacter.name}</h1>
+          <h1 style="color: {getColor($selectedCharacter.name)}">
+            {$selectedCharacter.name}
+          </h1>
         {:else}
           <h1>Comprehensive Timeline of the A.A. Era</h1>
         {/if}
@@ -80,11 +101,11 @@
           <section class="general-info">
             <div class="image-container">
               <img
-                class="scalable"
                 src={$selectedCharacter.picture}
                 alt={$selectedCharacter.name}
                 width="1024"
                 height="1024"
+                on:click={showFullscreenPicture}
               />
               {#if $selectedCharacter.history}
                 <button
@@ -121,7 +142,6 @@
             {#if $selectedCharacter.potentialNFT}
               <div class="image-container">
                 <img
-                  class="scalable"
                   src="https://api.degenerousdao.com/nft/image/{$selectedCharacter.potentialNFT}"
                   alt="Potential #{$selectedCharacter.potentialNFT}"
                   width="1024"
@@ -177,11 +197,11 @@
               {#each $selectedCharacter.transformations as { name, picture }, index}
                 <div>
                   <img
-                    class="scalable"
                     src={picture}
                     alt={name}
                     width="1024"
                     height="1024"
+                    on:click={showFullscreenPicture}
                   />
                   <p>{name}</p>
                 </div>
@@ -378,13 +398,34 @@
 </dialog>
 
 <style lang="scss">
+  .fullscreen-picture {
+    z-index: 1000;
+    width: 100%;
+    height: 90vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+    animation: fade 0.5s ease-in-out forwards;
+
+    img {
+      height: 90vh;
+      width: auto;
+      border-left: 0.05vw solid rgba(51, 226, 230, 0.5);
+      border-right: 0.05vw solid rgba(51, 226, 230, 0.5);
+    }
+  }
+
   dialog {
     width: 90vw;
     height: 90vh;
     border: none;
     color: inherit;
     background-color: rgba(1, 0, 32, 0.75);
-    border: 0.05vw solid rgba(51, 226, 230, 0.75);
+    border: 0.05vw solid rgba(51, 226, 230, 0.5);
     border-radius: 2vw;
     overflow-y: scroll;
     cursor: default;
@@ -395,26 +436,13 @@
       justify-content: center;
       align-items: center;
       gap: 2vw;
-      animation: fade 1s ease-in-out forwards;
+      animation: fade 0.5s ease-in-out forwards;
     }
 
     main {
-      padding: 1vw;
-      padding-top: 0;
-
       img {
         cursor: pointer;
         transition: all 0.3s ease-in-out;
-      }
-
-      .scalable {
-        z-index: 10;
-        cursor: zoom-in;
-
-        &:active {
-          transform: scale(2) !important;
-          border-radius: 50% !important;
-        }
       }
 
       header {
@@ -424,7 +452,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-block: 1vw;
+        padding: 1vw;
         background-color: rgba(1, 0, 32, 0.9);
 
         div {
@@ -449,7 +477,6 @@
 
         .close-button,
         .back-arrow {
-          z-index: 10;
           padding: 1vw;
           font-size: 2vw;
           line-height: 2vw;
@@ -501,6 +528,7 @@
             object-fit: cover;
             border-radius: inherit;
             background-color: #010020;
+            cursor: zoom-in;
           }
 
           button {
@@ -665,6 +693,7 @@
         align-items: center;
         gap: 1vw;
         font-size: 1vw;
+        padding-inline: 1vw;
 
         div {
           display: flex;
@@ -678,6 +707,7 @@
             border: 0.1vw solid rgba(51, 226, 230, 0.5);
             border-radius: 7.5vw;
             margin-bottom: 0.5vw;
+            cursor: zoom-in;
 
             &:hover {
               z-index: 20;
@@ -700,6 +730,7 @@
 
       .tabs-wrapper {
         width: 95%;
+        padding-bottom: 1vw;
 
         .tabs-container {
           padding: 0;

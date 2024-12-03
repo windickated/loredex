@@ -1,10 +1,6 @@
 <script lang="ts">
   import setColor from "../utils/color.ts";
-  import {
-    showModal,
-    selectedCharacter,
-    characterColor,
-  } from "../stores/modal.ts";
+  import { showModal, selectedCharacter } from "../stores/modal.ts";
 
   export let character;
   const {
@@ -84,7 +80,6 @@
     ) {
       $showModal = "character";
       $selectedCharacter = character;
-      $characterColor = color;
     }
   };
 </script>

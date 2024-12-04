@@ -20,10 +20,23 @@
 
   let dialog: HTMLDialogElement;
   let showHistory: boolean = false;
+  let historySection: HTMLElement | null;
+
+  $: if (historySection && showHistory) {
+    const sectionCords = historySection.getBoundingClientRect();
+    console.log(sectionCords);
+    dialog.scroll({
+      top: sectionCords.y - 100,
+      behavior: "smooth",
+    });
+  }
 
   $: if (dialog && $showModal) {
     dialog.showModal();
-  } else if (!$showModal) closeDialog();
+  } else if (!$showModal) {
+    closeDialog();
+    if (showHistory) showHistory = false;
+  }
 
   const closeDialog = () => {
     $showModal = null;
@@ -37,6 +50,7 @@
     characters.map((character) => {
       if (name === character.name) $selectedCharacter = character;
     });
+    if (showHistory) showHistory = false;
   };
 
   function handleBackArrow() {
@@ -45,6 +59,7 @@
       return;
     } else {
       $selectedCharacter = previousCharacters.pop()!;
+      if (showHistory) showHistory = false;
     }
   }
 
@@ -193,7 +208,7 @@
           {/if}
 
           {#if showHistory && $selectedCharacter.history}
-            <article class="history">
+            <article class="history" bind:this={historySection}>
               <hr />
               {@html $selectedCharacter.history}
               <hr />
@@ -931,6 +946,8 @@
       border-radius: 0;
 
       main {
+        padding-bottom: 1em;
+
         header {
           padding: 1em;
 

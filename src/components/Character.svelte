@@ -11,7 +11,6 @@
     dead = false,
     state,
   } = character;
-  export let touchscreenDevice: boolean = false;
 
   let shadowLength: number = 0;
   let characterTile: HTMLElement | null;
@@ -109,7 +108,7 @@
   >
     {name}
   </p>
-  {#if lastSeen && !touchscreenDevice}
+  {#if lastSeen}
     <div
       bind:this={characterShadow}
       class="character-shadow {name}"

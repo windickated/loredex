@@ -203,7 +203,6 @@ a {
 }
 
 strong, b, h2 {
-  /* color: rgba(51, 226, 230, 0.9); */
   color: white;
   text-shadow: 0 0 0.1rem rgba(51, 226, 230, 0.5);
 }
@@ -217,7 +216,6 @@ i {
 }
 
 hr {
-  /* border: 0.05rem solid rgba(51, 226, 230, 0.5); */
   border: 0.05rem solid #dedede;
   margin-block: 1vw;
 }

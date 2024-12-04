@@ -20,11 +20,8 @@
   let startY: number = 0;
   let isDragging: boolean = false;
   let searchField: string;
-  let touchscreenDevice: boolean = false;
 
   onMount(() => {
-    // if ("ontouchstart" in document.documentElement) {
-    //   touchscreenDevice = true;
     mapZoom = 0.4;
   });
 
@@ -59,13 +56,6 @@
     event.preventDefault();
     let zoom: number;
     zoom = deltaY > 0 ? mapZoom - 0.05 : mapZoom + 0.05;
-    mapZoom = setZoom(zoom);
-  };
-
-  const handleZoomButton = (zoomIn: boolean) => {
-    let zoom: number = mapZoom;
-    if (zoomIn) zoom += 0.05;
-    else zoom -= 0.05;
     mapZoom = setZoom(zoom);
   };
 
@@ -126,12 +116,34 @@
       />
     </div>
     <div class="zoom">
-      <button on:click={() => handleZoomButton(true)}>
-        <img src="zoom-in.png" alt="Zoom in" />
-      </button>
-      <button on:click={() => handleZoomButton(false)}>
-        <img src="zoom-out.png" alt="Zoom in" />
-      </button>
+      <!-- svelte-ignore a11y_no_noninteractive_element_to_interactive_role a11y_click_events_have_key_events -->
+      <div class="zoom-slider">
+        <img
+          src="/zoom-out.png"
+          alt="Zoom out"
+          role="button"
+          tabindex="0"
+          on:click={() => {
+            mapZoom = 0.1;
+          }}
+        />
+        <input
+          type="range"
+          min="0.1"
+          max="1.6"
+          step="0.025"
+          bind:value={mapZoom}
+        />
+        <img
+          src="/zoom-in.png"
+          alt="Zoom in"
+          role="button"
+          tabindex="0"
+          on:click={() => {
+            mapZoom = 1.6;
+          }}
+        />
+      </div>
       <button
         class="zoom-info"
         on:click={() => {
@@ -180,26 +192,24 @@
           </div>
           {#each characters as character}
             {#if date[0] <= character.appearance && date[1] >= character.appearance}
-              <Character {character} {touchscreenDevice} />
+              <Character {character} />
             {/if}
           {/each}
         </div>
       {/each}
-      {#if !touchscreenDevice}
-        <section class="connections">
-          {#each characters as character}
-            {#if character.connections}
-              {#each character.connections as connection}
-                <Connection
-                  name1={character.name}
-                  name2={connection}
-                  state={character.state}
-                />
-              {/each}
-            {/if}
-          {/each}
-        </section>
-      {/if}
+      <section class="connections">
+        {#each characters as character}
+          {#if character.connections}
+            {#each character.connections as connection}
+              <Connection
+                name1={character.name}
+                name2={connection}
+                state={character.state}
+              />
+            {/each}
+          {/if}
+        {/each}
+      </section>
     </section>
   </div>
 </main>
@@ -273,7 +283,7 @@
 
     .controllers {
       display: flex;
-      flex-direction: row nowrap;
+      flex-flow: row nowrap;
       gap: 1vw;
 
       img {
@@ -311,7 +321,7 @@
         }
 
         input:focus {
-          width: 20vw;
+          width: 50vw;
         }
       }
 
@@ -320,8 +330,38 @@
         flex-direction: row nowrap;
         gap: 0.5vw;
 
+        .zoom-slider {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5vw;
+          padding: 0.5vw;
+          background-color: rgba(56, 117, 250, 0.5);
+          border: 0.1vw solid rgba(51, 226, 230, 0.5);
+          border-radius: 0.5vw;
+
+          input {
+            cursor: pointer;
+          }
+
+          img {
+            height: 1.5vw;
+            width: auto;
+            cursor: pointer;
+            transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+          }
+
+          img:hover,
+          img:active {
+            filter: drop-shadow(0 0 0.5vw rgba(51, 226, 230, 0.5));
+            transform: scale(1.1);
+          }
+        }
+
         .zoom-info {
           font-size: 1vw;
+          width: 4vw;
         }
       }
     }
@@ -414,8 +454,7 @@
       position: absolute;
       margin-block: 0;
       top: 0;
-      padding: 2.5em 1em;
-      max-height: 4vh;
+      padding: 1em;
       opacity: 1;
       animation: none;
       h1 {
@@ -425,6 +464,8 @@
       .controllers {
         width: 100vw;
         justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1em;
 
         img {
           width: 3vh;
@@ -448,7 +489,28 @@
         .zoom {
           gap: 0.5em;
 
+          .zoom-slider {
+            width: 90vw;
+            padding: 1vw 2vw;
+            background-color: transparent;
+            border: none;
+            border-radius: 0;
+            padding-inline: 0;
+            gap: 1em;
+
+            input {
+              width: 60vw;
+              height: 1vh;
+            }
+
+            img {
+              height: 3vh;
+            }
+          }
+
           .zoom-info {
+            display: none;
+            width: 4em;
             font-size: 0.75em;
           }
         }
@@ -457,8 +519,8 @@
 
     main {
       width: 100vw;
-      height: 95vh;
-      margin-top: 5em;
+      height: 90vh;
+      margin-top: 7em;
       border-left: none;
       border-right: none;
       border-bottom: none;

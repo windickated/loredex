@@ -10,6 +10,8 @@
   } from "../stores/modal.ts";
   import { timeSystem, timeNotes } from "../data/timeline.ts";
 
+  let width: number;
+
   let activeTab: "connections" | "stories" = "connections";
   const activeTabStyling =
     "color: #010020; text-shadow: 0 0 0.1vw #010020; background-color: rgba(51, 226, 230, 0.75)";
@@ -47,10 +49,13 @@
   }
 
   const showFullscreenPicture = (event: any) => {
+    if (width < 600) return;
     const target = event.target as HTMLImageElement;
     $fullscreenPicture = target.src;
   };
 </script>
+
+<svelte:window bind:innerWidth={width} />
 
 <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions -->
 <dialog
@@ -59,7 +64,7 @@
   on:close={closeDialog}
   on:click|self={closeDialog}
 >
-  {#if $fullscreenPicture}
+  {#if $fullscreenPicture && width > 600}
     <!-- svelte-ignore a11y_click_events_have_key_events -->
     <div
       class="fullscreen-picture"
@@ -106,6 +111,9 @@
                 width="1024"
                 height="1024"
                 on:click={showFullscreenPicture}
+                style={$selectedCharacter.history
+                  ? "border-bottom-left-radius: 0;border-bottom-right-radius: 0;"
+                  : ""}
               />
               {#if $selectedCharacter.history}
                 <button
@@ -223,12 +231,16 @@
                   }}
                 >
                   Connections
-                  <img
-                    class="connections-icon"
-                    src="/connection.png"
-                    alt="Connection"
-                    style="opacity: {activeTab === 'connections' ? '1' : '0.1'}"
-                  />
+                  {#if width > 600}
+                    <img
+                      class="connections-icon"
+                      src="/connection.png"
+                      alt="Connection"
+                      style="opacity: {activeTab === 'connections'
+                        ? '1'
+                        : '0.1'}"
+                    />
+                  {/if}
                 </button>
                 <button
                   class="tab"
@@ -238,12 +250,14 @@
                   }}
                 >
                   Appearances
-                  <img
-                    class="stories-icon"
-                    src="/play.png"
-                    alt="Stories"
-                    style="opacity: {activeTab === 'stories' ? '1' : '0.1'}"
-                  />
+                  {#if width > 600}
+                    <img
+                      class="stories-icon"
+                      src="/play.png"
+                      alt="Stories"
+                      style="opacity: {activeTab === 'stories' ? '1' : '0.1'}"
+                    />
+                  {/if}
                 </button>
               </div>
 
@@ -469,6 +483,7 @@
           }
 
           h1 {
+            text-align: center;
             font-size: 2.5vw;
             line-height: 2vw;
             color: rgba(51, 226, 230, 0.75);
@@ -852,7 +867,6 @@
               }
 
               article {
-                display: none;
                 height: 15vw;
                 max-width: 52.5vw;
                 display: flex;
@@ -900,15 +914,264 @@
   }
 
   @media only screen and (max-width: 600px) {
-    dialog {
-      max-width: 95vw;
+    .fullscreen-picture {
+      height: 100vh;
+
+      img {
+        width: 100vw;
+        height: auto;
+        border: none;
+      }
     }
 
-    .close-button {
-      margin: 1em;
-      padding: 0.25em;
-      font-size: 1.2em;
-      line-height: 1.2em;
+    dialog {
+      min-width: 100vw;
+      min-height: 100vh;
+      width: 100vw;
+      border-radius: 0;
+
+      main {
+        header {
+          padding: 1em;
+
+          div {
+            padding-inline: 1em;
+            gap: 1em;
+
+            .death-icon {
+              width: 1.25em;
+              opacity: 0.75;
+              transform: none !important;
+              cursor: default;
+            }
+
+            h1 {
+              font-size: 1.5em;
+              line-height: 1.25em;
+            }
+          }
+
+          .close-button,
+          .back-arrow {
+            padding: 0.5em;
+            font-size: 1.5em;
+            line-height: 1.25em;
+            border-radius: 0.5em;
+          }
+
+          .back-arrow {
+            img {
+              width: 1.15em;
+            }
+          }
+        }
+
+        .character-window {
+          gap: 1.5em;
+
+          .general-info {
+            flex-direction: column;
+            width: 100vw;
+            padding: 1em;
+            border-radius: 0;
+            border-left: none;
+            border-right: none;
+            gap: 1em;
+
+            .image-container {
+              width: 90vw;
+              min-width: 90vw;
+              border-radius: 0.5em;
+
+              img {
+                width: inherit;
+                height: 90vw;
+              }
+
+              button {
+                border-bottom-left-radius: 0.5em;
+                border-bottom-right-radius: 0.5em;
+                font-size: 1.25em;
+              }
+
+              div {
+                height: 3em;
+
+                a {
+                  width: 45vw;
+
+                  img {
+                    width: auto;
+                    height: 1.5em;
+                  }
+                }
+              }
+            }
+
+            article {
+              min-height: none;
+              gap: 1em;
+              font-size: 1em;
+
+              .status {
+                align-items: center;
+                gap: 0.5em;
+                font-size: 1.25em;
+
+                span {
+                  gap: 0.5em;
+                }
+              }
+            }
+          }
+
+          .play-button {
+            width: 95vw;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5em;
+            gap: 0.5em;
+            font-size: 1.5em;
+            line-height: 1em;
+            color: #010020;
+            border-radius: 0.5em;
+
+            p {
+              text-align: center;
+              width: 95vw;
+            }
+
+            div {
+              width: 100%;
+              padding: 0.5em;
+              gap: 0.5em;
+
+              button {
+                font-size: 0.75em;
+                line-height: 1em;
+                padding: 0.5em 1em;
+                border-radius: 0.25em;
+              }
+            }
+
+            img {
+              height: 1em;
+              width: auto;
+            }
+          }
+
+          .transformation {
+            flex-direction: column;
+            gap: 1em;
+            font-size: 1em;
+            line-height: 1em;
+            padding-inline: 0.5em;
+
+            div {
+              img {
+                width: 50vw;
+                border-radius: 25vw;
+                margin-bottom: 0.5em;
+              }
+            }
+
+            span {
+              font-size: 1.5em;
+              transform: rotate(90deg);
+            }
+          }
+
+          .tabs-wrapper {
+            width: 100vw;
+            padding-bottom: 1vw;
+
+            .tabs-container {
+              font-size: 1.25em;
+              line-height: 1.5em;
+
+              .tab {
+                font-size: inherit;
+                line-height: inherit;
+                width: 50vw;
+                padding: 0.25em;
+                border-radius: 0.5em;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+              }
+            }
+
+            .tab-section {
+              padding: 1em 0.5em;
+              border-radius: 0;
+              font-size: 1em;
+
+              .connected-characters {
+                text-align: center;
+                gap: 0.5em;
+
+                div {
+                  width: 40vw;
+
+                  img {
+                    width: 40vw;
+                    border-radius: 20vw;
+                    margin-bottom: 0.25em;
+                  }
+                }
+              }
+
+              .stories {
+                gap: 1em;
+
+                div {
+                  width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 0.5em;
+                  border-radius: 0.25em;
+                  padding: 1em;
+
+                  .story-image-container {
+                    height: 45vw;
+                    width: 82.5vw;
+
+                    img {
+                      height: 45vw;
+                      width: 82.5vw;
+                    }
+                  }
+
+                  article {
+                    height: auto;
+                    max-width: 90vw;
+                    align-items: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .time-system {
+          width: 100vw;
+          font-size: 1em;
+          line-height: 1.75em;
+          margin: 1em auto;
+          border-radius: 0;
+          border-left: none;
+          border-right: none;
+        }
+
+        .history {
+          padding-inline: 1em;
+          font-size: 1em;
+        }
+      }
+    }
+
+    dialog::-webkit-scrollbar {
+      width: 0;
     }
   }
 

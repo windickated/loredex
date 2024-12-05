@@ -1,7 +1,7 @@
 export interface Character {
   name: string
   picture: string
-  appearance: number
+  appearance?: number
   lastSeen?: number
   dead?: boolean
   state: "good" | "evil" | "neutral"
@@ -11,7 +11,7 @@ export interface Character {
   transformations?: Transformation[]
   stories?: {
     season: number
-    episode: number[]
+    episodes: number[]
   }[]
   affiliation?: string
   status?: string
@@ -26,7 +26,8 @@ interface Transformation {
 
 export interface Season {
   season: number
-  name: string
+  title?: string
+  epoch: string
   episodes: Story[]
 }
 

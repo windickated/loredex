@@ -1,7 +1,7 @@
 import { writable } from "svelte/store";
 import { stories } from "../data/timeline.ts";
 
-export const activeSeasonNr = writable<number>(-1);
+export const activeSeasonNr = writable<number>(1);
 
 export const setActiveSeason = (event: any) => {
   const target = event.target as HTMLDivElement;
@@ -9,25 +9,13 @@ export const setActiveSeason = (event: any) => {
     target.localName === "div"
       ? target
       : (target.parentElement as HTMLDivElement);
-  const [p, img] = arrowContainer.children;
-  const arrow = img as HTMLImageElement;
   let sznNr: number = 0;
   activeSeasonNr.subscribe((number) => sznNr = number);
-  resetArrows();
   if (sznNr == Number(arrowContainer.dataset.season)) {
     activeSeasonNr.set(-1);
     return;
   }
   activeSeasonNr.set(Number(arrowContainer.dataset.season));
-  arrow.src = "/arrow-active.png";
-};
-
-const resetArrows = () => {
-  const arrows = document.querySelectorAll(".arrow");
-  Array.from(arrows).map((arrow: Node) => {
-    const image = arrow as HTMLImageElement;
-    image.src = "/arrow-inactive.png";
-  });
 };
 
 export const setSeasonPadding = (season: number) => {
@@ -40,7 +28,20 @@ export const setSeasonPadding = (season: number) => {
       sectionOffset = 31;
       break;
     }
+    case 1: {
+      sectionOffset = 35;
+      break;
+    }
   }
   if (episodesAmount) padding = (sectionOffset - episodesAmount * 2) * 10 - 5;
   return padding;
 };
+
+export const getSeasonName = (season: number, epochOnly: boolean = false) => {
+  const epoch = stories.find((section) => section.season === season)?.epoch;
+  if (epochOnly) return epoch;
+  else {
+    const title = stories.find((section) => section.season === season)?.title;
+    return epoch + ': ' + title;
+  } 
+}

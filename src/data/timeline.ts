@@ -130,7 +130,8 @@ export const timeline: TimeSection[] = [
 export const stories: Season[] = [
   {
     season: 0,
-    name: 'Epoch Zero',
+    title: 'The Fall of Reality',
+    epoch: 'Epoch Zero',
     episodes: [
       {
         episode: 1,
@@ -172,6 +173,53 @@ export const stories: Season[] = [
         episode: 7,
         title: 'The Engineer',
         link: '68ZRBVUzydo'
+      }
+    ]
+  },
+  {
+    season: 1,
+    title: 'The Awakening',
+    epoch: 'First Epoch',
+    episodes: [
+      {
+        episode: 1,
+        title: 'Awakenings',
+        link: 'fkHun-QPbKk',
+      },
+      {
+        episode: 2,
+        title: 'A Destructive Potential',
+        link: 'LpgTQeQL_3E',
+      },
+      {
+        episode: 3,
+        title: 'The Terminus Swarm',
+        link: 'BRw06-iixgw',
+      },
+      {
+        episode: 4,
+        title: 'The Fall',
+        link: '27SAM2fWuPg',
+      },
+      {
+        episode: 5,
+        title: 'The Outbreak',
+        link: 'FT_BzfFpz4c',
+      },
+      {
+        episode: 6,
+        title: 'The Source',
+        link: 'rrBZ7UvwrVw',
+      },
+      {
+        episode: 7,
+        title: 'The Decision',
+        link: 'ib7riJNHM24'
+      },
+      {
+        episode: 8,
+        title: 'The Arrival',
+        link: 'o_ioDWD2oQc'
       }
     ]
   },

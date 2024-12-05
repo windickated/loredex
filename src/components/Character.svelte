@@ -15,11 +15,11 @@
 
   let shadowLength: number = 0;
   let characterTile: HTMLElement | null;
-  let characterShadow: HTMLDivElement | null;
   let deadMark: HTMLImageElement | null;
   const color = setColor(state);
 
   function hideConnections() {
+    if (!appearance) return;
     const allConnections: HTMLDivElement[] = Array.from(
       document.querySelectorAll(".connection")
     );
@@ -32,11 +32,18 @@
     allDates.map((date) => {
       date.style.textShadow = "none";
     });
-    if (characterShadow) characterShadow.style.opacity = "0";
+    if (lastSeen) {
+      const shadows = document.querySelectorAll(".character-shadow");
+      const characterShadow = Array.from(shadows).find((shadow) =>
+        shadow.classList.toString().match(name)
+      ) as HTMLDivElement;
+      characterShadow!.style.opacity = "0";
+    }
     if (dead) deadMark!.style.opacity = "0";
   }
 
   function showActiveConnections() {
+    if (!appearance) return;
     if (document.activeElement?.tagName === "INPUT") return;
     const allConnections: HTMLDivElement[] = Array.from(
       document.querySelectorAll(".connection")
@@ -51,6 +58,11 @@
       connection.style.opacity = "0.5";
     });
     if (lastSeen) {
+      const shadows = document.querySelectorAll(".character-shadow");
+      const characterShadow = Array.from(shadows).find((shadow) =>
+        shadow.classList.toString().match(name)
+      ) as HTMLDivElement;
+      characterShadow!.style.opacity = "0.25";
       const activeDates = allDates.filter((date) => {
         if (
           appearance > Number(date.classList[2]) ||
@@ -69,7 +81,6 @@
       );
       activeDate!.style.textShadow = "0 0 0.1rem rgb(51, 226, 230)";
     }
-    if (characterShadow) characterShadow.style.opacity = "0.25";
     if (dead) deadMark!.style.opacity = "0.9";
   }
 
@@ -111,7 +122,6 @@
   </p>
   {#if lastSeen && !noShadow}
     <div
-      bind:this={characterShadow}
       class="character-shadow {name}"
       style="
         width: {shadowLength}rem;

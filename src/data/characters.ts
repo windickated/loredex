@@ -13,7 +13,11 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episode: [1, 2, 5, 6, 7]
+        episodes: [1, 2, 5, 6, 7]
+      },
+      {
+        season: 1,
+        episodes: [1, 7, 8]
       }
     ],
     affiliation: 'Archons, AI Empire',
@@ -104,7 +108,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episode: [7]
+        episodes: [7]
       }
     ],
     affiliation: 'Archons, AI Empire',
@@ -157,7 +161,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episode: [2]
+        episodes: [2]
       }
     ],
     affiliation: 'Archons, AI Empire',
@@ -190,7 +194,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episode: [7]
+        episodes: [7]
       }
     ],
     affiliation: 'Archons, AI Empire',
@@ -342,7 +346,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episode: [5]
+        episodes: [5]
       }
     ],
     affiliation: 'Archons, AI Empire',
@@ -369,6 +373,12 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 1,
     conexusGames: ['Ne-Yon'],
+    stories: [
+      {
+        season: 1,
+        episodes: [1]
+      }
+    ],
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -390,6 +400,12 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 2,
     conexusGames: ['Ne-Yon'],
+    stories: [
+      {
+        season: 1,
+        episodes: [7]
+      }
+    ],
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -414,6 +430,12 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 3,
     conexusGames: ['Ne-Yon'],
+    stories: [
+      {
+        season: 1,
+        episodes: [1, 4, 8]
+      }
+    ],
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -438,6 +460,12 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 4,
     conexusGames: ['Ne-Yon'],
+    stories: [
+      {
+        season: 1,
+        episodes: [5]
+      }
+    ],
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -510,6 +538,12 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 7,
     conexusGames: ['Ne-Yon'],
+    stories: [
+      {
+        season: 1,
+        episodes: [3]
+      }
+    ],
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -649,7 +683,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episode: [2, 5]
+        episodes: [2, 5]
       }
     ],
     affiliation: 'Atarion Government (formerly), AI Empire (ally)',
@@ -829,7 +863,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episode: [3, 4]
+        episodes: [3, 4]
       }
     ],
     affiliation: 'AI Empire',
@@ -1133,7 +1167,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episode: [3, 4]
+        episodes: [3, 4]
       }
     ],
     affiliation: 'AI Empire',
@@ -1963,7 +1997,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episode: [7]
+        episodes: [7]
       }
     ],
     affiliation: '[CLASSIFIED]',
@@ -1993,7 +2027,11 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episode: [2]
+        episodes: [2]
+      },
+      {
+        season: 1,
+        episodes: [6, 8]
       }
     ],
     affiliation: 'Insurgency (formerly); later became The Source, embodiment of the Thought Virus',
@@ -2122,7 +2160,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episode: [5]
+        episodes: [5]
       }
     ],
     affiliation: 'Insurgency',
@@ -2271,7 +2309,11 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episode: [2, 6]
+        episodes: [2, 6]
+      },
+      {
+        season: 1,
+        episodes: [7, 8]
       }
     ],
     affiliation: 'Insurgency',
@@ -2441,7 +2483,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episode: [3, 4]
+        episodes: [3, 4]
       }
     ],
     affiliation: 'Insurgency',
@@ -2622,7 +2664,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episode: [6]
+        episodes: [6]
       }
     ],
     affiliation: 'Thaloria; Insurgency',
@@ -2918,7 +2960,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episode: [3, 4, 7]
+        episodes: [3, 4, 7]
       }
     ],
     affiliation: 'Insurgency',
@@ -3307,7 +3349,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episode: [4]
+        episodes: [4]
       }
     ],
     affiliation: 'Insurgency',
@@ -3548,6 +3590,12 @@ const characters: Character[] = [
     appearance: 16705,
     lastSeen: 17043,
     state: "evil",
+    stories: [
+      {
+        season: 1,
+        episodes: [6]
+      }
+    ],
     affiliation: 'Independent Entity; Antagonist to Both the AI Empire and the Insurgency',
     status: 'Active presence influencing events throughout the A.A. Era; current status unknown after the Fall of Reality',
     bio: `
@@ -3826,7 +3874,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episode: [5]
+        episodes: [5]
       }
     ],
     affiliation: 'Atarion Security Forces; Allegedly aligned with the AI Empire',
@@ -4054,7 +4102,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episode: [6]
+        episodes: [6]
       }
     ],
     affiliation: 'Governing Body of Thaloria',
@@ -4072,6 +4120,12 @@ const characters: Character[] = [
     state: "evil",
     potentialNFT: 292,
     conexusGames: ['Planet of the Wolf'],
+    stories: [
+      {
+        season: 1,
+        episodes: [5, 7]
+      }
+    ],
     transformations: [
       {
         name: 'Lycos',
@@ -4248,6 +4302,12 @@ const characters: Character[] = [
     state: "evil",
     potentialNFT: 623,
     conexusGames: ['Syndicate of Death'],
+    stories: [
+      {
+        season: 1,
+        episodes: [4]
+      }
+    ],
     affiliation: 'The Potentials; later independent agent against the Syndicate of Death',
     status: 'Killed on Day 15 of Resonance, Year 100,001 A.A. by The Wolf.<br>Resurrected in Year 107,652 A.A.; current status active',
     bio: `
@@ -4482,6 +4542,12 @@ const characters: Character[] = [
     potentialNFT: 350,
     conexusGames: ["The Necromancer's Lair"],
     connections: ['The Necromancer'],
+    stories: [
+      {
+        season: 1,
+        episodes: [6, 8]
+      }
+    ],
     transformations: [
       {
         name: 'Akai Shi',
@@ -4956,6 +5022,640 @@ const characters: Character[] = [
       </ul> 
     `
   },
+  {
+    name: 'Potential 15',
+    picture: '/pictures/Potential15.avif',
+    state: "neutral",
+    potentialNFT: 15,
+    stories: [
+      {
+        season: 1,
+        episodes: [4]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 22',
+    picture: '/pictures/Potential22.avif',
+    state: "neutral",
+    potentialNFT: 22,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'The Host',
+    picture: '/pictures/Potential25.avif',
+    state: "neutral",
+    potentialNFT: 25,
+    transformations: [
+      {
+        name: 'Potential 25',
+        picture: '/pictures/Potential25.avif'
+      },
+      {
+        name: 'The Lost',
+        picture: '/pictures/Lost.avif'
+      },
+      {
+        name: 'The Host',
+        picture: '/pictures/Host.avif'
+      },
+    ],
+    stories: [
+      {
+        season: 1,
+        episodes: [6]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 43',
+    picture: '/pictures/Potential43.avif',
+    state: "neutral",
+    potentialNFT: 43,
+    stories: [
+      {
+        season: 1,
+        episodes: [8]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 47',
+    picture: '/pictures/Potential47.avif',
+    state: "neutral",
+    potentialNFT: 47,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 84',
+    picture: '/pictures/Potential84.avif',
+    state: "neutral",
+    potentialNFT: 84,
+    stories: [
+      {
+        season: 1,
+        episodes: [5]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 89',
+    picture: '/pictures/Potential89.avif',
+    state: "neutral",
+    potentialNFT: 89,
+    stories: [
+      {
+        season: 1,
+        episodes: [4]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 93',
+    picture: '/pictures/Potential93.avif',
+    state: "neutral",
+    potentialNFT: 93,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 107',
+    picture: '/pictures/Potential107.avif',
+    state: "neutral",
+    potentialNFT: 107,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 144',
+    picture: '/pictures/Potential144.avif',
+    state: "neutral",
+    potentialNFT: 144,
+    stories: [
+      {
+        season: 1,
+        episodes: [8]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 152',
+    picture: '/pictures/Potential152.avif',
+    state: "neutral",
+    potentialNFT: 152,
+    stories: [
+      {
+        season: 1,
+        episodes: [1, 7]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 204',
+    picture: '/pictures/Potential204.avif',
+    state: "neutral",
+    potentialNFT: 204,
+    stories: [
+      {
+        season: 1,
+        episodes: [4]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 206',
+    picture: '/pictures/Potential206.avif',
+    state: "neutral",
+    potentialNFT: 206,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 220',
+    picture: '/pictures/Potential220.avif',
+    state: "neutral",
+    potentialNFT: 220,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 233',
+    picture: '/pictures/Potential233.avif',
+    state: "neutral",
+    potentialNFT: 233,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 236',
+    picture: '/pictures/Potential236.avif',
+    state: "neutral",
+    potentialNFT: 236,
+    stories: [
+      {
+        season: 1,
+        episodes: [8]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 261',
+    picture: '/pictures/Potential261.avif',
+    state: "neutral",
+    potentialNFT: 261,
+    stories: [
+      {
+        season: 1,
+        episodes: [8]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 269',
+    picture: '/pictures/Potential269.avif',
+    state: "neutral",
+    potentialNFT: 269,
+    stories: [
+      {
+        season: 1,
+        episodes: [1]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 305',
+    picture: '/pictures/Potential305.avif',
+    state: "neutral",
+    potentialNFT: 305,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 332',
+    picture: '/pictures/Potential332.avif',
+    state: "neutral",
+    potentialNFT: 332,
+    stories: [
+      {
+        season: 1,
+        episodes: [5]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 341',
+    picture: '/pictures/Potential341.avif',
+    state: "neutral",
+    potentialNFT: 341,
+    stories: [
+      {
+        season: 1,
+        episodes: [1, 8]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 345',
+    picture: '/pictures/Potential345.avif',
+    state: "neutral",
+    potentialNFT: 345,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 391',
+    picture: '/pictures/Potential391.avif',
+    state: "neutral",
+    potentialNFT: 391,
+    stories: [
+      {
+        season: 1,
+        episodes: [7]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 409',
+    picture: '/pictures/Potential409.avif',
+    state: "neutral",
+    potentialNFT: 409,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 414',
+    picture: '/pictures/Potential414.avif',
+    state: "neutral",
+    potentialNFT: 414,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 441',
+    picture: '/pictures/Potential441.avif',
+    state: "neutral",
+    potentialNFT: 441,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 447',
+    picture: '/pictures/Potential447.avif',
+    state: "neutral",
+    potentialNFT: 447,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 530',
+    picture: '/pictures/Potential530.avif',
+    state: "neutral",
+    potentialNFT: 530,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 570',
+    picture: '/pictures/Potential570.avif',
+    state: "neutral",
+    potentialNFT: 570,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 588',
+    picture: '/pictures/Potential588.avif',
+    state: "neutral",
+    potentialNFT: 588,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 589',
+    picture: '/pictures/Potential589.avif',
+    state: "neutral",
+    potentialNFT: 589,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 591',
+    picture: '/pictures/Potential591.avif',
+    state: "neutral",
+    potentialNFT: 591,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 636',
+    picture: '/pictures/Potential636.avif',
+    state: "neutral",
+    potentialNFT: 636,
+    stories: [
+      {
+        season: 1,
+        episodes: [5]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 642',
+    picture: '/pictures/Potential642.avif',
+    state: "neutral",
+    potentialNFT: 642,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 644',
+    picture: '/pictures/Potential644.avif',
+    state: "neutral",
+    potentialNFT: 644,
+    stories: [
+      {
+        season: 1,
+        episodes: [8]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 690',
+    picture: '/pictures/Potential690.avif',
+    state: "neutral",
+    potentialNFT: 690,
+    stories: [
+      {
+        season: 1,
+        episodes: [2, 8]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 713',
+    picture: '/pictures/Potential713.avif',
+    state: "neutral",
+    potentialNFT: 713,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 747',
+    picture: '/pictures/Potential747.avif',
+    state: "neutral",
+    potentialNFT: 747,
+    stories: [
+      {
+        season: 1,
+        episodes: [1]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 777',
+    picture: '/pictures/Potential777.avif',
+    state: "neutral",
+    potentialNFT: 777,
+    stories: [
+      {
+        season: 1,
+        episodes: [7]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 794',
+    picture: '/pictures/Potential794.avif',
+    state: "neutral",
+    potentialNFT: 794,
+    stories: [
+      {
+        season: 1,
+        episodes: [5]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 804',
+    picture: '/pictures/Potential804.avif',
+    state: "neutral",
+    potentialNFT: 804,
+    stories: [
+      {
+        season: 1,
+        episodes: [8]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 807',
+    picture: '/pictures/Potential807.avif',
+    state: "neutral",
+    potentialNFT: 807,
+    stories: [
+      {
+        season: 1,
+        episodes: [8]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 823',
+    picture: '/pictures/Potential823.avif',
+    state: "neutral",
+    potentialNFT: 823,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 826',
+    picture: '/pictures/Potential826.avif',
+    state: "neutral",
+    potentialNFT: 826,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 827',
+    picture: '/pictures/Potential827.avif',
+    state: "neutral",
+    potentialNFT: 827,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 835',
+    picture: '/pictures/Potential835.avif',
+    state: "neutral",
+    potentialNFT: 835,
+    stories: [
+      {
+        season: 1,
+        episodes: [6]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 909',
+    picture: '/pictures/Potential909.avif',
+    state: "neutral",
+    potentialNFT: 909,
+    stories: [
+      {
+        season: 1,
+        episodes: [8]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 915',
+    picture: '/pictures/Potential915.avif',
+    state: "neutral",
+    potentialNFT: 915,
+    stories: [
+      {
+        season: 1,
+        episodes: [7]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 947',
+    picture: '/pictures/Potential947.avif',
+    state: "neutral",
+    potentialNFT: 947,
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 959',
+    potentialNFT: 959,
+    picture: '/pictures/Potential959.avif',
+    state: "neutral",
+    stories: [
+      {
+        season: 1,
+        episodes: [8]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 990',
+    potentialNFT: 990,
+    picture: '/pictures/Potential990.avif',
+    state: "neutral",
+    stories: [
+      {
+        season: 1,
+        episodes: [8]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  // SEASONS
+  {
+    name: 'The Antiquarian',
+    picture: '/pictures/Antiquarian.avif',
+    state: "neutral",
+    stories: [
+      {
+        season: 0,
+        episodes: [1, 2, 3, 4, 5, 6]
+      },
+      {
+        season: 1,
+        episodes: [1, 2, 3, 4, 5, 6, 7, 8]
+      }
+    ]
+  },
+  {
+    name: 'Destiny',
+    picture: '/pictures/Destiny.avif',
+    state: "neutral",
+    stories: [
+      {
+        season: 1,
+        episodes: [1]
+      }
+    ]
+  },
+  {
+    name: 'The Terminus Swarm',
+    picture: '/pictures/TerminusSwarm.avif',
+    state: "neutral",
+    stories: [
+      {
+        season: 1,
+        episodes: [5]
+      }
+    ]
+  },
+  {
+    name: 'The Arachnid',
+    picture: '/pictures/Arachnid.avif',
+    state: "evil",
+    stories: [
+      {
+        season: 0,
+        episodes: [7]
+      }
+    ]
+  },
+  
 ]
 
 export default characters;

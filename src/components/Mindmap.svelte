@@ -9,6 +9,7 @@
     activeSeasonNr,
     setActiveSeason,
     setSeasonPadding,
+    getSeasonName,
   } from "../stores/season.ts";
   import Modal from "./Modal.svelte";
 
@@ -215,7 +216,7 @@
             {/if}
           </div>
           {#each characters as character}
-            {#if date[0] <= character.appearance && date[1] >= character.appearance}
+            {#if date[0] <= character.appearance! && date[1] >= character.appearance!}
               <Character {character} />
             {/if}
           {/each}
@@ -227,10 +228,14 @@
               data-season={expandable}
               on:click={setActiveSeason}
             >
-              <p>
-                {stories.find((section) => section.season === expandable)?.name}
-              </p>
-              <img class="arrow" src="/arrow-inactive.png" alt="Arrow" />
+              <p>{getSeasonName(expandable, true)}</p>
+              <img
+                class="arrow"
+                src={$activeSeasonNr == expandable
+                  ? "/arrow-active.png"
+                  : "/arrow-inactive.png"}
+                alt="Arrow"
+              />
             </div>
           {/if}
         </div>
@@ -267,7 +272,7 @@
               {#if character.stories}
                 {#each character.stories as stories}
                   {#if stories.season === activeSeason.season}
-                    {#each stories.episode as story}
+                    {#each stories.episodes as story}
                       {#if story === episode}
                         <Character {character} noShadow={true} />
                       {/if}
@@ -473,7 +478,7 @@
         top: 0;
         display: grid;
         align-items: center;
-        height: 80rem;
+        height: 100rem;
         width: 500rem;
         grid-template-columns: repeat(50, 10rem);
 
@@ -556,12 +561,12 @@
       }
 
       .mini-map {
-        top: 85rem;
+        top: 105rem;
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
-        align-items: center;
-        height: 80rem;
+        align-items: flex-start;
+        height: auto;
         width: auto;
         padding: 5rem;
         border: 0.1rem solid rgba(51, 226, 230, 0.5);
@@ -572,11 +577,14 @@
         );
 
         .plot {
+          padding-top: 7.5rem;
           width: 20rem;
           border-left: 0.05rem dashed rgba(51, 226, 230, 0.5);
           border-right: 0.05rem dashed rgba(51, 226, 230, 0.5);
 
           .episode-title {
+            padding-top: 1rem;
+
             .note {
               font-size: 2rem;
               margin-top: 0;

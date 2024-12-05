@@ -2,6 +2,7 @@
   import getImage from "../utils/image.ts";
   import { getColor } from "../utils/color.ts";
   import characters from "../data/characters.ts";
+  import { stories } from "../data/timeline.ts";
   import { type Character } from "../lib/types";
   import {
     showModal,
@@ -9,6 +10,7 @@
     fullscreenPicture,
   } from "../stores/modal.ts";
   import { timeSystem, timeNotes } from "../data/timeline.ts";
+  import { getSeasonName } from "../stores/season.ts";
 
   let width: number;
 
@@ -219,13 +221,7 @@
             <section class="transformation">
               {#each $selectedCharacter.transformations as { name, picture }, index}
                 <div>
-                  <img
-                    src={picture}
-                    alt={name}
-                    width="1024"
-                    height="1024"
-                    on:click={showFullscreenPicture}
-                  />
+                  <img src={picture} alt={name} width="1024" height="1024" />
                   <p>{name}</p>
                 </div>
                 {#if index !== $selectedCharacter.transformations.length - 1}
@@ -300,108 +296,77 @@
                     {/each}
                   </div>
                 {/if}
-                <!-- {#if $selectedCharacter.stories} -->
-                <div
-                  class="stories"
-                  style="display: {activeTab === 'stories' ? 'flex' : 'none'}"
-                >
-                  <div>
-                    <span
-                      class="story-image-container"
-                      on:click={() => {
-                        window.open(
-                          "https://www.youtube.com/watch?v=vMlxgr27mig",
-                          "_blank"
-                        );
-                      }}
+                {#if $selectedCharacter.stories}
+                  {#each $selectedCharacter.stories as season}
+                    <div
+                      class="stories"
+                      style="display: {activeTab === 'stories'
+                        ? 'flex'
+                        : 'none'}"
                     >
-                      <img
-                        class="story-image"
-                        src="https://img.youtube.com/vi/vMlxgr27mig/maxresdefault.jpg"
-                        alt="Story"
-                        width="1280"
-                        height="720"
-                      />
-                      <img
-                        class="play-icon"
-                        src="/youtube.png"
-                        alt="YouTube"
-                        width="1280"
-                        height="720"
-                      />
-                    </span>
-                    <article>
-                      <h2>The Theft of All Time</h2>
-                      <p>
-                        The Theft of All Time beckons the reader to witness a
-                        theft that defies comprehension—a crime that transcends
-                        the linear chains of past, present, and future. The
-                        stars themselves may tremble at the implications, as
-                        ancient forces stir and long-forgotten truths claw their
-                        way into the light.
-                      </p>
-                    </article>
-                  </div>
-                  <div>
-                    <span class="story-image-container">
-                      <img
-                        class="story-image"
-                        src="https://img.youtube.com/vi/vMlxgr27mig/maxresdefault.jpg"
-                        alt="Story"
-                        width="1280"
-                        height="720"
-                      />
-                      <img
-                        class="play-icon"
-                        src="/youtube.png"
-                        alt="YouTube"
-                        width="1280"
-                        height="720"
-                      />
-                    </span>
-                    <article>
-                      <h2>The Theft of All Time</h2>
-                      <p>
-                        The Theft of All Time beckons the reader to witness a
-                        theft that defies comprehension—a crime that transcends
-                        the linear chains of past, present, and future. The
-                        stars themselves may tremble at the implications, as
-                        ancient forces stir and long-forgotten truths claw their
-                        way into the light.
-                      </p>
-                    </article>
-                  </div>
-                  <div>
-                    <span class="story-image-container">
-                      <img
-                        class="story-image"
-                        src="https://img.youtube.com/vi/vMlxgr27mig/maxresdefault.jpg"
-                        alt="Story"
-                        width="1280"
-                        height="720"
-                      />
-                      <img
-                        class="play-icon"
-                        src="/youtube.png"
-                        alt="YouTube"
-                        width="1280"
-                        height="720"
-                      />
-                    </span>
-                    <article>
-                      <h2>The Theft of All Time</h2>
-                      <p>
-                        The Theft of All Time beckons the reader to witness a
-                        theft that defies comprehension—a crime that transcends
-                        the linear chains of past, present, and future. The
-                        stars themselves may tremble at the implications, as
-                        ancient forces stir and long-forgotten truths claw their
-                        way into the light.
-                      </p>
-                    </article>
-                  </div>
-                </div>
-                <!-- {/if} -->
+                      <h2>{getSeasonName(season.season)}</h2>
+                      {#each season.episodes as episodeNumber}
+                        {#each stories as storySection}
+                          {#if storySection.season == season.season}
+                            {#each storySection.episodes as episodeObject}
+                              {#if episodeObject.episode == episodeNumber}
+                                <div>
+                                  <span
+                                    class="story-image-container"
+                                    on:click={() => {
+                                      window.open(
+                                        `https://www.youtube.com/watch?v=${episodeObject.link}`,
+                                        "_blank"
+                                      );
+                                    }}
+                                  >
+                                    <img
+                                      class="story-image"
+                                      src="https://img.youtube.com/vi/{episodeObject.link}/hqdefault.jpg"
+                                      alt="Story"
+                                      width="1280"
+                                      height="720"
+                                    />
+                                    <img
+                                      class="play-icon"
+                                      src="/youtube.png"
+                                      alt="YouTube"
+                                      width="1280"
+                                      height="720"
+                                    />
+                                  </span>
+                                  <article>
+                                    <a
+                                      href="https://www.youtube.com/watch?v={episodeObject.link}"
+                                      target="_blank"
+                                    >
+                                      <img src="/play.png" alt="Stories" />
+                                      <h2>{episodeObject.title}</h2>
+                                    </a>
+                                    <p>
+                                      Lorem ipsum dolor sit amet, consectetur
+                                      adipiscing elit, sed do eiusmod tempor
+                                      incididunt ut labore et dolore magna
+                                      aliqua. Ut enim ad minim veniam, quis
+                                      nostrud exercitation ullamco laboris nisi
+                                      ut aliquip ex ea commodo consequat. Duis
+                                      aute irure dolor in reprehenderit in
+                                      voluptate velit esse cillum dolore eu
+                                      fugiat nulla pariatur. Excepteur sint
+                                      occaecat cupidatat non proident, sunt in
+                                      culpa qui officia deserunt mollit anim id
+                                      est laborum.
+                                    </p>
+                                  </article>
+                                </div>
+                              {/if}
+                            {/each}
+                          {/if}
+                        {/each}
+                      {/each}
+                    </div>
+                  {/each}
+                {/if}
               </section>
             </section>
           {/if}
@@ -744,6 +709,10 @@
               transform: scale(1.5);
               filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
             }
+
+            &:active {
+              transform: scale(2.5);
+            }
           }
         }
 
@@ -842,6 +811,10 @@
             justify-content: center;
             gap: 1vw;
 
+            h2 {
+              margin-bottom: 0.5vw;
+            }
+
             div {
               width: 100%;
               display: flex;
@@ -888,6 +861,30 @@
                 flex-flow: column nowrap;
                 justify-content: space-around;
                 align-items: flex-start;
+
+                a {
+                  display: flex;
+                  flex-flow: row nowrap;
+                  align-items: center;
+                  gap: 1vw;
+                  text-decoration: none;
+                  opacity: 0.9;
+                  transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+                  img {
+                    height: 2vw;
+                  }
+
+                  h2 {
+                    color: rgb(51, 226, 230);
+                  }
+
+                  &:hover,
+                  &:active {
+                    opacity: 1;
+                    filter: drop-shadow(0 0 0.1vw rgba(51, 226, 230, 0.5));
+                  }
+                }
               }
             }
           }
@@ -1150,12 +1147,12 @@
                   padding: 1em;
 
                   .story-image-container {
-                    height: 45vw;
-                    width: 82.5vw;
+                    height: 50vw;
+                    width: 90vw;
 
                     img {
-                      height: 45vw;
-                      width: 82.5vw;
+                      height: 50vw;
+                      width: 90vw;
                     }
                   }
 
@@ -1163,6 +1160,15 @@
                     height: auto;
                     max-width: 90vw;
                     align-items: center;
+                    text-align: center;
+
+                    a {
+                      gap: 1em;
+
+                      img {
+                        height: 1.5em;
+                      }
+                    }
                   }
                 }
               }

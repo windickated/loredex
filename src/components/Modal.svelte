@@ -877,6 +877,7 @@
 
                   h2 {
                     color: rgb(51, 226, 230);
+                    margin-bottom: 1.5vw;
                   }
 
                   &:hover,
@@ -1167,6 +1168,10 @@
 
                       img {
                         height: 1.5em;
+                      }
+
+                      h2 {
+                        margin-bottom: 0.5em;
                       }
                     }
                   }

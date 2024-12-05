@@ -1,7 +1,7 @@
 import { writable } from "svelte/store";
 import { stories } from "../data/timeline.ts";
 
-export const activeSeasonNr = writable<number>(1);
+export const activeSeasonNr = writable<number>(-1);
 
 export const setActiveSeason = (event: any) => {
   const target = event.target as HTMLDivElement;

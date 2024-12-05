@@ -9,11 +9,14 @@ export interface Character {
   conexusGames?: string[]
   connections?: string[]
   transformations?: Transformation[]
+  stories?: {
+    season: number
+    episode: number[]
+  }[]
   affiliation?: string
   status?: string
   bio?: string
   history?: string
-  stories?: Story[]
 }
 
 interface Transformation {
@@ -21,9 +24,18 @@ interface Transformation {
   picture: string
 }
 
+export interface Season {
+  season: number
+  name: string
+  episodes: Story[]
+}
+
 interface Story {
+  episode: number
+  title: string
   link: string
-  description: string
+  date?: number
+  description?: string
 }
 
 export interface TimeSection {
@@ -31,4 +43,5 @@ export interface TimeSection {
   note?: string
   action?: string
   emptySection?: boolean
+  expandable?: number 
 }

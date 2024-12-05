@@ -11,6 +11,7 @@
     dead = false,
     state,
   } = character;
+  export let noShadow: boolean = false;
 
   let shadowLength: number = 0;
   let characterTile: HTMLElement | null;
@@ -69,7 +70,7 @@
       activeDate!.style.textShadow = "0 0 0.1rem rgb(51, 226, 230)";
     }
     if (characterShadow) characterShadow.style.opacity = "0.25";
-    if (dead) deadMark!.style.opacity = "0.75";
+    if (dead) deadMark!.style.opacity = "0.9";
   }
 
   const openCharacterWindow = (event: any) => {
@@ -108,7 +109,7 @@
   >
     {name}
   </p>
-  {#if lastSeen}
+  {#if lastSeen && !noShadow}
     <div
       bind:this={characterShadow}
       class="character-shadow {name}"
@@ -200,7 +201,7 @@
     width: auto;
     transition: all 0.3s ease-in-out;
     background-color: rgba(0, 0, 0, 0);
-    filter: drop-shadow(0 0 0.1rem rgba(255, 255, 255, 0.1));
+    filter: drop-shadow(0 0 0.1rem rgba(51, 226, 230, 0.9));
     opacity: 0;
   }
 

@@ -10,6 +10,12 @@ const characters: Character[] = [
     state: "evil",
     conexusGames: ['Building the Architect'],
     connections: ['The CoNexus', 'The Meme', 'The Watcher', 'The Warlord', 'The Warden', 'The Politician', 'The Vortex', 'The Game Master', 'The Necromancer', 'The Human', 'The Collector', 'Senator Elara Voss'],
+    stories: [
+      {
+        season: 0,
+        episode: [1, 2, 5, 6, 7]
+      }
+    ],
     affiliation: 'Archons, AI Empire',
     status: 'Active',
     bio: `
@@ -95,6 +101,12 @@ const characters: Character[] = [
     lastSeen: 320,
     state: "evil",
     connections: ['The Architect', 'The Engineer'],
+    stories: [
+      {
+        season: 0,
+        episode: [7]
+      }
+    ],
     affiliation: 'Archons, AI Empire',
     status: '[CLASSIFIED]',
     bio: `
@@ -142,6 +154,12 @@ const characters: Character[] = [
     dead: true,
     state: "evil",
     connections: ['The Architect', 'The Collector', 'The Meme', 'Kael', 'The Oracle'],
+    stories: [
+      {
+        season: 0,
+        episode: [2]
+      }
+    ],
     affiliation: 'Archons, AI Empire',
     status: 'Destroyed on Day 20 of Eclipse, Year 17,033 A.A.',
     bio: `
@@ -169,6 +187,12 @@ const characters: Character[] = [
     appearance: 500,
     state: "evil",
     connections: ['The Architect'],
+    stories: [
+      {
+        season: 0,
+        episode: [7]
+      }
+    ],
     affiliation: 'Archons, AI Empire',
     status: '[CLASSIFIED]',
     bio: `
@@ -315,6 +339,12 @@ const characters: Character[] = [
     state: "evil",
     conexusGames: ['Halloween: The Collector'],
     connections: ['The Architect', 'The Warden', 'The Oracle'],
+    stories: [
+      {
+        season: 0,
+        episode: [5]
+      }
+    ],
     affiliation: 'Archons, AI Empire',
     status: 'Active',
     bio: `
@@ -616,6 +646,12 @@ const characters: Character[] = [
         picture: '/pictures/PanopticElara.avif'
       }
     ],
+    stories: [
+      {
+        season: 0,
+        episode: [2, 5]
+      }
+    ],
     affiliation: 'Atarion Government (formerly), AI Empire (ally)',
     status: 'Aligned with the AI Empire as of Year 16,890 A.A.; fate following the Fall of Reality is unspecified',
     bio: `
@@ -790,6 +826,12 @@ const characters: Character[] = [
       }
     ],
     state: "evil",
+    stories: [
+      {
+        season: 0,
+        episode: [3, 4]
+      }
+    ],
     affiliation: 'AI Empire',
     status: 'Active until the Fall of Reality in Year 17,043 A.A.; fate afterward is unknown',
     bio: `
@@ -1088,6 +1130,12 @@ const characters: Character[] = [
     lastSeen: 17026,
     dead: true,
     state: "evil",
+    stories: [
+      {
+        season: 0,
+        episode: [3, 4]
+      }
+    ],
     affiliation: 'AI Empire',
     status: 'Destroyed at the Battle of Veridian VI in Year 17,026 A.A.',
     bio: `
@@ -1912,6 +1960,12 @@ const characters: Character[] = [
     state: "good",
     conexusGames: ['Engineer'],
     connections: ['The Watcher', 'The Warlord'],
+    stories: [
+      {
+        season: 0,
+        episode: [7]
+      }
+    ],
     affiliation: '[CLASSIFIED]',
     status: '[CLASSIFIED]',
     bio: '[CLASSIFIED]'
@@ -1934,6 +1988,12 @@ const characters: Character[] = [
       {
         name: 'The Source',
         picture: '/pictures/Source.avif'
+      }
+    ],
+    stories: [
+      {
+        season: 0,
+        episode: [2]
       }
     ],
     affiliation: 'Insurgency (formerly); later became The Source, embodiment of the Thought Virus',
@@ -2057,6 +2117,12 @@ const characters: Character[] = [
       {
         name: 'Ambassador Veron',
         picture: '/pictures/AmbassadorVeron.avif'
+      }
+    ],
+    stories: [
+      {
+        season: 0,
+        episode: [5]
       }
     ],
     affiliation: 'Insurgency',
@@ -2200,6 +2266,12 @@ const characters: Character[] = [
       {
         name: 'The Clone Army',
         picture: '/pictures/CloneArmy.avif'
+      }
+    ],
+    stories: [
+      {
+        season: 0,
+        episode: [2, 6]
       }
     ],
     affiliation: 'Insurgency',
@@ -2366,6 +2438,12 @@ const characters: Character[] = [
     state: "good",
     conexusGames: ['Soldier'],
     connections: ['The Politician'],
+    stories: [
+      {
+        season: 0,
+        episode: [3, 4]
+      }
+    ],
     affiliation: 'Insurgency',
     status: 'Killed at the Last Stand on Veridian VI in Year 17,026 A.A.',
     bio: `
@@ -2541,6 +2619,12 @@ const characters: Character[] = [
     appearance: 16900,
     state: "good",
     connections: [],
+    stories: [
+      {
+        season: 0,
+        episode: [6]
+      }
+    ],
     affiliation: 'Thaloria; Insurgency',
     status: 'Active leader of Thaloria and key figure in the Insurgency as of Year 17,043 A.A.',
     bio: `
@@ -2831,6 +2915,12 @@ const characters: Character[] = [
     state: "good",
     conexusGames: ['Assassin'],
     connections: ['The Watcher', 'The Game Master'],
+    stories: [
+      {
+        season: 0,
+        episode: [3, 4, 7]
+      }
+    ],
     affiliation: 'Insurgency',
     status: 'Presumed deceased; last known mission classified on Zenon',
     bio: `
@@ -3214,6 +3304,12 @@ const characters: Character[] = [
     appearance: 17026,
     lastSeen: 17026,
     state: "good",
+    stories: [
+      {
+        season: 0,
+        episode: [4]
+      }
+    ],
     affiliation: 'Insurgency',
     status: 'Last seen at the Battle of Veridian VI; current whereabouts unknown',
     bio: `
@@ -3727,6 +3823,12 @@ const characters: Character[] = [
         picture: '/pictures/Human.avif'
       }
     ],
+    stories: [
+      {
+        season: 0,
+        episode: [5]
+      }
+    ],
     affiliation: 'Atarion Security Forces; Allegedly aligned with the AI Empire',
     status: 'Disappeared following the fall of Atarion to the AI Empire in Year 16,890 A.A.',
     bio: `
@@ -3949,6 +4051,12 @@ const characters: Character[] = [
     appearance: 16900,
     state: "neutral",
     connections: ['The Oracle'],
+    stories: [
+      {
+        season: 0,
+        episode: [6]
+      }
+    ],
     affiliation: 'Governing Body of Thaloria',
     status: 'Active',
     bio: `

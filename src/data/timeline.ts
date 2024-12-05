@@ -1,4 +1,4 @@
-import { type TimeSection } from "../lib/types.ts";
+import { type TimeSection, type Season } from "../lib/types.ts";
 
 export const timeline: TimeSection[] = [
   {
@@ -97,7 +97,8 @@ export const timeline: TimeSection[] = [
   {
     date: [17000, 17099],
     note: '19072 CE',
-    action: 'The Fall of Reality occurs'
+    action: 'The Fall of Reality occurs',
+    expandable: 0
   },
   {
     date: [17100, 17199],
@@ -111,7 +112,8 @@ export const timeline: TimeSection[] = [
   },
   {
     date: [100000, 100099],
-    action: 'The Potentials Awaken'
+    action: 'The Potentials Awaken',
+    expandable: 1
   },
   {
     date: [100100, 100199],
@@ -122,6 +124,56 @@ export const timeline: TimeSection[] = [
   },
   {
     date: [128600, 128699],
+  },
+]
+
+export const stories: Season[] = [
+  {
+    season: 0,
+    name: 'Epoch Zero',
+    episodes: [
+      {
+        episode: 1,
+        title: 'In the Beginning',
+        link: 'isK6VuGAbs4',
+        date: 1
+      },
+      {
+        episode: 2,
+        title: 'The Prisoner',
+        link: 'Cujw3s-D6yU',
+        date: 16901
+      },
+      {
+        episode: 3,
+        title: 'Agent Zero',
+        link: 'R1qvKpelbE4',
+        date: 16893
+      },
+      {
+        episode: 4,
+        title: 'Iron Lion',
+        link: 'k10qXHtV0bg',
+        date: 17026
+      },
+      {
+        episode: 5,
+        title: 'The Eyes',
+        link: 'Kzdf-TaxSfw',
+        date: 16875
+      },
+      {
+        episode: 6,
+        title: 'The Oracle',
+        link: 'eD87OwcNuzE',
+        date: 16900
+      },
+      {
+        episode: 7,
+        title: 'The Engineer',
+        link: '68ZRBVUzydo'
+      }
+    ]
   },
 ]
 

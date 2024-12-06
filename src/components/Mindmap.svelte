@@ -28,7 +28,7 @@
   );
 
   onMount(() => {
-    mapZoom = 0.2;
+    mapZoom = 0.3;
   });
 
   const handlePointerDown = (event: PointerEvent) => {

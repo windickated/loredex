@@ -376,7 +376,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [1]
+        episodes: [1, 9, 15]
       }
     ],
     affiliation: 'Neyons',
@@ -403,7 +403,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [7]
+        episodes: [7, 15]
       }
     ],
     affiliation: 'Neyons',
@@ -433,7 +433,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [1, 4, 8]
+        episodes: [1, 4, 8, 11, 13, 14, 15]
       }
     ],
     affiliation: 'Neyons',
@@ -463,7 +463,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [5]
+        episodes: [5, 15]
       }
     ],
     affiliation: 'Neyons',
@@ -490,6 +490,12 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 5,
     conexusGames: ['Ne-Yon'],
+    stories: [
+      {
+        season: 1,
+        episodes: [15]
+      }
+    ],
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -514,6 +520,12 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 6,
     conexusGames: ['Ne-Yon'],
+    stories: [
+      {
+        season: 1,
+        episodes: [15]
+      }
+    ],
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -541,7 +553,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [3]
+        episodes: [3, 8, 13, 15]
       }
     ],
     affiliation: 'Neyons',
@@ -568,6 +580,12 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 8,
     conexusGames: ['Ne-Yon'],
+    stories: [
+      {
+        season: 1,
+        episodes: [9, 11, 12, 14, 15]
+      }
+    ],
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -592,6 +610,12 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 9,
     conexusGames: ['Ne-Yon'],
+    stories: [
+      {
+        season: 1,
+        episodes: [9, 11, 14, 15]
+      }
+    ],
     affiliation: 'Neyons',
     status: 'Active (though her humanity is lost)',
     bio: `
@@ -621,6 +645,12 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 10,
     conexusGames: ['Ne-Yon'],
+    stories: [
+      {
+        season: 1,
+        episodes: [15]
+      }
+    ],
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -4305,7 +4335,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [4]
+        episodes: [4, 12, 13, 14]
       }
     ],
     affiliation: 'The Potentials; later independent agent against the Syndicate of Death',
@@ -4545,7 +4575,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [6, 8]
+        episodes: [6, 8, 10, 11]
       }
     ],
     transformations: [
@@ -4808,6 +4838,12 @@ const characters: Character[] = [
     lastSeen: 100001,
     state: "evil",
     potentialNFT: 426,
+    stories: [
+      {
+        season: 1,
+        episodes: [10]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Departed on a mission with the Degen after the Battle of Thaloria; current whereabouts unknown',
     bio: `
@@ -5059,7 +5095,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [4]
+        episodes: [4, 9]
       }
     ],
     affiliation: 'The Potentials',
@@ -5070,6 +5106,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential22.avif',
     state: "neutral",
     potentialNFT: 22,
+    stories: [
+      {
+        season: 1,
+        episodes: [10]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5092,6 +5134,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential47.avif',
     state: "neutral",
     potentialNFT: 47,
+    stories: [
+      {
+        season: 1,
+        episodes: [10]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5103,7 +5151,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [5]
+        episodes: [5, 9]
       }
     ],
     affiliation: 'The Potentials',
@@ -5128,6 +5176,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential93.avif',
     state: "neutral",
     potentialNFT: 93,
+    stories: [
+      {
+        season: 1,
+        episodes: [9]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5136,6 +5190,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential107.avif',
     state: "neutral",
     potentialNFT: 107,
+    stories: [
+      {
+        season: 1,
+        episodes: [9]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5186,6 +5246,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential206.avif',
     state: "neutral",
     potentialNFT: 206,
+    stories: [
+      {
+        season: 1,
+        episodes: [9]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5194,6 +5260,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential220.avif',
     state: "neutral",
     potentialNFT: 220,
+    stories: [
+      {
+        season: 1,
+        episodes: [9]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5202,6 +5274,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential233.avif',
     state: "neutral",
     potentialNFT: 233,
+    stories: [
+      {
+        season: 1,
+        episodes: [9]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5252,6 +5330,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential305.avif',
     state: "neutral",
     potentialNFT: 305,
+    stories: [
+      {
+        season: 1,
+        episodes: [10, 15]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5288,6 +5372,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential345.avif',
     state: "neutral",
     potentialNFT: 345,
+    stories: [
+      {
+        season: 1,
+        episodes: [9]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5299,7 +5389,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [7]
+        episodes: [7, 10, 13]
       }
     ],
     affiliation: 'The Potentials',
@@ -5310,6 +5400,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential409.avif',
     state: "neutral",
     potentialNFT: 409,
+    stories: [
+      {
+        season: 1,
+        episodes: [11]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5318,6 +5414,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential414.avif',
     state: "neutral",
     potentialNFT: 414,
+    stories: [
+      {
+        season: 1,
+        episodes: [9]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5326,6 +5428,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential441.avif',
     state: "neutral",
     potentialNFT: 441,
+    stories: [
+      {
+        season: 1,
+        episodes: [11, 12, 14]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5334,6 +5442,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential447.avif',
     state: "neutral",
     potentialNFT: 447,
+    stories: [
+      {
+        season: 1,
+        episodes: [9]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5342,6 +5456,26 @@ const characters: Character[] = [
     picture: '/pictures/Potential530.avif',
     state: "neutral",
     potentialNFT: 530,
+    stories: [
+      {
+        season: 1,
+        episodes: [11]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 533',
+    picture: '/pictures/Potential533.avif',
+    state: "neutral",
+    potentialNFT: 533,
+    stories: [
+      {
+        season: 1,
+        episodes: [9]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5350,6 +5484,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential570.avif',
     state: "neutral",
     potentialNFT: 570,
+    stories: [
+      {
+        season: 1,
+        episodes: [6]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5358,6 +5498,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential588.avif',
     state: "neutral",
     potentialNFT: 588,
+    stories: [
+      {
+        season: 1,
+        episodes: [10]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5366,6 +5512,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential589.avif',
     state: "neutral",
     potentialNFT: 589,
+    stories: [
+      {
+        season: 1,
+        episodes: [6]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5374,6 +5526,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential591.avif',
     state: "neutral",
     potentialNFT: 591,
+    stories: [
+      {
+        season: 1,
+        episodes: [9]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5396,6 +5554,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential642.avif',
     state: "neutral",
     potentialNFT: 642,
+    stories: [
+      {
+        season: 1,
+        episodes: [9]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5428,10 +5592,30 @@ const characters: Character[] = [
     status: 'Active'
   },
   {
+    name: 'Potential 704',
+    picture: '/pictures/Potential704.avif',
+    state: "neutral",
+    potentialNFT: 704,
+    stories: [
+      {
+        season: 1,
+        episodes: [10, 12]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
     name: 'Potential 713',
     picture: '/pictures/Potential713.avif',
     state: "neutral",
     potentialNFT: 713,
+    stories: [
+      {
+        season: 1,
+        episodes: [11]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5471,7 +5655,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [5]
+        episodes: [5, 9]
       }
     ],
     affiliation: 'The Potentials',
@@ -5510,6 +5694,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential823.avif',
     state: "neutral",
     potentialNFT: 823,
+    stories: [
+      {
+        season: 1,
+        episodes: [9]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5518,6 +5708,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential826.avif',
     state: "neutral",
     potentialNFT: 826,
+    stories: [
+      {
+        season: 1,
+        episodes: [6]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5526,6 +5722,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential827.avif',
     state: "neutral",
     potentialNFT: 827,
+    stories: [
+      {
+        season: 1,
+        episodes: [9]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },
@@ -5551,7 +5753,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [8]
+        episodes: [8, 13, 14]
       }
     ],
     affiliation: 'The Potentials',
@@ -5565,7 +5767,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [7]
+        episodes: [7, 10, 11]
       }
     ],
     affiliation: 'The Potentials',
@@ -5576,6 +5778,12 @@ const characters: Character[] = [
     picture: '/pictures/Potential947.avif',
     state: "neutral",
     potentialNFT: 947,
+    stories: [
+      {
+        season: 1,
+        episodes: [15]
+      }
+    ],
     affiliation: 'The Potentials',
     status: 'Active'
   },

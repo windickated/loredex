@@ -716,7 +716,7 @@
 
           .empty-note {
             color: rgba(51, 226, 230, 0.5);
-            margin-block: 7.5vw !important;
+            margin-block: 2.5vw !important;
           }
 
           .connected-characters {

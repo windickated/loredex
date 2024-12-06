@@ -315,10 +315,10 @@
       rgba(51, 226, 230, 0.1)
     );
     background-clip: text;
-    background-size: 500% auto;
+    background-size: 200% auto;
     opacity: 0;
     filter: drop-shadow(0 0 0.5vw rgba(51, 226, 230, 0.5));
-    animation: logo 2s linear 0.3s forwards;
+    animation: logo 3s linear 0.3s forwards;
   }
 
   header {
@@ -330,7 +330,7 @@
     justify-content: space-between;
     align-items: center;
     opacity: 0;
-    animation: showScale 0.7s linear 2.3s forwards;
+    animation: showScale 1s linear 3s forwards;
     cursor: default;
 
     h1 {
@@ -469,7 +469,7 @@
     background-position: center;
     background-size: cover;
     opacity: 0;
-    animation: show 0.5s ease-in 2.5s forwards;
+    animation: show 0.5s ease-in 3.5s forwards;
 
     .map-wrapper {
       position: relative;
@@ -497,7 +497,7 @@
           gap: 2rem;
           border-left: 0.05rem solid rgba(51, 226, 230, 0.1);
           border-right: 0.05rem solid rgba(51, 226, 230, 0.1);
-          padding-top: 5rem;
+          padding-top: 7.5rem;
 
           .date,
           .episode-title {

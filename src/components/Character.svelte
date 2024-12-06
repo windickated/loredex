@@ -43,7 +43,9 @@
     }
     if (dead) deadMark!.style.opacity = "0";
     if (stories) {
-      const storyTitles = document.querySelectorAll(".episode-title");
+      const storyTitles: HTMLParagraphElement[] = Array.from(
+        document.querySelectorAll(".episode-title")
+      );
       Array.from(storyTitles).map((date) => {
         date.style.textShadow = "none";
       });
@@ -93,11 +95,13 @@
     if (dead) deadMark!.style.opacity = "0.9";
     // episode titles glow
     if (stories) {
-      const storyTitles = document.querySelectorAll(".episode-title");
+      const storyTitles: HTMLParagraphElement[] = Array.from(
+        document.querySelectorAll(".episode-title")
+      );
       const characterStories = getCharacterStories(name);
       const activeStoryTitles = Array.from(storyTitles).filter((title) => {
         let match: boolean = false;
-        characterStories.map((story) => {
+        characterStories!.map((story) => {
           if (title.className.match(story)) match = true;
         });
         if (match) return title;

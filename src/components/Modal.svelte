@@ -2,7 +2,7 @@
   import getImage from "../utils/image.ts";
   import { getColor } from "../utils/color.ts";
   import characters from "../data/characters.ts";
-  import { stories } from "../data/timeline.ts";
+  import { stories, places } from "../data/timeline.ts";
   import { type Character } from "../lib/types";
   import {
     showModal,
@@ -351,6 +351,15 @@
         </ol>
       </section>
 
+      <section class="places">
+        {#each places as { name, picture }}
+          <div>
+            <img src={picture} alt={name} width="1080" height="720" />
+            <p>{name}</p>
+          </div>
+        {/each}
+      </section>
+
       <article class="history">
         <hr />
         {@html timeNotes}
@@ -650,46 +659,6 @@
         }
       }
 
-      .transformation {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-        gap: 1vw;
-        font-size: 1vw;
-        padding-inline: 1vw;
-
-        div {
-          display: flex;
-          flex-flow: column nowrap;
-          justify-content: center;
-          align-items: center;
-
-          img {
-            width: 15vw;
-            height: inherit;
-            border: 0.1vw solid rgba(51, 226, 230, 0.5);
-            border-radius: 7.5vw;
-            margin-bottom: 0.5vw;
-            cursor: zoom-in;
-
-            &:hover {
-              z-index: 20;
-              transform: scale(1.5);
-              filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
-            }
-
-            &:active {
-              transform: scale(2.5);
-            }
-          }
-        }
-
-        span {
-          font-size: 2vw;
-        }
-      }
-
       .history {
         padding-inline: 1vw;
         color: #dedede;
@@ -790,6 +759,47 @@
               margin-bottom: 0.5vw;
             }
           }
+        }
+      }
+
+      .transformation,
+      .places {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+        font-size: 1vw;
+        padding-inline: 1vw;
+
+        div {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 15vw;
+            height: inherit;
+            border: 0.1vw solid rgba(51, 226, 230, 0.5);
+            border-radius: 7.5vw;
+            margin-bottom: 0.5vw;
+            cursor: zoom-in;
+
+            &:hover {
+              z-index: 20;
+              transform: scale(1.5);
+              filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
+            }
+
+            &:active {
+              transform: scale(2.5);
+            }
+          }
+        }
+
+        span {
+          font-size: 2vw;
         }
       }
     }
@@ -977,27 +987,6 @@
             }
           }
 
-          .transformation {
-            flex-direction: column;
-            gap: 1em;
-            font-size: 1em;
-            line-height: 1em;
-            padding-inline: 0.5em;
-
-            div {
-              img {
-                width: 50vw;
-                border-radius: 25vw;
-                margin-bottom: 0.5em;
-              }
-            }
-
-            span {
-              font-size: 1.5em;
-              transform: rotate(90deg);
-            }
-          }
-
           .tabs-wrapper {
             width: 100vw;
             padding-bottom: 1vw;
@@ -1041,6 +1030,28 @@
                 gap: 1em;
               }
             }
+          }
+        }
+
+        .transformation,
+        .places {
+          flex-direction: column;
+          gap: 1em;
+          font-size: 1em;
+          line-height: 1em;
+          padding-inline: 0.5em;
+
+          div {
+            img {
+              width: 50vw;
+              border-radius: 25vw;
+              margin-bottom: 0.5em;
+            }
+          }
+
+          span {
+            font-size: 1.5em;
+            transform: rotate(90deg);
           }
         }
 

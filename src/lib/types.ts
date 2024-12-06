@@ -49,3 +49,9 @@ export interface TimeSection {
   emptySection?: boolean
   expandable?: number 
 }
+
+export interface Place {
+  name: string
+  picture: string
+  description?: string
+}

@@ -1,5 +1,6 @@
 <script lang="ts">
   import setColor from "../utils/color.ts";
+  import getCharacterStories from "../utils/stories.ts";
   import { showModal, selectedCharacter } from "../stores/modal.ts";
 
   export let character;
@@ -10,6 +11,7 @@
     lastSeen,
     dead = false,
     state,
+    stories,
   } = character;
   export let noShadow: boolean = false;
 
@@ -40,6 +42,12 @@
       characterShadow!.style.opacity = "0";
     }
     if (dead) deadMark!.style.opacity = "0";
+    if (stories) {
+      const storyTitles = document.querySelectorAll(".episode-title");
+      Array.from(storyTitles).map((date) => {
+        date.style.textShadow = "none";
+      });
+    }
   }
 
   function showActiveConnections() {
@@ -57,6 +65,7 @@
     activeConnections.map((connection) => {
       connection.style.opacity = "0.5";
     });
+    // shadow & date titles glow
     if (lastSeen) {
       const shadows = document.querySelectorAll(".character-shadow");
       const characterShadow = Array.from(shadows).find((shadow) =>
@@ -82,6 +91,21 @@
       activeDate!.style.textShadow = "0 0 0.1rem rgb(51, 226, 230)";
     }
     if (dead) deadMark!.style.opacity = "0.9";
+    // episode titles glow
+    if (stories) {
+      const storyTitles = document.querySelectorAll(".episode-title");
+      const characterStories = getCharacterStories(name);
+      const activeStoryTitles = Array.from(storyTitles).filter((title) => {
+        let match: boolean = false;
+        characterStories.map((story) => {
+          if (title.className.match(story)) match = true;
+        });
+        if (match) return title;
+      });
+      activeStoryTitles.map((title) => {
+        title.style.textShadow = "0 0 0.1rem rgb(51, 226, 230)";
+      });
+    }
   }
 
   const openCharacterWindow = (event: any) => {

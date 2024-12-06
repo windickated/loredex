@@ -137,42 +137,238 @@ export const stories: Season[] = [
         episode: 1,
         title: 'In the Beginning',
         link: 'isK6VuGAbs4',
-        date: 1
+        date: 1,
+        bio: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `,
+        description: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `
       },
       {
         episode: 2,
         title: 'The Prisoner',
         link: 'Cujw3s-D6yU',
-        date: 16901
+        date: 16901,
+        bio: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `,
+        description: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `
       },
       {
         episode: 3,
         title: 'Agent Zero',
         link: 'R1qvKpelbE4',
-        date: 16893
+        date: 16893,
+          bio: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `,
+        description: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `
       },
       {
         episode: 4,
         title: 'Iron Lion',
         link: 'k10qXHtV0bg',
-        date: 17026
+        date: 17026,
+        bio: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `,
+        description: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `
       },
       {
         episode: 5,
         title: 'The Eyes',
         link: 'Kzdf-TaxSfw',
-        date: 16875
+        date: 16875,
+        bio: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `,
+        description: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `
       },
       {
         episode: 6,
         title: 'The Oracle',
         link: 'eD87OwcNuzE',
-        date: 16900
+        date: 16900,
+        bio: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `,
+        description: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `
       },
       {
         episode: 7,
         title: 'The Engineer',
-        link: '68ZRBVUzydo'
+        link: '68ZRBVUzydo',
+        bio: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `,
+        description: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `        
       }
     ]
   },
@@ -185,41 +381,265 @@ export const stories: Season[] = [
         episode: 1,
         title: 'Awakenings',
         link: 'fkHun-QPbKk',
+        bio: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `,
+        description: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `
       },
       {
         episode: 2,
         title: 'A Destructive Potential',
         link: 'LpgTQeQL_3E',
+        bio: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `,
+        description: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `
       },
       {
         episode: 3,
         title: 'The Terminus Swarm',
         link: 'BRw06-iixgw',
+        bio: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `,
+        description: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `        
       },
       {
         episode: 4,
         title: 'The Fall',
         link: '27SAM2fWuPg',
+        bio: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `,
+        description: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `        
       },
       {
         episode: 5,
         title: 'The Outbreak',
         link: 'FT_BzfFpz4c',
+        bio: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `,
+        description: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `        
       },
       {
         episode: 6,
         title: 'The Source',
         link: 'rrBZ7UvwrVw',
+        bio: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `,
+        description: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `        
       },
       {
         episode: 7,
         title: 'The Decision',
-        link: 'ib7riJNHM24'
+        link: 'ib7riJNHM24',
+        bio: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `,
+        description: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `   
       },
       {
         episode: 8,
         title: 'The Arrival',
-        link: 'o_ioDWD2oQc'
+        link: 'o_ioDWD2oQc',
+        bio: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `,
+        description: `
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id
+          est laborum.
+        `  
       }
     ]
   },

@@ -11,6 +11,7 @@
   } from "../stores/modal.ts";
   import { timeSystem, timeNotes } from "../data/timeline.ts";
   import { getSeasonName } from "../stores/season.ts";
+  import Story from "./Story.svelte";
 
   let width: number;
 
@@ -317,55 +318,7 @@
                           {#if storySection.season == season.season}
                             {#each storySection.episodes as episodeObject}
                               {#if episodeObject.episode == episodeNumber}
-                                <div>
-                                  <span
-                                    class="story-image-container"
-                                    on:click={() => {
-                                      window.open(
-                                        `https://www.youtube.com/watch?v=${episodeObject.link}`,
-                                        "_blank"
-                                      );
-                                    }}
-                                  >
-                                    <img
-                                      class="story-image"
-                                      src="https://img.youtube.com/vi/{episodeObject.link}/hqdefault.jpg"
-                                      alt="Story"
-                                      width="1280"
-                                      height="720"
-                                    />
-                                    <img
-                                      class="play-icon"
-                                      src="/youtube.png"
-                                      alt="YouTube"
-                                      width="1280"
-                                      height="720"
-                                    />
-                                  </span>
-                                  <article>
-                                    <a
-                                      href="https://www.youtube.com/watch?v={episodeObject.link}"
-                                      target="_blank"
-                                    >
-                                      <img src="/play.png" alt="Stories" />
-                                      <h2>{episodeObject.title}</h2>
-                                    </a>
-                                    <p>
-                                      Lorem ipsum dolor sit amet, consectetur
-                                      adipiscing elit, sed do eiusmod tempor
-                                      incididunt ut labore et dolore magna
-                                      aliqua. Ut enim ad minim veniam, quis
-                                      nostrud exercitation ullamco laboris nisi
-                                      ut aliquip ex ea commodo consequat. Duis
-                                      aute irure dolor in reprehenderit in
-                                      voluptate velit esse cillum dolore eu
-                                      fugiat nulla pariatur. Excepteur sint
-                                      occaecat cupidatat non proident, sunt in
-                                      culpa qui officia deserunt mollit anim id
-                                      est laborum.
-                                    </p>
-                                  </article>
-                                </div>
+                                <Story {episodeObject} />
                               {/if}
                             {/each}
                           {/if}
@@ -833,81 +786,8 @@
             gap: 1vw;
 
             h2 {
+              text-align: center;
               margin-bottom: 0.5vw;
-            }
-
-            div {
-              width: 100%;
-              display: flex;
-              flex-flow: row nowrap;
-              justify-content: space-between;
-              align-items: center;
-              gap: 2vw;
-              background-color: rgba(51, 226, 230, 0.25);
-              border-radius: 0.5vw;
-              padding: 1vw;
-
-              .story-image-container {
-                position: relative;
-                height: 15vw;
-                width: 27.5vw;
-
-                img {
-                  height: 15vw;
-                  width: 27.5vw;
-                  object-fit: cover;
-                }
-
-                .story-image {
-                  border: 0.1vw solid rgba(51, 226, 230, 0.25);
-                }
-
-                .play-icon {
-                  position: absolute;
-                  left: 0;
-                  opacity: 0;
-                  background-color: rgba(0, 0, 0, 0.75);
-
-                  &:hover,
-                  &:active {
-                    opacity: 0.9;
-                  }
-                }
-              }
-
-              article {
-                height: 15vw;
-                max-width: 52.5vw;
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: space-around;
-                align-items: flex-start;
-
-                a {
-                  display: flex;
-                  flex-flow: row nowrap;
-                  align-items: center;
-                  gap: 1vw;
-                  text-decoration: none;
-                  opacity: 0.9;
-                  transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
-
-                  img {
-                    height: 2vw;
-                  }
-
-                  h2 {
-                    color: rgb(51, 226, 230);
-                    margin-bottom: 1.5vw;
-                  }
-
-                  &:hover,
-                  &:active {
-                    opacity: 1;
-                    filter: drop-shadow(0 0 0.1vw rgba(51, 226, 230, 0.5));
-                  }
-                }
-              }
             }
           }
         }
@@ -1159,44 +1039,6 @@
 
               .stories {
                 gap: 1em;
-
-                div {
-                  width: 100%;
-                  display: flex;
-                  flex-direction: column;
-                  gap: 0.5em;
-                  border-radius: 0.25em;
-                  padding: 1em;
-
-                  .story-image-container {
-                    height: 50vw;
-                    width: 90vw;
-
-                    img {
-                      height: 50vw;
-                      width: 90vw;
-                    }
-                  }
-
-                  article {
-                    height: auto;
-                    max-width: 90vw;
-                    align-items: center;
-                    text-align: center;
-
-                    a {
-                      gap: 1em;
-
-                      img {
-                        height: 1.5em;
-                      }
-
-                      h2 {
-                        margin-bottom: 0.5em;
-                      }
-                    }
-                  }
-                }
               }
             }
           }

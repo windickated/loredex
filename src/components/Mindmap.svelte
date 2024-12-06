@@ -203,7 +203,7 @@
           style="
             padding-bottom: {expandable !== undefined ? '7.5rem' : ''};
             background-image: {date[1] - date[0] < 99
-            ? 'linear-gradient(to bottom, rgba(51, 226, 230, 0.15), rgba(51, 226, 230, 0))'
+            ? 'linear-gradient(to bottom, rgba(51, 226, 230, 0.05), rgba(51, 226, 230, 0))'
             : ''};
           "
         >
@@ -495,8 +495,8 @@
           justify-content: space-around;
           align-items: center;
           gap: 2rem;
-          border-left: 0.05rem dashed rgba(51, 226, 230, 0.25);
-          border-right: 0.05rem dashed rgba(51, 226, 230, 0.25);
+          border-left: 0.05rem solid rgba(51, 226, 230, 0.1);
+          border-right: 0.05rem solid rgba(51, 226, 230, 0.1);
           padding-top: 5rem;
 
           .date,
@@ -584,8 +584,8 @@
         .plot {
           padding-top: 7.5rem;
           width: 20rem;
-          border-left: 0.05rem dashed rgba(51, 226, 230, 0.5);
-          border-right: 0.05rem dashed rgba(51, 226, 230, 0.5);
+          border-left: 0.05rem solid rgba(51, 226, 230, 0.25);
+          border-right: 0.05rem solid rgba(51, 226, 230, 0.25);
 
           .episode-title {
             padding-top: 1rem;

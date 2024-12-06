@@ -36,6 +36,7 @@ interface Story {
   title: string
   link: string
   date?: number
+  bio?: string
   description?: string
 }
 

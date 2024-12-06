@@ -273,13 +273,13 @@
               </div>
 
               <section class="tab-section">
-                {#if $selectedCharacter.connections}
-                  <div
-                    class="connected-characters"
-                    style="display: {activeTab === 'connections'
-                      ? 'flex'
-                      : 'none'}"
-                  >
+                <div
+                  class="connected-characters"
+                  style="display: {activeTab === 'connections'
+                    ? 'flex'
+                    : 'none'}"
+                >
+                  {#if $selectedCharacter.connections}
                     {#each $selectedCharacter.connections as connection}
                       <div on:click={() => handleSelectCharacter(connection)}>
                         <img
@@ -294,16 +294,23 @@
                         </p>
                       </div>
                     {/each}
-                  </div>
-                {/if}
-                {#if $selectedCharacter.stories}
-                  {#each $selectedCharacter.stories as season}
-                    <div
-                      class="stories"
-                      style="display: {activeTab === 'stories'
+                  {:else}
+                    <h2
+                      class="empty-note"
+                      style="display: {activeTab === 'connections'
                         ? 'flex'
                         : 'none'}"
                     >
+                      No connected characters.
+                    </h2>
+                  {/if}
+                </div>
+                <div
+                  class="stories"
+                  style="display: {activeTab === 'stories' ? 'flex' : 'none'}"
+                >
+                  {#if $selectedCharacter.stories}
+                    {#each $selectedCharacter.stories as season}
                       <h2>{getSeasonName(season.season)}</h2>
                       {#each season.episodes as episodeNumber}
                         {#each stories as storySection}
@@ -364,9 +371,18 @@
                           {/if}
                         {/each}
                       {/each}
-                    </div>
-                  {/each}
-                {/if}
+                    {/each}
+                  {:else}
+                    <h2
+                      class="empty-note"
+                      style="display: {activeTab === 'stories'
+                        ? 'flex'
+                        : 'none'}"
+                    >
+                      No appearances in stories.
+                    </h2>
+                  {/if}
+                </div>
               </section>
             </section>
           {/if}
@@ -775,6 +791,11 @@
           border-top-left-radius: 0;
           border-top-right-radius: 0;
           font-size: 1vw;
+
+          .empty-note {
+            color: rgba(51, 226, 230, 0.5);
+            margin-block: 7.5vw !important;
+          }
 
           .connected-characters {
             display: flex;

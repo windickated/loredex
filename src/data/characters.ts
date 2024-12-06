@@ -5023,30 +5023,9 @@ const characters: Character[] = [
     `
   },
   {
-    name: 'Potential 15',
-    picture: '/pictures/Potential15.avif',
-    state: "neutral",
-    potentialNFT: 15,
-    stories: [
-      {
-        season: 1,
-        episodes: [4]
-      }
-    ],
-    affiliation: 'The Potentials',
-    status: 'Active'
-  },
-  {
-    name: 'Potential 22',
-    picture: '/pictures/Potential22.avif',
-    state: "neutral",
-    potentialNFT: 22,
-    affiliation: 'The Potentials',
-    status: 'Active'
-  },
-  {
     name: 'The Host',
-    picture: '/pictures/Potential25.avif',
+    picture: '/pictures/Host.avif',
+    appearance: 100001,
     state: "neutral",
     potentialNFT: 25,
     transformations: [
@@ -5069,6 +5048,28 @@ const characters: Character[] = [
         episodes: [6]
       }
     ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 15',
+    picture: '/pictures/Potential15.avif',
+    state: "neutral",
+    potentialNFT: 15,
+    stories: [
+      {
+        season: 1,
+        episodes: [4]
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active'
+  },
+  {
+    name: 'Potential 22',
+    picture: '/pictures/Potential22.avif',
+    state: "neutral",
+    potentialNFT: 22,
     affiliation: 'The Potentials',
     status: 'Active'
   },

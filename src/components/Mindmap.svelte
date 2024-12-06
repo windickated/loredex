@@ -200,7 +200,12 @@
       {#each timeline as { date, note, action, emptySection, expandable }}
         <div
           class="plot"
-          style={expandable !== undefined ? "padding-bottom: 7.5rem" : ""}
+          style="
+            padding-bottom: {expandable !== undefined ? '7.5rem' : ''};
+            background-image: {date[1] - date[0] < 99
+            ? 'linear-gradient(to bottom, rgba(51, 226, 230, 0.15), rgba(51, 226, 230, 0))'
+            : ''};
+          "
         >
           <div class="date {date[0]} {date[1]}">
             {#if !emptySection}
@@ -490,8 +495,8 @@
           justify-content: space-around;
           align-items: center;
           gap: 2rem;
-          border-left: 0.05rem dashed rgba(51, 226, 230, 0.1);
-          border-right: 0.05rem dashed rgba(51, 226, 230, 0.1);
+          border-left: 0.05rem dashed rgba(51, 226, 230, 0.25);
+          border-right: 0.05rem dashed rgba(51, 226, 230, 0.25);
           padding-top: 5rem;
 
           .date,

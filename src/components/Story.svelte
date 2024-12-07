@@ -191,6 +191,10 @@
             height: 50vw;
             width: 90vw;
           }
+
+          .play-icon {
+            display: none;
+          }
         }
 
         article {

@@ -3616,7 +3616,7 @@ const characters: Character[] = [
   // NEUTRAL
   {
     name: 'Master of R’lyeh',
-    picture: '/pictures/MasterOfRlyeh.avif',
+    picture: '/pictures/MasterofRlyeh.avif',
     appearance: 16705,
     lastSeen: 17043,
     state: "evil",

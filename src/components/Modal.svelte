@@ -121,7 +121,12 @@
     {#if $showModal === "character" && $selectedCharacter}
       {#key $selectedCharacter}
         <section class="character-window">
-          <section class="general-info">
+          <section
+            class="general-info"
+            style={$selectedCharacter.potentialNFT
+              ? "justify-content: space-between;"
+              : ""}
+          >
             <div class="image-container">
               <img
                 src={$selectedCharacter.picture}
@@ -482,7 +487,7 @@
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
         gap: 2vw;
 
         .image-container {

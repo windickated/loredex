@@ -79,6 +79,7 @@
         position: relative;
         height: 15vw;
         width: 27.5vw;
+        cursor: pointer;
 
         img {
           height: 15vw;

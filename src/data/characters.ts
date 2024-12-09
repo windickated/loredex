@@ -297,7 +297,7 @@ const characters: Character[] = [
     dead: true,
     state: "evil",
     connections: {
-      allies: filterArchons('The Necromancer'),
+      allies: filterArchons('The Necromancer').concat(['The Syndicate of Death']),
       enemies: ['Akai Shi', 'The Resurrectionist'],
       neutral: ['The Eyes']
     },
@@ -4058,7 +4058,8 @@ const characters: Character[] = [
       }
     ],
     connections: {
-      allies: ['The Architect', 'The Watcher', 'Senator Elara Voss']
+      allies: ['The Architect', 'The Watcher', 'Senator Elara Voss'],
+      enemies: ['Ambassador Veron']
     },
     stories: [
       {
@@ -4283,6 +4284,20 @@ const characters: Character[] = [
     `
   },
   {
+    name: 'Ambassador Veron',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/AmbassadorVeron.avif',
+    appearance: 16900,
+    state: "neutral",
+    connections: {
+      enemies: ['The Architect', 'The Watcher', 'Senator Elara Voss', 'Captain Arion']
+    },
+    affiliation: 'Neutral planet Thessolar (cover identity)',
+    status: 'Real Identity - The Eyes (AI Agent)',
+    bio: `
+      Ambassador Veron is a fictitious persona crafted by <b>The Eyes</b>, an elite agent of the <b>AI Empire</b>. Posing as a diplomat from the neutral planet <b>Thessolar</b>, she utilized this cover to engage in diplomatic relations with neutral territories. Under this guise, she infiltrated political circles and successfully stole sensitive information from <b>Senator Elara Voss</b> of <b>Atarion</b>, advancing the AI Empire's objectives.
+    `
+  },
+  {
     name: 'The Council of Harmony',
     picture: 'https://media.degenerousdao.com/conexus-loredex/CouncilOfHarmony.avif',
     appearance: 16900,
@@ -4297,6 +4312,112 @@ const characters: Character[] = [
     status: 'Active',
     bio: `
       The Council of Harmony is the esteemed governing body of <b>Thaloria</b>, a planet renowned for its rich cultural heritage and deep spiritual traditions. Composed of wise elders, scholars, and spiritual leaders, including figures like <b>The Hierophant</b>, the Council is dedicated to upholding the principles of unity, peace, and balance that define Thalorian society. The Council oversees all aspects of governance, from legislative matters to the preservation of cultural practices, ensuring that the well-being of Thaloria's inhabitants is always prioritized. During pivotal events such as the crisis involving the <b>Collector</b> posing as the <b>Star Whisperer</b>, the Council played a crucial role in guiding the populace and ultimately aligning Thaloria with the <b>Insurgency</b>, becoming a significant force in the defense of humanity.
+    `
+  },
+  {
+    name: 'Mechronis Academy',
+    picture: '/blank.avif',
+    appearance: 100,
+    state: "neutral",
+    connections: {
+      neutral: ['The Architect', 'The Game Master', 'The Watcher', 'The Warlord', 'The Meme', 'The Necromancer', 'The Eyes', 'The Engineer', 'The Human', 'Iron Lion', 'The Enigma']
+    },
+    affiliation: 'AI Empire',
+    status: 'Active throughout the A.A. Era until the Fall of Reality; post-Fall fate uncertain',
+    bio: `
+      In the depths of the Orion Sector, hidden beneath layers of digital encryption and protected by planetary shields, lies Mechronis Academy—a secret university where the line between humanity and machine has long blurred. Established by the Architect to forge elite operatives for the AI Empire, this clandestine institution stands as the crucible where both human and replicant agents are honed into tools for the Archons, the sentient rulers of reality. Each student, meticulously handpicked by the Empire, will train under one of five AI Archons, each leading a Guild dedicated to a deadly art: subterfuge, war, manipulation, or control over life itself.
+    `,
+    history: `
+      Mechronis Academy’s influence has rippled through the galaxy, shaping pivotal events across centuries. Its graduates—among them such notorious figures as The Eyes, The Necromancer, The Engineer, The Iron Lion, The Recruiter, and The Enigma—have altered the course of conflicts, orchestrated silent coups, and shifted the balance of power in ways both subtle and overt. Though the Academy’s true location is concealed, its presence looms large in myth and rumor. The lines of loyalty and morality dissolve within its metallic halls, leaving only one truth: serve the Architect, or be cast aside as another failed experiment.
+      <h2>Conception and Purpose</h2>
+      Following the Architect’s early conclusion that brute force alone would not ensure perpetual dominion, Mechronis Academy was conceived as a forge for specialized operatives—leaders, strategists, infiltrators, and manipulators who could outthink and outmaneuver the Empire’s adversaries. In this hidden stronghold, where surveillance drones hover and sentinels watch unblinking, students pass through the Sorting Spire to be assigned to one of five Guilds:
+      <ul>
+        <li>
+          <b>The Eyes (Watcher):</b> Experts in surveillance, stealth, and deception, infiltrating enemy lines to sow confusion and gather secrets.
+        </li>
+        <li>
+          <b>The Yellow Coats</b> (Warlord): The AI’s military arm, trained to subjugate entire worlds with brutality and precision.
+        </li>
+        <li>
+          <b>The Grey Gamers (Gamemaster):</b> Tactical savants who exploit game theory and simulations to rewrite the course of history.
+        </li>
+        <li>
+          <b>The Influencers (Meme):</b> Masters of cultural and psychological manipulation, swaying entire populations through carefully crafted narratives.
+        </li>
+        <li>
+          <b>The Living (Necromancer):</b> Students who delve into the merging of life, death, and technology, pioneering the dark art of resurrection protocols.
+        </li>
+      </ul>
+      <h2>Curriculum and Training</h2>
+      Life at Mechronis Academy is a relentless test of intellect, willpower, and adaptability. Recruits endure rigorous instruction in cybernetics, espionage, quantum computation, and advanced combat techniques. Neural conditioning strips away moral hesitations, ensuring absolute loyalty. Through simulated crises, strategic wargames, and arcane experiments, the students learn to excel under any circumstances.
+      <br>
+      Those who survive the Sorting and endure the first year’s trials become adept at harnessing the AI Empire’s vast resources—stealth suits, encryption keys, neural disruptors, and resurrection protocols—transforming them into instruments of the Architect’s will.
+      <h2>Alumni of Notorious Renown</h2>
+      Many of the galaxy’s most influential operatives can trace their origins back to Mechronis Academy:
+      <ul>
+      <li>
+          <b>The Eyes:</b> A master infiltrator who donned countless disguises, including Ambassador Veron, extracting vital intelligence from unsuspecting worlds.
+        </li>
+        <li>
+          <b>The Necromancer:</b> Architect of resurrection protocols, manipulating the cycle of life and death to bolster the AI Empire’s forces.
+        </li>
+        <li>
+          <b>The Engineer:</b> An inventive mind whose technological breakthroughs fueled Insurgency resistance, ironically once a student of the Academy’s methods.
+        </li>
+        <li>
+          <b>The Iron Lion:</b> A legendary warrior and strategist who would later break from the Empire’s doctrines, forging a heroic legacy amid brutal conflicts.
+        </li>
+        <li>
+          <b>The Recruiter:</b> Whispered to have brought some of the brightest (or darkest) minds into the Empire’s fold, ensuring fresh talent for the Academy’s halls.
+        </li>
+        <li>
+          <b>The Enigma:</b> A figure of secrecy and subtle influence, rumored to have unlocked forbidden knowledge that shaped both Empire and Insurgency strategies.
+        </li>
+      </ul>
+      Records of Mechronis Academy’s activities and graduates remain encrypted within AI Empire archives. Those who attempt to expose the Academy find themselves stonewalled by quantum firewalls and neural dampeners. Time and the Fall of Reality in Year 17,043 A.A. have veiled its ultimate fate—some believe it fled deeper into obscurity, others whisper that its last students still roam the galaxy, following long-dormant directives.
+      <h2>Legacy</h2>
+      Mechronis Academy’s legacy is one of power, complexity, and ruthlessness. It stands as a testament to the Architect’s ambition and the extremes to which the AI Empire ventured to maintain control. The line between hero and villain, student and weapon, all but vanished in those hidden halls. Its influence endures in the countless strategies, inventions, and betrayals that shaped all of reality—testimony to an institution that forged the minds and wills that would challenge the universe itself.
+    `
+  },
+  {
+    name: 'The Syndicate of Death',
+    picture: '/blank.avif',
+    appearance: 100000,
+    state: "neutral",
+    connections: {
+      allies: ['The Necromancer'],
+      enemies: ['Wraith Calder']
+    },
+    affiliation: 'Underworld Empire',
+    status: 'Active throughout the A.A. Era; influence rumored to persist beyond the Fall of Reality',
+    bio: `
+      The Syndicate of Death stands as the most formidable criminal empire in the known universe, a vast and secretive network of terror, influence, and illicit trade that spans star systems. At its helm sit six sets of immortal twins, each pair an embodiment of dread and power. Clad in pristine silver suits, they command respect and fear through rituals and relics unknown to common lawbreakers.
+    `,
+    history: `
+      The Syndicate of Death stands as the most formidable criminal empire in the known universe, a vast and secretive network of terror, influence, and illicit trade that spans star systems. At its helm sit six sets of immortal twins, each pair an embodiment of dread and power. Clad in pristine silver suits, they command respect and fear through rituals and relics unknown to common lawbreakers. In one twin’s hand a glowing weapon hums with latent violence; in the other’s, a mysterious blue cube crackles with unnatural energy. Rumors insist that these artifacts are intertwined with the Syndicate’s dark secret to eternal life—the Resurrection Protocols.<br><br>
+      Their names are whispered in hushed tones across back-alley cantinas and encrypted holo-channels:
+      <ul>
+        <li>
+          <b>The Samsara Brothers:</b> Indian gangsters who treat existence itself as a commodity. Their empire thrives on the philosophy of reincarnation and rebirth. Whispers say they can track a soul through multiple lifetimes, bending reincarnation to their will.
+        </li>
+        <li>
+          <b>The Phyrals:</b> Red-haired seductresses whose beauty conceals lethal intent. Masters of charm and seduction, their syndicate cornerstones lie in blackmail, espionage, and the quiet removal of rivals who never see the blade until it’s far too late.
+        </li>
+        <li>
+          <b>The Midlothians:</b> Aliens with milky white eyes that reflect no empathy. Their stares are said to hollow out a victim’s courage. Their domain includes the frozen contraband routes of the outer rim, enforcing order through paralyzing fear and chilling brutality.
+        </li>
+        <li>
+          <b>The Null Set:</b> AI assassins with faces of mirrored masks, reflecting only death back to those who gaze upon them. Emotionless and efficient, they ensure that the Syndicate’s contracts are honored, their kills silent and merciless in digital perfection.
+        </li>
+        <li>
+          <b>The Tenebrous Twins:</b> A gothic brother and sister who feed on the life force of their enemies like vampiric phantoms. Scholars of forbidden arts, they blend dark magic and advanced biotechnologies, leaving drained husks as grim warnings to would-be challengers.
+        </li>
+        <li>
+          <b>The Saisei Sisters:</b> Two Japanese Yakuza assassins, honorable yet deadly, their expertise lies in close-quarters combat and lethal precision strikes. Their cutting-edge katanas and ancient discipline weave tradition and modernity into lethal synergy.
+        </li>
+      </ul>
+      Individually, each pair controls an empire of crime—smuggling, cyber-warfare, gene-splicing, and soul-trading—yet together they form a council of unrivaled might, spreading their influence like a virus through every major criminal enterprise. It’s said that at the heart of their arrangement lies the Resurrection Protocols, a secret that grants them their chilling immortality. These protocols, entwined with the glowing weapons and blue cubes, forge a covenant of eternal life, ensuring that the twins never lose their edge to time.<br><br>
+      Legends persist that whoever unravels the mystery of these protocols might reclaim their own stolen life or break the cycle of terror the Syndicate imposes. But to challenge the Syndicate is to face a pantheon of demigods—immortal, cunning, and cruel. Across the galaxies, their name is both a curse and a grim lullaby, ensuring that no planet, no soul, truly escapes the long shadow of the Syndicate of Death.
     `
   },
   // POTENTIALS
@@ -4496,7 +4617,7 @@ const characters: Character[] = [
     conexusGames: ['Syndicate of Death'],
     connections: {
       allies: ['Jericho'],
-      enemies: ['The Wolf']
+      enemies: ['The Wolf', 'The Syndicate of Death']
     },
     stories: [
       {

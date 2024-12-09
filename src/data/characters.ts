@@ -435,7 +435,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Dreamer'),
-      enemies: ['The Architect', 'The Human']
+      enemies: ['The Architect', 'The Human', 'The Terminus Swarm']
     },
     stories: [
       {
@@ -466,7 +466,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Judge'),
-      enemies: ['The Architect', 'The Warlord'],
+      enemies: ['The Architect', 'The Warlord', 'The Terminus Swarm'],
     },
     stories: [
       {
@@ -500,7 +500,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Inventor'),
-      enemies: ['The Architect', 'The Warden'],
+      enemies: ['The Architect', 'The Warden', 'The Terminus Swarm'],
     },
     stories: [
       {
@@ -534,7 +534,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Seer'),
-      enemies: ['The Architect', 'The Vortex']
+      enemies: ['The Architect', 'The Vortex', 'The Terminus Swarm']
     },
     stories: [
       {
@@ -568,7 +568,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Storm'),
-      enemies: ['The Architect', 'The Politician']
+      enemies: ['The Architect', 'The Politician', 'The Terminus Swarm']
     },
     stories: [
       {
@@ -602,7 +602,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Silence'),
-      enemies: ['The Architect', 'The Meme']
+      enemies: ['The Architect', 'The Meme', 'The Terminus Swarm']
     },
     stories: [
       {
@@ -636,7 +636,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Knowledge'),
-      enemies: ['The Architect', 'The Watcher']
+      enemies: ['The Architect', 'The Watcher', 'The Terminus Swarm']
     },
     stories: [
       {
@@ -670,7 +670,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Degen'),
-      enemies: ['The Architect', 'The Collector']
+      enemies: ['The Architect', 'The Collector', 'The Terminus Swarm']
     },
     stories: [
       {
@@ -704,7 +704,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Advocate').concat(['Master of R’lyeh']),
-      enemies: ['The Architect', 'The Game Master']
+      enemies: ['The Architect', 'The Game Master', 'The Terminus Swarm']
     },
     stories: [
       {
@@ -743,7 +743,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon'],
     connections: {
       allies: ['The Dreamer', 'The Inventor'],
-      enemies: ['The Architect', 'The Necromancer']
+      enemies: ['The Architect', 'The Necromancer', 'The Terminus Swarm']
     },
     stories: [
       {
@@ -4382,7 +4382,7 @@ const characters: Character[] = [
   {
     name: 'The Syndicate of Death',
     picture: '/blank.avif',
-    appearance: 100000,
+    appearance: 107652,
     state: "neutral",
     connections: {
       allies: ['The Necromancer'],
@@ -6139,6 +6139,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Terminus Swarm',
+    appearance: 100001,
     picture: 'https://media.degenerousdao.com/conexus-loredex/TerminusSwarm.avif',
     state: "neutral",
     stories: [

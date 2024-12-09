@@ -350,14 +350,14 @@
                       </div>
                     {/if}
                   {:else}
-                    <h2
+                    <p
                       class="empty-note"
                       style="display: {activeTab === 'connections'
                         ? 'flex'
                         : 'none'}"
                     >
                       No connected characters.
-                    </h2>
+                    </p>
                   {/if}
                 </div>
                 <div
@@ -380,14 +380,14 @@
                       {/each}
                     {/each}
                   {:else}
-                    <h2
+                    <p
                       class="empty-note"
                       style="display: {activeTab === 'stories'
                         ? 'flex'
                         : 'none'}"
                     >
                       No appearances in stories.
-                    </h2>
+                    </p>
                   {/if}
                 </div>
               </section>
@@ -769,6 +769,7 @@
           font-size: 1vw;
 
           .empty-note {
+            font-size: 2vw;
             color: rgba(51, 226, 230, 0.5);
             margin-block: 2.5vw !important;
           }
@@ -1082,6 +1083,10 @@
               padding: 1em 0.5em;
               border-radius: 0;
               font-size: 1em;
+
+              .empty-note {
+                font-size: 1.5em;
+              }
 
               .connected-characters {
                 text-align: center;

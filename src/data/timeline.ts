@@ -1165,6 +1165,9 @@ export const timeNotes: string = `
     <li>
       The Potentials engage in a fierce battle against reanimated machines and creatures.
     </li>
+    <li>
+      CoNexus Event: The Terminus Swarm
+    </li>
   </ul>
   <b>Day 5 of Convergence: Retreat into the Tunnels</b>
   <ul>
@@ -1182,6 +1185,9 @@ export const timeNotes: string = `
   <ul>
     <li>
       Malakai is captured and transformed into The Host by Kael.
+    </li>
+    <li>
+      CoNexus Event: The Host
     </li>
   </ul>
   <b>Day 25 of Convergence: Deal with The Source</b>
@@ -1279,14 +1285,31 @@ export const timeNotes: string = `
   </ul>
   <hr>
   <h2>Year 107,652 A.A.</h2>
-  <b>Resurrection of Wraith Calder and the Battle Against the Syndicate of Death</b>
   <ul>
-    <li>Wraith Calder is resurrected and becomes aware of the Syndicate of Death.</li>
-    <li>He sets out to reclaim the Resurrection Protocols developed by the Necromancer.</li>
+    <li>
+      Resurrection of Wraith Calder and the Battle Against the Syndicate of Death
+      <ul>
+        <li>Wraith Calder is resurrected and becomes aware of the Syndicate of Death.</li>
+        <li>He sets out to reclaim the Resurrection Protocols developed by the Necromancer.</li>
+      </ul>
+    </li>
+    <li>
+      CoNexus Event: The Terminus Swarm
+    </li>
   </ul>
   <hr>
   <h2>Year 117,046 A.A.</h2>
-  <b>Day 15 of Fracture:</b> The Necromancer is destroyed by the time-traveling Red Death.
+  <ul>
+    <li>
+      CoNexus Event: The Necromancer's Lair
+    </li>
+    <li>
+      <b>Day 15 of Fracture:</b> The Necromancer is destroyed by the time-traveling Red Death.
+    </li>
+  </ul>
+  <hr>
+  <h2>Year 107,656 A.A.</h2>
+  The potentials appear in the Heart of Time, 4 years into Wraith’s unending battle against the Syndicate of Death. 
   <hr>
   <h2>Year 128,652 A.A.</h2>
   <b>Resurrection of The Wolf</b>

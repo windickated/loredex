@@ -286,20 +286,69 @@
                     : 'none'}"
                 >
                   {#if $selectedCharacter.connections}
-                    <!-- {#each $selectedCharacter.connections as connection}
-                      <div on:click={() => handleSelectCharacter(connection)}>
-                        <img
-                          src={getImage(connection)}
-                          alt={connection}
-                          width="1024"
-                          height="1024"
-                          style="border-color: {getColor(connection)}"
-                        />
-                        <p style="color: {getColor(connection)}">
-                          {connection}
-                        </p>
+                    {#if $selectedCharacter.connections.allies}
+                      <h2 style="background-color: rgba(0, 185, 55, 0.25)">
+                        Allied characters
+                      </h2>
+                      <div class="characters-section">
+                        {#each $selectedCharacter.connections.allies as ally}
+                          <div on:click={() => handleSelectCharacter(ally)}>
+                            <img
+                              src={getImage(ally)}
+                              alt={ally}
+                              width="1024"
+                              height="1024"
+                              style="border-color: {getColor(ally)}"
+                            />
+                            <p style="color: {getColor(ally)}">
+                              {ally}
+                            </p>
+                          </div>
+                        {/each}
                       </div>
-                    {/each} -->
+                    {/if}
+                    {#if $selectedCharacter.connections.enemies}
+                      <h2 style="background-color: rgba(255, 60, 64, 0.25)">
+                        Enemy characters
+                      </h2>
+                      <div class="characters-section">
+                        {#each $selectedCharacter.connections.enemies as enemy}
+                          <div on:click={() => handleSelectCharacter(enemy)}>
+                            <img
+                              src={getImage(enemy)}
+                              alt={enemy}
+                              width="1024"
+                              height="1024"
+                              style="border-color: {getColor(enemy)}"
+                            />
+                            <p style="color: {getColor(enemy)}">
+                              {enemy}
+                            </p>
+                          </div>
+                        {/each}
+                      </div>
+                    {/if}
+                    {#if $selectedCharacter.connections.neutral}
+                      <h2 style="background-color: rgba(150, 150, 150, 0.25)">
+                        Neutral characters
+                      </h2>
+                      <div class="characters-section">
+                        {#each $selectedCharacter.connections.neutral as neutral}
+                          <div on:click={() => handleSelectCharacter(neutral)}>
+                            <img
+                              src={getImage(neutral)}
+                              alt={neutral}
+                              width="1024"
+                              height="1024"
+                              style="border-color: {getColor(neutral)}"
+                            />
+                            <p style="color: {getColor(neutral)}">
+                              {neutral}
+                            </p>
+                          </div>
+                        {/each}
+                      </div>
+                    {/if}
                   {:else}
                     <h2
                       class="empty-note"
@@ -726,27 +775,45 @@
 
           .connected-characters {
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: column nowrap;
             align-items: center;
-            justify-content: space-around;
+            justify-content: center;
             gap: 1vw;
 
-            div {
+            h2 {
+              text-align: center;
+              width: 100%;
+              padding-block: 1vw;
+              background-color: rgba(51, 226, 230, 0.25);
+              border: 0.1vw solid rgba(51, 226, 230, 0.25);
+              border-radius: 1vw;
+            }
+
+            .characters-section {
+              width: 100%;
               display: flex;
-              flex-flow: column nowrap;
+              flex-flow: row wrap;
               align-items: center;
-              width: 15vw;
+              justify-content: space-around;
+              gap: 1vw;
 
-              img {
+              div {
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
                 width: 15vw;
-                height: inherit;
-                border: 0.1vw solid rgba(51, 226, 230, 0.5);
-                border-radius: 7.5vw;
-                margin-bottom: 0.5vw;
 
-                &:hover {
-                  transform: scale(1.5);
-                  filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
+                img {
+                  width: 15vw;
+                  height: inherit;
+                  border: 0.1vw solid rgba(51, 226, 230, 0.5);
+                  border-radius: 7.5vw;
+                  margin-bottom: 0.5vw;
+
+                  &:hover {
+                    transform: scale(1.5);
+                    filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
+                  }
                 }
               }
             }
@@ -1020,13 +1087,22 @@
                 text-align: center;
                 gap: 0.5em;
 
-                div {
-                  width: 40vw;
+                h2 {
+                  padding-block: 0.5em;
+                  border-radius: 0.5em;
+                }
 
-                  img {
+                .characters-section {
+                  gap: 0.5em;
+
+                  div {
                     width: 40vw;
-                    border-radius: 20vw;
-                    margin-bottom: 0.25em;
+
+                    img {
+                      width: 40vw;
+                      border-radius: 20vw;
+                      margin-bottom: 0.25em;
+                    }
                   }
                 }
               }

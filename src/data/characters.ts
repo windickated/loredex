@@ -4,7 +4,7 @@ const characters: Character[] = [
   // ARCHONS
   {
     name: 'The Architect',
-    picture: '/pictures/Architect.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Architect.avif',
     appearance: 1,
     lastSeen: 150000,
     state: "evil",
@@ -33,7 +33,7 @@ const characters: Character[] = [
   },
   {
     name: 'The CoNexus',
-    picture: '/pictures/CoNexus.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/CoNexus.avif',
     appearance: 5,
     lastSeen: 15,
     dead: true,
@@ -55,7 +55,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Watcher',
-    picture: '/pictures/Watcher.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Watcher.avif',
     appearance: 250,
     lastSeen: 150000,
     state: "evil",
@@ -76,7 +76,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Meme',
-    picture: '/pictures/Meme.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Meme.avif',
     appearance: 298,
     lastSeen: 17033,
     dead: true,
@@ -100,7 +100,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Warlord',
-    picture: '/pictures/Warlord.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Warlord.avif',
     appearance: 317,
     lastSeen: 320,
     state: "evil",
@@ -125,7 +125,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Politician',
-    picture: '/pictures/Politician.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Politician.avif',
     appearance: 419,
     lastSeen: 17001,
     dead: true,
@@ -152,7 +152,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Warden',
-    picture: '/pictures/Warden.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Warden.avif',
     appearance: 487,
     lastSeen: 17033,
     dead: true,
@@ -187,7 +187,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Vortex',
-    picture: '/pictures/Vortex.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Vortex.avif',
     appearance: 500,
     state: "evil",
     connections: ['The Architect'],
@@ -217,7 +217,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Game Master',
-    picture: '/pictures/GameMaster.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/GameMaster.avif',
     appearance: 550,
     lastSeen: 620,
     dead: true,
@@ -242,7 +242,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Necromancer',
-    picture: '/pictures/Necromancer.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Necromancer.avif',
     appearance: 600,
     lastSeen: 117046,
     dead: true,
@@ -271,7 +271,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Human',
-    picture: '/pictures/Human.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Human.avif',
     appearance: 651,
     state: "evil",
     conexusGames: ['The Detective', 'Mechronis Academy', 'The Celebration'],
@@ -280,23 +280,23 @@ const characters: Character[] = [
     transformations: [
       {
         name: 'The Seeker',
-        picture: '/pictures/Seeker.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Seeker.avif'
       },
       {
         name: 'The Student',
-        picture: '/pictures/Student.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Student.avif'
       },
       {
         name: 'Captain Arion',
-        picture: '/pictures/CaptainArion.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/CaptainArion.avif'
       },
       {
         name: 'The Detective',
-        picture: '/pictures/Detective.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Detective.avif'
       },
       {
         name: 'The Human',
-        picture: '/pictures/Human.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Human.avif'
       }
     ],
     status: 'Active',
@@ -338,7 +338,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Collector',
-    picture: '/pictures/Collector.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Collector.avif',
     appearance: 16800,
     state: "evil",
     conexusGames: ['Halloween: The Collector'],
@@ -368,7 +368,7 @@ const characters: Character[] = [
   // NE-YONS
   {
     name: 'The Dreamer',
-    picture: '/pictures/Dreamer.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Dreamer.avif',
     appearance: 15100,
     state: "neutral",
     potentialNFT: 1,
@@ -395,7 +395,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Judge',
-    picture: '/pictures/Judge.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Judge.avif',
     appearance: 15200,
     state: "neutral",
     potentialNFT: 2,
@@ -425,7 +425,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Inventor',
-    picture: '/pictures/Inventor.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Inventor.avif',
     appearance: 15300,
     state: "neutral",
     potentialNFT: 3,
@@ -455,7 +455,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Seer',
-    picture: '/pictures/Seer.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Seer.avif',
     appearance: 15500,
     state: "neutral",
     potentialNFT: 4,
@@ -485,7 +485,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Storm',
-    picture: '/pictures/Storm.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Storm.avif',
     appearance: 15700,
     state: "neutral",
     potentialNFT: 5,
@@ -515,7 +515,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Silence',
-    picture: '/pictures/Silence.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Silence.avif',
     appearance: 15900,
     state: "neutral",
     potentialNFT: 6,
@@ -545,7 +545,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Knowledge',
-    picture: '/pictures/Knowledge.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Knowledge.avif',
     appearance: 15950,
     state: "neutral",
     potentialNFT: 7,
@@ -575,7 +575,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Degen',
-    picture: '/pictures/Degen.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Degen.avif',
     appearance: 15900,
     state: "neutral",
     potentialNFT: 8,
@@ -605,7 +605,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Advocate',
-    picture: '/pictures/Advocate.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Advocate.avif',
     appearance: 15950,
     state: "neutral",
     potentialNFT: 9,
@@ -640,7 +640,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Resurrectionist',
-    picture: '/pictures/Resurrectionist.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Resurrectionist.avif',
     appearance: 16000,
     state: "neutral",
     potentialNFT: 10,
@@ -670,7 +670,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Enigma',
-    picture: '/pictures/Enigma.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Enigma.avif',
     appearance: 16950,
     state: "neutral",
     conexusGames: ['Ne-Yon'],
@@ -695,7 +695,7 @@ const characters: Character[] = [
   // AI EMPIRE
   {
     name: 'Senator Elara Voss',
-    picture: '/pictures/SenatorElaraVoss.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/SenatorElaraVoss.avif',
     appearance: 16850,
     lastSeen: 17043,
     state: "evil",
@@ -703,11 +703,11 @@ const characters: Character[] = [
     transformations: [
       {
         name: 'Senator Elara Voss',
-        picture: '/pictures/SenatorElaraVoss.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/SenatorElaraVoss.avif'
       },
       {
         name: 'Panoptic Elara',
-        picture: '/pictures/PanopticElara.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/PanopticElara.avif'
       }
     ],
     stories: [
@@ -876,17 +876,17 @@ const characters: Character[] = [
   },
   {
     name: 'Dr. Lyra Vox',
-    picture: '/pictures/DrLyraVox.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/DrLyraVox.avif',
     appearance: 16890,
     lastSeen: 17043,
     transformations: [
       {
         name: 'General Binath-VII',
-        picture: '/pictures/GeneralBinathVII.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/GeneralBinathVII.avif'
       },
       {
         name: 'Dr. Lyra Vox',
-        picture: '/pictures/DrLyraVox.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/DrLyraVox.avif'
       }
     ],
     state: "evil",
@@ -1189,7 +1189,7 @@ const characters: Character[] = [
   },
   {
     name: 'General Prometheus',
-    picture: '/pictures/GeneralPrometheus.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/GeneralPrometheus.avif',
     appearance: 16500,
     lastSeen: 17026,
     dead: true,
@@ -1488,7 +1488,7 @@ const characters: Character[] = [
   },
   {
     name: 'General Alarik',
-    picture: '/pictures/GeneralAlarik.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/GeneralAlarik.avif',
     appearance: 16800,
     lastSeen: 17043,
     state: "evil",
@@ -1742,7 +1742,7 @@ const characters: Character[] = [
   },
   {
     name: 'General Binath-VII',
-    picture: '/pictures/GeneralBinathVII.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/GeneralBinathVII.avif',
     appearance: 16750,
     lastSeen: 17026,
     dead: true,
@@ -1750,11 +1750,11 @@ const characters: Character[] = [
     transformations: [
       {
         name: 'General Binath-VII',
-        picture: '/pictures/GeneralBinathVII.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/GeneralBinathVII.avif'
       },
       {
         name: 'Dr. Lyra Vox',
-        picture: '/pictures/DrLyraVox.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/DrLyraVox.avif'
       }
     ],
     affiliation: 'AI Empire',
@@ -2019,7 +2019,7 @@ const characters: Character[] = [
   // INSURGENCY
   {
     name: 'The Engineer',
-    picture: '/pictures/Engineer.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Engineer.avif',
     appearance: 20,
     state: "good",
     conexusGames: ['Engineer'],
@@ -2036,22 +2036,22 @@ const characters: Character[] = [
   },
   {
     name: 'Kael',
-    picture: '/pictures/Kael.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Kael.avif',
     appearance: 16650,
     state: "neutral",
     connections: ['The Warden'],
     transformations: [
       {
         name: 'The Recruiter',
-        picture: '/pictures/Recruiter.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Recruiter.avif'
       },
       {
         name: 'Kael',
-        picture: '/pictures/Kael.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Kael.avif'
       },
       {
         name: 'The Source',
-        picture: '/pictures/Source.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Source.avif'
       }
     ],
     stories: [
@@ -2170,7 +2170,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Eyes',
-    picture: '/pictures/Eyes.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Eyes.avif',
     appearance: 16875,
     lastSeen: 16896,
     dead: true,
@@ -2180,11 +2180,11 @@ const characters: Character[] = [
     transformations: [
       {
         name: 'The Eyes',
-        picture: '/pictures/Eyes.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Eyes.avif'
       },
       {
         name: 'Ambassador Veron',
-        picture: '/pictures/AmbassadorVeron.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/AmbassadorVeron.avif'
       }
     ],
     stories: [
@@ -2309,7 +2309,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Oracle',
-    picture: '/pictures/Oracle.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Oracle.avif',
     appearance: 16900,
     state: "good",
     conexusGames: ['Oracle', 'Awaken the Clone'],
@@ -2317,23 +2317,23 @@ const characters: Character[] = [
     transformations: [
       {
         name: 'The Oracle',
-        picture: '/pictures/Oracle.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Oracle.avif'
       },
       {
         name: 'The Prisoner',
-        picture: '/pictures/Prisoner.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Prisoner.avif'
       },
       {
         name: 'The Jailer',
-        picture: '/pictures/Jailer.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Jailer.avif'
       },
       {
         name: 'The White Oracle',
-        picture: '/pictures/WhiteOracle.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/WhiteOracle.avif'
       },
       {
         name: 'The Clone Army',
-        picture: '/pictures/CloneArmy.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/CloneArmy.avif'
       }
     ],
     stories: [
@@ -2503,7 +2503,7 @@ const characters: Character[] = [
   },
   {
     name: 'Iron Lion',
-    picture: '/pictures/IronLion.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/IronLion.avif',
     appearance: 632,
     lastSeen: 17026,
     dead: true,
@@ -2687,7 +2687,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Hierophant',
-    picture: '/pictures/Hierophant.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Hierophant.avif',
     appearance: 16900,
     state: "good",
     connections: [],
@@ -2981,7 +2981,7 @@ const characters: Character[] = [
   },
   {
     name: 'Agent Zero',
-    picture: '/pictures/AgentZero.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/AgentZero.avif',
     appearance: 16690,
     lastSeen: 17038,
     state: "good",
@@ -3372,7 +3372,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Nomad',
-    picture: '/pictures/Nomad.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Nomad.avif',
     appearance: 17026,
     lastSeen: 17026,
     state: "good",
@@ -3616,7 +3616,7 @@ const characters: Character[] = [
   // NEUTRAL
   {
     name: 'Master of R’lyeh',
-    picture: '/pictures/MasterofRlyeh.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/MasterofRlyeh.avif',
     appearance: 16705,
     lastSeen: 17043,
     state: "evil",
@@ -3874,7 +3874,7 @@ const characters: Character[] = [
   },
   {
     name: 'Captain Arion',
-    picture: '/pictures/CaptainArion.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/CaptainArion.avif',
     appearance: 16890,
     lastSeen: 16890,
     state: "neutral",
@@ -3882,23 +3882,23 @@ const characters: Character[] = [
     transformations: [
       {
         name: 'The Seeker',
-        picture: '/pictures/Seeker.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Seeker.avif'
       },
       {
         name: 'The Student',
-        picture: '/pictures/Student.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Student.avif'
       },
       {
         name: 'Captain Arion',
-        picture: '/pictures/CaptainArion.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/CaptainArion.avif'
       },
       {
         name: 'The Detective',
-        picture: '/pictures/Detective.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Detective.avif'
       },
       {
         name: 'The Human',
-        picture: '/pictures/Human.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Human.avif'
       }
     ],
     stories: [
@@ -4125,7 +4125,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Council of Harmony',
-    picture: '/pictures/CouncilOfHarmony.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/CouncilOfHarmony.avif',
     appearance: 16900,
     state: "neutral",
     connections: ['The Oracle'],
@@ -4144,7 +4144,7 @@ const characters: Character[] = [
   // POTENTIALS
   {
     name: 'The Wolf',
-    picture: '/pictures/Potential292Wolf.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential292Wolf.avif',
     appearance: 100001,
     lastSeen: 128652,
     state: "evil",
@@ -4159,11 +4159,11 @@ const characters: Character[] = [
     transformations: [
       {
         name: 'Lycos',
-        picture: '/pictures/Potential292Lycos.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Potential292Lycos.avif'
       },
       {
         name: 'The Wolf',
-        picture: '/pictures/Potential292Wolf.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Potential292Wolf.avif'
       }
     ],
     affiliation: 'The Potentials (formerly); later corrupted by the Thought Virus',
@@ -4326,7 +4326,7 @@ const characters: Character[] = [
   },
   {
     name: 'Wraith Calder',
-    picture: '/pictures/Potential623WraithCalder.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential623WraithCalder.avif',
     appearance: 100001,
     lastSeen: 107652,
     state: "evil",
@@ -4565,7 +4565,7 @@ const characters: Character[] = [
   },
   {
     name: 'Akai Shi',
-    picture: '/pictures/Potential350AkaiShi.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential350AkaiShi.avif',
     appearance: 100001,
     lastSeen: 117046,
     state: "evil",
@@ -4581,11 +4581,11 @@ const characters: Character[] = [
     transformations: [
       {
         name: 'Akai Shi',
-        picture: '/pictures/Potential350AkaiShi.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Potential350AkaiShi.avif'
       },
       {
         name: 'Red Death',
-        picture: '/pictures/Potential350AkaiShi.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Potential350AkaiShi.avif'
       }
     ],
     affiliation: 'The Potentials; later becomes the Red Death',
@@ -4833,7 +4833,7 @@ const characters: Character[] = [
   },
   {
     name: 'Jericho',
-    picture: '/pictures/Potential426JerichoJones.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential426JerichoJones.avif',
     appearance: 100001,
     lastSeen: 100001,
     state: "evil",
@@ -5060,22 +5060,22 @@ const characters: Character[] = [
   },
   {
     name: 'The Host',
-    picture: '/pictures/Host.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Host.avif',
     appearance: 100001,
     state: "neutral",
     potentialNFT: 25,
     transformations: [
       {
         name: 'Potential 25',
-        picture: '/pictures/Potential25.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Potential25.avif'
       },
       {
         name: 'The Lost',
-        picture: '/pictures/Lost.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Lost.avif'
       },
       {
         name: 'The Host',
-        picture: '/pictures/Host.avif'
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Host.avif'
       },
     ],
     stories: [
@@ -5089,7 +5089,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 15',
-    picture: '/pictures/Potential15.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential15.avif',
     state: "neutral",
     potentialNFT: 15,
     stories: [
@@ -5103,7 +5103,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 22',
-    picture: '/pictures/Potential22.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential22.avif',
     state: "neutral",
     potentialNFT: 22,
     stories: [
@@ -5117,7 +5117,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 43',
-    picture: '/pictures/Potential43.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential43.avif',
     state: "neutral",
     potentialNFT: 43,
     stories: [
@@ -5131,7 +5131,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 47',
-    picture: '/pictures/Potential47.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential47.avif',
     state: "neutral",
     potentialNFT: 47,
     stories: [
@@ -5145,7 +5145,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 84',
-    picture: '/pictures/Potential84.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential84.avif',
     state: "neutral",
     potentialNFT: 84,
     stories: [
@@ -5159,7 +5159,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 89',
-    picture: '/pictures/Potential89.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential89.avif',
     state: "neutral",
     potentialNFT: 89,
     stories: [
@@ -5173,7 +5173,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 93',
-    picture: '/pictures/Potential93.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential93.avif',
     state: "neutral",
     potentialNFT: 93,
     stories: [
@@ -5187,7 +5187,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 107',
-    picture: '/pictures/Potential107.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential107.avif',
     state: "neutral",
     potentialNFT: 107,
     stories: [
@@ -5201,7 +5201,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 144',
-    picture: '/pictures/Potential144.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential144.avif',
     state: "neutral",
     potentialNFT: 144,
     stories: [
@@ -5215,7 +5215,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 152',
-    picture: '/pictures/Potential152.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential152.avif',
     state: "neutral",
     potentialNFT: 152,
     stories: [
@@ -5229,7 +5229,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 204',
-    picture: '/pictures/Potential204.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential204.avif',
     state: "neutral",
     potentialNFT: 204,
     stories: [
@@ -5243,7 +5243,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 206',
-    picture: '/pictures/Potential206.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential206.avif',
     state: "neutral",
     potentialNFT: 206,
     stories: [
@@ -5257,7 +5257,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 220',
-    picture: '/pictures/Potential220.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential220.avif',
     state: "neutral",
     potentialNFT: 220,
     stories: [
@@ -5271,7 +5271,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 233',
-    picture: '/pictures/Potential233.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential233.avif',
     state: "neutral",
     potentialNFT: 233,
     stories: [
@@ -5285,7 +5285,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 236',
-    picture: '/pictures/Potential236.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential236.avif',
     state: "neutral",
     potentialNFT: 236,
     stories: [
@@ -5299,7 +5299,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 261',
-    picture: '/pictures/Potential261.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential261.avif',
     state: "neutral",
     potentialNFT: 261,
     stories: [
@@ -5313,7 +5313,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 269',
-    picture: '/pictures/Potential269.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential269.avif',
     state: "neutral",
     potentialNFT: 269,
     stories: [
@@ -5327,7 +5327,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 305',
-    picture: '/pictures/Potential305.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential305.avif',
     state: "neutral",
     potentialNFT: 305,
     stories: [
@@ -5341,7 +5341,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 332',
-    picture: '/pictures/Potential332.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential332.avif',
     state: "neutral",
     potentialNFT: 332,
     stories: [
@@ -5355,7 +5355,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 341',
-    picture: '/pictures/Potential341.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential341.avif',
     state: "neutral",
     potentialNFT: 341,
     stories: [
@@ -5369,7 +5369,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 345',
-    picture: '/pictures/Potential345.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential345.avif',
     state: "neutral",
     potentialNFT: 345,
     stories: [
@@ -5383,7 +5383,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 391',
-    picture: '/pictures/Potential391.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential391.avif',
     state: "neutral",
     potentialNFT: 391,
     stories: [
@@ -5397,7 +5397,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 409',
-    picture: '/pictures/Potential409.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential409.avif',
     state: "neutral",
     potentialNFT: 409,
     stories: [
@@ -5411,7 +5411,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 414',
-    picture: '/pictures/Potential414.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential414.avif',
     state: "neutral",
     potentialNFT: 414,
     stories: [
@@ -5425,7 +5425,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 441',
-    picture: '/pictures/Potential441.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential441.avif',
     state: "neutral",
     potentialNFT: 441,
     stories: [
@@ -5439,7 +5439,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 447',
-    picture: '/pictures/Potential447.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential447.avif',
     state: "neutral",
     potentialNFT: 447,
     stories: [
@@ -5453,7 +5453,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 530',
-    picture: '/pictures/Potential530.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential530.avif',
     state: "neutral",
     potentialNFT: 530,
     stories: [
@@ -5467,7 +5467,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 533',
-    picture: '/pictures/Potential533.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential533.avif',
     state: "neutral",
     potentialNFT: 533,
     stories: [
@@ -5481,7 +5481,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 570',
-    picture: '/pictures/Potential570.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential570.avif',
     state: "neutral",
     potentialNFT: 570,
     stories: [
@@ -5495,7 +5495,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 588',
-    picture: '/pictures/Potential588.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential588.avif',
     state: "neutral",
     potentialNFT: 588,
     stories: [
@@ -5509,7 +5509,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 589',
-    picture: '/pictures/Potential589.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential589.avif',
     state: "neutral",
     potentialNFT: 589,
     stories: [
@@ -5523,7 +5523,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 591',
-    picture: '/pictures/Potential591.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential591.avif',
     state: "neutral",
     potentialNFT: 591,
     stories: [
@@ -5537,7 +5537,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 636',
-    picture: '/pictures/Potential636.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential636.avif',
     state: "neutral",
     potentialNFT: 636,
     stories: [
@@ -5551,7 +5551,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 642',
-    picture: '/pictures/Potential642.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential642.avif',
     state: "neutral",
     potentialNFT: 642,
     stories: [
@@ -5565,7 +5565,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 644',
-    picture: '/pictures/Potential644.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential644.avif',
     state: "neutral",
     potentialNFT: 644,
     stories: [
@@ -5579,7 +5579,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 690',
-    picture: '/pictures/Potential690.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential690.avif',
     state: "neutral",
     potentialNFT: 690,
     stories: [
@@ -5593,7 +5593,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 704',
-    picture: '/pictures/Potential704.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential704.avif',
     state: "neutral",
     potentialNFT: 704,
     stories: [
@@ -5607,7 +5607,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 713',
-    picture: '/pictures/Potential713.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential713.avif',
     state: "neutral",
     potentialNFT: 713,
     stories: [
@@ -5621,7 +5621,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 747',
-    picture: '/pictures/Potential747.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential747.avif',
     state: "neutral",
     potentialNFT: 747,
     stories: [
@@ -5635,7 +5635,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 777',
-    picture: '/pictures/Potential777.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential777.avif',
     state: "neutral",
     potentialNFT: 777,
     stories: [
@@ -5649,7 +5649,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 794',
-    picture: '/pictures/Potential794.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential794.avif',
     state: "neutral",
     potentialNFT: 794,
     stories: [
@@ -5663,7 +5663,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 804',
-    picture: '/pictures/Potential804.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential804.avif',
     state: "neutral",
     potentialNFT: 804,
     stories: [
@@ -5677,7 +5677,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 807',
-    picture: '/pictures/Potential807.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential807.avif',
     state: "neutral",
     potentialNFT: 807,
     stories: [
@@ -5691,7 +5691,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 823',
-    picture: '/pictures/Potential823.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential823.avif',
     state: "neutral",
     potentialNFT: 823,
     stories: [
@@ -5705,7 +5705,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 826',
-    picture: '/pictures/Potential826.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential826.avif',
     state: "neutral",
     potentialNFT: 826,
     stories: [
@@ -5719,7 +5719,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 827',
-    picture: '/pictures/Potential827.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential827.avif',
     state: "neutral",
     potentialNFT: 827,
     stories: [
@@ -5733,7 +5733,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 835',
-    picture: '/pictures/Potential835.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential835.avif',
     state: "neutral",
     potentialNFT: 835,
     stories: [
@@ -5747,7 +5747,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 909',
-    picture: '/pictures/Potential909.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential909.avif',
     state: "neutral",
     potentialNFT: 909,
     stories: [
@@ -5761,7 +5761,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 915',
-    picture: '/pictures/Potential915.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential915.avif',
     state: "neutral",
     potentialNFT: 915,
     stories: [
@@ -5775,7 +5775,7 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 947',
-    picture: '/pictures/Potential947.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential947.avif',
     state: "neutral",
     potentialNFT: 947,
     stories: [
@@ -5790,7 +5790,7 @@ const characters: Character[] = [
   {
     name: 'Potential 959',
     potentialNFT: 959,
-    picture: '/pictures/Potential959.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential959.avif',
     state: "neutral",
     stories: [
       {
@@ -5804,7 +5804,7 @@ const characters: Character[] = [
   {
     name: 'Potential 990',
     potentialNFT: 990,
-    picture: '/pictures/Potential990.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential990.avif',
     state: "neutral",
     stories: [
       {
@@ -5818,7 +5818,7 @@ const characters: Character[] = [
   // SEASONS
   {
     name: 'The Antiquarian',
-    picture: '/pictures/Antiquarian.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Antiquarian.avif',
     state: "neutral",
     stories: [
       {
@@ -5833,7 +5833,7 @@ const characters: Character[] = [
   },
   {
     name: 'Destiny',
-    picture: '/pictures/Destiny.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Destiny.avif',
     state: "neutral",
     stories: [
       {
@@ -5844,7 +5844,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Terminus Swarm',
-    picture: '/pictures/TerminusSwarm.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/TerminusSwarm.avif',
     state: "neutral",
     stories: [
       {
@@ -5855,7 +5855,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Arachnid',
-    picture: '/pictures/Arachnid.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Arachnid.avif',
     state: "evil",
     stories: [
       {

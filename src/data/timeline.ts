@@ -897,23 +897,23 @@ export const timeSystem: { note: string, months: string[] } = {
 export const places: Place[] = [
   {
     name: 'The Panopticon',
-    picture: '/pictures/Panopticon.avif'
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Panopticon.avif'
   },
   {
     name: 'Terminus',
-    picture: '/pictures/Terminus.avif'
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Terminus.avif'
   },
   {
     name: 'Thaloria',
-    picture: '/pictures/Thaloria.avif'
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Thaloria.avif'
   },
   {
     name: 'The Wyrmhole',
-    picture: '/pictures/Wyrmhole.avif'
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Wyrmhole.avif'
   },
   {
     name: 'The City',
-    picture: '/pictures/City.avif'
+    picture: 'https://media.degenerousdao.com/conexus-loredex/City.avif'
   }
 ]
 

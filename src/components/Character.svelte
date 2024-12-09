@@ -29,7 +29,7 @@
       document.querySelectorAll(".date")
     );
     allConnections.map((connection) => {
-      connection.style.opacity = "0.05";
+      connection.style.opacity = "0";
     });
     allDates.map((date) => {
       date.style.textShadow = "none";

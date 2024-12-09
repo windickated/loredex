@@ -248,13 +248,35 @@
       <section class="connections">
         {#each characters as character}
           {#if character.connections}
-            {#each character.connections as connection}
-              <Connection
-                name1={character.name}
-                name2={connection}
-                state={character.state}
-              />
-            {/each}
+            {#if character.connections}
+              {#if character.connections.allies}
+                {#each character.connections.allies as ally}
+                  <Connection
+                    name1={character.name}
+                    name2={ally}
+                    color="rgba(0, 185, 55, 0.75)"
+                  />
+                {/each}
+              {/if}
+              {#if character.connections.enemies}
+                {#each character.connections.enemies as enemy}
+                  <Connection
+                    name1={character.name}
+                    name2={enemy}
+                    color="rgba(255, 60, 64, 0.75)"
+                  />
+                {/each}
+              {/if}
+              {#if character.connections.neutral}
+                {#each character.connections.neutral as neutral}
+                  <Connection
+                    name1={character.name}
+                    name2={neutral}
+                    color="rgba(150, 150, 150, 0.75)"
+                  />
+                {/each}
+              {/if}
+            {/if}
           {/if}
         {/each}
       </section>

@@ -7,7 +7,11 @@ export interface Character {
   state: "good" | "evil" | "neutral"
   potentialNFT?: number
   conexusGames?: string[]
-  connections?: string[]
+  connections?: {
+    allies?: string[]
+    enemies?: string[]
+    neutral?: string[]
+  }
   transformations?: Transformation[]
   stories?: CharacterStories[]
   affiliation?: string

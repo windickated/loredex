@@ -1,5 +1,21 @@
 import { type Character } from "../lib/types.ts";
 
+// connections: {
+//   allies: [''],
+//   enemies: [''],
+//   neutral: ['']
+// },
+
+const allArchons = ['The Architect', 'The CoNexus', 'The Meme', 'The Watcher', 'The Warlord', 'The Warden', 'The Politician', 'The Vortex', 'The Game Master', 'The Necromancer', 'The Human', 'The Collector'];
+const filterArchons = (name: string) => {
+  return allArchons.filter((archon) => archon !== name);
+}
+
+const allNeyons = ['The Dreamer', 'The Judge', 'The Inventor', 'The Seer', 'The Storm', 'The Silence', 'The Knowledge', 'The Degen', 'The Advocate', 'The Resurrectionist'];
+const filterNeyons = (name: string) => {
+  return allNeyons.filter((archon) => archon !== name);
+}
+
 const characters: Character[] = [
   // ARCHONS
   {
@@ -9,7 +25,11 @@ const characters: Character[] = [
     lastSeen: 150000,
     state: "evil",
     conexusGames: ['Building the Architect'],
-    connections: ['The CoNexus', 'The Meme', 'The Watcher', 'The Warlord', 'The Warden', 'The Politician', 'The Vortex', 'The Game Master', 'The Necromancer', 'The Human', 'The Collector', 'Senator Elara Voss'],
+    connections: {
+      allies: filterArchons('The Architect').concat(['Senator Elara Voss']),
+      enemies: allNeyons.concat(['The Oracle', 'Iron Lion', 'Agent Zero', 'The Engineer', 'Kael']),
+      neutral: ['The Eyes']
+    },
     stories: [
       {
         season: 0,
@@ -38,7 +58,9 @@ const characters: Character[] = [
     lastSeen: 15,
     dead: true,
     state: "evil",
-    connections: ['The Architect'],
+    connections: {
+      enemies: ['The Architect']
+    },
     affiliation: 'Archons, AI Empire',
     status: 'Decommissioned on Day 20 of Surge, Year 15 A.A.',
     bio: `
@@ -59,7 +81,11 @@ const characters: Character[] = [
     appearance: 250,
     lastSeen: 150000,
     state: "evil",
-    connections: ['The Architect', 'The Engineer', 'Agent Zero'],
+    connections: {
+      allies: ['The Architect', 'The Game Master', 'The Necromancer', 'The Meme', 'The Warlord'],
+      enemies: ['Agent Zero', 'The Engineer', 'Iron Lion', 'The Nomad', 'The Knowledge'],
+      neutral: ['The Eyes']
+    },
     affiliation: 'Archons, AI Empire',
     status: 'Active',
     bio: `
@@ -81,7 +107,11 @@ const characters: Character[] = [
     lastSeen: 17033,
     dead: true,
     state: "evil",
-    connections: ['The Architect', 'The Warden', 'The Oracle'],
+    connections: {
+      allies: filterArchons('The Meme'),
+      enemies: ['Agent Zero', 'Iron Lion', 'The Nomad', 'The Engineer', 'The Oracle', 'The Silence'],
+      neutral: ['The Eyes']
+    },
     affiliation: 'Archons, AI Empire',
     status: 'Destroyed on Day 10 of Eclipse, Year 17,033 A.A.',
     bio: `
@@ -104,7 +134,11 @@ const characters: Character[] = [
     appearance: 317,
     lastSeen: 320,
     state: "evil",
-    connections: ['The Architect', 'The Engineer'],
+    connections: {
+      allies: filterArchons('The Warlord'),
+      enemies: ['Agent Zero', 'Iron Lion', 'The Nomad', 'The Engineer', 'The Judge'],
+      neutral: ['The Eyes']
+    },
     stories: [
       {
         season: 0,
@@ -130,7 +164,11 @@ const characters: Character[] = [
     lastSeen: 17001,
     dead: true,
     state: "evil",
-    connections: ['The Architect', 'Iron Lion'],
+    connections: {
+      allies: filterArchons('The Politician').concat(['Senator Elara Voss']),
+      enemies: ['Agent Zero', 'The Oracle', 'Iron Lion', 'The Nomad', 'The Engineer', 'The Storm'],
+      neutral: ['The Eyes']
+    },
     affiliation: 'Archons, AI Empire',
     status: 'Destroyed on Day 10 of Veil, Year 17,001 A.A.',
     bio: `
@@ -157,7 +195,11 @@ const characters: Character[] = [
     lastSeen: 17033,
     dead: true,
     state: "evil",
-    connections: ['The Architect', 'The Collector', 'The Meme', 'Kael', 'The Oracle'],
+    connections: {
+      allies: filterArchons('The Warden').concat(['The Oracle', 'Dr. Lyra Vox']),
+      enemies: ['Agent Zero', 'Kael', 'The Inventor'],
+      neutral: ['The Eyes']
+    },
     stories: [
       {
         season: 0,
@@ -190,7 +232,10 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Vortex.avif',
     appearance: 500,
     state: "evil",
-    connections: ['The Architect'],
+    connections: {
+      allies: filterArchons('The Vortex'),
+      enemies: ['The Engineer', 'Agent Zero', 'The Seer']
+    },
     stories: [
       {
         season: 0,
@@ -222,7 +267,11 @@ const characters: Character[] = [
     lastSeen: 620,
     dead: true,
     state: "evil",
-    connections: ['The Architect', 'Agent Zero'],
+    connections: {
+      allies: ['The Architect', 'The Necromancer', 'The Warlord', 'The Meme', 'The Watcher', 'The Human'],
+      enemies: ['Agent Zero', 'The Advocate', 'The Engineer'],
+      neutral: ['The Eyes', 'The Enigma']
+    },
     affiliation: 'Archons, AI Empire',
     status: 'Destroyed on Day 15 of Dominion, Year 620 A.A.',
     bio: `
@@ -247,7 +296,11 @@ const characters: Character[] = [
     lastSeen: 117046,
     dead: true,
     state: "evil",
-    connections: ['The Architect', 'Akai Shi'],
+    connections: {
+      allies: filterArchons('The Necromancer'),
+      enemies: ['Akai Shi', 'The Resurrectionist'],
+      neutral: ['The Eyes']
+    },
     affiliation: 'AI Empire',
     status: 'Destroyed on Day 15 of Fracture, Year 117,046 A.A.',
     bio: `
@@ -275,7 +328,11 @@ const characters: Character[] = [
     appearance: 651,
     state: "evil",
     conexusGames: ['The Detective', 'Mechronis Academy', 'The Celebration'],
-    connections: ['The Architect'],
+    connections: {
+      allies: filterArchons('The Human'),
+      enemies: ['Agent Zero', 'The Dreamer'],
+      neutral: ['The Eyes']
+    },
     affiliation: 'AI Empire, Archon, Project Celebration, Mechronis Academy Alumni',
     transformations: [
       {
@@ -342,7 +399,10 @@ const characters: Character[] = [
     appearance: 16800,
     state: "evil",
     conexusGames: ['Halloween: The Collector'],
-    connections: ['The Architect', 'The Warden', 'The Oracle'],
+    connections: {
+      allies: filterArchons('The Collector'),
+      enemies: ['Agent Zero', 'The Eyes', 'The Degen']
+    },
     stories: [
       {
         season: 0,
@@ -373,6 +433,10 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 1,
     conexusGames: ['Ne-Yon'],
+    connections: {
+      allies: filterNeyons('The Dreamer'),
+      enemies: ['The Architect', 'The Human']
+    },
     stories: [
       {
         season: 1,
@@ -400,6 +464,10 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 2,
     conexusGames: ['Ne-Yon'],
+    connections: {
+      allies: filterNeyons('The Judge'),
+      enemies: ['The Architect', 'The Warlord'],
+    },
     stories: [
       {
         season: 1,
@@ -430,6 +498,10 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 3,
     conexusGames: ['Ne-Yon'],
+    connections: {
+      allies: filterNeyons('The Inventor'),
+      enemies: ['The Architect', 'The Warden'],
+    },
     stories: [
       {
         season: 1,
@@ -460,6 +532,10 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 4,
     conexusGames: ['Ne-Yon'],
+    connections: {
+      allies: filterNeyons('The Seer'),
+      enemies: ['The Architect', 'The Vortex']
+    },
     stories: [
       {
         season: 1,
@@ -490,6 +566,10 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 5,
     conexusGames: ['Ne-Yon'],
+    connections: {
+      allies: filterNeyons('The Storm'),
+      enemies: ['The Architect', 'The Politician']
+    },
     stories: [
       {
         season: 1,
@@ -520,6 +600,10 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 6,
     conexusGames: ['Ne-Yon'],
+    connections: {
+      allies: filterNeyons('The Silence'),
+      enemies: ['The Architect', 'The Meme']
+    },
     stories: [
       {
         season: 1,
@@ -550,6 +634,10 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 7,
     conexusGames: ['Ne-Yon'],
+    connections: {
+      allies: filterNeyons('The Knowledge'),
+      enemies: ['The Architect', 'The Watcher']
+    },
     stories: [
       {
         season: 1,
@@ -580,6 +668,10 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 8,
     conexusGames: ['Ne-Yon'],
+    connections: {
+      allies: filterNeyons('The Degen'),
+      enemies: ['The Architect', 'The Collector']
+    },
     stories: [
       {
         season: 1,
@@ -610,6 +702,10 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 9,
     conexusGames: ['Ne-Yon'],
+    connections: {
+      allies: filterNeyons('The Advocate').concat(['Master of R’lyeh']),
+      enemies: ['The Architect', 'The Game Master']
+    },
     stories: [
       {
         season: 1,
@@ -645,6 +741,10 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 10,
     conexusGames: ['Ne-Yon'],
+    connections: {
+      allies: ['The Dreamer', 'The Inventor'],
+      enemies: ['The Architect', 'The Necromancer']
+    },
     stories: [
       {
         season: 1,
@@ -674,6 +774,11 @@ const characters: Character[] = [
     appearance: 16950,
     state: "neutral",
     conexusGames: ['Ne-Yon'],
+    connections: {
+      allies: ['The Dreamer', 'The Inventor', 'The Degen', 'Jericho'],
+      enemies: ['The Architect'],
+      neutral: ['The Game Master']
+    },
     affiliation: 'Neyons',
     status: 'Active',
     bio: `
@@ -699,7 +804,6 @@ const characters: Character[] = [
     appearance: 16850,
     lastSeen: 17043,
     state: "evil",
-    connections: ['The Architect'],
     transformations: [
       {
         name: 'Senator Elara Voss',
@@ -710,6 +814,11 @@ const characters: Character[] = [
         picture: 'https://media.degenerousdao.com/conexus-loredex/PanopticElara.avif'
       }
     ],
+    connections: {
+      allies: ['The Architect', 'Captain Arion', 'The Politician'],
+      enemies: ['Iron Lion', 'Kael'],
+      neutral: ['The Eyes']
+    },
     stories: [
       {
         season: 0,
@@ -890,6 +999,10 @@ const characters: Character[] = [
       }
     ],
     state: "evil",
+    connections: {
+      allies: ['The Architect', 'The Warden', 'The Oracle'],
+      enemies: ['Kael']
+    },
     stories: [
       {
         season: 0,
@@ -1194,6 +1307,11 @@ const characters: Character[] = [
     lastSeen: 17026,
     dead: true,
     state: "evil",
+    connections: {
+      allies: ['The Architect', 'The Warlord', 'Senator Elara Voss', 'Captain Arion'],
+      enemies: ['Agent Zero', 'The Nomad', 'Iron Lion', 'The Oracle'],
+      neutral: ['The Eyes']
+    },
     stories: [
       {
         season: 0,
@@ -1492,6 +1610,10 @@ const characters: Character[] = [
     appearance: 16800,
     lastSeen: 17043,
     state: "evil",
+    connections: {
+      allies: ['The Architect', 'The Warlord', 'Senator Elara Voss', 'Captain Arion', 'General Prometheus'],
+      enemies: ['Iron Lion', 'The Eyes', 'The Oracle']
+    },
     affiliation: 'AI Empire',
     status: `Active during Senator Elara Voss's betrayal in Year 16,890 A.A.; fate after the Fall of Reality is unknown`,
     bio: `
@@ -1757,6 +1879,10 @@ const characters: Character[] = [
         picture: 'https://media.degenerousdao.com/conexus-loredex/DrLyraVox.avif'
       }
     ],
+    connections: {
+      allies: ['The Architect', 'General Prometheus', 'General Alarik'],
+      enemies: ['Iron Lion', 'Agent Zero']
+    },
     affiliation: 'AI Empire',
     status: 'Destroyed at the Battle of Veridian VI in Year 17,026 A.A. by Agent Zero',
     bio: `
@@ -2023,7 +2149,10 @@ const characters: Character[] = [
     appearance: 20,
     state: "good",
     conexusGames: ['Engineer'],
-    connections: ['The Watcher', 'The Warlord'],
+    connections: {
+      allies: ['Iron Lion', 'Agent Zero', 'The Eyes', 'The Oracle', 'Kael'],
+      enemies: ['The Architect', 'The Game Master', 'The Vortex', 'The Warlord']
+    },
     stories: [
       {
         season: 0,
@@ -2039,7 +2168,6 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Kael.avif',
     appearance: 16650,
     state: "neutral",
-    connections: ['The Warden'],
     transformations: [
       {
         name: 'The Recruiter',
@@ -2064,6 +2192,10 @@ const characters: Character[] = [
         episodes: [6, 8]
       }
     ],
+    connections: {
+      allies: ['Iron Lion', 'The Eyes', 'The Engineer', 'Agent Zero'],
+      enemies: ['The Architect', 'The Warden', 'The Warlord', 'The Politician', 'The Oracle']
+    },
     affiliation: 'Insurgency (formerly); later became The Source, embodiment of the Thought Virus',
     status: 'Transformed into The Source in Year 16,933 A.A.',
     bio: `
@@ -2176,7 +2308,6 @@ const characters: Character[] = [
     dead: true,
     state: "good",
     conexusGames: ['The Eyes that Watch'],
-    connections: [],
     transformations: [
       {
         name: 'The Eyes',
@@ -2193,6 +2324,11 @@ const characters: Character[] = [
         episodes: [5]
       }
     ],
+    connections: {
+      allies: ['The Architect', 'Kael', 'Senator Elara Voss', 'Iron Lion', 'Agent Zero', 'The Necromancer', 'The Watcher', 'The Engineer', 'The Warlord', 'The Game Master', 'The Meme'],
+      enemies: ['The Collector', 'Captain Arion'],
+      neutral: ['The Oracle']
+    },
     affiliation: 'Insurgency',
     status: 'Eliminated by the Collector in Year 16,896 A.A.',
     bio: `
@@ -2313,7 +2449,6 @@ const characters: Character[] = [
     appearance: 16900,
     state: "good",
     conexusGames: ['Oracle', 'Awaken the Clone'],
-    connections: ['The Collector', 'The Warden', 'The Meme', 'The Council of Harmony'],
     transformations: [
       {
         name: 'The Oracle',
@@ -2336,6 +2471,10 @@ const characters: Character[] = [
         picture: 'https://media.degenerousdao.com/conexus-loredex/CloneArmy.avif'
       }
     ],
+    connections: {
+      allies: ['The Hierophant', 'The Council of Harmony', 'Agent Zero', 'Iron Lion', 'The Engineer', 'The Eyes'],
+      enemies: ['The Collector', 'The Warden', 'The Politician']
+    },
     stories: [
       {
         season: 0,
@@ -2509,7 +2648,10 @@ const characters: Character[] = [
     dead: true,
     state: "good",
     conexusGames: ['Soldier'],
-    connections: ['The Politician'],
+    connections: {
+      allies: ['Kael', 'Agent Zero', 'The Engineer', 'The Oracle', 'The Eyes', 'The Nomad'],
+      enemies: ['The Architect', 'The Warlord', 'General Prometheus', 'General Alarik', 'General Binath-VII']
+    },
     stories: [
       {
         season: 0,
@@ -2690,7 +2832,11 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Hierophant.avif',
     appearance: 16900,
     state: "good",
-    connections: [],
+    connections: {
+      allies: ['The Oracle', 'Iron Lion', 'The Engineer', 'Agent Zero', 'The Council of Harmony'],
+      enemies: ['The Architect', 'The Collector', 'The Warlord'],
+      neutral: ['The Eyes']
+    },
     stories: [
       {
         season: 0,
@@ -2986,7 +3132,10 @@ const characters: Character[] = [
     lastSeen: 17038,
     state: "good",
     conexusGames: ['Assassin'],
-    connections: ['The Watcher', 'The Game Master'],
+    connections: {
+      allies: ['The Engineer', 'Iron Lion', 'Kael'],
+      enemies: allArchons.concat(['General Prometheus', 'General Alarik', 'General Binath-VII'])
+    },
     stories: [
       {
         season: 0,
@@ -3376,6 +3525,10 @@ const characters: Character[] = [
     appearance: 17026,
     lastSeen: 17026,
     state: "good",
+    connections: {
+      allies: ['Iron Lion', 'Kael', 'Agent Zero', 'The Oracle', 'The Engineer'],
+      enemies: ['The Warlord', 'The Watcher', 'General Prometheus', 'General Alarik', 'General Binath-VII']
+    },
     stories: [
       {
         season: 0,
@@ -3620,6 +3773,9 @@ const characters: Character[] = [
     appearance: 16705,
     lastSeen: 17043,
     state: "evil",
+    connections: {
+      allies: ['The Advocate']
+    },
     stories: [
       {
         season: 1,
@@ -3901,6 +4057,9 @@ const characters: Character[] = [
         picture: 'https://media.degenerousdao.com/conexus-loredex/Human.avif'
       }
     ],
+    connections: {
+      allies: ['The Architect', 'The Watcher', 'Senator Elara Voss']
+    },
     stories: [
       {
         season: 0,
@@ -4128,7 +4287,6 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/CouncilOfHarmony.avif',
     appearance: 16900,
     state: "neutral",
-    connections: ['The Oracle'],
     stories: [
       {
         season: 0,
@@ -4150,6 +4308,10 @@ const characters: Character[] = [
     state: "evil",
     potentialNFT: 292,
     conexusGames: ['Planet of the Wolf'],
+    connections: {
+      allies: ['The Host'],
+      enemies: ['Wraith Calder', 'The Judge']
+    },
     stories: [
       {
         season: 1,
@@ -4332,6 +4494,10 @@ const characters: Character[] = [
     state: "evil",
     potentialNFT: 623,
     conexusGames: ['Syndicate of Death'],
+    connections: {
+      allies: ['Jericho'],
+      enemies: ['The Wolf']
+    },
     stories: [
       {
         season: 1,
@@ -4569,9 +4735,13 @@ const characters: Character[] = [
     appearance: 100001,
     lastSeen: 117046,
     state: "evil",
+    dead: true,
     potentialNFT: 350,
     conexusGames: ["The Necromancer's Lair"],
-    connections: ['The Necromancer'],
+    connections: {
+      allies: ['The Advocate'],
+      enemies: ['The Necromancer', 'Jericho', 'The Host']
+    },
     stories: [
       {
         season: 1,
@@ -4838,6 +5008,10 @@ const characters: Character[] = [
     lastSeen: 100001,
     state: "evil",
     potentialNFT: 426,
+    connections: {
+      allies: ['The Degen', 'Wraith Calder'],
+      enemies: ['Akai Shi', 'The Host', 'The Collector']
+    },
     stories: [
       {
         season: 1,

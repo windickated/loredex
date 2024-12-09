@@ -1,12 +1,9 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import setColor from "../utils/color.ts";
 
   export let name1: string;
   export let name2: string;
-  export let state: string;
-
-  const color: string = setColor(state);
+  export let color: string = "gray";
 
   let character1: HTMLElement | null = null;
   let character2: HTMLElement | null = null;
@@ -70,7 +67,7 @@
   div {
     position: absolute;
     height: 0.15rem;
-    opacity: 0.05;
+    opacity: 0;
     transition: all 0.3s ease-in-out;
   }
 </style>

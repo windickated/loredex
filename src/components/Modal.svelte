@@ -286,7 +286,7 @@
                     : 'none'}"
                 >
                   {#if $selectedCharacter.connections}
-                    {#each $selectedCharacter.connections as connection}
+                    <!-- {#each $selectedCharacter.connections as connection}
                       <div on:click={() => handleSelectCharacter(connection)}>
                         <img
                           src={getImage(connection)}
@@ -299,7 +299,7 @@
                           {connection}
                         </p>
                       </div>
-                    {/each}
+                    {/each} -->
                   {:else}
                     <h2
                       class="empty-note"

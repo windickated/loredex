@@ -19,7 +19,6 @@
   const color = setColor(state);
 
   function hideConnections() {
-    if (!appearance) return;
     const allConnections: HTMLDivElement[] = Array.from(
       document.querySelectorAll(".connection")
     );
@@ -41,27 +40,24 @@
       plot.style.backgroundImage = "none";
     });
 
+    const storyTitles: HTMLParagraphElement[] = Array.from(
+      document.querySelectorAll(".episode-title")
+    );
+    Array.from(storyTitles).map((date) => {
+      date.style.textShadow = "none";
+    });
+
+    const storyPlots: HTMLDivElement[] = Array.from(
+      document.querySelectorAll(".episode-plot")
+    );
+    storyPlots.map((plot) => {
+      plot.style.backgroundImage = "none";
+    });
+
     if (dead) deadMark!.style.opacity = "0";
-
-    if (stories) {
-      const storyTitles: HTMLParagraphElement[] = Array.from(
-        document.querySelectorAll(".episode-title")
-      );
-      Array.from(storyTitles).map((date) => {
-        date.style.textShadow = "none";
-      });
-
-      const storyPlots: HTMLDivElement[] = Array.from(
-        document.querySelectorAll(".episode-plot")
-      );
-      storyPlots.map((plot) => {
-        plot.style.backgroundImage = "none";
-      });
-    }
   }
 
   function showActiveConnections() {
-    if (!appearance) return;
     if (document.activeElement?.tagName === "INPUT") return;
     const allConnections: HTMLDivElement[] = Array.from(
       document.querySelectorAll(".connection")
@@ -106,7 +102,7 @@
         plot.style.backgroundImage =
           "linear-gradient(to bottom, rgba(51, 226, 230, 0), rgba(51, 226, 230, 0.1), rgba(51, 226, 230, 0))";
       });
-    } else {
+    } else if (appearance) {
       //single date title glow
       const activeDate = allDates.find(
         (date) => appearance < Number(date.classList[2])

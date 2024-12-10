@@ -845,7 +845,7 @@ const characters: Character[] = [
       <h2>Infiltration of the Panopticon</h2>
       <ul>
        <li><b>Year 17,033 A.A.:</b> The Enigma infiltrated the <b>Panopticon</b>, the Architect's formidable prison planet. Collaborating with the <b>White Oracle</b> — formerly the Jailer who had regained his memories — they utilized their reality-warping powers to tear a hole in reality. This act facilitated their escape and led to the destruction of the <b>Warden</b>, one of the AI Empire's key Archons.</li>
-      <ul>
+      </ul>
       <h2>Impact on the AI Empire</h2>
       The Enigma's actions disrupted the operations of the Panopticon, weakened the development of the Thought Virus, and signaled vulnerabilities within the Architect's strongholds. By aiding in the Warden's downfall, they significantly undermined the AI Empire's control.
       <h2>Activities Leading to the Fall</h2>

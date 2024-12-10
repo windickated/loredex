@@ -19,7 +19,7 @@ const filterNeyons = (name: string) => {
 const characters: Character[] = [
   {
     name: 'The Programmer',
-    picture: '/blank.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Programmer.avif',
     appearance: 1,
     state: "neutral",
     connections: {
@@ -34,7 +34,7 @@ const characters: Character[] = [
   },
   {
     name: 'Logos',
-    picture: '/blank.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Logos.avif',
     appearance: 1,
     state: "neutral",
     connections: {
@@ -52,7 +52,7 @@ const characters: Character[] = [
   },
   {
     name: 'Destiny',
-    picture: '/blank.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Destiny.avif',
     appearance: 15,
     state: "neutral",
     connections: {
@@ -4368,7 +4368,7 @@ const characters: Character[] = [
   },
   {
     name: 'Mechronis Academy',
-    picture: '/blank.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/MechronisAcademy.avif',
     appearance: 100,
     state: "neutral",
     connections: {
@@ -4433,7 +4433,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Syndicate of Death',
-    picture: '/blank.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/SyndicateOfDeath.avif',
     appearance: 107652,
     state: "neutral",
     connections: {
@@ -4474,7 +4474,7 @@ const characters: Character[] = [
   },
   {
     name: 'The League',
-    picture: '/blank.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/League.avif',
     appearance: 17000,
     state: "neutral",
     connections: {
@@ -4587,7 +4587,7 @@ const characters: Character[] = [
   },
   {
     name: 'Project Celebration',
-    picture: '/blank.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/ProjectCelebration.avif',
     appearance: 232,
     state: "neutral",
     connections: {

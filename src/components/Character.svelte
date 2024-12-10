@@ -50,6 +50,13 @@
       Array.from(storyTitles).map((date) => {
         date.style.textShadow = "none";
       });
+
+      const storyPlots: HTMLDivElement[] = Array.from(
+        document.querySelectorAll(".episode-plot")
+      );
+      storyPlots.map((plot) => {
+        plot.style.backgroundImage = "none";
+      });
     }
   }
 
@@ -66,7 +73,6 @@
       connection.style.opacity = "0.5";
     });
 
-    // shadow & date titles glow
     const allDates: HTMLParagraphElement[] = Array.from(
       document.querySelectorAll(".date")
     );
@@ -74,6 +80,7 @@
       document.querySelectorAll(".date-plot")
     );
     if (lastSeen) {
+      // date titles glow
       const activeDates = allDates.filter((date) => {
         if (
           appearance > Number(date.classList[2]) ||
@@ -86,6 +93,7 @@
         date.style.textShadow = "0 0 0.1rem rgb(51, 226, 230)";
       });
 
+      // time sections glow
       const activePlots = allPlots.filter((plot) => {
         if (
           appearance > Number(plot.classList[3]) ||
@@ -99,11 +107,13 @@
           "linear-gradient(to bottom, rgba(51, 226, 230, 0), rgba(51, 226, 230, 0.1), rgba(51, 226, 230, 0))";
       });
     } else {
+      //single date title glow
       const activeDate = allDates.find(
         (date) => appearance < Number(date.classList[2])
       );
       activeDate!.style.textShadow = "0 0 0.1rem rgb(51, 226, 230)";
 
+      //single time section glow
       const activePlot = allPlots.find(
         (plot) => appearance < Number(plot.classList[3])
       );
@@ -112,22 +122,44 @@
     }
     if (dead) deadMark!.style.opacity = "0.9";
 
-    // episode titles glow
     if (stories) {
+      const characterStories = getCharacterStories(name);
+
+      // episode titles glow
       const storyTitles: HTMLParagraphElement[] = Array.from(
         document.querySelectorAll(".episode-title")
       );
-      const characterStories = getCharacterStories(name);
       const activeStoryTitles = Array.from(storyTitles).filter((title) => {
         let match: boolean = false;
-        characterStories!.map((story) => {
+        characterStories!.filter((story) => {
           if (title.className.match(story)) match = true;
         });
         if (match) return title;
+        return null;
       });
       activeStoryTitles.map((title) => {
         title.style.textShadow = "0 0 0.1rem rgb(51, 226, 230)";
       });
+
+      // episode sections glow
+      const storyPlots: HTMLDivElement[] = Array.from(
+        document.querySelectorAll(".episode-plot")
+      );
+      if (storyPlots.length > 0) {
+        const activeStoryPlots = storyPlots.map((plot) => {
+          let match: boolean = false;
+          characterStories!.filter((story) => {
+            if (plot.className.match(story)) match = true;
+          });
+          if (match) return plot;
+          return null;
+        });
+        activeStoryPlots.map((plot) => {
+          if (plot)
+            plot.style.backgroundImage =
+              "linear-gradient(to bottom, rgba(51, 226, 230, 0), rgba(51, 226, 230, 0.1), rgba(51, 226, 230, 0))";
+        });
+      }
     }
   }
 

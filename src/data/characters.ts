@@ -1043,16 +1043,6 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/DrLyraVox.avif',
     appearance: 16890,
     lastSeen: 17043,
-    transformations: [
-      {
-        name: 'General Binath-VII',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/GeneralBinathVII.avif'
-      },
-      {
-        name: 'Dr. Lyra Vox',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/DrLyraVox.avif'
-      }
-    ],
     state: "evil",
     connections: {
       allies: ['The Architect', 'The Warden', 'The Oracle'],
@@ -1924,16 +1914,6 @@ const characters: Character[] = [
     lastSeen: 17026,
     dead: true,
     state: "evil",
-    transformations: [
-      {
-        name: 'General Binath-VII',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/GeneralBinathVII.avif'
-      },
-      {
-        name: 'Dr. Lyra Vox',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/DrLyraVox.avif'
-      }
-    ],
     connections: {
       allies: ['The Architect', 'General Prometheus', 'General Alarik'],
       enemies: ['Iron Lion', 'Agent Zero']
@@ -2201,7 +2181,7 @@ const characters: Character[] = [
   {
     name: 'The Engineer',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Engineer.avif',
-    appearance: 20,
+    appearance: 542,
     state: "good",
     conexusGames: ['Engineer'],
     connections: {
@@ -5056,16 +5036,6 @@ const characters: Character[] = [
       {
         season: 1,
         episodes: [6, 8, 10, 11]
-      }
-    ],
-    transformations: [
-      {
-        name: 'Akai Shi',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Potential350AkaiShi.avif'
-      },
-      {
-        name: 'Red Death',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Potential350AkaiShi.avif'
       }
     ],
     affiliation: 'The Potentials; later becomes the Red Death',

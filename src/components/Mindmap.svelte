@@ -200,12 +200,7 @@
       {#each timeline as { date, note, action, emptySection, expandable }}
         <div
           class="plot date-plot {date[0]} {date[1]}"
-          style="
-            padding-bottom: {expandable !== undefined ? '7.5rem' : ''};
-            background-image: {date[1] - date[0] < 99
-            ? 'linear-gradient(to bottom, rgba(51, 226, 230, 0.05), rgba(51, 226, 230, 0))'
-            : ''};
-          "
+          style="padding-bottom: {expandable !== undefined ? '7.5rem' : ''}"
         >
           <div class="date {date[0]} {date[1]}">
             {#if !emptySection}

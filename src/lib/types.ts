@@ -38,11 +38,11 @@ export interface Season {
 }
 
 interface Story {
-  episode: number
+  episode?: number
   title: string
-  link: string
+  link?: string
   date?: number
-  bio: string
+  bio?: string
   description?: string
 }
 
@@ -51,7 +51,7 @@ export interface TimeSection {
   note?: string
   action?: string
   emptySection?: boolean
-  expandable?: number 
+  expandable?: number
 }
 
 export interface Place {

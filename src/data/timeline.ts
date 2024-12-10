@@ -8,6 +8,8 @@ export const timeline: TimeSection[] = [
   },
   {
     date: [5, 99],
+    action: 'CoNexus is created',
+    expandable: 99
   },
   {
     date: [100, 199],
@@ -128,6 +130,78 @@ export const timeline: TimeSection[] = [
 ]
 
 export const stories: Season[] = [
+  {
+    season: 99,
+    epoch: 'CoNexus',
+    episodes: [
+      {
+        title: 'Spy',
+      },
+      {
+        title: 'Oracle',
+      },
+      {
+        title: 'Soldier',
+      },
+      {
+        title: 'Engineer',
+      },
+      {
+        title: 'Assassin',
+      },
+      {
+        title: 'Ne-Yon',
+      },
+      {
+        title: 'Terminus Swarm',
+      },
+      {
+        title: 'Awaken the Clone',
+      },
+      {
+        title: 'The Host',
+      },
+      {
+        title: 'The Syndicate of Death',
+      },
+      {
+        title: 'The Necromancer’s Lair',
+      },
+      {
+        title: 'The Planet of the Wolf',
+      },
+      {
+        title: 'The Escape',
+      },
+      {
+        title: 'The Arena',
+      },
+      {
+        title: 'Inception Ark',
+      },
+      {
+        title: 'The Collector: Sanctuary',
+      },
+      {
+        title: 'The Detective',
+      },
+      {
+        title: 'The Celebration',
+      },
+      {
+        title: 'Building the Architect',
+      },
+      {
+        title: 'The Harvest',
+      },
+      {
+        title: 'The Ninth: Blood and Shadows',
+      },
+      {
+        title: 'The Eyes that Watch',
+      }
+    ]
+  },
   {
     season: 0,
     title: 'The Fall of Reality',

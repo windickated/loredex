@@ -1,7 +1,7 @@
 import { writable } from "svelte/store";
 import { stories } from "../data/timeline.ts";
 
-export const activeSeasonNr = writable<number>(0);
+export const activeSeasonNr = writable<number>(-1);
 
 export const setActiveSeason = (event: any) => {
   const target = event.target as HTMLDivElement;
@@ -11,7 +11,8 @@ export const setActiveSeason = (event: any) => {
       : (target.parentElement as HTMLDivElement);
   let sznNr: number = 0;
   activeSeasonNr.subscribe((number) => sznNr = number);
-  if (sznNr == Number(arrowContainer.dataset.season)) {
+  console.log(sznNr)
+  if (sznNr.toString() == arrowContainer.dataset.season) {
     activeSeasonNr.set(-1);
     return;
   }
@@ -32,12 +33,16 @@ export const setSeasonPadding = (season: number) => {
       sectionOffset = 35;
       break;
     }
+    case 99: {
+      sectionOffset = 44;
+      break;
+    }
   }
   if (episodesAmount) padding = (sectionOffset - episodesAmount * 2) * 10 - 5;
   return padding;
 };
 
-export const getSeasonName = (season: number, epochOnly: boolean = false) => {
+export const getSeasonName = (season: number | 'conexus', epochOnly: boolean = false) => {
   const epoch = stories.find((section) => section.season === season)?.epoch;
   if (epochOnly) return epoch;
   else {

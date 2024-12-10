@@ -292,15 +292,17 @@
                       </h2>
                       <div class="characters-section">
                         {#each $selectedCharacter.connections.allies as ally}
-                          <div on:click={() => handleSelectCharacter(ally)}>
+                          <div
+                            on:click={() => handleSelectCharacter(ally)}
+                            style="border-color: {getColor(ally)}"
+                          >
                             <img
                               src={getImage(ally)}
                               alt={ally}
                               width="1024"
                               height="1024"
-                              style="border-color: {getColor(ally)}"
                             />
-                            <p style="color: {getColor(ally)}">
+                            <p>
                               {ally}
                             </p>
                           </div>
@@ -313,15 +315,17 @@
                       </h2>
                       <div class="characters-section">
                         {#each $selectedCharacter.connections.enemies as enemy}
-                          <div on:click={() => handleSelectCharacter(enemy)}>
+                          <div
+                            on:click={() => handleSelectCharacter(enemy)}
+                            style="border-color: {getColor(enemy)}"
+                          >
                             <img
                               src={getImage(enemy)}
                               alt={enemy}
                               width="1024"
                               height="1024"
-                              style="border-color: {getColor(enemy)}"
                             />
-                            <p style="color: {getColor(enemy)}">
+                            <p>
                               {enemy}
                             </p>
                           </div>
@@ -334,15 +338,17 @@
                       </h2>
                       <div class="characters-section">
                         {#each $selectedCharacter.connections.neutral as neutral}
-                          <div on:click={() => handleSelectCharacter(neutral)}>
+                          <div
+                            on:click={() => handleSelectCharacter(neutral)}
+                            style="border-color: {getColor(neutral)}"
+                          >
                             <img
                               src={getImage(neutral)}
                               alt={neutral}
                               width="1024"
                               height="1024"
-                              style="border-color: {getColor(neutral)}"
                             />
-                            <p style="color: {getColor(neutral)}">
+                            <p>
                               {neutral}
                             </p>
                           </div>
@@ -803,18 +809,31 @@
                 flex-flow: column nowrap;
                 align-items: center;
                 width: 15vw;
+                height: auto;
+                padding: 0.5vw;
+                gap: 0.5vw;
+                cursor: pointer;
+                transition: all 0.15s ease-in-out;
+                background-color: rgba(36, 65, 189, 0.9);
+                border: 0.2vw solid gray;
+                border-radius: 1vw;
+                outline: none;
+                font-size: 1.5vw;
+                line-height: 2.5vw;
+                text-align: center;
 
                 img {
-                  width: 15vw;
+                  width: 100%;
                   height: inherit;
-                  border: 0.1vw solid rgba(51, 226, 230, 0.5);
-                  border-radius: 7.5vw;
-                  margin-bottom: 0.5vw;
+                  border-radius: 0.5vw;
+                }
 
-                  &:hover {
-                    transform: scale(1.5);
-                    filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
-                  }
+                &:hover,
+                &:active {
+                  background-color: rgb(45, 90, 216);
+                  color: rgba(51, 226, 230, 0.9);
+                  transform: scale(1.05);
+                  filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
                 }
               }
             }
@@ -1098,15 +1117,19 @@
                 }
 
                 .characters-section {
-                  gap: 0.5em;
+                  gap: 1em;
 
                   div {
                     width: 40vw;
+                    padding: 0.25em;
+                    gap: 0.25em;
+                    border-radius: 0.5em;
+                    font-size: 1em;
+                    line-height: 1.5em;
 
                     img {
-                      width: 40vw;
-                      border-radius: 20vw;
-                      margin-bottom: 0.25em;
+                      width: 100%;
+                      border-radius: 0.25em;
                     }
                   }
                 }

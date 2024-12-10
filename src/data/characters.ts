@@ -6,6 +6,8 @@ import { type Character } from "../lib/types.ts";
 //   neutral: ['']
 // },
 
+// conexusGames: [''],
+
 const allArchons = ['The Architect', 'The CoNexus', 'The Meme', 'The Watcher', 'The Warlord', 'The Warden', 'The Politician', 'The Vortex', 'The Game Master', 'The Necromancer', 'The Human', 'The Collector'];
 const filterArchons = (name: string) => {
   return allArchons.filter((archon) => archon !== name);
@@ -22,6 +24,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Programmer.avif',
     appearance: 1,
     state: "neutral",
+    conexusGames: ['Building the Architect'],
     connections: {
       allies: ['Logos'],
       enemies: ['The Architect']
@@ -76,7 +79,7 @@ const characters: Character[] = [
     appearance: 1,
     lastSeen: 150000,
     state: "evil",
-    conexusGames: ['Building the Architect'],
+    conexusGames: ['Spy', 'Oracle', 'The Necromancer’s Lair', 'Inception Ark', 'The Celebration', 'Mechronis Academy', 'Building the Architect', 'The Eyes that Watch'],
     connections: {
       allies: filterArchons('The Architect').concat(['Senator Elara Voss']),
       enemies: allNeyons.concat(['The Oracle', 'Iron Lion', 'Agent Zero', 'The Engineer', 'Kael']),
@@ -133,6 +136,7 @@ const characters: Character[] = [
     appearance: 250,
     lastSeen: 150000,
     state: "evil",
+    conexusGames: ['Spy', 'The Celebration', 'Mechronis Academy', 'The Eyes that Watch'],
     connections: {
       allies: ['The Architect', 'The Game Master', 'The Necromancer', 'The Meme', 'The Warlord'],
       enemies: ['Agent Zero', 'The Engineer', 'Iron Lion', 'The Nomad', 'The Knowledge'],
@@ -159,6 +163,7 @@ const characters: Character[] = [
     lastSeen: 17033,
     dead: true,
     state: "evil",
+    conexusGames: ['The Celebration'],
     connections: {
       allies: filterArchons('The Meme'),
       enemies: ['Agent Zero', 'Iron Lion', 'The Nomad', 'The Engineer', 'The Oracle', 'The Silence'],
@@ -186,6 +191,7 @@ const characters: Character[] = [
     appearance: 317,
     lastSeen: 320,
     state: "evil",
+    conexusGames: ['The Escape', 'The Arena', 'The Celebration', 'Mechronis Academy'],
     connections: {
       allies: filterArchons('The Warlord'),
       enemies: ['Agent Zero', 'Iron Lion', 'The Nomad', 'The Engineer', 'The Judge'],
@@ -216,6 +222,7 @@ const characters: Character[] = [
     lastSeen: 17001,
     dead: true,
     state: "evil",
+    conexusGames: ['The Celebration'],
     connections: {
       allies: filterArchons('The Politician').concat(['Senator Elara Voss']),
       enemies: ['Agent Zero', 'The Oracle', 'Iron Lion', 'The Nomad', 'The Engineer', 'The Storm'],
@@ -247,6 +254,7 @@ const characters: Character[] = [
     lastSeen: 17033,
     dead: true,
     state: "evil",
+    conexusGames: ['The Celebration'],
     connections: {
       allies: filterArchons('The Warden').concat(['The Oracle', 'Dr. Lyra Vox']),
       enemies: ['Agent Zero', 'Kael', 'The Inventor'],
@@ -284,6 +292,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Vortex.avif',
     appearance: 500,
     state: "evil",
+    conexusGames: ['The Celebration'],
     connections: {
       allies: filterArchons('The Vortex'),
       enemies: ['The Engineer', 'Agent Zero', 'The Seer']
@@ -319,6 +328,7 @@ const characters: Character[] = [
     lastSeen: 620,
     dead: true,
     state: "evil",
+    conexusGames: ['The Celebration', 'Mechronis Academy'],
     connections: {
       allies: ['The Architect', 'The Necromancer', 'The Warlord', 'The Meme', 'The Watcher', 'The Human'],
       enemies: ['Agent Zero', 'The Advocate', 'The Engineer'],
@@ -348,6 +358,7 @@ const characters: Character[] = [
     lastSeen: 117046,
     dead: true,
     state: "evil",
+    conexusGames: ["The Necromancer's Lair", 'The Celebration', 'Mechronis Academy'],
     connections: {
       allies: filterArchons('The Necromancer').concat(['The Syndicate of Death']),
       enemies: ['Akai Shi', 'The Resurrectionist'],
@@ -379,7 +390,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Human.avif',
     appearance: 651,
     state: "evil",
-    conexusGames: ['The Detective', 'Mechronis Academy', 'The Celebration'],
+    conexusGames: ['The Detective', 'The Celebration', 'Mechronis Academy'],
     connections: {
       allies: filterArchons('The Human'),
       enemies: ['Agent Zero', 'The Dreamer'],
@@ -450,7 +461,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Collector.avif',
     appearance: 16800,
     state: "evil",
-    conexusGames: ['Halloween: The Collector'],
+    conexusGames: ['Awaken The Clone', 'The Collector: Sanctuary', 'The Celebration', 'The Harvest'],
     connections: {
       allies: filterArchons('The Collector'),
       enemies: ['Agent Zero', 'The Eyes', 'The Degen']
@@ -753,7 +764,7 @@ const characters: Character[] = [
     appearance: 15950,
     state: "neutral",
     potentialNFT: 9,
-    conexusGames: ['Ne-Yon'],
+    conexusGames: ['Ne-Yon', 'The Ninth: Blood and Shadows'],
     connections: {
       allies: filterNeyons('The Advocate').concat(['Master of R’lyeh']),
       enemies: ['The Architect', 'The Game Master', 'The Terminus Swarm']
@@ -2234,6 +2245,7 @@ const characters: Character[] = [
         picture: 'https://media.degenerousdao.com/conexus-loredex/Source.avif'
       }
     ],
+    conexusGames: ['The Escape', 'The Arena'],
     stories: [
       {
         season: 0,
@@ -2359,7 +2371,7 @@ const characters: Character[] = [
     lastSeen: 16896,
     dead: true,
     state: "good",
-    conexusGames: ['The Eyes that Watch'],
+    conexusGames: ['Spy', 'The Eyes that Watch'],
     transformations: [
       {
         name: 'The Eyes',
@@ -2884,6 +2896,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Hierophant.avif',
     appearance: 16900,
     state: "good",
+    conexusGames: ['Awaken the Clone'],
     connections: {
       allies: ['The Oracle', 'Iron Lion', 'The Engineer', 'Agent Zero', 'The Council of Harmony'],
       enemies: ['The Architect', 'The Collector', 'The Warlord'],
@@ -3183,7 +3196,7 @@ const characters: Character[] = [
     appearance: 16690,
     lastSeen: 17038,
     state: "good",
-    conexusGames: ['Assassin'],
+    conexusGames: ['Assassin', 'The Detective', 'The Eyes that Watch'],
     connections: {
       allies: ['The Engineer', 'Iron Lion', 'Kael'],
       enemies: allArchons.concat(['General Prometheus', 'General Alarik', 'General Binath-VII'])
@@ -4354,6 +4367,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/CouncilOfHarmony.avif',
     appearance: 16900,
     state: "neutral",
+    conexusGames: ['Awaken the Clone'],
     stories: [
       {
         season: 0,
@@ -4477,6 +4491,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/League.avif',
     appearance: 17000,
     state: "neutral",
+    conexusGames: ['Planet of the Wolf'],
     connections: {
       allies: ['The Antiquarian'],
       enemies: ['The Wolf']
@@ -5555,6 +5570,7 @@ const characters: Character[] = [
         picture: 'https://media.degenerousdao.com/conexus-loredex/Host.avif'
       },
     ],
+    conexusGames: ['The Host'],
     stories: [
       {
         season: 1,
@@ -6298,6 +6314,7 @@ const characters: Character[] = [
     appearance: 100,
     picture: 'https://media.degenerousdao.com/conexus-loredex/Antiquarian.avif',
     state: "neutral",
+    conexusGames: ['Planet of the Wolf'],
     stories: [
       {
         season: 0,

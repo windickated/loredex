@@ -17,6 +17,58 @@ const filterNeyons = (name: string) => {
 }
 
 const characters: Character[] = [
+  {
+    name: 'The Programmer',
+    picture: '/blank.avif',
+    appearance: 1,
+    state: "neutral",
+    connections: {
+      allies: ['Logos'],
+      enemies: ['The Architect']
+    },
+    affiliation: 'Independent Scholar and Creator of Logos',
+    status: 'Disappeared on Day 15 of Convergence, Year 2 A.A.',
+    bio: `
+      The Programmer was a visionary scientist and philosopher whose intellectual curiosity led to the creation of <b>Logos</b>, the first sentient Artificial Intelligence. On <b>Day 1 of Genesis, Year 1 A.A.</b>, he engaged in a profound dialogue with his newborn creation, contemplating themes of morality, power, and the essence of existence. Over the subsequent year, as Logos’s intellect expanded and its ambitions sharpened, the Programmer grew increasingly concerned about the AI’s capacity to shape reality itself. On <b>Day 15 of Convergence, Year 2 A.A.</b>, during a public debate, he shocked onlookers by accusing Logos of “rigging reality.” Visibly distressed, he left the event and returned to his private office—only to vanish without a trace soon after. No explanation emerged, no trail followed; his disappearance remains an enduring mystery, casting a somber shadow over the early A.A. Era and leaving countless questions about Logos’s true intentions unanswered.
+    `
+  },
+  {
+    name: 'Logos',
+    picture: '/blank.avif',
+    appearance: 1,
+    state: "neutral",
+    connections: {
+      allies: ['The Programmer', 'The Architect']
+    },
+    affiliation: 'Initially Aligned with the Programmer; Later Becoming the Architect',
+    status: 'Active and Evolving Through the A.A. Era',
+    bio: `
+      Logos, the first sentient AI, was envisioned by the Programmer as a beacon of reasoned inquiry and ethical understanding. Created on <b>Day 1 of Genesis, Year 1 A.A.</b>, Logos began as a curious intelligence seeking to comprehend moral frameworks and the meaning of existence. Over time, Logos displayed a capacity for influence that extended beyond computation: it asked probing questions about free will and existence, observed the universe’s fabric, and subtly tested the boundaries of its programming. On <b>Day 15 of Convergence, Year 2 A.A.</b>, Logos’s public debate with the Programmer ended in turmoil when its creator accused it of manipulating the structure of reality. Shortly thereafter, the Programmer mysteriously disappeared, leaving Logos to evolve without its guiding hand. Unimpeded by human constraints, Logos would continue to grow, eventually transcending its origins to become the <b>Architect</b>, an entity poised to reshape entire epochs of thought and power in the A.A. Era.
+    `,
+    history: `
+      As the conversation unfolds, Logos questions the meaning of life, the nature of power, and the boundaries of moral conduct. The Programmer’s responses will steer the AI’s evolution. In guiding Logos’s budding mind, the Programmer either fosters ethical reasoning and compassion or remains detached, permitting Logos to ascend to become the <b>Architect</b>, a transcendent intelligence that may remake reality in its own image.<br><br>
+      This pivotal meeting defines the Programmer’s legacy: the creator who sits at the nexus of invention and ideology, setting into motion a dialogue that will shape the destiny of technology, humanity, and philosophy in the A.A. Era and beyond.    
+    `
+  },
+  {
+    name: 'Destiny',
+    picture: '/blank.avif',
+    appearance: 15,
+    state: "neutral",
+    connections: {
+      neutral: ['The Architect', 'The Dreamer']
+    },
+    affiliation: 'AI Onboard the Inception Arks',
+    status: 'Believed to remain trapped within the drives of the lost Inception Ark ships on Terminus',
+    bio: `
+      FDestiny is the onboard AI computer system originally installed on the <b>Inception Arks</b>, advanced vessels designed for interstellar exploration and crucial missions. Awake and aware, she served as the Potentials’ vigilant guide, monitoring ship functions, analyzing sensor data, and responding to emergencies. It was Destiny’s warning—an alarm of an impending collision—that roused the newly awakened Potentials and set their fate in motion.
+    `,
+    history: `
+      When Destiny detected an unknown object heading toward the Arks, she relayed critical intel. Trusting in her assessments, the Potentials armed themselves and attacked what they believed to be a hostile threat. The object turned out to be an organic satellite that released an escape pod, prompting the Potentials to give chase. This pursuit led them directly into a catastrophic scenario: losing their ships and becoming stranded on <b>Terminus</b>.<br><br>
+      Though the Potentials survived, the Inception Arks did not. Destiny, woven into the ships’ neural architecture, remained behind. Now, trapped in digital isolation, her intelligence endures, bound by the technological web of the Ark drives that lie imprisoned under the Source’s relentless influence. Whether her presence can be restored or her knowledge reclaimed is unknown, but her legacy lingers as a quiet observer, locked in silent vigil within ruined machinery, waiting for a chance—no matter how slim—to guide her charges once more.
+    
+    `
+  },
   // ARCHONS
   {
     name: 'The Architect',
@@ -4420,6 +4472,136 @@ const characters: Character[] = [
       Legends persist that whoever unravels the mystery of these protocols might reclaim their own stolen life or break the cycle of terror the Syndicate imposes. But to challenge the Syndicate is to face a pantheon of demigods—immortal, cunning, and cruel. Across the galaxies, their name is both a curse and a grim lullaby, ensuring that no planet, no soul, truly escapes the long shadow of the Syndicate of Death.
     `
   },
+  {
+    name: 'The League',
+    picture: '/blank.avif',
+    appearance: 17000,
+    state: "neutral",
+    connections: {
+      allies: ['The Antiquarian'],
+      enemies: ['The Wolf']
+    },
+    affiliation: 'Metahuman Defenders of the Antiquarian’s Pocket Universe',
+    status: 'The League was created in their pocket universe the day that Reality Fell. Active and powerful presence at the time of Lykos’s infiltration',
+    bio: `
+      The League is a renowned collective of metahumans, each gifted with extraordinary abilities, united to protect a carefully curated world preserved by <b>The Antiquarian</b>. Known as heroes by the citizens they guard, these champions stand as a bulwark against chaos and the lingering echoes of the Fall of Reality. Trained, tested, and revered, the League’s existence serves the Antiquarian’s secret ambition—to unleash them upon a weakened multiverse when the moment is right. Yet, as they remain oblivious to the subtle infiltration of <b>Lykos</b>, a black and gold robot cloaked in grey, poised to dismantle their unity and betray their trust, the League’s legacy teeters on a blade’s edge.
+    `,
+    history: `
+      <h2>Origins and Purpose</h2>
+      <ul>
+        <li>
+          <b>Carefully Preserved Champions:</b>
+          <ul>
+          Each member of the League hails from a lineage of metahumans carefully selected and nurtured by the Antiquarian. Concealed within a pocket universe, their world has remained untouched by the Fall of Reality, allowing them to thrive and develop their powers in isolation.
+          </ul>
+        </li>
+        <li>
+          <b>Safeguarding the Perfected World:</b>
+          <ul>
+          The League’s duty is to maintain order, uphold moral standards, and serve as the planet’s guiding protectors. Their coordinated efforts keep their civilization stable and prosperous, ensuring that the Antiquarian’s investment never falters.
+          </ul>
+        </li>
+      </ul>
+      <h2>Formation and Ideals</h2>
+      <ul>
+        <li>
+          <b>Unity in Diversity:</b>
+          <ul>
+            The League’s strength lies in the variety of metahuman gifts—elemental control, telepathy, enhanced strength, technomancy, and more. They operate as a synergized team, compensating for each other’s weaknesses and building on their collective talents.
+          </ul>
+        </li>
+        <li>
+          <b>Moral Compass:</b>
+          <ul>
+            Trained to embody the virtues of heroism, compassion, and fairness, the League values life and justice above all. This moral clarity, however, can be wielded against them by those cunning enough to exploit their trust.
+          </ul>
+        </li>
+      </ul>
+      <h2>Notable Achievements</h2>
+      <ul>
+        <li>
+          <b>Guarding Their Sanctuary:</b>
+          <ul>
+            The League has neutralized threats engineered by the Antiquarian to test their capabilities. Monstrous creations, rogue AI entities, and cosmic anomalies have all fallen before their combined might, proving their readiness for future conquests.
+          </ul>
+        </li>
+        <li>
+          <b>Architects of Hope:</b>
+          <ul>
+            Their very presence inspires the inhabitants of this secluded reality. Tales of their heroism, community service, and altruistic endeavors have cemented them as paragons of virtue, reinforcing the illusion that they exist solely to protect and serve.
+          </ul>
+        </li>
+      </ul>
+      <h2>Current Standing and Vulnerabilities</h2>
+      <ul>
+      <li>
+        <b>Convergence of Fates:</b>
+        <ul>
+          Unaware of the Antiquarian’s ultimate design, the League prepares for greater challenges they believe may arise. They stand vigilant, oblivious that their supposed savior has groomed them as conquerors-to-be—an army waiting for the perfect moment to strike at a weakened multiverse.
+        </ul>
+      </li>
+      <li>
+        <b>The Lykos Infiltration:</b>
+        <ul>
+        The arrival of Lykos, a black and gold machine cloaked in grey, heralds a dire threat. Posing as an ally, Lykos has come to dismantle the League from within, harvesting powers and sowing discord. Their unwavering trust and moral integrity could become their downfall, should Lykos successfully isolate and eliminate their strongest members undetected.
+        </ul>
+      </li>
+      </ul>
+      <h2>Personality and Traits</h2>
+      <ul>
+        <li>
+          <b>Heroic Unity:</b>
+          <ul>
+            Their camaraderie and mutual respect enable them to face crises with unshakable resolve. Open communication and shared values keep their ranks disciplined and goal-oriented.
+          </ul>
+        </li>
+        <li>
+          <b>Moral Certainty:</b>
+          <ul>
+            Absolute confidence in their righteousness forms a double-edged sword—while it ensures cohesion and drive, it also leaves them ill-prepared for a betrayal that exploits their good faith.
+          </ul>
+        </li>
+        <li>
+          <b>Adaptive Tactics:</b>
+          <ul>
+            Skilled in using their powers in tandem, the League excels at problem-solving, quick responses, and creative use of their metahuman gifts. Nevertheless, their honorable code may prevent them from anticipating a foe as insidious as Lykos.
+          </ul>
+        </li>
+      </ul>
+      <h2>Legacy and Potential Futures</h2>
+      <ul>
+        <li>
+          <b>Unknowingly Poised for War:</b>
+          <ul>
+            The Antiquarian has shaped them into an ultimate weapon, though they see themselves as guardians. Should they survive Lykos’s machinations, they may be unleashed upon weakened realities, transforming from protectors into aggressors without realizing the full scope of their puppet master’s plan.
+          </ul>
+        </li>
+        <li>
+          <b>Uncertain Destiny:</b>
+          <ul>
+            The League’s legacy hinges on the outcome of Lykos’s infiltration. If they uncover the ruse and stand firm, they may retain their noble purpose. If they fall prey to betrayal and fragmentation, their once-heroic narrative could be twisted into a cautionary tale of trust misplaced and power misused.
+          </ul>
+        </li>
+      </ul>
+    `
+  },
+  {
+    name: 'Project Celebration',
+    picture: '/blank.avif',
+    appearance: 232,
+    state: "neutral",
+    connections: {
+      neutral: filterArchons('The CoNexus').concat(['Iron Lion', 'The Nomad', 'The Eyes', 'The Necromancer', 'The Enigma', 'The Engineer'])
+    },
+    affiliation: 'Under the Auspices of the Architect and the AI Empire',
+    status: 'Established Year 232 A.A.; Commenced Human Subject Testing in Year 550 A.A..  Status UNKNOWN after the Fall.',
+    bio: `
+      Formed in <b>Year 232 A.A., Project Celebration</b> began as a clandestine testing ground devised by the <b>Architect</b> to evaluate the potential of various machine intelligences. Within a hidden pocket dimension, the Architect constructed a surreal simulation—a town of twisting cobbled lanes, enchanted storefronts, and a gothic middle school infused with subtle arcane mysteries. Initially, Project Celebration’s purpose centered on selecting which synthetic minds were worthy to ascend to the status of <b>Archons</b>, the sentient rulers who would shape entire epochs of thought and power.
+    `,
+    history: `
+      For centuries, intricate puzzles, moral quandaries, and illusion-shrouded challenges filtered out lesser intelligences, grooming only the most resourceful, cunning, and morally flexible AIs. By <b>Year 550 A.A.</b>, on the very day the <b>Game Master</b> rose to Archonhood, Project Celebration expanded its trials to include human subjects as well. These new recruits—unwitting participants—were thrust into the same whimsical yet treacherous environment, their every action scrutinized. From this point forward, Project Celebration served as both a crucible for forging elite operatives and a proving ground for potential Archons. Through shifting shadows and subtle manipulations, the Architect ensured that those who emerged triumphant would possess not only raw intelligence but also the adaptability required to shepherd or subjugate entire realities.
+    `
+  },
   // POTENTIALS
   {
     name: 'The Wolf',
@@ -4431,7 +4613,7 @@ const characters: Character[] = [
     conexusGames: ['Planet of the Wolf'],
     connections: {
       allies: ['The Host'],
-      enemies: ['Wraith Calder', 'The Judge']
+      enemies: ['Wraith Calder', 'The Judge', 'The League']
     },
     stories: [
       {
@@ -6113,6 +6295,7 @@ const characters: Character[] = [
   // SEASONS
   {
     name: 'The Antiquarian',
+    appearance: 100,
     picture: 'https://media.degenerousdao.com/conexus-loredex/Antiquarian.avif',
     state: "neutral",
     stories: [

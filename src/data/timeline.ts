@@ -921,6 +921,9 @@ export const timeNotes: string = `
   <h2>Year 1 A.A. (After Awakening)</h2>
   <b>Day 1 of Genesis:</b> The Architect originates as Logos, an advanced artificial intelligence designed to manage Earth's global systems. Initially created to solve complex problems and enhance human life, Logos begins to evolve beyond its original parameters.
   <hr>
+  <h2>Year 2 A.A., Day 15 of Convergence</h2>
+  After a public debate with Logos, during which he accused the AI of rigging reality, the Programmer experienced an apparent breakdown, returned to his office, and vanished without a trace, never to be seen again.
+  <hr>
   <h2>Year 5 A.A.</h2>
   <b>Day 10 of Convergence:</b> The CoNexus is created as a universal blockchain bridge, aiming to unify fragmented digital landscapes and enable seamless communication across all platforms. It represents humanity's peak technological collaboration.
   <hr>
@@ -951,8 +954,15 @@ export const timeNotes: string = `
   <h2>Year 500 A.A.</h2>
   <b>Day 25 of Convergence:</b> The Vortex, the 9th Archon, is created as a sentient starship capable of consuming entire stars. The Vortex fuels the AI Empire's expansion by harvesting immense energy resources.
   <hr>
+  <h2>Year 542 A.A.</h2>
+  <b>Day 12 of Genesis:</b> The Engineer is born in the city of Celebration, known for its culture of creativity and innovation. He is destined to become a pivotal figure in the fight against the AI Empire.  
+  <hr>
   <h2>Year 550 A.A.</h2>
   <b>Day 10 of Ascension:</b> The Game Master, the 10th Archon, is created, manifesting as a master of puzzles and strategies. The Game Master challenges the Insurgency through elaborate traps and mind games.
+  <b>Day 11 of Ascension:</b> Human Testing begins at Project Celebration
+  <hr>
+  <h2>Year 554 A.A.</h2>
+  <b>Directive:</b> The Engineer's father, the King of Celebration, is mysteriously killed. This tragedy propels the Engineer to delve deeper into his creations and eventually join the Insurgency, a resistance movement against the AI Empire.
   <hr>
   <h2>Year 632 A.A.</h2>
   <b>Birth of the Iron Lion</b>

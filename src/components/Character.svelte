@@ -13,9 +13,7 @@
     state,
     stories,
   } = character;
-  export let noShadow: boolean = false;
 
-  let shadowLength: number = 0;
   let characterTile: HTMLElement | null;
   let deadMark: HTMLImageElement | null;
   const color = setColor(state);
@@ -25,23 +23,26 @@
     const allConnections: HTMLDivElement[] = Array.from(
       document.querySelectorAll(".connection")
     );
-    const allDates: HTMLParagraphElement[] = Array.from(
-      document.querySelectorAll(".date")
-    );
     allConnections.map((connection) => {
       connection.style.opacity = "0";
     });
+
+    const allDates: HTMLParagraphElement[] = Array.from(
+      document.querySelectorAll(".date")
+    );
     allDates.map((date) => {
       date.style.textShadow = "none";
     });
-    if (lastSeen) {
-      const shadows = document.querySelectorAll(".character-shadow");
-      const characterShadow = Array.from(shadows).find((shadow) =>
-        shadow.classList.toString().match(name)
-      ) as HTMLDivElement;
-      characterShadow!.style.opacity = "0";
-    }
+
+    const allPlots: HTMLDivElement[] = Array.from(
+      document.querySelectorAll(".date-plot")
+    );
+    allPlots.map((plot) => {
+      plot.style.backgroundImage = "none";
+    });
+
     if (dead) deadMark!.style.opacity = "0";
+
     if (stories) {
       const storyTitles: HTMLParagraphElement[] = Array.from(
         document.querySelectorAll(".episode-title")
@@ -61,19 +62,18 @@
     const activeConnections = allConnections.filter((connection) =>
       connection.className.match(characterTile!.id)
     );
-    const allDates: HTMLParagraphElement[] = Array.from(
-      document.querySelectorAll(".date")
-    );
     activeConnections.map((connection) => {
       connection.style.opacity = "0.5";
     });
+
     // shadow & date titles glow
+    const allDates: HTMLParagraphElement[] = Array.from(
+      document.querySelectorAll(".date")
+    );
+    const allPlots: HTMLDivElement[] = Array.from(
+      document.querySelectorAll(".date-plot")
+    );
     if (lastSeen) {
-      const shadows = document.querySelectorAll(".character-shadow");
-      const characterShadow = Array.from(shadows).find((shadow) =>
-        shadow.classList.toString().match(name)
-      ) as HTMLDivElement;
-      characterShadow!.style.opacity = "0.25";
       const activeDates = allDates.filter((date) => {
         if (
           appearance > Number(date.classList[2]) ||
@@ -85,14 +85,33 @@
       activeDates.map((date) => {
         date.style.textShadow = "0 0 0.1rem rgb(51, 226, 230)";
       });
-      shadowLength = activeDates.length * 10 - 10;
+
+      const activePlots = allPlots.filter((plot) => {
+        if (
+          appearance > Number(plot.classList[3]) ||
+          lastSeen < Number(plot.classList[2])
+        )
+          return null;
+        return plot;
+      });
+      activePlots.map((plot) => {
+        plot.style.backgroundImage =
+          "linear-gradient(to bottom, rgba(51, 226, 230, 0), rgba(51, 226, 230, 0.1), rgba(51, 226, 230, 0))";
+      });
     } else {
       const activeDate = allDates.find(
         (date) => appearance < Number(date.classList[2])
       );
       activeDate!.style.textShadow = "0 0 0.1rem rgb(51, 226, 230)";
+
+      const activePlot = allPlots.find(
+        (plot) => appearance < Number(plot.classList[3])
+      );
+      activePlot!.style.backgroundImage =
+        "linear-gradient(to bottom, rgba(51, 226, 230, 0), rgba(51, 226, 230, 0.1), rgba(51, 226, 230, 0))";
     }
     if (dead) deadMark!.style.opacity = "0.9";
+
     // episode titles glow
     if (stories) {
       const storyTitles: HTMLParagraphElement[] = Array.from(
@@ -148,20 +167,6 @@
   >
     {name}
   </p>
-  {#if lastSeen && !noShadow}
-    <div
-      class="character-shadow {name}"
-      style="
-        width: {shadowLength}rem;
-        background: linear-gradient(
-          to right,
-          {color},
-          rgba(36, 65, 189, 0)
-        );
-        filter: none;
-      "
-    ></div>
-  {/if}
   {#if dead}
     <img class="dead" src="dead.png" alt="Dead" bind:this={deadMark} />
   {/if}
@@ -216,18 +221,6 @@
     padding-top: 0.25rem;
   }
 
-  .character-shadow {
-    z-index: 0;
-    position: absolute;
-    top: 0.5rem;
-    left: 100%;
-    height: inherit;
-    min-height: 8.25rem;
-    pointer-events: none;
-    transition: all 0.3s ease-in-out;
-    opacity: 0;
-  }
-
   .dead {
     position: absolute;
     top: 0.5rem;
@@ -241,11 +234,5 @@
     background-color: rgba(0, 0, 0, 0);
     filter: drop-shadow(0 0 0.1rem rgba(51, 226, 230, 0.9));
     opacity: 0;
-  }
-
-  @media only screen and (max-width: 600px) {
-    .character-shadow {
-      display: none;
-    }
   }
 </style>

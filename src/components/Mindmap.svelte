@@ -199,7 +199,7 @@
     >
       {#each timeline as { date, note, action, emptySection, expandable }}
         <div
-          class="plot"
+          class="plot date-plot {date[0]} {date[1]}"
           style="
             padding-bottom: {expandable !== undefined ? '7.5rem' : ''};
             background-image: {date[1] - date[0] < 99
@@ -287,7 +287,7 @@
         style="left: {setSeasonPadding(activeSeason.season)}rem"
       >
         {#each activeSeason.episodes as { episode, title, date }}
-          <div class="plot">
+          <div class="plot episode-plot {activeSeason.season},{episode}">
             <div class="episode-title {activeSeason.season},{episode}">
               <p>Episode - {episode}</p>
               <p class="note">{title}</p>
@@ -301,7 +301,7 @@
                   {#if stories.season === activeSeason.season}
                     {#each stories.episodes as story}
                       {#if story === episode}
-                        <Character {character} noShadow={true} />
+                        <Character {character} />
                       {/if}
                     {/each}
                   {/if}

@@ -1,13 +1,5 @@
 import { type Character } from "../lib/types.ts";
 
-// connections: {
-//   allies: [''],
-//   enemies: [''],
-//   neutral: ['']
-// },
-
-// conexusGames: [''],
-
 const allArchons = ['The Architect', 'The CoNexus', 'The Meme', 'The Watcher', 'The Warlord', 'The Warden', 'The Politician', 'The Vortex', 'The Game Master', 'The Necromancer', 'The Human', 'The Collector'];
 const filterArchons = (name: string) => {
   return allArchons.filter((archon) => archon !== name);

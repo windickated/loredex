@@ -16,11 +16,16 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Programmer.avif',
     appearance: 1,
     state: "neutral",
-    conexusGames: ['Building the Architect'],
     connections: {
       allies: ['Logos'],
       enemies: ['The Architect']
     },
+    stories: [
+      {
+        season: 99,
+        episodes: ['Building the Architect']
+      }
+    ],
     affiliation: 'Independent Scholar and Creator of Logos',
     status: 'Disappeared on Day 15 of Convergence, Year 2 A.A.',
     bio: `
@@ -71,7 +76,6 @@ const characters: Character[] = [
     appearance: 1,
     lastSeen: 150000,
     state: "evil",
-    conexusGames: ['Spy', 'Oracle', 'The Necromancer’s Lair', 'Inception Ark', 'The Celebration', 'Mechronis Academy', 'Building the Architect', 'The Eyes that Watch'],
     connections: {
       allies: filterArchons('The Architect').concat(['Senator Elara Voss']),
       enemies: allNeyons.concat(['The Oracle', 'Iron Lion', 'Agent Zero', 'The Engineer', 'Kael']),
@@ -79,12 +83,16 @@ const characters: Character[] = [
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Spy', 'Oracle', 'The Necromancer’s Lair', 'Inception Ark', 'The Celebration', 'Mechronis Academy', 'Building the Architect', 'The Eyes that Watch']
+      },
+      {
         season: 0,
-        episodes: [1, 2, 5, 6, 7]
+        episodes: ['In the Beginning', 'The Prisoner', 'The Eyes', 'The Oracle', 'The Engineer']
       },
       {
         season: 1,
-        episodes: [1, 7, 8]
+        episodes: ['Awakening', 'The Decision', 'The Arrival']
       }
     ],
     affiliation: 'Archons, AI Empire',
@@ -128,12 +136,17 @@ const characters: Character[] = [
     appearance: 250,
     lastSeen: 150000,
     state: "evil",
-    conexusGames: ['Spy', 'The Celebration', 'Mechronis Academy', 'The Eyes that Watch'],
     connections: {
       allies: ['The Architect', 'The Game Master', 'The Necromancer', 'The Meme', 'The Warlord'],
       enemies: ['Agent Zero', 'The Engineer', 'Iron Lion', 'The Nomad', 'The Knowledge'],
       neutral: ['The Eyes']
     },
+    stories: [
+      {
+        season: 99,
+        episodes: ['Spy', 'The Celebration', 'Mechronis Academy', 'The Eyes that Watch']
+      }
+    ],
     affiliation: 'Archons, AI Empire',
     status: 'Active',
     bio: `
@@ -155,12 +168,17 @@ const characters: Character[] = [
     lastSeen: 17033,
     dead: true,
     state: "evil",
-    conexusGames: ['The Celebration'],
     connections: {
       allies: filterArchons('The Meme'),
       enemies: ['Agent Zero', 'Iron Lion', 'The Nomad', 'The Engineer', 'The Oracle', 'The Silence'],
       neutral: ['The Eyes']
     },
+    stories: [
+      {
+        season: 99,
+        episodes: ['The Celebration']
+      }
+    ],
     affiliation: 'Archons, AI Empire',
     status: 'Destroyed on Day 10 of Eclipse, Year 17,033 A.A.',
     bio: `
@@ -183,7 +201,6 @@ const characters: Character[] = [
     appearance: 317,
     lastSeen: 320,
     state: "evil",
-    conexusGames: ['The Escape', 'The Arena', 'The Celebration', 'Mechronis Academy'],
     connections: {
       allies: filterArchons('The Warlord'),
       enemies: ['Agent Zero', 'Iron Lion', 'The Nomad', 'The Engineer', 'The Judge'],
@@ -191,8 +208,12 @@ const characters: Character[] = [
     },
     stories: [
       {
+        season: 99,
+        episodes: ['The Escape', 'The Arena', 'The Celebration', 'Mechronis Academy']
+      },
+      {
         season: 0,
-        episodes: [7]
+        episodes: ['The Engineer']
       }
     ],
     affiliation: 'Archons, AI Empire',
@@ -214,12 +235,17 @@ const characters: Character[] = [
     lastSeen: 17001,
     dead: true,
     state: "evil",
-    conexusGames: ['The Celebration'],
     connections: {
       allies: filterArchons('The Politician').concat(['Senator Elara Voss']),
       enemies: ['Agent Zero', 'The Oracle', 'Iron Lion', 'The Nomad', 'The Engineer', 'The Storm'],
       neutral: ['The Eyes']
     },
+    stories: [
+      {
+        season: 99,
+        episodes: ['The Celebration']
+      }
+    ],
     affiliation: 'Archons, AI Empire',
     status: 'Destroyed on Day 10 of Veil, Year 17,001 A.A.',
     bio: `
@@ -246,7 +272,6 @@ const characters: Character[] = [
     lastSeen: 17033,
     dead: true,
     state: "evil",
-    conexusGames: ['The Celebration'],
     connections: {
       allies: filterArchons('The Warden').concat(['The Jailer', 'Dr. Lyra Vox']),
       enemies: ['Agent Zero', 'Kael', 'The Inventor'],
@@ -254,8 +279,12 @@ const characters: Character[] = [
     },
     stories: [
       {
+        season:99,
+        episodes: ['The Celebration']
+      },
+      {
         season: 0,
-        episodes: [2]
+        episodes: ['The Prisoner']
       }
     ],
     affiliation: 'Archons, AI Empire',
@@ -284,15 +313,18 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Vortex.avif',
     appearance: 500,
     state: "evil",
-    conexusGames: ['The Celebration'],
     connections: {
       allies: filterArchons('The Vortex'),
       enemies: ['The Engineer', 'Agent Zero', 'The Seer']
     },
     stories: [
       {
+        season: 99,
+        episodes: ['The Celebration']
+      },
+      {
         season: 0,
-        episodes: [7]
+        episodes: ['The Engineer']
       }
     ],
     affiliation: 'Archons, AI Empire',
@@ -320,12 +352,17 @@ const characters: Character[] = [
     lastSeen: 620,
     dead: true,
     state: "evil",
-    conexusGames: ['The Celebration', 'Mechronis Academy'],
     connections: {
       allies: ['The Architect', 'The Necromancer', 'The Warlord', 'The Meme', 'The Watcher', 'The Human'],
       enemies: ['Agent Zero', 'The Advocate', 'The Engineer'],
       neutral: ['The Eyes', 'The Enigma']
     },
+    stories: [
+     {
+      season: 99,
+      episodes: ['The Celebration', 'Mechronis Academy']
+     }
+    ],
     affiliation: 'Archons, AI Empire',
     status: 'Destroyed on Day 15 of Dominion, Year 620 A.A.',
     bio: `
@@ -350,12 +387,17 @@ const characters: Character[] = [
     lastSeen: 117046,
     dead: true,
     state: "evil",
-    conexusGames: ["The Necromancer's Lair", 'The Celebration', 'Mechronis Academy'],
     connections: {
       allies: filterArchons('The Necromancer').concat(['The Syndicate of Death']),
       enemies: ['Akai Shi', 'The Resurrectionist'],
       neutral: ['The Eyes']
     },
+    stories: [
+      {
+        season: 99,
+        episodes: ["The Necromancer's Lair", 'The Celebration', 'Mechronis Academy']
+      }
+    ],
     affiliation: 'AI Empire',
     status: 'Destroyed on Day 15 of Fracture, Year 117,046 A.A.',
     bio: `
@@ -382,12 +424,17 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Human.avif',
     appearance: 651,
     state: "evil",
-    conexusGames: ['The Detective', 'The Celebration', 'Mechronis Academy'],
     connections: {
       allies: filterArchons('The Human'),
       enemies: ['Agent Zero', 'The Dreamer'],
       neutral: ['The Eyes']
     },
+    stories: [
+      {
+        season: 99,
+        episodes: ['The Detective', 'The Celebration', 'Mechronis Academy']
+      }
+    ],
     affiliation: 'AI Empire, Archon, Project Celebration, Mechronis Academy Alumni',
     transformations: [
       {
@@ -453,15 +500,18 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Collector.avif',
     appearance: 16800,
     state: "evil",
-    conexusGames: ['Awaken The Clone', 'The Collector: Sanctuary', 'The Celebration', 'The Harvest'],
     connections: {
       allies: filterArchons('The Collector'),
       enemies: ['Agent Zero', 'The Eyes', 'The Degen']
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Awaken The Clone', 'The Collector: Sanctuary', 'The Celebration', 'The Harvest']
+      },
+      {
         season: 0,
-        episodes: [5]
+        episodes: ['The Eyes']
       }
     ],
     affiliation: 'Archons, AI Empire',
@@ -487,15 +537,18 @@ const characters: Character[] = [
     appearance: 15100,
     state: "neutral",
     potentialNFT: 1,
-    conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Dreamer'),
       enemies: ['The Architect', 'The Human', 'The Terminus Swarm', 'The Source']
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Ne-Yon']
+      },
+      {
         season: 1,
-        episodes: [1, 9, 15]
+        episodes: ['Awakenings', 'Illumuated Shadows', 'The Beginning of the End']
       }
     ],
     affiliation: 'Neyons',
@@ -518,15 +571,18 @@ const characters: Character[] = [
     appearance: 15200,
     state: "neutral",
     potentialNFT: 2,
-    conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Judge'),
       enemies: ['The Architect', 'The Warlord', 'The Terminus Swarm', 'The Source'],
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Ne-Yon']
+      },
+      {
         season: 1,
-        episodes: [7, 15]
+        episodes: ['The Decision', 'The Beginning of the End']
       }
     ],
     affiliation: 'Neyons',
@@ -552,15 +608,18 @@ const characters: Character[] = [
     appearance: 15300,
     state: "neutral",
     potentialNFT: 3,
-    conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Inventor'),
       enemies: ['The Architect', 'The Warden', 'The Terminus Swarm', 'The Source'],
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Ne-Yon']
+      },
+      {
         season: 1,
-        episodes: [1, 4, 8, 11, 13, 14, 15]
+        episodes: ['Awakenigns', 'The Fall', 'The Arrival', 'The City', 'Wyrmwood', 'The Hunt', 'The Beginning of the End']
       }
     ],
     affiliation: 'Neyons',
@@ -586,15 +645,18 @@ const characters: Character[] = [
     appearance: 15500,
     state: "neutral",
     potentialNFT: 4,
-    conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Seer'),
       enemies: ['The Architect', 'The Vortex', 'The Terminus Swarm', 'The Source']
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Ne-Yon']
+      },
+      {
         season: 1,
-        episodes: [5, 15]
+        episodes: ['The Outbreak', 'The Beginning of the End']
       }
     ],
     affiliation: 'Neyons',
@@ -620,15 +682,18 @@ const characters: Character[] = [
     appearance: 15700,
     state: "neutral",
     potentialNFT: 5,
-    conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Storm'),
       enemies: ['The Architect', 'The Politician', 'The Terminus Swarm', 'The Source']
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Ne-Yon']
+      },
+      {
         season: 1,
-        episodes: [15]
+        episodes: ['The Beginning of the End']
       }
     ],
     affiliation: 'Neyons',
@@ -654,15 +719,18 @@ const characters: Character[] = [
     appearance: 15900,
     state: "neutral",
     potentialNFT: 6,
-    conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Silence'),
       enemies: ['The Architect', 'The Meme', 'The Terminus Swarm', 'The Source']
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Ne-Yon']
+      },
+      {
         season: 1,
-        episodes: [15]
+        episodes: ['The Beginning of the End']
       }
     ],
     affiliation: 'Neyons',
@@ -688,15 +756,18 @@ const characters: Character[] = [
     appearance: 15950,
     state: "neutral",
     potentialNFT: 7,
-    conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Knowledge'),
       enemies: ['The Architect', 'The Watcher', 'The Terminus Swarm', 'The Source']
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Ne-Yon']
+      },
+      {
         season: 1,
-        episodes: [3, 8, 13, 15]
+        episodes: ['The Terminus Swarm', 'The Arrival', 'Wyrmwood', 'The Beginning of the End']
       }
     ],
     affiliation: 'Neyons',
@@ -722,15 +793,18 @@ const characters: Character[] = [
     appearance: 15900,
     state: "neutral",
     potentialNFT: 8,
-    conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Degen'),
       enemies: ['The Architect', 'The Collector', 'The Terminus Swarm', 'The Source']
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Ne-Yon']
+      },
+      {
         season: 1,
-        episodes: [9, 11, 12, 14, 15]
+        episodes: ['Illuminated Shadows', 'The City', 'The Return', 'The Hunt', 'The Beginning of the End']
       }
     ],
     affiliation: 'Neyons',
@@ -756,15 +830,18 @@ const characters: Character[] = [
     appearance: 15950,
     state: "neutral",
     potentialNFT: 9,
-    conexusGames: ['Ne-Yon', 'The Ninth: Blood and Shadows'],
     connections: {
       allies: filterNeyons('The Advocate').concat(['Master of R’lyeh']),
       enemies: ['The Architect', 'The Game Master', 'The Terminus Swarm', 'The Source']
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Ne-Yon', 'The Ninth: Blood and Shadows']
+      },
+      {
         season: 1,
-        episodes: [9, 11, 14, 15]
+        episodes: ['Illuminated Shadows', 'The City', 'The Hunt', 'The Beginning of the End']
       }
     ],
     affiliation: 'Neyons',
@@ -795,15 +872,18 @@ const characters: Character[] = [
     appearance: 16000,
     state: "neutral",
     potentialNFT: 10,
-    conexusGames: ['Ne-Yon'],
     connections: {
       allies: ['The Dreamer', 'The Inventor'],
       enemies: ['The Architect', 'The Necromancer', 'The Terminus Swarm', 'The Source']
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Ne-Yon']
+      },
+      {
         season: 1,
-        episodes: [15]
+        episodes: ['The Beginning of the End']
       }
     ],
     affiliation: 'Neyons',
@@ -828,7 +908,6 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Enigma.avif',
     appearance: 16950,
     state: "neutral",
-    conexusGames: ['Ne-Yon'],
     connections: {
       allies: ['The Dreamer', 'The Inventor', 'The Degen', 'Jericho'],
       enemies: ['The Architect'],
@@ -877,7 +956,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episodes: [2, 5]
+        episodes: ['The Prisoner', 'The Eyes']
       }
     ],
     affiliation: 'Atarion Government (formerly), AI Empire (ally)',
@@ -1051,7 +1130,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episodes: [3, 4]
+        episodes: ['Agent Zero', 'Iron Lion']
       }
     ],
     affiliation: 'AI Empire',
@@ -1360,7 +1439,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episodes: [3, 4]
+        episodes: ['Agent Zero', 'Iron Lion']
       }
     ],
     affiliation: 'AI Empire',
@@ -2183,15 +2262,18 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Engineer.avif',
     appearance: 542,
     state: "good",
-    conexusGames: ['Engineer'],
     connections: {
       allies: ['Iron Lion', 'Agent Zero', 'The Eyes', 'The Oracle', 'Kael'],
       enemies: ['The Architect', 'The Game Master', 'The Vortex', 'The Warlord']
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Engineer']
+      },
+      {
         season: 0,
-        episodes: [7]
+        episodes: ['The Engineer']
       }
     ],
     affiliation: '[CLASSIFIED]',
@@ -2217,15 +2299,18 @@ const characters: Character[] = [
         picture: 'https://media.degenerousdao.com/conexus-loredex/Source.avif'
       }
     ],
-    conexusGames: ['The Escape', 'The Arena'],
     stories: [
       {
+        season: 99,
+        episodes: ['The Escape', 'The Arena']
+      },
+      {
         season: 0,
-        episodes: [2]
+        episodes: ['The Prisoner']
       },
       {
         season: 1,
-        episodes: [6, 8]
+        episodes: ['The Source', 'The Arrival']
       }
     ],
     connections: {
@@ -2343,7 +2428,6 @@ const characters: Character[] = [
     lastSeen: 16896,
     dead: true,
     state: "good",
-    conexusGames: ['Spy', 'The Eyes that Watch'],
     transformations: [
       {
         name: 'The Eyes',
@@ -2356,8 +2440,12 @@ const characters: Character[] = [
     ],
     stories: [
       {
+        season: 99,
+        episodes: ['Spy', 'The Eyes that Watch']
+      },
+      {
         season: 0,
-        episodes: [5]
+        episodes: ['The Eyes']
       }
     ],
     connections: {
@@ -2484,7 +2572,6 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Oracle.avif',
     appearance: 16900,
     state: "good",
-    conexusGames: ['Oracle', 'Awaken the Clone'],
     transformations: [
       {
         name: 'The Oracle',
@@ -2513,12 +2600,16 @@ const characters: Character[] = [
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Oracle', 'Awaken the Clone']
+      },
+      {
         season: 0,
-        episodes: [2, 6]
+        episodes: ['The Prisoner', 'The Oracle']
       },
       {
         season: 1,
-        episodes: [7, 8]
+        episodes: ['The Decision', 'The Arrival']
       }
     ],
     affiliation: 'Insurgency',
@@ -2683,15 +2774,18 @@ const characters: Character[] = [
     lastSeen: 17026,
     dead: true,
     state: "good",
-    conexusGames: ['Soldier'],
     connections: {
       allies: ['Kael', 'Agent Zero', 'The Engineer', 'The Oracle', 'The Eyes', 'The Nomad'],
       enemies: ['The Architect', 'The Warlord', 'General Prometheus', 'General Alarik', 'General Binath-VII']
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Soldier']
+      },
+      {
         season: 0,
-        episodes: [3, 4]
+        episodes: ['Agent Zero', 'Iron Lion']
       }
     ],
     affiliation: 'Insurgency',
@@ -2868,7 +2962,6 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Hierophant.avif',
     appearance: 16900,
     state: "good",
-    conexusGames: ['Awaken the Clone'],
     connections: {
       allies: ['The Oracle', 'Iron Lion', 'The Engineer', 'Agent Zero', 'The Council of Harmony'],
       enemies: ['The Architect', 'The Collector', 'The Warlord'],
@@ -2876,8 +2969,12 @@ const characters: Character[] = [
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Awaken the Clone']
+      },
+      {
         season: 0,
-        episodes: [6]
+        episodes: ['The Oracle']
       }
     ],
     affiliation: 'Thaloria; Insurgency',
@@ -3168,15 +3265,18 @@ const characters: Character[] = [
     appearance: 16690,
     lastSeen: 17038,
     state: "good",
-    conexusGames: ['Assassin', 'The Detective', 'The Eyes that Watch'],
     connections: {
       allies: ['The Engineer', 'Iron Lion', 'Kael'],
       enemies: allArchons.concat(['General Prometheus', 'General Alarik', 'General Binath-VII'])
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Assassin', 'The Detective', 'The Eyes that Watch']
+      },
+      {
         season: 0,
-        episodes: [3, 4, 7]
+        episodes: ['Agent Zero', 'Iron Lion', 'The Engineer']
       }
     ],
     affiliation: 'Insurgency',
@@ -3569,7 +3669,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episodes: [4]
+        episodes: ['Iron Lion']
       }
     ],
     affiliation: 'Insurgency',
@@ -3816,7 +3916,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [6]
+        episodes: ['The Source']
       }
     ],
     affiliation: 'Independent Entity; Antagonist to Both the AI Empire and the Insurgency',
@@ -4071,7 +4171,6 @@ const characters: Character[] = [
     appearance: 16890,
     lastSeen: 16890,
     state: "neutral",
-    conexusGames: ['The Detective', 'Mechronis Academy', 'The Celebration'],
     transformations: [
       {
         name: 'The Seeker',
@@ -4100,8 +4199,12 @@ const characters: Character[] = [
     },
     stories: [
       {
+        season: 99,
+        episodes: ['The Detective', 'Mechronis Academy', 'The Celebration']
+      },
+      {
         season: 0,
-        episodes: [5]
+        episodes: ['The Eyes']
       }
     ],
     affiliation: 'Atarion Security Forces; Allegedly aligned with the AI Empire',
@@ -4339,11 +4442,14 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/CouncilOfHarmony.avif',
     appearance: 16900,
     state: "neutral",
-    conexusGames: ['Awaken the Clone'],
     stories: [
       {
+        season: 99,
+        episodes: ['Awaken the Clone']
+      },
+      {
         season: 0,
-        episodes: [6]
+        episodes: ['The Oracle']
       }
     ],
     affiliation: 'Governing Body of Thaloria',
@@ -4463,11 +4569,16 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/League.avif',
     appearance: 17000,
     state: "neutral",
-    conexusGames: ['Planet of the Wolf'],
     connections: {
       allies: ['The Antiquarian'],
       enemies: ['The Wolf']
     },
+    stories: [
+      {
+        season: 99,
+        episodes: ['Planet of the Wolf']
+      }
+    ],
     affiliation: 'Metahuman Defenders of the Antiquarian’s Pocket Universe',
     status: 'The League was created in their pocket universe the day that Reality Fell. Active and powerful presence at the time of Lykos’s infiltration',
     bio: `
@@ -4597,15 +4708,18 @@ const characters: Character[] = [
     lastSeen: 128652,
     state: "evil",
     potentialNFT: 292,
-    conexusGames: ['Planet of the Wolf'],
     connections: {
       allies: ['The Host'],
       enemies: ['Wraith Calder', 'The Judge', 'The League']
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Planet of the Wolf']
+      },
+      {
         season: 1,
-        episodes: [5, 7]
+        episodes: ['The Outbreak', 'The Decision']
       }
     ],
     transformations: [
@@ -4783,15 +4897,18 @@ const characters: Character[] = [
     lastSeen: 107652,
     state: "evil",
     potentialNFT: 623,
-    conexusGames: ['Syndicate of Death'],
     connections: {
       allies: ['Jericho'],
       enemies: ['The Wolf', 'The Syndicate of Death']
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Syndicate of Death']
+      },
+      {
         season: 1,
-        episodes: [4, 12, 13, 14]
+        episodes: ['The Fall', 'The Return', 'Wyrmwood', 'The Hunt']
       }
     ],
     affiliation: 'The Potentials; later independent agent against the Syndicate of Death',
@@ -5027,15 +5144,18 @@ const characters: Character[] = [
     state: "evil",
     dead: true,
     potentialNFT: 350,
-    conexusGames: ["The Necromancer's Lair"],
     connections: {
       allies: ['The Advocate'],
       enemies: ['The Necromancer', 'Jericho', 'The Host', 'The Source']
     },
     stories: [
       {
+        season: 99,
+        episodes: ["The Necromancer's Lair"]
+      },
+      {
         season: 1,
-        episodes: [6, 8, 10, 11]
+        episodes: ['The Source', 'The Arrival', 'The Artifact', 'The City']
       }
     ],
     affiliation: 'The Potentials; later becomes the Red Death',
@@ -5295,7 +5415,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [10]
+        episodes: ['The Artifact']
       }
     ],
     affiliation: 'The Potentials',
@@ -5532,11 +5652,14 @@ const characters: Character[] = [
         picture: 'https://media.degenerousdao.com/conexus-loredex/Host.avif'
       },
     ],
-    conexusGames: ['The Host'],
     stories: [
       {
+        season: 99,
+        episodes: ['The Host']
+      },
+      {
         season: 1,
-        episodes: [6]
+        episodes: ['The Source']
       }
     ],
     affiliation: 'The Potentials',
@@ -5550,7 +5673,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [4, 9]
+        episodes: ['The Fall', 'Illuminated Shadows']
       }
     ],
     affiliation: 'The Potentials',
@@ -5564,7 +5687,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [10]
+        episodes: ['The Artifact']
       }
     ],
     affiliation: 'The Potentials',
@@ -5578,7 +5701,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [8]
+        episodes: ['The Arrival']
       }
     ],
     affiliation: 'The Potentials',
@@ -5592,7 +5715,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [10]
+        episodes: ['The Artifact']
       }
     ],
     affiliation: 'The Potentials',
@@ -5606,7 +5729,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [5, 9]
+        episodes: ['The Outbreak', 'Illuminated Shadows']
       }
     ],
     affiliation: 'The Potentials',
@@ -5620,7 +5743,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [4]
+        episodes: ['The Fall']
       }
     ],
     affiliation: 'The Potentials',
@@ -5634,7 +5757,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [9]
+        episodes: ['Illuminated Shadows']
       }
     ],
     affiliation: 'The Potentials',
@@ -5648,7 +5771,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [9]
+        episodes: ['Illuminated Shadows']
       }
     ],
     affiliation: 'The Potentials',
@@ -5662,7 +5785,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [8]
+        episodes: ['The Arrival']
       }
     ],
     affiliation: 'The Potentials',
@@ -5676,7 +5799,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [1, 7]
+        episodes: ['Awakenings', 'The Decision']
       }
     ],
     affiliation: 'The Potentials',
@@ -5690,7 +5813,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [4]
+        episodes: ['The Fall']
       }
     ],
     affiliation: 'The Potentials',
@@ -5704,7 +5827,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [9]
+        episodes: ['Illuminated Shadows']
       }
     ],
     affiliation: 'The Potentials',
@@ -5718,7 +5841,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [9]
+        episodes: ['Illuminated Shadows']
       }
     ],
     affiliation: 'The Potentials',
@@ -5732,7 +5855,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [9]
+        episodes: ['Illuminated Shadows']
       }
     ],
     affiliation: 'The Potentials',
@@ -5746,7 +5869,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [8]
+        episodes: ['The Arrival']
       }
     ],
     affiliation: 'The Potentials',
@@ -5760,7 +5883,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [8]
+        episodes: ['The Arrival']
       }
     ],
     affiliation: 'The Potentials',
@@ -5774,7 +5897,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [1]
+        episodes: ['Awakenings']
       }
     ],
     affiliation: 'The Potentials',
@@ -5788,7 +5911,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [10, 15]
+        episodes: ['The Artifact', 'The Beginning of the End']
       }
     ],
     affiliation: 'The Potentials',
@@ -5802,7 +5925,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [5]
+        episodes: ['The Outbreak']
       }
     ],
     affiliation: 'The Potentials',
@@ -5816,7 +5939,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [1, 8]
+        episodes: ['Awakenings', 'The Arrival']
       }
     ],
     affiliation: 'The Potentials',
@@ -5830,7 +5953,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [9]
+        episodes: ['Illuminated Shadows']
       }
     ],
     affiliation: 'The Potentials',
@@ -5844,7 +5967,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [7, 10, 13]
+        episodes: ['The Decision', 'The Artifact', 'Wyrmwood']
       }
     ],
     affiliation: 'The Potentials',
@@ -5858,7 +5981,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [11]
+        episodes: ['The City']
       }
     ],
     affiliation: 'The Potentials',
@@ -5872,7 +5995,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [9]
+        episodes: ['Illuminated Shadows']
       }
     ],
     affiliation: 'The Potentials',
@@ -5886,7 +6009,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [11, 12, 14]
+        episodes: ['The City', 'The Return', 'The Hunt']
       }
     ],
     affiliation: 'The Potentials',
@@ -5900,7 +6023,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [9]
+        episodes: ['Illuminated Shadows']
       }
     ],
     affiliation: 'The Potentials',
@@ -5914,7 +6037,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [11]
+        episodes: ['The City']
       }
     ],
     affiliation: 'The Potentials',
@@ -5928,7 +6051,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [9]
+        episodes: ['Illuminated Shadows']
       }
     ],
     affiliation: 'The Potentials',
@@ -5942,7 +6065,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [6]
+        episodes: ['The Source']
       }
     ],
     affiliation: 'The Potentials',
@@ -5956,7 +6079,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [10]
+        episodes: ['The Artifact']
       }
     ],
     affiliation: 'The Potentials',
@@ -5970,7 +6093,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [6]
+        episodes: ['The Source']
       }
     ],
     affiliation: 'The Potentials',
@@ -5984,7 +6107,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [9]
+        episodes: ['Illuminated Shadows']
       }
     ],
     affiliation: 'The Potentials',
@@ -5998,7 +6121,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [5]
+        episodes: ['The Outbreak']
       }
     ],
     affiliation: 'The Potentials',
@@ -6012,7 +6135,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [9]
+        episodes: ['Illuminated Shadows']
       }
     ],
     affiliation: 'The Potentials',
@@ -6026,7 +6149,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [8]
+        episodes: ['The Arrival']
       }
     ],
     affiliation: 'The Potentials',
@@ -6040,7 +6163,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [2, 8]
+        episodes: ['A Destructive Potential', 'The Arrival']
       }
     ],
     affiliation: 'The Potentials',
@@ -6054,7 +6177,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [10, 12]
+        episodes: ['The Artifact', 'The Return']
       }
     ],
     affiliation: 'The Potentials',
@@ -6068,7 +6191,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [11]
+        episodes: ['The City']
       }
     ],
     affiliation: 'The Potentials',
@@ -6082,7 +6205,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [1]
+        episodes: ['Awakenings']
       }
     ],
     affiliation: 'The Potentials',
@@ -6096,7 +6219,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [7]
+        episodes: ['The Decision']
       }
     ],
     affiliation: 'The Potentials',
@@ -6110,7 +6233,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [5, 9]
+        episodes: ['The Outbreak', 'Illuminated Shadows']
       }
     ],
     affiliation: 'The Potentials',
@@ -6124,7 +6247,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [8]
+        episodes: ['The Arrival']
       }
     ],
     affiliation: 'The Potentials',
@@ -6138,7 +6261,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [8]
+        episodes: ['The Arrival']
       }
     ],
     affiliation: 'The Potentials',
@@ -6152,7 +6275,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [9]
+        episodes: ['Illuminated Shadows']
       }
     ],
     affiliation: 'The Potentials',
@@ -6166,7 +6289,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [6]
+        episodes: ['The Source']
       }
     ],
     affiliation: 'The Potentials',
@@ -6180,7 +6303,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [9]
+        episodes: ['Illuminated Shadows']
       }
     ],
     affiliation: 'The Potentials',
@@ -6194,7 +6317,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [6]
+        episodes: ['The Source']
       }
     ],
     affiliation: 'The Potentials',
@@ -6208,7 +6331,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [8, 13, 14]
+        episodes: ['The Arrival', 'Wyrmwood', 'The Hunt']
       }
     ],
     affiliation: 'The Potentials',
@@ -6222,7 +6345,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [7, 10, 11]
+        episodes: ['The Decision', 'The Artifact', 'The City']
       }
     ],
     affiliation: 'The Potentials',
@@ -6236,7 +6359,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [15]
+        episodes: ['The Beginning of the End']
       }
     ],
     affiliation: 'The Potentials',
@@ -6250,7 +6373,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [8]
+        episodes: ['The Arrival']
       }
     ],
     affiliation: 'The Potentials',
@@ -6264,7 +6387,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [8]
+        episodes: ['The Arrival']
       }
     ],
     affiliation: 'The Potentials',
@@ -6276,15 +6399,18 @@ const characters: Character[] = [
     appearance: 100,
     picture: 'https://media.degenerousdao.com/conexus-loredex/Antiquarian.avif',
     state: "neutral",
-    conexusGames: ['Planet of the Wolf'],
     stories: [
       {
+        season: 99,
+        episodes: ['Planet of the Wolf']
+      },
+      {
         season: 0,
-        episodes: [1, 2, 3, 4, 5, 6]
+        episodes: ['In the Beginning', 'The Prisoner', 'Agent Zero', 'Iron Lion', 'The Eyes', 'The Oracle']
       },
       {
         season: 1,
-        episodes: [1, 2, 3, 4, 5, 6, 7, 8]
+        episodes: ['Awakenings', 'A Destructive Potential', 'The Terminus Swarm', 'The Fall', 'The Outbreak', 'The Source', 'The Decision', 'The Arrival']
       }
     ]
   },
@@ -6295,7 +6421,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [1]
+        episodes: ['Awakenings']
       }
     ]
   },
@@ -6307,7 +6433,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: [5]
+        episodes: ['The Outbreak']
       }
     ]
   },
@@ -6318,7 +6444,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episodes: [7]
+        episodes: ['The Engineer']
       }
     ]
   },
@@ -6341,15 +6467,18 @@ const characters: Character[] = [
         picture: 'https://media.degenerousdao.com/conexus-loredex/Source.avif'
       }
     ],
-    conexusGames: ['Terminus Swarm', 'The Host'],
     connections: {
       allies: ['Master of R’lyeh'],
       enemies: allNeyons.concat(['Akai Shi', 'Jericho']),
     },
     stories: [
       {
+        season: 99,
+        episodes: ['Terminus Swarm', 'The Host']
+      },
+      {
         season: 1,
-        episodes: [6, 7, 8]
+        episodes: ['The Source', 'The Decision', 'The Arrival']
       }
     ]
   },
@@ -6387,11 +6516,11 @@ const characters: Character[] = [
     stories: [
       {
         season: 0,
-        episodes: [2, 6]
+        episodes: ['The Prisoner', 'The Oracle']
       },
       {
         season: 1,
-        episodes: [7, 8]
+        episodes: ['The Decision', 'The Arrival']
       }
     ]
   },
@@ -6422,7 +6551,12 @@ const characters: Character[] = [
         picture: 'https://media.degenerousdao.com/conexus-loredex/CloneArmy.avif'
       }
     ],
-    conexusGames: ['Awaken the Clone'],
+    stories: [
+      {
+        season: 99,
+        episodes: ['Awaken the Clone']
+      }
+    ]
   },
   {
     name: 'Panoptic Elara',
@@ -6439,7 +6573,12 @@ const characters: Character[] = [
         picture: 'https://media.degenerousdao.com/conexus-loredex/PanopticElara.avif'
       }
     ],
-    conexusGames: ['The Arena', 'The Escape'],
+    stories: [
+      {
+        season: 99,
+        episodes: ['The Arena', 'The Escape']
+      }
+    ]
   },
   {
     name: 'The Recruiter',
@@ -6460,10 +6599,15 @@ const characters: Character[] = [
         picture: 'https://media.degenerousdao.com/conexus-loredex/Source.avif'
       }
     ],
-    conexusGames: ['Spy'],
     connections: {
       neutral: ['Project Celebration']
-    }
+    },
+    stories: [
+      {
+        season: 99,
+        episodes: ['Spy']
+      }
+    ]
   }
 ]
 

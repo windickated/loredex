@@ -197,22 +197,26 @@
             {/if}
           </section>
 
-          {#if $selectedCharacter.conexusGames}
-            <div class="play-button">
-              <p>PLAY NOW</p>
-              <div>
-                {#each $selectedCharacter.conexusGames as game}
-                  <button
-                    on:click={() =>
-                      window.open(
-                        "https://conexus.degenerousdao.com/",
-                        "_blank"
-                      )}>{game}</button
-                  >
-                {/each}
-              </div>
-              <img src="/conexus.avif" alt="CoNexus" />
-            </div>
+          {#if $selectedCharacter.stories}
+            {#each $selectedCharacter.stories as storySection}
+              {#if storySection.season == 99}
+                <div class="play-button">
+                  <p>PLAY NOW</p>
+                  <div>
+                    {#each storySection.episodes as episode}
+                      <button
+                        on:click={() =>
+                          window.open(
+                            "https://conexus.degenerousdao.com/",
+                            "_blank"
+                          )}>{episode}</button
+                      >
+                    {/each}
+                  </div>
+                  <img src="/conexus.avif" alt="CoNexus" />
+                </div>
+              {/if}
+            {/each}
           {/if}
 
           {#if showHistory && $selectedCharacter.history}
@@ -372,18 +376,20 @@
                 >
                   {#if $selectedCharacter.stories}
                     {#each $selectedCharacter.stories as season}
-                      <h2>{getSeasonName(season.season)}</h2>
-                      {#each season.episodes as episodeNumber}
-                        {#each stories as storySection}
-                          {#if storySection.season == season.season}
-                            {#each storySection.episodes as episodeObject}
-                              {#if episodeObject.episode == episodeNumber}
-                                <Story {episodeObject} />
-                              {/if}
-                            {/each}
-                          {/if}
+                      {#if season.season !== 99}
+                        <h2>{getSeasonName(season.season)}</h2>
+                        {#each season.episodes as episodeTitle}
+                          {#each stories as storySection}
+                            {#if storySection.season == season.season}
+                              {#each storySection.episodes as episodeObject}
+                                {#if episodeObject.title == episodeTitle}
+                                  <Story {episodeObject} />
+                                {/if}
+                              {/each}
+                            {/if}
+                          {/each}
                         {/each}
-                      {/each}
+                      {/if}
                     {/each}
                   {:else}
                     <p

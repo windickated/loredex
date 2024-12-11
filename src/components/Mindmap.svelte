@@ -23,10 +23,9 @@
   let isDragging: boolean = false;
   let searchField: string;
 
-  $: activeSeason = stories.find((section) => {
-    if (section.season === $activeSeasonNr) console.log(section.season);
-    return section.season === $activeSeasonNr;
-  });
+  $: activeSeason = stories.find(
+    (section) => section.season === $activeSeasonNr
+  );
 
   onMount(() => {
     mapZoom = 0.3;
@@ -282,52 +281,32 @@
         class="mini-map"
         style="left: {setSeasonPadding(activeSeason.season)}rem"
       >
-        {#if activeSeason.season === 99}
-          {#each activeSeason.episodes as { title, date }}
-            <div class="plot">
-              <div class="episode-title">
-                <p class="note">{title}</p>
-                {#if date}
-                  <p>{date} A.A.</p>
-                {/if}
-              </div>
-              {#each characters as character}
-                {#if character.conexusGames}
-                  {#each character.conexusGames as game}
-                    {#if title === game}
-                      <Character {character} />
-                    {/if}
-                  {/each}
-                {/if}
-              {/each}
+        {#each activeSeason.episodes as { title, date }, index}
+          <div class="plot episode-plot {title}">
+            <div class="episode-title {title}">
+              {#if activeSeason.season !== 99}
+                <p>Episode - {index + 1}</p>
+              {/if}
+              <p class="note">{title}</p>
+              {#if date}
+                <p>{date} A.A.</p>
+              {/if}
             </div>
-          {/each}
-        {:else}
-          {#each activeSeason.episodes as { episode, title, date }}
-            <div class="plot episode-plot {activeSeason.season},{episode}">
-              <div class="episode-title {activeSeason.season},{episode}">
-                <p>Episode - {episode}</p>
-                <p class="note">{title}</p>
-                {#if date}
-                  <p>{date} A.A.</p>
-                {/if}
-              </div>
-              {#each characters as character}
-                {#if character.stories}
-                  {#each character.stories as stories}
-                    {#if stories.season === activeSeason.season}
-                      {#each stories.episodes as story}
-                        {#if story === episode}
-                          <Character {character} />
-                        {/if}
-                      {/each}
-                    {/if}
-                  {/each}
-                {/if}
-              {/each}
-            </div>
-          {/each}
-        {/if}
+            {#each characters as character}
+              {#if character.stories}
+                {#each character.stories as stories}
+                  {#if stories.season === activeSeason.season}
+                    {#each stories.episodes as story}
+                      {#if story === title}
+                        <Character {character} />
+                      {/if}
+                    {/each}
+                  {/if}
+                {/each}
+              {/if}
+            {/each}
+          </div>
+        {/each}
       </section>
     {/if}
   </div>

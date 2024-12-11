@@ -189,6 +189,9 @@ export const stories: Season[] = [
         title: 'The Celebration',
       },
       {
+        title: 'Mechronis Academy'
+      },
+      {
         title: 'Building the Architect',
       },
       {
@@ -208,7 +211,6 @@ export const stories: Season[] = [
     epoch: 'Epoch Zero',
     episodes: [
       {
-        episode: 1,
         title: 'In the Beginning',
         link: 'isK6VuGAbs4',
         date: 1,
@@ -242,7 +244,6 @@ export const stories: Season[] = [
         `
       },
       {
-        episode: 2,
         title: 'The Prisoner',
         link: 'Cujw3s-D6yU',
         date: 16901,
@@ -276,7 +277,6 @@ export const stories: Season[] = [
         `
       },
       {
-        episode: 3,
         title: 'Agent Zero',
         link: 'R1qvKpelbE4',
         date: 16893,
@@ -310,7 +310,6 @@ export const stories: Season[] = [
         `
       },
       {
-        episode: 4,
         title: 'Iron Lion',
         link: 'k10qXHtV0bg',
         date: 17026,
@@ -344,7 +343,6 @@ export const stories: Season[] = [
         `
       },
       {
-        episode: 5,
         title: 'The Eyes',
         link: 'Kzdf-TaxSfw',
         date: 16875,
@@ -378,7 +376,6 @@ export const stories: Season[] = [
         `
       },
       {
-        episode: 6,
         title: 'The Oracle',
         link: 'eD87OwcNuzE',
         date: 16900,
@@ -412,7 +409,6 @@ export const stories: Season[] = [
         `
       },
       {
-        episode: 7,
         title: 'The Engineer',
         link: '68ZRBVUzydo',
         bio: `
@@ -452,7 +448,6 @@ export const stories: Season[] = [
     epoch: 'First Epoch',
     episodes: [
       {
-        episode: 1,
         title: 'Awakenings',
         link: 'fkHun-QPbKk',
         bio: `
@@ -485,7 +480,6 @@ export const stories: Season[] = [
         `
       },
       {
-        episode: 2,
         title: 'A Destructive Potential',
         link: 'LpgTQeQL_3E',
         bio: `
@@ -518,7 +512,6 @@ export const stories: Season[] = [
         `
       },
       {
-        episode: 3,
         title: 'The Terminus Swarm',
         link: 'BRw06-iixgw',
         bio: `
@@ -551,7 +544,6 @@ export const stories: Season[] = [
         `        
       },
       {
-        episode: 4,
         title: 'The Fall',
         link: '27SAM2fWuPg',
         bio: `
@@ -584,7 +576,6 @@ export const stories: Season[] = [
         `        
       },
       {
-        episode: 5,
         title: 'The Outbreak',
         link: 'FT_BzfFpz4c',
         bio: `
@@ -617,7 +608,6 @@ export const stories: Season[] = [
         `        
       },
       {
-        episode: 6,
         title: 'The Source',
         link: 'rrBZ7UvwrVw',
         bio: `
@@ -650,7 +640,6 @@ export const stories: Season[] = [
         `        
       },
       {
-        episode: 7,
         title: 'The Decision',
         link: 'ib7riJNHM24',
         bio: `
@@ -683,7 +672,6 @@ export const stories: Season[] = [
         `   
       },
       {
-        episode: 8,
         title: 'The Arrival',
         link: 'o_ioDWD2oQc',
         bio: `
@@ -716,7 +704,6 @@ export const stories: Season[] = [
         `  
       },
       {
-        episode: 9,
         title: 'Illuminated Shadows',
         link: 'uGtSitDGeYo',
         bio: `
@@ -749,7 +736,6 @@ export const stories: Season[] = [
         `  
       },
       {
-        episode: 10,
         title: 'The Artifact',
         link: 'OeA_acfD-e8',
         bio: `
@@ -782,7 +768,6 @@ export const stories: Season[] = [
         `  
       },
       {
-        episode: 11,
         title: 'The City',
         link: 'X6Ijz6YG3K0',
         bio: `
@@ -815,7 +800,6 @@ export const stories: Season[] = [
         `  
       },
       {
-        episode: 12,
         title: 'The Return',
         link: '8m2Oio3-Fu4',
         bio: `
@@ -848,7 +832,6 @@ export const stories: Season[] = [
         `  
       },
       {
-        episode: 13,
         title: 'The Wyrmwood',
         link: 'X4srpGZnLE8',
         bio: `
@@ -881,7 +864,6 @@ export const stories: Season[] = [
         `  
       },
       {
-        episode: 14,
         title: 'The Hunt',
         link: 'G314HD_UR1g',
         bio: `
@@ -914,7 +896,6 @@ export const stories: Season[] = [
         `  
       },
       {
-        episode: 15,
         title: 'The Beginning of the End',
         link: 'hDmI82bvDhc',
         bio: `

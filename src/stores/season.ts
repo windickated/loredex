@@ -11,7 +11,6 @@ export const setActiveSeason = (event: any) => {
       : (target.parentElement as HTMLDivElement);
   let sznNr: number = 0;
   activeSeasonNr.subscribe((number) => sznNr = number);
-  console.log(sznNr)
   if (sznNr.toString() == arrowContainer.dataset.season) {
     activeSeasonNr.set(-1);
     return;
@@ -34,7 +33,7 @@ export const setSeasonPadding = (season: number) => {
       break;
     }
     case 99: {
-      sectionOffset = 44;
+      sectionOffset = 46;
       break;
     }
   }

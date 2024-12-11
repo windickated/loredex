@@ -6,7 +6,6 @@ export interface Character {
   dead?: boolean
   state: "good" | "evil" | "neutral"
   potentialNFT?: number
-  conexusGames?: string[]
   connections?: {
     allies?: string[]
     enemies?: string[]
@@ -27,7 +26,7 @@ interface Transformation {
 
 export interface CharacterStories {
   season: number
-  episodes: number[]
+  episodes: string[]
 }
 
 export interface Season {
@@ -38,7 +37,6 @@ export interface Season {
 }
 
 interface Story {
-  episode?: number
   title: string
   link?: string
   date?: number

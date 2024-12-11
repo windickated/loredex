@@ -9,8 +9,8 @@ const getCharacterStories = (name: string) => {
   })
   if (!stories) return null;
   stories.map((section: CharacterStories) => {
-    section.episodes.map((episode: number) => {
-      flatStories.push(section.season + ',' + episode);
+    section.episodes.map((episode: string) => {
+      flatStories.push(episode);
     })
   })
   return flatStories;

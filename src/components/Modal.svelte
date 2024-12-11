@@ -27,7 +27,6 @@
 
   $: if (historySection && showHistory) {
     const sectionCords = historySection.getBoundingClientRect();
-    console.log(sectionCords);
     dialog.scroll({
       top: sectionCords.y - 100,
       behavior: "smooth",
@@ -106,9 +105,16 @@
       <div class="title">
         {#if $selectedCharacter}
           {#if $selectedCharacter.dead}
-            <img class="death-icon" src="dead-red.png" alt="Dead" />
+            <img class="title-icon" src="dead-red.png" alt="Dead" />
           {/if}
-          <h1 style="color: {getColor($selectedCharacter.name)}">
+          {#if $selectedCharacter.location}
+            <img class="title-icon" src="location.png" alt="Location" />
+          {/if}
+          <h1
+            style="color: {$selectedCharacter.location
+              ? 'rgba(51, 226, 230, 0.75)'
+              : getColor($selectedCharacter.name)}"
+          >
             {$selectedCharacter.name}
           </h1>
         {:else}
@@ -247,202 +253,194 @@
           {/if}
 
           <!-- CONNECTIONS & APPEARANCES TABS -->
-          {#if $selectedCharacter.connections || $selectedCharacter.stories}
-            <section class="tabs-wrapper">
-              <div class="tabs-container">
-                <button
-                  class="tab"
-                  style={activeTab === "connections" ? activeTabStyling : ""}
-                  on:click={() => {
-                    activeTab = "connections";
-                  }}
-                >
-                  Connections
-                  {#if width > 600}
-                    <img
-                      class="connections-icon"
-                      src="/connection.png"
-                      alt="Connection"
-                      style="opacity: {activeTab === 'connections'
-                        ? '1'
-                        : '0.1'}"
-                    />
-                  {/if}
-                </button>
-                <button
-                  class="tab"
-                  style={activeTab === "stories" ? activeTabStyling : ""}
-                  on:click={() => {
-                    activeTab = "stories";
-                  }}
-                >
-                  Appearances
-                  {#if width > 600}
-                    <img
-                      class="stories-icon"
-                      src="/play.png"
-                      alt="Stories"
-                      style="opacity: {activeTab === 'stories' ? '1' : '0.1'}"
-                    />
-                  {/if}
-                </button>
-              </div>
+          <section class="tabs-wrapper">
+            <div class="tabs-container">
+              <button
+                class="tab"
+                style={activeTab === "connections" ? activeTabStyling : ""}
+                on:click={() => {
+                  activeTab = "connections";
+                }}
+              >
+                Connections
+                {#if width > 600}
+                  <img
+                    class="connections-icon"
+                    src="/connection.png"
+                    alt="Connection"
+                    style="opacity: {activeTab === 'connections' ? '1' : '0.1'}"
+                  />
+                {/if}
+              </button>
+              <button
+                class="tab"
+                style={activeTab === "stories" ? activeTabStyling : ""}
+                on:click={() => {
+                  activeTab = "stories";
+                }}
+              >
+                Appearances
+                {#if width > 600}
+                  <img
+                    class="stories-icon"
+                    src="/play.png"
+                    alt="Stories"
+                    style="opacity: {activeTab === 'stories' ? '1' : '0.1'}"
+                  />
+                {/if}
+              </button>
+            </div>
 
-              <section class="tab-section">
-                <!-- Character CONNECTIONS -->
-                <div
-                  class="connected-characters"
-                  style="display: {activeTab === 'connections'
-                    ? 'flex'
-                    : 'none'}"
-                >
-                  {#if $selectedCharacter.connections}
-                    {#if $selectedCharacter.connections.allies}
-                      <h2 style="background-color: rgba(0, 185, 55, 0.25)">
-                        Allied characters
-                      </h2>
-                      <div class="characters-section">
-                        {#each $selectedCharacter.connections.allies as ally}
-                          <div
-                            on:click={() => handleSelectCharacter(ally)}
-                            style="border-color: {getColor(ally)}"
-                          >
-                            <img
-                              src={getImage(ally)}
-                              alt={ally}
-                              width="1024"
-                              height="1024"
-                            />
-                            <p>
-                              {ally}
-                            </p>
-                          </div>
-                        {/each}
-                      </div>
-                    {/if}
-                    {#if $selectedCharacter.connections.enemies}
-                      <h2 style="background-color: rgba(255, 60, 64, 0.25)">
-                        Enemy characters
-                      </h2>
-                      <div class="characters-section">
-                        {#each $selectedCharacter.connections.enemies as enemy}
-                          <div
-                            on:click={() => handleSelectCharacter(enemy)}
-                            style="border-color: {getColor(enemy)}"
-                          >
-                            <img
-                              src={getImage(enemy)}
-                              alt={enemy}
-                              width="1024"
-                              height="1024"
-                            />
-                            <p>
-                              {enemy}
-                            </p>
-                          </div>
-                        {/each}
-                      </div>
-                    {/if}
-                    {#if $selectedCharacter.connections.neutral}
-                      <h2 style="background-color: rgba(150, 150, 150, 0.25)">
-                        Neutral characters
-                      </h2>
-                      <div class="characters-section">
-                        {#each $selectedCharacter.connections.neutral as neutral}
-                          <div
-                            on:click={() => handleSelectCharacter(neutral)}
-                            style="border-color: {getColor(neutral)}"
-                          >
-                            <img
-                              src={getImage(neutral)}
-                              alt={neutral}
-                              width="1024"
-                              height="1024"
-                            />
-                            <p>
-                              {neutral}
-                            </p>
-                          </div>
-                        {/each}
-                      </div>
-                    {/if}
-                    {#if $selectedCharacter.connections.locations}
-                      <h2 style="background-color: rgba(51, 226, 230, 0.25)">
-                        Locations
-                      </h2>
-                      <div class="characters-section">
-                        {#each $selectedCharacter.connections.locations as location}
-                          <div
-                            on:click={() => handleSelectCharacter(location)}
-                            style="
+            <section class="tab-section">
+              <!-- Character CONNECTIONS -->
+              <div
+                class="connected-characters"
+                style="display: {activeTab === 'connections' ? 'flex' : 'none'}"
+              >
+                {#if $selectedCharacter.connections}
+                  {#if $selectedCharacter.connections.allies}
+                    <h2 style="background-color: rgba(0, 185, 55, 0.25)">
+                      Allied characters
+                    </h2>
+                    <div class="characters-section">
+                      {#each $selectedCharacter.connections.allies as ally}
+                        <div
+                          on:click={() => handleSelectCharacter(ally)}
+                          style="border-color: {getColor(ally)}"
+                        >
+                          <img
+                            src={getImage(ally)}
+                            alt={ally}
+                            width="1024"
+                            height="1024"
+                          />
+                          <p>
+                            {ally}
+                          </p>
+                        </div>
+                      {/each}
+                    </div>
+                  {/if}
+                  {#if $selectedCharacter.connections.enemies}
+                    <h2 style="background-color: rgba(255, 60, 64, 0.25)">
+                      Enemy characters
+                    </h2>
+                    <div class="characters-section">
+                      {#each $selectedCharacter.connections.enemies as enemy}
+                        <div
+                          on:click={() => handleSelectCharacter(enemy)}
+                          style="border-color: {getColor(enemy)}"
+                        >
+                          <img
+                            src={getImage(enemy)}
+                            alt={enemy}
+                            width="1024"
+                            height="1024"
+                          />
+                          <p>
+                            {enemy}
+                          </p>
+                        </div>
+                      {/each}
+                    </div>
+                  {/if}
+                  {#if $selectedCharacter.connections.neutral}
+                    <h2 style="background-color: rgba(150, 150, 150, 0.25)">
+                      Neutral characters
+                    </h2>
+                    <div class="characters-section">
+                      {#each $selectedCharacter.connections.neutral as neutral}
+                        <div
+                          on:click={() => handleSelectCharacter(neutral)}
+                          style="border-color: {getColor(neutral)}"
+                        >
+                          <img
+                            src={getImage(neutral)}
+                            alt={neutral}
+                            width="1024"
+                            height="1024"
+                          />
+                          <p>
+                            {neutral}
+                          </p>
+                        </div>
+                      {/each}
+                    </div>
+                  {/if}
+                  {#if $selectedCharacter.connections.locations}
+                    <h2 style="background-color: rgba(51, 226, 230, 0.25)">
+                      Locations
+                    </h2>
+                    <div class="characters-section">
+                      {#each $selectedCharacter.connections.locations as location}
+                        <div
+                          on:click={() => handleSelectCharacter(location)}
+                          style="
                               border-color: {getColor(location)};
                               background-color: rgba(51, 226, 230, 0.25);
                             "
-                          >
-                            <img
-                              src={getImage(location)}
-                              alt={location}
-                              width="1024"
-                              height="1024"
-                            />
-                            <p>
-                              {location}
-                            </p>
-                          </div>
-                        {/each}
-                      </div>
-                    {/if}
-                  {:else}
-                    <p
-                      class="empty-note"
-                      style="display: {activeTab === 'connections'
-                        ? 'flex'
-                        : 'none'}"
-                    >
-                      No connected characters.
-                    </p>
+                        >
+                          <img
+                            src={getImage(location)}
+                            alt={location}
+                            width="1024"
+                            height="1024"
+                          />
+                          <p>
+                            {location}
+                          </p>
+                        </div>
+                      {/each}
+                    </div>
                   {/if}
-                </div>
-                <!-- Character APPEARANCES -->
-                <div
-                  class="stories"
-                  style="display: {activeTab === 'stories' ? 'flex' : 'none'}"
-                >
-                  {#if $selectedCharacter.stories}
-                    {#each $selectedCharacter.stories as season}
-                      {#if season.season !== 99}
-                        <h2 class={season.season == 99 ? "empty-note" : ""}>
-                          {getSeasonName(season.season)}
-                        </h2>
+                {:else}
+                  <p
+                    class="empty-note"
+                    style="display: {activeTab === 'connections'
+                      ? 'flex'
+                      : 'none'}"
+                  >
+                    No connected characters.
+                  </p>
+                {/if}
+              </div>
+              <!-- Character APPEARANCES -->
+              <div
+                class="stories"
+                style="display: {activeTab === 'stories' ? 'flex' : 'none'}"
+              >
+                {#if $selectedCharacter.stories}
+                  {#each $selectedCharacter.stories as season}
+                    {#if season.season !== 99}
+                      <h2 class={season.season == 99 ? "empty-note" : ""}>
+                        {getSeasonName(season.season)}
+                      </h2>
 
-                        {#each season.episodes as episodeTitle}
-                          {#each stories as storySection}
-                            {#if storySection.season == season.season}
-                              {#each storySection.episodes as episodeObject}
-                                {#if episodeObject.title == episodeTitle}
-                                  <Story {episodeObject} />
-                                {/if}
-                              {/each}
-                            {/if}
-                          {/each}
+                      {#each season.episodes as episodeTitle}
+                        {#each stories as storySection}
+                          {#if storySection.season == season.season}
+                            {#each storySection.episodes as episodeObject}
+                              {#if episodeObject.title == episodeTitle}
+                                <Story {episodeObject} />
+                              {/if}
+                            {/each}
+                          {/if}
                         {/each}
-                      {/if}
-                    {/each}
-                  {/if}
-                  {#if !$selectedCharacter.stories || ($selectedCharacter.stories[0].season == 99 && !$selectedCharacter.stories[1])}
-                    <p
-                      class="empty-note"
-                      style="display: {activeTab === 'stories'
-                        ? 'flex'
-                        : 'none'}"
-                    >
-                      No appearances in stories.
-                    </p>
-                  {/if}
-                </div>
-              </section>
+                      {/each}
+                    {/if}
+                  {/each}
+                {/if}
+                {#if !$selectedCharacter.stories || ($selectedCharacter.stories[0].season == 99 && !$selectedCharacter.stories[1])}
+                  <p
+                    class="empty-note"
+                    style="display: {activeTab === 'stories' ? 'flex' : 'none'}"
+                  >
+                    No appearances in stories.
+                  </p>
+                {/if}
+              </div>
             </section>
-          {/if}
+          </section>
         </section>
       {/key}
     {:else if $showModal === "timeline"}
@@ -529,7 +527,7 @@
           align-items: center;
           gap: 1vw;
 
-          .death-icon {
+          .title-icon {
             width: 2vw;
             opacity: 0.75;
             transform: none !important;
@@ -665,7 +663,7 @@
             display: flex;
             flex-flow: column nowrap;
             gap: 1vw;
-            font-size: 1.5vw;
+            font-size: 1.35vw;
             color: rgba(51, 226, 230, 0.65);
 
             span {
@@ -992,7 +990,7 @@
             padding-inline: 1em;
             gap: 1em;
 
-            .death-icon {
+            .title-icon {
               width: 1.25em;
               opacity: 0.75;
               transform: none !important;

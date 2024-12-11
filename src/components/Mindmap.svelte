@@ -517,7 +517,7 @@
           border-left: 0.05rem solid rgba(51, 226, 230, 0.1);
           border-right: 0.05rem solid rgba(51, 226, 230, 0.1);
           padding-top: 7.5rem;
-          transition: all 0.3s ease-in-out;
+          transition: all 0.15s ease-in-out;
 
           .date,
           .episode-title {

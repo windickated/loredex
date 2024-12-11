@@ -33,15 +33,15 @@ export const setSeasonPadding = (season: number) => {
       break;
     }
     case 99: {
-      sectionOffset = 46;
+      sectionOffset = 0;
       break;
     }
   }
   if (episodesAmount) padding = (sectionOffset - episodesAmount * 2) * 10 - 5;
-  return padding;
+  return padding > 0 ? padding : -5;
 };
 
-export const getSeasonName = (season: number | 'conexus', epochOnly: boolean = false) => {
+export const getSeasonName = (season: number, epochOnly: boolean = false) => {
   const epoch = stories.find((section) => section.season === season)?.epoch;
   if (epochOnly) return epoch;
   else {

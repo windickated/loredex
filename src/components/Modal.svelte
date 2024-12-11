@@ -15,7 +15,7 @@
 
   let width: number;
 
-  let activeTab: "connections" | "stories" = "connections";
+  let activeTab: "connections" | "stories" = "stories";
   const activeTabStyling =
     "color: #010020; text-shadow: 0 0 0.1vw #010020; background-color: rgba(51, 226, 230, 0.75)";
 
@@ -118,6 +118,7 @@
       <button class="close-button" on:click={closeDialog}>❌</button>
     </header>
 
+    <!-- CHARACTER WINDOW -->
     {#if $showModal === "character" && $selectedCharacter}
       {#key $selectedCharacter}
         <section class="character-window">
@@ -170,6 +171,7 @@
               <p>{@html $selectedCharacter.bio}</p>
             </article>
 
+            <!-- NFT picture -->
             {#if $selectedCharacter.potentialNFT}
               <div class="image-container">
                 <img
@@ -197,6 +199,7 @@
             {/if}
           </section>
 
+          <!-- CONEXUS games -->
           {#if $selectedCharacter.stories}
             {#each $selectedCharacter.stories as storySection}
               {#if storySection.season == 99}
@@ -219,6 +222,7 @@
             {/each}
           {/if}
 
+          <!-- Character HISTORY -->
           {#if showHistory && $selectedCharacter.history}
             <article class="history" bind:this={historySection}>
               <hr />
@@ -227,6 +231,7 @@
             </article>
           {/if}
 
+          <!-- Character TRANSFORMATIONS -->
           {#if $selectedCharacter.transformations}
             <section class="transformation">
               {#each $selectedCharacter.transformations as { name, picture }, index}
@@ -241,6 +246,7 @@
             </section>
           {/if}
 
+          <!-- CONNECTIONS & APPEARANCES TABS -->
           {#if $selectedCharacter.connections || $selectedCharacter.stories}
             <section class="tabs-wrapper">
               <div class="tabs-container">
@@ -283,6 +289,7 @@
               </div>
 
               <section class="tab-section">
+                <!-- Character CONNECTIONS -->
                 <div
                   class="connected-characters"
                   style="display: {activeTab === 'connections'
@@ -370,6 +377,7 @@
                     </p>
                   {/if}
                 </div>
+                <!-- Character APPEARANCES -->
                 <div
                   class="stories"
                   style="display: {activeTab === 'stories' ? 'flex' : 'none'}"
@@ -377,7 +385,10 @@
                   {#if $selectedCharacter.stories}
                     {#each $selectedCharacter.stories as season}
                       {#if season.season !== 99}
-                        <h2>{getSeasonName(season.season)}</h2>
+                        <h2 class={season.season == 99 ? "empty-note" : ""}>
+                          {getSeasonName(season.season)}
+                        </h2>
+
                         {#each season.episodes as episodeTitle}
                           {#each stories as storySection}
                             {#if storySection.season == season.season}
@@ -391,7 +402,8 @@
                         {/each}
                       {/if}
                     {/each}
-                  {:else}
+                  {/if}
+                  {#if !$selectedCharacter.stories || $selectedCharacter.stories[0].season == 99}
                     <p
                       class="empty-note"
                       style="display: {activeTab === 'stories'
@@ -408,6 +420,7 @@
         </section>
       {/key}
     {:else if $showModal === "timeline"}
+      <!-- GENERAL TIMELINE SECTION -->
       <section class="general-info time-system">
         <p>{@html timeSystem.note}</p>
         <ol>

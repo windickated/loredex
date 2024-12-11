@@ -37,7 +37,7 @@
       document.querySelectorAll(".date-plot")
     );
     allPlots.map((plot) => {
-      plot.style.backgroundImage = "none";
+      styleInactivePlot(plot);
     });
 
     const storyTitles: HTMLParagraphElement[] = Array.from(
@@ -51,7 +51,7 @@
       document.querySelectorAll(".episode-plot")
     );
     storyPlots.map((plot) => {
-      plot.style.backgroundImage = "none";
+      styleInactivePlot(plot);
     });
 
     if (dead) deadMark!.style.opacity = "0";
@@ -99,8 +99,7 @@
         return plot;
       });
       activePlots.map((plot) => {
-        plot.style.backgroundImage =
-          "linear-gradient(to bottom, rgba(51, 226, 230, 0), rgba(51, 226, 230, 0.1), rgba(51, 226, 230, 0))";
+        styleActivePlot(plot);
       });
     } else if (appearance) {
       //single date title glow
@@ -113,8 +112,7 @@
       const activePlot = allPlots.find(
         (plot) => appearance < Number(plot.classList[3])
       );
-      activePlot!.style.backgroundImage =
-        "linear-gradient(to bottom, rgba(51, 226, 230, 0), rgba(51, 226, 230, 0.1), rgba(51, 226, 230, 0))";
+      if (activePlot) styleActivePlot(activePlot);
     }
     if (dead) deadMark!.style.opacity = "0.9";
 
@@ -151,13 +149,24 @@
           return null;
         });
         activeStoryPlots.map((plot) => {
-          if (plot)
-            plot.style.backgroundImage =
-              "linear-gradient(to bottom, rgba(51, 226, 230, 0), rgba(51, 226, 230, 0.1), rgba(51, 226, 230, 0))";
+          if (plot) styleActivePlot(plot);
         });
       }
     }
   }
+
+  const styleActivePlot = (plot: HTMLDivElement) => {
+    plot.style.backgroundImage =
+      "linear-gradient(to bottom, rgba(51, 226, 230, 0), rgba(51, 226, 230, 0.15), rgba(51, 226, 230, 0))";
+    plot.style.borderLeft = "0.1rem dashed rgba(51, 226, 230, 0.2)";
+    plot.style.borderRight = "0.1rem dashed rgba(51, 226, 230, 0.2)";
+  };
+
+  const styleInactivePlot = (plot: HTMLDivElement) => {
+    plot.style.backgroundImage = "none";
+    plot.style.borderLeft = "0.05rem solid rgba(51, 226, 230, 0.1)";
+    plot.style.borderRight = "0.05rem solid rgba(51, 226, 230, 0.1)";
+  };
 
   const openCharacterWindow = (event: any) => {
     if (

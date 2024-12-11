@@ -9,7 +9,8 @@
     picture,
     appearance,
     lastSeen,
-    dead = false,
+    location,
+    dead,
     state,
     stories,
   } = character;
@@ -186,6 +187,9 @@
   style="
     border-color: {color};
     filter: drop-shadow(0 0 0.1rem {color});
+    background-color: {location
+    ? 'rgba(51, 226, 230, 0.25)'
+    : 'rgba(36, 65, 189, 0.9)'};
   "
   tabindex="0"
   role="button"
@@ -221,7 +225,6 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    background-color: rgba(36, 65, 189, 0.9);
     border: 0.1rem solid gray;
     border-radius: 0.75rem;
     outline: none;
@@ -231,7 +234,7 @@
   .character:hover,
   .character:active,
   .character:focus {
-    background-color: rgb(45, 90, 216);
+    background-color: rgb(45, 90, 216) !important;
     color: rgba(51, 226, 230, 0.9);
     transform: scale(1.05);
   }

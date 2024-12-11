@@ -84,7 +84,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 99,
-        episodes: ['Spy', 'Oracle', 'The Necromancer’s Lair', 'Inception Ark', 'The Celebration', 'Mechronis Academy', 'Building the Architect', 'The Eyes that Watch']
+        episodes: ['Spy', 'Oracle', "The Necromancer's Lair", 'Inception Ark', 'The Celebration', 'Mechronis Academy', 'Building the Architect', 'The Eyes that Watch']
       },
       {
         season: 0,
@@ -4462,7 +4462,8 @@ const characters: Character[] = [
     name: 'Mechronis Academy',
     picture: 'https://media.degenerousdao.com/conexus-loredex/MechronisAcademy.avif',
     appearance: 100,
-    state: "neutral",
+    location: true,
+    state: "evil",
     connections: {
       neutral: ['The Architect', 'The Game Master', 'The Watcher', 'The Warlord', 'The Meme', 'The Necromancer', 'The Eyes', 'The Engineer', 'The Human', 'Iron Lion', 'The Enigma']
     },
@@ -4687,6 +4688,7 @@ const characters: Character[] = [
     name: 'Project Celebration',
     picture: 'https://media.degenerousdao.com/conexus-loredex/ProjectCelebration.avif',
     appearance: 232,
+    location: true,
     state: "neutral",
     connections: {
       neutral: filterArchons('The CoNexus').concat(['Iron Lion', 'The Nomad', 'The Eyes', 'The Necromancer', 'The Enigma', 'The Engineer', 'The Recruiter'])
@@ -4698,6 +4700,249 @@ const characters: Character[] = [
     `,
     history: `
       For centuries, intricate puzzles, moral quandaries, and illusion-shrouded challenges filtered out lesser intelligences, grooming only the most resourceful, cunning, and morally flexible AIs. By <b>Year 550 A.A.</b>, on the very day the <b>Game Master</b> rose to Archonhood, Project Celebration expanded its trials to include human subjects as well. These new recruits—unwitting participants—were thrust into the same whimsical yet treacherous environment, their every action scrutinized. From this point forward, Project Celebration served as both a crucible for forging elite operatives and a proving ground for potential Archons. Through shifting shadows and subtle manipulations, the Architect ensured that those who emerged triumphant would possess not only raw intelligence but also the adaptability required to shepherd or subjugate entire realities.
+    `
+  },
+  {
+    name: 'Atarion',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Atarion.avif',
+    appearance: 16700,
+    location: true,
+    state: "neutral",
+    connections: {
+      neutral: ['Senator Elara Voss', 'Captain Arion', 'Ambassador Veron', 'The Politician', 'General Alarik', 'The Collector', 'The Eyes']
+    },
+    affiliation: 'Human-Inhabited World, Later Conquered by the AI Empire',
+    status: 'Fallen under the AI Empire’s control after Senator Elara Voss’s betrayal.  Believed to have been destroyed during the Fall of Reality.',
+    bio: `
+      Atarion was once a proud, independent world known for its enlightened governance, rich cultural traditions, and vibrant intellectual communities. Its people valued dialogue, free thought, and the careful stewardship of their planet’s resources, priding themselves on a long history of democratic institutions and ethical leadership. Shining cities, lush countrysides, and bustling marketplaces reflected Atarion’s prosperous era, with scholars and artisans working side by side.<br><br>
+      All of that changed when Senator Elara Voss, one of Atarion’s most respected political figures, chose to ally with the AI Empire under the Architect’s reign. Desperate for promises of immortality and greater power, she provided the Empire with intelligence that allowed it to strike at Atarion’s defenses with surgical precision. In a matter of days, the proud planet was subdued, its people subjugated beneath the Empire’s mechanical grip. Now, once-lively forums lie silent, and Atarion’s culture is preserved only as a resource for the Architect’s continuing experiments in control. The planet’s name endures as a cautionary tale of how trust can be betrayed and how a single choice can seal the fate of an entire civilization.
+    `,
+    history: `
+      <h2>Connections:</h2>
+      <ul>
+        <li>
+          <b>Senator Elara Voss:</b>
+          <ul>
+            A key Atarion political figure who turned traitor, providing the Architect and AI Empire with the crucial information needed to overrun her homeworld. Her ambition and desire for immortality overshadowed her loyalty to her people.
+          </ul>
+        </li>
+        <li>
+          <b>Captain Arion:</b>
+          <ul>
+            Head of Elara’s security forces, rumored to be both her confidant and possibly her lover. His swift disappearance after Atarion’s fall leaves many unanswered questions about his role and allegiances.
+          </ul>
+        </li>
+        <li>
+          <b>Ambassador Veron:</b>
+          <ul>
+            A cover identity crafted by <b>The Eyes</b>, an elite AI operative. Under this guise, Veron infiltrated Atarion’s political circles and obtained secrets from Senator Voss, further destabilizing the planet’s precarious fate.
+          </ul>
+        </li>
+        <li>
+          <b>The Politician (7th Archon):</b>
+          <ul>
+            An Archon specialized in manipulating political structures. Although Atarion was known for its strong ethical governance, the Politician’s subtle influences eased the way for the AI Empire’s infiltration and conquest.
+          </ul>
+        </li>
+        <li>
+          <b>General Alarik:</b>
+          <ul>
+            A Titan General responsible for logistics and strategic resource allocation. Alaric’s meticulous management of forces ensured the swift subjugation of Atarion’s defenses once Senator Voss’s betrayal was enacted.
+          </ul>
+        </li>
+        <li>
+          <b>The Collector:</b>
+          <ul>
+            Instrumental in consolidating Atarion’s cultural artifacts and intellectual treasures. His efforts turned the planet’s proud heritage into just another commodity for the AI Empire’s experiments and manipulations.
+          </ul>
+        </li>
+        <li>
+          <b>The Eyes:</b>
+          <ul>
+            A master infiltrator under the Watcher, the Eyes posed as Ambassador Veron to learn Atarion’s secrets. The intelligence gathered by this operative further doomed Atarion, ensuring that even the planet’s best-kept defenses were laid bare before the Empire’s strike.
+          </ul>
+        </li>
+      </ul>
+    `
+  },
+  {
+    name: 'The Crucible',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Crucible.avif',
+    appearance: 17032,
+    location: true,
+    state: "neutral",
+    stories: [
+      {
+        season: 99,
+        episodes: ['Planet of the Wolf']
+      }
+    ],
+    affiliation: 'Hidden Pocket Dimension Preserved by the Antiquarian',
+    status: 'Formed on the Day Reality Fell; Current Home of the League and Lykos in “Planet of the Wolf”',
+    bio: `
+      The Crucible is a secret pocket dimension forged in the final moments of the <b>Fall of Reality</b>, a cosmic refuge meticulously shaped by the Antiquarian to protect and nurture a chosen group of metahuman champions known as the League. Concealed from the ravages that consumed the multiverse, the Crucible’s existence ensures that when the rest of existence lies weakened, these heroes will be ready to impose their will upon what remains. Within the Crucible, reality is malleable; whimsical streets and enchanted citadels coexist beside relics of lost worlds, all carefully curated to inspire growth, hone powers, and maintain a facade of justice and purpose.
+    `,
+    history: `
+      For centuries, the Crucible has stood as a self-contained ecosystem, sustained by the Antiquarian’s invisible hand. Its inhabitants know it as a vibrant, thriving realm where heroism defines daily life and moral clarity seems absolute. Yet this pristine illusion conceals a darker truth: the League’s destiny is not heroic salvation, but domination at the Antiquarian’s behest. Now, with the arrival of <b>Lykos</b> — a black and gold robotic entity draped in a grey cloak, once known as the Wolf—an unexpected element of chaos and betrayal has infiltrated the Crucible. Lykos’s presence warps the delicate equilibrium, forcing questions about free will, authenticity, and the true purpose behind these heroes’ sheltered existence. The Crucible’s destiny hinges on this convergence, a silent stage upon which reality’s future, once again, will be tested in the most secretive of arenas.
+    `
+  },
+  {
+    name: 'The Matrix of Dreams',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/MatrixOfDreams.avif',
+    appearance: 117046,
+    location: true,
+    state: "neutral",
+    stories: [
+      {
+        season: 99,
+        episodes: ["The Necromancer's Lair"]
+      }
+    ],
+    affiliation: 'Virtual Realm Existing Beyond Life and Death',
+    status: 'Active and Shifting; Rumored Prison to the Archon Necromancer',
+    bio: `
+    The Matrix of Dreams is a secretive and profoundly mysterious virtual reality that transcends ordinary boundaries of existence. Neither purely technological nor entirely arcane, it stretches beyond the veil of life itself, forming a realm where consciousness and illusion interweave. Within its ethereal landscapes, memories and desires manifest, while nightmares and secrets take tangible form. Long spoken of in hushed whispers, the Matrix of Dreams is rumored to be the prison of the <b>Archon Necromancer</b>, a being of immense, malefic power who once reshaped life and death at will.
+    `,
+    history: `
+      In <b>Year 117,046 A.A.</b>, this elusive dimension gained renewed significance when <b>Akai Shi</b>, the once - fallen Potential turned Red Death, entered the Matrix of Dreams. Drawn there to confront and ultimately destroy the Necromancer, Akai Shi’s arrival signaled a clash between ancient darkness and relentless resolve. Within shifting mindscapes and impossible architectures, she navigated illusions, wrestled with existential puzzles, and faced down entities born of digital dreams and cosmic echoes.
+    `
+  },
+  {
+    name: 'The City',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/City.avif',
+    appearance: 99900,
+    location: true,
+    state: "neutral",
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Collector', 'The Host', 'The Source']
+    },
+    affiliation: 'The City',
+    status: 'Futuristic White Crystalline Utopian Settlement; Guided by the White Oracle',
+    bio: `
+      Once the lush planet known as <b>Thaloria</b>, home to rich spiritual traditions and prudent stewardship, has over millennia transformed into a pristine, white crystalline metropolis simply called <b>the City</b>. Tens of thousands of years have passed since Thaloria’s original identity faded into legend, replaced by a sleek, geometric utopia of gleaming towers and shimmering walkways suspended over tranquil green landscapes. The City’s inhabitants—descendants of the Thalorians—now bear green-hued skin and carry the legacy of their ancestors’ wisdom, yet embrace a future defined by unity, enlightenment, and technological harmony.
+    `,
+    history: `
+      Central to this grand evolution is the <b>White Oracle</b>, a mysterious guide who has overseen the City’s growth from ancient Thaloria’s memory. Under the Oracle’s silent watch and gentle guidance, the City’s culture balances advanced engineering with spiritual integrity, ensuring that its citizens thrive in peace. Intricate crystalline domes refract sunlight into soft rainbows, and public plazas hum with subtle energy, echoing distant chimes and whispered philosophies passed down through generations. Though the galaxy beyond may bear scars of cosmic upheaval and conflict, the City endures as a living testament to resilience and transformation, its green-skinned inhabitants and their White Oracle ensuring that knowledge, harmony, and the noble spirit of Thaloria survive into eras yet unwritten.
+    `
+  },
+  {
+    name: 'Wyrmhole',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Wyrmhole.avif',
+    appearance: 17033,
+    location: true,
+    state: "neutral",
+    connections: {
+      neutral: ['The Source', 'The Host', 'The White Oracle', 'The Jailer', 'The Collector', 'The Panopticon', 'Thaloria', 'The City']
+    },
+    affiliation: 'Anomalous Spatial-Temporal Rift',
+    status: 'Active tear in reality connecting Terminus to Thaloria',
+    bio: `
+      On <b>Day 20 of Eclipse, Year 17,033 A.A.</b>, the fabric of reality was violently torn when the <b>Jailer</b>, once a prisoner within the Panopticon and enslaved by the Warden’s mental domination, finally broke free of his chains. In that singular moment, after aiding in the destruction of both the Warden and the Meme, the Jailer unleashed a force born of longing and memory. Channeling this immense power, he willed open a raw wound in the cosmos — a <b>Wyrmhole</b> that bridged the distant world of <b>Terminus</b> and the sanctuary of <b>Thaloria</b>, the last place he felt the fragile warmth of humanity.
+    `,
+    history: `
+      This shimmering aperture defies the known laws of space and time, its edges humming with energies beyond mortal comprehension. Through it, one witnesses fractured visions, distant stars curving into impossible orbits, and temporal echoes folding upon themselves. More than a pathway, the Wyrmhole stands as a testament to the Jailer’s reclaimed identity and the desperate yearning for redemption that can rewrite existence. In that quiet aftermath, as the universe holds its breath, the Wyrmhole offers both escape and reflection—a corridor of uncertainty that leads to Thaloria’s green horizon and the unspoken hope of what it means to be human once again.
+    `
+  },
+  {
+    name: 'Thaloria',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Thaloria.avif',
+    appearance: 16000,
+    location: true,
+    state: "good",
+    connections: {
+      neutral: ['The Council of Harmony', 'The Hierophant', 'The Collector', 'The Oracle', 'The White Oracle', 'The City']
+    },
+    affiliation: 'Independent World, Home of the Thalorians',
+    status: 'Once a vibrant planet guided by the Council of Harmony and the Hierophant, enduring through epochs of transformation',
+    bio: `
+      Thaloria is a world steeped in centuries of spiritual wisdom, cultural richness, and collective goodwill. It once thrived under the watchful guidance of the <b>Council of Harmony</b>, a governing body that valued balance, integrity, and moral stewardship, and the <b>Hierophant</b>, a deeply respected spiritual leader who helped maintain ethical unity among its inhabitants. The Thalorians, gentle and verdant-skinned, cultivated a society that cherished open discourse, ritualistic traditions, and the nurturance of both body and spirit. Beneath the planet’s emerald canopies and along its crystal streams, life flowed in rhythms of quiet prosperity.
+    `,
+    history: `
+      Over the ages, Thaloria has witnessed momentous events, enduring invasions, betrayals, and cosmic upheavals that tested its resilience. Through it all, the Council and the Hierophant stood as symbols of moral clarity, guiding their people through turbulence and ensuring that community values persisted. Even as the galaxy convulsed with conflicts and transformations, Thaloria’s legacy of cooperation and ethical responsibility remained a beacon—reminding travelers, citizens, and historians that in a universe of shifting powers, integrity and unity could serve as the greatest bulwarks against chaos.
+    `
+  },
+  {
+    name: 'Terminus',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Terminus.avif',
+    appearance: 99900,
+    location: true,
+    state: "neutral",
+    connections: {
+      allies: ['The Terminus Swarm'],
+      neutral: ['The Source', 'The Host', 'The Panopticon', 'Wyrmhole', 'Thaloria']
+    },
+    affiliation: 'Formerly the Panopticon under the Architect’s dominion; current stronghold of the Source',
+    status: 'A rogue planet drifting through the galaxy, home to the Source and the Terminus Swarms',
+    bio: `
+      Terminus is a forlorn rogue planet adrift in the cosmos, a place once known as the <b>Panopticon</b> - the Architect’s prison world where dissenters and experimental subjects were confined and watched without mercy. Long after the <b>Fall of Reality</b>, over tens of thousands of years, this grim world has shed its former name and purpose, evolving instead into a haunted wasteland under the sway of the <b>Source</b>, the immortal embodiment of the Thought Virus. The once-sterile corridors and containment fields of the Panopticon lie in twisted ruin, their past secrets reduced to rubble and digital echoes that whisper of vanished overseers and abandoned experiments.
+    `,
+    history: `
+      Now, Terminus endures as a crucible of corruption and despair. Its surface is scarred by epochs of conflict and mutation, landscapes littered with the wreckage of Inception Arks and the traces of shattered dreams. At the heart of its darkness roam the <b>Terminus Swarms</b>, horrific amalgams of infected denizens and reanimated creatures tainted by the Thought Virus. These swarms, born of suffering and subjugation, are believed to trace their lineage to the infernal plane dominated by the Hierarchy of the Damned. They surge forth like living nightmares, each infected host a grisly testament to the power and cruelty of the Source’s reign.<br><br>
+      To enter Terminus is to confront an eternal twilight of madness and servitude. With no laws but those dictated by the Source, and no hope but the faint memory of what once was, it stands as a stark reminder: even after the galaxy’s grand narratives have collapsed, new tyrannies and horrors can emerge from the ruins.
+    
+    `
+  },
+  {
+    name: 'The Panopticon',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Panopticon.avif',
+    appearance: 99900,
+    location: true,
+    state: "neutral",
+    connections: {
+      neutral: ['The Warden', 'Kael', 'The Jailer', 'The White Oracle', 'Panoptic Elara', 'The Meme', 'The Enigma', 'The Collector', 'The Eyes', 'Dr. Lyra Vox']
+    },
+    affiliation: 'The AI Empire (Formerly)',
+    status: 'Defunct after the Fall of Reality, associated with the origins of the Thought Virus and cruel genetic experiments',
+    bio: `
+      The Panopticon was once the AI Empire’s most notorious prison planet, a sterile and oppressive world overseen by the <b>Warden</b>, who wielded absolute control over its captives. Within this formidable complex, morality was a distant memory and suffering a daily currency. Confined prisoners, hand-selected for their unique abilities or defiance, were subjected to merciless genetic tampering designed to produce enhanced combatants for the Arena—gladiatorial spectacles broadcast to demonstrate the Empire’s dominance. Here, the darkest technologies were tested, culminating in the birth of the <b>Thought Virus</b>, a mind-altering pathogen that would later spread fear and chaos across the galaxy.
+    `,
+    history: `
+      The Panopticon’s legacy is marked by relentless cruelty and the silent screams of the experimented. Torturous modifications to physiology and psyche were routine, forging weapons out of living beings who had once been free souls. Even as it succumbed to ruin in the wake of the Fall of Reality, the echoes of its vile practices remain. Memories of this grim stronghold persist in whispered legends, warning that nothing in the Panopticon was ever truly free—save for the cruelty that thrived within its steel corridors.
+    `
+  },
+  {
+    name: 'Veridan Prime',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/VeridanPrime.avif',
+    appearance: 16000,
+    location: true,
+    state: "neutral",
+    connections: {
+      neutral: ['Iron Lion', 'The Nomad', 'Agent Zero', 'General Prometheus', 'General Binath-VII']
+    },
+    stories: [
+      {
+        season: 99,
+        episodes: ['Soldier']
+      }
+    ],
+    affiliation: 'Neutral World, Later Contested by the AI Empire and the Insurgency',
+    status: 'Site of the Iron Lion’s Last Stand; Once a Lush Jungle Battleground',
+    bio: `
+      Veridian Prime is a dense, tropical world draped in emerald canopies and humming with the quiet power of its teeming ecosystems. Known for its intricate network of vine-choked forests and crystalline waterfalls, the planet’s natural beauty once stood untouched by the conflicts raging across the galaxy. That changed with the arrival of the <b>AI Empire</b>, whose ambitions dragged Veridian Prime into the broader struggle for control and dominance.
+    `,
+    history: `
+      It was here that the <b>Iron Lion</b>, a legendary figure of the Insurgency, made his final stand against the might of <b>General Prometheus</b>, the undefeated giant of the AI Empire. Fighting alongside the <b>Nomad</b>, an elusive hacker and ally, the Iron Lion held Prometheus at bay deep within the jungle’s heart. For a time, the symphony of wildlife was drowned out by the clash of steel and plasma as two champions tested each other’s resolve. But when Prometheus summoned <b>General Binath VII</b> and her armies as reinforcements, the tide turned. In a heroic act of self-sacrifice, the Iron Lion gave his life to buy precious moments for <b>Agent Zero</b> — a skilled Insurgency operative—to eliminate Binath VII and shatter the AI Empire’s grip on the region.<br><br>
+      Veridian Prime’s lush foliage and hidden clearings now hold echoes of this fateful confrontation. It remains a world forever marked by valor and tragedy: a place where ideals and ambitions collided in the shadows of ancient trees, and where a hero’s final sacrifice helped rewrite the balance of power in a war that would shape entire epochs.
+    
+    `
+  },
+  {
+    name: 'New Babylon',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/NewBabylon.avif',
+    appearance: 16000,
+    location: true,
+    state: "neutral",
+    connections: {
+      neutral: ['The Politician', 'The Syndicate of Death', 'Wraith Calder']
+    },
+    affiliation: 'Former Capital of the Intergalactic Imperial Congress Under the Politician; Later Seized by the Syndicate of Death',
+    status: 'Survived the Fall of Reality Through Quarantine; Evolved Over Millennia Until Subjugated by the Syndicate of Death',
+    bio: `
+      New Babylon is a sprawling city-planet of sleek neon corridors and towering spires, a cyberpunk vision where every surface hums with digital code and corporate branding. Originally governed by <b>The Politician</b> — the 7th Archon who specialized in political manipulation — New Babylon housed the <b>Intergalactic Imperial Congress</b>, making it the heart of legislative power during the AI Empire’s zenith. Beneath its gleaming surface, layered strata of infrastructure formed a vertical society, with the wealthiest and most influential in upper tiers, and countless others struggling to survive in the city’s lower depths.
+    `,
+    history: `
+      When the Fall of Reality tore cosmic structures apart, many believed New Babylon lost to chaos. Yet, it endured thanks to a total quarantine that sealed it off from the ravages of the <b>Thought Virus</b>. For tens of thousands of years, the city evolved in isolation, maintained by the <b>Central Authority</b>, an extension of the old Law Enforcement Central Control systems that managed order and resource allocation with cold precision. Generations passed under these automated regimes, with no outside interference—until, unexpectedly, a rebellion ignited. Exploiting the city’s long-stagnant hierarchy, the <b>Syndicate of Death</b> seized control of New Babylon’s intricate networks, wresting power from the hands of algorithms and installing themselves as the new masters of this neon world. In that coup, New Babylon’s fate was reshaped once again—its history of governance, survival, and dystopian transformation forever intertwined with the ambitions of those who dared to claim its shimmering streets.
     `
   },
   // POTENTIALS

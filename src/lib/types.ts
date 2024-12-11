@@ -4,6 +4,7 @@ export interface Character {
   appearance?: number
   lastSeen?: number
   dead?: boolean
+  location?: boolean
   state: "good" | "evil" | "neutral"
   potentialNFT?: number
   connections?: {

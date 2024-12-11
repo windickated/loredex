@@ -527,7 +527,7 @@
             top: 0;
             text-align: center;
             white-space: nowrap;
-            padding: 0.25rem;
+            padding: 0.25rem 0.5rem;
             color: rgba(51, 226, 230, 0.5);
             -webkit-user-select: none;
             -khtml-user-select: none;

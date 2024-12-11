@@ -162,13 +162,13 @@ export const stories: Season[] = [
         title: 'The Host',
       },
       {
-        title: 'The Syndicate of Death',
+        title: 'Syndicate of Death',
       },
       {
         title: 'The Necromancer’s Lair',
       },
       {
-        title: 'The Planet of the Wolf',
+        title: 'Planet of the Wolf',
       },
       {
         title: 'The Escape',

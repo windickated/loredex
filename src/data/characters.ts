@@ -248,7 +248,7 @@ const characters: Character[] = [
     state: "evil",
     conexusGames: ['The Celebration'],
     connections: {
-      allies: filterArchons('The Warden').concat(['The Oracle', 'Dr. Lyra Vox']),
+      allies: filterArchons('The Warden').concat(['The Jailer', 'Dr. Lyra Vox']),
       enemies: ['Agent Zero', 'Kael', 'The Inventor'],
       neutral: ['The Eyes']
     },
@@ -490,7 +490,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Dreamer'),
-      enemies: ['The Architect', 'The Human', 'The Terminus Swarm']
+      enemies: ['The Architect', 'The Human', 'The Terminus Swarm', 'The Source']
     },
     stories: [
       {
@@ -521,7 +521,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Judge'),
-      enemies: ['The Architect', 'The Warlord', 'The Terminus Swarm'],
+      enemies: ['The Architect', 'The Warlord', 'The Terminus Swarm', 'The Source'],
     },
     stories: [
       {
@@ -555,7 +555,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Inventor'),
-      enemies: ['The Architect', 'The Warden', 'The Terminus Swarm'],
+      enemies: ['The Architect', 'The Warden', 'The Terminus Swarm', 'The Source'],
     },
     stories: [
       {
@@ -589,7 +589,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Seer'),
-      enemies: ['The Architect', 'The Vortex', 'The Terminus Swarm']
+      enemies: ['The Architect', 'The Vortex', 'The Terminus Swarm', 'The Source']
     },
     stories: [
       {
@@ -623,7 +623,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Storm'),
-      enemies: ['The Architect', 'The Politician', 'The Terminus Swarm']
+      enemies: ['The Architect', 'The Politician', 'The Terminus Swarm', 'The Source']
     },
     stories: [
       {
@@ -657,7 +657,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Silence'),
-      enemies: ['The Architect', 'The Meme', 'The Terminus Swarm']
+      enemies: ['The Architect', 'The Meme', 'The Terminus Swarm', 'The Source']
     },
     stories: [
       {
@@ -691,7 +691,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Knowledge'),
-      enemies: ['The Architect', 'The Watcher', 'The Terminus Swarm']
+      enemies: ['The Architect', 'The Watcher', 'The Terminus Swarm', 'The Source']
     },
     stories: [
       {
@@ -725,7 +725,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon'],
     connections: {
       allies: filterNeyons('The Degen'),
-      enemies: ['The Architect', 'The Collector', 'The Terminus Swarm']
+      enemies: ['The Architect', 'The Collector', 'The Terminus Swarm', 'The Source']
     },
     stories: [
       {
@@ -759,7 +759,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon', 'The Ninth: Blood and Shadows'],
     connections: {
       allies: filterNeyons('The Advocate').concat(['Master of R’lyeh']),
-      enemies: ['The Architect', 'The Game Master', 'The Terminus Swarm']
+      enemies: ['The Architect', 'The Game Master', 'The Terminus Swarm', 'The Source']
     },
     stories: [
       {
@@ -798,7 +798,7 @@ const characters: Character[] = [
     conexusGames: ['Ne-Yon'],
     connections: {
       allies: ['The Dreamer', 'The Inventor'],
-      enemies: ['The Architect', 'The Necromancer', 'The Terminus Swarm']
+      enemies: ['The Architect', 'The Necromancer', 'The Terminus Swarm', 'The Source']
     },
     stories: [
       {
@@ -1045,7 +1045,7 @@ const characters: Character[] = [
     lastSeen: 17043,
     state: "evil",
     connections: {
-      allies: ['The Architect', 'The Warden', 'The Oracle'],
+      allies: ['The Architect', 'The Warden', 'The Jailer'],
       enemies: ['Kael']
     },
     stories: [
@@ -2201,7 +2201,7 @@ const characters: Character[] = [
   {
     name: 'Kael',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Kael.avif',
-    appearance: 16650,
+    appearance: 16896,
     state: "neutral",
     transformations: [
       {
@@ -2230,7 +2230,7 @@ const characters: Character[] = [
     ],
     connections: {
       allies: ['Iron Lion', 'The Eyes', 'The Engineer', 'Agent Zero'],
-      enemies: ['The Architect', 'The Warden', 'The Warlord', 'The Politician', 'The Oracle']
+      enemies: ['The Architect', 'The Warden', 'The Warlord', 'The Politician', 'The Jailer']
     },
     affiliation: 'Insurgency (formerly); later became The Source, embodiment of the Thought Virus',
     status: 'Transformed into The Source in Year 16,933 A.A.',
@@ -3811,7 +3811,7 @@ const characters: Character[] = [
     lastSeen: 17043,
     state: "evil",
     connections: {
-      allies: ['The Advocate']
+      allies: ['The Advocate', 'The Source']
     },
     stories: [
       {
@@ -4578,7 +4578,7 @@ const characters: Character[] = [
     appearance: 232,
     state: "neutral",
     connections: {
-      neutral: filterArchons('The CoNexus').concat(['Iron Lion', 'The Nomad', 'The Eyes', 'The Necromancer', 'The Enigma', 'The Engineer'])
+      neutral: filterArchons('The CoNexus').concat(['Iron Lion', 'The Nomad', 'The Eyes', 'The Necromancer', 'The Enigma', 'The Engineer', 'The Recruiter'])
     },
     affiliation: 'Under the Auspices of the Architect and the AI Empire',
     status: 'Established Year 232 A.A.; Commenced Human Subject Testing in Year 550 A.A..  Status UNKNOWN after the Fall.',
@@ -5030,7 +5030,7 @@ const characters: Character[] = [
     conexusGames: ["The Necromancer's Lair"],
     connections: {
       allies: ['The Advocate'],
-      enemies: ['The Necromancer', 'Jericho', 'The Host']
+      enemies: ['The Necromancer', 'Jericho', 'The Host', 'The Source']
     },
     stories: [
       {
@@ -5290,7 +5290,7 @@ const characters: Character[] = [
     potentialNFT: 426,
     connections: {
       allies: ['The Degen', 'Wraith Calder'],
-      enemies: ['Akai Shi', 'The Host', 'The Collector']
+      enemies: ['Akai Shi', 'The Host', 'The Collector', 'The Source']
     },
     stories: [
       {
@@ -6322,7 +6322,149 @@ const characters: Character[] = [
       }
     ]
   },
-  
+  {
+    name: 'The Source',
+    appearance: 16933,
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Source.avif',
+    state: "evil",
+    transformations: [
+      {
+        name: 'The Recruiter',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Recruiter.avif'
+      },
+      {
+        name: 'Kael',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Kael.avif'
+      },
+      {
+        name: 'The Source',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Source.avif'
+      }
+    ],
+    conexusGames: ['Terminus Swarm', 'The Host'],
+    connections: {
+      allies: ['Master of R’lyeh'],
+      enemies: allNeyons.concat(['Akai Shi', 'Jericho']),
+    },
+    stories: [
+      {
+        season: 1,
+        episodes: [6, 7, 8]
+      }
+    ]
+  },
+  {
+    name: 'The Jailer',
+    appearance: 16901,
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Jailer.avif',
+    state: "evil",
+    transformations: [
+      {
+        name: 'The Oracle',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Oracle.avif'
+      },
+      {
+        name: 'The Prisoner',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Prisoner.avif'
+      },
+      {
+        name: 'The Jailer',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Jailer.avif'
+      },
+      {
+        name: 'The White Oracle',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/WhiteOracle.avif'
+      },
+      {
+        name: 'The Clone Army',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/CloneArmy.avif'
+      }
+    ],
+    connections: {
+      allies: ['The Warden', 'Dr. Lyra Vox'],
+      enemies: ['Kael']
+    },
+    stories: [
+      {
+        season: 0,
+        episodes: [2, 6]
+      },
+      {
+        season: 1,
+        episodes: [7, 8]
+      }
+    ]
+  },
+  {
+    name: 'The White Oracle',
+    appearance: 17033,
+    picture: 'https://media.degenerousdao.com/conexus-loredex/WhiteOracle.avif',
+    state: "good",
+    transformations: [
+      {
+        name: 'The Oracle',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Oracle.avif'
+      },
+      {
+        name: 'The Prisoner',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Prisoner.avif'
+      },
+      {
+        name: 'The Jailer',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Jailer.avif'
+      },
+      {
+        name: 'The White Oracle',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/WhiteOracle.avif'
+      },
+      {
+        name: 'The Clone Army',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/CloneArmy.avif'
+      }
+    ],
+    conexusGames: ['Awaken the Clone'],
+  },
+  {
+    name: 'Panoptic Elara',
+    appearance: 17043,
+    picture: 'https://media.degenerousdao.com/conexus-loredex/PanopticElara.avif',
+    state: "good",
+    transformations: [
+      {
+        name: 'Senator Elara Voss',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/SenatorElaraVoss.avif'
+      },
+      {
+        name: 'Panoptic Elara',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/PanopticElara.avif'
+      }
+    ],
+    conexusGames: ['The Arena', 'The Escape'],
+  },
+  {
+    name: 'The Recruiter',
+    appearance: 16650,
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Recruiter.avif',
+    state: "good",
+    transformations: [
+      {
+        name: 'The Recruiter',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Recruiter.avif'
+      },
+      {
+        name: 'Kael',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Kael.avif'
+      },
+      {
+        name: 'The Source',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Source.avif'
+      }
+    ],
+    conexusGames: ['Spy'],
+    connections: {
+      neutral: ['Project Celebration']
+    }
+  }
 ]
 
 export default characters;

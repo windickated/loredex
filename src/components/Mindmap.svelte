@@ -271,6 +271,15 @@
                   />
                 {/each}
               {/if}
+              {#if character.connections.locations}
+                {#each character.connections.locations as location}
+                  <Connection
+                    name1={character.name}
+                    name2={location}
+                    color="rgba(51, 226, 230, 0.75)"
+                  />
+                {/each}
+              {/if}
             {/if}
           {/if}
         {/each}

@@ -1,4 +1,4 @@
-import { type TimeSection, type Season, type Place } from "../lib/types.ts";
+import { type TimeSection, type Season } from "../lib/types.ts";
 
 export const timeline: TimeSection[] = [
   {
@@ -948,29 +948,6 @@ export const timeSystem: { note: string, months: string[] } = {
     '<b>Fracture</b> (Ultimate collapse or fall of reality)'
   ]
 }
-
-export const places: Place[] = [
-  {
-    name: 'The Panopticon',
-    picture: 'https://media.degenerousdao.com/conexus-loredex/Panopticon.avif'
-  },
-  {
-    name: 'Terminus',
-    picture: 'https://media.degenerousdao.com/conexus-loredex/Terminus.avif'
-  },
-  {
-    name: 'Thaloria',
-    picture: 'https://media.degenerousdao.com/conexus-loredex/Thaloria.avif'
-  },
-  {
-    name: 'The Wyrmhole',
-    picture: 'https://media.degenerousdao.com/conexus-loredex/Wyrmhole.avif'
-  },
-  {
-    name: 'The City',
-    picture: 'https://media.degenerousdao.com/conexus-loredex/City.avif'
-  }
-]
 
 export const timeNotes: string = `
   <h2>Year 1 A.A. (After Awakening)</h2>

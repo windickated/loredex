@@ -139,7 +139,8 @@ const characters: Character[] = [
     connections: {
       allies: ['The Architect', 'The Game Master', 'The Necromancer', 'The Meme', 'The Warlord'],
       enemies: ['Agent Zero', 'The Engineer', 'Iron Lion', 'The Nomad', 'The Knowledge'],
-      neutral: ['The Eyes']
+      neutral: ['The Eyes'],
+      locations: ['Project Celebration', 'Mechronis Academy']
     },
     stories: [
       {
@@ -171,7 +172,8 @@ const characters: Character[] = [
     connections: {
       allies: filterArchons('The Meme'),
       enemies: ['Agent Zero', 'Iron Lion', 'The Nomad', 'The Engineer', 'The Oracle', 'The Silence'],
-      neutral: ['The Eyes']
+      neutral: ['The Eyes'],
+      locations: ['The Panopticon', 'Project Celebration', 'Mechronis Academy']
     },
     stories: [
       {
@@ -204,7 +206,8 @@ const characters: Character[] = [
     connections: {
       allies: filterArchons('The Warlord'),
       enemies: ['Agent Zero', 'Iron Lion', 'The Nomad', 'The Engineer', 'The Judge'],
-      neutral: ['The Eyes']
+      neutral: ['The Eyes'],
+      locations: ['Project Celebration', 'Mechronis Academy']
     },
     stories: [
       {
@@ -275,7 +278,8 @@ const characters: Character[] = [
     connections: {
       allies: filterArchons('The Warden').concat(['The Jailer', 'Dr. Lyra Vox']),
       enemies: ['Agent Zero', 'Kael', 'The Inventor'],
-      neutral: ['The Eyes']
+      neutral: ['The Eyes'],
+      locations: ['The Panopticon', 'Project Celebration', 'Mechronis Academy']
     },
     stories: [
       {
@@ -315,7 +319,8 @@ const characters: Character[] = [
     state: "evil",
     connections: {
       allies: filterArchons('The Vortex'),
-      enemies: ['The Engineer', 'Agent Zero', 'The Seer']
+      enemies: ['The Engineer', 'Agent Zero', 'The Seer'],
+      locations: ['Project Celebration']
     },
     stories: [
       {
@@ -355,7 +360,8 @@ const characters: Character[] = [
     connections: {
       allies: ['The Architect', 'The Necromancer', 'The Warlord', 'The Meme', 'The Watcher', 'The Human'],
       enemies: ['Agent Zero', 'The Advocate', 'The Engineer'],
-      neutral: ['The Eyes', 'The Enigma']
+      neutral: ['The Eyes', 'The Enigma'],
+      locations: ['Project Celebration', 'Mechronis Academy']
     },
     stories: [
      {
@@ -390,7 +396,8 @@ const characters: Character[] = [
     connections: {
       allies: filterArchons('The Necromancer').concat(['The Syndicate of Death']),
       enemies: ['Akai Shi', 'The Resurrectionist'],
-      neutral: ['The Eyes']
+      neutral: ['The Eyes'],
+      locations: ['Project Celebration', 'Mechronis Academy', 'The Matrix of Dreams']
     },
     stories: [
       {
@@ -427,7 +434,8 @@ const characters: Character[] = [
     connections: {
       allies: filterArchons('The Human'),
       enemies: ['Agent Zero', 'The Dreamer'],
-      neutral: ['The Eyes']
+      neutral: ['The Eyes'],
+      locations: ['Project Celebration', 'Mechronis Academy']
     },
     stories: [
       {
@@ -501,6 +509,7 @@ const characters: Character[] = [
     appearance: 16800,
     state: "evil",
     connections: {
+      locations: ['Thaloria', 'The Panopticon', 'The City', 'Project Celebration'],
       allies: filterArchons('The Collector'),
       enemies: ['Agent Zero', 'The Eyes', 'The Degen']
     },
@@ -539,7 +548,8 @@ const characters: Character[] = [
     potentialNFT: 1,
     connections: {
       allies: filterNeyons('The Dreamer'),
-      enemies: ['The Architect', 'The Human', 'The Terminus Swarm', 'The Source']
+      enemies: ['The Architect', 'The Human', 'The Terminus Swarm', 'The Source'],
+      locations: ['Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -574,6 +584,7 @@ const characters: Character[] = [
     connections: {
       allies: filterNeyons('The Judge'),
       enemies: ['The Architect', 'The Warlord', 'The Terminus Swarm', 'The Source'],
+      locations: ['Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -611,6 +622,7 @@ const characters: Character[] = [
     connections: {
       allies: filterNeyons('The Inventor'),
       enemies: ['The Architect', 'The Warden', 'The Terminus Swarm', 'The Source'],
+      locations: ['Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -647,7 +659,8 @@ const characters: Character[] = [
     potentialNFT: 4,
     connections: {
       allies: filterNeyons('The Seer'),
-      enemies: ['The Architect', 'The Vortex', 'The Terminus Swarm', 'The Source']
+      enemies: ['The Architect', 'The Vortex', 'The Terminus Swarm', 'The Source'],
+      locations: ['Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -684,7 +697,8 @@ const characters: Character[] = [
     potentialNFT: 5,
     connections: {
       allies: filterNeyons('The Storm'),
-      enemies: ['The Architect', 'The Politician', 'The Terminus Swarm', 'The Source']
+      enemies: ['The Architect', 'The Politician', 'The Terminus Swarm', 'The Source'],
+      locations: ['Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -721,7 +735,8 @@ const characters: Character[] = [
     potentialNFT: 6,
     connections: {
       allies: filterNeyons('The Silence'),
-      enemies: ['The Architect', 'The Meme', 'The Terminus Swarm', 'The Source']
+      enemies: ['The Architect', 'The Meme', 'The Terminus Swarm', 'The Source'],
+      locations: ['Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -758,7 +773,8 @@ const characters: Character[] = [
     potentialNFT: 7,
     connections: {
       allies: filterNeyons('The Knowledge'),
-      enemies: ['The Architect', 'The Watcher', 'The Terminus Swarm', 'The Source']
+      enemies: ['The Architect', 'The Watcher', 'The Terminus Swarm', 'The Source'],
+      locations: ['Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -795,7 +811,8 @@ const characters: Character[] = [
     potentialNFT: 8,
     connections: {
       allies: filterNeyons('The Degen'),
-      enemies: ['The Architect', 'The Collector', 'The Terminus Swarm', 'The Source']
+      enemies: ['The Architect', 'The Collector', 'The Terminus Swarm', 'The Source'],
+      locations: ['Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -832,7 +849,8 @@ const characters: Character[] = [
     potentialNFT: 9,
     connections: {
       allies: filterNeyons('The Advocate').concat(['Master of R’lyeh']),
-      enemies: ['The Architect', 'The Game Master', 'The Terminus Swarm', 'The Source']
+      enemies: ['The Architect', 'The Game Master', 'The Terminus Swarm', 'The Source'],
+      locations: ['Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -874,7 +892,8 @@ const characters: Character[] = [
     potentialNFT: 10,
     connections: {
       allies: ['The Dreamer', 'The Inventor'],
-      enemies: ['The Architect', 'The Necromancer', 'The Terminus Swarm', 'The Source']
+      enemies: ['The Architect', 'The Necromancer', 'The Terminus Swarm', 'The Source'],
+      locations: ['Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -951,7 +970,8 @@ const characters: Character[] = [
     connections: {
       allies: ['The Architect', 'Captain Arion', 'The Politician'],
       enemies: ['Iron Lion', 'Kael'],
-      neutral: ['The Eyes']
+      neutral: ['The Eyes'],
+      locations: ['Project Celebration', 'Mechronis Academy', 'Atarion']
     },
     stories: [
       {
@@ -1125,7 +1145,8 @@ const characters: Character[] = [
     state: "evil",
     connections: {
       allies: ['The Architect', 'The Warden', 'The Jailer'],
-      enemies: ['Kael']
+      enemies: ['Kael'],
+      locations: ['The Panopticon']
     },
     stories: [
       {
@@ -1434,7 +1455,8 @@ const characters: Character[] = [
     connections: {
       allies: ['The Architect', 'The Warlord', 'Senator Elara Voss', 'Captain Arion'],
       enemies: ['Agent Zero', 'The Nomad', 'Iron Lion', 'The Oracle'],
-      neutral: ['The Eyes']
+      neutral: ['The Eyes'],
+      locations: ['Veridan Prime']
     },
     stories: [
       {
@@ -1995,7 +2017,8 @@ const characters: Character[] = [
     state: "evil",
     connections: {
       allies: ['The Architect', 'General Prometheus', 'General Alarik'],
-      enemies: ['Iron Lion', 'Agent Zero']
+      enemies: ['Iron Lion', 'Agent Zero'],
+      locations: ['Veridan Prime']
     },
     affiliation: 'AI Empire',
     status: 'Destroyed at the Battle of Veridian VI in Year 17,026 A.A. by Agent Zero',
@@ -2264,7 +2287,8 @@ const characters: Character[] = [
     state: "good",
     connections: {
       allies: ['Iron Lion', 'Agent Zero', 'The Eyes', 'The Oracle', 'Kael'],
-      enemies: ['The Architect', 'The Game Master', 'The Vortex', 'The Warlord']
+      enemies: ['The Architect', 'The Game Master', 'The Vortex', 'The Warlord'],
+      locations: ['Project Celebration', 'Mechronis Academy']
     },
     stories: [
       {
@@ -2315,7 +2339,8 @@ const characters: Character[] = [
     ],
     connections: {
       allies: ['Iron Lion', 'The Eyes', 'The Engineer', 'Agent Zero'],
-      enemies: ['The Architect', 'The Warden', 'The Warlord', 'The Politician', 'The Jailer']
+      enemies: ['The Architect', 'The Warden', 'The Warlord', 'The Politician', 'The Jailer'],
+      locations: ['The Panopticon', 'Wyrmhole', 'Terminus']
     },
     affiliation: 'Insurgency (formerly); later became The Source, embodiment of the Thought Virus',
     status: 'Transformed into The Source in Year 16,933 A.A.',
@@ -2451,7 +2476,8 @@ const characters: Character[] = [
     connections: {
       allies: ['The Architect', 'Kael', 'Senator Elara Voss', 'Iron Lion', 'Agent Zero', 'The Necromancer', 'The Watcher', 'The Engineer', 'The Warlord', 'The Game Master', 'The Meme'],
       enemies: ['The Collector', 'Captain Arion'],
-      neutral: ['The Oracle']
+      neutral: ['The Oracle'],
+      locations: ['Project Celebration', 'Mechronis Academy', 'Atarion']
     },
     affiliation: 'Insurgency',
     status: 'Eliminated by the Collector in Year 16,896 A.A.',
@@ -2596,7 +2622,8 @@ const characters: Character[] = [
     ],
     connections: {
       allies: ['The Hierophant', 'The Council of Harmony', 'Agent Zero', 'Iron Lion', 'The Engineer', 'The Eyes'],
-      enemies: ['The Collector', 'The Warden', 'The Politician']
+      enemies: ['The Collector', 'The Warden', 'The Politician'],
+      locations: ['Thaloria', 'The Panopticon']
     },
     stories: [
       {
@@ -2776,7 +2803,8 @@ const characters: Character[] = [
     state: "good",
     connections: {
       allies: ['Kael', 'Agent Zero', 'The Engineer', 'The Oracle', 'The Eyes', 'The Nomad'],
-      enemies: ['The Architect', 'The Warlord', 'General Prometheus', 'General Alarik', 'General Binath-VII']
+      enemies: ['The Architect', 'The Warlord', 'General Prometheus', 'General Alarik', 'General Binath-VII'],
+      locations: ['Project Celebration', 'Mechronis Academy', 'Veridan Prime']
     },
     stories: [
       {
@@ -2965,7 +2993,8 @@ const characters: Character[] = [
     connections: {
       allies: ['The Oracle', 'Iron Lion', 'The Engineer', 'Agent Zero', 'The Council of Harmony'],
       enemies: ['The Architect', 'The Collector', 'The Warlord'],
-      neutral: ['The Eyes']
+      neutral: ['The Eyes'],
+      locations: ['Thaloria']
     },
     stories: [
       {
@@ -3267,7 +3296,8 @@ const characters: Character[] = [
     state: "good",
     connections: {
       allies: ['The Engineer', 'Iron Lion', 'Kael'],
-      enemies: allArchons.concat(['General Prometheus', 'General Alarik', 'General Binath-VII'])
+      enemies: allArchons.concat(['General Prometheus', 'General Alarik', 'General Binath-VII']),
+      locations: ['Veridan Prime']
     },
     stories: [
       {
@@ -3664,7 +3694,8 @@ const characters: Character[] = [
     state: "good",
     connections: {
       allies: ['Iron Lion', 'Kael', 'Agent Zero', 'The Oracle', 'The Engineer'],
-      enemies: ['The Warlord', 'The Watcher', 'General Prometheus', 'General Alarik', 'General Binath-VII']
+      enemies: ['The Warlord', 'The Watcher', 'General Prometheus', 'General Alarik', 'General Binath-VII'],
+      locations: ['Veridan Prime']
     },
     stories: [
       {
@@ -4955,7 +4986,8 @@ const characters: Character[] = [
     potentialNFT: 292,
     connections: {
       allies: ['The Host'],
-      enemies: ['Wraith Calder', 'The Judge', 'The League']
+      enemies: ['Wraith Calder', 'The Judge', 'The League'],
+      locations: ['Terminus', 'Wyrmhole', 'The City', 'The Crucible']
     },
     stories: [
       {
@@ -5144,7 +5176,8 @@ const characters: Character[] = [
     potentialNFT: 623,
     connections: {
       allies: ['Jericho'],
-      enemies: ['The Wolf', 'The Syndicate of Death']
+      enemies: ['The Wolf', 'The Syndicate of Death'],
+      locations: ['Terminus', 'Wyrmhole', 'The City']
     },
     stories: [
       {
@@ -5391,7 +5424,8 @@ const characters: Character[] = [
     potentialNFT: 350,
     connections: {
       allies: ['The Advocate'],
-      enemies: ['The Necromancer', 'Jericho', 'The Host', 'The Source']
+      enemies: ['The Necromancer', 'Jericho', 'The Host', 'The Source'],
+      locations: ['Terminus', 'Wyrmhole', 'The City', 'The Matrix of Dreams']
     },
     stories: [
       {
@@ -5655,7 +5689,8 @@ const characters: Character[] = [
     potentialNFT: 426,
     connections: {
       allies: ['The Degen', 'Wraith Calder'],
-      enemies: ['Akai Shi', 'The Host', 'The Collector', 'The Source']
+      enemies: ['Akai Shi', 'The Host', 'The Collector', 'The Source'],
+      locations: ['Terminus', 'Wyrmhole', 'The City']
     },
     stories: [
       {

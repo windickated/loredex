@@ -2,7 +2,7 @@
   import getImage from "../utils/image.ts";
   import { getColor } from "../utils/color.ts";
   import characters from "../data/characters.ts";
-  import { stories, places } from "../data/timeline.ts";
+  import { stories } from "../data/timeline.ts";
   import { type Character } from "../lib/types";
   import {
     showModal,
@@ -366,6 +366,32 @@
                         {/each}
                       </div>
                     {/if}
+                    {#if $selectedCharacter.connections.locations}
+                      <h2 style="background-color: rgba(51, 226, 230, 0.25)">
+                        Locations
+                      </h2>
+                      <div class="characters-section">
+                        {#each $selectedCharacter.connections.locations as location}
+                          <div
+                            on:click={() => handleSelectCharacter(location)}
+                            style="
+                              border-color: {getColor(location)};
+                              background-color: rgba(51, 226, 230, 0.25);
+                            "
+                          >
+                            <img
+                              src={getImage(location)}
+                              alt={location}
+                              width="1024"
+                              height="1024"
+                            />
+                            <p>
+                              {location}
+                            </p>
+                          </div>
+                        {/each}
+                      </div>
+                    {/if}
                   {:else}
                     <p
                       class="empty-note"
@@ -403,7 +429,7 @@
                       {/if}
                     {/each}
                   {/if}
-                  {#if !$selectedCharacter.stories || $selectedCharacter.stories[0].season == 99}
+                  {#if !$selectedCharacter.stories || ($selectedCharacter.stories[0].season == 99 && !$selectedCharacter.stories[1])}
                     <p
                       class="empty-note"
                       style="display: {activeTab === 'stories'
@@ -428,15 +454,6 @@
             <li>{@html month}</li>
           {/each}
         </ol>
-      </section>
-
-      <section class="places">
-        {#each places as { name, picture }}
-          <div>
-            <img src={picture} alt={name} width="1080" height="720" />
-            <p>{name}</p>
-          </div>
-        {/each}
       </section>
 
       <article class="history">

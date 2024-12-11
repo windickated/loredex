@@ -8,6 +8,7 @@ export interface Character {
   state: "good" | "evil" | "neutral"
   potentialNFT?: number
   connections?: {
+    locations?: string[]
     allies?: string[]
     enemies?: string[]
     neutral?: string[]
@@ -51,10 +52,4 @@ export interface TimeSection {
   action?: string
   emptySection?: boolean
   expandable?: number
-}
-
-export interface Place {
-  name: string
-  picture: string
-  description?: string
 }

@@ -534,6 +534,16 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Collector.avif',
     appearance: 16800,
     state: "evil",
+    transformations: [
+      {
+        name: 'The Collector',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Collector.avif'
+      },
+      {
+        name: 'The Shadow Tongue',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/ShadowTongue.avif'
+      },
+    ],
     connections: {
       locations: ['Thaloria', 'The Panopticon', 'The City', 'Project Celebration'],
       allies: filterArchons('The Collector'),

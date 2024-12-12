@@ -665,12 +665,14 @@
     }
 
     header {
+      z-index: 1000;
       position: absolute;
       margin-block: 0;
       top: 0;
       padding: 1em;
       opacity: 1;
       animation: none;
+
       h1 {
         display: none;
       }
@@ -678,9 +680,15 @@
       .controllers {
         width: 100vw;
         justify-content: space-between;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-        gap: 1em;
+        flex-flow: row nowrap;
+        gap: 0;
+        opacity: 0.25;
+
+        &:hover,
+        &:focus,
+        &:active {
+          opacity: 1;
+        }
 
         img {
           width: 3vh;
@@ -688,6 +696,8 @@
         }
 
         .search-wrapper {
+          width: 100%;
+
           .search {
             padding: 0.25em;
             border-radius: 0.25em;
@@ -700,7 +710,7 @@
               line-height: inherit;
               border-radius: 0.25em;
               padding-inline: 0.5em;
-              width: 35vw;
+              width: 40vw;
 
               &:focus {
                 width: 50vw;
@@ -710,9 +720,13 @@
         }
 
         .zoom {
-          gap: 0.5em;
+          gap: 0;
 
           .zoom-slider {
+            position: absolute;
+            transform: rotate(-90deg);
+            right: -40vw;
+            top: 50vh;
             width: 90vw;
             padding: 1vw 2vw;
             background-color: transparent;
@@ -728,6 +742,7 @@
 
             img {
               height: 3vh;
+              transform: rotate(90deg);
             }
           }
 
@@ -742,23 +757,31 @@
 
     main {
       width: 100vw;
-      height: 90vh;
-      margin-top: 7em;
-      border-left: none;
-      border-right: none;
-      border-bottom: none;
+      height: 100vh;
+      border: none;
       border-radius: 0;
       opacity: 1;
       animation: none;
 
-      // .map-wrapper {
-      //   .map {
-      //     .plot {
-      //       .date {
-      //       }
-      //     }
-      //   }
-      // }
+      .map-wrapper {
+        .map {
+          padding-top: 15rem;
+
+          .plot {
+            .date {
+              top: 10rem;
+            }
+
+            .expandable-arrow {
+              bottom: -17.5rem;
+            }
+          }
+        }
+
+        .mini-map {
+          top: 120rem;
+        }
+      }
     }
   }
 

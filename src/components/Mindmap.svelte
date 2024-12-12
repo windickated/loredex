@@ -368,7 +368,7 @@
     background-size: 200% auto;
     opacity: 0;
     filter: drop-shadow(0 0 0.5vw rgba(51, 226, 230, 0.5));
-    animation: logo 3s linear 0.3s forwards;
+    animation: logo 5s linear forwards;
   }
 
   header {
@@ -380,7 +380,7 @@
     justify-content: space-between;
     align-items: center;
     opacity: 0;
-    animation: showScale 1s linear 3s forwards;
+    animation: showScale 1s linear 5s forwards;
     cursor: default;
 
     h1 {
@@ -519,7 +519,7 @@
     background-position: center;
     background-size: cover;
     opacity: 0;
-    animation: show 0.5s ease-in 3.5s forwards;
+    animation: show 1s ease-in 5s forwards;
 
     .map-wrapper {
       position: relative;
@@ -792,9 +792,16 @@
   @keyframes logo {
     0% {
       opacity: 0;
-      background-position: 100% 50%;
+      background-position: 0 50%;
+    }
+    25% {
+      opacity: 1;
     }
     50% {
+      opacity: 0;
+      background-position: 100% 50%;
+    }
+    75% {
       opacity: 1;
     }
     99% {

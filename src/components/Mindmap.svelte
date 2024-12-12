@@ -345,6 +345,7 @@
 
 <Modal />
 
+<!-- svelte-ignore css_unused_selector -->
 <style lang="scss">
   .logo {
     z-index: 100;
@@ -670,8 +671,7 @@
       margin-block: 0;
       top: 0;
       padding: 1em;
-      opacity: 1;
-      animation: none;
+      animation: showScale 1s linear 2s forwards;
 
       h1 {
         display: none;
@@ -760,8 +760,7 @@
       height: 100vh;
       border: none;
       border-radius: 0;
-      opacity: 1;
-      animation: none;
+      animation: show 1s ease-in 1s forwards;
 
       .map-wrapper {
         .map {

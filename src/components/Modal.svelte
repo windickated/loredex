@@ -445,14 +445,29 @@
       {/key}
     {:else if $showModal === "timeline"}
       <!-- GENERAL TIMELINE SECTION -->
-      <section class="general-info time-system">
+      <section class="time-system">
+        <div class="timeline-stories">
+          {#each stories as storySection}
+            {#if storySection.season !== 99}
+              <h2 class={storySection.season == 99 ? "empty-note" : ""}>
+                {getSeasonName(storySection.season)}
+              </h2>
+              {#each storySection.episodes as episodeObject}
+                <Story {episodeObject} />
+              {/each}
+            {/if}
+          {/each}
+        </div>
+      </section>
+
+      <div class="month-system">
         <p>{@html timeSystem.note}</p>
         <ol>
           {#each timeSystem.months as month}
             <li>{@html month}</li>
           {/each}
         </ol>
-      </section>
+      </div>
 
       <article class="history">
         <hr />
@@ -740,25 +755,6 @@
         }
       }
 
-      .time-system {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0;
-        font-size: 1vw;
-        margin: 2vw auto;
-
-        p {
-          text-align: center;
-        }
-      }
-
-      .history {
-        padding-inline: 1vw;
-        color: #dedede;
-        font-size: 1vw;
-      }
-
       .tabs-wrapper {
         width: 95%;
         padding-bottom: 1vw;
@@ -888,8 +884,7 @@
         }
       }
 
-      .transformation,
-      .places {
+      .transformation {
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
@@ -929,6 +924,52 @@
         }
       }
     }
+  }
+
+  .time-system {
+    width: 95%;
+    padding: 1vw;
+    background-color: rgba(51, 226, 230, 0.1);
+    border: 0.1vw solid rgba(51, 226, 230, 0.25);
+    border-radius: 1vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    font-size: 1vw;
+    margin: 2vw auto;
+
+    p {
+      text-align: center;
+    }
+
+    .timeline-stories {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      gap: 1vw;
+
+      h2 {
+        text-align: center;
+        margin-bottom: 0.5vw;
+      }
+    }
+  }
+
+  .month-system {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .history {
+    padding-inline: 1vw;
+    color: #dedede;
+    font-size: 1vw;
   }
 
   dialog::backdrop {
@@ -1113,6 +1154,27 @@
             }
           }
 
+          .transformation {
+            flex-direction: column;
+            gap: 1em;
+            font-size: 1em;
+            line-height: 1em;
+            padding-inline: 0.5em;
+
+            div {
+              img {
+                width: 50vw;
+                border-radius: 25vw;
+                margin-bottom: 0.5em;
+              }
+            }
+
+            span {
+              font-size: 1.5em;
+              transform: rotate(90deg);
+            }
+          }
+
           .tabs-wrapper {
             width: 100vw;
             padding-bottom: 1vw;
@@ -1176,28 +1238,6 @@
           }
         }
 
-        .transformation,
-        .places {
-          flex-direction: column;
-          gap: 1em;
-          font-size: 1em;
-          line-height: 1em;
-          padding-inline: 0.5em;
-
-          div {
-            img {
-              width: 50vw;
-              border-radius: 25vw;
-              margin-bottom: 0.5em;
-            }
-          }
-
-          span {
-            font-size: 1.5em;
-            transform: rotate(90deg);
-          }
-        }
-
         .time-system {
           width: 100vw;
           font-size: 1em;
@@ -1208,7 +1248,8 @@
           border-right: none;
         }
 
-        .history {
+        .history,
+        .month-system {
           padding-inline: 1em;
           font-size: 1em;
         }

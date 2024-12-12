@@ -685,7 +685,6 @@
         opacity: 0.25;
 
         &:hover,
-        &:focus,
         &:active {
           opacity: 1;
         }

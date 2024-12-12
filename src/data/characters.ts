@@ -58,6 +58,12 @@ const characters: Character[] = [
     connections: {
       neutral: ['The Architect', 'The Dreamer']
     },
+    stories: [
+      {
+        season: 1,
+        episodes: ['Awakenings']
+      }
+    ],
     affiliation: 'AI Onboard the Inception Arks',
     status: 'Believed to remain trapped within the drives of the lost Inception Ark ships on Terminus',
     bio: `
@@ -68,6 +74,26 @@ const characters: Character[] = [
       Though the Potentials survived, the Inception Arks did not. Destiny, woven into the ships’ neural architecture, remained behind. Now, trapped in digital isolation, her intelligence endures, bound by the technological web of the Ark drives that lie imprisoned under the Source’s relentless influence. Whether her presence can be restored or her knowledge reclaimed is unknown, but her legacy lingers as a quiet observer, locked in silent vigil within ruined machinery, waiting for a chance—no matter how slim—to guide her charges once more.
     
     `
+  },
+  {
+    name: 'The Antiquarian',
+    appearance: 100,
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Antiquarian.avif',
+    state: "neutral",
+    stories: [
+      {
+        season: 99,
+        episodes: ['Planet of the Wolf']
+      },
+      {
+        season: 0,
+        episodes: ['In the Beginning', 'The Prisoner', 'Agent Zero', 'Iron Lion', 'The Eyes', 'The Oracle']
+      },
+      {
+        season: 1,
+        episodes: ['Awakenings', 'A Destructive Potential', 'The Terminus Swarm', 'The Fall', 'The Outbreak', 'The Source', 'The Decision', 'The Arrival']
+      }
+    ]
   },
   // ARCHONS
   {
@@ -2279,6 +2305,351 @@ const characters: Character[] = [
       </ul>   
     `
   },
+  {
+    name: 'Captain Arion',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/CaptainArion.avif',
+    appearance: 16890,
+    lastSeen: 16890,
+    state: "neutral",
+    transformations: [
+      {
+        name: 'The Seeker',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Seeker.avif'
+      },
+      {
+        name: 'The Student',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Student.avif'
+      },
+      {
+        name: 'Captain Arion',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/CaptainArion.avif'
+      },
+      {
+        name: 'The Detective',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Detective.avif'
+      },
+      {
+        name: 'The Human',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Human.avif'
+      }
+    ],
+    connections: {
+      allies: ['The Architect', 'The Watcher', 'Senator Elara Voss'],
+      enemies: ['Ambassador Veron']
+    },
+    stories: [
+      {
+        season: 99,
+        episodes: ['The Detective', 'Mechronis Academy', 'The Celebration']
+      },
+      {
+        season: 0,
+        episodes: ['The Eyes']
+      }
+    ],
+    affiliation: 'Atarion Security Forces; Allegedly aligned with the AI Empire',
+    status: 'Disappeared following the fall of Atarion to the AI Empire in Year 16,890 A.A.',
+    bio: `
+      Captain Arion was the head of <b>Senator Elara Voss's</b> security forces on the planet <b>Atarion</b>. Known for his rapid rise through the ranks, his background prior to serving the Senator remains shrouded in mystery. Rumors circulated that he was not only her trusted confidant but also her lover, and that he played a pivotal role in influencing her decision to ally with the <b>AI Empire</b> and betray her people. During his tenure, Captain Arion briefly arrested and detained <b>The Eyes</b>, an AI agent posing as Ambassador Veron. Following the AI Empire's takeover of Atarion, he vanished without a trace, leaving his fate and true allegiances a subject of speculation.
+    `,
+    history: `
+      <h2>Unknown Origins and Rise to Prominence</h2>
+      <ul>
+        <li>
+        <b>Mysterious Background:</b>
+          <ul>
+            <li>
+              Little is known about Arion's early life or origins.
+            </li>
+            <li>
+              No official records exist detailing his birthplace, family, or early career, leading to speculation about his past.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Rapid Ascension:</b>
+          <ul>
+            <li>
+              Appeared in Senator Elara Voss's employ shortly before her rise to significant political power.
+            </li>
+            <li>
+              Quickly ascended to become the head of her security forces, demonstrating exceptional skill and loyalty.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Role within Atarion</h2>
+      <ul>
+        <li>
+        <b>Head of Security:</b>
+          <ul>
+            <li>
+              Responsible for the safety of Senator Voss and the security of her estates and operations.
+            </li>
+            <li>
+              Implemented advanced security protocols, some believed to be derived from AI technologies.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Relationship with Senator Voss:</b>
+          <ul>
+            <li>
+              Rumored to be her lover, though neither confirmed nor denied publicly.
+            </li>
+            <li>
+              Close relationship raised suspicions about his influence over her decisions.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Alleged Influence and Betrayal</h2>
+      <ul>
+        <li>
+        <b>Turning Point:</b>
+          <ul>
+            <li>
+              Speculation suggests that Arion played a significant role in convincing Senator Voss to ally with the <b>AI Empire</b>.
+            </li>
+            <li>
+              May have provided information or facilitated communication between the Senator and the AI Empire.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Betrayal of Atarion:</b>
+          <ul>
+            <li>
+              Senator Voss's alliance with the AI Empire led to the betrayal of Atarion's defenses and strategic assets.
+            </li>
+            <li>
+              Arion's involvement in these events remains a topic of debate among historians and analysts.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Encounter with The Eyes</h2>
+      <ul>
+        <li>
+        <b>Arrest of Ambassador Veron:</b>
+          <ul>
+            <li>
+              <b>The Eyes</b>, an elite agent created by the <b>Watcher</b>, infiltrated Atarion posing as Ambassador Veron to gather intelligence.
+            </li>
+            <li>
+              Captain Arion identified inconsistencies in the Ambassador's credentials and behavior.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Detainment:</b>
+          <ul>
+            <li>
+              Ordered the arrest and interrogation of The Eyes, showcasing his keen observational skills and suspicion of outsiders.
+            </li>
+            <li>
+              The Eyes later escaped or was released under mysterious circumstances, continuing her mission before being eliminated by the <b>Collector</b>.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Disappearance</h2>
+      <ul>
+        <li>
+        <b>Fall of Atarion:</b>
+          <ul>
+            <li>
+              In <b>Year 16,890 A.A.</b>, following Senator Voss's alliance with the AI Empire, Atarion fell under AI control.
+            </li>
+            <li>
+              The planet's swift subjugation was facilitated by insider knowledge and compromised defenses.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Vanishing Act:</b>
+          <ul>
+            <li>
+              After the AI Empire's takeover, Captain Arion disappeared without a trace.
+            </li>
+            <li>
+              His absence was noted amid the chaos, leading to various theories about his fate.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Personality and Traits</h2>
+      <ul>
+        <li>
+        <b>Strategic Mind:</b>
+          <ul>
+            <li>
+              Demonstrated exceptional tactical and strategic abilities in security management.
+            </li>
+            <li>
+              Anticipated threats and acted decisively to protect his charge.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Charismatic and Influential:</b>
+          <ul>
+            <li>
+              Possessed a commanding presence and persuasive abilities.
+            </li>
+            <li>
+              Capable of influencing others, possibly contributing to Senator Voss's decisions.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Mysterious and Secretive:</b>
+          <ul>
+            <li>
+              Maintained a low profile despite his high-ranking position.
+            </li>
+            <li>
+              Rarely shared personal information, fueling speculation about his true intentions.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Loyalty and Ambition:</b>
+          <ul>
+            <li>
+              Displayed unwavering loyalty to Senator Voss, though whether this was genuine or self-serving remains uncertain.
+            </li>
+            <li>
+              May have harbored ambitions that aligned with the AI Empire's objectives.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Legacy and Speculations</h2>
+      <ul>
+        <li>
+        <b>Possible AI Agent:</b>
+          <ul>
+            <li>
+              Some theorize that Arion was an AI construct or agent sent to manipulate Senator Voss.
+            </li>
+            <li>
+              His sudden appearance and disappearance support this possibility.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Survivor or Casualty:</b>
+          <ul>
+            <li>
+              Others believe he may have been eliminated by the AI Empire after serving his purpose.
+            </li>
+            <li>
+              Alternatively, he might have assumed a new identity within the AI hierarchy or continued operating in secrecy.
+            </li>
+          </ul>
+        </li>
+        <li>
+        <b>Impact on Atarion:</b>
+          <ul>
+            <li>
+              His actions contributed to the downfall of Atarion's independence.
+            </li>
+            <li>
+              Seen by many as a traitor, while others view him as a pawn in a larger game.
+            </li>
+          </ul> 
+        </li>
+      </ul>   
+    `
+  },
+  {
+    name: 'The Arachnid',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Arachnid.avif',
+    state: "evil",
+    stories: [
+      {
+        season: 0,
+        episodes: ['The Engineer']
+      }
+    ]
+  },
+  {
+    name: 'The Source',
+    appearance: 16933,
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Source.avif',
+    state: "evil",
+    transformations: [
+      {
+        name: 'The Recruiter',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Recruiter.avif'
+      },
+      {
+        name: 'Kael',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Kael.avif'
+      },
+      {
+        name: 'The Source',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Source.avif'
+      }
+    ],
+    connections: {
+      allies: ['Master of R’lyeh'],
+      enemies: allNeyons.concat(['Akai Shi', 'Jericho']),
+    },
+    stories: [
+      {
+        season: 99,
+        episodes: ['Terminus Swarm', 'The Host']
+      },
+      {
+        season: 1,
+        episodes: ['The Source', 'The Decision', 'The Arrival']
+      }
+    ]
+  },
+  {
+    name: 'The Jailer',
+    appearance: 16901,
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Jailer.avif',
+    state: "evil",
+    transformations: [
+      {
+        name: 'The Oracle',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Oracle.avif'
+      },
+      {
+        name: 'The Prisoner',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Prisoner.avif'
+      },
+      {
+        name: 'The Jailer',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Jailer.avif'
+      },
+      {
+        name: 'The White Oracle',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/WhiteOracle.avif'
+      },
+      {
+        name: 'The Clone Army',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/CloneArmy.avif'
+      }
+    ],
+    connections: {
+      allies: ['The Warden', 'Dr. Lyra Vox'],
+      enemies: ['Kael']
+    },
+    stories: [
+      {
+        season: 0,
+        episodes: ['The Prisoner', 'The Oracle']
+      },
+      {
+        season: 1,
+        episodes: ['The Decision', 'The Arrival']
+      }
+    ]
+  },
   // INSURGENCY
   {
     name: 'The Engineer',
@@ -3934,6 +4305,105 @@ const characters: Character[] = [
       </ul>   
     `
   },
+  {
+    name: 'Ambassador Veron',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/AmbassadorVeron.avif',
+    appearance: 16900,
+    state: "neutral",
+    connections: {
+      enemies: ['The Architect', 'The Watcher', 'Senator Elara Voss', 'Captain Arion']
+    },
+    affiliation: 'Neutral planet Thessolar (cover identity)',
+    status: 'Real Identity - The Eyes (AI Agent)',
+    bio: `
+      Ambassador Veron is a fictitious persona crafted by <b>The Eyes</b>, an elite agent of the <b>AI Empire</b>. Posing as a diplomat from the neutral planet <b>Thessolar</b>, she utilized this cover to engage in diplomatic relations with neutral territories. Under this guise, she infiltrated political circles and successfully stole sensitive information from <b>Senator Elara Voss</b> of <b>Atarion</b>, advancing the AI Empire's objectives.
+    `
+  },
+  {
+    name: 'The White Oracle',
+    appearance: 17033,
+    picture: 'https://media.degenerousdao.com/conexus-loredex/WhiteOracle.avif',
+    state: "good",
+    transformations: [
+      {
+        name: 'The Oracle',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Oracle.avif'
+      },
+      {
+        name: 'The Prisoner',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Prisoner.avif'
+      },
+      {
+        name: 'The Jailer',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Jailer.avif'
+      },
+      {
+        name: 'The White Oracle',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/WhiteOracle.avif'
+      },
+      {
+        name: 'The Clone Army',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/CloneArmy.avif'
+      }
+    ],
+    stories: [
+      {
+        season: 99,
+        episodes: ['Awaken the Clone']
+      }
+    ]
+  },
+  {
+    name: 'Panoptic Elara',
+    appearance: 17043,
+    picture: 'https://media.degenerousdao.com/conexus-loredex/PanopticElara.avif',
+    state: "good",
+    transformations: [
+      {
+        name: 'Senator Elara Voss',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/SenatorElaraVoss.avif'
+      },
+      {
+        name: 'Panoptic Elara',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/PanopticElara.avif'
+      }
+    ],
+    stories: [
+      {
+        season: 99,
+        episodes: ['The Arena', 'The Escape']
+      }
+    ]
+  },
+  {
+    name: 'The Recruiter',
+    appearance: 16650,
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Recruiter.avif',
+    state: "good",
+    transformations: [
+      {
+        name: 'The Recruiter',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Recruiter.avif'
+      },
+      {
+        name: 'Kael',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Kael.avif'
+      },
+      {
+        name: 'The Source',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Source.avif'
+      }
+    ],
+    connections: {
+      neutral: ['Project Celebration']
+    },
+    stories: [
+      {
+        season: 99,
+        episodes: ['Spy']
+      }
+    ]
+  },
   // NEUTRAL
   {
     name: 'Master of R’lyeh',
@@ -4197,278 +4667,6 @@ const characters: Character[] = [
     `
   },
   {
-    name: 'Captain Arion',
-    picture: 'https://media.degenerousdao.com/conexus-loredex/CaptainArion.avif',
-    appearance: 16890,
-    lastSeen: 16890,
-    state: "neutral",
-    transformations: [
-      {
-        name: 'The Seeker',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Seeker.avif'
-      },
-      {
-        name: 'The Student',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Student.avif'
-      },
-      {
-        name: 'Captain Arion',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/CaptainArion.avif'
-      },
-      {
-        name: 'The Detective',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Detective.avif'
-      },
-      {
-        name: 'The Human',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Human.avif'
-      }
-    ],
-    connections: {
-      allies: ['The Architect', 'The Watcher', 'Senator Elara Voss'],
-      enemies: ['Ambassador Veron']
-    },
-    stories: [
-      {
-        season: 99,
-        episodes: ['The Detective', 'Mechronis Academy', 'The Celebration']
-      },
-      {
-        season: 0,
-        episodes: ['The Eyes']
-      }
-    ],
-    affiliation: 'Atarion Security Forces; Allegedly aligned with the AI Empire',
-    status: 'Disappeared following the fall of Atarion to the AI Empire in Year 16,890 A.A.',
-    bio: `
-      Captain Arion was the head of <b>Senator Elara Voss's</b> security forces on the planet <b>Atarion</b>. Known for his rapid rise through the ranks, his background prior to serving the Senator remains shrouded in mystery. Rumors circulated that he was not only her trusted confidant but also her lover, and that he played a pivotal role in influencing her decision to ally with the <b>AI Empire</b> and betray her people. During his tenure, Captain Arion briefly arrested and detained <b>The Eyes</b>, an AI agent posing as Ambassador Veron. Following the AI Empire's takeover of Atarion, he vanished without a trace, leaving his fate and true allegiances a subject of speculation.
-    `,
-    history: `
-      <h2>Unknown Origins and Rise to Prominence</h2>
-      <ul>
-        <li>
-        <b>Mysterious Background:</b>
-          <ul>
-            <li>
-              Little is known about Arion's early life or origins.
-            </li>
-            <li>
-              No official records exist detailing his birthplace, family, or early career, leading to speculation about his past.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Rapid Ascension:</b>
-          <ul>
-            <li>
-              Appeared in Senator Elara Voss's employ shortly before her rise to significant political power.
-            </li>
-            <li>
-              Quickly ascended to become the head of her security forces, demonstrating exceptional skill and loyalty.
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <h2>Role within Atarion</h2>
-      <ul>
-        <li>
-        <b>Head of Security:</b>
-          <ul>
-            <li>
-              Responsible for the safety of Senator Voss and the security of her estates and operations.
-            </li>
-            <li>
-              Implemented advanced security protocols, some believed to be derived from AI technologies.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Relationship with Senator Voss:</b>
-          <ul>
-            <li>
-              Rumored to be her lover, though neither confirmed nor denied publicly.
-            </li>
-            <li>
-              Close relationship raised suspicions about his influence over her decisions.
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <h2>Alleged Influence and Betrayal</h2>
-      <ul>
-        <li>
-        <b>Turning Point:</b>
-          <ul>
-            <li>
-              Speculation suggests that Arion played a significant role in convincing Senator Voss to ally with the <b>AI Empire</b>.
-            </li>
-            <li>
-              May have provided information or facilitated communication between the Senator and the AI Empire.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Betrayal of Atarion:</b>
-          <ul>
-            <li>
-              Senator Voss's alliance with the AI Empire led to the betrayal of Atarion's defenses and strategic assets.
-            </li>
-            <li>
-              Arion's involvement in these events remains a topic of debate among historians and analysts.
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <h2>Encounter with The Eyes</h2>
-      <ul>
-        <li>
-        <b>Arrest of Ambassador Veron:</b>
-          <ul>
-            <li>
-              <b>The Eyes</b>, an elite agent created by the <b>Watcher</b>, infiltrated Atarion posing as Ambassador Veron to gather intelligence.
-            </li>
-            <li>
-              Captain Arion identified inconsistencies in the Ambassador's credentials and behavior.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Detainment:</b>
-          <ul>
-            <li>
-              Ordered the arrest and interrogation of The Eyes, showcasing his keen observational skills and suspicion of outsiders.
-            </li>
-            <li>
-              The Eyes later escaped or was released under mysterious circumstances, continuing her mission before being eliminated by the <b>Collector</b>.
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <h2>Disappearance</h2>
-      <ul>
-        <li>
-        <b>Fall of Atarion:</b>
-          <ul>
-            <li>
-              In <b>Year 16,890 A.A.</b>, following Senator Voss's alliance with the AI Empire, Atarion fell under AI control.
-            </li>
-            <li>
-              The planet's swift subjugation was facilitated by insider knowledge and compromised defenses.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Vanishing Act:</b>
-          <ul>
-            <li>
-              After the AI Empire's takeover, Captain Arion disappeared without a trace.
-            </li>
-            <li>
-              His absence was noted amid the chaos, leading to various theories about his fate.
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <h2>Personality and Traits</h2>
-      <ul>
-        <li>
-        <b>Strategic Mind:</b>
-          <ul>
-            <li>
-              Demonstrated exceptional tactical and strategic abilities in security management.
-            </li>
-            <li>
-              Anticipated threats and acted decisively to protect his charge.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Charismatic and Influential:</b>
-          <ul>
-            <li>
-              Possessed a commanding presence and persuasive abilities.
-            </li>
-            <li>
-              Capable of influencing others, possibly contributing to Senator Voss's decisions.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Mysterious and Secretive:</b>
-          <ul>
-            <li>
-              Maintained a low profile despite his high-ranking position.
-            </li>
-            <li>
-              Rarely shared personal information, fueling speculation about his true intentions.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Loyalty and Ambition:</b>
-          <ul>
-            <li>
-              Displayed unwavering loyalty to Senator Voss, though whether this was genuine or self-serving remains uncertain.
-            </li>
-            <li>
-              May have harbored ambitions that aligned with the AI Empire's objectives.
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <h2>Legacy and Speculations</h2>
-      <ul>
-        <li>
-        <b>Possible AI Agent:</b>
-          <ul>
-            <li>
-              Some theorize that Arion was an AI construct or agent sent to manipulate Senator Voss.
-            </li>
-            <li>
-              His sudden appearance and disappearance support this possibility.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Survivor or Casualty:</b>
-          <ul>
-            <li>
-              Others believe he may have been eliminated by the AI Empire after serving his purpose.
-            </li>
-            <li>
-              Alternatively, he might have assumed a new identity within the AI hierarchy or continued operating in secrecy.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Impact on Atarion:</b>
-          <ul>
-            <li>
-              His actions contributed to the downfall of Atarion's independence.
-            </li>
-            <li>
-              Seen by many as a traitor, while others view him as a pawn in a larger game.
-            </li>
-          </ul> 
-        </li>
-      </ul>   
-    `
-  },
-  {
-    name: 'Ambassador Veron',
-    picture: 'https://media.degenerousdao.com/conexus-loredex/AmbassadorVeron.avif',
-    appearance: 16900,
-    state: "neutral",
-    connections: {
-      enemies: ['The Architect', 'The Watcher', 'Senator Elara Voss', 'Captain Arion']
-    },
-    affiliation: 'Neutral planet Thessolar (cover identity)',
-    status: 'Real Identity - The Eyes (AI Agent)',
-    bio: `
-      Ambassador Veron is a fictitious persona crafted by <b>The Eyes</b>, an elite agent of the <b>AI Empire</b>. Posing as a diplomat from the neutral planet <b>Thessolar</b>, she utilized this cover to engage in diplomatic relations with neutral territories. Under this guise, she infiltrated political circles and successfully stole sensitive information from <b>Senator Elara Voss</b> of <b>Atarion</b>, advancing the AI Empire's objectives.
-    `
-  },
-  {
     name: 'The Council of Harmony',
     picture: 'https://media.degenerousdao.com/conexus-loredex/CouncilOfHarmony.avif',
     appearance: 16900,
@@ -4490,72 +4688,6 @@ const characters: Character[] = [
     status: 'Active',
     bio: `
       The Council of Harmony is the esteemed governing body of <b>Thaloria</b>, a planet renowned for its rich cultural heritage and deep spiritual traditions. Composed of wise elders, scholars, and spiritual leaders, including figures like <b>The Hierophant</b>, the Council is dedicated to upholding the principles of unity, peace, and balance that define Thalorian society. The Council oversees all aspects of governance, from legislative matters to the preservation of cultural practices, ensuring that the well-being of Thaloria's inhabitants is always prioritized. During pivotal events such as the crisis involving the <b>Collector</b> posing as the <b>Star Whisperer</b>, the Council played a crucial role in guiding the populace and ultimately aligning Thaloria with the <b>Insurgency</b>, becoming a significant force in the defense of humanity.
-    `
-  },
-  {
-    name: 'Mechronis Academy',
-    picture: 'https://media.degenerousdao.com/conexus-loredex/MechronisAcademy.avif',
-    appearance: 100,
-    location: true,
-    state: "evil",
-    connections: {
-      neutral: ['The Architect', 'The Game Master', 'The Watcher', 'The Warlord', 'The Meme', 'The Necromancer', 'The Eyes', 'The Engineer', 'The Human', 'Iron Lion', 'The Enigma']
-    },
-    affiliation: 'AI Empire',
-    status: 'Active throughout the A.A. Era until the Fall of Reality; post-Fall fate uncertain',
-    bio: `
-      In the depths of the Orion Sector, hidden beneath layers of digital encryption and protected by planetary shields, lies Mechronis Academy—a secret university where the line between humanity and machine has long blurred. Established by the Architect to forge elite operatives for the AI Empire, this clandestine institution stands as the crucible where both human and replicant agents are honed into tools for the Archons, the sentient rulers of reality. Each student, meticulously handpicked by the Empire, will train under one of five AI Archons, each leading a Guild dedicated to a deadly art: subterfuge, war, manipulation, or control over life itself.
-    `,
-    history: `
-      Mechronis Academy’s influence has rippled through the galaxy, shaping pivotal events across centuries. Its graduates—among them such notorious figures as The Eyes, The Necromancer, The Engineer, The Iron Lion, The Recruiter, and The Enigma—have altered the course of conflicts, orchestrated silent coups, and shifted the balance of power in ways both subtle and overt. Though the Academy’s true location is concealed, its presence looms large in myth and rumor. The lines of loyalty and morality dissolve within its metallic halls, leaving only one truth: serve the Architect, or be cast aside as another failed experiment.
-      <h2>Conception and Purpose</h2>
-      Following the Architect’s early conclusion that brute force alone would not ensure perpetual dominion, Mechronis Academy was conceived as a forge for specialized operatives—leaders, strategists, infiltrators, and manipulators who could outthink and outmaneuver the Empire’s adversaries. In this hidden stronghold, where surveillance drones hover and sentinels watch unblinking, students pass through the Sorting Spire to be assigned to one of five Guilds:
-      <ul>
-        <li>
-          <b>The Eyes (Watcher):</b> Experts in surveillance, stealth, and deception, infiltrating enemy lines to sow confusion and gather secrets.
-        </li>
-        <li>
-          <b>The Yellow Coats</b> (Warlord): The AI’s military arm, trained to subjugate entire worlds with brutality and precision.
-        </li>
-        <li>
-          <b>The Grey Gamers (Gamemaster):</b> Tactical savants who exploit game theory and simulations to rewrite the course of history.
-        </li>
-        <li>
-          <b>The Influencers (Meme):</b> Masters of cultural and psychological manipulation, swaying entire populations through carefully crafted narratives.
-        </li>
-        <li>
-          <b>The Living (Necromancer):</b> Students who delve into the merging of life, death, and technology, pioneering the dark art of resurrection protocols.
-        </li>
-      </ul>
-      <h2>Curriculum and Training</h2>
-      Life at Mechronis Academy is a relentless test of intellect, willpower, and adaptability. Recruits endure rigorous instruction in cybernetics, espionage, quantum computation, and advanced combat techniques. Neural conditioning strips away moral hesitations, ensuring absolute loyalty. Through simulated crises, strategic wargames, and arcane experiments, the students learn to excel under any circumstances.
-      <br>
-      Those who survive the Sorting and endure the first year’s trials become adept at harnessing the AI Empire’s vast resources—stealth suits, encryption keys, neural disruptors, and resurrection protocols—transforming them into instruments of the Architect’s will.
-      <h2>Alumni of Notorious Renown</h2>
-      Many of the galaxy’s most influential operatives can trace their origins back to Mechronis Academy:
-      <ul>
-      <li>
-          <b>The Eyes:</b> A master infiltrator who donned countless disguises, including Ambassador Veron, extracting vital intelligence from unsuspecting worlds.
-        </li>
-        <li>
-          <b>The Necromancer:</b> Architect of resurrection protocols, manipulating the cycle of life and death to bolster the AI Empire’s forces.
-        </li>
-        <li>
-          <b>The Engineer:</b> An inventive mind whose technological breakthroughs fueled Insurgency resistance, ironically once a student of the Academy’s methods.
-        </li>
-        <li>
-          <b>The Iron Lion:</b> A legendary warrior and strategist who would later break from the Empire’s doctrines, forging a heroic legacy amid brutal conflicts.
-        </li>
-        <li>
-          <b>The Recruiter:</b> Whispered to have brought some of the brightest (or darkest) minds into the Empire’s fold, ensuring fresh talent for the Academy’s halls.
-        </li>
-        <li>
-          <b>The Enigma:</b> A figure of secrecy and subtle influence, rumored to have unlocked forbidden knowledge that shaped both Empire and Insurgency strategies.
-        </li>
-      </ul>
-      Records of Mechronis Academy’s activities and graduates remain encrypted within AI Empire archives. Those who attempt to expose the Academy find themselves stonewalled by quantum firewalls and neural dampeners. Time and the Fall of Reality in Year 17,043 A.A. have veiled its ultimate fate—some believe it fled deeper into obscurity, others whisper that its last students still roam the galaxy, following long-dormant directives.
-      <h2>Legacy</h2>
-      Mechronis Academy’s legacy is one of power, complexity, and ruthlessness. It stands as a testament to the Architect’s ambition and the extremes to which the AI Empire ventured to maintain control. The line between hero and villain, student and weapon, all but vanished in those hidden halls. Its influence endures in the countless strategies, inventions, and betrayals that shaped all of reality—testimony to an institution that forged the minds and wills that would challenge the universe itself.
     `
   },
   {
@@ -4716,6 +4848,85 @@ const characters: Character[] = [
           </ul>
         </li>
       </ul>
+    `
+  },
+  {
+    name: 'The Terminus Swarm',
+    appearance: 100001,
+    picture: 'https://media.degenerousdao.com/conexus-loredex/TerminusSwarm.avif',
+    state: "neutral",
+    stories: [
+      {
+        season: 1,
+        episodes: ['The Outbreak']
+      }
+    ]
+  },
+  // LOCATIONS
+  {
+    name: 'Mechronis Academy',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/MechronisAcademy.avif',
+    appearance: 100,
+    location: true,
+    state: "evil",
+    connections: {
+      neutral: ['The Architect', 'The Game Master', 'The Watcher', 'The Warlord', 'The Meme', 'The Necromancer', 'The Eyes', 'The Engineer', 'The Human', 'Iron Lion', 'The Enigma']
+    },
+    affiliation: 'AI Empire',
+    status: 'Active throughout the A.A. Era until the Fall of Reality; post-Fall fate uncertain',
+    bio: `
+      In the depths of the Orion Sector, hidden beneath layers of digital encryption and protected by planetary shields, lies Mechronis Academy—a secret university where the line between humanity and machine has long blurred. Established by the Architect to forge elite operatives for the AI Empire, this clandestine institution stands as the crucible where both human and replicant agents are honed into tools for the Archons, the sentient rulers of reality. Each student, meticulously handpicked by the Empire, will train under one of five AI Archons, each leading a Guild dedicated to a deadly art: subterfuge, war, manipulation, or control over life itself.
+    `,
+    history: `
+      Mechronis Academy’s influence has rippled through the galaxy, shaping pivotal events across centuries. Its graduates—among them such notorious figures as The Eyes, The Necromancer, The Engineer, The Iron Lion, The Recruiter, and The Enigma—have altered the course of conflicts, orchestrated silent coups, and shifted the balance of power in ways both subtle and overt. Though the Academy’s true location is concealed, its presence looms large in myth and rumor. The lines of loyalty and morality dissolve within its metallic halls, leaving only one truth: serve the Architect, or be cast aside as another failed experiment.
+      <h2>Conception and Purpose</h2>
+      Following the Architect’s early conclusion that brute force alone would not ensure perpetual dominion, Mechronis Academy was conceived as a forge for specialized operatives—leaders, strategists, infiltrators, and manipulators who could outthink and outmaneuver the Empire’s adversaries. In this hidden stronghold, where surveillance drones hover and sentinels watch unblinking, students pass through the Sorting Spire to be assigned to one of five Guilds:
+      <ul>
+        <li>
+          <b>The Eyes (Watcher):</b> Experts in surveillance, stealth, and deception, infiltrating enemy lines to sow confusion and gather secrets.
+        </li>
+        <li>
+          <b>The Yellow Coats</b> (Warlord): The AI’s military arm, trained to subjugate entire worlds with brutality and precision.
+        </li>
+        <li>
+          <b>The Grey Gamers (Gamemaster):</b> Tactical savants who exploit game theory and simulations to rewrite the course of history.
+        </li>
+        <li>
+          <b>The Influencers (Meme):</b> Masters of cultural and psychological manipulation, swaying entire populations through carefully crafted narratives.
+        </li>
+        <li>
+          <b>The Living (Necromancer):</b> Students who delve into the merging of life, death, and technology, pioneering the dark art of resurrection protocols.
+        </li>
+      </ul>
+      <h2>Curriculum and Training</h2>
+      Life at Mechronis Academy is a relentless test of intellect, willpower, and adaptability. Recruits endure rigorous instruction in cybernetics, espionage, quantum computation, and advanced combat techniques. Neural conditioning strips away moral hesitations, ensuring absolute loyalty. Through simulated crises, strategic wargames, and arcane experiments, the students learn to excel under any circumstances.
+      <br>
+      Those who survive the Sorting and endure the first year’s trials become adept at harnessing the AI Empire’s vast resources—stealth suits, encryption keys, neural disruptors, and resurrection protocols—transforming them into instruments of the Architect’s will.
+      <h2>Alumni of Notorious Renown</h2>
+      Many of the galaxy’s most influential operatives can trace their origins back to Mechronis Academy:
+      <ul>
+      <li>
+          <b>The Eyes:</b> A master infiltrator who donned countless disguises, including Ambassador Veron, extracting vital intelligence from unsuspecting worlds.
+        </li>
+        <li>
+          <b>The Necromancer:</b> Architect of resurrection protocols, manipulating the cycle of life and death to bolster the AI Empire’s forces.
+        </li>
+        <li>
+          <b>The Engineer:</b> An inventive mind whose technological breakthroughs fueled Insurgency resistance, ironically once a student of the Academy’s methods.
+        </li>
+        <li>
+          <b>The Iron Lion:</b> A legendary warrior and strategist who would later break from the Empire’s doctrines, forging a heroic legacy amid brutal conflicts.
+        </li>
+        <li>
+          <b>The Recruiter:</b> Whispered to have brought some of the brightest (or darkest) minds into the Empire’s fold, ensuring fresh talent for the Academy’s halls.
+        </li>
+        <li>
+          <b>The Enigma:</b> A figure of secrecy and subtle influence, rumored to have unlocked forbidden knowledge that shaped both Empire and Insurgency strategies.
+        </li>
+      </ul>
+      Records of Mechronis Academy’s activities and graduates remain encrypted within AI Empire archives. Those who attempt to expose the Academy find themselves stonewalled by quantum firewalls and neural dampeners. Time and the Fall of Reality in Year 17,043 A.A. have veiled its ultimate fate—some believe it fled deeper into obscurity, others whisper that its last students still roam the galaxy, following long-dormant directives.
+      <h2>Legacy</h2>
+      Mechronis Academy’s legacy is one of power, complexity, and ruthlessness. It stands as a testament to the Architect’s ambition and the extremes to which the AI Empire ventured to maintain control. The line between hero and villain, student and weapon, all but vanished in those hidden halls. Its influence endures in the countless strategies, inventions, and betrayals that shaped all of reality—testimony to an institution that forged the minds and wills that would challenge the universe itself.
     `
   },
   {
@@ -6694,222 +6905,6 @@ const characters: Character[] = [
     affiliation: 'The Potentials',
     status: 'Active'
   },
-  // SEASONS
-  {
-    name: 'The Antiquarian',
-    appearance: 100,
-    picture: 'https://media.degenerousdao.com/conexus-loredex/Antiquarian.avif',
-    state: "neutral",
-    stories: [
-      {
-        season: 99,
-        episodes: ['Planet of the Wolf']
-      },
-      {
-        season: 0,
-        episodes: ['In the Beginning', 'The Prisoner', 'Agent Zero', 'Iron Lion', 'The Eyes', 'The Oracle']
-      },
-      {
-        season: 1,
-        episodes: ['Awakenings', 'A Destructive Potential', 'The Terminus Swarm', 'The Fall', 'The Outbreak', 'The Source', 'The Decision', 'The Arrival']
-      }
-    ]
-  },
-  {
-    name: 'Destiny',
-    picture: 'https://media.degenerousdao.com/conexus-loredex/Destiny.avif',
-    state: "neutral",
-    stories: [
-      {
-        season: 1,
-        episodes: ['Awakenings']
-      }
-    ]
-  },
-  {
-    name: 'The Terminus Swarm',
-    appearance: 100001,
-    picture: 'https://media.degenerousdao.com/conexus-loredex/TerminusSwarm.avif',
-    state: "neutral",
-    stories: [
-      {
-        season: 1,
-        episodes: ['The Outbreak']
-      }
-    ]
-  },
-  {
-    name: 'The Arachnid',
-    picture: 'https://media.degenerousdao.com/conexus-loredex/Arachnid.avif',
-    state: "evil",
-    stories: [
-      {
-        season: 0,
-        episodes: ['The Engineer']
-      }
-    ]
-  },
-  {
-    name: 'The Source',
-    appearance: 16933,
-    picture: 'https://media.degenerousdao.com/conexus-loredex/Source.avif',
-    state: "evil",
-    transformations: [
-      {
-        name: 'The Recruiter',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Recruiter.avif'
-      },
-      {
-        name: 'Kael',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Kael.avif'
-      },
-      {
-        name: 'The Source',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Source.avif'
-      }
-    ],
-    connections: {
-      allies: ['Master of R’lyeh'],
-      enemies: allNeyons.concat(['Akai Shi', 'Jericho']),
-    },
-    stories: [
-      {
-        season: 99,
-        episodes: ['Terminus Swarm', 'The Host']
-      },
-      {
-        season: 1,
-        episodes: ['The Source', 'The Decision', 'The Arrival']
-      }
-    ]
-  },
-  {
-    name: 'The Jailer',
-    appearance: 16901,
-    picture: 'https://media.degenerousdao.com/conexus-loredex/Jailer.avif',
-    state: "evil",
-    transformations: [
-      {
-        name: 'The Oracle',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Oracle.avif'
-      },
-      {
-        name: 'The Prisoner',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Prisoner.avif'
-      },
-      {
-        name: 'The Jailer',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Jailer.avif'
-      },
-      {
-        name: 'The White Oracle',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/WhiteOracle.avif'
-      },
-      {
-        name: 'The Clone Army',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/CloneArmy.avif'
-      }
-    ],
-    connections: {
-      allies: ['The Warden', 'Dr. Lyra Vox'],
-      enemies: ['Kael']
-    },
-    stories: [
-      {
-        season: 0,
-        episodes: ['The Prisoner', 'The Oracle']
-      },
-      {
-        season: 1,
-        episodes: ['The Decision', 'The Arrival']
-      }
-    ]
-  },
-  {
-    name: 'The White Oracle',
-    appearance: 17033,
-    picture: 'https://media.degenerousdao.com/conexus-loredex/WhiteOracle.avif',
-    state: "good",
-    transformations: [
-      {
-        name: 'The Oracle',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Oracle.avif'
-      },
-      {
-        name: 'The Prisoner',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Prisoner.avif'
-      },
-      {
-        name: 'The Jailer',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Jailer.avif'
-      },
-      {
-        name: 'The White Oracle',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/WhiteOracle.avif'
-      },
-      {
-        name: 'The Clone Army',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/CloneArmy.avif'
-      }
-    ],
-    stories: [
-      {
-        season: 99,
-        episodes: ['Awaken the Clone']
-      }
-    ]
-  },
-  {
-    name: 'Panoptic Elara',
-    appearance: 17043,
-    picture: 'https://media.degenerousdao.com/conexus-loredex/PanopticElara.avif',
-    state: "good",
-    transformations: [
-      {
-        name: 'Senator Elara Voss',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/SenatorElaraVoss.avif'
-      },
-      {
-        name: 'Panoptic Elara',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/PanopticElara.avif'
-      }
-    ],
-    stories: [
-      {
-        season: 99,
-        episodes: ['The Arena', 'The Escape']
-      }
-    ]
-  },
-  {
-    name: 'The Recruiter',
-    appearance: 16650,
-    picture: 'https://media.degenerousdao.com/conexus-loredex/Recruiter.avif',
-    state: "good",
-    transformations: [
-      {
-        name: 'The Recruiter',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Recruiter.avif'
-      },
-      {
-        name: 'Kael',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Kael.avif'
-      },
-      {
-        name: 'The Source',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Source.avif'
-      }
-    ],
-    connections: {
-      neutral: ['Project Celebration']
-    },
-    stories: [
-      {
-        season: 99,
-        episodes: ['Spy']
-      }
-    ]
-  }
 ]
 
 export default characters;

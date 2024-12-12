@@ -37,8 +37,8 @@ export const setSeasonPadding = (season: number) => {
       break;
     }
   }
-  if (episodesAmount) padding = (sectionOffset - episodesAmount * 2) * 10 - 5;
-  return padding > 0 ? padding : -5;
+  if (episodesAmount) padding = (sectionOffset - episodesAmount * 2) * 10 - 2.5;
+  return padding > 0 ? padding : -2.5;
 };
 
 export const getSeasonName = (season: number, epochOnly: boolean = false) => {

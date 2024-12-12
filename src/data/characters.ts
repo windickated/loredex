@@ -549,7 +549,7 @@ const characters: Character[] = [
     connections: {
       allies: filterNeyons('The Dreamer'),
       enemies: ['The Architect', 'The Human', 'The Terminus Swarm', 'The Source'],
-      locations: ['Wyrmhole', 'Terminus', 'The City']
+      locations: ['The Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -584,7 +584,7 @@ const characters: Character[] = [
     connections: {
       allies: filterNeyons('The Judge'),
       enemies: ['The Architect', 'The Warlord', 'The Terminus Swarm', 'The Source'],
-      locations: ['Wyrmhole', 'Terminus', 'The City']
+      locations: ['The Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -622,7 +622,7 @@ const characters: Character[] = [
     connections: {
       allies: filterNeyons('The Inventor'),
       enemies: ['The Architect', 'The Warden', 'The Terminus Swarm', 'The Source'],
-      locations: ['Wyrmhole', 'Terminus', 'The City']
+      locations: ['The Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -631,7 +631,7 @@ const characters: Character[] = [
       },
       {
         season: 1,
-        episodes: ['Awakenigns', 'The Fall', 'The Arrival', 'The City', 'Wyrmwood', 'The Hunt', 'The Beginning of the End']
+        episodes: ['Awakenigns', 'The Fall', 'The Arrival', 'The City', 'The Wyrmwood', 'The Hunt', 'The Beginning of the End']
       }
     ],
     affiliation: 'Neyons',
@@ -660,7 +660,7 @@ const characters: Character[] = [
     connections: {
       allies: filterNeyons('The Seer'),
       enemies: ['The Architect', 'The Vortex', 'The Terminus Swarm', 'The Source'],
-      locations: ['Wyrmhole', 'Terminus', 'The City']
+      locations: ['The Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -698,7 +698,7 @@ const characters: Character[] = [
     connections: {
       allies: filterNeyons('The Storm'),
       enemies: ['The Architect', 'The Politician', 'The Terminus Swarm', 'The Source'],
-      locations: ['Wyrmhole', 'Terminus', 'The City']
+      locations: ['The Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -736,7 +736,7 @@ const characters: Character[] = [
     connections: {
       allies: filterNeyons('The Silence'),
       enemies: ['The Architect', 'The Meme', 'The Terminus Swarm', 'The Source'],
-      locations: ['Wyrmhole', 'Terminus', 'The City']
+      locations: ['The Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -774,7 +774,7 @@ const characters: Character[] = [
     connections: {
       allies: filterNeyons('The Knowledge'),
       enemies: ['The Architect', 'The Watcher', 'The Terminus Swarm', 'The Source'],
-      locations: ['Wyrmhole', 'Terminus', 'The City']
+      locations: ['The Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -783,7 +783,7 @@ const characters: Character[] = [
       },
       {
         season: 1,
-        episodes: ['The Terminus Swarm', 'The Arrival', 'Wyrmwood', 'The Beginning of the End']
+        episodes: ['The Terminus Swarm', 'The Arrival', 'The Wyrmwood', 'The Beginning of the End']
       }
     ],
     affiliation: 'Neyons',
@@ -812,7 +812,7 @@ const characters: Character[] = [
     connections: {
       allies: filterNeyons('The Degen'),
       enemies: ['The Architect', 'The Collector', 'The Terminus Swarm', 'The Source'],
-      locations: ['Wyrmhole', 'Terminus', 'The City']
+      locations: ['The Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -850,7 +850,7 @@ const characters: Character[] = [
     connections: {
       allies: filterNeyons('The Advocate').concat(['Master of R’lyeh']),
       enemies: ['The Architect', 'The Game Master', 'The Terminus Swarm', 'The Source'],
-      locations: ['Wyrmhole', 'Terminus', 'The City']
+      locations: ['The Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -893,7 +893,7 @@ const characters: Character[] = [
     connections: {
       allies: ['The Dreamer', 'The Inventor'],
       enemies: ['The Architect', 'The Necromancer', 'The Terminus Swarm', 'The Source'],
-      locations: ['Wyrmhole', 'Terminus', 'The City']
+      locations: ['The Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
       {
@@ -2340,7 +2340,7 @@ const characters: Character[] = [
     connections: {
       allies: ['Iron Lion', 'The Eyes', 'The Engineer', 'Agent Zero'],
       enemies: ['The Architect', 'The Warden', 'The Warlord', 'The Politician', 'The Jailer'],
-      locations: ['The Panopticon', 'Wyrmhole', 'Terminus']
+      locations: ['The Panopticon', 'The Wyrmhole', 'Terminus']
     },
     affiliation: 'Insurgency (formerly); later became The Source, embodiment of the Thought Virus',
     status: 'Transformed into The Source in Year 16,933 A.A.',
@@ -4483,6 +4483,9 @@ const characters: Character[] = [
         episodes: ['The Oracle']
       }
     ],
+    connections: {
+      locations: ['Thaloria']
+    },
     affiliation: 'Governing Body of Thaloria',
     status: 'Active',
     bio: `
@@ -4848,6 +4851,12 @@ const characters: Character[] = [
       allies: ['The White Oracle'],
       enemies: ['The Collector', 'The Host', 'The Source']
     },
+    stories: [
+      {
+        season: 1,
+        episodes: ['The City', 'The Return', 'The Hunt']
+      }
+    ],
     affiliation: 'The City',
     status: 'Futuristic White Crystalline Utopian Settlement; Guided by the White Oracle',
     bio: `
@@ -4858,7 +4867,7 @@ const characters: Character[] = [
     `
   },
   {
-    name: 'Wyrmhole',
+    name: 'The Wyrmhole',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Wyrmhole.avif',
     appearance: 17033,
     location: true,
@@ -4866,6 +4875,12 @@ const characters: Character[] = [
     connections: {
       neutral: ['The Source', 'The Host', 'The White Oracle', 'The Jailer', 'The Collector', 'The Panopticon', 'Thaloria', 'The City']
     },
+    stories: [
+      {
+        season: 1,
+        episodes: ['The Wyrmwood']
+      }
+    ],
     affiliation: 'Anomalous Spatial-Temporal Rift',
     status: 'Active tear in reality connecting Terminus to Thaloria',
     bio: `
@@ -4901,8 +4916,14 @@ const characters: Character[] = [
     state: "neutral",
     connections: {
       allies: ['The Terminus Swarm'],
-      neutral: ['The Source', 'The Host', 'The Panopticon', 'Wyrmhole', 'Thaloria']
+      neutral: ['The Source', 'The Host', 'The Panopticon', 'The Wyrmhole', 'Thaloria']
     },
+    stories: [
+      {
+        season: 1,
+        episodes: ['The Terminus Swarm', 'The Fall', 'The Outbreak', 'The Source', 'The Decision', 'The Arrival']
+      }
+    ],
     affiliation: 'Formerly the Panopticon under the Architect’s dominion; current stronghold of the Source',
     status: 'A rogue planet drifting through the galaxy, home to the Source and the Terminus Swarms',
     bio: `
@@ -4987,7 +5008,7 @@ const characters: Character[] = [
     connections: {
       allies: ['The Host'],
       enemies: ['Wraith Calder', 'The Judge', 'The League'],
-      locations: ['Terminus', 'Wyrmhole', 'The City', 'The Crucible']
+      locations: ['Terminus', 'The Wyrmhole', 'The City', 'The Crucible']
     },
     stories: [
       {
@@ -5177,7 +5198,7 @@ const characters: Character[] = [
     connections: {
       allies: ['Jericho'],
       enemies: ['The Wolf', 'The Syndicate of Death'],
-      locations: ['Terminus', 'Wyrmhole', 'The City']
+      locations: ['Terminus', 'The Wyrmhole', 'The City']
     },
     stories: [
       {
@@ -5186,7 +5207,7 @@ const characters: Character[] = [
       },
       {
         season: 1,
-        episodes: ['The Fall', 'The Return', 'Wyrmwood', 'The Hunt']
+        episodes: ['The Fall', 'The Return', 'The Wyrmwood', 'The Hunt']
       }
     ],
     affiliation: 'The Potentials; later independent agent against the Syndicate of Death',
@@ -5425,7 +5446,7 @@ const characters: Character[] = [
     connections: {
       allies: ['The Advocate'],
       enemies: ['The Necromancer', 'Jericho', 'The Host', 'The Source'],
-      locations: ['Terminus', 'Wyrmhole', 'The City', 'The Matrix of Dreams']
+      locations: ['Terminus', 'The Wyrmhole', 'The City', 'The Matrix of Dreams']
     },
     stories: [
       {
@@ -5690,7 +5711,7 @@ const characters: Character[] = [
     connections: {
       allies: ['The Degen', 'Wraith Calder'],
       enemies: ['Akai Shi', 'The Host', 'The Collector', 'The Source'],
-      locations: ['Terminus', 'Wyrmhole', 'The City']
+      locations: ['Terminus', 'The Wyrmhole', 'The City']
     },
     stories: [
       {
@@ -6247,7 +6268,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: ['The Decision', 'The Artifact', 'Wyrmwood']
+        episodes: ['The Decision', 'The Artifact', 'The Wyrmwood']
       }
     ],
     affiliation: 'The Potentials',
@@ -6611,7 +6632,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: ['The Arrival', 'Wyrmwood', 'The Hunt']
+        episodes: ['The Arrival', 'The Wyrmwood', 'The Hunt']
       }
     ],
     affiliation: 'The Potentials',

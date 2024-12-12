@@ -200,7 +200,10 @@
       {#each timeline as { date, note, action, emptySection, expandable }}
         <div
           class="plot date-plot {date[0]} {date[1]}"
-          style="padding-bottom: {expandable !== undefined ? '7.5rem' : ''}"
+          style="
+            padding-bottom: {expandable != undefined ? '15rem;' : '0;'}
+            padding-top: {action ? '15rem;' : '1rem;'}
+          "
         >
           <div class="date {date[0]} {date[1]}">
             {#if !emptySection}
@@ -288,15 +291,34 @@
     {#if activeSeason}
       <section
         class="mini-map"
-        style="left: {setSeasonPadding(activeSeason.season)}rem"
+        style="
+          left: {setSeasonPadding(activeSeason.season)}rem;
+          background-image: {activeSeason.season == 99
+          ? 'radial-gradient(rgba(45, 90, 216, 0), rgba(45, 90, 216, 0.1));'
+          : 'radial-gradient(rgba(51, 226, 230, 0), rgba(51, 226, 230, 0.1));'}
+          border-color: {activeSeason.season == 99
+          ? 'rgba(45, 90, 216, 0.75);'
+          : 'rgba(51, 226, 230, 0.5);'}
+        "
       >
-        {#each activeSeason.episodes as { title, date }, index}
+        {#each activeSeason.episodes as { title, date, link }, index}
           <div class="plot episode-plot {title}">
             <div class="episode-title {title}">
               {#if activeSeason.season !== 99}
                 <p>Episode - {index + 1}</p>
               {/if}
-              <p class="note">{title}</p>
+              <p class="note">
+                {#if activeSeason.season !== 99}
+                  <a
+                    href="https://www.youtube.com/watch?v={link}"
+                    target="_blank"
+                  >
+                    {title}
+                  </a>
+                {:else}
+                  {title}
+                {/if}
+              </p>
               {#if date}
                 <p>{date} A.A.</p>
               {/if}
@@ -514,6 +536,7 @@
         height: 100rem;
         width: 500rem;
         grid-template-columns: repeat(50, 10rem);
+        padding: 2.5rem;
 
         .plot {
           height: 100%;
@@ -523,17 +546,17 @@
           justify-content: space-around;
           align-items: center;
           gap: 2rem;
+          padding-block: 2.5rem;
           border-left: 0.05rem solid rgba(51, 226, 230, 0.1);
           border-right: 0.05rem solid rgba(51, 226, 230, 0.1);
-          padding-top: 7.5rem;
           transition: all 0.15s ease-in-out;
 
           .date,
           .episode-title {
+            position: absolute;
+            top: 1rem;
             width: inherit;
             font-size: 1.25rem;
-            position: absolute;
-            top: 0;
             text-align: center;
             white-space: nowrap;
             padding: 0.25rem 0.5rem;
@@ -549,6 +572,17 @@
           .action {
             margin-top: 1rem;
             white-space: wrap;
+
+            a {
+              color: inherit;
+              text-decoration: none;
+
+              &:hover,
+              &:active {
+                color: rgba(51, 226, 230, 0.9);
+                text-decoration: underline;
+              }
+            }
           }
 
           .expandable-arrow {
@@ -602,22 +636,18 @@
         align-items: flex-start;
         height: auto;
         width: auto;
-        padding: 5rem;
+        padding: 2.5rem 5rem;
         border: 0.1rem solid rgba(51, 226, 230, 0.5);
         border-radius: 1rem;
-        background-image: radial-gradient(
-          rgba(51, 226, 230, 0),
-          rgba(51, 226, 230, 0.1)
-        );
 
         .plot {
-          padding-top: 7.5rem;
+          padding-top: 0;
           width: 20rem;
           border-left: 0.05rem solid rgba(51, 226, 230, 0.25);
           border-right: 0.05rem solid rgba(51, 226, 230, 0.25);
 
           .episode-title {
-            padding-top: 1rem;
+            position: static;
 
             .note {
               font-size: 2rem;

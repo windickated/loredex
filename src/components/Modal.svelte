@@ -940,10 +940,6 @@
     font-size: 1vw;
     margin: 2vw auto;
 
-    p {
-      text-align: center;
-    }
-
     .timeline-stories {
       display: flex;
       flex-flow: column nowrap;

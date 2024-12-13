@@ -154,24 +154,44 @@ export const stories: Season[] = [
       },
       {
         title: 'Terminus Swarm',
+        link: 'BRw06-iixgw',
+        bio: `
+          Stranded on a planet of shifting fungal forests and toxic spores, you awaken as an engineered warrior fated to face the relentless onslaught of a monstrous insectoid swarm. Surrounded by grotesque enemies and hostile terrain, your every choice brings you closer to an inevitable and gruesome end, ensuring a tense and unforgettable struggle against a world determined to consume you.
+        `
       },
       {
         title: 'Awaken the Clone',
+        link: 'KljI0bV8mm0',
+        bio: `
+          On a lush, forest world facing extinction, you awaken as a cloned soldier enslaved by a monstrous AI overlord, forced to conquer Thaloria and crush the fervent defenders who stand in your way. Yet beyond your xenomorph helmet’s visor and the cracking of branches under your boots, an enigmatic Oracle offers the faint hope of freedom, redemption, and the power to shape your own destiny.
+        `
       },
       {
         title: 'The Host',
+        link: '3ZZ3w_-4QAs'
       },
       {
         title: 'Syndicate of Death',
+        bio: `
+          Reborn in a universe ravaged by ancient powers and haunted by the Fall of Reality, you awaken as Wraith Calder—one of the last Potentials—determined to reclaim stolen Resurrection Protocols from a ruthless crime syndicate of immortal twins. Armed with centuries of combat mastery, viral awareness, and the strength of ages past, you must infiltrate the galaxy’s criminal underbelly, dismantle the Syndicate of Death, and discover the secret to ending their eternal reign.
+        `
       },
       {
         title: "The Necromancer's Lair",
+        link: 'vy0bJ9Adqic',
+        bio: `
+          Millenia after the Fall of Reality, Akai Shi—a woman with long white hair, a hooded red robe, and a magical gold shirt—awakens aboard an Inception Ark and steps into the Matrix of Dreams, a digital nightmare ruled by the Necromancer, an evil dark elf with spiky white hair and red glowing glasses. Within this twisted realm where magic and technology collide, each death forces her to start anew as she battles endless monsters, navigates deadly traps, and struggles to uncover the Necromancer’s secrets before he escapes into the real world.
+        `
       },
       {
         title: 'Planet of the Wolf',
+        bio: `
+          In a secret pocket universe nurtured by the distant Antiquarian, Lykos—a black and gold robot wearing a grey hooded cloak—awakens to find a world of superpowered Metahumans poised to dominate a fractured multiverse. Armed with the ability to absorb powers and don holographic disguises, he must infiltrate and assassinate these heroes—including the legendary League—risking moral corruption, overwhelming odds of failure, and a fate forever tied to the dark art of deception.
+        `
       },
       {
         title: 'The Escape',
+        link: 'Cujw3s-D6yU'
       },
       {
         title: 'The Arena',
@@ -184,12 +204,15 @@ export const stories: Season[] = [
       },
       {
         title: 'The Detective',
+        link: 'JdOmb-Rjd8k'
       },
       {
         title: 'The Celebration',
+        link: 'DsxATNW2GVM'
       },
       {
-        title: 'Mechronis Academy'
+        title: 'Mechronis Academy',
+        link: 'UAXXHjioBdE'
       },
       {
         title: 'Building the Architect',
@@ -215,18 +238,7 @@ export const stories: Season[] = [
         link: 'isK6VuGAbs4',
         date: 1,
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -248,18 +260,7 @@ export const stories: Season[] = [
         link: 'Cujw3s-D6yU',
         date: 16901,
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -280,19 +281,8 @@ export const stories: Season[] = [
         title: 'Agent Zero',
         link: 'R1qvKpelbE4',
         date: 16893,
-          bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+        bio: `
+
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -314,18 +304,7 @@ export const stories: Season[] = [
         link: 'k10qXHtV0bg',
         date: 17026,
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -347,18 +326,7 @@ export const stories: Season[] = [
         link: 'Kzdf-TaxSfw',
         date: 16875,
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -380,18 +348,7 @@ export const stories: Season[] = [
         link: 'eD87OwcNuzE',
         date: 16900,
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -412,18 +369,7 @@ export const stories: Season[] = [
         title: 'The Engineer',
         link: '68ZRBVUzydo',
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur

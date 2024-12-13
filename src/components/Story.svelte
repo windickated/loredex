@@ -7,48 +7,64 @@
 
 <section>
   <div>
-    <!-- svelte-ignore a11y_click_events_have_key_events -->
-    <span
-      class="story-image-container"
-      role="button"
-      tabindex="0"
-      on:click={() => {
-        window.open(`https://www.youtube.com/watch?v=${link}`, "_blank");
-      }}
-    >
-      <img
-        class="story-image"
-        src="https://img.youtube.com/vi/{link}/hqdefault.jpg"
-        alt="Story"
-        width="1280"
-        height="720"
-      />
-      <img
-        class="play-icon"
-        src="/youtube.png"
-        alt="YouTube"
-        width="1280"
-        height="720"
-      />
-    </span>
-    <article>
-      <a href="https://www.youtube.com/watch?v={link}" target="_blank">
-        <img src="/play.png" alt="Stories" />
-        <h2>{title}</h2>
-      </a>
-      <p>{bio}</p>
-      <button
+    {#if link}
+      <!-- svelte-ignore a11y_click_events_have_key_events -->
+      <span
+        class="story-image-container"
+        role="button"
+        tabindex="0"
         on:click={() => {
-          showDescription = !showDescription;
+          window.open(`https://www.youtube.com/watch?v=${link}`, "_blank");
         }}
       >
         <img
-          src="/drop-down.png"
-          alt="Description"
-          style={showDescription ? "transform: rotate(180deg);" : ""}
+          class="story-image"
+          src="https://img.youtube.com/vi/{link}/hqdefault.jpg"
+          alt="Story"
+          width="1280"
+          height="720"
         />
-        {showDescription ? "Hide" : "Show"} description
-      </button>
+        <img
+          class="play-icon"
+          src="/youtube.png"
+          alt="YouTube"
+          width="1280"
+          height="720"
+        />
+      </span>
+    {:else}
+      <img
+        class="blank-image"
+        src="/blank.avif"
+        alt="Story"
+        width="720"
+        height="720"
+      />
+    {/if}
+    <article>
+      {#if link}
+        <a href="https://www.youtube.com/watch?v={link}" target="_blank">
+          <img src="/play.png" alt="Stories" />
+          <h2>{title}</h2>
+        </a>
+      {:else}
+        <h2>{title}</h2>
+      {/if}
+      <p>{bio}</p>
+      {#if description}
+        <button
+          on:click={() => {
+            showDescription = !showDescription;
+          }}
+        >
+          <img
+            src="/drop-down.png"
+            alt="Description"
+            style={showDescription ? "transform: rotate(180deg);" : ""}
+          />
+          {showDescription ? "Hide" : "Show"} description
+        </button>
+      {/if}
     </article>
   </div>
 
@@ -59,6 +75,7 @@
 
 <style lang="scss">
   section {
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -68,7 +85,7 @@
       width: 100%;
       display: flex;
       flex-flow: row nowrap;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       gap: 2vw;
       background-color: rgba(51, 226, 230, 0.25);
@@ -104,6 +121,13 @@
         }
       }
 
+      .blank-image {
+        border: 0.1vw solid rgba(51, 226, 230, 0.25);
+        width: 20vw;
+        height: 15vw;
+        object-fit: cover;
+      }
+
       article {
         height: 100%;
         max-width: 52.5vw;
@@ -112,6 +136,11 @@
         justify-content: space-around;
         align-items: flex-start;
         gap: 1vw;
+
+        h2 {
+          color: rgb(51, 226, 230);
+          margin-block: 0;
+        }
 
         a {
           display: flex;
@@ -124,11 +153,6 @@
 
           img {
             height: 2vw;
-          }
-
-          h2 {
-            color: rgb(51, 226, 230);
-            margin-block: 0;
           }
 
           &:hover,
@@ -195,6 +219,11 @@
           .play-icon {
             display: none;
           }
+        }
+
+        .blank-image {
+          height: 90vw;
+          width: 90vw;
         }
 
         article {

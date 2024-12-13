@@ -421,26 +421,20 @@
               >
                 {#if $selectedCharacter.stories}
                   {#each $selectedCharacter.stories as season}
-                    {#if season.season !== 99}
-                      <h2 class={season.season == 99 ? "empty-note" : ""}>
-                        {getSeasonName(season.season)}
-                      </h2>
-
-                      {#each season.episodes as episodeTitle}
-                        {#each stories as storySection}
-                          {#if storySection.season == season.season}
-                            {#each storySection.episodes as episodeObject}
-                              {#if episodeObject.title == episodeTitle}
-                                <Story {episodeObject} />
-                              {/if}
-                            {/each}
-                          {/if}
-                        {/each}
+                    <h2>{getSeasonName(season.season)}</h2>
+                    {#each season.episodes as episodeTitle}
+                      {#each stories as storySection}
+                        {#if storySection.season == season.season}
+                          {#each storySection.episodes as episodeObject}
+                            {#if episodeObject.title == episodeTitle}
+                              <Story {episodeObject} />
+                            {/if}
+                          {/each}
+                        {/if}
                       {/each}
-                    {/if}
+                    {/each}
                   {/each}
-                {/if}
-                {#if !$selectedCharacter.stories || ($selectedCharacter.stories[0].season == 99 && !$selectedCharacter.stories[1])}
+                {:else}
                   <p
                     class="empty-note"
                     style="display: {activeTab === 'stories' ? 'flex' : 'none'}"

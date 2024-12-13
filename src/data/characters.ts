@@ -2734,6 +2734,16 @@ const characters: Character[] = [
     appearance: 225,
     lastSeen: 16400,
     state: 'evil',
+    transformations: [
+      {
+        name: 'The Collector',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/Collector.avif'
+      },
+      {
+        name: 'The Shadow Tongue',
+        picture: 'https://media.degenerousdao.com/conexus-loredex/ShadowTongue.avif'
+      },
+    ],
     connections: {
       enemies: ['The Hierophant', 'The Council of Harmony'],
       neutral: ['The Architect'],

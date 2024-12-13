@@ -42,6 +42,7 @@ export const setSeasonPadding = (season: number) => {
 };
 
 export const getSeasonName = (season: number, epochOnly: boolean = false) => {
+  if (season === 99) return 'CoNexus Events';
   const epoch = stories.find((section) => section.season === season)?.epoch;
   if (epochOnly) return epoch;
   else {

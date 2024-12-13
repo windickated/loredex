@@ -269,6 +269,7 @@ const characters: Character[] = [
     lastSeen: 17001,
     dead: true,
     state: "evil",
+    video: 'n8C-n7eY784',
     connections: {
       allies: filterArchons('The Politician').concat(['Senator Elara Voss']),
       enemies: ['Agent Zero', 'The Oracle', 'Iron Lion', 'The Nomad', 'The Engineer', 'The Storm'],
@@ -6543,6 +6544,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential15.avif',
     state: "neutral",
     potentialNFT: 15,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6557,6 +6559,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential22.avif',
     state: "neutral",
     potentialNFT: 22,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6571,6 +6574,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential43.avif',
     state: "neutral",
     potentialNFT: 43,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6585,6 +6589,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential47.avif',
     state: "neutral",
     potentialNFT: 47,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6599,6 +6604,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential84.avif',
     state: "neutral",
     potentialNFT: 84,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6613,6 +6619,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential89.avif',
     state: "neutral",
     potentialNFT: 89,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6627,6 +6634,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential93.avif',
     state: "neutral",
     potentialNFT: 93,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6641,6 +6649,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential107.avif',
     state: "neutral",
     potentialNFT: 107,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6655,6 +6664,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential144.avif',
     state: "neutral",
     potentialNFT: 144,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6669,6 +6679,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential152.avif',
     state: "neutral",
     potentialNFT: 152,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6683,6 +6694,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential204.avif',
     state: "neutral",
     potentialNFT: 204,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6697,6 +6709,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential206.avif',
     state: "neutral",
     potentialNFT: 206,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6711,6 +6724,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential220.avif',
     state: "neutral",
     potentialNFT: 220,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6725,6 +6739,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential233.avif',
     state: "neutral",
     potentialNFT: 233,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6739,6 +6754,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential236.avif',
     state: "neutral",
     potentialNFT: 236,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6753,6 +6769,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential261.avif',
     state: "neutral",
     potentialNFT: 261,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6767,6 +6784,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential269.avif',
     state: "neutral",
     potentialNFT: 269,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6781,6 +6799,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential305.avif',
     state: "neutral",
     potentialNFT: 305,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6795,6 +6814,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential332.avif',
     state: "neutral",
     potentialNFT: 332,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6809,6 +6829,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential341.avif',
     state: "neutral",
     potentialNFT: 341,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6823,6 +6844,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential345.avif',
     state: "neutral",
     potentialNFT: 345,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6837,6 +6859,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential391.avif',
     state: "neutral",
     potentialNFT: 391,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6851,6 +6874,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential409.avif',
     state: "neutral",
     potentialNFT: 409,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6865,6 +6889,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential414.avif',
     state: "neutral",
     potentialNFT: 414,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6879,6 +6904,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential441.avif',
     state: "neutral",
     potentialNFT: 441,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6893,6 +6919,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential447.avif',
     state: "neutral",
     potentialNFT: 447,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6907,6 +6934,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential530.avif',
     state: "neutral",
     potentialNFT: 530,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6921,6 +6949,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential533.avif',
     state: "neutral",
     potentialNFT: 533,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6935,6 +6964,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential570.avif',
     state: "neutral",
     potentialNFT: 570,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6949,6 +6979,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential588.avif',
     state: "neutral",
     potentialNFT: 588,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6963,6 +6994,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential589.avif',
     state: "neutral",
     potentialNFT: 589,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6977,6 +7009,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential591.avif',
     state: "neutral",
     potentialNFT: 591,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -6991,6 +7024,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential636.avif',
     state: "neutral",
     potentialNFT: 636,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -7005,6 +7039,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential642.avif',
     state: "neutral",
     potentialNFT: 642,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -7019,6 +7054,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential644.avif',
     state: "neutral",
     potentialNFT: 644,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -7033,6 +7069,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential690.avif',
     state: "neutral",
     potentialNFT: 690,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -7047,6 +7084,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential704.avif',
     state: "neutral",
     potentialNFT: 704,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -7061,6 +7099,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential713.avif',
     state: "neutral",
     potentialNFT: 713,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -7075,6 +7114,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential747.avif',
     state: "neutral",
     potentialNFT: 747,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -7089,6 +7129,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential777.avif',
     state: "neutral",
     potentialNFT: 777,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -7103,6 +7144,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential794.avif',
     state: "neutral",
     potentialNFT: 794,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -7117,6 +7159,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential804.avif',
     state: "neutral",
     potentialNFT: 804,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -7131,6 +7174,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential807.avif',
     state: "neutral",
     potentialNFT: 807,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -7145,6 +7189,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential823.avif',
     state: "neutral",
     potentialNFT: 823,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -7159,6 +7204,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential826.avif',
     state: "neutral",
     potentialNFT: 826,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -7173,6 +7219,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential827.avif',
     state: "neutral",
     potentialNFT: 827,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -7187,6 +7234,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential835.avif',
     state: "neutral",
     potentialNFT: 835,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -7201,6 +7249,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential909.avif',
     state: "neutral",
     potentialNFT: 909,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -7215,6 +7264,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential915.avif',
     state: "neutral",
     potentialNFT: 915,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -7229,6 +7279,7 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential947.avif',
     state: "neutral",
     potentialNFT: 947,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -7240,9 +7291,10 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 959',
-    potentialNFT: 959,
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential959.avif',
     state: "neutral",
+    potentialNFT: 959,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,
@@ -7254,9 +7306,10 @@ const characters: Character[] = [
   },
   {
     name: 'Potential 990',
-    potentialNFT: 990,
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential990.avif',
     state: "neutral",
+    potentialNFT: 990,
+    video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 1,

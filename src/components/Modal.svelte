@@ -228,6 +228,16 @@
             {/each}
           {/if}
 
+          <!-- Character VIDEO -->
+          {#if $selectedCharacter.video}
+            <iframe
+              src={`https://www.youtube.com/embed/${$selectedCharacter.video}`}
+              class="character-video"
+              title="YouTube"
+              allowfullscreen
+            ></iframe>
+          {/if}
+
           <!-- Character HISTORY -->
           {#if showHistory && $selectedCharacter.history}
             <article class="history" bind:this={historySection}>
@@ -580,6 +590,13 @@
             opacity: 0.75;
           }
         }
+      }
+
+      .character-video {
+        width: 50vw;
+        height: 25vw;
+        border: 0.05vw solid rgba(51, 226, 230, 0.5);
+        border-radius: 1vw;
       }
 
       .general-info {

@@ -7,6 +7,7 @@ export interface Character {
   location?: boolean
   state: "good" | "evil" | "neutral"
   potentialNFT?: number
+  video?: string
   connections?: {
     locations?: string[]
     allies?: string[]

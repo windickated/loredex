@@ -136,21 +136,27 @@ export const stories: Season[] = [
     episodes: [
       {
         title: 'Spy',
+        link: 'Kzdf-TaxSfw'
       },
       {
         title: 'Oracle',
+        link: 'eD87OwcNuzE'
       },
       {
         title: 'Soldier',
+        link: 'k10qXHtV0bg'
       },
       {
         title: 'Engineer',
+        link: '2SOPJ0m_xuM'
       },
       {
         title: 'Assassin',
+        link: 'R1qvKpelbE4'
       },
       {
         title: 'Ne-Yon',
+        link: 'xvspASqYIQA'
       },
       {
         title: 'Terminus Swarm',
@@ -172,6 +178,7 @@ export const stories: Season[] = [
       },
       {
         title: 'Syndicate of Death',
+        link: 'Ac2DA1ZpJ44',
         bio: `
           Reborn in a universe ravaged by ancient powers and haunted by the Fall of Reality, you awaken as Wraith Calder—one of the last Potentials—determined to reclaim stolen Resurrection Protocols from a ruthless crime syndicate of immortal twins. Armed with centuries of combat mastery, viral awareness, and the strength of ages past, you must infiltrate the galaxy’s criminal underbelly, dismantle the Syndicate of Death, and discover the secret to ending their eternal reign.
         `
@@ -185,6 +192,7 @@ export const stories: Season[] = [
       },
       {
         title: 'Planet of the Wolf',
+        link: 'Q6y2hrJumpQ',
         bio: `
           In a secret pocket universe nurtured by the distant Antiquarian, Lykos—a black and gold robot wearing a grey hooded cloak—awakens to find a world of superpowered Metahumans poised to dominate a fractured multiverse. Armed with the ability to absorb powers and don holographic disguises, he must infiltrate and assassinate these heroes—including the legendary League—risking moral corruption, overwhelming odds of failure, and a fate forever tied to the dark art of deception.
         `
@@ -198,6 +206,7 @@ export const stories: Season[] = [
       },
       {
         title: 'Inception Ark',
+        link: 'oXFAuZeqTVM'
       },
       {
         title: 'The Collector: Sanctuary',
@@ -216,15 +225,18 @@ export const stories: Season[] = [
       },
       {
         title: 'Building the Architect',
+        link: 'EPayKON6rpY'
       },
       {
         title: 'The Harvest',
       },
       {
         title: 'The Ninth: Blood and Shadows',
+        link: 'szJ_B13c3ik'
       },
       {
         title: 'The Eyes that Watch',
+        link: 'uJcyqwSAGxQ'
       }
     ]
   },

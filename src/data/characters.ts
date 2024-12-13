@@ -199,6 +199,7 @@ const characters: Character[] = [
     appearance: 298,
     lastSeen: 17033,
     dead: true,
+    video: 'aJ9H9g4sjKQ',
     state: "evil",
     connections: {
       allies: filterArchons('The Meme'),

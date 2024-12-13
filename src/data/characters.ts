@@ -10,6 +10,8 @@ const filterNeyons = (name: string) => {
   return allNeyons.filter((archon) => archon !== name);
 }
 
+const allPotentials = ['The Wolf', 'Wraith Calder', 'Akai Shi', 'Jericho'];
+
 const characters: Character[] = [
   {
     name: 'The Programmer',
@@ -676,7 +678,7 @@ const characters: Character[] = [
       },
       {
         season: 1,
-        episodes: ['Awakenigns', 'The Fall', 'The Arrival', 'The City', 'The Wyrmwood', 'The Hunt', 'The Beginning of the End']
+        episodes: ['Awakenigns', 'The Fall', 'The Arrival', 'The City', 'The Wyrmwood', 'The Hunt', 'The Beginning of the End', 'Memento Dischordia']
       }
     ],
     affiliation: 'Neyons',
@@ -2623,7 +2625,7 @@ const characters: Character[] = [
     ],
     connections: {
       allies: ['The Host', 'The Terminus Swarm'],
-      enemies: allNeyons.concat(['Akai Shi', 'Jericho', 'The Architect', 'The Antiquarian']),
+      enemies: allNeyons.concat(['The Wolf', 'Wraith Calder', 'Akai Shi', 'Jericho', 'The Architect', 'The Antiquarian']),
       locations: ['The Panopticon', 'Terminus']
     },
     stories: [
@@ -2633,7 +2635,7 @@ const characters: Character[] = [
       },
       {
         season: 1,
-        episodes: ['The Source', 'The Decision', 'The Arrival']
+        episodes: ['The Source', 'The Decision', 'The Arrival', 'Memento Dischordia']
       }
     ],
     affiliation: 'Self-Proclaimed Sovereign of Terminus (formerly the Panopticon)',
@@ -2687,6 +2689,10 @@ const characters: Character[] = [
       {
         season: 0,
         episodes: ['The Prisoner']
+      },
+      {
+        season: 1,
+        episodes: ['Memento Dischordia']
       }
     ],
     affiliation: 'AI Empire',
@@ -4449,7 +4455,7 @@ const characters: Character[] = [
       }
     ],
     connections: {
-      allies: ['The Enigma', 'The Hierophant'],
+      allies: allPotentials.concat(['The Enigma', 'The Hierophant']),
       enemies: ['The Architect', 'The Collector', 'The Clone Army', 'The Warden', 'The Meme'],
       locations: ['The Panopticon', 'Thaloria', 'The City']
     },
@@ -5112,7 +5118,7 @@ const characters: Character[] = [
     appearance: 550,
     lastSeen: 661,
     location: true,
-    state: "evil",
+    state: "neutral",
     connections: {
       neutral: ['The Architect', 'The Game Master', 'The Watcher', 'The Warlord', 'The Meme', 'The Necromancer', 'The Eyes', 'The Engineer', 'The Human', 'Iron Lion', 'The Enigma']
     },
@@ -5314,13 +5320,13 @@ const characters: Character[] = [
     location: true,
     state: "neutral",
     connections: {
-      allies: ['The White Oracle'],
+      allies: allPotentials.concat(['The White Oracle']),
       enemies: ['The Collector', 'The Host', 'The Source']
     },
     stories: [
       {
         season: 1,
-        episodes: ['The City', 'The Return', 'The Hunt']
+        episodes: ['The City', 'The Return', 'The Hunt', 'Memento Dischordia']
       }
     ],
     affiliation: 'The City',
@@ -5340,7 +5346,7 @@ const characters: Character[] = [
     location: true,
     state: "neutral",
     connections: {
-      neutral: ['The Source', 'The Host', 'The White Oracle', 'The Jailer', 'The Collector', 'The Panopticon', 'Thaloria', 'The City']
+      neutral: allPotentials.concat(['The Source', 'The Host', 'The White Oracle', 'The Jailer', 'The Collector', 'The Panopticon', 'Thaloria', 'The City'])
     },
     stories: [
       {
@@ -5363,7 +5369,7 @@ const characters: Character[] = [
     appearance: 813,
     lastSeen: 100001,
     location: true,
-    state: "good",
+    state: "neutral",
     connections: {
       neutral: ['The Council of Harmony', 'The Hierophant', 'The Collector', 'The Oracle', 'The White Oracle', 'The City']
     },
@@ -6021,7 +6027,7 @@ const characters: Character[] = [
       },
       {
         season: 1,
-        episodes: ['The Source', 'The Arrival', 'The Artifact', 'The City']
+        episodes: ['The Source', 'The Arrival', 'The Artifact', 'The City', 'Memento Dischordia']
       }
     ],
     affiliation: 'The Potentials; later becomes the Red Death',
@@ -6282,7 +6288,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 1,
-        episodes: ['The Artifact']
+        episodes: ['The Artifact', 'Memento Dischordia']
       }
     ],
     affiliation: 'The Potentials',
@@ -6526,7 +6532,7 @@ const characters: Character[] = [
       },
       {
         season: 1,
-        episodes: ['The Source']
+        episodes: ['The Source', 'Memento Dischordia']
       }
     ],
     affiliation: 'The Potentials',

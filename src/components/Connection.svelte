@@ -69,5 +69,6 @@
     height: 0.15rem;
     opacity: 0;
     transition: all 0.3s ease-in-out;
+    filter: blur(0.15rem);
   }
 </style>

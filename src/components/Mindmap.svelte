@@ -279,7 +279,7 @@
                   <Connection
                     name1={character.name}
                     name2={location}
-                    color="rgba(51, 226, 230, 0.75)"
+                    color="rgba(45, 90, 216, 0.75)"
                   />
                 {/each}
               {/if}

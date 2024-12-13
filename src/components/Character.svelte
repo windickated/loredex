@@ -67,7 +67,7 @@
       connection.className.match(characterTile!.id)
     );
     activeConnections.map((connection) => {
-      connection.style.opacity = "0.5";
+      connection.style.opacity = "1";
     });
 
     const allDates: HTMLParagraphElement[] = Array.from(

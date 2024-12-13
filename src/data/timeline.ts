@@ -451,18 +451,7 @@ export const stories: Season[] = [
         title: 'Awakenings',
         link: 'fkHun-QPbKk',
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          After a cataclysmic war known as "The Fall of Reality" ended all intelligent life due to a Thought Virus unleashed by the Architect, a thousand drifting Inception Arks awaken millennia later. From these vessels emerge the organic DeMagi and AI Quarchons, who must now unravel their mysterious revival and confront a galaxy forever changed by ancient strife.
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -483,18 +472,7 @@ export const stories: Season[] = [
         title: 'A Destructive Potential',
         link: 'LpgTQeQL_3E',
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Amid the aftermath of the Fall of Reality, the Potentials awaken to blaring alarms aboard their ancient Ark, left to confront a universe in ruins and a looming choice that could reshape entire galaxies. As they seize upon their vessel’s formidable self-defense mechanisms, their initial response to this new reality is violence, each decision carrying catastrophic and far-reaching consequences.
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -515,18 +493,7 @@ export const stories: Season[] = [
         title: 'The Terminus Swarm',
         link: 'BRw06-iixgw',
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Having chosen to pursue an organic seed satellite, the Potentials now confront the long-dormant Terminus Swarm—a forgotten menace that could consume everything in its path. Their fateful encounter may yield devastating ruin or unexpected allies, as the fate of countless worlds hangs in the balance.
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -547,18 +514,7 @@ export const stories: Season[] = [
         title: 'The Fall',
         link: '27SAM2fWuPg',
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Choosing force as their means of survival, the Potentials face the chilling aftermath of their decisions, confronting a massive rogue planet and the frozen husk of a colossal insectoid creature. As mysterious spores erupt from the corpse, unleashing new perils, they must grapple with the dire consequences of their aggression and determine whether to contain these threats or doom themselves further.
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -579,18 +535,7 @@ export const stories: Season[] = [
         title: 'The Outbreak',
         link: 'FT_BzfFpz4c',
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          In the wake of earlier cataclysms, the Potentials now confront the terrifying emergence of the Swarm, a threat capable of shattering their fragile new existence. As chaos spreads, every choice—fight, flee, sacrifice, or communicate—rests in your hands, guiding their fate and shaping the future of the saga.
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -611,18 +556,7 @@ export const stories: Season[] = [
         title: 'The Source',
         link: 'rrBZ7UvwrVw',
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Venturing deep beneath Terminus’s surface, the Potentials embark on a perilous descent into darkness to locate the origin of the Terminus Swarm. In those stifling tunnels, they confront an ancient evil known as the Source, a being whose power and malice threaten to unravel all that remains of hope.
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -643,18 +577,7 @@ export const stories: Season[] = [
         title: 'The Decision',
         link: 'ib7riJNHM24',
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          As the Potentials, trapped on a haunted world strewn with the husks of a once-mighty swarm, stand before the tortured entity known as the Source, they must weigh an impossible choice. Their response to his sinister offer—guided by past conflicts and ancient horrors—will shape not only their fate, but the future of entire star systems
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -675,18 +598,7 @@ export const stories: Season[] = [
         title: 'The Arrival',
         link: 'o_ioDWD2oQc',
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Having forged a deal with the ancient evil known as the Source, the Potentials enter a mysterious wyrmhole that flings them through time and space to an unknown fate. As their past choices echo through reality, each step they take in this new world may determine whether their desperate alliance leads to salvation—or plunges them deeper into chaos.
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -707,18 +619,7 @@ export const stories: Season[] = [
         title: 'Illuminated Shadows',
         link: 'uGtSitDGeYo',
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          As the Potentials journey into a shadowed alien forest to secure a foothold in their new domain, they uncover an ancient temple where ghosts forever reenact an age-old war. In the eerie glow of spectral battles, their mission to establish a safe haven becomes entwined with secrets older than memory, testing their resolve and understanding of this strange, haunted world.
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -739,18 +640,7 @@ export const stories: Season[] = [
         title: 'The Artifact',
         link: 'OeA_acfD-e8',
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Deep within uncharted ruins, the Potentials uncover an ancient artifact rumored to harbor unspeakable powers. As its dark influence seeps into their minds, every decision they make could either harness its might for a desperate cause or unleash a terror that no force can contain.
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -771,18 +661,7 @@ export const stories: Season[] = [
         title: 'The City',
         link: 'X6Ijz6YG3K0',
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Reaching the fabled City, the Potentials encounter its immortal guardian—a figure who has endured epochs of cosmic upheaval to protect this last bastion of hope. As they stand beneath gleaming crystalline towers and hear ancient whispers in the air, their meeting with this eternal sentinel sets the stage for alliances that could reshape the destiny of worlds.
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -803,18 +682,7 @@ export const stories: Season[] = [
         title: 'The Return',
         link: '8m2Oio3-Fu4',
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          As the White Oracle recounts tens of thousands of years spent protecting the City from horrors such as the Collector’s clone army, the Potentials learn how fragile their sanctuary truly is. Now, with an ancient Archon rising anew, they must choose how to confront this resurgent power—balancing duty, survival, and the burdens of a long-guarded secret.
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -835,18 +703,7 @@ export const stories: Season[] = [
         title: 'The Wyrmwood',
         link: 'X4srpGZnLE8',
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          As the Potentials search the Temple of Truth for answers, a malevolent force shatters the fragile barriers dividing worlds, threatening to plunge all existence into chaos. In this desperate hour, knowledge and courage must intertwine, for only a clear understanding of their destiny can guide them through the oncoming darkness.
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -867,18 +724,7 @@ export const stories: Season[] = [
         title: 'The Hunt',
         link: 'G314HD_UR1g',
         bio: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Determined to prevent a newly awakened Archon from fully restoring its might, the Potentials embark on a relentless pursuit through perilous realms and shifting temporal seams. Each step forward tests their resolve, for failure means witnessing the Archon’s ascension and the possible unraveling of all they’ve fought to protect.
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur
@@ -899,6 +745,9 @@ export const stories: Season[] = [
         title: 'The Beginning of the End',
         link: 'hDmI82bvDhc',
         bio: `
+          Returning to the City, the Potentials find that the Host has forced its way through the Wyrmhole and now advances, intent on laying waste to everything they hold dear. With time dwindling and enemies converging, every choice the Potentials make could herald salvation or final doom for the last bastion of hope.
+        `,
+        description: `
           Lorem ipsum dolor sit amet, consectetur
           adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna
@@ -911,6 +760,13 @@ export const stories: Season[] = [
           occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id
           est laborum.
+        `  
+      },
+      {
+        title: 'Memento Dischordia',
+        link: 's-dCWHvOphQ',
+        bio: `
+          As the Host storms the City’s gates, the Potentials stand at the heart of a final, desperate struggle, fighting not just for their own survival but for the very essence of reality. Each clash, each sacrifice, and every decision will echo across time and space, determining whether existence endures or falls to darkness forever.
         `,
         description: `
           Lorem ipsum dolor sit amet, consectetur

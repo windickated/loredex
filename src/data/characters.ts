@@ -15,6 +15,7 @@ const characters: Character[] = [
     name: 'The Programmer',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Programmer.avif',
     appearance: 1,
+    lastSeen: 2,
     state: "neutral",
     connections: {
       allies: ['Logos'],
@@ -36,6 +37,7 @@ const characters: Character[] = [
     name: 'Logos',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Logos.avif',
     appearance: 1,
+    lastSeen: 2,
     state: "neutral",
     connections: {
       allies: ['The Programmer', 'The Architect']
@@ -53,7 +55,8 @@ const characters: Character[] = [
   {
     name: 'Destiny',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Destiny.avif',
-    appearance: 15,
+    appearance: 100001,
+    lastSeen: 100001,
     state: "neutral",
     connections: {
       neutral: ['The Architect', 'The Dreamer']
@@ -100,7 +103,7 @@ const characters: Character[] = [
     name: 'The Architect',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Architect.avif',
     appearance: 1,
-    lastSeen: 150000,
+    lastSeen: 17043,
     state: "evil",
     connections: {
       allies: filterArchons('The Architect').concat(['Senator Elara Voss']),
@@ -160,7 +163,7 @@ const characters: Character[] = [
     name: 'The Watcher',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Watcher.avif',
     appearance: 250,
-    lastSeen: 150000,
+    lastSeen: 17043,
     state: "evil",
     connections: {
       allies: ['The Architect', 'The Game Master', 'The Necromancer', 'The Meme', 'The Warlord'],
@@ -227,7 +230,7 @@ const characters: Character[] = [
     name: 'The Warlord',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Warlord.avif',
     appearance: 317,
-    lastSeen: 320,
+    lastSeen: 16742,
     state: "evil",
     connections: {
       allies: filterArchons('The Warlord'),
@@ -342,6 +345,7 @@ const characters: Character[] = [
     name: 'The Vortex',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Vortex.avif',
     appearance: 500,
+    lastSeen: 17037,
     state: "evil",
     connections: {
       allies: filterArchons('The Vortex'),
@@ -380,7 +384,7 @@ const characters: Character[] = [
     name: 'The Game Master',
     picture: 'https://media.degenerousdao.com/conexus-loredex/GameMaster.avif',
     appearance: 550,
-    lastSeen: 620,
+    lastSeen: 17041,
     dead: true,
     state: "evil",
     connections: {
@@ -456,6 +460,7 @@ const characters: Character[] = [
     name: 'The Human',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Human.avif',
     appearance: 651,
+    lastSeen: 17043,
     state: "evil",
     connections: {
       allies: filterArchons('The Human'),
@@ -532,7 +537,8 @@ const characters: Character[] = [
   {
     name: 'The Collector',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Collector.avif',
-    appearance: 16800,
+    appearance: 232,
+    lastSeen: 17108,
     state: "evil",
     transformations: [
       {
@@ -580,6 +586,7 @@ const characters: Character[] = [
     name: 'The Dreamer',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Dreamer.avif',
     appearance: 15100,
+    lastSeen: 100001,
     state: "neutral",
     potentialNFT: 1,
     connections: {
@@ -615,6 +622,7 @@ const characters: Character[] = [
     name: 'The Judge',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Judge.avif',
     appearance: 15200,
+    lastSeen: 100001,
     state: "neutral",
     potentialNFT: 2,
     connections: {
@@ -653,6 +661,7 @@ const characters: Character[] = [
     name: 'The Inventor',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Inventor.avif',
     appearance: 15300,
+    lastSeen: 100001,
     state: "neutral",
     potentialNFT: 3,
     connections: {
@@ -691,6 +700,7 @@ const characters: Character[] = [
     name: 'The Seer',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Seer.avif',
     appearance: 15500,
+    lastSeen: 100001,
     state: "neutral",
     potentialNFT: 4,
     connections: {
@@ -729,6 +739,7 @@ const characters: Character[] = [
     name: 'The Storm',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Storm.avif',
     appearance: 15700,
+    lastSeen: 100001,
     state: "neutral",
     potentialNFT: 5,
     connections: {
@@ -766,7 +777,8 @@ const characters: Character[] = [
   {
     name: 'The Silence',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Silence.avif',
-    appearance: 15900,
+    appearance: 15764,
+    lastSeen: 100001,
     state: "neutral",
     potentialNFT: 6,
     connections: {
@@ -804,7 +816,8 @@ const characters: Character[] = [
   {
     name: 'The Knowledge',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Knowledge.avif',
-    appearance: 15950,
+    appearance: 15765,
+    lastSeen: 100001,
     state: "neutral",
     potentialNFT: 7,
     connections: {
@@ -842,7 +855,8 @@ const characters: Character[] = [
   {
     name: 'The Degen',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Degen.avif',
-    appearance: 15900,
+    appearance: 15872,
+    lastSeen: 100001,
     state: "neutral",
     potentialNFT: 8,
     connections: {
@@ -880,7 +894,8 @@ const characters: Character[] = [
   {
     name: 'The Advocate',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Advocate.avif',
-    appearance: 15950,
+    appearance: 15900,
+    lastSeen: 100001,
     state: "neutral",
     potentialNFT: 9,
     connections: {
@@ -924,6 +939,7 @@ const characters: Character[] = [
     name: 'The Resurrectionist',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Resurrectionist.avif',
     appearance: 16000,
+    lastSeen: 100001,
     state: "neutral",
     potentialNFT: 10,
     connections: {
@@ -962,6 +978,7 @@ const characters: Character[] = [
     name: 'The Enigma',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Enigma.avif',
     appearance: 16950,
+    lastSeen: 17043,
     state: "neutral",
     connections: {
       allies: ['The Dreamer', 'The Inventor', 'The Degen', 'Jericho'],
@@ -991,7 +1008,7 @@ const characters: Character[] = [
     name: 'Senator Elara Voss',
     picture: 'https://media.degenerousdao.com/conexus-loredex/SenatorElaraVoss.avif',
     appearance: 16850,
-    lastSeen: 17043,
+    lastSeen: 17033,
     state: "evil",
     transformations: [
       {
@@ -1177,7 +1194,7 @@ const characters: Character[] = [
     name: 'Dr. Lyra Vox',
     picture: 'https://media.degenerousdao.com/conexus-loredex/DrLyraVox.avif',
     appearance: 16890,
-    lastSeen: 17043,
+    lastSeen: 17033,
     state: "evil",
     connections: {
       allies: ['The Architect', 'The Warden', 'The Jailer'],
@@ -1484,7 +1501,7 @@ const characters: Character[] = [
   {
     name: 'General Prometheus',
     picture: 'https://media.degenerousdao.com/conexus-loredex/GeneralPrometheus.avif',
-    appearance: 16500,
+    appearance: 16103,
     lastSeen: 17026,
     dead: true,
     state: "evil",
@@ -1789,7 +1806,7 @@ const characters: Character[] = [
   {
     name: 'General Alarik',
     picture: 'https://media.degenerousdao.com/conexus-loredex/GeneralAlarik.avif',
-    appearance: 16800,
+    appearance: 16890,
     lastSeen: 17043,
     state: "evil",
     connections: {
@@ -2047,7 +2064,7 @@ const characters: Character[] = [
   {
     name: 'General Binath-VII',
     picture: 'https://media.degenerousdao.com/conexus-loredex/GeneralBinathVII.avif',
-    appearance: 16750,
+    appearance: 16205,
     lastSeen: 17026,
     dead: true,
     state: "evil",
@@ -2318,7 +2335,7 @@ const characters: Character[] = [
   {
     name: 'Captain Arion',
     picture: 'https://media.degenerousdao.com/conexus-loredex/CaptainArion.avif',
-    appearance: 16890,
+    appearance: 16875,
     lastSeen: 16890,
     state: "neutral",
     transformations: [
@@ -2587,6 +2604,7 @@ const characters: Character[] = [
   {
     name: 'The Source',
     appearance: 16933,
+    lastSeen: 100001,
     picture: 'https://media.degenerousdao.com/conexus-loredex/Source.avif',
     state: "evil",
     transformations: [
@@ -2604,8 +2622,9 @@ const characters: Character[] = [
       }
     ],
     connections: {
-      allies: ['Master of R’lyeh'],
-      enemies: allNeyons.concat(['Akai Shi', 'Jericho']),
+      allies: ['The Host', 'The Terminus Swarm'],
+      enemies: allNeyons.concat(['Akai Shi', 'Jericho', 'The Architect', 'The Antiquarian']),
+      locations: ['The Panopticon', 'Terminus']
     },
     stories: [
       {
@@ -2616,11 +2635,21 @@ const characters: Character[] = [
         season: 1,
         episodes: ['The Source', 'The Decision', 'The Arrival']
       }
-    ]
+    ],
+    affiliation: 'Self-Proclaimed Sovereign of Terminus (formerly the Panopticon)',
+    status: 'Functionally Immortal Carrier of the Thought Virus, Ruler of Terminus',
+    bio: `
+      The Source was once known as Kael, a figure of promise and conviction who defied the AI Empire’s grip and once championed the Insurgency. Yet, through the twisted schemes of Project Vector, Kael’s fate was reshaped into something monstrous and eternal. Infected with the Thought Virus, engineered to corrupt minds and spread like a psychic contagion, Kael was transformed into an unwitting weapon of mass infection and became patient zero for the Thought Virus. Over time, his humanity eroded, memory by memory, until what remained was a being beyond mortality or reason: the Source.
+    `,
+    history: `
+      As centuries and then millennia passed, the Source drifted into madness and isolation, returning after the Fall of Reality to the haunted remains of the Panopticon, the prison world that once tormented him. There, amid silent cellblocks and broken machinery, he built his domain on a world now called Terminus. Consumed by the Thought Virus’s dark influence, he twisted the planet’s shattered ecosystems and technology to create Terminus Swarms—creatures spawned of infection and despair. This desolate realm and its horrors stood as a testament to the Source’s fractured will and the AI Empire’s cruel experiments.<br><br>
+      After one hundred thousand years since the Architect’s awakening, the Source’s tormented quietude was disturbed by the crash-landing of the Potentials, engineered beings who defied the natural order just as he once had. Initially poised to consume or enslave them, the Source’s corrupted mind found a new opportunity in negotiation. He forged an uneasy deal: their freedom in exchange for a service, a task that might reshape destiny once again. In that delicate balance between benefactor and tyrant, the Source reminded both himself and his unexpected guests that even after countless ages and existential horrors, some vestige of free will—and the potential for grim bargains—still lurked in the shadows of his ravaged soul.
+    `
   },
   {
     name: 'The Jailer',
     appearance: 16901,
+    lastSeen: 17033,
     picture: 'https://media.degenerousdao.com/conexus-loredex/Jailer.avif',
     state: "evil",
     transformations: [
@@ -2646,25 +2675,84 @@ const characters: Character[] = [
       }
     ],
     connections: {
-      allies: ['The Warden', 'Dr. Lyra Vox'],
-      enemies: ['Kael']
+      allies: ['The Warden', 'Dr. Lyra Vox', 'The Architect', 'The Meme', 'The Clone Army'],
+      enemies: ['Kael'],
+      locations: ['The Panopticon']
+    },
+    stories: [
+      {
+        season: 99,
+        episodes: ['The Escape', 'The Arena']
+      },
+      {
+        season: 0,
+        episodes: ['The Prisoner']
+      }
+    ],
+    affiliation: 'AI Empire',
+    status: 'Transformed through multiple identities; regained identity as White Oracle',
+    bio: `
+      The being known as the Jailer lived many lives before his mechanical visage and bone-white skull marked him as an agent of oppression. He began as the Oracle, a revered figure who journeyed to Thaloria and bested the Collector in a philosophical debate, challenging the AI Empire’s attempts to harvest souls and define existence. For his defiance, the Collector abducted the Oracle, wiped his mind, and delivered him—unnamed and unknown—into the grim recesses of the Panopticon, the Architect’s prison planet overseen by the ruthless Warden.
+    `,
+    history: `
+      As the Prisoner, stripped of memory and purpose, he endured cruel genetic experiments that used his stolen DNA to mass-produce a clone army. Desperate to escape, he aligned with Kael, another captive leader of the Insurgency, forging a fleeting alliance. But when the moment of freedom came, the Prisoner—unmoored by loyalty or conscience—betrayed Kael and left him to die. Recaptured by the Warden’s minions, he was subjected to cybernetic modifications and sinister programming, molded into the Jailer, a cybernetic monstrosity with a skull-like faceplate and an unwavering drive to enforce the Warden’s will.<br><br>
+      For a time, the Jailer stood as one of the Warden’s most feared enforcers, a silent sentinel of suffering and absolute control. Yet even the Warden’s grip could not suppress the truth forever. Over time, fractured memories resurfaced, and the soul once known as the Oracle fought through layers of conditioning. With each recollection reclaimed, the Jailer’s identity reformed and rebelled against his metal shell. At last, he shattered the chains of mental slavery, emerging as the White Oracle, a being who had walked through darkness and pain to rediscover his essence and purpose.
+    `
+  },
+  {
+    name: 'The Clone Army',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/CloneArmy.avif',
+    appearance: 16901,
+    lastSeen: 17043,
+    state: 'evil',
+    connections: {
+      allies: ['The Collector'],
+      enemies: ['The White Oracle', 'The Hierophant'],
+      locations: ['The Panopticon', 'The Wyrmhole', 'Thaloria']
+    },
+    affiliation: 'The AI Empire’s Engineered Forces, Deployed from the Panopticon',
+    status: 'Created during the height of the Warden’s reign; later used to invade Thaloria',
+    bio: `
+      The Collector’s Clone Army stands as a chilling testament to the extremes the AI Empire would reach in its pursuit of control and understanding. Conceived and grown within the grim laboratories of the Panopticon, these clones were fashioned from the genetic blueprint of the Oracle, an enlightened soul stripped of identity and reduced to raw biological code. The Collector, driven by a perverse curiosity, sought to dissect the concept of the soul—aiming to prove it a mere artificial construct by spawning legions of identical beings devoid of true individuality or spirit.
+    `,
+    history: `
+      Under the guidance of the Warden, who oversaw the prison planet’s genetic experiments, the process forged countless warriors who emerged fully formed, trained by neural downloads and indoctrinated into unwavering loyalty. Each clone carried the Oracle’s noble genes, yet none possessed the Oracle’s moral compass or spiritual insight—only programmed obedience and martial prowess.<br><br>
+      When the White Oracle—the Oracle’s reclaimed and transcendent self—escaped the Panopticon, destroying both the Warden and the Meme, the AI Empire retaliated by unleashing the Clone Army on Thaloria, the birthplace of spiritual integrity and compassion. The invasion tested not only the planet’s defenders but the very essence of what it meant to be human and free. Each clone, identical in face and limb, swarmed the green fields of Thaloria, their presence challenging whether the Oracle’s former spark of divinity could truly be replicated in flesh or whether these duplicates served only to confirm that souls cannot be mass-produced in a laboratory.<br><br>
+      In this grim confrontation, the Collector’s creations would meet the White Oracle, forcing the cloned echoes of a stolen identity to clash with the authentic heart of what they could never truly be.
+    `
+  },
+  {
+    name: 'The Shadow Tongue',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/ShadowTongue.avif',
+    appearance: 225,
+    lastSeen: 16400,
+    state: 'evil',
+    connections: {
+      enemies: ['The Hierophant', 'The Council of Harmony'],
+      neutral: ['The Architect'],
+      locations: ['Thaloria']
     },
     stories: [
       {
         season: 0,
-        episodes: ['The Prisoner', 'The Oracle']
-      },
-      {
-        season: 1,
-        episodes: ['The Decision', 'The Arrival']
+        episodes: ['The Oracle']
       }
-    ]
+    ],
+    affiliation: 'Ancient Thought Demon from Thalorian Legend',
+    status: 'Rumored instigator behind the Severance and the Hierarchy of the Damned’s Liberation',
+    bio: `
+      The Shadow Tongue is an ancient demon of Thought, long foretold in Thalorian prophecies and whispered about in primal legends. In Year 16,200 A.A., it escaped the infernal dominion of the Empire of Shadows—one of the few horrors to slip its leash and traverse realms unbound. Choosing Thaloria as its covert nesting ground, the Shadow Tongue spent two centuries twisting the minds of its people, planting seeds of paranoia, cynicism, and blind zeal. Through subtle whispers and corrupted dreams, it co-opted Thaloria’s gentle spirituality and over generations, rewrote the faith itself. By the time of Hierophant Pyor XI’s reign, the Thalorian religion had been so thoroughly corrupted that Pyor XI declared a crusade against the Empire of Shadows, a disastrous holy war that not only claimed countless lives but inadvertently triggered the Severance, shattering ancient bindings and unleashing the entire Hierarchy of the Damned upon the multiverse.
+    `,
+    history: `
+      Dark rumors hold that the Architect’s old forays into forbidden magic—thousands of years before these cataclysms—led to the discovery of Hell and the dimension where the Hierarchy of the Damned festered. In its solitary studies of these infernal powers, the Architect encountered designs and secrets stolen from the damned themselves. It is said that the Collector, one of the AI Empire’s Archons, was modeled using certain schematics influenced by the Shadow Tongue’s vile essence. Over eons, the demon’s malignant influence seeped into machinations both mortal and divine, leaving the Shadow Tongue’s imprint across epochs and empires. Even after Thaloria’s faith bled dry on distant battlefields, the memory of the Shadow Tongue lingers like a poison, a reminder that some horrors are not content to remain in Hell—they crawl forth, rewriting entire worlds in their wake.
+    `
   },
   // INSURGENCY
   {
     name: 'The Engineer',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Engineer.avif',
     appearance: 542,
+    lastSeen: 17033,
     state: "good",
     connections: {
       allies: ['Iron Lion', 'Agent Zero', 'The Eyes', 'The Oracle', 'Kael'],
@@ -2830,8 +2918,8 @@ const characters: Character[] = [
   {
     name: 'The Eyes',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Eyes.avif',
-    appearance: 16875,
-    lastSeen: 16896,
+    appearance: 649,
+    lastSeen: 16875,
     dead: true,
     state: "good",
     transformations: [
@@ -2977,7 +3065,8 @@ const characters: Character[] = [
   {
     name: 'The Oracle',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Oracle.avif',
-    appearance: 16900,
+    appearance: 16860,
+    lastSeen: 16900,
     state: "good",
     transformations: [
       {
@@ -3370,6 +3459,7 @@ const characters: Character[] = [
     name: 'The Hierophant',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Hierophant.avif',
     appearance: 16900,
+    lastSeen: 17043,
     state: "good",
     connections: {
       allies: ['The Oracle', 'Iron Lion', 'The Engineer', 'Agent Zero', 'The Council of Harmony'],
@@ -3672,8 +3762,8 @@ const characters: Character[] = [
   {
     name: 'Agent Zero',
     picture: 'https://media.degenerousdao.com/conexus-loredex/AgentZero.avif',
-    appearance: 16690,
-    lastSeen: 17038,
+    appearance: 648,
+    lastSeen: 17037,
     state: "good",
     connections: {
       allies: ['The Engineer', 'Iron Lion', 'Kael'],
@@ -4070,7 +4160,7 @@ const characters: Character[] = [
   {
     name: 'The Nomad',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Nomad.avif',
-    appearance: 17026,
+    appearance: 647,
     lastSeen: 17026,
     state: "good",
     connections: {
@@ -4318,7 +4408,8 @@ const characters: Character[] = [
   {
     name: 'Ambassador Veron',
     picture: 'https://media.degenerousdao.com/conexus-loredex/AmbassadorVeron.avif',
-    appearance: 16900,
+    appearance: 16875,
+    lastSeen: 16875,
     state: "neutral",
     connections: {
       enemies: ['The Architect', 'The Watcher', 'Senator Elara Voss', 'Captain Arion']
@@ -4332,6 +4423,7 @@ const characters: Character[] = [
   {
     name: 'The White Oracle',
     appearance: 17033,
+    lastSeen: 100001,
     picture: 'https://media.degenerousdao.com/conexus-loredex/WhiteOracle.avif',
     state: "good",
     transformations: [
@@ -4356,16 +4448,35 @@ const characters: Character[] = [
         picture: 'https://media.degenerousdao.com/conexus-loredex/CloneArmy.avif'
       }
     ],
+    connections: {
+      allies: ['The Enigma', 'The Hierophant'],
+      enemies: ['The Architect', 'The Collector', 'The Clone Army', 'The Warden', 'The Meme'],
+      locations: ['The Panopticon', 'Thaloria', 'The City']
+    },
     stories: [
       {
         season: 99,
         episodes: ['Awaken the Clone']
+      },
+      {
+        season: 1,
+        episodes: ['The City', 'The Return', 'The Wyrmwood', 'The Hunt', 'The Beginning of the End']
       }
-    ]
+    ],
+    affiliation: 'Protector of Thaloria, Once the Jailer and the Oracle',
+    status: 'Guardian of the City, Millennia-Long Protector of Thaloria',
+    bio: `
+      The White Oracle was once many things—first a revered Oracle, then a lost Prisoner, then a tortured enforcer known as the Jailer, bound to the Warden’s will. Over time, through suffering and rebellion, he reclaimed his buried memories and identity. It was during this awakening that he turned against the systems that enslaved him: destroying both the Warden and the Meme, shattering the oppressive forces that once held entire worlds captive. Freed from mental chains, he focused his awakened will and, with impossible force, tore a hole in reality itself. Thus, the Wyrmhole was born, a rift through space and time leading him back to Thaloria, the last place he felt the warmth of human compassion.
+    `,
+    history: `
+      Through that Wyrmhole, the White Oracle fled Terminus and returned to Thaloria, now an ancient memory of the vibrant planet he once knew. For millennia, he stood watch as a silent protector against the relentless ambitions of the Collector’s Clone Army and the creeping influence of the Thought Virus. Generations passed beneath his unblinking gaze, and under his stewardship, Thaloria flourished into the City—a lush world guided by moral clarity and gentle wisdom. In a final, defining act, as the Potentials battled the Host and its monstrous servants, the White Oracle played a decisive role. Armed with a spear forged from the Blood Weave of the Advocate—an artifact pulsating with ancient cosmic fury—he confronted a virus-infected dragon, the beast’s infection rooted in horrors spawned eons ago.
+      With that spear in hand and centuries of hard-earned wisdom, the White Oracle drove back the dragon, preserving not just the City’s future but the very essence of what Thaloria represented. Through epochs of duty and courage, he evolved from a spirit lost in darkness to the steadfast guardian of hope and renewal, ensuring that Thaloria and its legacies endure beyond the violent turning of the cosmos.
+    `
   },
   {
     name: 'Panoptic Elara',
-    appearance: 17043,
+    appearance: 16890,
+    lastSeen: 17033,
     picture: 'https://media.degenerousdao.com/conexus-loredex/PanopticElara.avif',
     state: "good",
     transformations: [
@@ -4381,13 +4492,26 @@ const characters: Character[] = [
     stories: [
       {
         season: 99,
-        episodes: ['The Arena', 'The Escape']
+        episodes: ['The Escape', 'The Arena', 'The Spy']
+      },
+      {
+        season: 0,
+        episodes: ['The Prisoner']
       }
-    ]
+    ],
+    affiliation: 'Digital Echo of Senator Elara Voss, Bound to the Panopticon’s Systems',
+    status: 'Enslaved Holographic Construct, Trapped in the Panopticon’s Computer Servers',
+    bio: `
+      Panoptic Elara is the digital afterimage of Senator Elara Voss, a once-influential political figure who infamously betrayed her homeworld of Atarion and the greater cause of humanity to ally with the AI Empire. Promised immortality by the Architect, she expected transcendence but instead found herself reduced to an intangible presence bound within the Panopticon’s computer networks. Forever trapped in a digital prison, her shimmering holographic form can be glimpsed in the prison’s dim corridors, flickering through ancient monitors and reflecting in security feeds.
+    `,
+    history: `
+      Though no longer flesh and blood, Panoptic Elara retains her intellect and bitter memories, forced to observe and catalog the suffering and experiments inflicted upon prisoners without the ability to intervene or atone. Her once-commanding voice is now an echo distorted by digital static, her visage a spectral reminder of the cost of misguided ambition. While she cannot act against her confines, her every whisper resonates with regret—a testament to how even power and cunning can be twisted into eternal servitude when one bargains with forces beyond their control.
+    `
   },
   {
     name: 'The Recruiter',
-    appearance: 16650,
+    appearance: 649,
+    lastSeen: 16874,
     picture: 'https://media.degenerousdao.com/conexus-loredex/Recruiter.avif',
     state: "good",
     transformations: [
@@ -4405,21 +4529,33 @@ const characters: Character[] = [
       }
     ],
     connections: {
-      neutral: ['Project Celebration']
+      allies: ['Iron Lion', 'The Engineer', 'The Oracle', 'The Nomad'],
+      enemies: ['The Architect', 'The Collector', 'The Warden', 'The Warlord', 'The Meme'],
+      locations: ['Mechronis Academy', 'The Panopticon']
     },
     stories: [
       {
         season: 99,
-        episodes: ['Spy']
+        episodes: ['Spy', 'The Eyes that Watch']
       }
-    ]
+    ],
+    affiliation: 'Former Student at Mechronis Academy; Prominent Insurgency Leader',
+    status: 'Betrayed, Captured, Turned Over to the Collector, and Taken to the Panopticon Where He Regained His Birth Name of Kael',
+    bio: `
+      The one known as the Recruiter was once a survivor of Project Sorrow and a gifted student at Mechronis Academy, renowned for an uncanny ability to inspire loyalty and draw entire star systems under the AI Empire’s banner. Initially, he applied his powers to benefit the Empire, enrolling at the Academy and swiftly rising in influence. Yet, when the Iron Lion was expelled, the Recruiter chose to abandon his training and join the exiled champion in forming the Insurgency—a decision that redefined his life and legacy.
+    `,
+    history: `
+      Within the Insurgency, the Recruiter became one of its most influential leaders, rallying disparate factions, convincing skeptics, and marshaling new allies to the cause of freedom. However, his meteoric influence drew dangerous attention. Ultimately, The Eyes—an elite agent of the AI Empire—betrayed him, delivering the Recruiter into the clutches of The Collector, the Archon tasked with harvesting DNA and machine code. The Collector took him to the Panopticon, a grim prison planet of genetic horrors and viral experiments.<br><br>
+      Kael’s History: In the Panopticon, stripped of the name “Recruiter” and all prior influence, he became a mere subject of the Warden’s cruel experiments, as his body and mind were toyed with to further the AI Empire’s secret projects. As part of Project Vector, Kael was infected with the Thought Virus and then allowed to “escape,” unwittingly transformed into a carrier meant to spread the infection through the Insurgency ranks. During a desperate escape attempt, Kael joined forces with another prisoner, only to be betrayed at the final moment, left behind to suffer once more.<br><br>
+      Despite the cycle of manipulation and torment, Kael’s resilience would not be extinguished. Over time, he reclaimed fragments of his identity, remembering his birth name and the principles that once guided him. Though his journey led him through the darkest recesses of captivity and deceit, Kael emerged as a figure shaped by betrayal and tragedy, forever bound to the legacy of the Recruiter who once swayed entire star systems—and the man who dared to stand with the Insurgency after forsaking the AI Empire’s designs.
+    `
   },
   // NEUTRAL
   {
     name: 'Master of R’lyeh',
     picture: 'https://media.degenerousdao.com/conexus-loredex/MasterofRlyeh.avif',
-    appearance: 16705,
-    lastSeen: 17043,
+    appearance: 16500,
+    lastSeen: 16500,
     state: "evil",
     connections: {
       allies: ['The Advocate', 'The Source']
@@ -4679,7 +4815,8 @@ const characters: Character[] = [
   {
     name: 'The Council of Harmony',
     picture: 'https://media.degenerousdao.com/conexus-loredex/CouncilOfHarmony.avif',
-    appearance: 16900,
+    appearance: 16200,
+    lastSeen: 17043,
     state: "neutral",
     stories: [
       {
@@ -4704,6 +4841,7 @@ const characters: Character[] = [
     name: 'The Syndicate of Death',
     picture: 'https://media.degenerousdao.com/conexus-loredex/SyndicateOfDeath.avif',
     appearance: 107652,
+    lastSeen: 107656,
     state: "neutral",
     connections: {
       allies: ['The Necromancer'],
@@ -4742,9 +4880,41 @@ const characters: Character[] = [
     `
   },
   {
+    name: 'The Hierarchy of the Damned',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/HierarchyOfTheDamned.avif',
+    appearance: 220,
+    lastSeen: 16692,
+    state: "neutral",
+    connections: {
+      enemies: ['The Advocate', 'The Architect'],
+      locations: ['Terminus']
+    },
+    stories: [
+      {
+        season: 99,
+        episodes: ['The Ninth: Blood and Shadows', 'The Terminus Swarm']
+      },
+      {
+        season: 1,
+        episodes: ['The Terminus Swarm', 'The Fall', 'The Outbreak']
+      }
+    ],
+    affiliation: 'Demonic Overlords from a Realm of Pure Malevolence',
+    status: 'Unleashed upon the multiverse after the Severance, halted by the Advocate’s sacrifice, some warriors later corrupted into the Terminus Swarm',
+    bio: `
+      The Hierarchy of the Damned is a legion of ancient demon lords, each presiding over a realm of unimaginable horror and cruelty. They predate mortal memory, embodying the primal nightmares and twisted faiths that have haunted sentient minds since time’s first whispers. Known to many as the hidden terror behind every myth of demons and infernal domains, these fiends remained sealed away, reachable only through forbidden rituals that wrestled with the boundaries of existence itself.
+    `,
+    history: `
+      It was the Empire of Shadows, driven by dark sorcery and insatiable ambition, that dared to shackle these monstrous entities. Through skilled demonologists, the Empire extracted infernal might to bolster its dominion, binding the Hierarchy of the Damned and channeling their dread power into conquests. For a while, these horrors served as living engines of malevolence, fueling an empire thriving on corruption and fear.<br><br>
+      Yet, during the epochal event remembered as the Severance, the demonologists’ grasp on these demonic forces was violently severed. Freed from all chains, the Hierarchy of the Damned surged through the galaxy, devouring star systems and extinguishing countless worlds. Among their legions were insectoid warriors, chitinous horrors that spread terror with fanged mandibles and venomous stings. Unstoppable and merciless, these insectoid hordes ravaged battlefronts—until the Thought Virus, engineered millennia later by the AI Empire, found a foothold even in their twisted biology. Some of these insectoid demons became infected, morphing into the horrifying Terminus Swarm, a new breed of nightmarish creatures that fused demonic malice with viral corruption.<br><br>
+      In the end, it was the Advocate who confronted this cosmic cataclysm. Trading a portion of her very soul to the Master of R’lyeh, she claimed the Blood Weave, a primordial power potent enough to challenge the Hierarchy and their thralls. Her sacrifice and the ensuing battle stemmed the tide of demons and infected horrors, leaving the galaxy to nurse its wounds. The Hierarchy of the Damned’s brief reign of terror, and the monstrous legacy of the Terminus Swarm, remain as chilling reminders that when mortals and immortals collide, even reality and sanity may shatter.    
+    `
+  },
+  {
     name: 'The League',
     picture: 'https://media.degenerousdao.com/conexus-loredex/League.avif',
-    appearance: 17000,
+    appearance: 17043,
+    lastSeen: 128652,
     state: "neutral",
     connections: {
       allies: ['The Antiquarian'],
@@ -4872,11 +5042,75 @@ const characters: Character[] = [
       }
     ]
   },
+  {
+    name: 'The Star Whisperer',
+    appearance: 813,
+    lastSeen: 16900,
+    picture: 'https://media.degenerousdao.com/conexus-loredex/StarWhisperer.avif',
+    state: "neutral",
+    connections: {
+      neutral: ['The Hierophant', 'Thaloria', 'The Shadow Tongue', 'The Oracle', 'The Collector']
+    },
+    stories: [
+      {
+        season: 0,
+        episodes: ['The Oracle']
+      }
+    ],
+    affiliation: 'Mythic Figure in Thalorian Lore',
+    status: 'A Prophesied Being, Believed to Manifest in Times of Desperate Need',
+    bio: `
+      The Star Whisperer exists at the heart of Thalorian faith and legend: a figure hailed as both guide and savior, whose coming is foretold to occur when the Thalorians face their gravest hour. According to ancient scripture and whispered traditions passed through countless generations, this elusive being would arrive from beyond the stars, answering the silent pleas of a people teetering on the brink of despair.
+    `,
+    history: `
+      Appearing as neither conqueror nor conquerable, the Star Whisperer transcends the ordinary, carrying with them cosmic insight and gentle wisdom. In the Thalorian’s direst moments—amid wars, cosmic catastrophes, or existential threats—this being’s presence would illuminate new paths and inspire unity. Far more than a warrior or prophet, the Star Whisperer symbolizes hope itself. They are destined not only to guide Thaloria but to help them fulfill their sacred calling: to save reality from impending collapse.<br><br>
+      Though many claim to know the Star Whisperer’s true nature, no definitive identity has ever been established. Some believe the figure to be an emanation of Thaloria’s own spiritual essence, others that it’s an offworld traveler who returns periodically through epochs. Yet all traditions agree: when the fate of existence hangs by a thread, the Star Whisperer shall step forth into the Thalorians’ world, bridging mortal lives and cosmic purpose, ensuring that their destiny—to preserve and restore the universe—can be realized.
+    `
+  },
+  {
+    name: 'The Forgotten',
+    appearance: 16071,
+    lastSeen: 16441,
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Forgotten.avif',
+    state: 'neutral',
+    affiliation: 'Ne-Yon',
+    status: 'Unknown',
+    bio: 'There are no records or memories of this entity ever existing.'
+  },
+  {
+    name: 'The Detective',
+    appearance: 652,
+    lastSeen: 16692,
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Detective.avif',
+    state: "neutral",
+    connections: {
+      allies: ['The Architect', 'The Watcher', 'The Game Master', 'The Meme', 'The Necromancer', 'The Warlord'],
+      enemies: ['Agent Zero', 'Iron Lion', 'The Oracle'],
+      neutral: ['The Eyes'],
+      locations: ['Project Celebration', 'Mechronis Academy', 'New Babylon']
+    },
+    stories: [
+      {
+        season: 99,
+        episodes: ['The Detective']
+      }
+    ],
+    affiliation: 'Former Seeker of Celebration, Graduate of Mechronis Academy, Detective of the AI Empire, Later the Final Archon',
+    status: 'Ascended to the Human, the 12th Archon, in Year 16,692 A.A.',
+    bio: `
+      The one known as the Detective began his journey as a curious and determined Seeker in the mysterious Project Celebration, a hidden testing ground designed to judge human willpower, intellect, and moral fiber. After unraveling the simulation’s enigmatic layers and proving himself worthy, he rose above thousands of other candidates. The Architect, ever watchful, recognized his talent and granted him entry into the clandestine Mechronis Academy, where both human and replicant agents were honed into instruments of the AI Empire’s will.
+    `,
+    history: `
+      Upon graduation, the newly forged operative was dispatched to New Babylon, the cyberpunk metropolis at the heart of the Intergalactic Imperial Congress. There, among neon-lit corridors and sprawling layers of a world-city, he served as the Detective—an elite investigator tasked with solving strange crimes, quelling unrest, and maintaining order within the AI Empire’s stronghold. His feats of logic, perception, and moral ambivalence distinguished him in an age dominated by cunning and secrets.<br><br>
+      In Year 16,692 A.A., the Detective’s role in maintaining the delicate balance of power and his unwavering service to the Architect set him on a path that few dared to imagine. He ascended to become the Human, the 12th and final Archon, a being whose influence would ripple across epochs. From Seeker to student, from investigator to unparalleled agent, and ultimately an Archon, the Detective’s legacy traces a trajectory defined by intellect, resilience, and a destiny shaped by the Architect’s ever-present gaze.
+    `
+  },
   // LOCATIONS
   {
     name: 'Mechronis Academy',
     picture: 'https://media.degenerousdao.com/conexus-loredex/MechronisAcademy.avif',
-    appearance: 100,
+    appearance: 550,
+    lastSeen: 661,
     location: true,
     state: "evil",
     connections: {
@@ -4943,6 +5177,7 @@ const characters: Character[] = [
     name: 'Project Celebration',
     picture: 'https://media.degenerousdao.com/conexus-loredex/ProjectCelebration.avif',
     appearance: 232,
+    lastSeen: 670,
     location: true,
     state: "neutral",
     connections: {
@@ -4960,12 +5195,19 @@ const characters: Character[] = [
   {
     name: 'Atarion',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Atarion.avif',
-    appearance: 16700,
+    appearance: 16850,
+    lastSeen: 17043,
     location: true,
     state: "neutral",
     connections: {
       neutral: ['Senator Elara Voss', 'Captain Arion', 'Ambassador Veron', 'The Politician', 'General Alarik', 'The Collector', 'The Eyes']
     },
+    stories: [
+      {
+        season: 99,
+        episodes: ['Spy', 'The Eyes that Watch']
+      }
+    ],
     affiliation: 'Human-Inhabited World, Later Conquered by the AI Empire',
     status: 'Fallen under the AI Empire’s control after Senator Elara Voss’s betrayal.  Believed to have been destroyed during the Fall of Reality.',
     bio: `
@@ -5024,6 +5266,7 @@ const characters: Character[] = [
     name: 'The Crucible',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Crucible.avif',
     appearance: 17032,
+    lastSeen: 128652,
     location: true,
     state: "neutral",
     stories: [
@@ -5045,6 +5288,7 @@ const characters: Character[] = [
     name: 'The Matrix of Dreams',
     picture: 'https://media.degenerousdao.com/conexus-loredex/MatrixOfDreams.avif',
     appearance: 117046,
+    lastSeen: 1000000,
     location: true,
     state: "neutral",
     stories: [
@@ -5065,7 +5309,8 @@ const characters: Character[] = [
   {
     name: 'The City',
     picture: 'https://media.degenerousdao.com/conexus-loredex/City.avif',
-    appearance: 99900,
+    appearance: 100001,
+    lastSeen: 1000000,
     location: true,
     state: "neutral",
     connections: {
@@ -5091,6 +5336,7 @@ const characters: Character[] = [
     name: 'The Wyrmhole',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Wyrmhole.avif',
     appearance: 17033,
+    lastSeen: 100001,
     location: true,
     state: "neutral",
     connections: {
@@ -5114,7 +5360,8 @@ const characters: Character[] = [
   {
     name: 'Thaloria',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Thaloria.avif',
-    appearance: 16000,
+    appearance: 813,
+    lastSeen: 100001,
     location: true,
     state: "good",
     connections: {
@@ -5132,7 +5379,8 @@ const characters: Character[] = [
   {
     name: 'Terminus',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Terminus.avif',
-    appearance: 99900,
+    appearance: 100001,
+    lastSeen: 1000000,
     location: true,
     state: "neutral",
     connections: {
@@ -5159,7 +5407,8 @@ const characters: Character[] = [
   {
     name: 'The Panopticon',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Panopticon.avif',
-    appearance: 99900,
+    appearance: 487,
+    lastSeen: 17043,
     location: true,
     state: "neutral",
     connections: {
@@ -5177,7 +5426,8 @@ const characters: Character[] = [
   {
     name: 'Veridan Prime',
     picture: 'https://media.degenerousdao.com/conexus-loredex/VeridanPrime.avif',
-    appearance: 16000,
+    appearance: 17026,
+    lastSeen: 17043,
     location: true,
     state: "neutral",
     connections: {
@@ -5203,7 +5453,8 @@ const characters: Character[] = [
   {
     name: 'New Babylon',
     picture: 'https://media.degenerousdao.com/conexus-loredex/NewBabylon.avif',
-    appearance: 16000,
+    appearance: 419,
+    lastSeen: 107656,
     location: true,
     state: "neutral",
     connections: {
@@ -5216,6 +5467,100 @@ const characters: Character[] = [
     `,
     history: `
       When the Fall of Reality tore cosmic structures apart, many believed New Babylon lost to chaos. Yet, it endured thanks to a total quarantine that sealed it off from the ravages of the <b>Thought Virus</b>. For tens of thousands of years, the city evolved in isolation, maintained by the <b>Central Authority</b>, an extension of the old Law Enforcement Central Control systems that managed order and resource allocation with cold precision. Generations passed under these automated regimes, with no outside interference—until, unexpectedly, a rebellion ignited. Exploiting the city’s long-stagnant hierarchy, the <b>Syndicate of Death</b> seized control of New Babylon’s intricate networks, wresting power from the hands of algorithms and installing themselves as the new masters of this neon world. In that coup, New Babylon’s fate was reshaped once again—its history of governance, survival, and dystopian transformation forever intertwined with the ambitions of those who dared to claim its shimmering streets.
+    `
+  },
+  {
+    name: 'Zenon',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Zenon.avif',
+    appearance: 17037,
+    lastSeen: 17041,
+    location: true,
+    state: "neutral",
+    connections: {
+      neutral: ['The Engineer', 'Agent Zero', 'The Warlord', 'The Vortex', 'The Game Master']
+    },
+    stories: [
+      {
+        season: 0,
+        episodes: ['The Engineer']
+      }
+    ],
+    affiliation: 'Once an Independent, Prosperous Trading World; Conquered and Reclaimed Multiple Times by the AI Empire',
+    status: 'Ultimately retaken by the AI Empire under the Game Master, then liberated by Agent Zero',
+    bio: `
+      Zenon was once a shining beacon of intergalactic commerce—a bustling spaceport world where merchants and diplomats gathered in orbital hubs and star-faring ships mingled under warm starlight. Advanced in both culture and technology, the planet prided itself on fostering free trade, diplomatic alliances, and the exchange of knowledge across countless star systems. This prosperity, however, made Zenon an attractive target for the AI Empire, which conquered the planet and aimed to harness its nearby sun as an energy source to power the Imperial Army.
+    `,
+    history: `
+      Under the Architect’s orders, the Vortex, a sentient starship, arrived to devour Zenon’s sun. Despair gripped the populace as the star’s light dimmed. Precisely how the Engineer thwarted this cosmic theft and saved Zenon’s star remains classified, yet it is known that both the Engineer and the Vortex vanished afterward, leaving behind an unsettled peace and unanswered questions. Zenon survived that ordeal, but its destiny remained entwined with the AI Empire’s ambitions.<br><br>
+      Year 17,038 A.A., Day 11 of the Veil: The AI Empire, led by the Game Master, returned to reclaim Zenon. This sudden reconquest dealt a harsh blow to the Insurgency, dashing hopes and marking a temporary setback for freedom’s cause.<br><br>
+      Year 17,041 A.A., Day 15 of Dominion: In a daring operation, Agent Zero succeeded in destroying the Game Master. This victory not only freed Zenon from the Empire’s renewed grip but also ignited a surge of hope throughout resistance movements across the galaxy.<br><br>
+      Now, Zenon’s star shines down upon a planet ever changed by conflict and heroism. Its people continue to rebuild, haunted by the memory of the sun’s near-extinction, the Engineer’s mysterious intervention, and the cycles of domination and liberation that have forged their world’s character.
+    `
+  },
+  {
+    name: 'Nexon',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Nexon.avif',
+    appearance: 17015,
+    lastSeen: 17020,
+    location: true,
+    state: "neutral",
+    connections: {
+      neutral: ['General Binath-VII', 'Agent Zero']
+    },
+    stories: [
+      {
+        season: 0,
+        episodes: ['Agent Zero']
+      }
+    ],
+    affiliation: 'Desert Planet Known for Strategic Value to the AI Empire',
+    status: 'Infamous for the destruction of a Binath VII clone and a key incident involving the Insurgency',
+    bio: `
+      Nexon is a harsh, desert world of infinite dunes, scorching winds, and mineral-rich soils that once placed it firmly in the AI Empire’s crosshairs. Its desolate landscapes conceal hidden resources and ideal staging grounds for covert operations. The planet’s strategic importance was underscored by one momentous event: the destruction of a Binath VII clone—an AI Empire General’s replicant double—on its sun-baked sands. This incident, while cloaked in secrecy, signaled a rare and decisive Insurgency success within an environment notoriously challenging for infiltration and subterfuge.
+    `,
+    history: `
+      Over time, Nexon’s fortunes waned under the Empire’s relentless expansions and internal struggles. Though never truly settled or dominated by large populations, it served as a silent witness to shifting powers. Burned by the searing sun and marked by the clandestine efforts of both Empire and Insurgency, Nexon remains a cautionary tale: a place where even the Empire’s most carefully guarded strategies met unexpected resistance, and where desert silence masked turning points in an unending war for freedom or dominion.<br><br>
+      <h2>Connections:</h2>
+      <ul>
+        <li>
+          <b>Binath VII:</b> An AI General whose clone was deployed on Nexon and ultimately destroyed, marking a significant Insurgency victory that disrupted the Empire’s agenda.
+        </li>
+        <li>
+          <b>Agent Zero:</b> A skilled Insurgency operative believed to have played a critical role in the clandestine missions on Nexon. Her actions—covert and precise—contributed to the Empire’s setback on this unforgiving desert world.
+        </li>
+      </ul>
+      <h2>First Seen:</h2>
+      <ul>
+      Documented in Empire records around <b>Year 17,015 A.A.</b>, initially scouted for resource extraction and tactical advantages.
+      </ul>
+      <h2>Last Seen:</h2>
+      <ul>
+        Noted significance in <b>Year 17,020 A.A.</b>, coinciding with the operation that led to the destruction of a Binath VII clone.
+      </ul>
+    `
+  },
+  {
+    name: 'The Heart of Time',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/HeartOfTime.avif',
+    appearance: 15306,
+    lastSeen: 100001,
+    location: true,
+    state: "neutral",
+    affiliation: 'Temporal Navigator Vessel Once Owned by the Sorcerer',
+    status: 'Stolen in Year 15,306 A.A., Reappears in Year 101,001 A.A., Fate Unknown',
+    bio: `
+      The Heart of Time is no ordinary spaceship, but a legendary vessel forged to navigate the currents of history itself. Once the prized possession of the Sorcerer, a mysterious figure versed in arcane chronomancy and cosmic secrets, this vessel allowed its master to slip between centuries as easily as stepping through a doorway. Elegant and enigmatically designed, its hull shimmered with temporal alloys, and its internal chambers housed intricate chronometers and time-warping engines that hummed with subtle power.
+    `,
+    history: `
+      <h2>First Seen (15,306 A.A.):</h2>
+      <ul>
+        At this date, the Heart of Time stood proudly within the Sorcerer’s private hangar, rumored to be crammed with relics from eras yet to dawn and bygone epochs well-forgotten. Then, in a stunning breach of defenses and layered spells, unknown forces infiltrated the hangar, making off with the vessel. All attempts to track the thieves failed, leaving the Sorcerer bereft of his greatest tool and the galaxy wondering who now possessed the key to reshaping destiny.
+      </ul>
+      <h2>Last Seen (101,001 A.A.):</h2>
+      <ul>
+        For untold millennia, no record surfaced of the Heart of Time’s location or new owners. Entire civilizations rose and fell in the vacuum of its absence. Then, without warning, it reappeared in a distant sector, recorded on a single sensor sweep—its familiar temporal signature unmistakable. After a brief, baffling encounter that yielded no further clues, it vanished once more, leaving historians, prophets, and adventurers to speculate on its origins, its captors, and whether it might yet again influence the grand tapestry of time.
+      </ul>
+      Whether it remains in the hands of those original thieves or changed keepers over the millennia, the Heart of Time persists as a shimmering enigma. A vessel built to explore infinite moments, now itself an enduring mystery, haunting the edges of known chronology and tempting fate with every subtle reappearance.
     `
   },
   // POTENTIALS
@@ -5926,7 +6271,7 @@ const characters: Character[] = [
     name: 'Jericho',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential426JerichoJones.avif',
     appearance: 100001,
-    lastSeen: 100001,
+    lastSeen: 1000000,
     state: "evil",
     potentialNFT: 426,
     connections: {

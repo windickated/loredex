@@ -534,7 +534,7 @@
         top: 0;
         display: grid;
         align-items: center;
-        height: 100rem;
+        height: 150rem;
         width: 500rem;
         grid-template-columns: repeat(50, 10rem);
         padding: 2.5rem;
@@ -630,7 +630,7 @@
       }
 
       .mini-map {
-        top: 105rem;
+        top: 155rem;
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;

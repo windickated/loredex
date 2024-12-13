@@ -107,6 +107,7 @@ const characters: Character[] = [
     appearance: 1,
     lastSeen: 17043,
     state: "evil",
+    video: 'isK6VuGAbs4',
     connections: {
       allies: filterArchons('The Architect').concat(['Senator Elara Voss']),
       enemies: allNeyons.concat(['The Oracle', 'Iron Lion', 'Agent Zero', 'The Engineer', 'Kael']),
@@ -143,6 +144,7 @@ const characters: Character[] = [
     appearance: 5,
     lastSeen: 15,
     dead: true,
+    video: 'XEysomhuia0',
     state: "evil",
     connections: {
       enemies: ['The Architect']
@@ -235,6 +237,7 @@ const characters: Character[] = [
     appearance: 317,
     lastSeen: 16742,
     state: "evil",
+    video: '2SOPJ0m_xuM',
     connections: {
       allies: filterArchons('The Warlord'),
       enemies: ['Agent Zero', 'Iron Lion', 'The Nomad', 'The Engineer', 'The Judge'],
@@ -351,6 +354,7 @@ const characters: Character[] = [
     appearance: 500,
     lastSeen: 17037,
     state: "evil",
+    video: '68ZRBVUzydo',
     connections: {
       allies: filterArchons('The Vortex'),
       enemies: ['The Engineer', 'Agent Zero', 'The Seer'],
@@ -390,6 +394,7 @@ const characters: Character[] = [
     appearance: 550,
     lastSeen: 17041,
     dead: true,
+    video: 'n3RcKGnzC9w',
     state: "evil",
     connections: {
       allies: ['The Architect', 'The Necromancer', 'The Warlord', 'The Meme', 'The Watcher', 'The Human'],
@@ -426,6 +431,7 @@ const characters: Character[] = [
     appearance: 600,
     lastSeen: 117046,
     dead: true,
+    video: 'zIHrtnCUEMQ',
     state: "evil",
     connections: {
       allies: filterArchons('The Necromancer').concat(['The Syndicate of Death']),
@@ -544,6 +550,7 @@ const characters: Character[] = [
     appearance: 232,
     lastSeen: 17108,
     state: "evil",
+    video: 'bPz36LsRzVg',
     transformations: [
       {
         name: 'The Collector',

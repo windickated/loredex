@@ -210,6 +210,7 @@ export const stories: Season[] = [
       },
       {
         title: 'The Collector: Sanctuary',
+        link: 'bPz36LsRzVg'
       },
       {
         title: 'The Detective',
@@ -229,6 +230,7 @@ export const stories: Season[] = [
       },
       {
         title: 'The Harvest',
+        link: 'bPz36LsRzVg'
       },
       {
         title: 'The Ninth: Blood and Shadows',

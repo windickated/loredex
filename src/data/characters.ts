@@ -4906,7 +4906,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Hierarchy of the Damned',
-    picture: 'https://media.degenerousdao.com/conexus-loredex/HierarchyOfTheDamned.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/HierarchyOfDamned.avif',
     appearance: 220,
     lastSeen: 16692,
     state: "neutral",

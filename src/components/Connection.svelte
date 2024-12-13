@@ -66,9 +66,9 @@
 <style>
   div {
     position: absolute;
-    height: 0.15rem;
+    height: 0.2rem;
     opacity: 0;
     transition: all 0.3s ease-in-out;
-    filter: blur(0.15rem);
+    filter: blur(0.2rem);
   }
 </style>

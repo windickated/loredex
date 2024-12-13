@@ -57,8 +57,8 @@ const characters: Character[] = [
   {
     name: 'Destiny',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Destiny.avif',
-    appearance: 100001,
-    lastSeen: 100001,
+    appearance: 101001,
+    lastSeen: 101001,
     state: "neutral",
     connections: {
       neutral: ['The Architect', 'The Dreamer']
@@ -588,7 +588,7 @@ const characters: Character[] = [
     name: 'The Dreamer',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Dreamer.avif',
     appearance: 15100,
-    lastSeen: 100001,
+    lastSeen: 101001,
     state: "neutral",
     potentialNFT: 1,
     connections: {
@@ -624,7 +624,7 @@ const characters: Character[] = [
     name: 'The Judge',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Judge.avif',
     appearance: 15200,
-    lastSeen: 100001,
+    lastSeen: 101001,
     state: "neutral",
     potentialNFT: 2,
     connections: {
@@ -663,7 +663,7 @@ const characters: Character[] = [
     name: 'The Inventor',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Inventor.avif',
     appearance: 15300,
-    lastSeen: 100001,
+    lastSeen: 101001,
     state: "neutral",
     potentialNFT: 3,
     connections: {
@@ -702,7 +702,7 @@ const characters: Character[] = [
     name: 'The Seer',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Seer.avif',
     appearance: 15500,
-    lastSeen: 100001,
+    lastSeen: 101001,
     state: "neutral",
     potentialNFT: 4,
     connections: {
@@ -741,7 +741,7 @@ const characters: Character[] = [
     name: 'The Storm',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Storm.avif',
     appearance: 15700,
-    lastSeen: 100001,
+    lastSeen: 101001,
     state: "neutral",
     potentialNFT: 5,
     connections: {
@@ -780,7 +780,7 @@ const characters: Character[] = [
     name: 'The Silence',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Silence.avif',
     appearance: 15764,
-    lastSeen: 100001,
+    lastSeen: 101001,
     state: "neutral",
     potentialNFT: 6,
     connections: {
@@ -819,7 +819,7 @@ const characters: Character[] = [
     name: 'The Knowledge',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Knowledge.avif',
     appearance: 15765,
-    lastSeen: 100001,
+    lastSeen: 101001,
     state: "neutral",
     potentialNFT: 7,
     connections: {
@@ -858,7 +858,7 @@ const characters: Character[] = [
     name: 'The Degen',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Degen.avif',
     appearance: 15872,
-    lastSeen: 100001,
+    lastSeen: 101001,
     state: "neutral",
     potentialNFT: 8,
     connections: {
@@ -897,7 +897,7 @@ const characters: Character[] = [
     name: 'The Advocate',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Advocate.avif',
     appearance: 15900,
-    lastSeen: 100001,
+    lastSeen: 101001,
     state: "neutral",
     potentialNFT: 9,
     connections: {
@@ -941,7 +941,7 @@ const characters: Character[] = [
     name: 'The Resurrectionist',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Resurrectionist.avif',
     appearance: 16000,
-    lastSeen: 100001,
+    lastSeen: 101001,
     state: "neutral",
     potentialNFT: 10,
     connections: {
@@ -2606,7 +2606,7 @@ const characters: Character[] = [
   {
     name: 'The Source',
     appearance: 16933,
-    lastSeen: 100001,
+    lastSeen: 101001,
     picture: 'https://media.degenerousdao.com/conexus-loredex/Source.avif',
     state: "evil",
     transformations: [
@@ -4429,7 +4429,7 @@ const characters: Character[] = [
   {
     name: 'The White Oracle',
     appearance: 17033,
-    lastSeen: 100001,
+    lastSeen: 101001,
     picture: 'https://media.degenerousdao.com/conexus-loredex/WhiteOracle.avif',
     state: "good",
     transformations: [
@@ -5038,7 +5038,7 @@ const characters: Character[] = [
   },
   {
     name: 'The Terminus Swarm',
-    appearance: 100001,
+    appearance: 101001,
     picture: 'https://media.degenerousdao.com/conexus-loredex/TerminusSwarm.avif',
     state: "neutral",
     stories: [
@@ -5315,7 +5315,7 @@ const characters: Character[] = [
   {
     name: 'The City',
     picture: 'https://media.degenerousdao.com/conexus-loredex/City.avif',
-    appearance: 100001,
+    appearance: 101001,
     lastSeen: 1000000,
     location: true,
     state: "neutral",
@@ -5342,7 +5342,7 @@ const characters: Character[] = [
     name: 'The Wyrmhole',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Wyrmhole.avif',
     appearance: 17033,
-    lastSeen: 100001,
+    lastSeen: 101001,
     location: true,
     state: "neutral",
     connections: {
@@ -5367,7 +5367,7 @@ const characters: Character[] = [
     name: 'Thaloria',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Thaloria.avif',
     appearance: 813,
-    lastSeen: 100001,
+    lastSeen: 101001,
     location: true,
     state: "neutral",
     connections: {
@@ -5385,7 +5385,7 @@ const characters: Character[] = [
   {
     name: 'Terminus',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Terminus.avif',
-    appearance: 100001,
+    appearance: 101001,
     lastSeen: 1000000,
     location: true,
     state: "neutral",
@@ -5549,7 +5549,7 @@ const characters: Character[] = [
     name: 'The Heart of Time',
     picture: 'https://media.degenerousdao.com/conexus-loredex/HeartOfTime.avif',
     appearance: 15306,
-    lastSeen: 100001,
+    lastSeen: 101001,
     location: true,
     state: "neutral",
     affiliation: 'Temporal Navigator Vessel Once Owned by the Sorcerer',
@@ -5573,7 +5573,7 @@ const characters: Character[] = [
   {
     name: 'The Wolf',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential292Wolf.avif',
-    appearance: 100001,
+    appearance: 101001,
     lastSeen: 128652,
     state: "evil",
     potentialNFT: 292,
@@ -5763,7 +5763,7 @@ const characters: Character[] = [
   {
     name: 'Wraith Calder',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential623WraithCalder.avif',
-    appearance: 100001,
+    appearance: 101001,
     lastSeen: 107652,
     state: "evil",
     potentialNFT: 623,
@@ -6010,7 +6010,7 @@ const characters: Character[] = [
   {
     name: 'Akai Shi',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential350AkaiShi.avif',
-    appearance: 100001,
+    appearance: 101001,
     lastSeen: 117046,
     state: "evil",
     dead: true,
@@ -6276,7 +6276,7 @@ const characters: Character[] = [
   {
     name: 'Jericho',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential426JerichoJones.avif',
-    appearance: 100001,
+    appearance: 101001,
     lastSeen: 1000000,
     state: "evil",
     potentialNFT: 426,
@@ -6508,7 +6508,7 @@ const characters: Character[] = [
   {
     name: 'The Host',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Host.avif',
-    appearance: 100001,
+    appearance: 101001,
     state: "neutral",
     potentialNFT: 25,
     transformations: [

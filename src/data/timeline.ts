@@ -110,18 +110,18 @@ export const timeline: TimeSection[] = [
     emptySection: true
   },
   {
-    date: [99900, 99999],
+    date: [100900, 100999],
   },
   {
-    date: [100000, 100099],
+    date: [101000, 101199],
     action: 'The Potentials Awaken',
     expandable: 1
   },
   {
-    date: [100100, 100199],
+    date: [101200, 101299],
   },
   {
-    date: [100200, 128599],
+    date: [101300, 128599],
     emptySection: true
   },
   {

@@ -763,7 +763,7 @@
 
       .map-wrapper {
         .map {
-          padding-top: 15rem;
+          padding-top: 20rem;
 
           .plot {
             .date {
@@ -777,7 +777,7 @@
         }
 
         .mini-map {
-          top: 120rem;
+          top: 170rem;
         }
       }
     }

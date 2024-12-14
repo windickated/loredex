@@ -22,13 +22,17 @@
   let startY: number = 0;
   let isDragging: boolean = false;
   let searchField: string;
+  let preventZoomChanges: boolean = true;
 
   $: activeSeason = stories.find(
     (section) => section.season === $activeSeasonNr
   );
 
   onMount(() => {
-    mapZoom = 0.3;
+    mapZoom = 0.2;
+    setTimeout(() => {
+      preventZoomChanges = false;
+    }, 7500);
   });
 
   const handlePointerDown = (event: PointerEvent) => {
@@ -70,6 +74,7 @@
   };
 
   const handleZoomWheel = (event: WheelEvent) => {
+    if (preventZoomChanges) return;
     const { deltaY, ctrlKey, metaKey } = event;
     if (!(ctrlKey || metaKey)) return;
     event.preventDefault();
@@ -125,11 +130,20 @@
   <section class="controllers">
     <div class="search-wrapper">
       <button on:click={showTimeline}>
-        <img src="time.png" alt="Time" />
+        <img
+          src="time.png"
+          alt="Time"
+          style="opacity: {preventZoomChanges ? '0' : '1'};"
+        />
       </button>
       <div class="search">
-        <img src="search.png" alt="Search" />
+        <img
+          src="search.png"
+          alt="Search"
+          style="opacity: {preventZoomChanges ? '0' : '1'};"
+        />
         <input
+          style="opacity: {preventZoomChanges ? '0' : '1'};"
           bind:value={searchField}
           on:input={handleSearch}
           on:focus={handleSearch}
@@ -146,7 +160,9 @@
           alt="Zoom out"
           role="button"
           tabindex="0"
+          style="opacity: {preventZoomChanges ? '0' : '1'};"
           on:click={() => {
+            if (preventZoomChanges) return;
             mapZoom = 0.1;
           }}
         />
@@ -155,6 +171,7 @@
           min="0.1"
           max="1.6"
           step="0.025"
+          style="opacity: {preventZoomChanges ? '0' : '1'};"
           bind:value={mapZoom}
         />
         <img
@@ -162,7 +179,9 @@
           alt="Zoom in"
           role="button"
           tabindex="0"
+          style="opacity: {preventZoomChanges ? '0' : '1'};"
           on:click={() => {
+            if (preventZoomChanges) return;
             mapZoom = 1.6;
           }}
         />
@@ -419,6 +438,7 @@
       img {
         width: 1.5vw;
         height: auto;
+        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
       }
 
       .search-wrapper {
@@ -437,7 +457,7 @@
           background-color: rgba(56, 117, 250, 0.5);
           border: 0.1vw solid rgba(51, 226, 230, 0.5);
           border-radius: 0.5vw;
-          transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+          transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 
           input {
             font-size: 1vw;
@@ -449,7 +469,7 @@
             border-radius: 0.25vw;
             outline: none;
             width: 10vw;
-            transition: all 0.15s ease-in-out;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 
             &::placeholder {
               color: rgba(51, 226, 230, 0.5);
@@ -481,13 +501,14 @@
           input {
             width: 20vw;
             cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
           }
 
           img {
             height: 1.5vw;
             width: auto;
             cursor: pointer;
-            transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 
             &:hover,
             &:active {

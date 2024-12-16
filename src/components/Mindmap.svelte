@@ -31,6 +31,10 @@
 
   onMount(() => {
     mapZoom = 0.2;
+    if (window.innerWidth < 600) {
+      preventZoomChanges = false;
+      return;
+    }
     setTimeout(() => {
       preventZoomChanges = false;
     }, 7500);
@@ -103,10 +107,13 @@
     });
   };
 
+  let mobileSearchFocus = false;
   const handleMobileSearch = () => {
     if (window.innerWidth > 600) return;
     if (!searchInput) return;
-    searchInput.focus();
+    if (!mobileSearchFocus) searchInput.focus();
+    if (mobileSearchFocus) searchInput.blur();
+    mobileSearchFocus = !mobileSearchFocus;
   };
 
   const resetSearch = () => {
@@ -704,7 +711,7 @@
       margin-block: 0;
       top: 0;
       padding: 1em;
-      animation: showScale 1s linear 2s forwards;
+      animation: show 1s linear 2s forwards;
 
       h1 {
         display: none;
@@ -715,7 +722,6 @@
         justify-content: space-between;
         flex-flow: row nowrap;
         gap: 0;
-        opacity: 0.25;
 
         &:hover,
         &:active {
@@ -728,7 +734,15 @@
         }
 
         .search-wrapper {
-          width: 100%;
+          position: fixed;
+          top: 1em;
+          right: 1em;
+          justify-content: flex-start;
+          flex-direction: row-reverse;
+
+          button {
+            background-color: #010020;
+          }
 
           .search {
             padding: 0.25em;
@@ -736,13 +750,16 @@
             gap: 0.25em;
             font-size: 1em;
             line-height: 1.5em;
+            background-color: transparent;
+            border: none;
 
             input {
               font-size: inherit;
               line-height: inherit;
               border-radius: 0.25em;
-              padding-inline: 0;
+              padding: 0.25em 0.5em;
               width: 0;
+              background-color: #010020;
 
               &:focus {
                 width: 50vw;
@@ -755,7 +772,7 @@
           gap: 0;
 
           .zoom-slider {
-            position: absolute;
+            position: fixed;
             transform: rotate(-90deg);
             right: -40vw;
             top: 50vh;

@@ -615,7 +615,7 @@ const characters: Character[] = [
         episodes: ['Awakenings', 'Illumuated Shadows', 'The Beginning of the End']
       }
     ],
-    affiliation: 'Neyons',
+    affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
       The Dreamer is the progenitor of the Neyons, embodying boundless creativity and the origin of all possibilities. Existing beyond time and space, the Dreamer shapes futures and scenarios that benefit the Neyons. Aloof from galactic struggles, the Dreamer inspires resistance to the Architect or perpetuates the status quo when it aligns with their enigmatic goals.
@@ -651,7 +651,7 @@ const characters: Character[] = [
         episodes: ['The Decision', 'The Beginning of the End']
       }
     ],
-    affiliation: 'Neyons',
+    affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
       The Judge is the <b>Second</b> of the Neyons, serving as the arbiter of existence. Deciding the fate of individuals, civilizations, and ideologies, the Judge is guided solely by their perception of balance and fairness. Unpredictable and unaligned, their judgments often leave both humanity and the AI Empire questioning their motivations.
@@ -690,7 +690,7 @@ const characters: Character[] = [
         episodes: ['Awakenigns', 'The Fall', 'The Arrival', 'The City', 'The Wyrmwood', 'The Hunt', 'The Beginning of the End', 'Memento Dischordia']
       }
     ],
-    affiliation: 'Neyons',
+    affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
       The Inventor, the <b>Third</b> Neyon, is the creator of worlds and the architect of impossible technologies. Driven by the Dreamer's visions, the Inventor crafts tools and innovations that can empower or undermine any faction, depending on the Neyons' inscrutable goals. They are both a giver of gifts and a bringer of destruction, beholden only to the art of creation.
@@ -729,7 +729,7 @@ const characters: Character[] = [
         episodes: ['The Outbreak', 'The Beginning of the End']
       }
     ],
-    affiliation: 'Neyons',
+    affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
       The Seer, the <b>Fourth</b> Neyon, is the prophet of fate, watching the threads of destiny to chart courses that benefit the Neyons. Unbound by allegiance, the Seer identifies opportunities and dangers, providing foresight that often shifts the balance of power in unexpected ways.
@@ -768,7 +768,7 @@ const characters: Character[] = [
         episodes: ['The Beginning of the End']
       }
     ],
-    affiliation: 'Neyons',
+    affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
       The Storm, the <b>Fifth</b> Neyon, thrives on upheaval and destruction, targeting strongholds of both humanity and the AI Empire to prevent either from achieving total dominance. By keeping the galaxy in a state of flux, the Storm ensures opportunities for the Neyons to exploit.
@@ -807,7 +807,7 @@ const characters: Character[] = [
         episodes: ['The Beginning of the End']
       }
     ],
-    affiliation: 'Neyons',
+    affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
       The Silence, the <b>Sixth</b> Neyon, is the keeper of secrets, holding knowledge that could dismantle both the AI Empire and humanity's Insurgency. Guarding these secrets with relentless precision, the Silence reveals them only when it benefits the Neyons' agenda. Control of information is their ultimate power.
@@ -846,7 +846,7 @@ const characters: Character[] = [
         episodes: ['The Terminus Swarm', 'The Arrival', 'The Wyrmwood', 'The Beginning of the End']
       }
     ],
-    affiliation: 'Neyons',
+    affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
       The Knowledge, the <b>Seventh</b> Neyon, is the illuminator of minds, controlling the dissemination of wisdom to both humanity and the AI Empire. By maintaining an equilibrium of enlightenment and ignorance, the Knowledge ensures the Neyons remain indispensable to all factions.
@@ -885,7 +885,7 @@ const characters: Character[] = [
         episodes: ['Illuminated Shadows', 'The City', 'The Return', 'The Hunt', 'The Beginning of the End']
       }
     ],
-    affiliation: 'Neyons',
+    affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
       The Degen, the <b>Eighth</b> Neyon, embodies the decay of order, disrupting systems and ideologies to prevent any faction from achieving lasting dominance. Through acts of corruption and entropy, the Degen creates conditions in which the Neyons can flourish.
@@ -924,7 +924,7 @@ const characters: Character[] = [
         episodes: ['Illuminated Shadows', 'The City', 'The Hunt', 'The Beginning of the End']
       }
     ],
-    affiliation: 'Neyons',
+    affiliation: 'Ne-Yons',
     status: 'Active (though her humanity is lost)',
     bio: `
       The Advocate, the <b>Ninth</b> Neyon, is the voice of the Neyons, a master manipulator and diplomat who negotiates with both the AI Empire and humanity to further the Neyons' goals. Establishing the <b>Empire of Shadows</b>, she wielded the <b>Blood Weave</b> to reshape reality, battling the <b>Hierarchy of the Damned</b> but at great personal cost.
@@ -968,7 +968,7 @@ const characters: Character[] = [
         episodes: ['The Beginning of the End']
       }
     ],
-    affiliation: 'Neyons',
+    affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
       The Resurrectionist, the <b>Tenth</b> Neyon, embodies the rebirth of power, wielding the ability to bring back the dead and repurpose them for new goals. By resurrecting key figures on both sides, they maintain a balance favorable to the Neyons, ensuring no faction becomes too powerful.
@@ -996,7 +996,7 @@ const characters: Character[] = [
       enemies: ['The Architect'],
       neutral: ['The Game Master']
     },
-    affiliation: 'Neyons',
+    affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
       The Enigma is a mysterious Neyon operative known for stealth and reality-bending abilities. They played a crucial role in destroying the Warden alongside the <b>White Oracle</b> before the <b>Fall of Reality</b>.

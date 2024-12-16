@@ -23,6 +23,7 @@
   let isDragging: boolean = false;
   let searchField: string;
   let preventZoomChanges: boolean = true;
+  let searchInput: HTMLInputElement | null;
 
   $: activeSeason = stories.find(
     (section) => section.season === $activeSeasonNr
@@ -102,6 +103,12 @@
     });
   };
 
+  const handleMobileSearch = () => {
+    if (window.innerWidth > 600) return;
+    if (!searchInput) return;
+    searchInput.focus();
+  };
+
   const resetSearch = () => {
     const allCharacters: HTMLElement[] = Array.from(
       document.querySelectorAll(".character")
@@ -137,10 +144,14 @@
         />
       </button>
       <div class="search">
+        <!-- svelte-ignore a11y_no_noninteractive_element_to_interactive_role a11y_click_events_have_key_events -->
         <img
           src="search.png"
           alt="Search"
           style="opacity: {preventZoomChanges ? '0' : '1'};"
+          role="button"
+          tabindex="0"
+          on:click={handleMobileSearch}
         />
         <input
           style="opacity: {preventZoomChanges ? '0' : '1'};"
@@ -148,6 +159,7 @@
           on:input={handleSearch}
           on:focus={handleSearch}
           on:blur={resetSearch}
+          bind:this={searchInput}
           placeholder="Find a character..."
         />
       </div>
@@ -729,8 +741,8 @@
               font-size: inherit;
               line-height: inherit;
               border-radius: 0.25em;
-              padding-inline: 0.5em;
-              width: 40vw;
+              padding-inline: 0;
+              width: 0;
 
               &:focus {
                 width: 50vw;

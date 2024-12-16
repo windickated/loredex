@@ -121,7 +121,9 @@
           <h1>Comprehensive Timeline of the A.A. Era</h1>
         {/if}
       </div>
-      <button class="close-button" on:click={closeDialog}>❌</button>
+      <button class="close-button" on:click={closeDialog}>
+        <img src="/close.png" alt="Close" />
+      </button>
     </header>
 
     <!-- CHARACTER WINDOW -->
@@ -563,9 +565,9 @@
 
         .close-button,
         .back-arrow {
-          padding: 1vw;
-          font-size: 2vw;
-          line-height: 2vw;
+          font-size: inherit;
+          line-height: inherit;
+          padding: 0.5vw;
           background-color: rgba(22, 30, 95, 0.9);
           border-radius: 1vw;
 
@@ -573,16 +575,16 @@
           &:active {
             background-color: rgba(45, 90, 216, 0.9);
           }
-        }
-
-        .back-arrow {
-          padding: 0.5vw;
 
           img {
             width: 3vw;
             height: auto;
-            opacity: 0.75;
+            opacity: 0.9;
           }
+        }
+
+        .back-arrow img {
+          opacity: 0.75;
         }
       }
 
@@ -1054,14 +1056,10 @@
           .close-button,
           .back-arrow {
             padding: 0.5em;
-            font-size: 1.5em;
-            line-height: 1.25em;
             border-radius: 0.5em;
-          }
 
-          .back-arrow {
             img {
-              width: 1.15em;
+              width: 1.5em;
             }
           }
         }

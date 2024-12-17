@@ -108,11 +108,16 @@
   };
 
   let mobileSearch = false;
-  const handleMobileSearch = () => {
+  const handleSearchFocus = () => {
     if (!searchInput) return;
-    if (!mobileSearch) searchInput.focus();
-    if (mobileSearch) searchInput.blur();
-    mobileSearch = !mobileSearch;
+    if (!mobileSearch) {
+      searchInput.focus();
+      mobileSearch = false;
+    }
+    if (mobileSearch) {
+      searchInput.blur();
+      mobileSearch = true;
+    }
   };
 
   const resetSearch = () => {
@@ -162,7 +167,7 @@
           style="opacity: {preventZoomChanges ? '0' : '1'};"
           role="button"
           tabindex="0"
-          on:click={handleMobileSearch}
+          on:click={handleSearchFocus}
         />
         <input
           style="opacity: {preventZoomChanges ? '0' : '1'};"
@@ -803,7 +808,7 @@
 
             img {
               height: 3vh;
-              transform: rotate(90deg);
+              transform: rotate(90deg) !important;
             }
           }
 

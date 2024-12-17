@@ -113,6 +113,7 @@
           left: 0;
           opacity: 0;
           background-color: rgba(0, 0, 0, 0.75);
+          transition: all 0.3s ease-in-out;
 
           &:hover,
           &:active {
@@ -149,7 +150,7 @@
           gap: 1vw;
           text-decoration: none;
           opacity: 0.9;
-          transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+          transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 
           img {
             height: 2vw;

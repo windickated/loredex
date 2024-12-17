@@ -221,7 +221,7 @@
     height: auto;
     padding: 0.25rem;
     cursor: pointer;
-    transition: all 0.15s ease-in-out;
+    transition: all 0.3s ease-in-out;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;

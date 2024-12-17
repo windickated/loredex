@@ -856,7 +856,7 @@
                 padding: 0.5vw;
                 gap: 0.5vw;
                 cursor: pointer;
-                transition: all 0.15s ease-in-out;
+                transition: all 0.3s ease-in-out;
                 background-color: rgba(36, 65, 189, 0.9);
                 border: 0.2vw solid gray;
                 border-radius: 1vw;
@@ -988,7 +988,7 @@
   }
 
   dialog[open] {
-    animation: zoom 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    animation: zoom 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
   dialog[open]::backdrop {

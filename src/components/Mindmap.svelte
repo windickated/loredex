@@ -186,7 +186,8 @@
           style="opacity: {preventZoomChanges ? '0' : '1'};"
           on:click={() => {
             if (preventZoomChanges) return;
-            mapZoom = 0.1;
+            let zoom = mapZoom - 0.05;
+            mapZoom = setZoom(zoom);
           }}
         />
         <input
@@ -205,7 +206,8 @@
           style="opacity: {preventZoomChanges ? '0' : '1'};"
           on:click={() => {
             if (preventZoomChanges) return;
-            mapZoom = 1.6;
+            let zoom = mapZoom + 0.05;
+            mapZoom = setZoom(zoom);
           }}
         />
       </div>
@@ -462,7 +464,7 @@
       img {
         width: 1.5vw;
         height: auto;
-        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
         cursor: pointer;
       }
 
@@ -483,7 +485,7 @@
           background-color: rgba(56, 117, 250, 0.5);
           border: 0.1vw solid rgba(51, 226, 230, 0.5);
           border-radius: 0.5vw;
-          transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+          transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 
           input {
             font-size: 1vw;
@@ -495,7 +497,7 @@
             border-radius: 0.25vw;
             outline: none;
             width: 10vw;
-            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 
             &::placeholder {
               color: rgba(51, 226, 230, 0.5);
@@ -527,14 +529,14 @@
           input {
             width: 20vw;
             cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
           }
 
           img {
             height: 1.5vw;
             width: auto;
             cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 
             &:hover,
             &:active {
@@ -597,7 +599,7 @@
           padding-block: 2.5rem;
           border-left: 0.05rem solid rgba(51, 226, 230, 0.1);
           border-right: 0.05rem solid rgba(51, 226, 230, 0.1);
-          transition: all 0.15s ease-in-out;
+          transition: all 0.3s ease-in-out;
 
           .date,
           .episode-title {
@@ -644,7 +646,7 @@
             font-size: 1.5rem;
             color: rgba(51, 226, 230, 0.9);
             opacity: 0.5;
-            transition: all 0.15s ease-in-out;
+            transition: all 0.3s ease-in-out;
 
             p {
               text-align: center;

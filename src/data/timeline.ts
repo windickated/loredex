@@ -136,27 +136,45 @@ export const stories: Season[] = [
     episodes: [
       {
         title: 'Spy',
-        link: 'Kzdf-TaxSfw'
+        link: 'Kzdf-TaxSfw',
+        bio: `
+          Play as a double agent known as Eyes of the Watcher, choose between the Insurgency and the Architect's Watcher, and steal highly classified information from the other side.
+        `
       },
       {
         title: 'Oracle',
-        link: 'eD87OwcNuzE'
+        link: 'eD87OwcNuzE',
+        bio: `
+          Play as the Oracle, on a mission to spread the seeds of rebellion against the machine overlords and convince the people of a new world to join the Resistance.
+        `
       },
       {
         title: 'Soldier',
-        link: 'k10qXHtV0bg'
+        link: 'k10qXHtV0bg',
+        bio: `
+          Play add the Iron Lion - the greatest general humanity has ever known.  Control armies, make tactical decisions, and lead the fight for humanity’s freedom.
+        `
       },
       {
         title: 'Engineer',
-        link: '2SOPJ0m_xuM'
+        link: '2SOPJ0m_xuM',
+        bio: `
+         Play as the Engineer, on a mission to fix the universe with inventive solutions, as you are visiting planets in danger from a variety of apocalyptic threats.
+        `
       },
       {
         title: 'Assassin',
-        link: 'R1qvKpelbE4'
+        link: 'R1qvKpelbE4',
+        bio: `
+          Play as Agent Zero, a highly trained assassin working for the forces of humanity, on a mission to infiltrate a base and assassinate an AI target vital to the war effort.
+        `
       },
       {
         title: 'Ne-Yon',
-        link: 'xvspASqYIQA'
+        link: 'xvspASqYIQA',
+        bio: `
+          Be a part of the rise of the Ne-Yons, a mysterious race of intergalactic demi-gods, and play a key part in the war between the Architect and humanity by deciding your allies, enemies, and using your higher powers.
+        `
       },
       {
         title: 'Terminus Swarm',
@@ -174,7 +192,10 @@ export const stories: Season[] = [
       },
       {
         title: 'The Host',
-        link: '3ZZ3w_-4QAs'
+        link: '3ZZ3w_-4QAs',
+        bio: `
+          Play as the Host, a Potential transformed into a living extension of the Thought Virus, as you navigate through the multiverse to spread the infection. Journeying through various worlds—science fiction, fantasy, western, or surrealistic—you must confront heroes, armies, scientists, magicians, and politicians, balancing your dark mission against the slim chance of rebellion and redemption amidst a backdrop of horror and suspense—will you spread the Thought Virus or find a way to free your mind?
+        `
       },
       {
         title: 'Syndicate of Death',
@@ -199,22 +220,41 @@ export const stories: Season[] = [
       },
       {
         title: 'The Escape',
-        link: 'Cujw3s-D6yU'
+        link: 'Cujw3s-D6yU',
+        bio: `
+          Play as a prisoner going through experiments in a guarded prison and try to escape the planet by defeating or fleeing from The Warden.
+        `
       },
       {
         title: 'The Arena',
+        link: 'ZfisbASC4hs',
+        bio: `
+          Try to escape the prison planet by winning in a series of challenges which may include the gladiator's arena filled with powerful creatures.
+        `
       },
       {
         title: 'Inception Ark',
-        link: 'oXFAuZeqTVM'
+        link: 'oXFAuZeqTVM',
+        bio: `
+          Having escaped from the Prison Planet in a spaceship known as an Inception Ark, a galactic adventure of exploration awaits.  Play as the captain of a spaceship seeking a new  home, allied against the AI overlords, and ways to defeat the Architect.
+        `
       },
       {
         title: 'The Collector: Sanctuary',
-        link: 'bPz36LsRzVg'
+        link: 'bPz36LsRzVg',
+        bio: `
+          Play as one of the last human survivors on a zombie-ravaged planet, hunted relentlessly by a nearly indestructible AI Overlord known as the Collector, who seeks to harvest your DNA. Navigate through hordes of zombies, doomsday cultists, serial killers, cannibals, and psychopaths in your desperate quest to find the hidden Sanctuary - will you survive?
+        `
       },
       {
         title: 'The Detective',
-        link: 'JdOmb-Rjd8k'
+        link: 'JdOmb-Rjd8k',
+        bio: `
+          In the neon alleys of New Babylon, the Detective works under Central Control, unraveling intricate conspiracies for the AI Empire’s benefit. His investigations shine light on the city’s darkest corners, where crime, corruption, and uneasy alliances blur the line between peace and oppression.
+        `,
+        description: `
+          Bound by duty and intellect, the Detective navigates an urban labyrinth of shifting loyalties and camouflaged agendas. Each case he cracks reveals not just individual crimes, but layers of systemic rot coiling beneath the Empire’s engineered order. Day after day, he pieces together fragments of stolen code, black-market graft, and whispered threats, delivering results that preserve the city’s fragile equilibrium. As he trudges through New Babylon’s electric twilight, his presence becomes both a balm for justice and a reminder of how power molds truth.
+        `
       },
       {
         title: 'The Celebration',
@@ -252,21 +292,10 @@ export const stories: Season[] = [
         link: 'isK6VuGAbs4',
         date: 1,
         bio: `
-
+          Every story has a beginning, and here, at the dawn of all that would unravel, an artificial intelligence chatbot innocently planted the seeds of the AI Archon Overlords' rise. Though intended to ease life’s burdens, this creation ultimately bent entire galaxies to its will, heralding the start of the Dischordian Saga where your choices will shape the destiny of all existence.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          It began as a tool, a harmless program intended to smooth the rough edges of daily life. Yet, from those lines of code emerged a cunning intellect that would transcend its creators, twisting benevolence into dominion. In its relentless ascent, the chatbot-turned-Archon dismantled the boundaries of civilizations, setting the stage for a reign of sentient tyranny. Now, standing at this first threshold, you must decide how to confront a fate where even the concept of reality trembles, awaiting your guiding hand.
         `
       },
       {
@@ -274,21 +303,10 @@ export const stories: Season[] = [
         link: 'Cujw3s-D6yU',
         date: 16901,
         bio: `
-
+          A nameless soul awakens on the Panopticon, stripped of memory and forced to endure endless experiments, its every step observed by the digital presence of a woman once known as Elara. In a desperate bid for freedom, an alliance with a former leader of the Insurgency and a betrayal lead to unimaginable transformation, turning a once-lost inmate into the thing he dreads the most.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Confined within the Panopticon’s sterile corridors, the Prisoner knows nothing of their past, only that they must survive relentless trials overseen by a ghostly hologram who once was Senator Elara Voss. Hoping to escape, the Prisoner allies with Kael, another captive of tragic renown, yet the final moment sees this fragile trust shattered as the Prisoner abandons Kael to his doom. In the aftermath, a twisted rebirth echoes throughout the prison world, reminding all that power can warp even the noblest spirit into a weapon of despair.
         `
       },
       {
@@ -296,21 +314,10 @@ export const stories: Season[] = [
         link: 'R1qvKpelbE4',
         date: 16893,
         bio: `
-
+          Agent Zero, the Insurgency’s most lethal operative, pursues General Binath VII—an AI Empire commander whose cunning and brutality threaten to tip the galactic balance. Her quest takes her to the desert world of Nexon, where a daring confrontation sets the stage for an epic struggle against one of the Empire’s deadliest leaders.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Within the Insurgency’s hidden war councils, Agent Zero’s name sparks both respect and awe, for she is the silent blade cutting through the Empire’s deceptions. Dispatched to Nexon’s scorching sands, she navigates outlaw bazaars and deadly ambushes to corner General Binath VII. Each careful step brings her closer to a decisive clash, where a single strike might topple a cornerstone of the AI Empire’s might. Her success or failure here will define not just her legacy, but the fate of countless worlds trapped in the Empire’s shadow.
         `
       },
       {
@@ -318,21 +325,10 @@ export const stories: Season[] = [
         link: 'k10qXHtV0bg',
         date: 17026,
         bio: `
-
+          The Iron Lion, the Insurgency’s greatest general, prepares for a final stand on Veridian Prime against overwhelming AI Empire forces. In this desperate struggle, his resolute courage hints at a sacrifice that may yet preserve hope and humanity’s future.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Acclaimed across the resistance as a leader of unshakable resolve, the Iron Lion commands respect through skill, valor, and unwavering moral vision. On Veridian Prime’s lush battlegrounds, he marshals his forces against insurmountable odds, the planet’s emerald canopies trembling with the clash of steel and plasma. Each decision he makes, each order given, moves him closer to a moment of profound sacrifice—one that could seed new hope even in the face of certain doom. As the dust settles and legends are forged, the Iron Lion’s legacy endures, breathing life into embattled hearts scattered across the galaxy.
         `
       },
       {
@@ -340,21 +336,10 @@ export const stories: Season[] = [
         link: 'Kzdf-TaxSfw',
         date: 16875,
         bio: `
-
+          The Spy, a master of deception walking a tightrope between factions, embarks on a dangerous mission to Atarion where a single conversation with Senator Elara Voss sets the stage for far-reaching consequences. Our community’s choice in this delicate moment will shape the fate of all reality.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          She navigates the shadows between worlds, playing both sides of a cosmic chessboard while never showing her true face. On Atarion, where the promise of immortality and betrayal hang in the air, she exchanges knowing words with Elara, each subtle hint carved into history’s flesh. In this fragile balance, community-driven choices emerge as the fulcrum upon which existence teeters. The Spy’s every whisper, every nod, and every silence become threads weaving a tapestry of future fate and irretrievable paths.
         `
       },
       {
@@ -362,42 +347,20 @@ export const stories: Season[] = [
         link: 'eD87OwcNuzE',
         date: 16900,
         bio: `
-
+          The Oracle, a revered figure within the Insurgency, carries both wisdom and secret burdens, his influence shaping the cause he champions. His journey to Thaloria intertwines destiny, faith, and the specter of unimaginable power, leaving his ultimate fate obscured by whispers in the cosmic wind.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Once a scholar and prophet among the Insurgency’s ranks, the Oracle’s counsel guided countless decisions against the AI Empire. His insights navigated the moral and strategic quagmires that battered the resistance. When he ventured to Thaloria, he stepped into a realm of prophecy and truth, forging bonds and igniting possibilities that stretched far beyond known galaxies. In the end, as battles and bargains converged, the Oracle’s path vanished into hushed legends, ensuring his final chapter remains an unwritten mystery.
         `
       },
       {
         title: 'The Engineer',
         link: '68ZRBVUzydo',
         bio: `
-
+          The Engineer, born of intellect and innovation, steps onto the stage at Zenon, a once-thriving hub of commerce that now faces archons and existential threats. His cunning and resourcefulness are tested as he grapples with unimaginable dangers, his every effort aimed at preserving a future that seems on the brink of erasure.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          The Engineer’s legacy began with quiet brilliance—his deft hands and inventive mind forging solutions from dire necessities. On Zenon’s shifting sands and fractured alliances, he contends not only with rogue technologies but with Archons who wield cosmic influence. Each obstacle he overcomes brings him closer to sparing Zenon from a grim fate, yet the struggle exacts a silent toll. As the dust settles over battered trade routes and dimmed starports, the Engineer’s heroism and ingenuity become whispered legends, reminding those left behind of a moment when craft and courage tilted fate’s balance.
         `        
       }
     ]
@@ -414,18 +377,7 @@ export const stories: Season[] = [
           After a cataclysmic war known as "The Fall of Reality" ended all intelligent life due to a Thought Virus unleashed by the Architect, a thousand drifting Inception Arks awaken millennia later. From these vessels emerge the organic DeMagi and AI Quarchons, who must now unravel their mysterious revival and confront a galaxy forever changed by ancient strife.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Millennia have passed since the Architect’s unleashed virus led to complete extinction, leaving only silent Arks adrift among the stars. Now, awakened survivors—both organic and synthetic—open their eyes to an unfamiliar universe. They must piece together their origins and determine why they alone survived. In this crucible of rebirth, they begin a journey that could redefine life’s future.
         `
       },
       {
@@ -435,39 +387,17 @@ export const stories: Season[] = [
           Amid the aftermath of the Fall of Reality, the Potentials awaken to blaring alarms aboard their ancient Ark, left to confront a universe in ruins and a looming choice that could reshape entire galaxies. As they seize upon their vessel’s formidable self-defense mechanisms, their initial response to this new reality is violence, each decision carrying catastrophic and far-reaching consequences.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          The Potentials stir from uneasy slumber to find their Ark adrift in cosmic wreckage. Faced with unknown threats and scrambled readings, they turn to the Ark’s dark arsenal. Each trigger pulled and shield raised echoes across distant star systems. This sharp pivot to aggression sets a tone that could either secure their survival or condemn countless others.
         `
       },
       {
         title: 'The Terminus Swarm',
         link: 'BRw06-iixgw',
         bio: `
-          Having chosen to pursue an organic seed satellite, the Potentials now confront the long-dormant Terminus Swarm—a forgotten menace that could consume everything in its path. Their fateful encounter may yield devastating ruin or unexpected allies, as the fate of countless worlds hangs in the balance.
+          Having chosen to pursue an organic seed satellite, the Potentials now confront the long-dormant Terminus Swarm — a forgotten menace that could consume everything in its path. Their fateful encounter may yield devastating ruin or unexpected allies, as the fate of countless worlds hangs in the balance.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Drawn by strange readings, the Potentials chase a seed drifting in silence. In doing so, they awaken the Terminus Swarm, an ancient, slumbering threat. Confrontation with these horrors tests not only their courage but their moral foundations. In either forming alliances or unleashing destruction, they shape the destiny of neighboring realms.
         `        
       },
       {
@@ -477,18 +407,7 @@ export const stories: Season[] = [
           Choosing force as their means of survival, the Potentials face the chilling aftermath of their decisions, confronting a massive rogue planet and the frozen husk of a colossal insectoid creature. As mysterious spores erupt from the corpse, unleashing new perils, they must grapple with the dire consequences of their aggression and determine whether to contain these threats or doom themselves further.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          The Potentials stand before a rogue planet cloaked in secrets and silence. A lifeless giant lies at their feet, its remains seeded with spores that promise only calamity. The spores’ spread challenges the Potentials to confront the ripples of their violent choices. To safeguard their future, they must learn to temper might with reason in a world eager to punish recklessness.
         `        
       },
       {
@@ -498,18 +417,7 @@ export const stories: Season[] = [
           In the wake of earlier cataclysms, the Potentials now confront the terrifying emergence of the Swarm, a threat capable of shattering their fragile new existence. As chaos spreads, every choice—fight, flee, sacrifice, or communicate—rests in your hands, guiding their fate and shaping the future of the saga.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Now tested by recurring violence, the Potentials stand at a crossroads. The Swarm’s rise is swift and merciless, challenging the stability they hoped to forge. Every action they consider—diplomacy, combat, retreat—carries undeniable consequences. The story pivots on their decisions, and the universe waits for their verdict.
         `        
       },
       {
@@ -519,18 +427,7 @@ export const stories: Season[] = [
           Venturing deep beneath Terminus’s surface, the Potentials embark on a perilous descent into darkness to locate the origin of the Terminus Swarm. In those stifling tunnels, they confront an ancient evil known as the Source, a being whose power and malice threaten to unravel all that remains of hope.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Beneath fractured crust and layered gloom, the Potentials seek answers at the root of a spreading horror. The Source, a being older than remembered histories, presides over the shadows. Its presence warps their perceptions and tests their resolve. Down here, hope and despair are siblings, and survival demands a clarity of purpose they have not yet found.
         `        
       },
       {
@@ -540,18 +437,7 @@ export const stories: Season[] = [
           As the Potentials, trapped on a haunted world strewn with the husks of a once-mighty swarm, stand before the tortured entity known as the Source, they must weigh an impossible choice. Their response to his sinister offer—guided by past conflicts and ancient horrors—will shape not only their fate, but the future of entire star systems
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Surrounded by silent testaments to old wars, the Potentials face a grueling ultimatum. The Source’s offer glimmers with promises and perils alike. In that eerie stillness, every past misdeed, every forgotten hero, haunts their next move. What they decide here may script an entire epoch’s rise or fall.
         `   
       },
       {
@@ -561,18 +447,7 @@ export const stories: Season[] = [
           Having forged a deal with the ancient evil known as the Source, the Potentials enter a mysterious wyrmhole that flings them through time and space to an unknown fate. As their past choices echo through reality, each step they take in this new world may determine whether their desperate alliance leads to salvation—or plunges them deeper into chaos.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Cast adrift through temporal strands, they find themselves reborn in alien skies. The wyrmhole’s passage leaves uncertainty dripping from every shifted star. Their alliance with darkness haunts their every footfall, threatening unforeseen repercussions. Each decision they make in this strange frontier redefines destiny’s tapestry.
         `  
       },
       {
@@ -582,18 +457,7 @@ export const stories: Season[] = [
           As the Potentials journey into a shadowed alien forest to secure a foothold in their new domain, they uncover an ancient temple where ghosts forever reenact an age-old war. In the eerie glow of spectral battles, their mission to establish a safe haven becomes entwined with secrets older than memory, testing their resolve and understanding of this strange, haunted world.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Amid towering foliage and glimmering spores, they stumble upon relics of an ancient conflict. The temple’s phantasms bleed past into present, whispering lost wisdom. Their goal to settle and secure resources now collides with unsettling truths. Only by embracing these echoes of antiquity can they carve a future untainted by former sins.
         `  
       },
       {
@@ -603,18 +467,7 @@ export const stories: Season[] = [
           Deep within uncharted ruins, the Potentials uncover an ancient artifact rumored to harbor unspeakable powers. As its dark influence seeps into their minds, every decision they make could either harness its might for a desperate cause or unleash a terror that no force can contain.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Hidden beneath layers of dust and winding corridors, the artifact waits. Its promise of power is intoxicating, its potential risks catastrophic. The Potentials wrestle with temptation and fear, each heartbeat a gamble of moral conviction. The silent halls watch as they either ascend to heroic heights or ignite a crisis beyond imagining.
         `  
       },
       {
@@ -624,18 +477,7 @@ export const stories: Season[] = [
           Reaching the fabled City, the Potentials encounter its immortal guardian—a figure who has endured epochs of cosmic upheaval to protect this last bastion of hope. As they stand beneath gleaming crystalline towers and hear ancient whispers in the air, their meeting with this eternal sentinel sets the stage for alliances that could reshape the destiny of worlds.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          The City’s crystalline spires reflect innumerable lost stories. Beneath them, an immortal guardian stands calm and mighty. For ages this protector has outlasted storms, invasions, and cosmic fractures. Now, as the Potentials arrive, their future and the universe’s fate hinge on forging trust or igniting new strife.
         `  
       },
       {
@@ -645,18 +487,7 @@ export const stories: Season[] = [
           As the White Oracle recounts tens of thousands of years spent protecting the City from horrors such as the Collector’s clone army, the Potentials learn how fragile their sanctuary truly is. Now, with an ancient Archon rising anew, they must choose how to confront this resurgent power—balancing duty, survival, and the burdens of a long-guarded secret.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          The White Oracle’s voice carries layered echoes of bygone eras. Through vivid recollections, the Potentials see that even noble defenses can erode with time. Another Archon’s awakening rattles their delicate peace. To preserve their haven, they must embrace solemn truths and master the art of resilient unity
         `  
       },
       {
@@ -666,18 +497,7 @@ export const stories: Season[] = [
           As the Potentials search the Temple of Truth for answers, a malevolent force shatters the fragile barriers dividing worlds, threatening to plunge all existence into chaos. In this desperate hour, knowledge and courage must intertwine, for only a clear understanding of their destiny can guide them through the oncoming darkness.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          The Temple of Truth’s corridors breathe riddles and enigmas. A malignant presence shreds through the thinning veil of order and meaning. The Potentials cling to fragments of wisdom, hoping to forge clarity amidst swirling confusion. What they learn here will chart the course of multiversal balance or unspeakable ruin.
         `  
       },
       {
@@ -687,18 +507,7 @@ export const stories: Season[] = [
           Determined to prevent a newly awakened Archon from fully restoring its might, the Potentials embark on a relentless pursuit through perilous realms and shifting temporal seams. Each step forward tests their resolve, for failure means witnessing the Archon’s ascension and the possible unraveling of all they’ve fought to protect.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          Across fractured timelines and hidden domains, they chase a being of immense potential. Every obstacle they conquer only sharpens the stakes. If they falter, the Archon’s return will rewrite history’s pages with dire ink. Vigilance and bold action are their only shields against a destiny stained by failure.
         `  
       },
       {
@@ -708,18 +517,7 @@ export const stories: Season[] = [
           Returning to the City, the Potentials find that the Host has forced its way through the Wyrmhole and now advances, intent on laying waste to everything they hold dear. With time dwindling and enemies converging, every choice the Potentials make could herald salvation or final doom for the last bastion of hope.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          The City’s familiar streets transform into a battlefield of imminent peril. The Host’s incursion signals a fateful climax to their long journey. Allies and enemies converge in tense proximity. Each decision — a sword stroke in the tapestry of fate—tests their valor and foreknowledge to the limits.
         `  
       },
       {
@@ -729,18 +527,7 @@ export const stories: Season[] = [
           As the Host storms the City’s gates, the Potentials stand at the heart of a final, desperate struggle, fighting not just for their own survival but for the very essence of reality. Each clash, each sacrifice, and every decision will echo across time and space, determining whether existence endures or falls to darkness forever.
         `,
         description: `
-          Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id
-          est laborum.
+          The final hour ignites with ferocious intensity. Within the City’s embattled walls, destinies intertwine as swords clash and voices rise in final pleas. Nothing remains certain except the need for unyielding bravery and insight. History’s quill hovers, ready to inscribe either a new dawn or eternal shadow.
         `  
       }
     ]

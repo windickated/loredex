@@ -80,26 +80,6 @@ const characters: Character[] = [
     
     `
   },
-  {
-    name: 'The Antiquarian',
-    appearance: 100,
-    picture: 'https://media.degenerousdao.com/conexus-loredex/Antiquarian.avif',
-    state: "neutral",
-    stories: [
-      {
-        season: 99,
-        episodes: ['Planet of the Wolf']
-      },
-      {
-        season: 0,
-        episodes: ['In the Beginning', 'The Prisoner', 'Agent Zero', 'Iron Lion', 'The Eyes', 'The Oracle']
-      },
-      {
-        season: 1,
-        episodes: ['Awakenings', 'A Destructive Potential', 'The Terminus Swarm', 'The Fall', 'The Outbreak', 'The Source', 'The Decision', 'The Arrival']
-      }
-    ]
-  },
   // ARCHONS
   {
     name: 'The Architect',
@@ -5060,12 +5040,25 @@ const characters: Character[] = [
     appearance: 101001,
     picture: 'https://media.degenerousdao.com/conexus-loredex/TerminusSwarm.avif',
     state: "neutral",
+    connections: {
+      allies: ['The Host'],
+      enemies: allPotentials,
+      locations: ['Terminus']
+    },
     stories: [
       {
         season: 1,
-        episodes: ['The Outbreak']
+        episodes: ['The Terminus Swarm', 'The Fall', 'The Outbreak', 'The Source', 'The Decision', 'The Arrival']
       }
-    ]
+    ],
+    affiliation: 'Once Shaped by the Hierarchy of the Damned, Now Under the Source’s Influence',
+    status: 'Active on Terminus, Driven by the Thought Virus and Ancient Malevolence',
+    bio: `
+      The Terminus Swarm is a wretched horde spawned from the twisted legacy of the Hierarchy of the Damned, a band of demonic entities that once terrorized entire galaxies. Spawned or reanimated through the lingering Thought Virus—originally a weapon of mind-corruption—they embody the amalgamated fury and despair of ancient horrors long shackled to forbidden realms. On the barren planet of Terminus, where the broken remains of the Panopticon lie scattered, they have found a breeding ground for their infectious violence. Here, under the baleful guidance of The Source, an immortal embodiment of corrupted will and viral malice, the Terminus Swarm ceaselessly mutates, churning out monstrous forms that defy reason.
+    `,
+    history: `
+      Savage and unrelenting, the Swarm’s once-individual beings have been melded into a singular, ravenous force—a collective life form hellbent on assimilating all that crosses its path. Their chitinous bodies and insectoid limbs whisper of infernal origins, echoing the Hierarchy’s cruel dominion, while their viral cores twist minds and machines alike into loyal thralls. Within these diseased ranks, the Source’s influence is absolute, commanding a legion that has witnessed the fall of empires and the cracking of reality’s foundations. On Terminus, the Swarm stands as a monument to enduring darkness—an unending testimony that even in a universe striving for renewal, pockets of unimaginable evil yet fester, waiting to consume the unwary.
+    `
   },
   {
     name: 'The Star Whisperer',
@@ -5586,6 +5579,31 @@ const characters: Character[] = [
         For untold millennia, no record surfaced of the Heart of Time’s location or new owners. Entire civilizations rose and fell in the vacuum of its absence. Then, without warning, it reappeared in a distant sector, recorded on a single sensor sweep—its familiar temporal signature unmistakable. After a brief, baffling encounter that yielded no further clues, it vanished once more, leaving historians, prophets, and adventurers to speculate on its origins, its captors, and whether it might yet again influence the grand tapestry of time.
       </ul>
       Whether it remains in the hands of those original thieves or changed keepers over the millennia, the Heart of Time persists as a shimmering enigma. A vessel built to explore infinite moments, now itself an enduring mystery, haunting the edges of known chronology and tempting fate with every subtle reappearance.
+    `
+  },
+  {
+    name: 'The Antiquarian',
+    appearance: 17036,
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Antiquarian.avif',
+    state: "neutral",
+    stories: [
+      {
+        season: 0,
+        episodes: ['In the Beginning', 'The Prisoner', 'Agent Zero', 'Iron Lion', 'The Eyes', 'The Oracle', 'The Engineer']
+      },
+      {
+        season: 1,
+        episodes: ['Awakenings', 'A Destructive Potential', 'The Terminus Swarm', 'The Fall', 'The Outbreak', 'The Source', 'The Decision', 'The Arrival', 'Illuminated Shadows', 'The Artifact', 'The City', 'The Return', 'The Wyrmwood', 'The Hunt', 'The Beginning of the End', 'Memento Dischordia']
+      }
+    ],
+    affiliation: 'Independent Chronicler of the Multiverse',
+    status: 'Immortal Observer Hidden Within a Pocket Dimension',
+    bio: `
+      The Antiquarian is the sole known human survivor of the Fall of Reality, an event that obliterated all sentient life and left the cosmos scarred by entropy and silence. Throughout the cataclysm and the epochs that followed, he retreated into a hidden pocket dimension—a refuge woven from secret magics and cunning technology. There, suspended beyond the reach of time and mortal memory, he watches the universe regenerate, mutate, and stumble through cycles of hope and despair. His wisdom is ancient and his perspective boundless, for no empire or epoch passes unnoticed beneath his meticulous gaze.
+    `,
+    history: `
+      As the silent keeper of existence’s grand story, the Antiquarian records the shifting fortunes of civilizations, the births of gods and monsters, and the quiet heroics of forgotten souls. He does not judge, nor does he intervene lightly, though his subtle influence can sometimes be inferred by those who know what to look for. Relying on cryptic signals and hidden repositories of knowledge, the Antiquarian ensures that no truth vanishes entirely, even when galaxies burn and empires crumble. In his secret domain, countless volumes and data crystals whisper histories of dreamlike dimensions, cosmic horrors, and miraculous survivals.<br><br>
+      Beyond serving as a passive observer, the Antiquarian regards the return of players like the Potentials, the reawakened Heart of Time, and other anomalies with measured concern. Though he rarely steps into the currents of fate, his steady documentation and subtle nudges remind the cosmos that, no matter how catastrophic or triumphant a moment may be, someone remembers and records it. The Antiquarian remains the final witness to the multiverse’s ever-changing narrative—a sentinel of memory ensuring that when eternity blinks, nothing is truly lost.
     `
   },
   // POTENTIALS
@@ -6551,11 +6569,17 @@ const characters: Character[] = [
       },
       {
         season: 1,
-        episodes: ['The Source', 'Memento Dischordia']
+        episodes: ['The Source', 'The Beginning of the End', 'Memento Dischordia']
       }
     ],
-    affiliation: 'The Potentials',
-    status: 'Active'
+    affiliation: 'A Potential Corrupted by the Source',
+    status: 'Infected Vessel Serving the Source’s Will',
+    bio: `
+      The Host is a tragic figure born from the promise of renewal but diverted into servitude under unspeakable darkness. Once a Potential, forged from the Architect’s legacy of preserved DNA and machine code, this being once carried the spark of hope and adaptation that defined its kind. Yet, exposure to the Source, an ancient and malevolent entity lurking within Terminus’s shadows, twisted that potential into a conduit of corruption. The Host, now stripped of free will and moral compass, embodies the raw, primal fury of a mind subjugated by the Thought Virus, its identity smothered beneath viral commands.
+    `,
+    history: `
+      No longer an independent soul, the Host’s form shudders with tainted strength. The features that once mirrored possibility and choice now harden into a mask of grim determination, eyes clouded by torment and alien purpose. With every step, the Host enforces the Source’s will—spreading infection, sapping autonomy from those who resist, and becoming an instrument of dread rather than an agent of growth. In the silent recesses of its mind, if any faint whisper of the original Potential remains, it must watch helplessly as its body and abilities serve a twisted design, forever tethered to an ancient evil’s bidding.
+    `
   },
   {
     name: 'Potential 15',
@@ -6570,7 +6594,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 22',
@@ -6585,7 +6620,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 43',
@@ -6600,7 +6646,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 47',
@@ -6615,7 +6672,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 84',
@@ -6630,7 +6698,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 89',
@@ -6645,7 +6724,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 93',
@@ -6660,7 +6750,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 107',
@@ -6675,7 +6776,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 144',
@@ -6690,7 +6802,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 152',
@@ -6705,7 +6828,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 204',
@@ -6720,7 +6854,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 206',
@@ -6735,7 +6880,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 220',
@@ -6750,7 +6906,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 233',
@@ -6765,7 +6932,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 236',
@@ -6780,7 +6958,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 261',
@@ -6795,7 +6984,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 269',
@@ -6810,7 +7010,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 305',
@@ -6825,7 +7036,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 332',
@@ -6840,7 +7062,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 341',
@@ -6855,7 +7088,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 345',
@@ -6870,7 +7114,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 391',
@@ -6885,7 +7140,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 409',
@@ -6900,7 +7166,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 414',
@@ -6915,7 +7192,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 441',
@@ -6930,7 +7218,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 447',
@@ -6945,7 +7244,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 530',
@@ -6960,7 +7270,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 533',
@@ -6975,7 +7296,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 570',
@@ -6990,7 +7322,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 588',
@@ -7005,7 +7348,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 589',
@@ -7020,7 +7374,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 591',
@@ -7035,7 +7400,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 636',
@@ -7050,7 +7426,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 642',
@@ -7065,7 +7452,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 644',
@@ -7080,7 +7478,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 690',
@@ -7095,7 +7504,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 704',
@@ -7110,7 +7530,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 713',
@@ -7125,7 +7556,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 747',
@@ -7140,7 +7582,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 777',
@@ -7155,7 +7608,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 794',
@@ -7170,7 +7634,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 804',
@@ -7185,7 +7660,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 807',
@@ -7200,7 +7686,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 823',
@@ -7215,7 +7712,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 826',
@@ -7230,7 +7738,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 827',
@@ -7245,7 +7764,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 835',
@@ -7260,7 +7790,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 909',
@@ -7275,7 +7816,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 915',
@@ -7290,7 +7842,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 947',
@@ -7305,7 +7868,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 959',
@@ -7320,7 +7894,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
   {
     name: 'Potential 990',
@@ -7335,7 +7920,18 @@ const characters: Character[] = [
       }
     ],
     affiliation: 'The Potentials',
-    status: 'Active'
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
   },
 ]
 

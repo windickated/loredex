@@ -4,10 +4,12 @@
   export let name1: string;
   export let name2: string;
   export let color: string = "gray";
+  export let appearance: number | undefined = undefined;
 
   let character1: HTMLElement | null = null;
   let character2: HTMLElement | null = null;
   onMount(() => {
+    if (!appearance) return;
     character1 = document.getElementById(name1) as HTMLElement;
     character2 = document.getElementById(name2) as HTMLElement;
     connect(character1, character2);

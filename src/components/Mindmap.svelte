@@ -37,7 +37,7 @@
     }
     setTimeout(() => {
       preventZoomChanges = false;
-    }, 7500);
+    }, 7000);
   });
 
   const handlePointerDown = (event: PointerEvent) => {
@@ -107,13 +107,12 @@
     });
   };
 
-  let mobileSearchFocus = false;
+  let mobileSearch = false;
   const handleMobileSearch = () => {
-    if (window.innerWidth > 600) return;
     if (!searchInput) return;
-    if (!mobileSearchFocus) searchInput.focus();
-    if (mobileSearchFocus) searchInput.blur();
-    mobileSearchFocus = !mobileSearchFocus;
+    if (!mobileSearch) searchInput.focus();
+    if (mobileSearch) searchInput.blur();
+    mobileSearch = !mobileSearch;
   };
 
   const resetSearch = () => {
@@ -141,7 +140,12 @@
     </a>
     LOREDEX
   </h1>
-  <section class="controllers">
+  <section
+    class="controllers"
+    style={preventZoomChanges
+      ? "filter: grayscale(100%); opacity: 0.25;"
+      : "filter: none; opacity: 1;"}
+  >
     <div class="search-wrapper">
       <button on:click={showTimeline}>
         <img
@@ -291,6 +295,7 @@
                     name1={character.name}
                     name2={ally}
                     color="rgba(0, 185, 55, 0.75)"
+                    appearance={character.appearance}
                   />
                 {/each}
               {/if}
@@ -300,6 +305,7 @@
                     name1={character.name}
                     name2={enemy}
                     color="rgba(255, 60, 64, 0.75)"
+                    appearance={character.appearance}
                   />
                 {/each}
               {/if}
@@ -309,6 +315,7 @@
                     name1={character.name}
                     name2={neutral}
                     color="rgba(150, 150, 150, 0.75)"
+                    appearance={character.appearance}
                   />
                 {/each}
               {/if}
@@ -318,6 +325,7 @@
                     name1={character.name}
                     name2={location}
                     color="rgba(45, 90, 216, 0.75)"
+                    appearance={character.appearance}
                   />
                 {/each}
               {/if}
@@ -346,16 +354,12 @@
                 <p>Episode - {index + 1}</p>
               {/if}
               <p class="note">
-                {#if activeSeason.season !== 99}
-                  <a
-                    href="https://www.youtube.com/watch?v={link}"
-                    target="_blank"
-                  >
-                    {title}
-                  </a>
-                {:else}
+                <a
+                  href="https://www.youtube.com/watch?v={link}"
+                  target="_blank"
+                >
                   {title}
-                {/if}
+                </a>
               </p>
               {#if date}
                 <p>{date} A.A.</p>
@@ -419,7 +423,7 @@
     justify-content: space-between;
     align-items: center;
     opacity: 0;
-    animation: showScale 1s linear 5s forwards;
+    animation: show 1s linear 6s forwards;
     cursor: default;
 
     h1 {
@@ -453,11 +457,13 @@
       display: flex;
       flex-flow: row nowrap;
       gap: 1vw;
+      transition: all 0.5s ease-in-out;
 
       img {
         width: 1.5vw;
         height: auto;
         transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        cursor: pointer;
       }
 
       .search-wrapper {
@@ -471,7 +477,8 @@
           flex-flow: row nowrap;
           align-items: center;
           gap: 0.5vw;
-          padding: 0.25vw 0.5vw;
+          padding: 0.25vw;
+          padding-left: 0.5vw;
           font-size: 1.5vw;
           background-color: rgba(56, 117, 250, 0.5);
           border: 0.1vw solid rgba(51, 226, 230, 0.5);
@@ -480,7 +487,7 @@
 
           input {
             font-size: 1vw;
-            line-height: 1.5;
+            line-height: 2vw;
             padding-inline: 0.5vw;
             color: rgba(51, 226, 230, 0.9);
             background-color: rgba(1, 0, 32, 0.4);
@@ -742,6 +749,7 @@
 
           button {
             background-color: #010020;
+            padding: 1em;
           }
 
           .search {
@@ -757,12 +765,13 @@
               font-size: inherit;
               line-height: inherit;
               border-radius: 0.25em;
-              padding: 0.25em 0.5em;
+              padding: 0.25em 0;
               width: 0;
               background-color: #010020;
 
               &:focus {
                 width: 50vw;
+                padding: 0.25em 0.5em;
               }
             }
           }
@@ -783,6 +792,7 @@
             border-radius: 0;
             padding-inline: 0;
             gap: 1em;
+            opacity: 0.5;
 
             input {
               width: 60vw;
@@ -841,22 +851,6 @@
     to {
       opacity: 1;
       filter: grayscale(0);
-    }
-  }
-
-  @keyframes showScale {
-    0% {
-      opacity: 0;
-      transform: scale(0);
-      filter: blur(1rem);
-    }
-    75% {
-      transform: scale(1.05);
-      filter: blur(0);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
     }
   }
 

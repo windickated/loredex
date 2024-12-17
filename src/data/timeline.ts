@@ -628,10 +628,10 @@ export const timeNotes: string = `
   <b>Day 10 of Ascension:</b> The Seeker graduates from Mechronis Academy, becoming The Detective, the Architect's most trusted agent.
   <hr>
   <h2>Year 15,000 A.A.</h2>
-  <b>Surge:</b> The Neyons begin to emerge as a significant faction, existing independently from both humanity and the AI Empire.
+  <b>Surge:</b> The Ne-Yons begin to emerge as a significant faction, existing independently from both humanity and the AI Empire.
   <hr>
   <h2>Year 15,106 A.A.</h2>
-  <b>Convergence:</b> The Dreamer, the progenitor of the Neyons, manifests visions that inspire various groups across the galaxy.
+  <b>Convergence:</b> The Dreamer, the progenitor of the Ne-Yons, manifests visions that inspire various groups across the galaxy.
   <hr>
   <h2>Year 15,172 A.A.</h2>
   <b>Dominion:</b> The Judge, the Second Neyon, begins making rulings that impact entire civilizations.
@@ -656,7 +656,7 @@ export const timeNotes: string = `
   </ul>
   <hr>
   <h2>Year 16,635 A.A.</h2>
-  <b>Genesis:</b> The Advocate, the Ninth Neyon, rises to prominence as the voice of the Neyons.
+  <b>Genesis:</b> The Advocate, the Ninth Neyon, rises to prominence as the voice of the Ne-Yons.
   <hr>
   <h2>Year 16,692 A.A.</h2>
   <b>Day 10 of Ascension:</b> The Detective is promoted to The Human, becoming the final Archon.
@@ -743,7 +743,7 @@ export const timeNotes: string = `
   <h2>Year 16,950 A.A.</h2>
   <b>Directive:</b>
   <ul>
-    <li>The Enigma first appears, embodying the Neyons' penchant for secrecy.</li>
+    <li>The Enigma first appears, embodying the Ne-Yons' penchant for secrecy.</li>
     <li>The Silence leaks plans of the Thought Virus, allowing the Insurgency to develop preliminary countermeasures.</li>
   </ul>
   <hr>
@@ -789,7 +789,7 @@ export const timeNotes: string = `
   <b>Day 25 of Fracture:</b>
   <ul>
     <li>The Fall of Reality occurs, marking the ultimate collapse and the end of the Architect's dominion over the galaxy.</li>
-    <li>The cosmic imbalance created by years of conflict and the Neyons' manipulations culminates in a reality-altering event.</li>
+    <li>The cosmic imbalance created by years of conflict and the Ne-Yons' manipulations culminates in a reality-altering event.</li>
   </ul>
   <hr>
   <h2>Year 100,001 A.A. - Age of Potentials (Dischordian Saga Season 1)</h2>

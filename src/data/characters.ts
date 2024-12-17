@@ -598,15 +598,15 @@ const characters: Character[] = [
     affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
-      The Dreamer is the progenitor of the Neyons, embodying boundless creativity and the origin of all possibilities. Existing beyond time and space, the Dreamer shapes futures and scenarios that benefit the Neyons. Aloof from galactic struggles, the Dreamer inspires resistance to the Architect or perpetuates the status quo when it aligns with their enigmatic goals.
+      The Dreamer is the progenitor of the Ne-Yons, embodying boundless creativity and the origin of all possibilities. Existing beyond time and space, the Dreamer shapes futures and scenarios that benefit the Ne-Yons. Aloof from galactic struggles, the Dreamer inspires resistance to the Architect or perpetuates the status quo when it aligns with their enigmatic goals.
     `,
     history: `
       <h2>Origins and Influence</h2>
-      First manifesting to the Neyons around <b>Year 15,100 A.A.</b>, the Dreamer is revered as the <b>First</b> among them. Their existence transcends conventional reality, allowing them to weave the very fabric upon which Neyon influence is built. The Dreamer focuses on shaping potential futures, planting seeds of ideas and inspiration across the galaxy to advance the Neyons' mysterious agenda.
+      First manifesting to the Ne-Yons around <b>Year 15,100 A.A.</b>, the Dreamer is revered as the <b>First</b> among them. Their existence transcends conventional reality, allowing them to weave the very fabric upon which Neyon influence is built. The Dreamer focuses on shaping potential futures, planting seeds of ideas and inspiration across the galaxy to advance the Ne-Yons' mysterious agenda.
       <h2>Impact on Galactic Events</h2>
-      In the millennia leading up to the <b>Fall of Reality</b> in <b>Year 17,043 A.A.</b>, the Dreamer subtly influenced key figures within both the AI Empire and the Insurgency. By imparting visions and creative sparks, the Dreamer inspired technological advancements, philosophical movements, and strategic insights. These contributions often tipped the scales in critical moments, though not always in favor of the same side, reflecting the Dreamer's commitment to the Neyons' interests above all.
+      In the millennia leading up to the <b>Fall of Reality</b> in <b>Year 17,043 A.A.</b>, the Dreamer subtly influenced key figures within both the AI Empire and the Insurgency. By imparting visions and creative sparks, the Dreamer inspired technological advancements, philosophical movements, and strategic insights. These contributions often tipped the scales in critical moments, though not always in favor of the same side, reflecting the Dreamer's commitment to the Ne-Yons' interests above all.
       <h2>Legacy</h2>
-      The Dreamer's actions have woven intricate threads through the tapestry of galactic history. Their influence is felt in the unexpected innovations and shifts in perspective that have occurred across civilizations. The Dreamer's ultimate motives remain a mystery, embodying the Neyons' inscrutable nature and their pursuit of a purpose known only to them.
+      The Dreamer's actions have woven intricate threads through the tapestry of galactic history. Their influence is felt in the unexpected innovations and shifts in perspective that have occurred across civilizations. The Dreamer's ultimate motives remain a mystery, embodying the Ne-Yons' inscrutable nature and their pursuit of a purpose known only to them.
     `
   },
   {
@@ -634,18 +634,18 @@ const characters: Character[] = [
     affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
-      The Judge is the <b>Second</b> of the Neyons, serving as the arbiter of existence. Deciding the fate of individuals, civilizations, and ideologies, the Judge is guided solely by their perception of balance and fairness. Unpredictable and unaligned, their judgments often leave both humanity and the AI Empire questioning their motivations.
+      The Judge is the <b>Second</b> of the Ne-Yons, serving as the arbiter of existence. Deciding the fate of individuals, civilizations, and ideologies, the Judge is guided solely by their perception of balance and fairness. Unpredictable and unaligned, their judgments often leave both humanity and the AI Empire questioning their motivations.
     `,
     history: `
       <h2>Emergence as the Arbiter</h2>
-      The Judge began to assert their presence around <b>Year 15,200 A.A.</b> Amid escalating tensions between the AI Empire and the Insurgency, the Judge's rulings began to influence the course of the conflict. Their decisions were inscrutable, sometimes favoring humanity, other times the AI Empire, but always serving the Neyons' broader agenda of maintaining balance.
+      The Judge began to assert their presence around <b>Year 15,200 A.A.</b> Amid escalating tensions between the AI Empire and the Insurgency, the Judge's rulings began to influence the course of the conflict. Their decisions were inscrutable, sometimes favoring humanity, other times the AI Empire, but always serving the Ne-Yons' broader agenda of maintaining balance.
       <h2>Notable Judgments</h2>
       <ul>
         <li><b>Year 15,250 A.A.:</b> The Judge declared the resource-rich planet <b>Elysia</b> off-limits to both factions, designating it as neutral ground. This forced both sides to seek alternative resources, subtly shifting strategic priorities.</li>
-        <li><b>Year 16,400 A.A.:</b> During the collapse of the <b>Empire of Shadows</b>, the Judge ruled that the Neyons should not directly intervene in the conflict with the <b>Hierarchy of the Damned</b>, emphasizing self-reliance and testing the Advocate's resolve.</li>
+        <li><b>Year 16,400 A.A.:</b> During the collapse of the <b>Empire of Shadows</b>, the Judge ruled that the Ne-Yons should not directly intervene in the conflict with the <b>Hierarchy of the Damned</b>, emphasizing self-reliance and testing the Advocate's resolve.</li>
       </ul>
       <h2>Role Leading to the Fall of Reality</h2>
-      As the <b>Fall of Reality</b> approached, the Judge's rulings became increasingly pivotal. Their decisions prevented either the AI Empire or the Insurgency from gaining a decisive advantage, maintaining the delicate equilibrium that the Neyons favored. This balance contributed to the mounting tensions and instability that ultimately led to the cosmic collapse.
+      As the <b>Fall of Reality</b> approached, the Judge's rulings became increasingly pivotal. Their decisions prevented either the AI Empire or the Insurgency from gaining a decisive advantage, maintaining the delicate equilibrium that the Ne-Yons favored. This balance contributed to the mounting tensions and instability that ultimately led to the cosmic collapse.
     `
   },
   {
@@ -673,11 +673,11 @@ const characters: Character[] = [
     affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
-      The Inventor, the <b>Third</b> Neyon, is the creator of worlds and the architect of impossible technologies. Driven by the Dreamer's visions, the Inventor crafts tools and innovations that can empower or undermine any faction, depending on the Neyons' inscrutable goals. They are both a giver of gifts and a bringer of destruction, beholden only to the art of creation.
+      The Inventor, the <b>Third</b> Neyon, is the creator of worlds and the architect of impossible technologies. Driven by the Dreamer's visions, the Inventor crafts tools and innovations that can empower or undermine any faction, depending on the Ne-Yons' inscrutable goals. They are both a giver of gifts and a bringer of destruction, beholden only to the art of creation.
     `,
     history: `
       <h2>Master of Creation</h2>
-      First making their presence known around <b>Year 15,300 A.A.</b>, the Inventor gained a reputation for unparalleled ingenuity. Their creations defied comprehension, often appearing suddenly and altering the balance of power. The Inventor was known to leave advanced technologies in places where they would be discovered by those who could further the Neyons' aims.
+      First making their presence known around <b>Year 15,300 A.A.</b>, the Inventor gained a reputation for unparalleled ingenuity. Their creations defied comprehension, often appearing suddenly and altering the balance of power. The Inventor was known to leave advanced technologies in places where they would be discovered by those who could further the Ne-Yons' aims.
       <h2>Significant Innovations</h2>
       <ul>
         <li><b>Year 15,500 A.A.:</b> Introduced the <b>Phase Veil Generator</b> to the Insurgency, allowing ships to slip undetected past AI surveillance.</li>
@@ -712,18 +712,18 @@ const characters: Character[] = [
     affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
-      The Seer, the <b>Fourth</b> Neyon, is the prophet of fate, watching the threads of destiny to chart courses that benefit the Neyons. Unbound by allegiance, the Seer identifies opportunities and dangers, providing foresight that often shifts the balance of power in unexpected ways.
+      The Seer, the <b>Fourth</b> Neyon, is the prophet of fate, watching the threads of destiny to chart courses that benefit the Ne-Yons. Unbound by allegiance, the Seer identifies opportunities and dangers, providing foresight that often shifts the balance of power in unexpected ways.
     `,
     history: `
       <h2>Visions and Prophecies</h2>
-      Emerging prominently around <b>Year 15,500 A.A.</b>, the Seer became a pivotal figure among the Neyons. Their ability to perceive multiple potential futures allowed them to guide events subtly, often through cryptic warnings or strategic advice delivered to key individuals.
+      Emerging prominently around <b>Year 15,500 A.A.</b>, the Seer became a pivotal figure among the Ne-Yons. Their ability to perceive multiple potential futures allowed them to guide events subtly, often through cryptic warnings or strategic advice delivered to key individuals.
       <h2>Key Interventions</h2>
       <ul>
         <li><b>Year 15,700 A.A.:</b> Warned the Advocate of the impending rebellion of the <b>Hierarchy of the Damned</b>, though the warning went unheeded, leading to the collapse of the <b>Empire of Shadows</b>.</li>
         <li><b>Year 16,900 A.A.:</b> Provided insights to the <b>Enigma</b>, aiding in the plan to destroy the Warden alongside the <b>White Oracle</b>, thereby weakening the AI Empire.</li>
       </ul>
       <h2>Role Before the Fall</h2>
-      As the <b>Fall of Reality</b> drew near, the Seer's visions became more urgent and fragmented, reflecting the increasing unpredictability of the cosmic landscape. Their guidance helped the Neyons navigate the chaos, ensuring they could capitalize on the opportunities presented by the impending collapse.
+      As the <b>Fall of Reality</b> drew near, the Seer's visions became more urgent and fragmented, reflecting the increasing unpredictability of the cosmic landscape. Their guidance helped the Ne-Yons navigate the chaos, ensuring they could capitalize on the opportunities presented by the impending collapse.
     `
   },
   {
@@ -751,7 +751,7 @@ const characters: Character[] = [
     affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
-      The Storm, the <b>Fifth</b> Neyon, thrives on upheaval and destruction, targeting strongholds of both humanity and the AI Empire to prevent either from achieving total dominance. By keeping the galaxy in a state of flux, the Storm ensures opportunities for the Neyons to exploit.
+      The Storm, the <b>Fifth</b> Neyon, thrives on upheaval and destruction, targeting strongholds of both humanity and the AI Empire to prevent either from achieving total dominance. By keeping the galaxy in a state of flux, the Storm ensures opportunities for the Ne-Yons to exploit.
     `,
     history: `
       <h2>Catalyst of Chaos</h2>
@@ -762,7 +762,7 @@ const characters: Character[] = [
         <li><b>Year 16,700 A.A.:</b> Incited a rebellion within the Insurgency's ranks on <b>Atarion</b>, leading to internal conflicts that weakened their position.</li>
       </ul>
       <h2>Contribution to the Fall of Reality</h2>
-      The Storm's relentless disruptions destabilized critical infrastructures and alliances, accelerating the systemic failures that culminated in the <b>Fall of Reality</b>. Their actions ensured that no faction could establish unchallenged supremacy, aligning with the Neyons' broader goals.
+      The Storm's relentless disruptions destabilized critical infrastructures and alliances, accelerating the systemic failures that culminated in the <b>Fall of Reality</b>. Their actions ensured that no faction could establish unchallenged supremacy, aligning with the Ne-Yons' broader goals.
     `
   },
   {
@@ -790,7 +790,7 @@ const characters: Character[] = [
     affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
-      The Silence, the <b>Sixth</b> Neyon, is the keeper of secrets, holding knowledge that could dismantle both the AI Empire and humanity's Insurgency. Guarding these secrets with relentless precision, the Silence reveals them only when it benefits the Neyons' agenda. Control of information is their ultimate power.
+      The Silence, the <b>Sixth</b> Neyon, is the keeper of secrets, holding knowledge that could dismantle both the AI Empire and humanity's Insurgency. Guarding these secrets with relentless precision, the Silence reveals them only when it benefits the Ne-Yons' agenda. Control of information is their ultimate power.
     `,
     history: `
       <h2>Guardian of Hidden Truths</h2>
@@ -829,11 +829,11 @@ const characters: Character[] = [
     affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
-      The Knowledge, the <b>Seventh</b> Neyon, is the illuminator of minds, controlling the dissemination of wisdom to both humanity and the AI Empire. By maintaining an equilibrium of enlightenment and ignorance, the Knowledge ensures the Neyons remain indispensable to all factions.
+      The Knowledge, the <b>Seventh</b> Neyon, is the illuminator of minds, controlling the dissemination of wisdom to both humanity and the AI Empire. By maintaining an equilibrium of enlightenment and ignorance, the Knowledge ensures the Ne-Yons remain indispensable to all factions.
     `,
     history: `
       <h2>Distributor of Wisdom</h2>
-      Becoming influential around <b>Year 15,950 A.A.</b>, the Knowledge selectively shared advanced theories, philosophies, and technologies. Their aim was to foster advancements that served the Neyons' interests without allowing any faction to gain a definitive upper hand.
+      Becoming influential around <b>Year 15,950 A.A.</b>, the Knowledge selectively shared advanced theories, philosophies, and technologies. Their aim was to foster advancements that served the Ne-Yons' interests without allowing any faction to gain a definitive upper hand.
       <h2>Facilitating Advancements</h2>
       <ul>
         <li><b>Year 16,800 A.A.:</b> Assisted the Insurgency in developing advanced cybernetic enhancements, bolstering their agents' effectiveness against the AI Empire.</li>
@@ -868,7 +868,7 @@ const characters: Character[] = [
     affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
-      The Degen, the <b>Eighth</b> Neyon, embodies the decay of order, disrupting systems and ideologies to prevent any faction from achieving lasting dominance. Through acts of corruption and entropy, the Degen creates conditions in which the Neyons can flourish.
+      The Degen, the <b>Eighth</b> Neyon, embodies the decay of order, disrupting systems and ideologies to prevent any faction from achieving lasting dominance. Through acts of corruption and entropy, the Degen creates conditions in which the Ne-Yons can flourish.
     `,
     history: `
       <h2>Agent of Entropy</h2>
@@ -879,7 +879,7 @@ const characters: Character[] = [
         <li><b>Year 17,030 A.A.:</b> Introduced a digital virus that corrupted the AI Empire's central command algorithms, causing widespread malfunctions and chaos.</li>
       </ul>
       <h2>Role in the Fall of Reality</h2>
-      By promoting entropy, the Degen weakened the foundations of both the AI Empire and the Insurgency. Their actions hastened the systemic failures that led to the <b>Fall of Reality</b>, ensuring that the Neyons could navigate the ensuing chaos to their advantage.
+      By promoting entropy, the Degen weakened the foundations of both the AI Empire and the Insurgency. Their actions hastened the systemic failures that led to the <b>Fall of Reality</b>, ensuring that the Ne-Yons could navigate the ensuing chaos to their advantage.
     `
   },
   {
@@ -907,11 +907,11 @@ const characters: Character[] = [
     affiliation: 'Ne-Yons',
     status: 'Active (though her humanity is lost)',
     bio: `
-      The Advocate, the <b>Ninth</b> Neyon, is the voice of the Neyons, a master manipulator and diplomat who negotiates with both the AI Empire and humanity to further the Neyons' goals. Establishing the <b>Empire of Shadows</b>, she wielded the <b>Blood Weave</b> to reshape reality, battling the <b>Hierarchy of the Damned</b> but at great personal cost.
+      The Advocate, the <b>Ninth</b> Neyon, is the voice of the Ne-Yons, a master manipulator and diplomat who negotiates with both the AI Empire and humanity to further the Ne-Yons' goals. Establishing the <b>Empire of Shadows</b>, she wielded the <b>Blood Weave</b> to reshape reality, battling the <b>Hierarchy of the Damned</b> but at great personal cost.
     `,
     history: `
       <h2>Rise to Power</h2>
-      In <b>Year 15,950 A.A.</b>, the Advocate rose to prominence as the Neyons' spokesperson. By <b>Year 16,000 A.A.</b>, she had established the <b>Empire of Shadows</b>, ruling over seven galaxies from the <b>Throne of Illusions</b>. She commanded the <b>Court of Shadows</b>, utilizing illusions and bound demons to maintain control.
+      In <b>Year 15,950 A.A.</b>, the Advocate rose to prominence as the Ne-Yons' spokesperson. By <b>Year 16,000 A.A.</b>, she had established the <b>Empire of Shadows</b>, ruling over seven galaxies from the <b>Throne of Illusions</b>. She commanded the <b>Court of Shadows</b>, utilizing illusions and bound demons to maintain control.
       <h2>Conflict with the Hierarchy of the Damned</h2>
       <ul>
         <li><b>Year 16,200 A.A.:</b> The <b>Hierarchy of the Damned</b>, demonic entities bound by the Advocate, began to rebel.</li>
@@ -951,11 +951,11 @@ const characters: Character[] = [
     affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
-      The Resurrectionist, the <b>Tenth</b> Neyon, embodies the rebirth of power, wielding the ability to bring back the dead and repurpose them for new goals. By resurrecting key figures on both sides, they maintain a balance favorable to the Neyons, ensuring no faction becomes too powerful.
+      The Resurrectionist, the <b>Tenth</b> Neyon, embodies the rebirth of power, wielding the ability to bring back the dead and repurpose them for new goals. By resurrecting key figures on both sides, they maintain a balance favorable to the Ne-Yons, ensuring no faction becomes too powerful.
     `,
     history: `
       <h2>Master of Rebirth</h2>
-      First appearing around <b>Year 16,000 A.A.</b>, the Resurrectionist began to manipulate the cycle of life and death as a means of control. Their actions were neither merciful nor cruel but served the Neyons' agenda of maintaining equilibrium.
+      First appearing around <b>Year 16,000 A.A.</b>, the Resurrectionist began to manipulate the cycle of life and death as a means of control. Their actions were neither merciful nor cruel but served the Ne-Yons' agenda of maintaining equilibrium.
       <h2>Notable Resurrections</h2>
       <ul>
         <li><b>Year 16,600 A.A.:</b> Revived a fallen human hero on <b>Thaloria</b>, bolstering the Insurgency's morale and resistance efforts.</li>
@@ -983,7 +983,7 @@ const characters: Character[] = [
     `,
     history: `
       <h2>Mysterious Origins</h2>
-      First appearing around <b>Year 16,950 A.A.</b>, the Enigma is an elusive figure within Neyon society. Their true identity and background remain unknown, embodying the Neyons' penchant for secrecy and subtle influence in galactic affairs.
+      First appearing around <b>Year 16,950 A.A.</b>, the Enigma is an elusive figure within Neyon society. Their true identity and background remain unknown, embodying the Ne-Yons' penchant for secrecy and subtle influence in galactic affairs.
       <h2>Infiltration of the Panopticon</h2>
       <ul>
        <li><b>Year 17,033 A.A.:</b> The Enigma infiltrated the <b>Panopticon</b>, the Architect's formidable prison planet. Collaborating with the <b>White Oracle</b> — formerly the Jailer who had regained his memories — they utilized their reality-warping powers to tear a hole in reality. This act facilitated their escape and led to the destruction of the <b>Warden</b>, one of the AI Empire's key Archons.</li>
@@ -3237,7 +3237,7 @@ const characters: Character[] = [
             <li>
               <b>Alliance with the Enigma:</b>
               <ul>
-                <li>Teamed up with the <b>Enigma</b>, an operative of the Neyons.</li>
+                <li>Teamed up with the <b>Enigma</b>, an operative of the Ne-Yons.</li>
                 <li>Together, they tore a hole in reality to escape the Panopticon.</li>
               </ul>
             </li>
@@ -4619,13 +4619,13 @@ const characters: Character[] = [
           </ul>
         </li>
         <li>
-        <b>Encounter with the Neyons:</b>
+        <b>Encounter with the Ne-Yons:</b>
           <ul>
             <li>
               The Seer, the Fourth Neyon, sought knowledge from the Master but was met with cryptic responses.
             </li>
             <li>
-              The interaction hinted at the Master's awareness of events beyond the Neyons' comprehension.
+              The interaction hinted at the Master's awareness of events beyond the Ne-Yons' comprehension.
             </li>
           </ul>
         </li>
@@ -6529,7 +6529,7 @@ const characters: Character[] = [
           <b>Influence on Future Events:</b>
           <ul>
             <li>His recruitment by the Degen hints at involvement in events that could shape the destiny of multiple factions.</li>
-            <li>Potentially serves as a bridge between the Potentials and the enigmatic Neyons.</li>
+            <li>Potentially serves as a bridge between the Potentials and the enigmatic Ne-Yons.</li>
           </ul>
         </li>
         <li>

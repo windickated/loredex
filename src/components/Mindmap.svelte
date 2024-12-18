@@ -326,16 +326,6 @@
                   />
                 {/each}
               {/if}
-              {#if character.connections.locations}
-                {#each character.connections.locations as location}
-                  <Connection
-                    name1={character.name}
-                    name2={location}
-                    color="rgba(45, 90, 216, 0.75)"
-                    appearance={character.appearance}
-                  />
-                {/each}
-              {/if}
             {/if}
           {/if}
         {/each}

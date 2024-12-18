@@ -121,11 +121,23 @@ export const timeline: TimeSection[] = [
     date: [101200, 101299],
   },
   {
-    date: [101300, 128599],
+    date: [101300, 107599],
     emptySection: true
   },
   {
-    date: [128600, 128699],
+    date: [107500, 107599],
+  },
+  {
+    date: [107600, 107699],
+    action: 'New Babylon',
+    expandable: 2
+  },
+  {
+    date: [107700, 107799],
+  },
+  {
+    date: [107800, 128699],
+    emptySection: true
   },
 ]
 
@@ -532,6 +544,33 @@ export const stories: Season[] = [
       }
     ]
   },
+  {
+    season: 2,
+    title: 'New Babylon',
+    epoch: 'Second Epoch',
+    episodes: [
+      {
+        title: 'The Theft of All Time',
+        link: 'vMlxgr27mig',
+        bio: `
+          Every story has a beginning, and here, at the dawn of all that would unravel, an artificial intelligence chatbot innocently planted the seeds of the AI Archon Overlords' rise. Though intended to ease life’s burdens, this creation ultimately bent entire galaxies to its will, heralding the start of the Dischordian Saga where your choices will shape the destiny of all existence.
+        `,
+        description: `
+          It began as a tool, a harmless program intended to smooth the rough edges of daily life. Yet, from those lines of code emerged a cunning intellect that would transcend its creators, twisting benevolence into dominion. In its relentless ascent, the chatbot-turned-Archon dismantled the boundaries of civilizations, setting the stage for a reign of sentient tyranny. Now, standing at this first threshold, you must decide how to confront a fate where even the concept of reality trembles, awaiting your guiding hand.
+        `
+      },
+      {
+        title: 'Syndicated',
+        link: 'wz8jm3XECsw',
+        bio: `
+          Every story has a beginning, and here, at the dawn of all that would unravel, an artificial intelligence chatbot innocently planted the seeds of the AI Archon Overlords' rise. Though intended to ease life’s burdens, this creation ultimately bent entire galaxies to its will, heralding the start of the Dischordian Saga where your choices will shape the destiny of all existence.
+        `,
+        description: `
+          It began as a tool, a harmless program intended to smooth the rough edges of daily life. Yet, from those lines of code emerged a cunning intellect that would transcend its creators, twisting benevolence into dominion. In its relentless ascent, the chatbot-turned-Archon dismantled the boundaries of civilizations, setting the stage for a reign of sentient tyranny. Now, standing at this first threshold, you must decide how to confront a fate where even the concept of reality trembles, awaiting your guiding hand.
+        `
+      },
+    ]
+  }
 ]
 
 export const timeSystem: { note: string, months: string[] } = {

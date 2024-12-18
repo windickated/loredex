@@ -32,6 +32,10 @@ export const setSeasonPadding = (season: number) => {
       sectionOffset = 35;
       break;
     }
+    case 2: {
+      sectionOffset = 39;
+      break;
+    }
     case 99: {
       sectionOffset = 0;
       break;

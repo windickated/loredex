@@ -50,7 +50,7 @@
 </script>
 
 <div
-  class="connection {name1} {name2}"
+  class="connection [{name1}] [{name2}]"
   style="
     background-color: {color};
     left: {cx}px;

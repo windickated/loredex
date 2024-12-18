@@ -64,7 +64,7 @@
       document.querySelectorAll(".connection")
     );
     const activeConnections = allConnections.filter((connection) =>
-      connection.className.match(characterTile!.id)
+      connection.className.includes("[" + characterTile!.id + "]")
     );
     activeConnections.map((connection) => {
       connection.style.opacity = "0.9";

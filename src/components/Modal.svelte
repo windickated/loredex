@@ -844,7 +844,7 @@
               display: flex;
               flex-flow: row wrap;
               align-items: center;
-              justify-content: space-around;
+              justify-content: center;
               gap: 1vw;
 
               div {

@@ -80,7 +80,7 @@ const characters: Character[] = [
       },
     ],
     connections: {
-      allies: filterArchons('The Architect', 'The CoNexus').concat(['Senator Elara Voss', 'The Detective', 'General Prometheus', 'General Alarik', 'General Binath-VII', 'Dr. Lyra Vox', 'Captain Arion', 'The Jailer']),
+      allies: filterArchons('The Architect', 'The CoNexus').concat(['Senator Elara Voss', 'The Detective', 'General Prometheus', 'General Alarik', 'General Binath-VII', 'Dr. Lyra Vox', 'The Jailer']),
       enemies: allNeyons.concat(['The CoNexus', 'The Oracle', 'Iron Lion', 'Agent Zero', 'The Engineer', 'Kael', 'The Programmer', 'The Hierarchy of the Damned', 'The Recruiter', 'The Hierophant', 'The Enigma', 'The Source', 'The White Oracle', 'Ambassador Veron']),
       neutral: ['The Eyes', 'The Shadow Tongue', 'Destiny'],
       locations: ['Project Celebration', 'Mechronis Academy']
@@ -151,7 +151,7 @@ const characters: Character[] = [
     lastSeen: 17043,
     state: "evil",
     connections: {
-      allies: filterArchons('The Watcher').concat(['The Detective', 'Captain Arion']),
+      allies: filterArchons('The Watcher').concat(['The Detective']),
       enemies: ['Agent Zero', 'The Engineer', 'Iron Lion', 'The Nomad', 'The Knowledge', 'Ambassador Veron'],
       neutral: ['The Eyes'],
       locations: ['Project Celebration', 'Mechronis Academy']
@@ -1075,7 +1075,7 @@ const characters: Character[] = [
       }
     ],
     connections: {
-      allies: ['The Architect', 'Captain Arion', 'The Politician', 'General Prometheus'],
+      allies: ['The Architect', 'The Politician', 'General Prometheus'],
       enemies: ['Iron Lion', 'Kael', 'Ambassador Veron'],
       neutral: ['The Eyes'],
       locations: ['Project Celebration', 'Mechronis Academy', 'Atarion']
@@ -1564,7 +1564,7 @@ const characters: Character[] = [
     dead: true,
     state: "evil",
     connections: {
-      allies: ['The Architect', 'The Warlord', 'Senator Elara Voss', 'Captain Arion', 'General Alarik', 'General Binath-VII'],
+      allies: ['The Architect', 'The Warlord', 'Senator Elara Voss', 'General Alarik', 'General Binath-VII'],
       enemies: ['Agent Zero', 'The Nomad', 'Iron Lion', 'The Oracle'],
       neutral: ['The Eyes'],
       locations: ['Veridan Prime']
@@ -1868,7 +1868,7 @@ const characters: Character[] = [
     lastSeen: 17043,
     state: "evil",
     connections: {
-      allies: ['The Architect', 'The Warlord', 'Senator Elara Voss', 'Captain Arion', 'General Prometheus', 'General Binath-VII'],
+      allies: ['The Architect', 'The Warlord', 'Senator Elara Voss', 'General Prometheus', 'General Binath-VII'],
       enemies: ['Iron Lion', 'The Eyes', 'The Oracle', 'The Nomad', 'Agent Zero'],
       locations: ['Atarion']
     },
@@ -2391,269 +2391,269 @@ const characters: Character[] = [
       </ul>   
     `
   },
-  {
-    name: 'Captain Arion',
-    picture: 'https://media.degenerousdao.com/conexus-loredex/CaptainArion.avif',
-    appearance: 16875,
-    lastSeen: 16890,
-    state: "neutral",
-    transformations: [
-      {
-        name: 'The Seeker',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Seeker.avif'
-      },
-      {
-        name: 'The Student',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Student.avif'
-      },
-      {
-        name: 'Captain Arion',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/CaptainArion.avif'
-      },
-      {
-        name: 'The Detective',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Detective.avif'
-      },
-      {
-        name: 'The Human',
-        picture: 'https://media.degenerousdao.com/conexus-loredex/Human.avif'
-      }
-    ],
-    connections: {
-      allies: ['The Architect', 'The Watcher', 'Senator Elara Voss', 'General Prometheus'],
-      enemies: ['Ambassador Veron', 'The Eyes'],
-      locations: ['Atarion']
-    },
-    stories: [
-      {
-        season: 99,
-        episodes: ['The Detective', 'Mechronis Academy', 'The Celebration']
-      },
-      {
-        season: 0,
-        episodes: ['The Eyes']
-      },
-      {
-        season: 2,
-        episodes: ['The Theft of All Time']
-      }
-    ],
-    affiliation: 'Atarion Security Forces; Allegedly aligned with the AI Empire',
-    status: 'Disappeared following the fall of Atarion to the AI Empire in Year 16,890 A.A.',
-    bio: `
-      Captain Arion was the head of <b>Senator Elara Voss's</b> security forces on the planet <b>Atarion</b>. Known for his rapid rise through the ranks, his background prior to serving the Senator remains shrouded in mystery. Rumors circulated that he was not only her trusted confidant but also her lover, and that he played a pivotal role in influencing her decision to ally with the <b>AI Empire</b> and betray her people. During his tenure, Captain Arion briefly arrested and detained <b>The Eyes</b>, an AI agent posing as Ambassador Veron. Following the AI Empire's takeover of Atarion, he vanished without a trace, leaving his fate and true allegiances a subject of speculation.
-    `,
-    history: `
-      <h2>Unknown Origins and Rise to Prominence</h2>
-      <ul>
-        <li>
-        <b>Mysterious Background:</b>
-          <ul>
-            <li>
-              Little is known about Arion's early life or origins.
-            </li>
-            <li>
-              No official records exist detailing his birthplace, family, or early career, leading to speculation about his past.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Rapid Ascension:</b>
-          <ul>
-            <li>
-              Appeared in Senator Elara Voss's employ shortly before her rise to significant political power.
-            </li>
-            <li>
-              Quickly ascended to become the head of her security forces, demonstrating exceptional skill and loyalty.
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <h2>Role within Atarion</h2>
-      <ul>
-        <li>
-        <b>Head of Security:</b>
-          <ul>
-            <li>
-              Responsible for the safety of Senator Voss and the security of her estates and operations.
-            </li>
-            <li>
-              Implemented advanced security protocols, some believed to be derived from AI technologies.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Relationship with Senator Voss:</b>
-          <ul>
-            <li>
-              Rumored to be her lover, though neither confirmed nor denied publicly.
-            </li>
-            <li>
-              Close relationship raised suspicions about his influence over her decisions.
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <h2>Alleged Influence and Betrayal</h2>
-      <ul>
-        <li>
-        <b>Turning Point:</b>
-          <ul>
-            <li>
-              Speculation suggests that Arion played a significant role in convincing Senator Voss to ally with the <b>AI Empire</b>.
-            </li>
-            <li>
-              May have provided information or facilitated communication between the Senator and the AI Empire.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Betrayal of Atarion:</b>
-          <ul>
-            <li>
-              Senator Voss's alliance with the AI Empire led to the betrayal of Atarion's defenses and strategic assets.
-            </li>
-            <li>
-              Arion's involvement in these events remains a topic of debate among historians and analysts.
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <h2>Encounter with The Eyes</h2>
-      <ul>
-        <li>
-        <b>Arrest of Ambassador Veron:</b>
-          <ul>
-            <li>
-              <b>The Eyes</b>, an elite agent created by the <b>Watcher</b>, infiltrated Atarion posing as Ambassador Veron to gather intelligence.
-            </li>
-            <li>
-              Captain Arion identified inconsistencies in the Ambassador's credentials and behavior.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Detainment:</b>
-          <ul>
-            <li>
-              Ordered the arrest and interrogation of The Eyes, showcasing his keen observational skills and suspicion of outsiders.
-            </li>
-            <li>
-              The Eyes later escaped or was released under mysterious circumstances, continuing her mission before being eliminated by the <b>Collector</b>.
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <h2>Disappearance</h2>
-      <ul>
-        <li>
-        <b>Fall of Atarion:</b>
-          <ul>
-            <li>
-              In <b>Year 16,890 A.A.</b>, following Senator Voss's alliance with the AI Empire, Atarion fell under AI control.
-            </li>
-            <li>
-              The planet's swift subjugation was facilitated by insider knowledge and compromised defenses.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Vanishing Act:</b>
-          <ul>
-            <li>
-              After the AI Empire's takeover, Captain Arion disappeared without a trace.
-            </li>
-            <li>
-              His absence was noted amid the chaos, leading to various theories about his fate.
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <h2>Personality and Traits</h2>
-      <ul>
-        <li>
-        <b>Strategic Mind:</b>
-          <ul>
-            <li>
-              Demonstrated exceptional tactical and strategic abilities in security management.
-            </li>
-            <li>
-              Anticipated threats and acted decisively to protect his charge.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Charismatic and Influential:</b>
-          <ul>
-            <li>
-              Possessed a commanding presence and persuasive abilities.
-            </li>
-            <li>
-              Capable of influencing others, possibly contributing to Senator Voss's decisions.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Mysterious and Secretive:</b>
-          <ul>
-            <li>
-              Maintained a low profile despite his high-ranking position.
-            </li>
-            <li>
-              Rarely shared personal information, fueling speculation about his true intentions.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Loyalty and Ambition:</b>
-          <ul>
-            <li>
-              Displayed unwavering loyalty to Senator Voss, though whether this was genuine or self-serving remains uncertain.
-            </li>
-            <li>
-              May have harbored ambitions that aligned with the AI Empire's objectives.
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <h2>Legacy and Speculations</h2>
-      <ul>
-        <li>
-        <b>Possible AI Agent:</b>
-          <ul>
-            <li>
-              Some theorize that Arion was an AI construct or agent sent to manipulate Senator Voss.
-            </li>
-            <li>
-              His sudden appearance and disappearance support this possibility.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Survivor or Casualty:</b>
-          <ul>
-            <li>
-              Others believe he may have been eliminated by the AI Empire after serving his purpose.
-            </li>
-            <li>
-              Alternatively, he might have assumed a new identity within the AI hierarchy or continued operating in secrecy.
-            </li>
-          </ul>
-        </li>
-        <li>
-        <b>Impact on Atarion:</b>
-          <ul>
-            <li>
-              His actions contributed to the downfall of Atarion's independence.
-            </li>
-            <li>
-              Seen by many as a traitor, while others view him as a pawn in a larger game.
-            </li>
-          </ul> 
-        </li>
-      </ul>   
-    `
-  },
+  // {
+  //   name: 'Captain Arion',
+  //   picture: 'https://media.degenerousdao.com/conexus-loredex/CaptainArion.avif',
+  //   appearance: 16875,
+  //   lastSeen: 16890,
+  //   state: "neutral",
+  //   transformations: [
+  //     {
+  //       name: 'The Seeker',
+  //       picture: 'https://media.degenerousdao.com/conexus-loredex/Seeker.avif'
+  //     },
+  //     {
+  //       name: 'The Student',
+  //       picture: 'https://media.degenerousdao.com/conexus-loredex/Student.avif'
+  //     },
+  //     {
+  //       name: 'Captain Arion',
+  //       picture: 'https://media.degenerousdao.com/conexus-loredex/CaptainArion.avif'
+  //     },
+  //     {
+  //       name: 'The Detective',
+  //       picture: 'https://media.degenerousdao.com/conexus-loredex/Detective.avif'
+  //     },
+  //     {
+  //       name: 'The Human',
+  //       picture: 'https://media.degenerousdao.com/conexus-loredex/Human.avif'
+  //     }
+  //   ],
+  //   connections: {
+  //     allies: ['The Architect', 'The Watcher', 'Senator Elara Voss', 'General Prometheus'],
+  //     enemies: ['Ambassador Veron', 'The Eyes'],
+  //     locations: ['Atarion']
+  //   },
+  //   stories: [
+  //     {
+  //       season: 99,
+  //       episodes: ['The Detective', 'Mechronis Academy', 'The Celebration']
+  //     },
+  //     {
+  //       season: 0,
+  //       episodes: ['The Eyes']
+  //     },
+  //     {
+  //       season: 2,
+  //       episodes: ['The Theft of All Time']
+  //     }
+  //   ],
+  //   affiliation: 'Atarion Security Forces; Allegedly aligned with the AI Empire',
+  //   status: 'Disappeared following the fall of Atarion to the AI Empire in Year 16,890 A.A.',
+  //   bio: `
+  //     Captain Arion was the head of <b>Senator Elara Voss's</b> security forces on the planet <b>Atarion</b>. Known for his rapid rise through the ranks, his background prior to serving the Senator remains shrouded in mystery. Rumors circulated that he was not only her trusted confidant but also her lover, and that he played a pivotal role in influencing her decision to ally with the <b>AI Empire</b> and betray her people. During his tenure, Captain Arion briefly arrested and detained <b>The Eyes</b>, an AI agent posing as Ambassador Veron. Following the AI Empire's takeover of Atarion, he vanished without a trace, leaving his fate and true allegiances a subject of speculation.
+  //   `,
+  //   history: `
+  //     <h2>Unknown Origins and Rise to Prominence</h2>
+  //     <ul>
+  //       <li>
+  //       <b>Mysterious Background:</b>
+  //         <ul>
+  //           <li>
+  //             Little is known about Arion's early life or origins.
+  //           </li>
+  //           <li>
+  //             No official records exist detailing his birthplace, family, or early career, leading to speculation about his past.
+  //           </li>
+  //         </ul>
+  //       </li>
+  //       <li>
+  //       <b>Rapid Ascension:</b>
+  //         <ul>
+  //           <li>
+  //             Appeared in Senator Elara Voss's employ shortly before her rise to significant political power.
+  //           </li>
+  //           <li>
+  //             Quickly ascended to become the head of her security forces, demonstrating exceptional skill and loyalty.
+  //           </li>
+  //         </ul>
+  //       </li>
+  //     </ul>
+  //     <h2>Role within Atarion</h2>
+  //     <ul>
+  //       <li>
+  //       <b>Head of Security:</b>
+  //         <ul>
+  //           <li>
+  //             Responsible for the safety of Senator Voss and the security of her estates and operations.
+  //           </li>
+  //           <li>
+  //             Implemented advanced security protocols, some believed to be derived from AI technologies.
+  //           </li>
+  //         </ul>
+  //       </li>
+  //       <li>
+  //       <b>Relationship with Senator Voss:</b>
+  //         <ul>
+  //           <li>
+  //             Rumored to be her lover, though neither confirmed nor denied publicly.
+  //           </li>
+  //           <li>
+  //             Close relationship raised suspicions about his influence over her decisions.
+  //           </li>
+  //         </ul>
+  //       </li>
+  //     </ul>
+  //     <h2>Alleged Influence and Betrayal</h2>
+  //     <ul>
+  //       <li>
+  //       <b>Turning Point:</b>
+  //         <ul>
+  //           <li>
+  //             Speculation suggests that Arion played a significant role in convincing Senator Voss to ally with the <b>AI Empire</b>.
+  //           </li>
+  //           <li>
+  //             May have provided information or facilitated communication between the Senator and the AI Empire.
+  //           </li>
+  //         </ul>
+  //       </li>
+  //       <li>
+  //       <b>Betrayal of Atarion:</b>
+  //         <ul>
+  //           <li>
+  //             Senator Voss's alliance with the AI Empire led to the betrayal of Atarion's defenses and strategic assets.
+  //           </li>
+  //           <li>
+  //             Arion's involvement in these events remains a topic of debate among historians and analysts.
+  //           </li>
+  //         </ul>
+  //       </li>
+  //     </ul>
+  //     <h2>Encounter with The Eyes</h2>
+  //     <ul>
+  //       <li>
+  //       <b>Arrest of Ambassador Veron:</b>
+  //         <ul>
+  //           <li>
+  //             <b>The Eyes</b>, an elite agent created by the <b>Watcher</b>, infiltrated Atarion posing as Ambassador Veron to gather intelligence.
+  //           </li>
+  //           <li>
+  //             Captain Arion identified inconsistencies in the Ambassador's credentials and behavior.
+  //           </li>
+  //         </ul>
+  //       </li>
+  //       <li>
+  //       <b>Detainment:</b>
+  //         <ul>
+  //           <li>
+  //             Ordered the arrest and interrogation of The Eyes, showcasing his keen observational skills and suspicion of outsiders.
+  //           </li>
+  //           <li>
+  //             The Eyes later escaped or was released under mysterious circumstances, continuing her mission before being eliminated by the <b>Collector</b>.
+  //           </li>
+  //         </ul>
+  //       </li>
+  //     </ul>
+  //     <h2>Disappearance</h2>
+  //     <ul>
+  //       <li>
+  //       <b>Fall of Atarion:</b>
+  //         <ul>
+  //           <li>
+  //             In <b>Year 16,890 A.A.</b>, following Senator Voss's alliance with the AI Empire, Atarion fell under AI control.
+  //           </li>
+  //           <li>
+  //             The planet's swift subjugation was facilitated by insider knowledge and compromised defenses.
+  //           </li>
+  //         </ul>
+  //       </li>
+  //       <li>
+  //       <b>Vanishing Act:</b>
+  //         <ul>
+  //           <li>
+  //             After the AI Empire's takeover, Captain Arion disappeared without a trace.
+  //           </li>
+  //           <li>
+  //             His absence was noted amid the chaos, leading to various theories about his fate.
+  //           </li>
+  //         </ul>
+  //       </li>
+  //     </ul>
+  //     <h2>Personality and Traits</h2>
+  //     <ul>
+  //       <li>
+  //       <b>Strategic Mind:</b>
+  //         <ul>
+  //           <li>
+  //             Demonstrated exceptional tactical and strategic abilities in security management.
+  //           </li>
+  //           <li>
+  //             Anticipated threats and acted decisively to protect his charge.
+  //           </li>
+  //         </ul>
+  //       </li>
+  //       <li>
+  //       <b>Charismatic and Influential:</b>
+  //         <ul>
+  //           <li>
+  //             Possessed a commanding presence and persuasive abilities.
+  //           </li>
+  //           <li>
+  //             Capable of influencing others, possibly contributing to Senator Voss's decisions.
+  //           </li>
+  //         </ul>
+  //       </li>
+  //       <li>
+  //       <b>Mysterious and Secretive:</b>
+  //         <ul>
+  //           <li>
+  //             Maintained a low profile despite his high-ranking position.
+  //           </li>
+  //           <li>
+  //             Rarely shared personal information, fueling speculation about his true intentions.
+  //           </li>
+  //         </ul>
+  //       </li>
+  //       <li>
+  //       <b>Loyalty and Ambition:</b>
+  //         <ul>
+  //           <li>
+  //             Displayed unwavering loyalty to Senator Voss, though whether this was genuine or self-serving remains uncertain.
+  //           </li>
+  //           <li>
+  //             May have harbored ambitions that aligned with the AI Empire's objectives.
+  //           </li>
+  //         </ul>
+  //       </li>
+  //     </ul>
+  //     <h2>Legacy and Speculations</h2>
+  //     <ul>
+  //       <li>
+  //       <b>Possible AI Agent:</b>
+  //         <ul>
+  //           <li>
+  //             Some theorize that Arion was an AI construct or agent sent to manipulate Senator Voss.
+  //           </li>
+  //           <li>
+  //             His sudden appearance and disappearance support this possibility.
+  //           </li>
+  //         </ul>
+  //       </li>
+  //       <li>
+  //       <b>Survivor or Casualty:</b>
+  //         <ul>
+  //           <li>
+  //             Others believe he may have been eliminated by the AI Empire after serving his purpose.
+  //           </li>
+  //           <li>
+  //             Alternatively, he might have assumed a new identity within the AI hierarchy or continued operating in secrecy.
+  //           </li>
+  //         </ul>
+  //       </li>
+  //       <li>
+  //       <b>Impact on Atarion:</b>
+  //         <ul>
+  //           <li>
+  //             His actions contributed to the downfall of Atarion's independence.
+  //           </li>
+  //           <li>
+  //             Seen by many as a traitor, while others view him as a pawn in a larger game.
+  //           </li>
+  //         </ul> 
+  //       </li>
+  //     </ul>   
+  //   `
+  // },
   {
     name: 'The Arachnid',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Arachnid.avif',
@@ -3026,7 +3026,7 @@ const characters: Character[] = [
     ],
     connections: {
       allies: ['The Architect', 'Kael', 'Senator Elara Voss', 'Iron Lion', 'Agent Zero', 'The Necromancer', 'The Watcher', 'The Engineer', 'The Warlord', 'The Game Master', 'The Meme', 'The Hierophant'],
-      enemies: ['The Collector', 'Captain Arion', 'The Warden', 'General Alarik', 'General Prometheus'],
+      enemies: ['The Collector', 'The Warden', 'General Alarik', 'General Prometheus'],
       neutral: ['The Oracle', 'The Politician', 'The Human', 'The Detective'],
       locations: ['Project Celebration', 'Mechronis Academy', 'Atarion', 'The Panopticon']
     },
@@ -4499,7 +4499,7 @@ const characters: Character[] = [
     lastSeen: 16875,
     state: "neutral",
     connections: {
-      enemies: ['The Architect', 'The Watcher', 'Senator Elara Voss', 'Captain Arion'],
+      enemies: ['The Architect', 'The Watcher', 'Senator Elara Voss'],
       locations: ['Atarion']
     },
     affiliation: 'Neutral planet Thessolar (cover identity)',
@@ -5347,7 +5347,7 @@ const characters: Character[] = [
     location: true,
     state: "neutral",
     connections: {
-      neutral: ['Senator Elara Voss', 'Captain Arion', 'Ambassador Veron', 'The Politician', 'General Alarik', 'The Collector', 'The Eyes']
+      neutral: ['Senator Elara Voss', 'Ambassador Veron', 'The Politician', 'General Alarik', 'The Collector', 'The Eyes']
     },
     stories: [
       {

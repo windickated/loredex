@@ -1022,14 +1022,13 @@
     }
 
     dialog {
+      min-height: 100%;
       height: 100%;
       min-width: 100vw;
       width: 100vw;
       border-left: none;
       border-right: none;
       border-radius: 0;
-      border-width: 10vw;
-      border-color: rgba(1, 0, 32, 0.9);
 
       main {
         padding-bottom: 1em;

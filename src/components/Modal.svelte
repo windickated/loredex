@@ -588,13 +588,6 @@
         }
       }
 
-      .character-video {
-        width: 50vw;
-        height: 25vw;
-        border: 0.05vw solid rgba(51, 226, 230, 0.5);
-        border-radius: 1vw;
-      }
-
       .general-info {
         width: 95%;
         padding: 1vw;
@@ -1024,11 +1017,19 @@
       }
     }
 
+    dialog::backdrop {
+      background: #010020;
+    }
+
     dialog {
+      height: 100%;
       min-width: 100vw;
-      min-height: 100vh;
       width: 100vw;
+      border-left: none;
+      border-right: none;
       border-radius: 0;
+      border-width: 10vw;
+      border-color: rgba(1, 0, 32, 0.9);
 
       main {
         padding-bottom: 1em;
@@ -1193,9 +1194,7 @@
                 line-height: inherit;
                 width: 50vw;
                 padding: 0.25em;
-                border-radius: 0.5em;
-                border-bottom-left-radius: 0;
-                border-bottom-right-radius: 0;
+                border-radius: 0;
               }
             }
 
@@ -1203,6 +1202,8 @@
               padding: 1em 0.5em;
               border-radius: 0;
               font-size: 1em;
+              border-left: none;
+              border-right: none;
 
               .empty-note {
                 font-size: 1.5em;

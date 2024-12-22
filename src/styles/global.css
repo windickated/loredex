@@ -227,6 +227,12 @@ h2 {
   margin-block: 1.5vw;
 }
 
+iframe {
+  width: 50vw;
+  height: 25vw;
+  border-radius: 1vw;
+}
+
 @media only screen and (max-width: 600px) {
   html {
     font-size: 1em;
@@ -246,5 +252,11 @@ h2 {
     font-size: 1.5em;
     line-height: 1.5em;
     margin-block: 0.5em;
+  }
+
+  iframe {
+    width: 95vw;
+    height: 45vw;
+    border-radius: 1em;
   }
 }

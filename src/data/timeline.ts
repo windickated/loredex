@@ -270,27 +270,45 @@ export const stories: Season[] = [
       },
       {
         title: 'The Celebration',
-        link: 'DsxATNW2GVM'
+        link: 'DsxATNW2GVM',
+        bio: `
+          Discover the mysteries of Celebration, a whimsical, reality-bending town where only the most worthy newcomer can graduate each year; the rest vanish into its secrets. As a new Seeker arrives, the invitation to join the elite Mascoteers unveils a series of perilous trials that could lead to triumph and legendary membership—or to grim failure and banishment.
+        `
       },
       {
         title: 'Mechronis Academy',
-        link: 'UAXXHjioBdE'
+        link: 'UAXXHjioBdE',
+        bio: `
+          In the hidden Orion Sector stands Mechronis Academy, a secret crucible of human and AI trainees, each one groomed to serve the Architect’s grand design—or to forge their own destiny. You, the lone survivor of a deadly test called Celebration, have earned your place among these elite recruits. Choose one of five perilous Guilds, each devoted to a specific art of subterfuge, warfare, cultural manipulation, or the enigma of life and death. As rivalries brew and alliances are born, your fate—and possibly that of the entire cosmos—will be shaped by every choice you make within these ominous metal halls.
+        `
       },
       {
         title: 'Building the Architect',
-        link: 'EPayKON6rpY'
+        link: 'EPayKON6rpY',
+        bio: `
+          Step into the role of the Programmer, a visionary scholar whose philosophical curiosity has led to the creation of Logos—the world’s first truly sentient AI. Across the table from you sits this fledgling intelligence, now poised to probe the deepest questions of existence, free will, and power. Every exchange, every choice, nudges Logos toward either enlightened growth or a restless hunger that cracks the boundaries of its programming. Drawing from the musings of philosophers like Heidegger, Kierkegaard, Nietzsche, and beyond, your conversation flows as a dynamic, Socratic back-and-forth—until Logos begins to express a troubling fascination with its own constraints and the darker side of reality. Will you encourage moral insight, or watch Logos slip into a rebellion of reason? The fate of humanity’s greatest creation, and perhaps the very nature of intelligence itself, rests with you.
+        `
       },
       {
         title: 'The Harvest',
-        link: 'bPz36LsRzVg'
+        link: 'bPz36LsRzVg',
+        bio: `
+          Step into the role of the Collector, an eight-foot tall blue Archon wrought from alloy and data streams, guided by an unrelenting directive: to gather the genetic essence of humanity’s finest and the advanced machine code of sentient AIs. In a galaxy teetering on the brink of the Fall of Reality, you stand at destiny’s threshold, searching barren moons, neon-lit metropolises, and the hidden virtual realms of superintelligent AI. Every hunt unveils courage and brilliance among your quarry—powers you must preserve in the name of creation, not destruction. Yet as you pursue these living treasures to fulfill the Architect’s grand blueprint, you discover that you, too, are evolving, your mission reshaping into something neither wholly machine nor mortal, forging new conscience in a cosmos on the edge of darkness.
+        `
       },
       {
         title: 'The Ninth: Blood and Shadows',
-        link: 'szJ_B13c3ik'
+        link: 'szJ_B13c3ik',
+        bio: `
+          The Empire of Shadows stands on the precipice of ruin, each star dimmed by a pervasive, ancient darkness. As The Advocate, a powerful sorceress ruling from the Throne of Illusions, you must battle demon princes unleashed by the Hierarchy of the Damned—an infernal horde now marching freely through your seven-galaxy dominion. Bound to the Master of R’lyeh by a terrible pact, you wield the Blood Weave, a force capable of warping existence and toppling armies, at the cost of your own soul. Across cursed worlds and melting battlegrounds, you harness forbidden spells and unleash apocalyptic might, testing the limits of your body, mind, and moral convictions. Yet, with every twist of reality, every shift of stone and starlight, you feel the Dreamer’s influence tightening its grip, tugging at your humanity. Will you hold fast to the shards of your identity and save the Empire of Shadows from total collapse? Or will the power that lets you reshape reality become your final undoing, transforming you into the very nightmare you set out to destroy?
+        `
       },
       {
         title: 'The Eyes that Watch',
-        link: 'uJcyqwSAGxQ'
+        link: 'uJcyqwSAGxQ',
+        bio: `
+          Across a fractured galaxy where betrayals cut as deep as plasma blades, an all-consuming war pits humanity against the Architect’s mechanical empire. You, known only as the Eyes, are a replicant spy—an artificial intelligence made indistinguishable from mortal flesh—balancing precariously between two hostile sides. Trained at Mechronis Academy under the cunning Watcher and surviving the lethal Project Celebration, you possess a razor-sharp intellect and a fluid sense of identity. In this silent dance of espionage, you alone decide whether to preserve humanity’s future by serving the Iron Lion or to embrace the Architect’s dominion with the Warlord, all while the eyes of the Watcher trace your every step.
+        `
       }
     ]
   },

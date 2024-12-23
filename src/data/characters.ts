@@ -2778,6 +2778,16 @@ const characters: Character[] = [
       enemies: ['The White Oracle', 'The Hierophant'],
       locations: ['The Panopticon', 'The Wyrmhole', 'Thaloria']
     },
+    stories: [
+      {
+        season: 99,
+        episodes: ['Awaken the Clone']
+      },
+      {
+        season: 1,
+        episodes: ['The Return']
+      }
+    ],
     affiliation: 'The AI Empire’s Engineered Forces, Deployed from the Panopticon',
     status: 'Created during the height of the Warden’s reign; later used to invade Thaloria',
     bio: `
@@ -5331,6 +5341,12 @@ const characters: Character[] = [
     connections: {
       neutral: filterArchons('The CoNexus').concat(['Iron Lion', 'The Nomad', 'The Eyes', 'The Necromancer', 'The Enigma', 'The Engineer', 'The Recruiter', 'The Detective', 'Senator Elara Voss'])
     },
+    stories: [
+      {
+        season: 99,
+        episodes: ['The Celebration', 'Mechronis Academy']
+      }
+    ],
     affiliation: 'Under the Auspices of the Architect and the AI Empire',
     status: 'Established Year 232 A.A.; Commenced Human Subject Testing in Year 550 A.A..  Status UNKNOWN after the Fall.',
     bio: `
@@ -5534,6 +5550,18 @@ const characters: Character[] = [
     state: "neutral",
     stories: [
       {
+        season: 99,
+        episodes: ['Awaken the Clone']
+      },
+      {
+        season: 0,
+        episodes: ['The Oracle']
+      },
+      {
+        season: 1,
+        episodes: ['The Arrival', 'Illuminated Shadows', 'The Artifact', 'The City', 'The Return', 'The Wyrmwood', 'The Hunt', 'The Beginning of the End', 'Memento Dischordia']
+      },
+      {
         season: 2,
         episodes: ['The Theft of All Time']
       }
@@ -5590,6 +5618,10 @@ const characters: Character[] = [
     location: true,
     state: "neutral",
     stories: [
+      {
+        season: 0,
+        episodes: ['The Prisoner']
+      },
       {
         season: 2,
         episodes: ['Syndicated']
@@ -5738,6 +5770,14 @@ const characters: Character[] = [
     location: true,
     state: "neutral",
     stories: [
+      {
+        season: 99,
+        episodes: ['The Eyes that Watch', 'The Ninth: Blood and Shadows']
+      },
+      {
+        season: 1,
+        episodes: ['Memento Dischordia']
+      },
       {
         season: 2,
         episodes: ['The Theft of All Time', 'Syndicated']

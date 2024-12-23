@@ -113,7 +113,7 @@
           <h1
             style="color: {$selectedCharacter.location
               ? 'rgba(51, 226, 230, 0.75)'
-              : getColor($selectedCharacter.name)}"
+              : getColor($selectedCharacter.name, 0.75)}"
           >
             {$selectedCharacter.name}
           </h1>
@@ -318,7 +318,7 @@
                       {#each $selectedCharacter.connections.allies as ally}
                         <div
                           on:click={() => handleSelectCharacter(ally)}
-                          style="border-color: {getColor(ally)}"
+                          style="border-color: {getColor(ally, 0.9)}"
                         >
                           <img
                             src={getImage(ally)}
@@ -341,7 +341,7 @@
                       {#each $selectedCharacter.connections.enemies as enemy}
                         <div
                           on:click={() => handleSelectCharacter(enemy)}
-                          style="border-color: {getColor(enemy)}"
+                          style="border-color: {getColor(enemy, 0.9)}"
                         >
                           <img
                             src={getImage(enemy)}
@@ -364,7 +364,7 @@
                       {#each $selectedCharacter.connections.neutral as neutral}
                         <div
                           on:click={() => handleSelectCharacter(neutral)}
-                          style="border-color: {getColor(neutral)}"
+                          style="border-color: {getColor(neutral, 0.9)}"
                         >
                           <img
                             src={getImage(neutral)}
@@ -380,16 +380,14 @@
                     </div>
                   {/if}
                   {#if $selectedCharacter.connections.locations}
-                    <h2 style="background-color: rgba(51, 226, 230, 0.25)">
-                      Locations
-                    </h2>
+                    <h2 style="background-color: rgb(22, 30, 95)">Locations</h2>
                     <div class="characters-section">
                       {#each $selectedCharacter.connections.locations as location}
                         <div
                           on:click={() => handleSelectCharacter(location)}
                           style="
-                              border-color: {getColor(location)};
-                              background-color: rgba(51, 226, 230, 0.25);
+                              border-color: {getColor(location, 0.9)};
+                              background-color: rgb(22, 30, 95);
                             "
                         >
                           <img

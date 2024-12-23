@@ -1,18 +1,18 @@
 import characters from "../data/characters.ts";
 
-const setColor = (state: string): string => {
+const setColor = (state: string, opacity: number = 1): string => {
   const color = state === "good"
-  ? "rgba(0, 185, 55, 0.75)"
+  ? `rgba(0, 185, 55, ${opacity})`
   : state === "evil"
-    ? "rgba(255, 60, 64, 0.75)"
-    : "rgba(150, 150, 150, 0.75)";
+    ? `rgba(255, 60, 64, ${opacity})`
+    : `rgba(150, 150, 150, ${opacity})`;
   return color;
 }
 
-export const getColor = (name: string): string => {
+export const getColor = (name: string, opacity: number = 1): string => {
   let color = setColor("neutral");
   characters.map((character) => {
-    if (name === character.name) color = setColor(character.state);
+    if (name === character.name) color = setColor(character.state, opacity);
   })
   return color;
 }

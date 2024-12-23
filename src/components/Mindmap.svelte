@@ -148,7 +148,7 @@
   <section
     class="controllers"
     style={preventZoomChanges
-      ? "filter: grayscale(100%); opacity: 0.25;"
+      ? "filter: grayscale(100%); opacity: 0.25; cursor: wait;"
       : "filter: none; opacity: 1;"}
   >
     <div class="search-wrapper">
@@ -244,6 +244,7 @@
       style="
         width: {timeline.length * 10}rem;
         grid-template-columns: repeat({timeline.length}, 10rem);
+        {preventZoomChanges ? 'cursor: wait;' : ''}
       "
     >
       {#each timeline as { date, note, action, emptySection, expandable }}
@@ -419,6 +420,7 @@
     opacity: 0;
     filter: drop-shadow(0 0 0.5vw rgba(51, 226, 230, 0.5));
     animation: logo 5s linear forwards;
+    cursor: wait;
   }
 
   header {

@@ -67,7 +67,7 @@
       connection.className.includes("[" + characterTile!.id + "]")
     );
     activeConnections.map((connection) => {
-      connection.style.opacity = "0.9";
+      connection.style.opacity = "1";
     });
 
     const allDates: HTMLParagraphElement[] = Array.from(
@@ -186,10 +186,8 @@
   draggable="false"
   style="
     border-color: {color};
-    filter: drop-shadow(0 0 0.1rem {color});
-    background-color: {location
-    ? 'rgba(51, 226, 230, 0.25)'
-    : 'rgba(36, 65, 189, 0.9)'};
+    {state !== 'neutral' ? `filter: drop-shadow(0 0 0.5rem ${color});` : ''}
+    background-color: {location ? 'rgb(22, 30, 95)' : 'rgba(36, 65, 189, 0.9)'};
   "
   tabindex="0"
   role="button"
@@ -203,9 +201,7 @@
   on:blur={hideConnections}
 >
   <img src={picture} alt={name} draggable="false" width="1024" height="1024" />
-  <p
-    style={dead ? "color: black; text-shadow: 0 0 0.1rem rgba(0,0,0,0.5);" : ""}
-  >
+  <p style={dead ? "color: black; text-shadow: 0 0 0.1rem black;" : ""}>
     {name}
   </p>
   {#if dead}

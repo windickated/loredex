@@ -224,7 +224,7 @@ const characters: Character[] = [
     state: "evil",
     video: '2SOPJ0m_xuM',
     connections: {
-      allies: filterArchons('The Warlord').concat(['The Detective', 'General Alarik']),
+      allies: filterArchons('The Warlord').concat(['The Detective', 'General Alarik', 'General Prometheus']),
       enemies: ['Agent Zero', 'Iron Lion', 'The Nomad', 'The Engineer', 'The Judge', 'The Recruiter', 'Kael', 'The Hierophant'],
       neutral: ['The Eyes'],
       locations: ['Project Celebration', 'Mechronis Academy', 'Zenon']
@@ -653,8 +653,8 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 2,
     connections: {
-      allies: filterNeyons('The Judge').concat(['The Wolf']),
-      enemies: ['The Architect', 'The Warlord', 'The Terminus Swarm', 'The Source'],
+      allies: filterNeyons('The Judge'),
+      enemies: ['The Architect', 'The Warlord', 'The Terminus Swarm', 'The Source', 'The Wolf'],
       locations: ['The Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
@@ -946,7 +946,7 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 9,
     connections: {
-      allies: filterNeyons('The Advocate').concat(['Master of R’lyeh']),
+      allies: filterNeyons('The Advocate').concat(['Master of R’lyeh', 'Akai Shi']),
       enemies: ['The Architect', 'The Game Master', 'The Terminus Swarm', 'The Source', 'The Hierarchy of the Damned'],
       locations: ['The Wyrmhole', 'Terminus', 'The City']
     },
@@ -3026,8 +3026,8 @@ const characters: Character[] = [
     ],
     connections: {
       allies: ['The Architect', 'Kael', 'Senator Elara Voss', 'Iron Lion', 'Agent Zero', 'The Necromancer', 'The Watcher', 'The Engineer', 'The Warlord', 'The Game Master', 'The Meme', 'The Hierophant'],
-      enemies: ['The Collector', 'The Warden', 'General Alarik', 'General Prometheus'],
-      neutral: ['The Oracle', 'The Politician', 'The Human', 'The Detective'],
+      enemies: ['The Collector', 'The Warden', 'General Alarik'],
+      neutral: ['The Oracle', 'The Politician', 'The Human', 'The Detective', 'General Prometheus'],
       locations: ['Project Celebration', 'Mechronis Academy', 'Atarion', 'The Panopticon']
     },
     affiliation: 'Insurgency',
@@ -3174,7 +3174,7 @@ const characters: Character[] = [
     ],
     connections: {
       allies: ['The Hierophant', 'The Council of Harmony', 'Agent Zero', 'Iron Lion', 'The Engineer', 'The Eyes', 'The Nomad', 'The Recruiter'],
-      enemies: ['The Collector', 'The Warden', 'The Politician', 'The Architect', 'General Alarik', 'The Meme', 'The Detective'],
+      enemies: ['The Collector', 'The Warden', 'The Politician', 'The Architect', 'General Alarik', 'The Meme', 'The Detective', 'General Prometheus'],
       neutral: ['The Star Whisperer'],
       locations: ['Thaloria', 'The Panopticon']
     },
@@ -5174,7 +5174,8 @@ const characters: Character[] = [
     picture: 'https://media.degenerousdao.com/conexus-loredex/StarWhisperer.avif',
     state: "neutral",
     connections: {
-      neutral: ['The Hierophant', 'Thaloria', 'The Shadow Tongue', 'The Oracle', 'The Collector']
+      neutral: ['The Hierophant', 'The Shadow Tongue', 'The Oracle', 'The Collector'],
+      locations: ['Thaloria']
     },
     stories: [
       {
@@ -5416,6 +5417,9 @@ const characters: Character[] = [
     lastSeen: 128652,
     location: true,
     state: "neutral",
+    connections: {
+      neutral: ['The Wolf']
+    },
     stories: [
       {
         season: 99,
@@ -5442,6 +5446,9 @@ const characters: Character[] = [
     lastSeen: 1000000,
     location: true,
     state: "neutral",
+    connections: {
+      neutral: ['The Necromancer', 'Akai Shi']
+    },
     stories: [
       {
         season: 99,
@@ -5469,9 +5476,9 @@ const characters: Character[] = [
     location: true,
     state: "neutral",
     connections: {
-      allies: allPotentials.concat(['The White Oracle']),
+      allies: allPotentials.concat(['The White Oracle']).concat(allNeyons),
       enemies: ['The Collector', 'The Host', 'The Source'],
-      neutral: ['Thaloria', 'The Wyrmhole']
+      locations: ['Thaloria', 'The Wyrmhole']
     },
     stories: [
       {
@@ -5500,7 +5507,8 @@ const characters: Character[] = [
     location: true,
     state: "neutral",
     connections: {
-      neutral: allPotentials.concat(['The Source', 'The Host', 'The White Oracle', 'The Jailer', 'The Collector', 'The Panopticon', 'Thaloria', 'The City', 'Terminus'])
+      neutral: allPotentials.concat(['The Source', 'The Host', 'The White Oracle', 'The Jailer', 'The Collector', 'The Clone Army']).concat(allNeyons),
+      locations: ['The Panopticon', 'Thaloria', 'The City', 'Terminus', 'The Wyrmhole']
     },
     stories: [
       {
@@ -5531,7 +5539,9 @@ const characters: Character[] = [
       }
     ],
     connections: {
-      neutral: ['The Council of Harmony', 'The Hierophant', 'The Collector', 'The Oracle', 'The White Oracle', 'The City', 'The Star Whisperer', 'Terminus', 'The Wyrmhole', 'The Clone Army', 'The Shadow Tongue']
+      allies: ['The Council of Harmony', 'The Hierophant'],
+      neutral: ['The Collector', 'The Oracle', 'The White Oracle', 'The Star Whisperer', 'The Clone Army', 'The Shadow Tongue'],
+      locations: ['The City', 'Terminus', 'The Wyrmhole']
     },
     affiliation: 'Independent World, Home of the Thalorians',
     status: 'Once a vibrant planet guided by the Council of Harmony and the Hierophant, enduring through epochs of transformation',
@@ -5551,7 +5561,9 @@ const characters: Character[] = [
     state: "neutral",
     connections: {
       allies: ['The Terminus Swarm'],
-      neutral: ['The Source', 'The Host', 'The Panopticon', 'The Wyrmhole', 'Thaloria']
+      enemies: allNeyons,
+      neutral: ['Kael', 'The Source', 'The Host', 'The Hierarchy of the Damned'],
+      locations: ['The Panopticon', 'The Wyrmhole', 'Thaloria']
     },
     stories: [
       {
@@ -5584,7 +5596,8 @@ const characters: Character[] = [
       }
     ],
     connections: {
-      neutral: ['The Warden', 'Kael', 'The Jailer', 'The White Oracle', 'Panoptic Elara', 'The Meme', 'The Enigma', 'The Collector', 'The Eyes', 'Dr. Lyra Vox', 'The Recruiter', 'The Source', 'Terminus', 'The Wyrmhole', 'The Oracle', 'The Clone Army']
+      neutral: ['The Warden', 'Kael', 'The Jailer', 'The White Oracle', 'Panoptic Elara', 'The Meme', 'The Enigma', 'The Collector', 'The Eyes', 'Dr. Lyra Vox', 'The Recruiter', 'The Source', 'The Oracle', 'The Clone Army'],
+      locations: ['Terminus', 'The Wyrmhole']
     },
     affiliation: 'The AI Empire (Formerly)',
     status: 'Defunct after the Fall of Reality, associated with the origins of the Thought Virus and cruel genetic experiments',

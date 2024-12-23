@@ -302,7 +302,7 @@
                   <Connection
                     name1={character.name}
                     name2={ally}
-                    color="rgba(0, 185, 55, 0.75)"
+                    color="rgb(0, 185, 55)"
                     appearance={character.appearance}
                   />
                 {/each}
@@ -312,7 +312,7 @@
                   <Connection
                     name1={character.name}
                     name2={enemy}
-                    color="rgba(255, 60, 64, 0.75)"
+                    color="rgb(255, 60, 64)"
                     appearance={character.appearance}
                   />
                 {/each}
@@ -322,7 +322,7 @@
                   <Connection
                     name1={character.name}
                     name2={neutral}
-                    color="rgba(150, 150, 150, 0.75)"
+                    color="rgb(150, 150, 150)"
                     appearance={character.appearance}
                   />
                 {/each}
@@ -332,7 +332,7 @@
                   <Connection
                     name1={character.name}
                     name2={location}
-                    color="rgba(150, 150, 150, 0.75)"
+                    color="rgb(150, 150, 150)"
                     appearance={character.appearance}
                   />
                 {/each}

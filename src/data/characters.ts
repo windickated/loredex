@@ -5523,8 +5523,8 @@ const characters: Character[] = [
     location: true,
     state: "neutral",
     connections: {
-      neutral: allPotentials.concat(['The Source', 'The Host', 'The White Oracle', 'The Jailer', 'The Collector', 'The Clone Army']).concat(allNeyons),
-      locations: ['The Panopticon', 'Thaloria', 'The City', 'Terminus', 'The Wyrmhole']
+      neutral: allPotentials.concat(['Kael', 'The Source', 'The Host', 'The White Oracle', 'The Jailer', 'The Collector', 'The Clone Army']).concat(allNeyons),
+      locations: ['The Panopticon', 'Thaloria', 'The City', 'Terminus']
     },
     stories: [
       {

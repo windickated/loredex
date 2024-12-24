@@ -9,7 +9,7 @@
     selectedCharacter,
     fullscreenPicture,
   } from "../stores/modal.ts";
-  import { timeSystem, timeNotes } from "../data/timeline.ts";
+  import { timeSystem, timeNotes, sagaSummary } from "../data/timeline.ts";
   import { getSeasonName } from "../stores/season.ts";
   import Story from "./Story.svelte";
 
@@ -70,6 +70,9 @@
     const target = event.target as HTMLImageElement;
     $fullscreenPicture = target.src;
   };
+
+  let showEpisodes: boolean = false;
+  let showSummary: boolean = false;
 </script>
 
 <svelte:window bind:innerWidth={width} />
@@ -447,39 +450,74 @@
           </section>
         </section>
       {/key}
-    {:else if $showModal === "timeline"}
       <!-- GENERAL TIMELINE SECTION -->
-      <section class="time-system">
-        <div class="timeline-stories">
-          {#each stories as storySection}
-            {#if storySection.season !== 99}
-              <h2 class={storySection.season == 99 ? "empty-note" : ""}>
-                {getSeasonName(storySection.season)}
-              </h2>
-              {#each storySection.episodes as episodeObject}
-                <Story {episodeObject} />
-              {/each}
-            {/if}
-          {/each}
+    {:else if $showModal === "timeline"}
+      <section class="dischordian-saga">
+        <h1 class="timeline-title">Comprehensive Timeline of the A.A. Era</h1>
+
+        <div class="month-system">
+          <p>{@html timeSystem.note}</p>
+          <ol>
+            {#each timeSystem.months as month}
+              <li>{@html month}</li>
+            {/each}
+          </ol>
         </div>
+
+        <section class="wrapper">
+          <button
+            class="opener"
+            style={showSummary
+              ? "border-bottom-right-radius: 0; border-bottom-left-radius: 0;"
+              : ""}
+            on:click={() => (showSummary = !showSummary)}
+            >{showSummary ? "Hide" : "Show"} Summary&nbsp;
+            <span
+              style={showSummary
+                ? "color: rgb(255, 60, 64); text-shadow: 0 0 0.25rem #010020;"
+                : ""}>(SPOILERS)</span
+            ></button
+          >
+          {#if showSummary}
+            <div class="timeline-container">
+              {@html sagaSummary}
+            </div>
+          {/if}
+        </section>
+
+        <section class="wrapper">
+          <button
+            class="opener"
+            style={showEpisodes
+              ? "border-bottom-right-radius: 0; border-bottom-left-radius: 0;"
+              : ""}
+            on:click={() => (showEpisodes = !showEpisodes)}
+            >{showEpisodes ? "Hide" : "Show"} Story Nodes</button
+          >
+          {#if showEpisodes}
+            <div class="timeline-container">
+              <div class="episodes">
+                {#each stories as storySection}
+                  {#if storySection.season !== 99}
+                    <h2 class={storySection.season == 99 ? "empty-note" : ""}>
+                      {getSeasonName(storySection.season)}
+                    </h2>
+                    {#each storySection.episodes as episodeObject}
+                      <Story {episodeObject} />
+                    {/each}
+                  {/if}
+                {/each}
+              </div>
+            </div>
+          {/if}
+        </section>
+
+        <article class="history">
+          <hr />
+          {@html timeNotes}
+          <hr />
+        </article>
       </section>
-
-      <h1 class="timeline-title">Comprehensive Timeline of the A.A. Era</h1>
-
-      <div class="month-system">
-        <p>{@html timeSystem.note}</p>
-        <ol>
-          {#each timeSystem.months as month}
-            <li>{@html month}</li>
-          {/each}
-        </ol>
-      </div>
-
-      <article class="history">
-        <hr />
-        {@html timeNotes}
-        <hr />
-      </article>
     {/if}
   </main>
 </dialog>
@@ -510,7 +548,6 @@
     text-align: center;
     font-size: 2.5vw;
     line-height: 2.5vw;
-    margin-bottom: 2vw;
     color: rgba(51, 226, 230, 0.75);
   }
 
@@ -940,46 +977,66 @@
     }
   }
 
-  .time-system {
-    width: 95%;
-    padding: 1vw;
-    background-color: rgba(51, 226, 230, 0.1);
-    border: 0.1vw solid rgba(51, 226, 230, 0.25);
-    border-radius: 1vw;
+  .dischordian-saga {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    gap: 0;
-    font-size: 1vw;
-    margin: 2vw auto;
+    gap: 2vw;
 
-    .timeline-stories {
+    .wrapper {
+      width: 100%;
       display: flex;
       flex-flow: column nowrap;
-      align-items: center;
       justify-content: center;
-      gap: 1vw;
+      align-items: center;
+    }
 
-      h2 {
-        text-align: center;
-        margin-bottom: 0.5vw;
+    .opener {
+      width: 95%;
+      transform: none !important;
+    }
+
+    .timeline-container {
+      width: 95%;
+      padding: 1vw;
+      background-color: rgba(51, 226, 230, 0.1);
+      border: 0.1vw solid rgba(51, 226, 230, 0.25);
+      border-bottom-right-radius: 1vw;
+      border-bottom-left-radius: 1vw;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+      font-size: 1vw;
+
+      .episodes {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+
+        h2 {
+          text-align: center;
+        }
       }
     }
-  }
 
-  .month-system {
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-  }
+    .month-system {
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .history {
-    padding-inline: 1vw;
-    color: #dedede;
-    font-size: 1vw;
+    .history {
+      padding-inline: 1vw;
+      color: #dedede;
+      font-size: 1vw;
+    }
   }
 
   dialog::backdrop {
@@ -1028,7 +1085,6 @@
     .timeline-title {
       font-size: 1.5em;
       line-height: 1.5em;
-      margin-bottom: 0.75em;
     }
 
     dialog::backdrop {
@@ -1257,20 +1313,31 @@
           }
         }
 
-        .time-system {
-          width: 100vw;
-          font-size: 1em;
-          line-height: 1.75em;
-          margin: 1em auto;
-          border-radius: 0;
-          border-left: none;
-          border-right: none;
-        }
+        .dischordian-saga {
+          gap: 1.5em;
 
-        .history,
-        .month-system {
-          padding-inline: 1em;
-          font-size: 1em;
+          .opener {
+            width: 100%;
+            border-radius: 0;
+            border-left: none;
+            border-right: none;
+            font-size: 1.25em;
+          }
+
+          .timeline-container {
+            width: 100vw;
+            font-size: 1em;
+            line-height: 1.75em;
+            border-radius: 0;
+            border-left: none;
+            border-right: none;
+          }
+
+          .history,
+          .month-system {
+            padding-inline: 1em;
+            font-size: 1em;
+          }
         }
       }
     }

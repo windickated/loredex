@@ -118,7 +118,7 @@
             {$selectedCharacter.name}
           </h1>
         {:else}
-          <h1>Comprehensive Timeline of the A.A. Era</h1>
+          <h1>The Dischordian Saga</h1>
         {/if}
       </div>
       <button class="close-button" on:click={closeDialog}>
@@ -464,6 +464,8 @@
         </div>
       </section>
 
+      <h1 class="timeline-title">Comprehensive Timeline of the A.A. Era</h1>
+
       <div class="month-system">
         <p>{@html timeSystem.note}</p>
         <ol>
@@ -502,6 +504,14 @@
       border-left: 0.05vw solid rgba(51, 226, 230, 0.5);
       border-right: 0.05vw solid rgba(51, 226, 230, 0.5);
     }
+  }
+
+  .timeline-title {
+    text-align: center;
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+    margin-bottom: 2vw;
+    color: rgba(51, 226, 230, 0.75);
   }
 
   dialog {
@@ -1013,6 +1023,12 @@
         height: auto;
         border: none;
       }
+    }
+
+    .timeline-title {
+      font-size: 1.5em;
+      line-height: 1.5em;
+      margin-bottom: 0.75em;
     }
 
     dialog::backdrop {

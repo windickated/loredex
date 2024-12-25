@@ -3567,7 +3567,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 99,
-        episodes: ['Awaken the Clone']
+        episodes: ['Awaken the Clone', 'The Last Christmas']
       },
       {
         season: 0,

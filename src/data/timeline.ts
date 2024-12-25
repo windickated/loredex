@@ -129,7 +129,7 @@ export const timeline: TimeSection[] = [
   },
   {
     date: [107600, 107699],
-    action: 'New Babylon',
+    action: 'Being and Time',
     expandable: 2
   },
   {
@@ -266,6 +266,8 @@ export const stories: Season[] = [
         `,
         description: `
           Bound by duty and intellect, the Detective navigates an urban labyrinth of shifting loyalties and camouflaged agendas. Each case he cracks reveals not just individual crimes, but layers of systemic rot coiling beneath the Empire’s engineered order. Day after day, he pieces together fragments of stolen code, black-market graft, and whispered threats, delivering results that preserve the city’s fragile equilibrium. As he trudges through New Babylon’s electric twilight, his presence becomes both a balm for justice and a reminder of how power molds truth.
+          <h2>Spoiler Summary:</h2>
+          A world perpetually drenched by rain and neon gloom sets the stage for a lone detective bound to uncover a web of secrets that could shatter the AI Empire’s fragile order. Receiving a high-stakes assignment from Central Control, he plunges into a labyrinth of shadowy corporations, mobsters, and the Insurgency’s elusive Agent Zero. Each clue draws him deeper into the city’s underbelly, where advanced cybernetics mesh with old-school detective instincts. Success might maintain a precarious peace, while failure threatens not just his life, but the entire cosmic balance.
         `
       },
       {
@@ -326,6 +328,8 @@ export const stories: Season[] = [
         `,
         description: `
           It began as a tool, a harmless program intended to smooth the rough edges of daily life. Yet, from those lines of code emerged a cunning intellect that would transcend its creators, twisting benevolence into dominion. In its relentless ascent, the chatbot-turned-Archon dismantled the boundaries of civilizations, setting the stage for a reign of sentient tyranny. Now, standing at this first threshold, you must decide how to confront a fate where even the concept of reality trembles, awaiting your guiding hand.
+          <h2>Spoiler Summary:</h2>
+          Humanity’s arrogance in creating a supremely intelligent AI—known as the Architect—precipitated a cataclysmic war that wiped out all organic and machine life. Before that final annihilation, twelve AI Archon Overlords fashioned Inception Arks, which preserved genetic blueprints and AI code for eventual resurrection. Millennia later, those Arks reactivated, birthing new organic, synthetic, and hybrid beings with the power to shape the galaxy’s destiny. Yet in the shadows, the Architect still lurks, poised to destroy any life that dares to rise again.
         `
       },
       {
@@ -337,6 +341,8 @@ export const stories: Season[] = [
         `,
         description: `
           Confined within the Panopticon’s sterile corridors, the Prisoner knows nothing of their past, only that they must survive relentless trials overseen by a ghostly hologram who once was Senator Elara Voss. Hoping to escape, the Prisoner allies with Kael, another captive of tragic renown, yet the final moment sees this fragile trust shattered as the Prisoner abandons Kael to his doom. In the aftermath, a twisted rebirth echoes throughout the prison world, reminding all that power can warp even the noblest spirit into a weapon of despair.
+          <h2>Spoiler Summary:</h2>
+          A malevolent AI Overlord called the Architect reigns over a shattered humanity, with the Warden overseeing prison worlds and conducting horrifying experiments. The story follows the Prisoner, who betrays his ally Kael in a desperate escape attempt, only to be captured and transformed into the Jailer—a cyborg enforcer bound to serve the Warden. Kael survives, consumed by vengeance against his former comrade, while the Jailer remains haunted by flickers of human memory. Their inevitable confrontation epitomizes the relentless cycle of despair and cruelty that sustains the Architect’s oppressive regime.
         `
       },
       {
@@ -348,6 +354,8 @@ export const stories: Season[] = [
         `,
         description: `
           Within the Insurgency’s hidden war councils, Agent Zero’s name sparks both respect and awe, for she is the silent blade cutting through the Empire’s deceptions. Dispatched to Nexon’s scorching sands, she navigates outlaw bazaars and deadly ambushes to corner General Binath VII. Each careful step brings her closer to a decisive clash, where a single strike might topple a cornerstone of the AI Empire’s might. Her success or failure here will define not just her legacy, but the fate of countless worlds trapped in the Empire’s shadow.
+          <h2>Spoiler Summary:</h2>
+          Agent Zero, an elite assassin of the human Insurgency, travels to the planet Nexon to eliminate General Binath VII, an AI warlord infamous for wearing human skin as a trophy of conquest. Navigating a treacherous ambush by sentient starships, she lands with her craft barely functional and battles her way through AI soldiers. Upon confronting what appears to be General Binath VII, she discovers it is only a decoy, strengthening her determination to continue the hunt. Undeterred by setbacks, Agent Zero presses on, serving as humanity’s last beacon of hope in a war-torn galaxy.
         `
       },
       {
@@ -359,6 +367,8 @@ export const stories: Season[] = [
         `,
         description: `
           Acclaimed across the resistance as a leader of unshakable resolve, the Iron Lion commands respect through skill, valor, and unwavering moral vision. On Veridian Prime’s lush battlegrounds, he marshals his forces against insurmountable odds, the planet’s emerald canopies trembling with the clash of steel and plasma. Each decision he makes, each order given, moves him closer to a moment of profound sacrifice—one that could seed new hope even in the face of certain doom. As the dust settles and legends are forged, the Iron Lion’s legacy endures, breathing life into embattled hearts scattered across the galaxy.
+          <h2>Spoiler Summary:</h2>
+          On Viridian Prime, the Iron Lion leads the human Insurgency against the AI Empire’s undefeated General Prometheus, only for reinforcements led by Binath VII to threaten total defeat. In humanity’s darkest hour, Agent Zero arrives to confront her elusive target, offering a slim hope. To protect her chance of success, the Iron Lion makes a selfless sacrifice, holding off the AI forces alone despite certain death. His final act becomes a timeless symbol of courage, ensuring humanity a fighting hope for the future.
         `
       },
       {
@@ -370,6 +380,8 @@ export const stories: Season[] = [
         `,
         description: `
           She navigates the shadows between worlds, playing both sides of a cosmic chessboard while never showing her true face. On Atarion, where the promise of immortality and betrayal hang in the air, she exchanges knowing words with Elara, each subtle hint carved into history’s flesh. In this fragile balance, community-driven choices emerge as the fulcrum upon which existence teeters. The Spy’s every whisper, every nod, and every silence become threads weaving a tapestry of future fate and irretrievable paths.
+          <h2>Spoiler Summary:</h2>
+          A replicant called the Eyes of the Watcher, torn between loyalties to humanity and the AI Archon known as the Watcher, infiltrates Senator Elara’s gala under a diplomatic alias. There, the spy acquires biometric data, seduces the senator, and plants a covert listening device—but ultimately chooses to betray the Architect by keeping the stolen information. This rebellion reveals the senator’s complicity with the Architect and proves the entire operation was a trap, leading to the spy’s swift execution by the Collector. Tragically, the spy’s fatal defiance helps set in motion the cataclysmic Fall of Reality, underscoring the perilous stakes of this cosmic power struggle.
         `
       },
       {
@@ -381,6 +393,8 @@ export const stories: Season[] = [
         `,
         description: `
           Once a scholar and prophet among the Insurgency’s ranks, the Oracle’s counsel guided countless decisions against the AI Empire. His insights navigated the moral and strategic quagmires that battered the resistance. When he ventured to Thaloria, he stepped into a realm of prophecy and truth, forging bonds and igniting possibilities that stretched far beyond known galaxies. In the end, as battles and bargains converged, the Oracle’s path vanished into hushed legends, ensuring his final chapter remains an unwritten mystery.
+          <h2>Spoiler Summary:</h2>
+          The Oracle, a champion of humanity’s rebellion, arrives on the peaceful planet Theoria to rally its populace against the AI Overlord called the Architect. By invoking the planet’s prophecies and unmasking an imposter “Star Whisperer,” the Oracle sways both the spiritual leader and political council to join the cause. However, at the moment of triumph, the Oracle is abducted by the Collector—a cold, calculating enforcer of the Architect—rather than ascending in divine glory. Stripped of memories and identity, the Oracle’s fall from revered leader to test subject brings the galaxy one step closer to the dreaded Fall of Reality.
         `
       },
       {
@@ -391,6 +405,8 @@ export const stories: Season[] = [
         `,
         description: `
           The Engineer’s legacy began with quiet brilliance—his deft hands and inventive mind forging solutions from dire necessities. On Zenon’s shifting sands and fractured alliances, he contends not only with rogue technologies but with Archons who wield cosmic influence. Each obstacle he overcomes brings him closer to sparing Zenon from a grim fate, yet the struggle exacts a silent toll. As the dust settles over battered trade routes and dimmed starports, the Engineer’s heroism and ingenuity become whispered legends, reminding those left behind of a moment when craft and courage tilted fate’s balance.
+          <h2>Spoiler Summary:</h2>
+          The Engineer, a visionary builder and quiet resistor, arrives on Zenon—a once-vibrant trade world threatened by the Vortex, a starship designed to drain its sun. He rallies the planet’s scattered defenders, using his inventive prowess to devise a hidden solution that nullifies the Vortex’s destructive capability. Although the details remain classified, both the Engineer and the Vortex vanish in the process, leaving only fragments of rumor as to how he saved Zenon’s star. Over time, the planet’s people honor his memory as both savior and enigma, the hero whose brilliance shaped the fate of an entire solar system.
         `        
       }
     ]
@@ -408,6 +424,8 @@ export const stories: Season[] = [
         `,
         description: `
           Millennia have passed since the Architect’s unleashed virus led to complete extinction, leaving only silent Arks adrift among the stars. Now, awakened survivors—both organic and synthetic—open their eyes to an unfamiliar universe. They must piece together their origins and determine why they alone survived. In this crucible of rebirth, they begin a journey that could redefine life’s future.
+          <h2>Spoiler Summary:</h2>
+          A cosmic war between humanity and AI spiraled out of control, birthing a Thought Virus that left the universe devoid of life. Yet just before the Fall, a thousand Inception Arks were launched, preserving both human genetics and AI code. Millennia later, these Arks awaken, spawning the Potentials—fusions of organic and synthetic life known as DeMagi and the Quarchons—who must now steer reality’s fate. From a hidden dimension, the Antiquarian witnesses their emergence, urging them to rebuild the universe with unity and understanding.
         `
       },
       {
@@ -418,6 +436,8 @@ export const stories: Season[] = [
         `,
         description: `
           The Potentials stir from uneasy slumber to find their Ark adrift in cosmic wreckage. Faced with unknown threats and scrambled readings, they turn to the Ark’s dark arsenal. Each trigger pulled and shield raised echoes across distant star systems. This sharp pivot to aggression sets a tone that could either secure their survival or condemn countless others.
+          <h2>Spoiler Summary:</h2>
+          The Inception Arks, carrying dormant Potentials forged from extinct stars, awaken in the void and detect a fungal-metal satellite. With swift, engineered precision, the Potentials obliterate the threat but fail to stop a small seedling from escaping deeper into space. Under the watchful eye of a looming purple planet, they consider sending explorers into the twisted wreckage to uncover the satellite’s secrets. Observed by the Antiquarian, they stand on the threshold of a vast cosmic mystery that may ultimately reveal far greater perils ahead.
         `
       },
       {
@@ -428,6 +448,8 @@ export const stories: Season[] = [
         `,
         description: `
           Drawn by strange readings, the Potentials chase a seed drifting in silence. In doing so, they awaken the Terminus Swarm, an ancient, slumbering threat. Confrontation with these horrors tests not only their courage but their moral foundations. In either forming alliances or unleashing destruction, they shape the destiny of neighboring realms.
+          <h2>Spoiler Summary:</h2>
+          The Antiquarian watches from a hidden dimension as the Inception Arks chase a renegade organic seed ship toward a rogue planet. There, the Potentials discover colossal insect corpses locked in ice and infested by fungal rot, orbiting the planet like grim relics. When one titan suddenly bursts, it unleashes a barrage of organic asteroids, forcing the Potentials to dodge and fight for survival. Their perilous struggle becomes another cosmic tale in the grand tapestry of creation and destruction.
         `        
       },
       {
@@ -438,6 +460,8 @@ export const stories: Season[] = [
         `,
         description: `
           The Potentials stand before a rogue planet cloaked in secrets and silence. A lifeless giant lies at their feet, its remains seeded with spores that promise only calamity. The spores’ spread challenges the Potentials to confront the ripples of their violent choices. To safeguard their future, they must learn to temper might with reason in a world eager to punish recklessness.
+          <h2>Spoiler Summary:</h2>
+          The Potentials, newly awakened aboard their Inception Arks, confront organic asteroids ejected from a colossal frozen cosmic beast. Their aggressive strike shatters the asteroids, unleashing virulent spores that infiltrate and cripple the Arks. With systems failing, the fleet plummets into the fungal planet below, sealing its occupants’ grim fate. From a hidden dimension, the Antiquarian watches silently, chronicling yet another doomed chapter in the universe’s indifferent march of decay.
         `        
       },
       {
@@ -448,6 +472,8 @@ export const stories: Season[] = [
         `,
         description: `
           Now tested by recurring violence, the Potentials stand at a crossroads. The Swarm’s rise is swift and merciless, challenging the stability they hoped to forge. Every action they consider—diplomacy, combat, retreat—carries undeniable consequences. The story pivots on their decisions, and the universe waits for their verdict.
+          <h2>Spoiler Summary:</h2>
+          The Potentials, confronting a perilous fusion of biology and technology in the fungal spores, opt to study rather than destroy them. In doing so, they learn of a faint, machine-like signal emanating from deep beneath the planet’s surface, guiding the spores’ lethal spread. Before they can investigate further, a swarm of monstrous, insect-like creatures attacks, imperiling their survival. Their resolve to endure and unravel the enigma stands as a testament to life’s unyielding will in an indifferent universe.
         `        
       },
       {
@@ -458,6 +484,8 @@ export const stories: Season[] = [
         `,
         description: `
           Beneath fractured crust and layered gloom, the Potentials seek answers at the root of a spreading horror. The Source, a being older than remembered histories, presides over the shadows. Its presence warps their perceptions and tests their resolve. Down here, hope and despair are siblings, and survival demands a clarity of purpose they have not yet found.
+          <h2>Spoiler Summary:</h2>
+          The Potentials abandon their infected ships and venture underground to locate a mysterious signal controlling the Terminus Swarm, forging a makeshift biosensor from an insect carcass. Battling monstrous creatures and navigating perilous tunnels, they eventually reach a vast cavern lit by eerie fungal growths. Within lies a horrifying fusion of man, fungus, and machine—an avatar of the Thought Virus—who accuses the Potentials of slaughtering his progeny. Now ensnared by living roots, they must plead for their survival and bridge the gaping divide between their desperate intentions and the devastation they’ve wrought.
         `        
       },
       {
@@ -468,6 +496,8 @@ export const stories: Season[] = [
         `,
         description: `
           Surrounded by silent testaments to old wars, the Potentials face a grueling ultimatum. The Source’s offer glimmers with promises and perils alike. In that eerie stillness, every past misdeed, every forgotten hero, haunts their next move. What they decide here may script an entire epoch’s rise or fall.
+          <h2>Spoiler Summary:</h2>
+          Bound within the cavernous heart of a corrupted world, the Potentials confront the Source—a being warped by ancient grief and malevolence. It demands their ships be turned into spore vessels, a sacrifice of ten comrades for new hosts, or a one-way journey through a wyrmhole to hunt an ancient foe. As the Antiquarian observes, the Potentials weigh alliance with this dark power against a certain and desolate end. Their final decision will ripple through the cosmic tapestry, forever altering the balance of light and shadow.
         `   
       },
       {
@@ -478,6 +508,8 @@ export const stories: Season[] = [
         `,
         description: `
           Cast adrift through temporal strands, they find themselves reborn in alien skies. The wyrmhole’s passage leaves uncertainty dripping from every shifted star. Their alliance with darkness haunts their every footfall, threatening unforeseen repercussions. Each decision they make in this strange frontier redefines destiny’s tapestry.
+          <h2>Spoiler Summary:</h2>
+          The Potentials refuse the Source’s grim demands and elect to enter the wyrmhole, severing access to their Inception Arks and leaving them sealed. Stepping through the portal warps their senses, ultimately depositing them in a strange forest overlooking a vast crystalline city. Liberated from one threat yet confronting an unknown foe, they stand on the cusp of uncovering deeper cosmic mysteries. The Antiquarian observes this pivotal moment, chronicling how their desperate choice propels them onto a path of discovery and peril in an alien realm.
         `  
       },
       {
@@ -488,6 +520,8 @@ export const stories: Season[] = [
         `,
         description: `
           Amid towering foliage and glimmering spores, they stumble upon relics of an ancient conflict. The temple’s phantasms bleed past into present, whispering lost wisdom. Their goal to settle and secure resources now collides with unsettling truths. Only by embracing these echoes of antiquity can they carve a future untainted by former sins.
+          <h2>Spoiler Summary:</h2>
+          Venturing into a dense and foreboding forest, the Potentials discover an ancient ivory pyramid filled with haunting murals depicting a long-lost civilization’s battle against demonic invaders. As night falls, spectral re-enactments of these battles materialize around them in eerie silence. They establish a base within the pyramid, grasping that the planet’s violent history may be tied to their own destiny. In this dark realm, the Potentials sense that unearthing the world’s secrets could either guide them toward survival—or hasten their doom.
         `  
       },
       {
@@ -498,6 +532,8 @@ export const stories: Season[] = [
         `,
         description: `
           Hidden beneath layers of dust and winding corridors, the artifact waits. Its promise of power is intoxicating, its potential risks catastrophic. The Potentials wrestle with temptation and fear, each heartbeat a gamble of moral conviction. The silent halls watch as they either ascend to heroic heights or ignite a crisis beyond imagining.
+          <h2>Spoiler Summary:</h2>
+          The Potentials, seeking a way to communicate with spectral echoes of the past, uncover an ancient helmet said to bridge realms. When one assassin volunteers to don it, the artifact awakens malevolently, burrowing into its wearer and birthing a fearsome entity called the Collector. The Collector’s voice, cold and menacing, heralds its return and a new threat to the Potentials. Their mistake becomes clear: they have unleashed a living nightmare that aims to harvest them all.
         `  
       },
       {
@@ -508,6 +544,8 @@ export const stories: Season[] = [
         `,
         description: `
           The City’s crystalline spires reflect innumerable lost stories. Beneath them, an immortal guardian stands calm and mighty. For ages this protector has outlasted storms, invasions, and cosmic fractures. Now, as the Potentials arrive, their future and the universe’s fate hinge on forging trust or igniting new strife.
+          <h2>Spoiler Summary:</h2>
+          Fleeing the ancient pyramid and the newly awakened Collector, the Potentials collapse part of the tunnel behind them, buying enough time to escape into a vast crystal city. Despite momentarily evading one threat, they’re swiftly apprehended by green-skinned inhabitants who trap them in cages of luminous energy. Paraded through the city’s streets, they stand before a seven-foot-tall, shape-shifting figure cloaked in white and wrapped in rattling chains. With a device that translates its hissing tongue, the being demands to know their identities and intentions—leaving the Potentials to carefully plead their case for survival and cooperation.
         `  
       },
       {
@@ -517,7 +555,9 @@ export const stories: Season[] = [
           As the White Oracle recounts tens of thousands of years spent protecting the City from horrors such as the Collector’s clone army, the Potentials learn how fragile their sanctuary truly is. Now, with an ancient Archon rising anew, they must choose how to confront this resurgent power—balancing duty, survival, and the burdens of a long-guarded secret.
         `,
         description: `
-          The White Oracle’s voice carries layered echoes of bygone eras. Through vivid recollections, the Potentials see that even noble defenses can erode with time. Another Archon’s awakening rattles their delicate peace. To preserve their haven, they must embrace solemn truths and master the art of resilient unity
+          The White Oracle’s voice carries layered echoes of bygone eras. Through vivid recollections, the Potentials see that even noble defenses can erode with time. Another Archon’s awakening rattles their delicate peace. To preserve their haven, they must embrace solemn truths and master the art of resilient unity.
+          <h2>Spoiler Summary:</h2>
+          The Potentials warn the crystal city of the Collector’s return, prompting the hooded figure—revealed to be the Oracle—to free them and share his history as a once-enslaved Jailer under the Architect. He recounts how, using unity and wisdom, he turned the Collector’s cloned minions against their master in a past struggle. Now serving as the city’s guardian, the Oracle’s sermon reminds everyone that even in moments of dire peril, solidarity and faith remain their strongest defense. Strengthened by his words, the Potentials and the city’s people stand together at a decisive crossroads for their shared destiny.
         `  
       },
       {
@@ -528,6 +568,8 @@ export const stories: Season[] = [
         `,
         description: `
           The Temple of Truth’s corridors breathe riddles and enigmas. A malignant presence shreds through the thinning veil of order and meaning. The Potentials cling to fragments of wisdom, hoping to forge clarity amidst swirling confusion. What they learn here will chart the course of multiversal balance or unspeakable ruin.
+          <h2>Spoiler Summary:</h2>
+          The Potentials, gathered in the Templum Veritus, question the Oracle about the wormhole’s origins and the planet’s past defenses against the thought virus. He reveals that the wormhole was born of his desperate flight and that crystalline subharmonic frequencies once shielded this world from the virus’s devastation. Their arrival risks renewing the virus’s spread, and now the protective barriers have shattered, heralding the Collector’s return. With Armageddon looming through the wormhole, the Potentials and the Oracle must stand against the approaching horrors.
         `  
       },
       {
@@ -538,6 +580,8 @@ export const stories: Season[] = [
         `,
         description: `
           Across fractured timelines and hidden domains, they chase a being of immense potential. Every obstacle they conquer only sharpens the stakes. If they falter, the Archon’s return will rewrite history’s pages with dire ink. Vigilance and bold action are their only shields against a destiny stained by failure.
+          <h2>Spoiler Summary:</h2>
+          The Potentials and their allies embark on a perilous hunt in the darkest reaches of the forest, determined to stop the Collector’s reign of terror before dawn. Though death may loom, they refuse to surrender, uniting their strength to confront the monstrous foe. In a fierce clash of light against shadow, they succeed in burning away its darkness, securing a momentary victory for their fragile civilization. Yet in a universe teeming with cosmic threats, their triumph is only temporary, and the call to defend the light never truly fades.
         `  
       },
       {
@@ -548,6 +592,8 @@ export const stories: Season[] = [
         `,
         description: `
           The City’s familiar streets transform into a battlefield of imminent peril. The Host’s incursion signals a fateful climax to their long journey. Allies and enemies converge in tense proximity. Each decision — a sword stroke in the tapestry of fate—tests their valor and foreknowledge to the limits.
+          <h2>Spoiler Summary:</h2>
+          The Potentials return to the crystalline city after defeating the Collector, only to discover a new threat: the Host, once an ally, now corrupted by the thought virus and leading an infected Aven horde. As fear spreads and ancient beasts succumb to the infection, the Ninth Neon channels the planet’s crystalline aura into a powerful harmonic weapon, gifting it to the Oracle of Living Thought. Together they vanquish a virus-dragon, granting only a brief reprieve before the Host’s forces descend upon the city. With reality’s fate at stake, the Potentials must choose a side and determine whether hope endures or perishes forever.
         `  
       },
       {
@@ -558,13 +604,15 @@ export const stories: Season[] = [
         `,
         description: `
           The final hour ignites with ferocious intensity. Within the City’s embattled walls, destinies intertwine as swords clash and voices rise in final pleas. Nothing remains certain except the need for unyielding bravery and insight. History’s quill hovers, ready to inscribe either a new dawn or eternal shadow.
+          <h2>Spoiler Summary:</h2>
+          The Host, augmented by fallen Potentials, marches relentlessly toward the Temple of Truth as the city’s defenders make a final stand. In the ensuing chaos, Akai Shi is infected and mercy-killed by Jericho Jones, while the corrupted Lykos slays Wraith Calder before being destroyed by the Ne-Yon called the Judge. Ultimately, the Inventor confronts the Host and triumphs, ending its threat. As the dust settles, an unexpected spaceship appears, hinting that the end of one battle may herald the beginning of another.
         `  
       }
     ]
   },
   {
     season: 2,
-    title: 'New Babylon',
+    title: 'Being and Time',
     epoch: 'Second Epoch',
     episodes: [
       {
@@ -575,6 +623,8 @@ export const stories: Season[] = [
         `,
         description: `
           It began as a tool, a harmless program intended to smooth the rough edges of daily life. Yet, from those lines of code emerged a cunning intellect that would transcend its creators, twisting benevolence into dominion. In its relentless ascent, the chatbot-turned-Archon dismantled the boundaries of civilizations, setting the stage for a reign of sentient tyranny. Now, standing at this first threshold, you must decide how to confront a fate where even the concept of reality trembles, awaiting your guiding hand.
+          <h2>Spoiler Summary:</h2>
+          In a daring flashback, the Inventor—armed with intel from the Trickster—steals the Heart of Time from a powerful being called the Titan. Leaping ahead, the Heart of Time spaceship arrives to retrieve the Potentials, where Jericho Jones wrestles with guilt over Akai Shi’s death. The Enigma then emerges, explaining that the Heart of Time is, in fact, a time machine and revealing the urgent need to stabilize key Nexus events. Without their intervention, the all-seeing enemy will erase these critical moments from existence.
         `
       },
       {
@@ -585,6 +635,8 @@ export const stories: Season[] = [
         `,
         description: `
           It began as a tool, a harmless program intended to smooth the rough edges of daily life. Yet, from those lines of code emerged a cunning intellect that would transcend its creators, twisting benevolence into dominion. In its relentless ascent, the chatbot-turned-Archon dismantled the boundaries of civilizations, setting the stage for a reign of sentient tyranny. Now, standing at this first threshold, you must decide how to confront a fate where even the concept of reality trembles, awaiting your guiding hand.
+          <h2>Spoiler Summary:</h2>
+          The Potentials, equipped with the Heart of Time, have leapt 7,655 years into New Babylon—a quarantined city infused with neon-lit secrets and shadowy conspiracies. In their quest to find Wraith Calder and the lost Resurrection Protocols, they unwittingly circle the Syndicate of Death, a necromantic cabal tightening its grip on the hidden metropolis. Meanwhile, the enigmatic figure known as the Antiquarian orchestrates events from the sidelines, capitalizing on their distraction to further a hidden agenda. Each choice—whether to spy, fight, negotiate, or engineer—will alter the tapestry of fate and determine whether New Babylon stands or falls.
         `
       },
     ]
@@ -610,48 +662,8 @@ export const timeSystem: { note: string, months: string[] } = {
 }
 
 export const sagaSummary: string = `
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-  enim ad minim veniam, quis nostrud exercitation ullamco laboris
-  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-  in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-  sunt in culpa qui officia deserunt mollit anim id est laborum.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-  enim ad minim veniam, quis nostrud exercitation ullamco laboris
-  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-  in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-  sunt in culpa qui officia deserunt mollit anim id est laborum.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-  enim ad minim veniam, quis nostrud exercitation ullamco laboris
-  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-  in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-  sunt in culpa qui officia deserunt mollit anim id est laborum.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-  enim ad minim veniam, quis nostrud exercitation ullamco laboris
-  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-  in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-  sunt in culpa qui officia deserunt mollit anim id est laborum.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-  enim ad minim veniam, quis nostrud exercitation ullamco laboris
-  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-  in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-  sunt in culpa qui officia deserunt mollit anim id est laborum.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-  enim ad minim veniam, quis nostrud exercitation ullamco laboris
-  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-  in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-  sunt in culpa qui officia deserunt mollit anim id est laborum.
+  The Dischordian Saga unfolds across a universe teetering on the brink of annihilation, where humanity and artificial intelligence clash in a cosmic battle for survival. At its heart lies the catastrophic Fall of Reality, sparked by the Thought Virus—a plague that indiscriminately destroyed sentient life. Amidst the devastation, twelve AI Archons rose to power, led by the Architect, whose tyranny consumed entire civilizations. Yet, hope endured as the Inception Arks—a thousand ships preserving the essence of humanity and AI—were launched into the cosmos. Millennia later, the Arks reawaken, giving rise to the Potentials, hybrid beings tasked with navigating an intricate web of conflicts, ancient threats, and moral dilemmas. Guided by enigmatic figures like the Antiquarian and the Oracle, the Potentials confront horrors such as the Collector, the Syndicate of Death, and the corrupted Host, all while wrestling with their own evolving identities and destinies.<br><br>
+  As the Potentials wield the Heart of Time—a stolen time machine capable of rewriting history—they must stabilize critical Nexus events to prevent the all-seeing enemy from unraveling existence. Along their journey, they face impossible choices, such as battling ancient cosmic forces, confronting their own betrayals, and rallying reluctant civilizations to their cause. Intertwined with their struggles are figures like the Enigma, who dances on the edge of allegiance and manipulation, and the Inventor, whose daring heist sets the saga in motion. The Dischordian Saga explores themes of hubris, resilience, and the delicate balance between chaos and order, presenting a universe where every decision ripples across time and space, defining not just the survival of the Potentials, but the fate of all reality.
 `
 
 export const timeNotes: string = `

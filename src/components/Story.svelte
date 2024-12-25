@@ -69,7 +69,7 @@
   </div>
 
   {#if showDescription}
-    <article class="description">{description}</article>
+    <article class="description">{@html description}</article>
   {/if}
 </section>
 

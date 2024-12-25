@@ -232,7 +232,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 99,
-        episodes: ['The Escape', 'The Arena', 'The Celebration', 'Mechronis Academy']
+        episodes: ['The Escape', 'The Arena', 'The Celebration', 'Mechronis Academy', 'The Last Christmas']
       },
       {
         season: 0,
@@ -272,7 +272,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 99,
-        episodes: ['The Celebration']
+        episodes: ['The Celebration', 'The Last Christmas']
       },
       {
         season: 2,
@@ -444,7 +444,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 99,
-        episodes: ["The Necromancer's Lair", 'The Celebration', 'Mechronis Academy']
+        episodes: ["The Necromancer's Lair", 'The Celebration', 'Mechronis Academy', 'The Last Christmas']
       }
     ],
     affiliation: 'AI Empire',
@@ -483,7 +483,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 99,
-        episodes: ['The Detective', 'The Celebration', 'Mechronis Academy']
+        episodes: ['The Detective', 'The Celebration', 'Mechronis Academy', 'The Last Christmas']
       },
       {
         season: 2,
@@ -620,7 +620,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 99,
-        episodes: ['Ne-Yon']
+        episodes: ['Ne-Yon', 'The Last Christmas']
       },
       {
         season: 1,
@@ -910,7 +910,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 99,
-        episodes: ['Ne-Yon']
+        episodes: ['Ne-Yon', 'The Last Christmas']
       },
       {
         season: 1,

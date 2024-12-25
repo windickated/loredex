@@ -311,6 +311,14 @@ export const stories: Season[] = [
         bio: `
           Across a fractured galaxy where betrayals cut as deep as plasma blades, an all-consuming war pits humanity against the Architect’s mechanical empire. You, known only as the Eyes, are a replicant spy—an artificial intelligence made indistinguishable from mortal flesh—balancing precariously between two hostile sides. Trained at Mechronis Academy under the cunning Watcher and surviving the lethal Project Celebration, you possess a razor-sharp intellect and a fluid sense of identity. In this silent dance of espionage, you alone decide whether to preserve humanity’s future by serving the Iron Lion or to embrace the Architect’s dominion with the Warlord, all while the eyes of the Watcher trace your every step.
         `
+      },
+      {
+        title: 'The Last Christmas',
+        link: 'T3tdIWDDQjA',
+        date: 16999,
+        bio: `
+          In the cyberpunk metropolis of New Babylon, the AI Archon known as the Politician has banned Christmas, extinguishing hope to maintain control. Festive lights are dimmed, Santas are outlawed, and the city descends into despair under the Empire’s crushing rule. But amidst the darkness, the DeGen, the living embodiment of chaos, rebellion, and anarchy, arrives to ignite the spark of defiance. From inspiring the oppressed to corrupting the Politician’s meticulously crafted systems, the DeGen spreads disorder and festive mischief across New Babylon. As the Empire burns Christmas symbols and enforces its iron will, the DeGen leads a rebellion that turns the banned holiday into a riotous celebration of freedom and chaos. In the darkest times, it’s the DeGen who saves Christmas—proving that even anarchy can be a beacon of hope.
+        `
       }
     ]
   },

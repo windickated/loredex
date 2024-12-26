@@ -62,8 +62,19 @@
             alt="Description"
             style={showDescription ? "transform: rotate(180deg);" : ""}
           />
-          {showDescription ? "Hide" : "Show"} Summary (SPOILERS)
-          <img src="/warning-neon.png" alt="Warning!" />
+          {showDescription ? "Hide" : "Show"} Summary
+          <span
+            style={showDescription
+              ? "color: rgb(255, 60, 64); text-shadow: 0 0 0.25rem #010020;"
+              : ""}>(SPOILERS)</span
+          >
+          <img
+            src={showDescription ? "/warning.png" : "/warning-neon.png"}
+            alt="Warning!"
+            style={showDescription
+              ? "filter: drop-shadow(0 0 0.25rem #010020)"
+              : ""}
+          />
         </button>
       {/if}
     </article>

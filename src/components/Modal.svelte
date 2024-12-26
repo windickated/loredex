@@ -472,11 +472,10 @@
               : ""}
             on:click={() => (showSummary = !showSummary)}
             >{showSummary ? "Hide" : "Show"} Summary&nbsp;
-            <span
-              style={showSummary
-                ? "color: rgb(255, 60, 64); text-shadow: 0 0 0.25rem #010020;"
-                : ""}>(SPOILERS)</span
-            ></button
+            <span>(SPOILERS)</span><img
+              src="/warning.png"
+              alt="Warning!"
+            /></button
           >
           {#if showSummary}
             <div class="timeline-container">
@@ -995,6 +994,16 @@
     .opener {
       width: 95%;
       transform: none !important;
+
+      span {
+        color: rgb(255, 60, 64);
+        text-shadow: 0 0 0.25rem #010020;
+      }
+
+      img {
+        height: 1.5vw;
+        filter: drop-shadow(0 0 0.25rem #010020);
+      }
     }
 
     .timeline-container {
@@ -1322,6 +1331,11 @@
             border-left: none;
             border-right: none;
             font-size: 1.25em;
+            gap: 0.5em;
+
+            img {
+              height: 1em;
+            }
           }
 
           .timeline-container {

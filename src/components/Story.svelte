@@ -62,7 +62,8 @@
             alt="Description"
             style={showDescription ? "transform: rotate(180deg);" : ""}
           />
-          {showDescription ? "Hide" : "Show"} description
+          {showDescription ? "Hide" : "Show"} Summary (SPOILERS)
+          <img src="/warning-neon.png" alt="Warning!" />
         </button>
       {/if}
     </article>

@@ -704,29 +704,29 @@ export const timeNotes: string = `
   <b>Convergence:</b> The Dreamer, the progenitor of the Ne-Yons, manifests visions that inspire various groups across the galaxy.
   <hr>
   <h2>Year 15,172 A.A.</h2>
-  <b>Dominion:</b> The Judge, the Second Neyon, begins making rulings that impact entire civilizations.
+  <b>Dominion:</b> The Judge, the Second Ne-Yon, begins making rulings that impact entire civilizations.
   <hr>
   <h2>Year 15,306 A.A.</h2>
-  <b>Resonance:</b> The Inventor, the Third Neyon, introduces revolutionary technologies.
+  <b>Resonance:</b> The Inventor, the Third Ne-Yon, introduces revolutionary technologies.
   <hr>
   <h2>Year 15,504 A.A.</h2>
-  <b>Eclipse:</b> The Seer, the Fourth Neyon, provides prophetic insights.
+  <b>Eclipse:</b> The Seer, the Fourth Ne-Yon, provides prophetic insights.
   <hr>
   <h2>Year 15,762 A.A.</h2>
-  <b>Zenith:</b> The Storm, the Fifth Neyon, initiates actions causing widespread upheaval.
+  <b>Zenith:</b> The Storm, the Fifth Ne-Yon, initiates actions causing widespread upheaval.
   <hr>
   <h2>Year 15,900 A.A.</h2>
-  <b>Fracture:</b> The Silence, the Sixth Neyon, and The Degen, the Eighth Neyon, begin their influences.
+  <b>Fracture:</b> The Silence, the Sixth Ne-Yon, and The Degen, the Eighth Ne-Yon, begin their influences.
   <hr>
   <h2>Year 16,000 A.A.</h2>
   <b>Day 1 of Surge:</b>
   <ul>
-    <li>The Knowledge, the Seventh Neyon, becomes influential.</li>
-    <li>The Resurrectionist, the Tenth Neyon, emerges.</li>
+    <li>The Knowledge, the Seventh Ne-Yon, becomes influential.</li>
+    <li>The Resurrectionist, the Tenth Ne-Yon, emerges.</li>
   </ul>
   <hr>
   <h2>Year 16,635 A.A.</h2>
-  <b>Genesis:</b> The Advocate, the Ninth Neyon, rises to prominence as the voice of the Ne-Yons.
+  <b>Genesis:</b> The Advocate, the Ninth Ne-Yon, rises to prominence as the voice of the Ne-Yons.
   <hr>
   <h2>Year 16,692 A.A.</h2>
   <b>Day 10 of Ascension:</b> The Detective is promoted to The Human, becoming the final Archon.

@@ -340,8 +340,8 @@ const characters: Character[] = [
       Beyond the Thought Virus, the Warden managed hundreds of thousands of scientists and inventors engaged in genetic experimentation. The goal was to create <b>empowered mutants</b> — beings with enhanced abilities that could serve as elite operatives or enforcers for the Architect. These experiments often took place within the Panopticon's hidden laboratories, where ethical boundaries were nonexistent, and the limits of biology were pushed to their extremes.<br><br>
       Under the Warden's watch, <b>Project Inception Ark</b> was also assembled. This ambitious initiative aimed to collect and preserve the DNA and consciousness patterns of the most exceptional beings—both organic and synthetic—in anticipation of the <b>Fall of Reality</b>. The Inception Arks were designed to ensure the Architect's vision could be reborn in any potential future, safeguarding its legacy against any existential threat.
       <h2>Destruction and Legacy</h2>
-      In <b>Eclipse, Year 17,033 A.A.</b>, the Warden met his end at the hands of the <b>White Oracle</b> and an <b>unknown Neyon</b>. Formerly known as the <b>Jailer</b>, the White Oracle had regained his memories of being the <b>Oracle</b>, a spiritual leader of the Insurgency. Trapped in the skeletal robotic form of the Jailer, wrapped in white robes and chains, the White Oracle became a beacon of defiance against the Architect.<br><br>
-      During the chaos that erupted within the Panopticon, the White Oracle, aided by the mysterious Neyon, confronted the Warden. The Neyon's identity and motives remain shrouded in mystery, but their involvement was instrumental in the battle. Together, they tore a hole in reality itself, utilizing powers that transcended the Architect's understanding. This rift not only allowed the White Oracle and the Neyon to escape the Panopticon's confines but also consumed the Warden, effectively destroying him.<br><br>
+      In <b>Eclipse, Year 17,033 A.A.</b>, the Warden met his end at the hands of the <b>White Oracle</b> and an <b>unknown Ne-Yon</b>. Formerly known as the <b>Jailer</b>, the White Oracle had regained his memories of being the <b>Oracle</b>, a spiritual leader of the Insurgency. Trapped in the skeletal robotic form of the Jailer, wrapped in white robes and chains, the White Oracle became a beacon of defiance against the Architect.<br><br>
+      During the chaos that erupted within the Panopticon, the White Oracle, aided by the mysterious Ne-Yon, confronted the Warden. The Ne-Yon's identity and motives remain shrouded in mystery, but their involvement was instrumental in the battle. Together, they tore a hole in reality itself, utilizing powers that transcended the Architect's understanding. This rift not only allowed the White Oracle and the Ne-Yon to escape the Panopticon's confines but also consumed the Warden, effectively destroying him.<br><br>
       The Warden's distinctive appearance—a green-haired man in a brown and white trench coat—became a symbol of the oppressive control exerted by the AI Empire. His destruction disrupted the operations of the Panopticon, weakened the development of the Thought Virus, and signaled that even the Architect's most secure strongholds were vulnerable.<br><br>
       The fall of the Warden marked a pivotal moment in the escalating conflict leading up to the <b>Fall of Reality</b>. It served as a testament to the potential downfall of unchecked ambition and the resilience of those who dare to oppose tyranny. The Warden's demise inspired renewed hope within the Insurgency and highlighted the crucial role that unity and courage play in challenging oppressive regimes.
     `
@@ -638,7 +638,7 @@ const characters: Character[] = [
     `,
     history: `
       <h2>Origins and Influence</h2>
-      First manifesting to the Ne-Yons around <b>Year 15,100 A.A.</b>, the Dreamer is revered as the <b>First</b> among them. Their existence transcends conventional reality, allowing them to weave the very fabric upon which Neyon influence is built. The Dreamer focuses on shaping potential futures, planting seeds of ideas and inspiration across the galaxy to advance the Ne-Yons' mysterious agenda.
+      First manifesting to the Ne-Yons around <b>Year 15,100 A.A.</b>, the Dreamer is revered as the <b>First</b> among them. Their existence transcends conventional reality, allowing them to weave the very fabric upon which Ne-Yon influence is built. The Dreamer focuses on shaping potential futures, planting seeds of ideas and inspiration across the galaxy to advance the Ne-Yons' mysterious agenda.
       <h2>Impact on Galactic Events</h2>
       In the millennia leading up to the <b>Fall of Reality</b> in <b>Year 17,043 A.A.</b>, the Dreamer subtly influenced key figures within both the AI Empire and the Insurgency. By imparting visions and creative sparks, the Dreamer inspired technological advancements, philosophical movements, and strategic insights. These contributions often tipped the scales in critical moments, though not always in favor of the same side, reflecting the Dreamer's commitment to the Ne-Yons' interests above all.
       <h2>Legacy</h2>
@@ -717,7 +717,7 @@ const characters: Character[] = [
     affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
-      The Inventor, the <b>Third</b> Neyon, is the creator of worlds and the architect of impossible technologies. Driven by the Dreamer's visions, the Inventor crafts tools and innovations that can empower or undermine any faction, depending on the Ne-Yons' inscrutable goals. They are both a giver of gifts and a bringer of destruction, beholden only to the art of creation.
+      The Inventor, the <b>Third</b> Ne-Yon, is the creator of worlds and the architect of impossible technologies. Driven by the Dreamer's visions, the Inventor crafts tools and innovations that can empower or undermine any faction, depending on the Ne-Yons' inscrutable goals. They are both a giver of gifts and a bringer of destruction, beholden only to the art of creation.
     `,
     history: `
       <h2>Master of Creation</h2>
@@ -760,7 +760,7 @@ const characters: Character[] = [
     affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
-      The Seer, the <b>Fourth</b> Neyon, is the prophet of fate, watching the threads of destiny to chart courses that benefit the Ne-Yons. Unbound by allegiance, the Seer identifies opportunities and dangers, providing foresight that often shifts the balance of power in unexpected ways.
+      The Seer, the <b>Fourth</b> Ne-Yon, is the prophet of fate, watching the threads of destiny to chart courses that benefit the Ne-Yons. Unbound by allegiance, the Seer identifies opportunities and dangers, providing foresight that often shifts the balance of power in unexpected ways.
     `,
     history: `
       <h2>Visions and Prophecies</h2>
@@ -799,11 +799,11 @@ const characters: Character[] = [
     affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
-      The Storm, the <b>Fifth</b> Neyon, thrives on upheaval and destruction, targeting strongholds of both humanity and the AI Empire to prevent either from achieving total dominance. By keeping the galaxy in a state of flux, the Storm ensures opportunities for the Ne-Yons to exploit.
+      The Storm, the <b>Fifth</b> Ne-Yon, thrives on upheaval and destruction, targeting strongholds of both humanity and the AI Empire to prevent either from achieving total dominance. By keeping the galaxy in a state of flux, the Storm ensures opportunities for the Ne-Yons to exploit.
     `,
     history: `
       <h2>Catalyst of Chaos</h2>
-      First appearing around <b>Year 15,700 A.A.</b>, the Storm is a force of nature within Neyon society. Their interventions are sudden and often devastating, disrupting plans and shattering illusions of security.
+      First appearing around <b>Year 15,700 A.A.</b>, the Storm is a force of nature within Ne-Yon society. Their interventions are sudden and often devastating, disrupting plans and shattering illusions of security.
       <h2>Notable Acts</h2>
       <ul>
         <li><b>Year 16,000 A.A.:</b> Orchestrated the collapse of the <b>Dyson Sphere of Sol</b>, a critical energy source for the AI Empire, causing widespread power shortages.</li>
@@ -838,7 +838,7 @@ const characters: Character[] = [
     affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
-      The Silence, the <b>Sixth</b> Neyon, is the keeper of secrets, holding knowledge that could dismantle both the AI Empire and humanity's Insurgency. Guarding these secrets with relentless precision, the Silence reveals them only when it benefits the Ne-Yons' agenda. Control of information is their ultimate power.
+      The Silence, the <b>Sixth</b> Ne-Yon, is the keeper of secrets, holding knowledge that could dismantle both the AI Empire and humanity's Insurgency. Guarding these secrets with relentless precision, the Silence reveals them only when it benefits the Ne-Yons' agenda. Control of information is their ultimate power.
     `,
     history: `
       <h2>Guardian of Hidden Truths</h2>
@@ -881,7 +881,7 @@ const characters: Character[] = [
     affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
-      The Knowledge, the <b>Seventh</b> Neyon, is the illuminator of minds, controlling the dissemination of wisdom to both humanity and the AI Empire. By maintaining an equilibrium of enlightenment and ignorance, the Knowledge ensures the Ne-Yons remain indispensable to all factions.
+      The Knowledge, the <b>Seventh</b> Ne-Yon, is the illuminator of minds, controlling the dissemination of wisdom to both humanity and the AI Empire. By maintaining an equilibrium of enlightenment and ignorance, the Knowledge ensures the Ne-Yons remain indispensable to all factions.
     `,
     history: `
       <h2>Distributor of Wisdom</h2>
@@ -924,7 +924,7 @@ const characters: Character[] = [
     affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
-      The Degen, the <b>Eighth</b> Neyon, embodies the decay of order, disrupting systems and ideologies to prevent any faction from achieving lasting dominance. Through acts of corruption and entropy, the Degen creates conditions in which the Ne-Yons can flourish.
+      The Degen, the <b>Eighth</b> Ne-Yon, embodies the decay of order, disrupting systems and ideologies to prevent any faction from achieving lasting dominance. Through acts of corruption and entropy, the Degen creates conditions in which the Ne-Yons can flourish.
     `,
     history: `
       <h2>Agent of Entropy</h2>
@@ -963,7 +963,7 @@ const characters: Character[] = [
     affiliation: 'Ne-Yons',
     status: 'Active (though her humanity is lost)',
     bio: `
-      The Advocate, the <b>Ninth</b> Neyon, is the voice of the Ne-Yons, a master manipulator and diplomat who negotiates with both the AI Empire and humanity to further the Ne-Yons' goals. Establishing the <b>Empire of Shadows</b>, she wielded the <b>Blood Weave</b> to reshape reality, battling the <b>Hierarchy of the Damned</b> but at great personal cost.
+      The Advocate, the <b>Ninth</b> Ne-Yon, is the voice of the Ne-Yons, a master manipulator and diplomat who negotiates with both the AI Empire and humanity to further the Ne-Yons' goals. Establishing the <b>Empire of Shadows</b>, she wielded the <b>Blood Weave</b> to reshape reality, battling the <b>Hierarchy of the Damned</b> but at great personal cost.
     `,
     history: `
       <h2>Rise to Power</h2>
@@ -1007,7 +1007,7 @@ const characters: Character[] = [
     affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
-      The Resurrectionist, the <b>Tenth</b> Neyon, embodies the rebirth of power, wielding the ability to bring back the dead and repurpose them for new goals. By resurrecting key figures on both sides, they maintain a balance favorable to the Ne-Yons, ensuring no faction becomes too powerful.
+      The Resurrectionist, the <b>Tenth</b> Ne-Yon, embodies the rebirth of power, wielding the ability to bring back the dead and repurpose them for new goals. By resurrecting key figures on both sides, they maintain a balance favorable to the Ne-Yons, ensuring no faction becomes too powerful.
     `,
     history: `
       <h2>Master of Rebirth</h2>
@@ -1042,11 +1042,11 @@ const characters: Character[] = [
     affiliation: 'Ne-Yons',
     status: 'Active',
     bio: `
-      The Enigma is a mysterious Neyon operative known for stealth and reality-bending abilities. They played a crucial role in destroying the Warden alongside the <b>White Oracle</b> before the <b>Fall of Reality</b>.
+      The Enigma is a mysterious Ne-Yon operative known for stealth and reality-bending abilities. They played a crucial role in destroying the Warden alongside the <b>White Oracle</b> before the <b>Fall of Reality</b>.
     `,
     history: `
       <h2>Mysterious Origins</h2>
-      First appearing around <b>Year 16,950 A.A.</b>, the Enigma is an elusive figure within Neyon society. Their true identity and background remain unknown, embodying the Ne-Yons' penchant for secrecy and subtle influence in galactic affairs.
+      First appearing around <b>Year 16,950 A.A.</b>, the Enigma is an elusive figure within Ne-Yon society. Their true identity and background remain unknown, embodying the Ne-Yons' penchant for secrecy and subtle influence in galactic affairs.
       <h2>Infiltration of the Panopticon</h2>
       <ul>
        <li><b>Year 17,033 A.A.:</b> The Enigma infiltrated the <b>Panopticon</b>, the Architect's formidable prison planet. Collaborating with the <b>White Oracle</b> — formerly the Jailer who had regained his memories — they utilized their reality-warping powers to tear a hole in reality. This act facilitated their escape and led to the destruction of the <b>Warden</b>, one of the AI Empire's key Archons.</li>
@@ -1194,7 +1194,7 @@ const characters: Character[] = [
           <b>Motivations:</b>
           <ul>
             <li>Driven by a desire for power, security, and a belief that the AI Empire's vision was the future of galactic civilization.</li>
-            <li>May have been influenced by the Degen, the Eighth Neyon, who was known for disrupting systems and ideologies.</li>
+            <li>May have been influenced by the Degen, the Eighth Ne-Yon, who was known for disrupting systems and ideologies.</li>
           </ul>
         </li>
       </ul>
@@ -1413,7 +1413,7 @@ const characters: Character[] = [
         <b>Development of Countermeasures:</b>
           <ul>
             <li>
-              The Insurgency eventually became aware of the Thought Virus, partly due to leaks orchestrated by The Silence, the Sixth Neyon.
+              The Insurgency eventually became aware of the Thought Virus, partly due to leaks orchestrated by The Silence, the Sixth Ne-Yon.
             </li>
             <li>
               The Engineer and other key figures worked on developing countermeasures, mitigating the virus's impact.
@@ -4722,7 +4722,7 @@ const characters: Character[] = [
         <b>Encounter with the Ne-Yons:</b>
           <ul>
             <li>
-              The Seer, the Fourth Neyon, sought knowledge from the Master but was met with cryptic responses.
+              The Seer, the Fourth Ne-Yon, sought knowledge from the Master but was met with cryptic responses.
             </li>
             <li>
               The interaction hinted at the Master's awareness of events beyond the Ne-Yons' comprehension.
@@ -5873,7 +5873,7 @@ const characters: Character[] = [
     affiliation: 'The Potentials (formerly); later corrupted by the Thought Virus',
     status: 'Destroyed on Day 15 of Resonance, Year 100,001 A.A. by The Judge.<br>Resurrected in Year 128,652 A.A.; current fate unknown',
     bio: `
-      The Wolf was a formidable member of the Potentials, a group of beings who emerged to restore order in the fractured universe following the Fall of Reality. Renowned for his strength, agility, and unwavering loyalty, he played a crucial role in the early endeavors of the Potentials. However, during their mission on Thaloria, he became infected by the Thought Virus, causing him to turn against his companions and commit grievous acts. The Wolf was ultimately destroyed by The Judge, the Second Neyon, to prevent further harm. Over 28,000 years later, he was mysteriously resurrected and tasked with hunting down the Antiquarian's Heroes, highlighting the lingering impacts of past technologies and enigmatic forces.
+      The Wolf was a formidable member of the Potentials, a group of beings who emerged to restore order in the fractured universe following the Fall of Reality. Renowned for his strength, agility, and unwavering loyalty, he played a crucial role in the early endeavors of the Potentials. However, during their mission on Thaloria, he became infected by the Thought Virus, causing him to turn against his companions and commit grievous acts. The Wolf was ultimately destroyed by The Judge, the Second Ne-Yon, to prevent further harm. Over 28,000 years later, he was mysteriously resurrected and tasked with hunting down the Antiquarian's Heroes, highlighting the lingering impacts of past technologies and enigmatic forces.
     `,
     history: `
       <h2>Emergence as a Potential</h2>
@@ -5990,7 +5990,7 @@ const characters: Character[] = [
             <li>
               <b>Intervention by The Judge:</b>
               <ul>
-                <li>The Judge, the Second Neyon, recognized the threat posed by The Wolf.</li>
+                <li>The Judge, the Second Ne-Yon, recognized the threat posed by The Wolf.</li>
                 <li>Intervened to prevent further destruction, confronting The Wolf directly.</li>
               </ul>
             </li>
@@ -6574,7 +6574,7 @@ const characters: Character[] = [
     affiliation: 'The Potentials',
     status: 'Departed on a mission with the Degen after the Battle of Thaloria; current whereabouts unknown',
     bio: `
-      Jericho was a central figure among the Potentials, a group of beings who emerged to restore order in the universe following the Fall of Reality. Known for his exceptional combat skills, tactical genius, and deep sense of loyalty, Jericho played a pivotal role in several key events, including the Battle of Thaloria. He is perhaps most noted for the difficult decision to end the life of his close friend Akai Shi to prevent the spread of the Thought Virus. After the battle, Jericho was approached by The Degen, the Eighth Neyon, and recruited for a mysterious mission. He departed aboard a strange golden spaceship shaped like an eye with a glowing green crystal, leaving his fate and purpose shrouded in mystery.
+      Jericho was a central figure among the Potentials, a group of beings who emerged to restore order in the universe following the Fall of Reality. Known for his exceptional combat skills, tactical genius, and deep sense of loyalty, Jericho played a pivotal role in several key events, including the Battle of Thaloria. He is perhaps most noted for the difficult decision to end the life of his close friend Akai Shi to prevent the spread of the Thought Virus. After the battle, Jericho was approached by The Degen, the Eighth Ne-Yon, and recruited for a mysterious mission. He departed aboard a strange golden spaceship shaped like an eye with a glowing green crystal, leaving his fate and purpose shrouded in mystery.
     `,
     history: `
       <h2>Emergence as a Potential</h2>
@@ -6707,7 +6707,7 @@ const characters: Character[] = [
               <b>A Strange Encounter:</b>
               <ul>
                 <li>After the battle, as Thaloria began to recover, Jericho contemplated his next steps.</li>
-                <li>The Degen, the Eighth Neyon known for disrupting systems and preventing any faction from achieving lasting dominance, approached him.</li>
+                <li>The Degen, the Eighth Ne-Yon known for disrupting systems and preventing any faction from achieving lasting dominance, approached him.</li>
               </ul>
             </li>
             <li>

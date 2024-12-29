@@ -350,9 +350,6 @@
           background-image: {activeSeason.season == 99
           ? 'radial-gradient(rgba(45, 90, 216, 0), rgba(45, 90, 216, 0.1));'
           : 'radial-gradient(rgba(51, 226, 230, 0), rgba(51, 226, 230, 0.1));'}
-          border-color: {activeSeason.season == 99
-          ? 'rgba(45, 90, 216, 0.75);'
-          : 'rgba(51, 226, 230, 0.5);'}
         "
       >
         {#each activeSeason.episodes as { title, date, link }, index}
@@ -565,7 +562,8 @@
     width: 98vw;
     height: 85vh;
     margin-inline: auto;
-    border: 0.1rem solid rgba(51, 226, 230, 0.5);
+    box-shadow: 0 0 0.5vw rgba(51, 226, 230, 0.25);
+    border: 0.05rem solid rgba(51, 226, 230, 0.25);
     border-radius: 1rem;
     overflow: auto;
     background-image: url("/bg.avif"),
@@ -694,7 +692,7 @@
         height: auto;
         width: auto;
         padding: 2.5rem 5rem;
-        border: 0.1rem solid rgba(51, 226, 230, 0.5);
+        box-shadow: inset 0 0 0.5vw rgba(51, 226, 230, 0.25);
         border-radius: 1rem;
 
         .plot {

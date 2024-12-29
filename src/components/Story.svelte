@@ -6,7 +6,11 @@
 </script>
 
 <section>
-  <div>
+  <div
+    style={showDescription
+      ? "box-shadow: inset 0 0 0.5vw #010020, 0 0.5vw 0.5vw #010020; transform: scale(1.01);"
+      : ""}
+  >
     {#if link}
       <!-- svelte-ignore a11y_click_events_have_key_events -->
       <span
@@ -103,21 +107,22 @@
       background-color: rgba(51, 226, 230, 0.25);
       border-radius: 0.5vw;
       padding: 1vw;
+      box-shadow: inset 0 0 0.5vw #010020;
+      transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 
       .story-image-container {
         position: relative;
-        height: 15vw;
-        width: 27.5vw;
+        height: 14vw;
+        width: 28vw;
+        border-radius: 0.25vw;
+        box-shadow: 0 0 0.5vw rgba(51, 226, 230, 0.25);
         cursor: pointer;
 
         img {
-          height: 15vw;
-          width: 27.5vw;
+          height: 14vw;
+          width: 28vw;
           object-fit: cover;
-        }
-
-        .story-image {
-          border: 0.1vw solid rgba(51, 226, 230, 0.25);
+          border-radius: 0.25vw;
         }
 
         .play-icon {
@@ -137,7 +142,7 @@
       .blank-image {
         border: 0.1vw solid rgba(51, 226, 230, 0.25);
         width: 20vw;
-        height: 15vw;
+        height: 14vw;
         object-fit: cover;
       }
 
@@ -207,6 +212,9 @@
       background-color: rgba(51, 226, 230, 0.1);
       border-bottom-left-radius: 1vw;
       border-bottom-right-radius: 1vw;
+      box-shadow:
+        inset 0 0 0.5vw #010020,
+        0 0.5vw 0.5vw #010020;
     }
   }
 
@@ -221,11 +229,11 @@
         padding: 1em;
 
         .story-image-container {
-          height: 50vw;
+          height: 45vw;
           width: 90vw;
 
           img {
-            height: 50vw;
+            height: 45vw;
             width: 90vw;
           }
 

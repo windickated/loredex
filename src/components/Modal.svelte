@@ -17,7 +17,7 @@
 
   let activeTab: "connections" | "stories" = "stories";
   const activeTabStyling =
-    "color: #010020; text-shadow: 0 0 0.1vw #010020; background-color: rgba(51, 226, 230, 0.75)";
+    "color: #010020; text-shadow: 0 0 0.1vw #010020; background-color: rgba(51, 226, 230, 0.75); box-shadow: 0 0.5vw 0.5vw #010020;";
 
   let previousCharacters: Character[] = [];
 
@@ -188,22 +188,28 @@
                 <img
                   src="https://api.degenerousdao.com/nft/image/{$selectedCharacter.potentialNFT}"
                   alt="Potential #{$selectedCharacter.potentialNFT}"
+                  on:click={showFullscreenPicture}
                   width="1024"
                   height="1024"
                 />
                 <div>
                   <a
+                    class="opensea"
                     href="https://opensea.io/assets/ethereum/0xfa511d5c4cce10321e6e86793cc083213c36278e/{$selectedCharacter.potentialNFT}"
                     target="_blank"
                   >
                     <img src="/opensea.png" alt="OpenSea" draggable="false" />
                   </a>
                   <a
+                    class="magiceden"
                     href="https://magiceden.io/collections/ethereum/0xfa511d5c4cce10321e6e86793cc083213c36278e?search=%22%23{$selectedCharacter.potentialNFT}%22"
                     target="_blank"
-                    draggable="false"
                   >
-                    <img src="/magic-eden.png" alt="Magic Eden" />
+                    <img
+                      src="/magic-eden.png"
+                      alt="Magic Eden"
+                      draggable="false"
+                    />
                   </a>
                 </div>
               </div>
@@ -257,7 +263,13 @@
             <section class="transformation">
               {#each $selectedCharacter.transformations as { name, picture }, index}
                 <div>
-                  <img src={picture} alt={name} width="1024" height="1024" />
+                  <img
+                    src={picture}
+                    alt={name}
+                    width="1024"
+                    height="1024"
+                    on:click={showFullscreenPicture}
+                  />
                   <p>{name}</p>
                 </div>
                 {#if index !== $selectedCharacter.transformations.length - 1}
@@ -538,8 +550,8 @@
     img {
       height: 90vh;
       width: auto;
-      border-left: 0.05vw solid rgba(51, 226, 230, 0.5);
-      border-right: 0.05vw solid rgba(51, 226, 230, 0.5);
+      border-left: 0.05vw solid rgba(51, 226, 230, 0.25);
+      border-right: 0.05vw solid rgba(51, 226, 230, 0.25);
     }
   }
 
@@ -556,7 +568,7 @@
     border: none;
     color: inherit;
     background-color: rgba(1, 0, 32, 0.75);
-    border: 0.05vw solid rgba(51, 226, 230, 0.5);
+    box-shadow: 0 0 0.5vw rgba(51, 226, 230, 0.5);
     border-radius: 2vw;
     overflow-y: scroll;
     cursor: default;
@@ -585,6 +597,8 @@
         align-items: center;
         padding: 1vw;
         background-color: rgba(1, 0, 32, 0.9);
+        border-top-left-radius: 2vw;
+        border-top-right-radius: 2vw;
 
         div {
           display: flex;
@@ -636,7 +650,7 @@
         width: 95%;
         padding: 1vw;
         background-color: rgba(51, 226, 230, 0.1);
-        border: 0.1vw solid rgba(51, 226, 230, 0.25);
+        box-shadow: inset 0 0 0.5vw rgba(51, 226, 230, 0.25);
         border-radius: 1vw;
         display: flex;
         flex-flow: row nowrap;
@@ -650,7 +664,7 @@
           align-items: center;
           width: 15vw;
           min-width: 15vw;
-          border: 0.1vw solid rgba(51, 226, 230, 0.25);
+          box-shadow: 0 0 0.5vw #010020;
           border-radius: 0.5vw;
 
           img {
@@ -687,6 +701,14 @@
             flex-flow: row nowrap;
             height: 3vw;
 
+            .opensea {
+              border-bottom-left-radius: 0.5vw;
+            }
+
+            .magiceden {
+              border-bottom-right-radius: 0.5vw;
+            }
+
             a {
               width: 7.5vw;
               height: auto;
@@ -695,7 +717,6 @@
               justify-content: center;
               align-items: center;
               background-color: rgba(1, 0, 32, 0.5);
-              border: 0.1vw solid rgba(51, 226, 230, 0.25);
 
               img {
                 z-index: 0;
@@ -703,6 +724,7 @@
                 height: 2vw;
                 background-color: transparent;
                 opacity: 0.9;
+                cursor: inherit;
                 filter: drop-shadow(0 0 0.5vw rgba(1, 0, 32, 0.5));
               }
 
@@ -756,7 +778,7 @@
         font-size: 2vw;
         color: #010020;
         background-color: rgba(51, 226, 230, 0.5);
-        border: 0.1vw solid rgba(36, 65, 189, 0.75);
+        box-shadow: inset 0 0 0.5vw #010020;
         border-radius: 1vw;
 
         p {
@@ -773,7 +795,7 @@
           padding: 1vw;
           gap: 1vw;
           background-color: rgba(1, 0, 32, 0.75);
-          border: 0.1vw solid rgba(36, 65, 189, 0.75);
+          box-shadow: inset 0 0 0.5vw #010020;
 
           button {
             font-size: 1.25vw;
@@ -828,6 +850,12 @@
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
             transform: none !important;
+            filter: none !important;
+
+            &:hover,
+            &:active {
+              background-color: rgba(51, 226, 230, 0.5);
+            }
 
             img {
               position: absolute;
@@ -848,7 +876,7 @@
         .tab-section {
           padding: 1vw;
           background-color: rgba(51, 226, 230, 0.1);
-          border: 0.1vw solid rgba(51, 226, 230, 0.25);
+          box-shadow: inset 0 0 0.5vw rgba(51, 226, 230, 0.25);
           border-radius: 1vw;
           border-top-left-radius: 0;
           border-top-right-radius: 0;
@@ -872,7 +900,9 @@
               width: 100%;
               padding-block: 1vw;
               background-color: rgba(51, 226, 230, 0.25);
-              border: 0.1vw solid rgba(51, 226, 230, 0.25);
+              box-shadow:
+                inset 0 0 0.5vw #010020,
+                0 0.5vw 0.5vw #010020;
               border-radius: 1vw;
             }
 
@@ -901,6 +931,7 @@
                 font-size: 1.5vw;
                 line-height: 2.5vw;
                 text-align: center;
+                box-shadow: 0 0 0.5vw #010020;
 
                 img {
                   width: 100%;
@@ -912,8 +943,8 @@
                 &:active {
                   background-color: rgb(45, 90, 216);
                   color: rgba(51, 226, 230, 0.9);
-                  transform: scale(1.05);
-                  filter: drop-shadow(0 0 1rem rgba(51, 226, 230, 0.25));
+                  box-shadow: 0 0.5vw 0.5vw #010020;
+                  transform: scale(1.025) translateY(-0.5vw);
                 }
               }
             }
@@ -952,7 +983,7 @@
           img {
             width: 15vw;
             height: inherit;
-            border: 0.1vw solid rgba(51, 226, 230, 0.5);
+            box-shadow: inset 0 0 0.5vw #010020;
             border-radius: 7.5vw;
             margin-bottom: 0.5vw;
             cursor: zoom-in;
@@ -1040,12 +1071,12 @@
       justify-content: center;
       align-items: center;
     }
+  }
 
-    .history {
-      padding-inline: 1vw;
-      color: #dedede;
-      font-size: 1vw;
-    }
+  .history {
+    max-width: 95%;
+    color: #dedede;
+    font-size: 1vw;
   }
 
   dialog::backdrop {
@@ -1105,8 +1136,6 @@
       height: 100%;
       min-width: 100vw;
       width: 100vw;
-      border-left: none;
-      border-right: none;
       border-radius: 0;
 
       main {
@@ -1114,6 +1143,7 @@
 
         header {
           padding: 1em;
+          border-radius: 0;
 
           div {
             padding-inline: 1em;
@@ -1151,14 +1181,16 @@
             width: 100vw;
             padding: 1em;
             border-radius: 0;
-            border-left: none;
-            border-right: none;
+            border-top: 0.1vw solid rgba(51, 226, 230, 0.25);
+            border-bottom: 0.1vw solid rgba(51, 226, 230, 0.25);
+            box-shadow: none;
             gap: 1em;
 
             .image-container {
               width: 90vw;
               min-width: 90vw;
               border-radius: 0.5em;
+              box-shadow: none;
 
               img {
                 width: inherit;
@@ -1173,6 +1205,14 @@
 
               div {
                 height: 3em;
+
+                .opensea {
+                  border-bottom-left-radius: 0.5em;
+                }
+
+                .magiceden {
+                  border-bottom-right-radius: 0.5em;
+                }
 
                 a {
                   width: 45vw;
@@ -1347,11 +1387,16 @@
             border-right: none;
           }
 
-          .history,
           .month-system {
             padding-inline: 1em;
             font-size: 1em;
           }
+        }
+
+        .history {
+          max-width: none;
+          padding-inline: 1em;
+          font-size: 1em;
         }
       }
     }

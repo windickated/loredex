@@ -1109,6 +1109,12 @@
       rgba(0, 0, 0, 0)
     );
     border-radius: 0.5vw;
+    cursor: pointer;
+  }
+
+  dialog::-webkit-scrollbar-thumb:hover,
+  dialog::-webkit-scrollbar-thumb:active {
+    background: rgba(51, 226, 230, 0.5);
   }
 
   @media only screen and (max-width: 600px) {

@@ -628,7 +628,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Syndicated']
+        episodes: ['Syndicated', 'First Contact']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -668,7 +668,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated']
+        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -711,7 +711,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated']
+        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -754,7 +754,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time']
+        episodes: ['The Theft of All Time', 'First Contact']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -832,7 +832,7 @@ const characters: Character[] = [
       },
       {
         season: 1,
-        episodes: ['The Beginning of the End', 'Syndicated']
+        episodes: ['The Beginning of the End', 'Syndicated', 'First Contact']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -875,7 +875,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time']
+        episodes: ['The Theft of All Time', 'First Contact']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -958,6 +958,10 @@ const characters: Character[] = [
       {
         season: 1,
         episodes: ['Illuminated Shadows', 'The City', 'The Hunt', 'The Beginning of the End']
+      },
+      {
+        season: 2,
+        episodes: ['First Contact']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -1002,6 +1006,10 @@ const characters: Character[] = [
       {
         season: 1,
         episodes: ['The Beginning of the End']
+      },
+      {
+        season: 2,
+        episodes: ['First Contact']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -1036,7 +1044,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated']
+        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -4667,6 +4675,10 @@ const characters: Character[] = [
     },
     stories: [
       {
+        season: 99,
+        episodes: ['First Contact: The Oracle']
+      },
+      {
         season: 1,
         episodes: ['The Source']
       }
@@ -4958,7 +4970,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 99,
-        episodes: ['Syndicate of Death']
+        episodes: ['Syndicate of Death', 'First Contact: The Oracle', 'First Contact: The Spy']
       },
       {
         season: 2,
@@ -5261,6 +5273,40 @@ const characters: Character[] = [
     history: `
       Upon graduation, the newly forged operative was dispatched to New Babylon, the cyberpunk metropolis at the heart of the Intergalactic Imperial Congress. There, among neon-lit corridors and sprawling layers of a world-city, he served as the Detective—an elite investigator tasked with solving strange crimes, quelling unrest, and maintaining order within the AI Empire’s stronghold. His feats of logic, perception, and moral ambivalence distinguished him in an age dominated by cunning and secrets.<br><br>
       In Year 16,692 A.A., the Detective’s role in maintaining the delicate balance of power and his unwavering service to the Architect set him on a path that few dared to imagine. He ascended to become the Human, the 12th and final Archon, a being whose influence would ripple across epochs. From Seeker to student, from investigator to unparalleled agent, and ultimately an Archon, the Detective’s legacy traces a trajectory defined by intellect, resilience, and a destiny shaped by the Architect’s ever-present gaze.
+    `
+  },
+  {
+    name: 'Ajudicar Locke',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/AjudicarLocke.avif',
+    appearance: 107656,
+    lastSeen: 107656,
+    state: "neutral",
+    connections: {
+      allies: ['The Syndicate of Death'],
+      enemies: ['Wraith Calder'],
+      neutral: ['The Seer'],
+      locations: ['New Babylon']
+    },
+    stories: [
+      {
+        season: 99,
+        episodes: ['First Contact: The Oracle', 'First Contact: The Spy']
+      },
+      {
+        season: 2,
+        episodes: ['First Contact']
+      }
+    ],
+    affiliation: 'Special Case Manager, Central Control Authority',
+    status: 'Active',
+    bio: `
+      Ajudicar Locke serves as a Special Case Manager for the Central Control Authority of New Babylon, a position that demands a delicate balance of intellect, authority, and unwavering commitment to order. Known for her piercing intelligence and enigmatic presence, Locke is a controversial figure in the city's labyrinthine political system. It is whispered among the citizens of New Babylon that she willingly traded her left eye on the black market, exchanging it for forbidden wisdom and unparalleled knowledge of the city's hidden machinations. This act, while cloaked in mystery, only deepened her reputation as a woman who will sacrifice anything for understanding and justice.
+    `,
+    history: `
+      Locke’s philosophy mirrors the principles of her namesake, John Locke, deeply rooted in the preservation of the social contract. She believes that the foundation of New Babylon’s fragile peace lies in maintaining order and protecting the rights of its citizens. To her, the Central Control Authority serves as the cornerstone of societal harmony, ensuring that individual freedoms are balanced against the greater good of the collective. While some view her loyalty to the system as rigid, Locke sees herself as a guardian of the equilibrium that allows New Babylon to survive in a world fractured by the Fall of Reality.<br><br>
+      This adherence to philosophy shapes her approach to her work. When outsiders arrive unbidden, as seen in <b>First Contact</b>, Locke’s initial response is suspicion, tempered by a willingness to engage diplomatically to preserve the stability of New Babylon. However, her sharp distrust of unpredictability and her relentless pursuit of truth often place her in conflict with both allies and adversaries.<br><br>
+      Locke’s connections are as complex as her methods. She maintains a tenuous neutrality toward the enigmatic Seer while fiercely opposing the mercenary Wraith Calder, whose chaotic influence threatens the very social order she strives to protect. Despite her stern demeanor, Locke has forged alliances with entities like the Syndicate of Death, leveraging their resources to reinforce her mission of preserving the city’s fragile balance.<br><br>
+      In <b>First Contact</b> and its subsequent stories, Locke's role highlights the tension between duty and morality, painting her as a figure who walks the razor’s edge between heroism and authoritarianism in her unyielding quest to sustain the social contract of New Babylon.
     `
   },
   // LOCATIONS
@@ -5677,7 +5723,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated']
+        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact']
       }
     ],
     connections: {
@@ -5780,7 +5826,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated']
+        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact']
       }
     ],
     affiliation: 'Temporal Navigator Vessel Once Owned by the Sorcerer',
@@ -6043,7 +6089,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 99,
-        episodes: ['Syndicate of Death']
+        episodes: ['Syndicate of Death', 'First Contact: The Oracle']
       },
       {
         season: 1,
@@ -6568,7 +6614,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated']
+        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact']
       }
     ],
     affiliation: 'The Potentials',
@@ -6942,6 +6988,32 @@ const characters: Character[] = [
     `
   },
   {
+    name: 'Potential 73',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential73.avif',
+    state: "neutral",
+    potentialNFT: 73,
+    video: 'QkX2aPd_ExU',
+    stories: [
+      {
+        season: 2,
+        episodes: ['First Contact']
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
+  },
+  {
     name: 'Potential 84',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential84.avif',
     state: "neutral",
@@ -7046,6 +7118,32 @@ const characters: Character[] = [
     `
   },
   {
+    name: 'Potential 137',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential137.avif',
+    state: "neutral",
+    potentialNFT: 137,
+    video: 'QkX2aPd_ExU',
+    stories: [
+      {
+        season: 2,
+        episodes: ['First Contact']
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
+  },
+  {
     name: 'Potential 144',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential144.avif',
     state: "neutral",
@@ -7085,6 +7183,58 @@ const characters: Character[] = [
       {
         season: 1,
         episodes: ['Awakenings', 'The Decision']
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
+  },
+  {
+    name: 'Potential 161',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential161.avif',
+    state: "neutral",
+    potentialNFT: 161,
+    video: 'QkX2aPd_ExU',
+    stories: [
+      {
+        season: 2,
+        episodes: ['First Contact']
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
+  },
+  {
+    name: 'Nythera',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Nythera.avif',
+    state: "neutral",
+    potentialNFT: 164,
+    video: 'QkX2aPd_ExU',
+    stories: [
+      {
+        season: 2,
+        episodes: ['First Contact']
       }
     ],
     affiliation: 'The Potentials',
@@ -7252,7 +7402,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Syndicated']
+        episodes: ['Syndicated', 'First Contact']
       }
     ],
     affiliation: 'The Potentials',
@@ -7586,6 +7736,32 @@ const characters: Character[] = [
     `
   },
   {
+    name: 'Potential 565',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential565.avif',
+    state: "neutral",
+    potentialNFT: 565,
+    video: 'QkX2aPd_ExU',
+    stories: [
+      {
+        season: 2,
+        episodes: ['First Contact']
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
+  },
+  {
     name: 'Potential 570',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential570.avif',
     state: "neutral",
@@ -7673,6 +7849,10 @@ const characters: Character[] = [
       {
         season: 1,
         episodes: ['Illuminated Shadows']
+      },
+      {
+        season: 2,
+        episodes: ['First Contact']
       }
     ],
     affiliation: 'The Potentials',
@@ -7699,6 +7879,32 @@ const characters: Character[] = [
       {
         season: 1,
         episodes: ['The Outbreak']
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
+  },
+  {
+    name: 'Potential 639',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential639.avif',
+    state: "neutral",
+    potentialNFT: 639,
+    video: 'QkX2aPd_ExU',
+    stories: [
+      {
+        season: 2,
+        episodes: ['First Contact']
       }
     ],
     affiliation: 'The Potentials',
@@ -7798,6 +8004,32 @@ const characters: Character[] = [
     `
   },
   {
+    name: 'Potential 699',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential699.avif',
+    state: "neutral",
+    potentialNFT: 699,
+    video: 'QkX2aPd_ExU',
+    stories: [
+      {
+        season: 2,
+        episodes: ['First Contact']
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
+  },
+  {
     name: 'Potential 704',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential704.avif',
     state: "neutral",
@@ -7859,6 +8091,32 @@ const characters: Character[] = [
       {
         season: 1,
         episodes: ['Awakenings']
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
+  },
+  {
+    name: 'Potential 749',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential749.avif',
+    state: "neutral",
+    potentialNFT: 749,
+    video: 'QkX2aPd_ExU',
+    stories: [
+      {
+        season: 2,
+        episodes: ['First Contact']
       }
     ],
     affiliation: 'The Potentials',

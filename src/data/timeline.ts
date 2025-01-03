@@ -317,6 +317,22 @@ export const stories: Season[] = [
         bio: `
           In the cyberpunk metropolis of New Babylon, the AI Archon known as the Politician has banned Christmas, extinguishing hope to maintain control. Festive lights are dimmed, Santas are outlawed, and the city descends into despair under the Empire’s crushing rule. But amidst the darkness, the DeGen, the living embodiment of chaos, rebellion, and anarchy, arrives to ignite the spark of defiance. From inspiring the oppressed to corrupting the Politician’s meticulously crafted systems, the DeGen spreads disorder and festive mischief across New Babylon. As the Empire burns Christmas symbols and enforces its iron will, the DeGen leads a rebellion that turns the banned holiday into a riotous celebration of freedom and chaos. In the darkest times, it’s the DeGen who saves Christmas—proving that even anarchy can be a beacon of hope.
         `
+      },
+      {
+        title: 'First Contact: The Oracle',
+        link: 'EUaX7HODCV8',
+        date: 107656,
+        bio: `
+          
+        `
+      },
+      {
+        title: 'First Contact: The Spy',
+        link: 'EUaX7HODCV8',
+        date: 107656,
+        bio: `
+        
+        `
       }
     ]
   },
@@ -593,6 +609,16 @@ export const stories: Season[] = [
         `,
         description: `
           The Potentials, equipped with the Heart of Time, have leapt 7,655 years into New Babylon—a quarantined city infused with neon-lit secrets and shadowy conspiracies. In their quest to find Wraith Calder and the lost Resurrection Protocols, they unwittingly circle the Syndicate of Death, a necromantic cabal tightening its grip on the hidden metropolis. Meanwhile, the enigmatic figure known as the Antiquarian orchestrates events from the sidelines, capitalizing on their distraction to further a hidden agenda. Each choice—whether to spy, fight, negotiate, or engineer—will alter the tapestry of fate and determine whether New Babylon stands or falls.
+        `
+      },
+      {
+        title: 'First Contact',
+        link: 'EUaX7HODCV8',
+        bio: `
+          The Potentials arrive in New Babylon, a city quarantined for millennia, with their colossal ship, the Heart of Time, sparking awe and fear among its citizens. Tensions rise as they are confronted by Adjudicar Locke, who accuses them of being agents of the Hierophan Wraith, forcing the Potentials into a critical decision that will shape their relationship with the isolated world.
+        `,
+        description: `
+          The Heart of Time decloaks above New Babylon, its otherworldly presence shattering centuries of solitude and plunging the city into a state of apprehensive wonder. Adjudicar Locke and her armed soldiers confront the Potentials as they descend, accusing them of orchestrating a recent explosion in the entertainment district, an act attributed to the Hierophan Wraith—a fanatical heretic seeking control of the city. The Seer, speaking for the group, denies involvement and offers peace, but Locke, wary of deception, demands they surrender their ship and weapons before engaging in diplomacy with the ruling council known as the Six.  The Potentials must choose peace, war, negotiation, or deceptive diplomacy.  
         `
       },
     ]

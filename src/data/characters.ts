@@ -5277,7 +5277,7 @@ const characters: Character[] = [
   },
   {
     name: 'Ajudicar Locke',
-    picture: 'https://media.degenerousdao.com/conexus-loredex/AjudicarLocke.avif',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/AdjudicarLocke.avif',
     appearance: 107656,
     lastSeen: 107656,
     state: "neutral",

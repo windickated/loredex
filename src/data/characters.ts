@@ -741,6 +741,7 @@ const characters: Character[] = [
     connections: {
       allies: filterNeyons('The Seer'),
       enemies: ['The Architect', 'The Vortex', 'The Terminus Swarm', 'The Source'],
+      neutral: ['Ajudicar Locke'],
       locations: ['The Wyrmhole', 'Terminus', 'The City']
     },
     stories: [
@@ -4963,7 +4964,7 @@ const characters: Character[] = [
     lastSeen: 107656,
     state: "neutral",
     connections: {
-      allies: ['The Necromancer'],
+      allies: ['The Necromancer', 'Ajudicar Locke'],
       enemies: ['Wraith Calder'],
       locations: ['New Babylon']
     },
@@ -5727,7 +5728,7 @@ const characters: Character[] = [
       }
     ],
     connections: {
-      neutral: ['The Politician', 'The Syndicate of Death', 'Wraith Calder']
+      neutral: ['The Politician', 'The Syndicate of Death', 'Wraith Calder', 'Ajudicar Locke', 'The Detective']
     },
     affiliation: 'Former Capital of the Intergalactic Imperial Congress Under the Politician; Later Seized by the Syndicate of Death',
     status: 'Survived the Fall of Reality Through Quarantine; Evolved Over Millennia Until Subjugated by the Syndicate of Death',
@@ -6083,7 +6084,7 @@ const characters: Character[] = [
     potentialNFT: 623,
     connections: {
       allies: ['Jericho', 'The White Oracle'],
-      enemies: ['The Wolf', 'The Syndicate of Death', 'The Terminus Swarm', 'The Source'],
+      enemies: ['The Wolf', 'The Syndicate of Death', 'The Terminus Swarm', 'The Source', 'Ajudicar Locke'],
       locations: ['Terminus', 'The Wyrmhole', 'The City', 'New Babylon']
     },
     stories: [

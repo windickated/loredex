@@ -136,7 +136,9 @@
 
 <svelte:window on:keydown={handleKeyDown} />
 
-<div class="logo">LOREDEX</div>
+<div class="logo" style={preventZoomChanges ? "" : "display: none;"}>
+  LOREDEX
+</div>
 
 <header>
   <h1>
@@ -200,6 +202,7 @@
           min="0.1"
           max="1.6"
           step="0.025"
+          autocomplete="off"
           style="opacity: {preventZoomChanges ? '0' : '1'};"
           bind:value={mapZoom}
         />

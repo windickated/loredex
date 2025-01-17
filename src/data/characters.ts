@@ -11,7 +11,7 @@ const filterNeyons = (name: string) => {
   return allNeyons.filter((archon) => archon !== name);
 }
 
-const allPotentials = ['The Wolf', 'Wraith Calder', 'Akai Shi', 'Jericho'];
+const allPotentials = ['The Wolf', 'Wraith Calder', 'Akai Shi', 'Jericho Jones'];
 
 const characters: Character[] = [
   {
@@ -276,7 +276,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Syndicated']
+        episodes: ['Syndicated', 'Empire Reborn']
       }
     ],
     affiliation: 'Archons, AI Empire',
@@ -570,7 +570,7 @@ const characters: Character[] = [
     connections: {
       locations: ['Thaloria', 'The Panopticon', 'The City', 'Project Celebration', 'The Wyrmhole', 'Atarion'],
       allies: filterArchons('The Collector').concat(['The Clone Army']),
-      enemies: ['Agent Zero', 'The Eyes', 'The Degen', 'Iron Lion', 'The Recruiter', 'The White Oracle', 'The Oracle', 'Jericho', 'The Hierophant'],
+      enemies: ['Agent Zero', 'The Eyes', 'The Degen', 'Iron Lion', 'The Recruiter', 'The White Oracle', 'The Oracle', 'Jericho Jones', 'The Hierophant'],
       neutral: ['The Star Whisperer']
     },
     stories: [
@@ -628,7 +628,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Syndicated', 'First Contact']
+        episodes: ['Syndicated', 'First Contact', 'Empire Reborn']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -711,7 +711,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact']
+        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -755,7 +755,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'First Contact']
+        episodes: ['The Theft of All Time', 'First Contact', 'Empire Reborn']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -834,6 +834,10 @@ const characters: Character[] = [
       {
         season: 1,
         episodes: ['The Beginning of the End', 'Syndicated', 'First Contact']
+      },
+      {
+        season: 2,
+        episodes: ['Empire Reborn']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -876,7 +880,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'First Contact']
+        episodes: ['The Theft of All Time', 'First Contact', 'Empire Reborn']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -904,7 +908,7 @@ const characters: Character[] = [
     state: "neutral",
     potentialNFT: 8,
     connections: {
-      allies: filterNeyons('The Degen').concat(['Jericho']),
+      allies: filterNeyons('The Degen').concat(['Jericho Jones']),
       enemies: ['The Architect', 'The Collector', 'The Terminus Swarm', 'The Source'],
       locations: ['The Wyrmhole', 'Terminus', 'The City']
     },
@@ -919,7 +923,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time']
+        episodes: ['The Theft of All Time', 'Empire Reborn']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -1037,7 +1041,7 @@ const characters: Character[] = [
     lastSeen: 17043,
     state: "neutral",
     connections: {
-      allies: ['The Dreamer', 'The Inventor', 'The Degen', 'Jericho', 'The White Oracle'],
+      allies: ['The Dreamer', 'The Inventor', 'The Degen', 'Jericho Jones', 'The White Oracle'],
       enemies: ['The Architect'],
       neutral: ['The Game Master'],
       locations: ['The Panopticon', 'Project Celebration', 'Mechronis Academy']
@@ -1045,7 +1049,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact']
+        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -2696,7 +2700,7 @@ const characters: Character[] = [
     ],
     connections: {
       allies: ['The Host', 'The Terminus Swarm', 'Master of R’lyeh'],
-      enemies: allNeyons.concat(['The Wolf', 'Wraith Calder', 'Akai Shi', 'Jericho', 'The Architect', 'The Antiquarian']),
+      enemies: allNeyons.concat(['The Wolf', 'Wraith Calder', 'Akai Shi', 'Jericho Jones', 'The Architect', 'The Antiquarian']),
       locations: ['The Panopticon', 'Terminus', 'The Wyrmhole', 'The City']
     },
     stories: [
@@ -4975,7 +4979,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Syndicated']
+        episodes: ['Syndicated', 'Empire Reborn']
       }
     ],
     affiliation: 'Underworld Empire',
@@ -5295,7 +5299,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['First Contact']
+        episodes: ['First Contact', 'Empire Reborn']
       }
     ],
     affiliation: 'Special Case Manager, Central Control Authority',
@@ -5724,7 +5728,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact']
+        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn']
       }
     ],
     connections: {
@@ -5827,7 +5831,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact']
+        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn']
       }
     ],
     affiliation: 'Temporal Navigator Vessel Once Owned by the Sorcerer',
@@ -6083,7 +6087,7 @@ const characters: Character[] = [
     state: "evil",
     potentialNFT: 623,
     connections: {
-      allies: ['Jericho', 'The White Oracle'],
+      allies: ['Jericho Jones', 'The White Oracle'],
       enemies: ['The Wolf', 'The Syndicate of Death', 'The Terminus Swarm', 'The Source', 'Ajudicar Locke'],
       locations: ['Terminus', 'The Wyrmhole', 'The City', 'New Babylon']
     },
@@ -6336,7 +6340,7 @@ const characters: Character[] = [
     potentialNFT: 350,
     connections: {
       allies: ['The Advocate', 'The White Oracle'],
-      enemies: ['The Necromancer', 'Jericho', 'The Host', 'The Source', 'The Terminus Swarm'],
+      enemies: ['The Necromancer', 'Jericho Jones', 'The Host', 'The Source', 'The Terminus Swarm'],
       locations: ['Terminus', 'The Wyrmhole', 'The City', 'The Matrix of Dreams']
     },
     stories: [
@@ -6597,7 +6601,7 @@ const characters: Character[] = [
     `
   },
   {
-    name: 'Jericho',
+    name: 'Jericho Jones',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential426JerichoJones.avif',
     appearance: 101001,
     lastSeen: 1000000,
@@ -6615,7 +6619,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact']
+        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn']
       }
     ],
     affiliation: 'The Potentials',
@@ -6854,7 +6858,7 @@ const characters: Character[] = [
     ],
     connections: {
       allies: ['The Terminus Swarm', 'The Source'],
-      enemies: ['Jericho', 'Akai Shi'],
+      enemies: ['Jericho Jones', 'Akai Shi'],
       locations: ['Terminus', 'The City', 'The Wyrmhole']
     },
     stories: [
@@ -6890,6 +6894,10 @@ const characters: Character[] = [
       {
         season: 1,
         episodes: ['The Fall', 'Illuminated Shadows']
+      },
+      {
+        season: 2,
+        episodes: ['Empire Reborn']
       }
     ],
     affiliation: 'The Potentials',
@@ -7230,12 +7238,14 @@ const characters: Character[] = [
     name: 'Nythera',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Nythera.avif',
     state: "neutral",
+    appearance: 107652,
+    lastSeen: 107652,
     potentialNFT: 164,
     video: 'QkX2aPd_ExU',
     stories: [
       {
         season: 2,
-        episodes: ['First Contact']
+        episodes: ['First Contact', 'Empire Reborn']
       }
     ],
     affiliation: 'The Potentials',
@@ -7249,7 +7259,38 @@ const characters: Character[] = [
       The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
     `,
     history: `
-      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+      <h2>The Oracle and the Syndicate of Death</h2>
+      The city of <b>New Babylon</b> lay sprawled beneath the shadow of the ancient starship ruins, a metropolis built upon the decaying remains of a once-great empire. Neon lights flickered in the rain-soaked gloom, casting fleeting reflections on the shimmering streets. Within the twisting corridors of this criminal haven, two figures moved like ghosts through the shadows.<br><br>
+      <b>Oracle Nythera</b> walked with quiet authority, her golden armor glinting faintly beneath the dim light. Her <b>Starglass</b>, embedded in her chest, pulsed with a soft rhythm that seemed to resonate with the very air around her. The artifact, ancient even by the standards of civilizations long dead, glowed with an enigmatic energy that Lucius couldn’t fully comprehend.<br><br>
+      Lucius followed a step behind her, his hand resting on the hilt of his pulse blaster. A human Thalorian faithful with sharp features and a keen mind, he had seen many wonders in his lifetime, but even he found himself in awe of Nythera. She was unlike anything or anyone he had ever encountered.<br><br>
+      <i>"New Babylon,"</i> Lucius muttered, his voice low. <i>"The former capital of the AI Imperial Congress, quarantined for over a hundred thousand years. No one has set foot on it since it disappeared. And now you’ve come walking out of its legends like you own the stars."</i><br><br>
+      Nythera’s voice was calm, her tone measured, as though she carried the weight of eons in her words. <i>"I do not own the stars, Lucius. I only see the paths they’ve carved—and the dangers that lie ahead."</i><br><br>
+      Lucius chuckled, but it lacked humor. <i>"You speak in riddles, Oracle. But here we are, breaking into the Syndicate of Death’s meeting. I hope whatever you’ve seen makes this worth it."</i><br><br>
+      <i>"The Starglass doesn’t show me everything,"</i> Nythera admitted, her golden cloak flowing behind her. <i>"But it brought me here. That’s enough for now."</i><br>
+      <hr><br>
+      The Syndicate’s meeting hall was a massive chamber carved into the ribcage of a dead starbeast. At its center sat the Six, pairs of immortal twins who had ruled the Syndicate of Death for centuries. They were masked in ornate visages of power, their voices carrying a melodic, otherworldly weight as they discussed matters of great consequence.<br><br>
+      Nythera and Lucius crouched behind a broken column at the edge of the chamber. The Starglass pulsed faintly, drawing Nythera’s mind into the flickering thoughts of those who occupied the dais. Her vision fractured into fragments—pieces of schemes, alliances, and something far more sinister.<br><br>
+      <i>"Resurrection,"</i> she whispered, the word forming like a spark in the dark.<br><br>
+      Lucius glanced at her. <i>"Resurrection? What do you mean?"</i><br><br>
+      <i>"They’ve uncovered something ancient,"</i> Nythera said, her voice barely audible. <i>"The <b>Resurrection Protocols</b>. The power to reverse death itself. To resurrect entire armies, to reshape the fabric of life and death. They believe it will secure their dominion."</i><br><br>
+      Lucius’s expression darkened. <i>"If they control that, they’ll rewrite the galaxy in their image. No one will be able to challenge them."</i><br><br>
+      Nythera nodded. <i>"And it will destroy everything. The Protocols are unstable—they weren’t meant to be used."</i><br><br>
+      Before they could act, the soft hum of conversation in the chamber ceased. A slow, deliberate clap echoed through the hall, each sound cutting through the tense silence like a blade.<br><br>
+      From the shadows emerged <b>Adjudicator Locke</b>, her black armor gleaming like obsidian. Her purple hair fell in sharp waves, and her crimson eyepatch glowed faintly with etched runes that pulsed with an ominous light. Known as the Syndicate’s enforcer, Locke moved with the grace of a predator, her gaze sharp and piercing.<br><br>
+      <i>“Well, well,”</i> Locke said, her voice smooth and mocking. <i>“An outsider and a very familiar face. Lucius, my people have been watching you for some time now. You’re a clever man, but even you aren’t clever enough to stay hidden forever.”</i><br><br>
+      Lucius tensed, his hand inching toward his blaster. <i>"And yet here I am."</i><br><br>
+      Locke chuckled darkly. <i>"But not for long. And you—"</i> Her single eye locked on Nythera, her expression shifting to one of curiosity and suspicion. <i>"I don’t know who you are, but you don’t belong here. You must be one of the outsiders who broke the quarantine on <b>New Babylon</b>. Do you have any idea what you’ve walked into?"</i><br><br>
+      Nythera rose to her full height, her golden armor gleaming in the dim light. <i>"Do you?"</i> she asked, her voice calm but firm. <i>"The Resurrection Protocols aren’t a tool of power. They’re a weapon against reality itself. You’re meddling with forces you cannot control."</i><br><br>
+      Locke’s smirk widened, the runes on her eyepatch flaring. <i>"Interesting. So the nameless one speaks in riddles. But you’re right about one thing—you don’t belong here."</i><br><br>
+      With a flick of her wrist, Locke signaled the guards hidden in the shadows. Armed figures emerged, their weapons trained on Nythera and Lucius.<br><br>
+      Lucius reacted instantly, drawing his pulse blaster and firing. Two guards fell, but the others moved in with ruthless precision. Locke unleashed an electrified bola from her gauntlet, wrapping it around Lucius and dropping him to the ground with a grunt of pain.<br><br>
+      Nythera summoned a shimmering barrier of golden light from the Starglass, deflecting the incoming fire. <i>"You’re blind to what’s coming, Locke,"</i> she said, her voice steady even as the barrier flickered under the assault.<br><br>
+      Locke stepped closer, her smirk sharpening. <i>"Perhaps. But you’re the ones who’ve stumbled into the jaws of the Syndicate."</i><br><br>
+      The electromagnetic pulse from Locke’s gauntlet disrupted Nythera’s Starglass, the artifact flickering and dimming as she staggered. Guards swarmed in, seizing her and locking restraints around her wrists and collar.<br><br>
+      Locke loomed over them, her tone dripping with mockery. <i>"Lucius, the Six will want to know why you brought an outsider to their sacred halls. You’ve just made their negotiations with the other outsiders... interesting."</i><br><br>
+      Nythera’s voice cut through the air, calm despite the chains. <i>"The Resurrection Protocols will not save the Six. They will doom them—and everyone else."</i><br><br>
+      Locke laughed, her voice echoing in the vast chamber. <i>"We’ll see about that, outsider."</i><br><br>
+      As they were dragged from the hall, Nythera’s mind raced. The Syndicate’s plans were revealed, and the fragile peace surrounding New Babylon was now at risk. Though bound, she held onto one certainty: the Starglass had brought her here for a reason. And the Six, for all their power, had no idea what they had awakened.
     `
   },
   {
@@ -7551,7 +7592,7 @@ const characters: Character[] = [
     `
   },
   {
-    name: 'Potential 391',
+    name: '"Ruby"',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential391.avif',
     state: "neutral",
     potentialNFT: 391,
@@ -7563,7 +7604,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Syndicated']
+        episodes: ['Syndicated', 'Empire Reborn']
       }
     ],
     affiliation: 'The Potentials',
@@ -7616,6 +7657,32 @@ const characters: Character[] = [
       {
         season: 1,
         episodes: ['Illuminated Shadows']
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
+  },
+  {
+    name: 'Potential 440',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential440.avif',
+    state: "neutral",
+    potentialNFT: 440,
+    video: 'QkX2aPd_ExU',
+    stories: [
+      {
+        season: 2,
+        episodes: ['Empire Reborn']
       }
     ],
     affiliation: 'The Potentials',
@@ -8144,6 +8211,10 @@ const characters: Character[] = [
       {
         season: 1,
         episodes: ['The Decision']
+      },
+      {
+        season: 2,
+        episodes: ['Empire Reborn']
       }
     ],
     affiliation: 'The Potentials',
@@ -8170,6 +8241,32 @@ const characters: Character[] = [
       {
         season: 1,
         episodes: ['The Outbreak', 'Illuminated Shadows']
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
+  },
+  {
+    name: 'Potential 797',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential797.avif',
+    state: "neutral",
+    potentialNFT: 797,
+    video: 'QkX2aPd_ExU',
+    stories: [
+      {
+        season: 2,
+        episodes: ['Empire Reborn']
       }
     ],
     affiliation: 'The Potentials',
@@ -8321,6 +8418,32 @@ const characters: Character[] = [
     `
   },
   {
+    name: 'Potential 832',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential832.avif',
+    state: "neutral",
+    potentialNFT: 832,
+    video: 'QkX2aPd_ExU',
+    stories: [
+      {
+        season: 2,
+        episodes: ['Empire Reborn']
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
+  },
+  {
     name: 'Potential 835',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential835.avif',
     state: "neutral",
@@ -8330,6 +8453,32 @@ const characters: Character[] = [
       {
         season: 1,
         episodes: ['The Source']
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
+  },
+  {
+    name: 'Potential 887',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential887.avif',
+    state: "neutral",
+    potentialNFT: 887,
+    video: 'QkX2aPd_ExU',
+    stories: [
+      {
+        season: 2,
+        episodes: ['Empire Reborn']
       }
     ],
     affiliation: 'The Potentials',

@@ -621,6 +621,16 @@ export const stories: Season[] = [
           The Heart of Time decloaks above New Babylon, its otherworldly presence shattering centuries of solitude and plunging the city into a state of apprehensive wonder. Adjudicar Locke and her armed soldiers confront the Potentials as they descend, accusing them of orchestrating a recent explosion in the entertainment district, an act attributed to the Hierophan Wraith—a fanatical heretic seeking control of the city. The Seer, speaking for the group, denies involvement and offers peace, but Locke, wary of deception, demands they surrender their ship and weapons before engaging in diplomacy with the ruling council known as the Six.  The Potentials must choose peace, war, negotiation, or deceptive diplomacy.  
         `
       },
+      {
+        title: 'Empire Reborn',
+        link: 'rgXE5ruNaRg',
+        bio: `
+          The Potentials navigate the fractured districts of New Babylon, each ruled by the enigmatic Six, while their deceptive gambit as emissaries of a New Empire inches them closer to the Imperial Congress. Meanwhile, aboard the Heart of Time, a critical message reveals deeper conspiracies lurking beneath the city’s surface.
+        `,
+        description: `
+          The Potentials journey through New Babylon, traversing its six distinct districts, each a reflection of the immortal twins who rule them, and their deception as representatives of a New Empire earns them an audience with the Imperial Congress. As they prepare to confront the Six—masters of every facet of intergalactic crime—the stakes rise, with every step drawing them further into danger. Back aboard the Heart of Time, an Oracle’s urgent message reveals key players in the city’s underground resistance, including the enigmatic Hierophant Wraith and the Resurrectionists’ plot to revive the Politician. As the Potentials approach their meeting with the Six, the veil over New Babylon’s deadly secrets begins to lift, threatening to unravel everything.  
+        `
+      },
     ]
   }
 ]

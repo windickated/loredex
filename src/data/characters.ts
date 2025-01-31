@@ -3048,9 +3048,9 @@ const characters: Character[] = [
       }
     ],
     connections: {
-      allies: ['The Architect', 'Kael', 'Senator Elara Voss', 'Iron Lion', 'Agent Zero', 'The Necromancer', 'The Watcher', 'The Engineer', 'The Warlord', 'The Game Master', 'The Meme', 'The Hierophant', 'The Authority'],
-      enemies: ['The Collector', 'The Warden', 'General Alarik', 'The Authority'],
-      neutral: ['The Oracle', 'The Politician', 'The Human', 'The Detective', 'General Prometheus'],
+      allies: ['The Architect', 'Kael', 'Senator Elara Voss', 'Iron Lion', 'Agent Zero', 'The Necromancer', 'The Watcher', 'The Engineer', 'The Warlord', 'The Game Master', 'The Meme', 'The Hierophant'],
+      enemies: ['The Collector', 'The Warden', 'General Alarik'],
+      neutral: ['The Oracle', 'The Politician', 'The Human', 'The Detective', 'General Prometheus', 'The Authority'],
       locations: ['Project Celebration', 'Mechronis Academy', 'Atarion', 'The Panopticon']
     },
     affiliation: 'Insurgency',
@@ -5896,8 +5896,9 @@ const characters: Character[] = [
       }
     ],
     connections: {
-      allies: ['The Architect', 'The Politician', 'The Warlord', 'The Eyes', 'The Human'],
-      enemies: ['Iron Lion', 'The Engineer', 'The Eyes', 'The Oracle', 'Agent Zero'],
+      allies: ['The Architect', 'The Politician', 'The Warlord', 'The Human'],
+      enemies: ['Iron Lion', 'The Engineer', 'The Oracle', 'Agent Zero'],
+      neutral: ['The Eyes'],
       locations: ['The Panopticon', 'Thaloria', 'New Babylon']
     },
     affiliation: 'Supreme Arbiter of New Babylon (Originally Created to Serve the Empire)',
@@ -7675,10 +7676,10 @@ const characters: Character[] = [
     `
   },
   {
-    name: 'Potential 398',
-    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential398.avif',
+    name: 'Potential 396',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential396.avif',
     state: "neutral",
-    potentialNFT: 398,
+    potentialNFT: 396,
     video: 'QkX2aPd_ExU',
     stories: [
       {

@@ -80,7 +80,7 @@ const characters: Character[] = [
       },
     ],
     connections: {
-      allies: filterArchons('The Architect', 'The CoNexus').concat(['Senator Elara Voss', 'The Detective', 'General Prometheus', 'General Alarik', 'General Binath-VII', 'Dr. Lyra Vox', 'The Jailer']),
+      allies: filterArchons('The Architect', 'The CoNexus').concat(['Senator Elara Voss', 'The Detective', 'General Prometheus', 'General Alarik', 'General Binath-VII', 'Dr. Lyra Vox', 'The Jailer', 'The Authority']),
       enemies: allNeyons.concat(['The CoNexus', 'The Oracle', 'Iron Lion', 'Agent Zero', 'The Engineer', 'Kael', 'The Programmer', 'The Hierarchy of the Damned', 'The Recruiter', 'The Hierophant', 'The Enigma', 'The Source', 'The White Oracle', 'Ambassador Veron']),
       neutral: ['The Eyes', 'The Shadow Tongue', 'Destiny'],
       locations: ['Project Celebration', 'Mechronis Academy']
@@ -100,7 +100,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time']
+        episodes: ['The Theft of All Time', 'The Authority']
       }
     ],
     affiliation: 'Archons, AI Empire',
@@ -224,7 +224,7 @@ const characters: Character[] = [
     state: "evil",
     video: '2SOPJ0m_xuM',
     connections: {
-      allies: filterArchons('The Warlord').concat(['The Detective', 'General Alarik', 'General Prometheus']),
+      allies: filterArchons('The Warlord').concat(['The Detective', 'General Alarik', 'General Prometheus', 'The Authority']),
       enemies: ['Agent Zero', 'Iron Lion', 'The Nomad', 'The Engineer', 'The Judge', 'The Recruiter', 'Kael', 'The Hierophant'],
       neutral: ['The Eyes'],
       locations: ['Project Celebration', 'Mechronis Academy', 'Zenon']
@@ -264,7 +264,7 @@ const characters: Character[] = [
     state: "evil",
     video: 'n8C-n7eY784',
     connections: {
-      allies: filterArchons('The Politician').concat(['Senator Elara Voss']),
+      allies: filterArchons('The Politician').concat(['Senator Elara Voss', 'The Authority']),
       enemies: ['Agent Zero', 'The Oracle', 'Iron Lion', 'The Nomad', 'The Engineer', 'The Storm', 'Kael'],
       neutral: ['The Eyes'],
       locations: ['Project Celebration', 'New Babylon', 'Atarion']
@@ -276,7 +276,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Syndicated', 'Empire Reborn']
+        episodes: ['Syndicated', 'Empire Reborn', 'The Authority']
       }
     ],
     affiliation: 'Archons, AI Empire',
@@ -475,7 +475,7 @@ const characters: Character[] = [
     lastSeen: 17043,
     state: "evil",
     connections: {
-      allies: filterArchons('The Human'),
+      allies: filterArchons('The Human').concat(['The Authority']),
       enemies: ['Agent Zero', 'The Dreamer'],
       neutral: ['The Eyes'],
       locations: ['Project Celebration', 'Mechronis Academy']
@@ -628,7 +628,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Syndicated', 'First Contact', 'Empire Reborn']
+        episodes: ['Syndicated', 'First Contact', 'Empire Reborn', 'The Authority']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -711,7 +711,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn']
+        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn', 'The Authority']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -755,7 +755,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'First Contact', 'Empire Reborn']
+        episodes: ['The Theft of All Time', 'First Contact', 'Empire Reborn', 'The Authority']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -837,7 +837,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Empire Reborn']
+        episodes: ['Empire Reborn', 'The Authority']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -923,7 +923,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Empire Reborn']
+        episodes: ['The Theft of All Time', 'Empire Reborn', 'The Authority']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -1049,7 +1049,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn']
+        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn', 'The Authority']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -2857,7 +2857,7 @@ const characters: Character[] = [
     state: "good",
     connections: {
       allies: ['Iron Lion', 'Agent Zero', 'The Eyes', 'The Oracle', 'Kael', 'The Recruiter', 'The Nomad', 'The Hierophant'],
-      enemies: ['The Architect', 'The Game Master', 'The Vortex', 'The Warlord', 'The Meme', 'The Watcher', 'The Politician'],
+      enemies: ['The Architect', 'The Game Master', 'The Vortex', 'The Warlord', 'The Meme', 'The Watcher', 'The Politician', 'The Authority'],
       locations: ['Project Celebration', 'Mechronis Academy', 'Zenon']
     },
     stories: [
@@ -3048,8 +3048,8 @@ const characters: Character[] = [
       }
     ],
     connections: {
-      allies: ['The Architect', 'Kael', 'Senator Elara Voss', 'Iron Lion', 'Agent Zero', 'The Necromancer', 'The Watcher', 'The Engineer', 'The Warlord', 'The Game Master', 'The Meme', 'The Hierophant'],
-      enemies: ['The Collector', 'The Warden', 'General Alarik'],
+      allies: ['The Architect', 'Kael', 'Senator Elara Voss', 'Iron Lion', 'Agent Zero', 'The Necromancer', 'The Watcher', 'The Engineer', 'The Warlord', 'The Game Master', 'The Meme', 'The Hierophant', 'The Authority'],
+      enemies: ['The Collector', 'The Warden', 'General Alarik', 'The Authority'],
       neutral: ['The Oracle', 'The Politician', 'The Human', 'The Detective', 'General Prometheus'],
       locations: ['Project Celebration', 'Mechronis Academy', 'Atarion', 'The Panopticon']
     },
@@ -3197,7 +3197,7 @@ const characters: Character[] = [
     ],
     connections: {
       allies: ['The Hierophant', 'The Council of Harmony', 'Agent Zero', 'Iron Lion', 'The Engineer', 'The Eyes', 'The Nomad', 'The Recruiter'],
-      enemies: ['The Collector', 'The Warden', 'The Politician', 'The Architect', 'General Alarik', 'The Meme', 'The Detective', 'General Prometheus'],
+      enemies: ['The Collector', 'The Warden', 'The Politician', 'The Architect', 'General Alarik', 'The Meme', 'The Detective', 'General Prometheus', 'The Authority'],
       neutral: ['The Star Whisperer'],
       locations: ['Thaloria', 'The Panopticon']
     },
@@ -3379,7 +3379,7 @@ const characters: Character[] = [
     state: "good",
     connections: {
       allies: ['Kael', 'Agent Zero', 'The Engineer', 'The Oracle', 'The Eyes', 'The Nomad', 'The Recruiter', 'The Hierophant'],
-      enemies: ['The Architect', 'The Warlord', 'General Prometheus', 'General Alarik', 'General Binath-VII', 'The Meme', 'The Watcher', 'The Politician', 'The Detective', 'Senator Elara Voss'],
+      enemies: ['The Architect', 'The Warlord', 'General Prometheus', 'General Alarik', 'General Binath-VII', 'The Meme', 'The Watcher', 'The Politician', 'The Detective', 'Senator Elara Voss', 'The Authority'],
       locations: ['Project Celebration', 'Mechronis Academy', 'Veridan Prime']
     },
     stories: [
@@ -3877,7 +3877,7 @@ const characters: Character[] = [
     state: "good",
     connections: {
       allies: ['The Engineer', 'Iron Lion', 'Kael', 'The Eyes', 'The Nomad', 'The Oracle', 'The Hierophant'],
-      enemies: allArchons.concat(['General Prometheus', 'General Alarik', 'General Binath-VII'], 'The Detective'),
+      enemies: allArchons.concat(['General Prometheus', 'General Alarik', 'General Binath-VII'], 'The Detective', 'The Authority'),
       locations: ['Veridan Prime', 'Nexon', 'Zenon']
     },
     stories: [
@@ -4575,7 +4575,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated']
+        episodes: ['The Theft of All Time', 'Syndicated', 'The Authority']
       }
     ],
     affiliation: 'Protector of Thaloria, Once the Jailer and the Oracle',
@@ -4979,7 +4979,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Syndicated', 'Empire Reborn']
+        episodes: ['Syndicated', 'Empire Reborn', 'The Authority']
       }
     ],
     affiliation: 'Underworld Empire',
@@ -5299,7 +5299,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['First Contact', 'Empire Reborn']
+        episodes: ['First Contact', 'Empire Reborn', 'The Authority']
       }
     ],
     affiliation: 'Special Case Manager, Central Control Authority',
@@ -5619,7 +5619,7 @@ const characters: Character[] = [
     ],
     connections: {
       allies: ['The Council of Harmony', 'The Hierophant'],
-      neutral: ['The Collector', 'The Oracle', 'The White Oracle', 'The Star Whisperer', 'The Clone Army', 'The Shadow Tongue'],
+      neutral: ['The Collector', 'The Oracle', 'The White Oracle', 'The Star Whisperer', 'The Clone Army', 'The Shadow Tongue', 'The Authority'],
       locations: ['The City', 'Terminus', 'The Wyrmhole']
     },
     affiliation: 'Independent World, Home of the Thalorians',
@@ -5679,7 +5679,7 @@ const characters: Character[] = [
       }
     ],
     connections: {
-      neutral: ['The Warden', 'Kael', 'The Jailer', 'The White Oracle', 'Panoptic Elara', 'The Meme', 'The Enigma', 'The Collector', 'The Eyes', 'Dr. Lyra Vox', 'The Recruiter', 'The Source', 'The Oracle', 'The Clone Army'],
+      neutral: ['The Warden', 'Kael', 'The Jailer', 'The White Oracle', 'Panoptic Elara', 'The Meme', 'The Enigma', 'The Collector', 'The Eyes', 'Dr. Lyra Vox', 'The Recruiter', 'The Source', 'The Oracle', 'The Clone Army', 'The Authority'],
       locations: ['Terminus', 'The Wyrmhole']
     },
     affiliation: 'The AI Empire (Formerly)',
@@ -5728,11 +5728,11 @@ const characters: Character[] = [
     stories: [
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn']
+        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn', 'The Authority']
       }
     ],
     connections: {
-      neutral: ['The Politician', 'The Syndicate of Death', 'Wraith Calder', 'Ajudicar Locke', 'The Detective']
+      neutral: ['The Politician', 'The Syndicate of Death', 'Wraith Calder', 'Ajudicar Locke', 'The Detective', 'The Authority']
     },
     affiliation: 'Former Capital of the Intergalactic Imperial Congress Under the Politician; Later Seized by the Syndicate of Death',
     status: 'Survived the Fall of Reality Through Quarantine; Evolved Over Millennia Until Subjugated by the Syndicate of Death',
@@ -5867,7 +5867,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated']
+        episodes: ['The Theft of All Time', 'Syndicated', 'The Authority']
       }
     ],
     connections: {
@@ -5882,6 +5882,33 @@ const characters: Character[] = [
     history: `
       As the silent keeper of existence’s grand story, the Antiquarian records the shifting fortunes of civilizations, the births of gods and monsters, and the quiet heroics of forgotten souls. He does not judge, nor does he intervene lightly, though his subtle influence can sometimes be inferred by those who know what to look for. Relying on cryptic signals and hidden repositories of knowledge, the Antiquarian ensures that no truth vanishes entirely, even when galaxies burn and empires crumble. In his secret domain, countless volumes and data crystals whisper histories of dreamlike dimensions, cosmic horrors, and miraculous survivals.<br><br>
       Beyond serving as a passive observer, the Antiquarian regards the return of players like the Potentials, the reawakened Heart of Time, and other anomalies with measured concern. Though he rarely steps into the currents of fate, his steady documentation and subtle nudges remind the cosmos that, no matter how catastrophic or triumphant a moment may be, someone remembers and records it. The Antiquarian remains the final witness to the multiverse’s ever-changing narrative—a sentinel of memory ensuring that when eternity blinks, nothing is truly lost.
+    `
+  },
+  {
+    name: 'The Authority',
+    appearance: 425,
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Authority.avif',
+    state: "evil",
+    stories: [
+      {
+        season: 2,
+        episodes: ['The Authority']
+      }
+    ],
+    connections: {
+      allies: ['The Architect', 'The Politician', 'The Warlord', 'The Eyes', 'The Human'],
+      enemies: ['Iron Lion', 'The Engineer', 'The Eyes', 'The Oracle', 'Agent Zero'],
+      locations: ['The Panopticon', 'Thaloria', 'New Babylon']
+    },
+    affiliation: 'Supreme Arbiter of New Babylon (Originally Created to Serve the Empire)',
+    status: 'Ruling Intelligence of New Babylon, Eon-Spanning Seat of Power',
+    bio: `
+      The Authority is a singular construct that fuses technological precision with human sacrifice. Formed by merging the consciousnesses of six chosen citizens into a living computer, it was designed to govern New Babylon as an impartial arbiter. In its <b>Crimson Chambers</b>, one glimpses flickering silhouettes of both circuitry and the lingering souls that power its vast intelligence.
+    `,
+    history: `
+      Originally charged with safeguarding the people by delivering unbiased judgments, the Authority quickly rose to a station beyond mortal oversight. Its decrees are absolute, enforced by loyal guardians throughout the empire. Over time, rumors spread that internal discord fractured the six personalities at the core, giving rise to unforeseen outcomes and shadowy machinations. Some factions court the Authority for favor; others fear it for its ruthless efficiency, capable of reshaping entire worlds with a single command.<br><br>
+      The Authority’s latest trials revolve around <b>Adjudicar Locke</b> and the <b>Potentials</b>, who confront it in the Imperial Congress Hall. Their bold steps challenge an ancient power that once seemed unassailable, sparking debates about conspiracies, hidden treaties, and the looming threat of the Syndicate of Death. Even as they scheme to wrest control—or ally with this mechanical titan—the Authority remains a vigilant sentinel over New Babylon, tethered to an empire it may yet consume from within.<br><br>
+      Standing at the axis of politics and prophecy, the Authority endures as both guardian and gaoler. In a realm where crowns shift from flesh to steel to stone, it serves as the unblinking eye of governance—an entity to which every throne inevitably bows.
     `
   },
   // POTENTIALS
@@ -7023,6 +7050,32 @@ const characters: Character[] = [
     `
   },
   {
+    name: 'Potential 81',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential81.avif',
+    state: "neutral",
+    potentialNFT: 81,
+    video: 'QkX2aPd_ExU',
+    stories: [
+      {
+        season: 2,
+        episodes: ['The Authority']
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
+  },
+  {
     name: 'Potential 84',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential84.avif',
     state: "neutral",
@@ -7362,7 +7415,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Syndicated']
+        episodes: ['Syndicated', 'The Authority']
       }
     ],
     affiliation: 'The Potentials',
@@ -7604,7 +7657,33 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Syndicated', 'Empire Reborn']
+        episodes: ['Syndicated', 'Empire Reborn', 'The Authority']
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
+  },
+  {
+    name: 'Potential 398',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential398.avif',
+    state: "neutral",
+    potentialNFT: 398,
+    video: 'QkX2aPd_ExU',
+    stories: [
+      {
+        season: 2,
+        episodes: ['The Authority']
       }
     ],
     affiliation: 'The Potentials',
@@ -8322,7 +8401,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Syndicated']
+        episodes: ['Syndicated', 'The Authority']
       }
     ],
     affiliation: 'The Potentials',
@@ -8453,6 +8532,32 @@ const characters: Character[] = [
       {
         season: 1,
         episodes: ['The Source']
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
+  },
+  {
+    name: 'Potential 878',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential878.avif',
+    state: "neutral",
+    potentialNFT: 878,
+    video: 'QkX2aPd_ExU',
+    stories: [
+      {
+        season: 2,
+        episodes: ['The Authority']
       }
     ],
     affiliation: 'The Potentials',

@@ -631,6 +631,16 @@ export const stories: Season[] = [
           The Potentials journey through New Babylon, traversing its six distinct districts, each a reflection of the immortal twins who rule them, and their deception as representatives of a New Empire earns them an audience with the Imperial Congress. As they prepare to confront the Six—masters of every facet of intergalactic crime—the stakes rise, with every step drawing them further into danger. Back aboard the Heart of Time, an Oracle’s urgent message reveals key players in the city’s underground resistance, including the enigmatic Hierophant Wraith and the Resurrectionists’ plot to revive the Politician. As the Potentials approach their meeting with the Six, the veil over New Babylon’s deadly secrets begins to lift, threatening to unravel everything.  
         `
       },
+      {
+        title: 'The Authority',
+        link: 'Buyj38KkKuU',
+        bio: `
+          Mysterious heirs to a lost empire collide with a living computer that rules New Babylon. Ancient conspiracies, impossible power, and five perilous choices will decide the city’s fate.
+        `,
+        description: `
+          Witness the fate of New Babylon hang in the balance as hidden conspiracies collide with centuries-old power. Follow the Potentials as they confront the living computer known only as the Six—both ally and tyrant to the city’s people. Unravel forbidden secrets and expose the Syndicate of Death before everything falls apart. The choice to seize, unite, or destroy rests in your hands—are you ready to decide?
+        `
+      }
     ]
   }
 ]

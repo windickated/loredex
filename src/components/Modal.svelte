@@ -73,6 +73,10 @@
 
   let showEpisodes: boolean = false;
   let showSummary: boolean = false;
+
+  // SVG Icons
+  let closeSvgFocus: boolean = false;
+  let backArrowSvgFocus: boolean = false;
 </script>
 
 <svelte:window bind:innerWidth={width} />
@@ -102,8 +106,49 @@
     style="display: {$fullscreenPicture ? 'none' : 'block'}"
   >
     <header>
-      <button class="back-arrow" on:click={handleBackArrow}>
-        <img src="/back-arrow.png" alt="Back" />
+      <button
+        class="back-arrow"
+        on:click={handleBackArrow}
+        on:pointerover={() => (backArrowSvgFocus = true)}
+        on:pointerout={() => (backArrowSvgFocus = false)}
+        aria-label="Back"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 200 200">
+          <defs>
+            <mask id="quit-svg-mask">
+              <circle r="95" fill="white" />
+              <path
+                class="quit-svg-mask"
+                d="
+                  M 50 0
+                  L -50 0
+                  L 0 -50
+                  M -50 0
+                  L 0 50
+                "
+                fill="none"
+                stroke="black"
+                stroke-width="25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                transform={backArrowSvgFocus ? "scale(1.2)" : ""}
+              />
+            </mask>
+          </defs>
+
+          <circle
+            style="
+              transition: all 0.3s ease-in-out;
+              transform: {backArrowSvgFocus ? 'scale(1.05);' : 'none'}
+              fill: {backArrowSvgFocus
+              ? 'rgb(51, 226, 230)'
+              : 'rgba(51, 226, 230, 0.75)'}
+            "
+            fill="rgba(51, 226, 230, 0.75)"
+            r="95"
+            mask="url(#quit-svg-mask)"
+          />
+        </svg>
       </button>
       <div class="title">
         {#if $selectedCharacter}
@@ -124,8 +169,37 @@
           <h1>The Dischordian Saga</h1>
         {/if}
       </div>
-      <button class="close-button" on:click={closeDialog}>
-        <img src="/close.png" alt="Close" />
+      <button
+        class="close-button"
+        on:click={closeDialog}
+        on:pointerover={() => (closeSvgFocus = true)}
+        on:pointerout={() => (closeSvgFocus = false)}
+        aria-label="Close"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="-100 -100 200 200"
+          class="close-svg"
+          stroke="rgba(255, 60, 64, 0.85)"
+          stroke-width="30"
+          stroke-linecap="round"
+          style="
+            transform: {closeSvgFocus ? 'scale(1.2);' : 'none'}
+            stroke: {closeSvgFocus
+            ? 'rgb(255, 60, 64)'
+            : 'rgba(255, 60, 64, 0.85)'}
+          "
+        >
+          <path
+            d="
+              M -65 -65
+              L 65 65
+              M -65 65
+              L 65 -65
+            "
+            fill="none"
+          />
+        </svg>
       </button>
     </header>
 
@@ -623,26 +697,12 @@
 
         .close-button,
         .back-arrow {
-          font-size: inherit;
-          line-height: inherit;
           padding: 0.5vw;
-          background-color: rgba(22, 30, 95, 0.9);
-          border-radius: 1vw;
 
-          &:hover,
-          &:active {
-            background-color: rgba(45, 90, 216, 0.9);
-          }
-
-          img {
+          svg {
             width: 3vw;
-            height: auto;
-            opacity: 0.9;
+            height: 3vw;
           }
-        }
-
-        .back-arrow img {
-          opacity: 0.75;
         }
       }
 
@@ -1170,11 +1230,11 @@
 
           .close-button,
           .back-arrow {
-            padding: 0.5em;
-            border-radius: 0.5em;
+            padding: 0.35em;
 
-            img {
+            svg {
               width: 1.5em;
+              height: 1.5em;
             }
           }
         }

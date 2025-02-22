@@ -164,8 +164,20 @@ iframe {
   }
 
   button {
-    border-radius: 1em;
-    padding: 0.5em;
+    font-size: 1em;
+    line-height: 1.75em;
+    padding: 0.25em 1em;
+    border-radius: 0.5em;
+    gap: 0.5em;
+  }
+
+  button img {
+    height: 1.25em;
+  }
+
+  button svg {
+    height: 1.25em;
+    width: 1.25em;
   }
 
   hr {

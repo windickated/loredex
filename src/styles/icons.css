@@ -56,8 +56,7 @@ svg * {
 .warning-svg:hover,
 .chain-svg:hover,
 .death-svg:hover,
-.gradient-arrow-svg:hover,
-.calendar-svg:hover {
+.gradient-arrow-svg:hover {
   fill: rgb(51, 226, 230);
   transform: scale(1.05);
 }
@@ -68,8 +67,7 @@ svg * {
 .replay-svg:hover,
 .refresh-svg:hover,
 .location-svg:hover,
-.chain-svg:hover,
-.calendar-svg:hover {
+.chain-svg:hover {
   stroke: rgb(51, 226, 230);
 }
 

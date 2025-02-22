@@ -132,6 +132,9 @@
   const showTimeline = () => {
     $showModal = "timeline";
   };
+
+  // SVG Icons
+  let searchSvgFocus: boolean = false;
 </script>
 
 <svelte:window on:keydown={handleKeyDown} />
@@ -155,28 +158,79 @@
       : "filter: none; opacity: 1;"}
   >
     <div class="search-wrapper">
-      <button on:click={showTimeline}>
-        <img
-          src="time.png"
-          alt="Time"
-          style="opacity: {preventZoomChanges ? '0' : '1'};"
-        />
+      <button on:click={showTimeline} aria-label="Timeline">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="-100 -100 200 200"
+          class="calendar-svg"
+          fill="none"
+          stroke="#dedede"
+          stroke-width="12"
+          stroke-linejoin="round"
+          stroke-linecap="round"
+        >
+          <path
+            d="
+              M -25 70
+              L -80 70
+              L -80 0
+              M -80 -25
+              L -80 -60
+              L 80 -60
+              L 80 -20
+              M -80 -35
+              L 80 -35
+              M -45 -35
+              L -45 -75
+              M 45 -35
+              L 45 -75
+              M 0 -60
+              L 0 -75
+              M -55 0
+              L -35 0
+              M -55 17.5
+              L -35 17.5
+              M -55 35
+              L -35 35
+              M 35 35
+              L 35 10
+              M 35 35
+              L 52.5 42.5
+            "
+          />
+          <circle r="45" cx="35" cy="35" />
+        </svg>
       </button>
       <div class="search">
-        <img
-          src="search.png"
-          alt="Search"
-          style="opacity: {preventZoomChanges ? '0' : '1'};"
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="-100 -100 200 200"
+          class="search-svg filter-image"
+          stroke="#dedede"
+          stroke-linecap="round"
+          fill="none"
+          on:click={handleSearchFocus}
           role="button"
           tabindex="0"
-          on:click={handleSearchFocus}
-        />
+          style="transform: {searchSvgFocus
+            ? 'scale(1.05) rotate(90deg)'
+            : 'none'}"
+        >
+          <circle cx="-20" cy="-20" r="70" stroke-width="15" />
+          <line x1="34" y1="34" x2="85" y2="80" stroke-width="25" />
+        </svg>
         <input
           style="opacity: {preventZoomChanges ? '0' : '1'};"
           bind:value={searchField}
           on:input={handleSearch}
-          on:focus={handleSearch}
-          on:blur={resetSearch}
+          on:focus={() => {
+            handleSearch();
+            searchSvgFocus = true;
+          }}
+          on:blur={() => {
+            resetSearch();
+            searchSvgFocus = false;
+          }}
           bind:this={searchInput}
           placeholder="Find a character..."
         />
@@ -184,18 +238,27 @@
     </div>
     <div class="zoom">
       <div class="zoom-slider">
-        <img
-          src="/zoom-out.png"
-          alt="Zoom out"
-          role="button"
-          tabindex="0"
-          style="opacity: {preventZoomChanges ? '0' : '1'};"
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="-100 -100 200 200"
+          class="search-svg filter-image"
+          stroke="#dedede"
+          stroke-width="15"
+          stroke-linecap="round"
+          fill="none"
           on:click={() => {
             if (preventZoomChanges) return;
             let zoom = mapZoom - 0.05;
             mapZoom = setZoom(zoom);
           }}
-        />
+          role="button"
+          tabindex="0"
+          aria-label="Zoom out"
+        >
+          <circle cx="-20" cy="-20" r="70" />
+          <line x1="34" y1="34" x2="85" y2="80" stroke-width="25" />
+          <line x1="-55" y1="-20" x2="15" y2="-20" />
+        </svg>
         <input
           type="range"
           min="0.1"
@@ -205,18 +268,28 @@
           style="opacity: {preventZoomChanges ? '0' : '1'};"
           bind:value={mapZoom}
         />
-        <img
-          src="/zoom-in.png"
-          alt="Zoom in"
-          role="button"
-          tabindex="0"
-          style="opacity: {preventZoomChanges ? '0' : '1'};"
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="-100 -100 200 200"
+          class="search-svg filter-image"
+          stroke="#dedede"
+          stroke-width="15"
+          stroke-linecap="round"
+          fill="none"
           on:click={() => {
             if (preventZoomChanges) return;
             let zoom = mapZoom + 0.05;
             mapZoom = setZoom(zoom);
           }}
-        />
+          role="button"
+          tabindex="0"
+          aria-label="Zoom in"
+        >
+          <circle cx="-20" cy="-20" r="70" />
+          <line x1="34" y1="34" x2="85" y2="80" stroke-width="25" />
+          <line x1="-55" y1="-20" x2="15" y2="-20" />
+          <line x1="-20" y1="-55" x2="-20" y2="15" />
+        </svg>
       </div>
       <button
         class="zoom-info"
@@ -467,11 +540,19 @@
       gap: 1vw;
       transition: all 0.5s ease-in-out;
 
-      img {
+      button {
+        padding: 0.5vw;
+        border-radius: 0.5vw;
+
+        svg {
+          width: 1.75vw;
+          height: 1.75vw;
+        }
+      }
+
+      svg {
         width: 1.5vw;
-        height: auto;
-        transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-        cursor: pointer;
+        height: 1.5vw;
       }
 
       .search-wrapper {
@@ -744,8 +825,20 @@
           opacity: 1;
         }
 
-        img {
-          width: 3vh;
+        button {
+          padding: 0.35em;
+          border-radius: 0.5em;
+          background-color: #010020;
+
+          svg {
+            width: 1.75em;
+            height: 1.75em;
+          }
+        }
+
+        svg {
+          width: 1.5em;
+          height: 1.5em;
           margin-inline: 0.5em;
         }
 
@@ -756,31 +849,26 @@
           justify-content: flex-start;
           flex-direction: row-reverse;
 
-          button {
-            background-color: #010020;
-            padding: 1em;
-          }
-
           .search {
-            padding: 0.25em;
-            border-radius: 0.25em;
+            padding: 0.5em;
+            border-radius: 0.5em;
             gap: 0.25em;
             font-size: 1em;
-            line-height: 1.5em;
+            line-height: 2em;
             background-color: transparent;
             border: none;
 
             input {
               font-size: inherit;
               line-height: inherit;
-              border-radius: 0.25em;
+              border-radius: 0.5em;
               padding: 0.25em 0;
               width: 0;
               background-color: #010020;
 
               &:focus {
                 width: 50vw;
-                padding: 0.25em 0.5em;
+                padding-inline: 1em;
               }
             }
           }

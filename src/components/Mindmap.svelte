@@ -22,7 +22,7 @@
   let startY: number = 0;
   let isDragging: boolean = false;
   let searchField: string;
-  let preventZoomChanges: boolean = true;
+  let preventZoomChanges: boolean = false;
   let searchInput: HTMLInputElement | null;
 
   $: activeSeason = stories.find(
@@ -31,13 +31,13 @@
 
   onMount(() => {
     mapZoom = 0.2;
-    if (window.innerWidth < 600) {
-      preventZoomChanges = false;
-      return;
-    }
-    setTimeout(() => {
-      preventZoomChanges = false;
-    }, 7000);
+    // if (window.innerWidth < 600) {
+    //   preventZoomChanges = false;
+    //   return;
+    // }
+    // setTimeout(() => {
+    //   preventZoomChanges = false;
+    // }, 7000);
   });
 
   const handlePointerDown = (event: PointerEvent) => {
@@ -136,10 +136,11 @@
 
 <svelte:window on:keydown={handleKeyDown} />
 
-<div class="logo" style={preventZoomChanges ? "" : "display: none;"}>
+<!-- <div class="logo" style={preventZoomChanges ? "" : "display: none;"}>
   LOREDEX
-</div>
+</div> -->
 
+<!-- svelte-ignore a11y_no_noninteractive_element_to_interactive_role a11y_click_events_have_key_events -->
 <header>
   <h1>
     <a href="https://degenerousdao.com/" target="_blank">
@@ -162,7 +163,6 @@
         />
       </button>
       <div class="search">
-        <!-- svelte-ignore a11y_no_noninteractive_element_to_interactive_role a11y_click_events_have_key_events -->
         <img
           src="search.png"
           alt="Search"
@@ -183,7 +183,6 @@
       </div>
     </div>
     <div class="zoom">
-      <!-- svelte-ignore a11y_no_noninteractive_element_to_interactive_role a11y_click_events_have_key_events -->
       <div class="zoom-slider">
         <img
           src="/zoom-out.png"
@@ -397,31 +396,31 @@
 
 <!-- svelte-ignore css_unused_selector -->
 <style lang="scss">
-  .logo {
-    z-index: 100;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10vw;
-    color: transparent;
-    background-image: linear-gradient(
-      to right,
-      rgba(51, 226, 230, 0.1),
-      rgba(51, 226, 230, 0.25),
-      rgb(51, 226, 230),
-      rgba(51, 226, 230, 0.25),
-      rgba(51, 226, 230, 0.1)
-    );
-    background-clip: text;
-    background-size: 200% auto;
-    opacity: 0;
-    filter: drop-shadow(0 0 0.5vw rgba(51, 226, 230, 0.5));
-    animation: logo 5s linear forwards;
-    cursor: wait;
-  }
+  // .logo {
+  //   z-index: 100;
+  //   position: fixed;
+  //   width: 100vw;
+  //   height: 100vh;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   font-size: 10vw;
+  //   color: transparent;
+  //   background-image: linear-gradient(
+  //     to right,
+  //     rgba(51, 226, 230, 0.1),
+  //     rgba(51, 226, 230, 0.25),
+  //     rgb(51, 226, 230),
+  //     rgba(51, 226, 230, 0.25),
+  //     rgba(51, 226, 230, 0.1)
+  //   );
+  //   background-clip: text;
+  //   background-size: 200% auto;
+  //   opacity: 0;
+  //   filter: drop-shadow(0 0 0.5vw rgba(51, 226, 230, 0.5));
+  //   animation: logo 5s linear forwards;
+  //   cursor: wait;
+  // }
 
   header {
     width: 100vw;
@@ -431,7 +430,7 @@
     flex-direction: row nowrap;
     justify-content: space-between;
     align-items: center;
-    opacity: 0;
+    // opacity: 0;
     animation: show 1s linear 6s forwards;
     cursor: default;
 

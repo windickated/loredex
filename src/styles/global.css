@@ -1,160 +1,11 @@
-:where(
-    html,
-    body,
-    div,
-    span,
-    applet,
-    object,
-    iframe,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    pre,
-    a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
-    img,
-    ins,
-    kbd,
-    q,
-    s,
-    samp,
-    small,
-    strike,
-    strong,
-    sub,
-    sup,
-    tt,
-    var,
-    b,
-    u,
-    i,
-    center,
-    dl,
-    dt,
-    dd,
-    /* ol,
-    ul, */
-    li,
-    fieldset,
-    form,
-    label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td,
-    article,
-    aside,
-    canvas,
-    details,
-    embed,
-    figure,
-    figcaption,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    output,
-    ruby,
-    section,
-    summary,
-    time,
-    mark,
-    audio,
-    video
-  ) {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-  box-sizing: border-box;
+:where(*) {
+  cursor: default;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-:where(
-    article,
-    aside,
-    details,
-    figcaption,
-    figure,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    section
-  ) {
-  display: block;
-}
-
-:where(body) {
-  line-height: 1;
-}
-
-/* :where(ol, ul) {
-  list-style: none;
-} */
-
-:where(blockquote, q) {
-  quotes: none;
-}
-
-:where(blockquote:before, blockquote:after, q:before, q:after) {
-  content: "";
-  content: none;
-}
-
-:where(img) {
-  max-width: 100%;
-}
-
-:where(button) {
-  border: none;
-  cursor: pointer;
-}
-
-:where(dialog) {
-  padding: 0;
-  outline: none;
-}
-
-
-/* General */
 * {
   font-size: inherit;
   line-height: inherit;
-}
-
-html {
-  background-image: url("/space.avif"),
-  radial-gradient(rgba(1, 0, 32, 0.75), rgb(1, 0, 32));
-  background-color: #010020;
-  box-sizing: border-box;
-  font-family: "PT Serif Caption", serif;
-  color: #dedede;
-  font-size: 1rem;
-  word-spacing: 0.2rem;
-  line-height: 1.75;
-  overflow: hidden;
 }
 
 *::-webkit-scrollbar {
@@ -162,35 +13,108 @@ html {
   height: 0px;
 }
 
+html {
+  background-image: url("/space.avif"), radial-gradient(rgba(1, 0, 32, 0.75), rgb(1, 0, 32));
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #010020;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'PT Serif Caption', serif;
+  color: #dedede;
+  font-size: 1em;
+  word-spacing: 0.2em;
+  line-height: 2em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+input {
+  cursor: text;
+}
+
+input:disabled {
+  opacity: 1; /* for iOS */
+}
+
 button {
   font-family: inherit;
-  font-size: inherit;
-  color: inherit;
   cursor: pointer;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  gap: 0.5vw;
-  padding: 0.5vw;
+  gap: 1vw;
+  padding: 1vw;
   font-size: 1.5vw;
+  line-height: 1.5vw;
+  color: #dedede;
   background-color: rgba(56, 117, 250, 0.5);
   border: 0.1vw solid rgba(51, 226, 230, 0.5);
-  border-radius: 0.5vw;
-  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border-radius: 1vw;
 }
 
 button:hover,
 button:active {
+  color: rgba(51, 226, 230, 0.9);
   background-color: rgba(56, 117, 250, 0.9);
   border-color: rgba(51, 226, 230, 0.9);
   filter: drop-shadow(0 0 0.5vw rgba(51, 226, 230, 0.5));
-  text-shadow: 0 0 0.5vw rgba(1, 0, 32, 0.5);
+  text-shadow: 0 0 0.25vw rgba(1, 0, 32, 0.5);
   transform: scale(1.05);
 }
 
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+  opacity: 0.5;
+  color: #dedede;
+  border-color: rgba(51, 226, 230, 0.5);
+  background-color: rgba(56, 117, 250, 0.5);
+  filter: none;
+  transform: none;
+  cursor: not-allowed;
+}
+
+button img {
+  height: 2vw;
+  width: auto;
+  cursor: inherit;
+  filter: drop-shadow(0 0 0.5vw rgba(1, 0, 32, 0.5));
+  border-radius: 10%;
+}
+
+button svg {
+  height: 2vw;
+  width: 2vw;
+  cursor: inherit !important;
+}
+
+button *,
+[role="button"] * {
+  cursor: inherit;
+}
+
 a {
-  color: #33E2E6;
+  color: rgba(51, 226, 230, 0.9);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a * {
+  cursor: inherit;
+}
+
+a:hover,
+a:active {
+  color: rgb(51, 226, 230);
+  text-decoration: underline;
 }
 
 .blur {

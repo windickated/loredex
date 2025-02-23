@@ -112,7 +112,6 @@
               points="
                 -40 -90 -40 90 50 0
               "
-              opacity="0.75"
               transform="rotate(90)"
             />
           </svg>

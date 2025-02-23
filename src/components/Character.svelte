@@ -59,7 +59,7 @@
   }
 
   function showActiveConnections() {
-    if (document.activeElement?.tagName === "INPUT") return;
+    if (document.activeElement?.id === "search") return;
     const allConnections: HTMLDivElement[] = Array.from(
       document.querySelectorAll(".connection")
     );

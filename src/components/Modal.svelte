@@ -1633,6 +1633,7 @@
             width: 100vw;
             font-size: 1em;
             line-height: 1.75em;
+            padding: 1em;
             border-radius: 0;
             border-left: none;
             border-right: none;

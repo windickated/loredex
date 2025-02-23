@@ -77,6 +77,8 @@
   // SVG Icons
   let closeSvgFocus: boolean = false;
   let backArrowSvgFocus: boolean = false;
+  let deathSvgFocus: boolean = false;
+  let locationSvgFocus: boolean = false;
 </script>
 
 <svelte:window bind:innerWidth={width} />
@@ -152,16 +154,111 @@
       </button>
       <div class="title">
         {#if $selectedCharacter}
-          {#if $selectedCharacter.dead}
-            <img class="title-icon" src="dead-red.png" alt="Dead" />
-          {/if}
-          {#if $selectedCharacter.location}
-            <img class="title-icon" src="location.png" alt="Location" />
+          {#if $selectedCharacter.dead && width > 600}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="death-svg"
+              fill={deathSvgFocus ? getColor($selectedCharacter.name) : "none"}
+              stroke={getColor($selectedCharacter.name)}
+              stroke-width="24"
+              opacity="0.75"
+              on:pointerover={() => (deathSvgFocus = true)}
+              on:pointerout={() => (deathSvgFocus = false)}
+            >
+              <path
+                d="M246.53 21.03c-62.334.34-123.514 15.678-165 39.44l-6.155 2.06c19.528 58.267 48.163 98.687 80.938 132.376l-1.72 67.47 64.5 30.437c-19 58.985-34.515 128.892-50.405 197.656h191.125c-10.308-47.13-20.516-94.494-32.157-138.72 23.774 28.113 46.51 61.63 67.063 104.313l16.842-8.094c-22.568-46.87-47.938-83.34-74.312-113.626l31.125-24.28-47.47-104.377 48.22-33.75c-18.963-35.457-37.446-71.306-72.28-92.656-32.51 19.993-52 56.712-72.22 92.5l-29.22 34.69c-28.89-25.67-54.975-53.34-76.093-90.532C192.195 60.42 315.858 47.172 419.656 72.56 373.43 35.602 309.392 20.69 246.53 21.032z"
+              />
+            </svg>
+          {:else if $selectedCharacter.location && width > 600}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="-100 -100 200 200"
+              class="location-svg"
+              fill="rgb(51, 226, 230)"
+              stroke="rgb(51, 226, 230)"
+              stroke-width="7.5"
+              stroke-linejoin="round"
+              stroke-linecap="round"
+              opacity="0.75"
+              on:pointerover={() => (locationSvgFocus = true)}
+              on:pointerout={() => (locationSvgFocus = false)}
+            >
+              <defs>
+                <mask id="location-inner-ellipse">
+                  <ellipse
+                    cx="0"
+                    cy="62"
+                    rx="70"
+                    ry="25"
+                    fill="white"
+                    stroke="white"
+                  />
+                  <ellipse
+                    cx="0"
+                    cy="57"
+                    rx="57.5"
+                    ry="15"
+                    fill="black"
+                    stroke="black"
+                    stroke-width="2.5"
+                  />
+                  <g fill="black" stroke="black" stroke-width="25">
+                    <circle r="50" cx="0" cy="-37.5" />
+                    <polygon
+                      points="
+                        0 60 -45 -15.5 45 -15.5
+                      "
+                    />
+                  </g>
+                </mask>
+
+                <mask id="location-inner-circle">
+                  <g fill="white" stroke="white">
+                    <circle r="50" cx="0" cy="-37.5" />
+                    <polygon
+                      points="
+                        0 60 -45 -15.5 45 -15.5
+                      "
+                    />
+                  </g>
+                  <circle
+                    r="25"
+                    cx="0"
+                    cy="-37.5"
+                    fill="black"
+                    stroke="black"
+                  />
+                </mask>
+              </defs>
+
+              <ellipse
+                cx="0"
+                cy="62"
+                rx="70"
+                ry="25"
+                mask="url(#location-inner-ellipse)"
+                style={locationSvgFocus
+                  ? "transform: scale(1.1) translateY(-5%)"
+                  : ""}
+              />
+              <g
+                mask="url(#location-inner-circle)"
+                style={locationSvgFocus ? "transform: translateY(5%)" : ""}
+              >
+                <circle r="50" cx="0" cy="-37.5" />
+                <polygon
+                  points="
+                    0 60 -45 -15.5 45 -15.5
+                  "
+                />
+              </g>
+            </svg>
           {/if}
           <h1
-            style="color: {$selectedCharacter.location
-              ? 'rgba(51, 226, 230, 0.75)'
-              : getColor($selectedCharacter.name, 0.75)}"
+            style={$selectedCharacter.location
+              ? ""
+              : `color: ${getColor($selectedCharacter.name, 0.75)}`}
           >
             {$selectedCharacter.name}
           </h1>
@@ -680,11 +777,9 @@
           align-items: center;
           gap: 1vw;
 
-          .title-icon {
-            width: 2vw;
-            opacity: 0.75;
-            transform: none !important;
-            cursor: default;
+          svg {
+            width: 3vw;
+            height: 3vw;
           }
 
           h1 {
@@ -1215,11 +1310,9 @@
             padding-inline: 1em;
             gap: 1em;
 
-            .title-icon {
-              width: 1.25em;
-              opacity: 0.75;
-              transform: none !important;
-              cursor: default;
+            svg {
+              width: 2em;
+              height: 2em;
             }
 
             h1 {

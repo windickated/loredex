@@ -16,7 +16,7 @@
   } = character;
 
   let characterTile: HTMLElement | null;
-  let deadMark: HTMLImageElement | null;
+  let deadMarkFocus: boolean = false;
   const color = setColor(state);
 
   function hideConnections() {
@@ -55,7 +55,7 @@
       styleInactivePlot(plot);
     });
 
-    if (dead) deadMark!.style.opacity = "0";
+    if (dead) deadMarkFocus = false;
   }
 
   function showActiveConnections() {
@@ -115,7 +115,7 @@
       );
       if (activePlot) styleActivePlot(activePlot);
     }
-    if (dead) deadMark!.style.opacity = "0.9";
+    if (dead) deadMarkFocus = true;
 
     if (stories) {
       const characterStories = getCharacterStories(name);
@@ -205,7 +205,25 @@
     {name}
   </p>
   {#if dead}
-    <img class="dead" src="dead.png" alt="Dead" bind:this={deadMark} />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 512 512"
+      class="death-svg dead"
+      fill="black"
+      style="
+        opacity: {deadMarkFocus ? '0.85' : '0'};
+        filter: drop-shadow(0 0 0.25rem {color});
+      "
+    >
+      <mask id="death-svg-mask">
+        <rect width="512" height="512" fill="white" />
+        <path
+          d="M246.53 21.03c-62.334.34-123.514 15.678-165 39.44l-6.155 2.06c19.528 58.267 48.163 98.687 80.938 132.376l-1.72 67.47 64.5 30.437c-19 58.985-34.515 128.892-50.405 197.656h191.125c-10.308-47.13-20.516-94.494-32.157-138.72 23.774 28.113 46.51 61.63 67.063 104.313l16.842-8.094c-22.568-46.87-47.938-83.34-74.312-113.626l31.125-24.28-47.47-104.377 48.22-33.75c-18.963-35.457-37.446-71.306-72.28-92.656-32.51 19.993-52 56.712-72.22 92.5l-29.22 34.69c-28.89-25.67-54.975-53.34-76.093-90.532C192.195 60.42 315.858 47.172 419.656 72.56 373.43 35.602 309.392 20.69 246.53 21.032z"
+          fill="black"
+        />
+      </mask>
+      <rect width="512" height="512" mask="url(#death-svg-mask)" />
+    </svg>
   {/if}
 </section>
 
@@ -225,6 +243,7 @@
     border-radius: 0.75rem;
     outline: none;
     font-size: 0.9rem;
+    line-height: 1.5rem;
   }
 
   .character:hover,
@@ -259,16 +278,12 @@
 
   .dead {
     position: absolute;
-    top: 0.5rem;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    height: 6.5rem;
-    width: auto;
+    top: 0.1rem;
+    left: 0.1rem;
+    border-radius: 0.6rem;
+    width: 7.1rem;
+    height: 7.1rem;
     transition: all 0.3s ease-in-out;
-    background-color: rgba(0, 0, 0, 0);
-    filter: drop-shadow(0 0 0.1rem rgba(51, 226, 230, 0.9));
     opacity: 0;
   }
 </style>

@@ -52,10 +52,8 @@ svg * {
 .eye-svg:hover,
 .star-svg:hover,
 .refresh-svg:hover,
-.location-svg:hover,
 .warning-svg:hover,
-.chain-svg:hover,
-.death-svg:hover,
+.chain-svg:hover
 .gradient-arrow-svg:hover {
   fill: rgb(51, 226, 230);
   transform: scale(1.05);
@@ -66,7 +64,6 @@ svg * {
 .volume-svg:hover,
 .replay-svg:hover,
 .refresh-svg:hover,
-.location-svg:hover,
 .chain-svg:hover {
   stroke: rgb(51, 226, 230);
 }

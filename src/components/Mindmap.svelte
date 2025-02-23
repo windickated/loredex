@@ -896,9 +896,8 @@
               height: 1vh;
             }
 
-            img {
-              height: 3vh;
-              transform: rotate(90deg) !important;
+            svg {
+              transform: rotate(90deg);
             }
           }
 

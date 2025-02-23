@@ -53,8 +53,7 @@ svg * {
 .star-svg:hover,
 .refresh-svg:hover,
 .warning-svg:hover,
-.chain-svg:hover
-.gradient-arrow-svg:hover {
+.chain-svg:hover {
   fill: rgb(51, 226, 230);
   transform: scale(1.05);
 }
@@ -104,6 +103,9 @@ svg * {
 }
 .gradient-arrow-svg:active {
   transform: translateY(10%);
+}
+.gradient-arrow-svg * {
+  pointer-events: none;
 }
 
 .eye-svg,

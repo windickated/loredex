@@ -357,13 +357,71 @@
               on:click={setActiveSeason}
             >
               <p>{getSeasonName(expandable, true)}</p>
-              <img
-                class="arrow"
-                src={$activeSeasonNr == expandable
-                  ? "/arrow-active.png"
-                  : "/arrow-inactive.png"}
-                alt="Arrow"
-              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="-100 -100 200 200"
+                class="gradient-arrow-svg arrow"
+                fill="none"
+                stroke="none"
+                stroke-width="7.5"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+              >
+                <defs>
+                  <linearGradient
+                    id="arrow-gradient"
+                    gradientTransform="rotate(90)"
+                  >
+                    <stop offset="0" stop-color="rgba(51, 226, 230, 0)" />
+                    <stop offset="100%" stop-color="rgba(51, 226, 230, 0.75)" />
+                  </linearGradient>
+
+                  <mask id="arrow-spaces">
+                    <path
+                      d="
+                        M 0 85
+                        L -60 25
+                        L 60 25
+                        L 0 85
+                        M -25 25
+                        L -25 -85
+                        L 25 -85
+                        L 25 25
+                        Z
+                      "
+                      fill="white"
+                      stroke="white"
+                    />
+                    <!-- <g class="gradient-arrow-svg-stripes" stroke="black">
+                      <line x1="-30" y1="-82.5" x2="30" y2="-82.5" />
+                      <line x1="-30" y1="-60" x2="30" y2="-60" />
+                      <line x1="-30" y1="-25" x2="30" y2="-25" />
+                    </g> -->
+                  </mask>
+                </defs>
+
+                <path
+                  class="gradient-arrow-svg-path"
+                  d="
+                    M 0 85
+                    L -60 25
+                    L 60 25
+                    L 0 85
+                    M -25 25
+                    L -25 -85
+                    L 25 -85
+                    L 25 25
+                    Z
+                  "
+                  fill={$activeSeasonNr == expandable
+                    ? "rgb(51, 226, 230)"
+                    : "url(#arrow-gradient)"}
+                  stroke={$activeSeasonNr == expandable
+                    ? "rgb(51, 226, 230)"
+                    : "none"}
+                  mask="url(#arrow-spaces)"
+                />
+              </svg>
             </div>
           {/if}
         </div>
@@ -735,23 +793,23 @@
             color: rgba(51, 226, 230, 0.9);
             opacity: 0.5;
             transition: all 0.3s ease-in-out;
+            cursor: pointer;
 
             p {
               text-align: center;
               white-space: nowrap;
+              cursor: inherit;
             }
 
             .arrow {
-              width: 5rem;
-              height: auto;
-              cursor: pointer;
+              width: 10rem;
+              height: 10rem;
             }
 
             &:hover,
             &:active {
-              transform: scale(1.1);
               opacity: 1;
-              filter: drop-shadow(0 0 0.5rem rgba(51, 226, 230, 0.5));
+              transform: scale(1.1);
             }
           }
         }

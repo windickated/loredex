@@ -311,10 +311,6 @@
   </section>
 </header>
 
-<div class="pinch-gesture">
-  pinch scale: {scale}
-</div>
-
 <!-- svelte-ignore a11y_click_events_have_key_events a11y_no_noninteractive_element_interactions -->
 <main bind:this={mapContainer} on:wheel={handleZoomWheel}>
   <div
@@ -536,15 +532,6 @@
 
 <!-- svelte-ignore css_unused_selector -->
 <style lang="scss">
-  .pinch-gesture {
-    position: fixed;
-    top: 20%;
-    left: 30%;
-    z-index: 1000;
-    pointer-events: none;
-    display: none;
-  }
-
   .logo {
     z-index: 100;
     position: fixed;
@@ -874,10 +861,6 @@
   }
 
   @media only screen and (max-width: 600px) {
-    .pinch-gesture {
-      display: block;
-    }
-
     .logo {
       display: none;
     }

@@ -317,12 +317,12 @@
     class="map-wrapper blur"
     style="transform: scale({mapZoom})"
     bind:this={dragMap}
-    on:pointerdown|preventDefault={handlePointerDown}
+    on:pointerdown={handlePointerDown}
     on:pointerup={handlePointerUp}
     on:pointerleave={handlePointerUp}
     on:pointermove={handlePointerMove}
     use:pinch
-    on:pinch|preventDefault={handlePinch}
+    on:pinch={handlePinch}
   >
     <section
       class="map"

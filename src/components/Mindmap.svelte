@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { pinch, type PinchCustomEvent } from "svelte-gestures";
   import { onMount } from "svelte";
   import characters from "../data/characters.ts";
   import { timeline, stories } from "../data/timeline.ts";
@@ -39,6 +40,17 @@
       preventZoomChanges = false;
     }, 5000);
   });
+
+  let scale;
+  let x;
+  let y;
+  let pointerType;
+  const handlePinch = (event: PinchCustomEvent) => {
+    scale = event.detail.scale;
+    x = event.detail.center.x;
+    y = event.detail.center.y;
+    pointerType = event.detail.pointerType;
+  };
 
   const handlePointerDown = (event: PointerEvent) => {
     isDragging = true;
@@ -304,8 +316,19 @@
   </section>
 </header>
 
+<div class="pinch-gesture">
+  pinch scale: {scale}
+  <br />
+  center: x {x}, y {y}
+</div>
+
 <!-- svelte-ignore a11y_click_events_have_key_events a11y_no_noninteractive_element_interactions -->
-<main bind:this={mapContainer} on:wheel={handleZoomWheel}>
+<main
+  bind:this={mapContainer}
+  on:wheel={handleZoomWheel}
+  use:pinch
+  on:pinch={handlePinch}
+>
   <div
     class="map-wrapper blur"
     style="transform: scale({mapZoom})"
@@ -523,6 +546,14 @@
 
 <!-- svelte-ignore css_unused_selector -->
 <style lang="scss">
+  .pinch-gesture {
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    z-index: 1000;
+    display: none;
+  }
+
   .logo {
     z-index: 100;
     position: fixed;
@@ -712,6 +743,7 @@
     background-size: cover;
     opacity: 0;
     animation: show 1s ease-in 5s forwards;
+    touch-action: none;
 
     .map-wrapper {
       position: relative;
@@ -852,6 +884,10 @@
   }
 
   @media only screen and (max-width: 600px) {
+    .pinch-gesture {
+      display: block;
+    }
+
     .logo {
       display: none;
     }

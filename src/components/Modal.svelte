@@ -1479,6 +1479,7 @@
               min-height: none;
               gap: 1em;
               font-size: 1em;
+              align-items: center;
 
               .status {
                 align-items: center;

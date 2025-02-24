@@ -42,10 +42,9 @@
   });
 
   let scale: number;
-  let details: any;
   const handlePinch = (event: PinchCustomEvent) => {
     scale = event.detail.scale;
-    details = event.detail;
+    mapZoom = setZoom(scale);
   };
 
   const handlePointerDown = (event: PointerEvent) => {

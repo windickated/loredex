@@ -1003,7 +1003,6 @@
       border: none;
       border-radius: 0;
       animation: show 1s ease-in 1s forwards;
-      touch-action: pan-x, pan-y;
       overflow-y: hidden;
 
       .map-wrapper {

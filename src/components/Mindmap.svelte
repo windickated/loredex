@@ -323,12 +323,7 @@
 </div>
 
 <!-- svelte-ignore a11y_click_events_have_key_events a11y_no_noninteractive_element_interactions -->
-<main
-  bind:this={mapContainer}
-  on:wheel={handleZoomWheel}
-  use:pinch
-  on:pinch={handlePinch}
->
+<main bind:this={mapContainer} on:wheel={handleZoomWheel}>
   <div
     class="map-wrapper blur"
     style="transform: scale({mapZoom})"

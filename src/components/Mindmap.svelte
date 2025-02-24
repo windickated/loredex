@@ -332,6 +332,8 @@
     on:pointerup={handlePointerUp}
     on:pointerleave={handlePointerUp}
     on:pointermove={handlePointerMove}
+    use:pinch
+    on:pinch={handlePinch}
   >
     <section
       class="map"

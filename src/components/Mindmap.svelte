@@ -41,10 +41,9 @@
     }, 5000);
   });
 
-  let scale: number;
   const handlePinch = (event: PinchCustomEvent) => {
-    event.preventDefault();
-    scale = event.detail.scale;
+    const scale = event.detail.scale;
+    if (scale < 0.1 || scale > 1.6) return;
     mapZoom = setZoom(scale);
   };
 
@@ -322,12 +321,12 @@
     class="map-wrapper blur"
     style="transform: scale({mapZoom})"
     bind:this={dragMap}
-    on:pointerdown={handlePointerDown}
+    on:pointerdown|preventDefault={handlePointerDown}
     on:pointerup={handlePointerUp}
     on:pointerleave={handlePointerUp}
     on:pointermove={handlePointerMove}
     use:pinch
-    on:pinch={handlePinch}
+    on:pinch|preventDefault={handlePinch}
   >
     <section
       class="map"
@@ -997,7 +996,6 @@
       border: none;
       border-radius: 0;
       animation: show 1s ease-in 1s forwards;
-      touch-action: none;
 
       .map-wrapper {
         .map {

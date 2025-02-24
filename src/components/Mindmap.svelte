@@ -42,14 +42,10 @@
   });
 
   let scale: number;
-  let x: number;
-  let y: number;
-  let pointerType;
+  let details: any;
   const handlePinch = (event: PinchCustomEvent) => {
     scale = event.detail.scale;
-    x = event.detail.center.x;
-    y = event.detail.center.y;
-    pointerType = event.detail.pointerType;
+    details = event.detail;
   };
 
   const handlePointerDown = (event: PointerEvent) => {
@@ -319,8 +315,7 @@
 <div class="pinch-gesture">
   pinch scale: {scale}
   <br />
-  center: x {x}, y {y}
-  pointer type: {pointerType}
+  details: {details}
 </div>
 
 <!-- svelte-ignore a11y_click_events_have_key_events a11y_no_noninteractive_element_interactions -->

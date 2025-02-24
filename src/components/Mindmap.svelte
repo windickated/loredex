@@ -333,7 +333,7 @@
     on:pointerleave={handlePointerUp}
     on:pointermove={handlePointerMove}
     use:pinch
-    on:pinch|preventDefault={handlePinch}
+    on:pinch={handlePinch}
   >
     <section
       class="map"
@@ -1003,7 +1003,7 @@
       border: none;
       border-radius: 0;
       animation: show 1s ease-in 1s forwards;
-      touch-action: pan-left, pan-right, pan-up, pan-down;
+      touch-action: pan-x, pan-y;
 
       .map-wrapper {
         .map {

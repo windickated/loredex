@@ -43,7 +43,7 @@
 
   const handlePinch = (event: PinchCustomEvent) => {
     const scale = event.detail.scale;
-    mapZoom = setZoom(scale / 2);
+    mapZoom = setZoom(scale);
   };
 
   const handlePointerDown = (event: PointerEvent) => {

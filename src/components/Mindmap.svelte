@@ -551,6 +551,7 @@
     top: 20%;
     left: 30%;
     z-index: 1000;
+    pointer-events: none;
     display: none;
   }
 
@@ -743,7 +744,6 @@
     background-size: cover;
     opacity: 0;
     animation: show 1s ease-in 5s forwards;
-    touch-action: none;
 
     .map-wrapper {
       position: relative;
@@ -1006,6 +1006,7 @@
       border: none;
       border-radius: 0;
       animation: show 1s ease-in 1s forwards;
+      touch-action: pan-x, pan-y;
 
       .map-wrapper {
         .map {

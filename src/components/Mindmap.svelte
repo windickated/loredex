@@ -43,6 +43,7 @@
 
   let scale: number;
   const handlePinch = (event: PinchCustomEvent) => {
+    event.preventDefault();
     scale = event.detail.scale;
     mapZoom = setZoom(scale);
   };

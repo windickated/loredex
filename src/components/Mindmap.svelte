@@ -881,10 +881,6 @@
   }
 
   @media only screen and (max-width: 600px) {
-    :global(html) {
-      overflow-y: hidden;
-    }
-
     .pinch-gesture {
       display: block;
     }
@@ -1007,6 +1003,7 @@
       border: none;
       border-radius: 0;
       animation: show 1s ease-in 1s forwards;
+      touch-action: pan-left, pan-right, pan-up, pan-down;
 
       .map-wrapper {
         .map {

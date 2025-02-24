@@ -41,9 +41,9 @@
     }, 5000);
   });
 
-  let scale;
-  let x;
-  let y;
+  let scale: number;
+  let x: number;
+  let y: number;
   let pointerType;
   const handlePinch = (event: PinchCustomEvent) => {
     scale = event.detail.scale;

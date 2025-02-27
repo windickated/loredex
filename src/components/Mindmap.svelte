@@ -4,7 +4,6 @@
   import characters from "../data/characters.ts";
   import { timeline, stories } from "../data/timeline.ts";
   import Character from "./Character.svelte";
-  import Connection from "./Connection.svelte";
   import { showModal } from "../stores/modal.ts";
   import {
     activeSeasonNr,
@@ -13,6 +12,7 @@
     getSeasonName,
   } from "../stores/season.ts";
   import Modal from "./Modal.svelte";
+  import renderConnections from "../utils/connection.ts";
 
   let mapContainer: HTMLElement | null;
   let dragMap: HTMLDivElement | null;
@@ -31,6 +31,7 @@
   );
 
   onMount(() => {
+    renderConnections();
     mapZoom = 0.2;
     if (window.innerWidth < 600) {
       preventZoomChanges = false;
@@ -430,54 +431,19 @@
           {/if}
         </div>
       {/each}
-      <section class="connections">
-        {#each characters as character}
-          {#if character.connections}
-            {#if character.connections}
-              {#if character.connections.allies}
-                {#each character.connections.allies as ally}
-                  <Connection
-                    name1={character.name}
-                    name2={ally}
-                    color="rgb(0, 185, 55)"
-                    appearance={character.appearance}
-                  />
-                {/each}
-              {/if}
-              {#if character.connections.enemies}
-                {#each character.connections.enemies as enemy}
-                  <Connection
-                    name1={character.name}
-                    name2={enemy}
-                    color="rgb(255, 60, 64)"
-                    appearance={character.appearance}
-                  />
-                {/each}
-              {/if}
-              {#if character.connections.neutral}
-                {#each character.connections.neutral as neutral}
-                  <Connection
-                    name1={character.name}
-                    name2={neutral}
-                    color="rgb(150, 150, 150)"
-                    appearance={character.appearance}
-                  />
-                {/each}
-              {/if}
-              {#if character.connections.locations}
-                {#each character.connections.locations as location}
-                  <Connection
-                    name1={character.name}
-                    name2={location}
-                    color="rgb(150, 150, 150)"
-                    appearance={character.appearance}
-                  />
-                {/each}
-              {/if}
-            {/if}
-          {/if}
-        {/each}
-      </section>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={timeline.length * 10 * 16 + 5 * 16}
+        height={150 * 16 + 5 * 16}
+        class="connections-container"
+        fill="none"
+        stroke="rgb(150, 150, 150)"
+        stroke-width="5"
+        stroke-linejoin="round"
+        stroke-linecap="round"
+        style="width: {timeline.length * 10}rem; height: 150rem;"
+      >
+      </svg>
     </section>
     {#if activeSeason}
       <section
@@ -818,13 +784,11 @@
           }
         }
 
-        .connections {
+        .connections-container {
           position: absolute;
           top: 0;
           left: 0;
           pointer-events: none;
-          width: 100rem;
-          background-color: white;
         }
       }
 

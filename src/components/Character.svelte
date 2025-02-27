@@ -20,11 +20,15 @@
   const color = setColor(state);
 
   function hideConnections() {
-    const allConnections: HTMLDivElement[] = Array.from(
-      document.querySelectorAll(".connection")
-    );
-    allConnections.map((connection) => {
-      connection.style.opacity = "0";
+    const characterConnections = document.getElementById(
+      `connections-[${name}]`
+    ) as HTMLElement;
+    characterConnections.style.opacity = "0";
+    Array.from(characterConnections.childNodes).map((node) => {
+      if (node.nodeName !== "path") return;
+      const path = node as SVGPathElement;
+      path!.style.strokeDasharray = "100%";
+      path!.style.strokeDashoffset = "100%";
     });
 
     const allDates: HTMLParagraphElement[] = Array.from(
@@ -60,14 +64,16 @@
 
   function showActiveConnections() {
     if (document.activeElement?.id === "search") return;
-    const allConnections: HTMLDivElement[] = Array.from(
-      document.querySelectorAll(".connection")
-    );
-    const activeConnections = allConnections.filter((connection) =>
-      connection.className.includes("[" + characterTile!.id + "]")
-    );
-    activeConnections.map((connection) => {
-      connection.style.opacity = "1";
+
+    const characterConnections = document.getElementById(
+      `connections-[${name}]`
+    ) as HTMLElement;
+    characterConnections.style.opacity = "1";
+    Array.from(characterConnections.childNodes).map((node) => {
+      if (node.nodeName !== "path") return;
+      const path = node as SVGPathElement;
+      path!.style.strokeDasharray = "125%";
+      path!.style.strokeDashoffset = "0";
     });
 
     const allDates: HTMLParagraphElement[] = Array.from(
@@ -197,7 +203,7 @@
   on:keydown={openCharacterWindow}
   on:focus={showActiveConnections}
   on:pointerover={showActiveConnections}
-  on:pointerleave={hideConnections}
+  on:pointerout={hideConnections}
   on:blur={hideConnections}
 >
   <img src={picture} alt={name} draggable="false" width="1024" height="1024" />
@@ -263,6 +269,7 @@
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
+    pointer-events: none;
   }
 
   img {
@@ -287,5 +294,6 @@
     height: 7.1rem;
     transition: all 0.3s ease-in-out;
     opacity: 0;
+    pointer-events: none;
   }
 </style>

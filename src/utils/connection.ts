@@ -101,8 +101,6 @@ const renderConnections = () => {
 
     renderConnectionsGroup();
   });
-
-  console.log('Rendered connections.')
 }
 
 export default renderConnections;

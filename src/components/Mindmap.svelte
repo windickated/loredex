@@ -23,7 +23,6 @@
   let startY: number = 0;
   let isDragging: boolean = false;
   let searchField: string;
-  let preventZoomChanges: boolean = true;
   let searchInput: HTMLInputElement | null;
 
   $: activeSeason = stories.find(
@@ -33,13 +32,6 @@
   onMount(() => {
     renderConnections();
     mapZoom = 0.2;
-    if (window.innerWidth < 600) {
-      preventZoomChanges = false;
-      return;
-    }
-    setTimeout(() => {
-      preventZoomChanges = false;
-    }, 5000);
   });
 
   const handlePinch = (event: PinchCustomEvent) => {
@@ -86,7 +78,6 @@
   };
 
   const handleZoomWheel = (event: WheelEvent) => {
-    if (preventZoomChanges) return;
     const { deltaY, ctrlKey, metaKey } = event;
     if (!(ctrlKey || metaKey)) return;
     event.preventDefault();
@@ -146,10 +137,6 @@
 
 <svelte:window on:keydown={handleKeyDown} />
 
-<div class="logo" style={preventZoomChanges ? "" : "display: none;"}>
-  LOREDEX
-</div>
-
 <!-- svelte-ignore a11y_no_noninteractive_element_to_interactive_role a11y_click_events_have_key_events -->
 <header>
   <h1>
@@ -158,12 +145,7 @@
     </a>
     LOREDEX
   </h1>
-  <section
-    class="controllers"
-    style={preventZoomChanges
-      ? "filter: grayscale(100%); opacity: 0.25; cursor: wait;"
-      : "filter: none; opacity: 1;"}
-  >
+  <section class="controllers">
     <div class="search-wrapper">
       <button on:click={showTimeline} aria-label="Timeline">
         <svg
@@ -228,7 +210,6 @@
         </svg>
         <input
           id="search"
-          style="opacity: {preventZoomChanges ? '0' : '1'};"
           bind:value={searchField}
           on:input={handleSearch}
           on:focus={() => {
@@ -255,7 +236,6 @@
           stroke-linecap="round"
           fill="none"
           on:click={() => {
-            if (preventZoomChanges) return;
             let zoom = mapZoom - 0.05;
             mapZoom = setZoom(zoom);
           }}
@@ -273,7 +253,6 @@
           max="1.6"
           step="0.025"
           autocomplete="off"
-          style="opacity: {preventZoomChanges ? '0' : '1'};"
           bind:value={mapZoom}
         />
         <svg
@@ -285,7 +264,6 @@
           stroke-linecap="round"
           fill="none"
           on:click={() => {
-            if (preventZoomChanges) return;
             let zoom = mapZoom + 0.05;
             mapZoom = setZoom(zoom);
           }}
@@ -329,7 +307,6 @@
       style="
         width: {timeline.length * 10}rem;
         grid-template-columns: repeat({timeline.length}, 10rem);
-        {preventZoomChanges ? 'cursor: wait;' : ''}
       "
     >
       {#each timeline as { date, note, action, emptySection, expandable }}
@@ -497,32 +474,6 @@
 
 <!-- svelte-ignore css_unused_selector -->
 <style lang="scss">
-  .logo {
-    z-index: 100;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10vw;
-    color: transparent;
-    background-image: linear-gradient(
-      to right,
-      rgba(51, 226, 230, 0.1),
-      rgba(51, 226, 230, 0.25),
-      rgb(51, 226, 230),
-      rgba(51, 226, 230, 0.25),
-      rgba(51, 226, 230, 0.1)
-    );
-    background-clip: text;
-    background-size: 200% auto;
-    opacity: 0;
-    filter: drop-shadow(0 0 0.5vw rgba(51, 226, 230, 0.5));
-    animation: logo 5s linear forwards;
-    cursor: wait;
-  }
-
   header {
     width: 100vw;
     margin-block: 3vh 2vh;
@@ -532,7 +483,7 @@
     justify-content: space-between;
     align-items: center;
     opacity: 0;
-    animation: show 1s linear 5s forwards;
+    animation: show 1s ease-out 2s forwards;
     cursor: default;
 
     h1 {
@@ -685,7 +636,7 @@
     background-position: center;
     background-size: cover;
     opacity: 0;
-    animation: show 1s ease-in 5s forwards;
+    animation: show 1s ease-out 3s forwards;
 
     .map-wrapper {
       position: relative;
@@ -824,17 +775,12 @@
   }
 
   @media only screen and (max-width: 600px) {
-    .logo {
-      display: none;
-    }
-
     header {
       z-index: 1000;
       position: absolute;
       margin-block: 0;
       top: 0;
       padding: 1em;
-      animation: show 1s linear 2s forwards;
 
       h1 {
         display: none;
@@ -941,7 +887,6 @@
       height: 100vh;
       border: none;
       border-radius: 0;
-      animation: show 1s ease-in 1s forwards;
 
       .map-wrapper {
         .map {
@@ -973,30 +918,6 @@
     to {
       opacity: 1;
       filter: grayscale(0);
-    }
-  }
-
-  @keyframes logo {
-    0% {
-      opacity: 0;
-      background-position: 0 50%;
-    }
-    25% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.1;
-      background-position: 100% 50%;
-    }
-    75% {
-      opacity: 1;
-    }
-    99% {
-      opacity: 0;
-      background-position: 0 50%;
-    }
-    100% {
-      display: none;
     }
   }
 </style>

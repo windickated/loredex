@@ -137,6 +137,8 @@
 
 <svelte:window on:keydown={handleKeyDown} />
 
+<div class="logo">LOREDEX</div>
+
 <!-- svelte-ignore a11y_no_noninteractive_element_to_interactive_role a11y_click_events_have_key_events -->
 <header>
   <h1>
@@ -474,6 +476,32 @@
 
 <!-- svelte-ignore css_unused_selector -->
 <style lang="scss">
+  .logo {
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+    color: transparent;
+    background-image: linear-gradient(
+      to right,
+      rgba(51, 226, 230, 0.1),
+      rgba(51, 226, 230, 0.25),
+      rgb(51, 226, 230),
+      rgba(51, 226, 230, 0.25),
+      rgba(51, 226, 230, 0.1)
+    );
+    background-clip: text;
+    background-size: 200% auto;
+    opacity: 0;
+    filter: drop-shadow(0 0 0.5vw rgba(51, 226, 230, 0.5));
+    animation: logo 5s cubic-bezier(0.14, 0.75, 0.2, 1) forwards;
+    cursor: wait;
+  }
+
   header {
     width: 100vw;
     margin-block: 3vh 2vh;
@@ -483,7 +511,7 @@
     justify-content: space-between;
     align-items: center;
     opacity: 0;
-    animation: show 1s ease-out 2s forwards;
+    animation: show 1s ease-out 2.5s forwards;
     cursor: default;
 
     h1 {
@@ -636,7 +664,7 @@
     background-position: center;
     background-size: cover;
     opacity: 0;
-    animation: show 1s ease-out 3s forwards;
+    animation: show 2s ease-out 4s forwards;
 
     .map-wrapper {
       position: relative;
@@ -775,12 +803,17 @@
   }
 
   @media only screen and (max-width: 600px) {
+    .logo {
+      display: none;
+    }
+
     header {
       z-index: 1000;
       position: absolute;
       margin-block: 0;
       top: 0;
       padding: 1em;
+      animation: show 1s ease-out 1s forwards;
 
       h1 {
         display: none;
@@ -887,6 +920,7 @@
       height: 100vh;
       border: none;
       border-radius: 0;
+      animation: show 1s ease-out 1s forwards;
 
       .map-wrapper {
         .map {
@@ -918,6 +952,23 @@
     to {
       opacity: 1;
       filter: grayscale(0);
+    }
+  }
+
+  @keyframes logo {
+    0% {
+      opacity: 0;
+      background-position: 400% 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    99% {
+      opacity: 0;
+      background-position: 0 0;
+    }
+    100% {
+      display: none;
     }
   }
 </style>

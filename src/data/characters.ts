@@ -240,7 +240,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time']
+        episodes: ['The Theft of All Time', 'Hacking Reality']
       }
     ],
     affiliation: 'Archons, AI Empire',
@@ -445,6 +445,10 @@ const characters: Character[] = [
       {
         season: 99,
         episodes: ["The Necromancer's Lair", 'The Celebration', 'Mechronis Academy', 'The Last Christmas']
+      },
+      {
+        season: 2,
+        episodes: ['Hacking Reality']
       }
     ],
     affiliation: 'AI Empire',
@@ -487,7 +491,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated']
+        episodes: ['The Theft of All Time', 'Syndicated', 'Hacking Reality']
       }
     ],
     affiliation: 'AI Empire, Archon, Project Celebration, Mechronis Academy Alumni',
@@ -628,7 +632,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Syndicated', 'First Contact', 'Empire Reborn', 'The Authority']
+        episodes: ['Syndicated', 'First Contact', 'Empire Reborn', 'The Authority', 'Hacking Reality']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -711,7 +715,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn', 'The Authority']
+        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn', 'The Authority', 'Hacking Reality']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -837,7 +841,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Empire Reborn', 'The Authority']
+        episodes: ['Empire Reborn', 'The Authority', 'Hacking Reality']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -880,7 +884,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'First Contact', 'Empire Reborn']
+        episodes: ['The Theft of All Time', 'First Contact', 'Empire Reborn', 'Hacking Reality']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -923,7 +927,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Empire Reborn', 'The Authority']
+        episodes: ['The Theft of All Time', 'Empire Reborn', 'The Authority', 'Hacking Reality']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -966,7 +970,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['First Contact']
+        episodes: ['First Contact', 'Hacking Reality']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -1014,7 +1018,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['First Contact']
+        episodes: ['First Contact', 'Hacking Reality']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -1049,7 +1053,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn', 'The Authority']
+        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn', 'The Authority', 'Hacking Reality']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -3044,7 +3048,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time']
+        episodes: ['The Theft of All Time', 'Hacking Reality']
       }
     ],
     connections: {
@@ -4979,7 +4983,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Syndicated', 'Empire Reborn', 'The Authority']
+        episodes: ['Syndicated', 'Empire Reborn', 'The Authority', 'Hacking Reality']
       }
     ],
     affiliation: 'Underworld Empire',
@@ -5485,7 +5489,8 @@ const characters: Character[] = [
     location: true,
     state: "neutral",
     connections: {
-      neutral: ['The Wolf']
+      neutral: ['The Wolf'],
+      locations: ['The Inbetween Spaces']
     },
     stories: [
       {
@@ -5523,7 +5528,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time']
+        episodes: ['The Theft of All Time', 'Hacking Reality']
       }
     ],
     affiliation: 'Virtual Realm Existing Beyond Life and Death',
@@ -5728,7 +5733,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn', 'The Authority']
+        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn', 'The Authority', 'Hacking Reality']
       }
     ],
     connections: {
@@ -5852,6 +5857,31 @@ const characters: Character[] = [
     `
   },
   {
+    name: 'The Inbetween Spaces',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/InbetweenSpaces.avif',
+    appearance: 101001,
+    location: true,
+    state: "neutral",
+    stories: [
+      {
+        season: 99,
+        episodes: ["The Necromancer's Lair", 'The Ninth: Blood and Shadows']
+      },
+      {
+        season: 2,
+        episodes: ['Hacking Reality']
+      }
+    ],
+    connections: {
+      neutral: ['The Antiquarian', 'The Crucible']
+    },
+    affiliation: 'Temporal Navigator Vessel Once Owned by the Sorcerer',
+    status: 'Stolen in Year 15,306 A.A., Reappears in Year 101,001 A.A., Fate Unknown',
+    bio: `
+      Domain of the Antiquarian, where all facts and fables coalesce as fleeting dreams and haunting nightma
+    `
+  },
+  {
     name: 'The Antiquarian',
     appearance: 17036,
     picture: 'https://media.degenerousdao.com/conexus-loredex/Antiquarian.avif',
@@ -5867,12 +5897,13 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated', 'The Authority']
+        episodes: ['The Theft of All Time', 'Syndicated', 'The Authority', 'Hacking Reality']
       }
     ],
     connections: {
       allies: ['The League'],
-      enemies: ['The Source']
+      enemies: ['The Source'],
+      locations: ['The Inbetween Spaces']
     },
     affiliation: 'Independent Chronicler of the Multiverse',
     status: 'Immortal Observer Hidden Within a Pocket Dimension',
@@ -6382,7 +6413,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated']
+        episodes: ['The Theft of All Time', 'Syndicated', 'Hacking Reality']
       }
     ],
     affiliation: 'The Potentials; later becomes the Red Death',
@@ -8018,6 +8049,36 @@ const characters: Character[] = [
     `
   },
   {
+    name: 'Potential 592',
+    picture: 'https://media.degenerousdao.com/conexus-loredex/Potential592.avif',
+    state: "neutral",
+    potentialNFT: 592,
+    video: 'QkX2aPd_ExU',
+    stories: [
+      {
+        season: 99,
+        episodes: ["The Necromancer's Lair", 'The Ninth: Blood and Shadows']
+      },
+      {
+        season: 2,
+        episodes: ['Hacking Reality']
+      }
+    ],
+    affiliation: 'The Potentials',
+    status: 'Active',
+    connections: {
+      allies: ['The White Oracle'],
+      enemies: ['The Source', 'The Architect', 'The Terminus Swarm', 'The Collector'],
+      locations: ['Terminus', 'The Wyrmhole', 'Thaloria', 'The City', 'The Heart of Time']
+    },
+    bio: `
+      The Potentials are a race born from crisis and necessity, woven from the Architect’s careful preparations in the face of impending cosmic annihilation. Their essence is drawn from a dual heritage — Harvested DNA and Machine Code — meticulously preserved to ensure that, when the Fall of Reality arrived, not all hope would vanish. For nearly 83,000 years they drifted in the emptiness of space, sealed within silent Inception Arks, as the Thought Virus extinguished every spark of intelligent life across the stars.
+    `,
+    history: `
+      Within this lineage lie two distinct sub-species. The DeMagi, organic and mystic, carry ancient whispers and spiritual resonance within their living cells, hinting at wisdom and insight. The Quarchon, mechanical and relentless, embody calculated strength and adaptive warfare protocols, ready to enforce will with engineered precision. Yet even as these two forms awaken and step forth into a universe reborn, no seer, prophet, or historian can predict their ultimate course. Will they rebuild, conquer, enlighten, or devour? The new epoch holds its breath, for what the Potentials become may reshape the destiny of all that remains.
+    `
+  },
+  {
     name: 'Potential 636',
     picture: 'https://media.degenerousdao.com/conexus-loredex/Potential636.avif',
     state: "neutral",
@@ -8402,7 +8463,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Syndicated', 'The Authority']
+        episodes: ['Syndicated', 'The Authority', 'Hacking Reality']
       }
     ],
     affiliation: 'The Potentials',
@@ -8611,6 +8672,10 @@ const characters: Character[] = [
       {
         season: 1,
         episodes: ['The Arrival', 'The Wyrmwood', 'The Hunt']
+      },
+      {
+        season: 2,
+        episodes: ['Hacking Reality']
       }
     ],
     affiliation: 'The Potentials',

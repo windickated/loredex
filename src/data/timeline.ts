@@ -640,6 +640,16 @@ export const stories: Season[] = [
         description: `
           Witness the fate of New Babylon hang in the balance as hidden conspiracies collide with centuries-old power. Follow the Potentials as they confront the living computer known only as the Six—both ally and tyrant to the city’s people. Unravel forbidden secrets and expose the Syndicate of Death before everything falls apart. The choice to seize, unite, or destroy rests in your hands—are you ready to decide?
         `
+      },
+      {
+        title: 'Hacking Reality',
+        link: '2ZAEDI2Fm1g',
+        bio: `
+          In a realm where technology merges with arcane power, an unlikely band of misfits dares to hack the Authority. Their success could reshape New Babylon—or plunge it into chaos.
+        `,
+        description: `
+          The Antiquarian watches destiny unfold from his hidden realm the Inbetween Spaces while reveling in the blurred line between myth and reality. Seeking to defeat the Six, the Silence and the Advocate hack into the Authority control system using demonic magic and technological superiority. Hidden within the maze of dark magic and even darker webbed code, they discover a host of ancient evils trapped within a matrix of dreams. All the while, treacherous whispers of immortality and revolution echo across New Babylon, sparking a conflict only the bravest souls can confront.
+        `
       }
     ]
   }

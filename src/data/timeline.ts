@@ -650,6 +650,97 @@ export const stories: Season[] = [
         description: `
           The Antiquarian watches destiny unfold from his hidden realm the Inbetween Spaces while reveling in the blurred line between myth and reality. Seeking to defeat the Six, the Silence and the Advocate hack into the Authority control system using demonic magic and technological superiority. Hidden within the maze of dark magic and even darker webbed code, they discover a host of ancient evils trapped within a matrix of dreams. All the while, treacherous whispers of immortality and revolution echo across New Babylon, sparking a conflict only the bravest souls can confront.
         `
+      },
+      {
+        title: 'Samsara Rising',
+        link: '8BzCXx9AN1c',
+        bio: `
+          Empty
+        `,
+        description: `
+          Empty
+        `
+      },
+      {
+        title: 'The Haven',
+        link: 'doBEBmXkaeE',
+        bio: `
+          Tension escalates as Samsara tightens his grip on New Babylon, provoking factions from the shadowy Lotus Docks to the towering Cloudstep Heights. The Potentials scramble to establish a safe haven amid mounting chaos, knowing one wrong move could spark an unstoppable civil war.
+        `,
+        description: `
+          Empty
+        `
+      },
+      {
+        title: 'CoNexus Awakens',
+        link: '8BzCXx9AN1c',
+        bio: `
+          Samsara has returned. The only way forward is through the Nexus—scan the strands, solve the riddle, and shape reality.
+          CoNexus V1 has launched. Complete and share the Sundown Bazaar missions to unlock the next chapter. Play the game. Unveil the secrets. Become who you were meant to be.
+        `,
+        description: `
+          Empty
+        `
+      },
+      {
+        title: 'To Be the Human',
+        link: 'Q4eHy3v0LYs',
+        bio: `
+          Empty
+        `,
+        description: `
+          Empty
+        `
+      },
+      {
+        title: 'The Politician\'s Reign',
+        link: 'cEoS4cNSd14',
+        bio: `
+          Empty
+        `,
+        description: `
+          Empty
+        `
+      },
+      {
+        title: 'The Zero Sum War',
+        link: 'NamG72iwV3Y',
+        bio: `
+          Empty
+        `,
+        description: `
+          Empty
+        `
+      },
+      {
+        title: 'Baron & The Heart of Time',
+        link: 'ULMHrqpSU34',
+        bio: `
+          Empty
+        `,
+        description: `
+          Empty
+        `
+      },
+      {
+        title: 'Truth & Consequences',
+        link: 'UmaEkuA6P6A',
+        bio: `
+          Empty
+        `,
+        description: `
+          Empty
+        `
+      },
+      {
+        title: 'A Question of Endings',
+        link: 'MBcXYfVZsRg',
+        bio: `
+          Empty
+        `,
+        description: `
+          Empty
+        `
       }
     ]
   }

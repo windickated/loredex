@@ -160,6 +160,10 @@ const characters: Character[] = [
       {
         season: 99,
         episodes: ['Spy', 'The Celebration', 'Mechronis Academy', 'The Eyes that Watch']
+      },
+      {
+        season: 2, 
+        episodes: ['The Zero Sum War']
       }
     ],
     affiliation: 'Archons, AI Empire',
@@ -240,7 +244,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Hacking Reality']
+        episodes: ['The Theft of All Time', 'Hacking Reality', 'The Zero Sum War']
       }
     ],
     affiliation: 'Archons, AI Empire',
@@ -276,7 +280,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Syndicated', 'Empire Reborn', 'The Authority']
+        episodes: ['Syndicated', 'Empire Reborn', 'The Authority', 'The Zero Sum War']
       }
     ],
     affiliation: 'Archons, AI Empire',
@@ -366,6 +370,10 @@ const characters: Character[] = [
       {
         season: 0,
         episodes: ['The Engineer']
+      },
+      {
+        season: 2,
+        episodes: ['The Zero Sum War']
       }
     ],
     affiliation: 'Archons, AI Empire',
@@ -491,7 +499,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated', 'Hacking Reality']
+        episodes: ['The Theft of All Time', 'Syndicated', 'Hacking Reality', 'The Haven', 'The Zero Sum War']
       }
     ],
     affiliation: 'AI Empire, Archon, Project Celebration, Mechronis Academy Alumni',
@@ -715,7 +723,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn', 'The Authority', 'Hacking Reality']
+        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn', 'The Authority', 'Hacking Reality', 'The Haven']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -841,7 +849,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Empire Reborn', 'The Authority', 'Hacking Reality']
+        episodes: ['Empire Reborn', 'The Authority', 'Hacking Reality', 'The Zero Sum War', 'The Zero Sum War']
       }
     ],
     affiliation: 'Ne-Yons',
@@ -1590,6 +1598,10 @@ const characters: Character[] = [
       {
         season: 0,
         episodes: ['Agent Zero', 'Iron Lion']
+      },
+      {
+        season: 2,
+        episodes: ['The Zero Sum War']
       }
     ],
     affiliation: 'AI Empire',
@@ -2149,6 +2161,12 @@ const characters: Character[] = [
       enemies: ['Iron Lion', 'Agent Zero', 'The Nomad'],
       locations: ['Veridan Prime', 'Nexon']
     },
+    stories: [
+      {
+        season: 2,
+        episodes: ['The Zero Sum War']
+      }
+    ],
     affiliation: 'AI Empire',
     status: 'Destroyed at the Battle of Veridian VI in Year 17,026 A.A. by Agent Zero',
     bio: `
@@ -2679,6 +2697,10 @@ const characters: Character[] = [
       {
         season: 0,
         episodes: ['The Engineer']
+      },
+      {
+        season: 2,
+        episodes: ['The Zero Sum War']
       }
     ]
   },
@@ -2872,6 +2894,10 @@ const characters: Character[] = [
       {
         season: 0,
         episodes: ['The Engineer']
+      },
+      {
+        season: 2,
+        episodes: ['The Zero Sum War']
       }
     ],
     affiliation: '[CLASSIFIED]',
@@ -3217,6 +3243,10 @@ const characters: Character[] = [
       {
         season: 1,
         episodes: ['The Decision', 'The Arrival']
+      },
+      {
+        season: 2,
+        episodes: ['The Zero Sum War']
       }
     ],
     affiliation: 'Insurgency',
@@ -3397,7 +3427,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['The Theft of All Time']
+        episodes: ['The Theft of All Time', 'The Zero Sum War']
       }
     ],
     affiliation: 'Insurgency',
@@ -3589,6 +3619,10 @@ const characters: Character[] = [
       {
         season: 0,
         episodes: ['The Oracle']
+      },
+      {
+        season: 2,
+        episodes: ['The Zero Sum War']
       }
     ],
     affiliation: 'Thaloria; Insurgency',
@@ -3892,6 +3926,10 @@ const characters: Character[] = [
       {
         season: 0,
         episodes: ['Agent Zero', 'Iron Lion', 'The Engineer']
+      },
+      {
+        season: 2,
+        episodes: ['The Zero Sum War']
       }
     ],
     affiliation: 'Insurgency',
@@ -4286,6 +4324,10 @@ const characters: Character[] = [
       {
         season: 0,
         episodes: ['Iron Lion']
+      },
+      {
+        season: 2,
+        episodes: ['The Zero Sum War']
       }
     ],
     affiliation: 'Insurgency',
@@ -5329,6 +5371,12 @@ const characters: Character[] = [
     connections: {
       neutral: ['The Architect', 'The Game Master', 'The Watcher', 'The Warlord', 'The Meme', 'The Necromancer', 'The Eyes', 'The Engineer', 'The Human', 'Iron Lion', 'The Enigma', 'The Warden', 'The Recruiter', 'The Detective', 'Senator Elara Voss']
     },
+    stories: [
+      {
+        season: 2,
+        episodes: ['The Zero Sum War']
+      }
+    ],
     affiliation: 'AI Empire',
     status: 'Active throughout the A.A. Era until the Fall of Reality; post-Fall fate uncertain',
     bio: `
@@ -5710,6 +5758,10 @@ const characters: Character[] = [
       {
         season: 99,
         episodes: ['Soldier']
+      },
+      {
+        season: 2,
+        episodes: ['The Zero Sum War']
       }
     ],
     affiliation: 'Neutral World, Later Contested by the AI Empire and the Insurgency',
@@ -5733,7 +5785,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 2,
-        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn', 'The Authority', 'Hacking Reality']
+        episodes: ['The Theft of All Time', 'Syndicated', 'First Contact', 'Empire Reborn', 'The Authority', 'Hacking Reality', 'The Zero Sum War']
       }
     ],
     connections: {
@@ -5923,7 +5975,7 @@ const characters: Character[] = [
     stories: [
       {
         season: 2,
-        episodes: ['The Authority']
+        episodes: ['The Authority', 'The Zero Sum War']
       }
     ],
     connections: {
@@ -7529,7 +7581,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Syndicated', 'First Contact']
+        episodes: ['Syndicated', 'First Contact', 'The Haven']
       }
     ],
     affiliation: 'The Potentials',
@@ -8355,7 +8407,7 @@ const characters: Character[] = [
       },
       {
         season: 2,
-        episodes: ['Empire Reborn']
+        episodes: ['Empire Reborn', 'The Haven']
       }
     ],
     affiliation: 'The Potentials',

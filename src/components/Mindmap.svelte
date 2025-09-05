@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { pinch, type PinchCustomEvent } from "svelte-gestures";
+  import type { PinchCustomEvent } from "svelte-gestures";
   import { onMount } from "svelte";
   import characters from "../data/characters.ts";
   import { timeline, stories } from "../data/timeline.ts";
@@ -28,6 +28,14 @@
   $: activeSeason = stories.find(
     (section) => section.season === $activeSeasonNr
   );
+
+  // Load gesture action only on client to avoid SSR unused-import warning
+  let pinchAction: any;
+  onMount(() => {
+    import("svelte-gestures").then((mod) => {
+      pinchAction = mod.pinch;
+    });
+  });
 
   onMount(() => {
     renderConnections();
@@ -301,7 +309,7 @@
     on:pointerup={handlePointerUp}
     on:pointerleave={handlePointerUp}
     on:pointermove={handlePointerMove}
-    use:pinch
+    use:pinchAction
     on:pinch={handlePinch}
   >
     <section
@@ -656,8 +664,8 @@
     border: 0.05rem solid rgba(51, 226, 230, 0.25);
     border-radius: 1rem;
     overflow: auto;
-    background-image: url("/bg.avif"),
-      radial-gradient(black, rgba(1, 0, 32, 0.5));
+    background-image:
+      url("/bg.avif"), radial-gradient(black, rgba(1, 0, 32, 0.5));
     background-color: black;
     background-attachment: fixed;
     background-repeat: no-repeat;

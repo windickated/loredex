@@ -673,7 +673,7 @@ export const stories: Season[] = [
       },
       {
         title: 'CoNexus Awakens',
-        link: '8BzCXx9AN1c',
+        link: '67ekxpa6h4U',
         bio: `
           Samsara has returned. The only way forward is through the Nexus—scan the strands, solve the riddle, and shape reality.
           CoNexus V1 has launched. Complete and share the Sundown Bazaar missions to unlock the next chapter. Play the game. Unveil the secrets. Become who you were meant to be.

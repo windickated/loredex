@@ -14,6 +14,8 @@
   import Modal from "./Modal.svelte";
   import renderConnections from "../utils/connection.ts";
 
+  import LogoSVG from "./icons/Logo.svelte";
+
   let mapContainer: HTMLElement | null;
   let dragMap: HTMLDivElement | null;
   let mapZoom: number = 1;
@@ -150,9 +152,7 @@
 <!-- svelte-ignore a11y_no_noninteractive_element_to_interactive_role a11y_click_events_have_key_events -->
 <header>
   <h1>
-    <a href="https://degenerousdao.com/" target="_blank">
-      <img src="/logo.avif" alt="DGRS" />
-    </a>
+    <LogoSVG />
     LOREDEX
   </h1>
   <section class="controllers">
@@ -525,8 +525,9 @@
     h1 {
       font-size: 2vw;
       line-height: 1.5;
-      color: rgba(51, 226, 230, 0.25);
+      color: rgba(51, 226, 230, 0.75);
       text-shadow: 0 0 0.1vw rgba(51, 226, 230, 0.5);
+      font-weight: 500;
       display: flex;
       flex-direction: row nowrap;
       justify-content: center;
